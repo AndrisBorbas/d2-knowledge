@@ -1,18 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background-rgb: 214, 219, 220;
-  --foreground-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-rgb: 0, 0, 0;
-    --foreground-rgb: 255, 255, 255;
-  }
-}
-
-body {
-  background: rgb(var(--background-rgb));
-  color: rgb(var(--foreground-rgb));
+	--color-element: #167bff;
+	--color-element-soft: #167bff24;
+	--color-weapon: #b85f00;
+	--color-weapon-soft: #b85f0024;
+	--color-status: #8f35ca;
+	--color-status-soft: #8f35ca24;
+	--color-misc: #0d8b54;
+	--color-misc-soft: #0d8b5424;
+	--color-ink: #10203a;
+	--color-ink-soft: #10203a2b;
+	--color-ink-faint: #10203a1f;
+	--color-ink-mid: #10203a33;
+	--color-slate: #2f4268;
+	--color-slate-strong: #24446d;
+	--color-slate-body: #233654;
+	--color-title: #243c63;
+	--color-section: #2e6f83;
+	--color-header-text: #f2f8ff;
+	--color-header-text-soft: #f5fcffe6;
+	--color-tab-active-text: #f8fdff;
+	--color-tab-border: #0f8b8d4d;
+	--color-tab-border-hover: #0f8b8d8c;
+	--surface-strip: #1b407714;
+	--surface-main-radial-1: #ffe8c7;
+	--surface-main-radial-2: #bee4ff;
+	--surface-main-grad-start: #fffdf8;
+	--surface-main-grad-end: #f3ede2;
+	--surface-header-grad-start: #112647;
+	--surface-header-grad-mid: #234875;
+	--surface-header-grad-end: #24695f;
+	--surface-tab-active-grad-start: #0f8b8d;
+	--surface-tab-active-grad-end: #125f90;
+	--surface-panel-grad-start: #fffefb;
+	--surface-panel-grad-end: #f4f0e9;
+	--shadow-panel: 0 16px 40px rgba(24, 35, 58, 0.16);
+	--bg-main: radial-gradient(60rem 60rem at 5% -10%, var(--surface-main-radial-1) 0%, transparent 50%),
+		radial-gradient(55rem 55rem at 105% 0%, var(--surface-main-radial-2) 0%, transparent 45%),
+		linear-gradient(180deg, var(--surface-main-grad-start) 0%, var(--surface-main-grad-end) 100%);
+	--bg-header: linear-gradient(140deg, var(--surface-header-grad-start) 0%, var(--surface-header-grad-mid) 45%, var(--surface-header-grad-end) 100%);
+	--bg-tab-active: linear-gradient(130deg, var(--surface-tab-active-grad-start), var(--surface-tab-active-grad-end));
+	--bg-panel: linear-gradient(180deg, var(--surface-panel-grad-start) 0%, var(--surface-panel-grad-end) 100%);
 }

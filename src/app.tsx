@@ -18,6 +18,7 @@ export const getSessionData = cache(async (): Promise<AuthSession | null> => {
 function RootLayout(props: ParentProps) {
 	return (
 		<MetaProvider>
+			<Title>D2 Knowledge</Title>
 			<Suspense>{props.children}</Suspense>
 		</MetaProvider>
 	);
