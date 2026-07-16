@@ -15,5 +15,7 @@
 		"paths": {
 			"~/*": ["./src/*"]
 		}
-	}
+	},
+	"include": ["src", "vite.config.ts", "eslint.config.mjs"],
+	"exclude": ["node_modules", "dist", ".output", ".nitro"]
 }

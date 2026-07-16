@@ -1,4 +1,5 @@
 import type { TabNormalizationConfigMap } from "./normalize";
+import type { Section } from "./types";
 
 export const COMPENDIUM_SHEET_ID =
 	"1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4";
@@ -23,9 +24,23 @@ export const COMPENDIUM_TAB_NAMES = [
 
 const LEGACY_TAB_PREFIX = "OLD ";
 
+const EXCLUDED_TAB_NAMES = ["Landing", "Weapon Perks", "Exotic Weapons"];
+
 export const COMPENDIUM_ACTIVE_TAB_NAMES = COMPENDIUM_TAB_NAMES.filter(
-	(tabName) => !tabName.startsWith(LEGACY_TAB_PREFIX) && tabName !== "Landing",
+	(tabName) =>
+		!tabName.startsWith(LEGACY_TAB_PREFIX) &&
+		!EXCLUDED_TAB_NAMES.includes(tabName),
 );
+
+const elementSections: Section[] = [
+	{ name: "Glossary" },
+	{ name: "Fragments" },
+	{ name: "Grenade Abilities" },
+	{ name: "Class Abilities" },
+	{ name: "Melee Abilities" },
+	{ name: "Super Abilities" },
+	{ name: "Aspect" },
+];
 
 export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 	"Weapon Perks": {
@@ -73,167 +88,32 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 	},
 	Arc: {
 		strategy: "same-row",
-		skipRowsAtStart: 4,
-		initialSectionName: "Glossary",
-		glossaryHeaderSectionName: "Fragments",
-		classHeaderNames: ["Hunter", "Titan", "Warlock"],
-		classScopedSectionNames: [
-			"Class Abilities",
-			"Melee Abilities",
-			"Super Abilities",
-			"Aspect",
-			"Aspects",
-		],
-		classSectionSeparator: " - ",
-		titleColumn: 1,
-		descriptionColumn: 3,
-		statColumn: 5,
-		allowContinuationRows: true,
-		fragmentNameColumn: 1,
-		glossaryHeaderKeywords: [
-			"fragments",
-			"icon",
-			"information",
-			"stat changes",
-		],
-		minDescriptionLength: 6,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
+		type: "element",
+		skipStart: 2,
+		sections: elementSections,
 	},
 	Solar: {
 		strategy: "same-row",
-		skipRowsAtStart: 4,
-		initialSectionName: "Glossary",
-		glossaryHeaderSectionName: "Fragments",
-		classHeaderNames: ["Hunter", "Titan", "Warlock"],
-		classScopedSectionNames: [
-			"Class Abilities",
-			"Melee Abilities",
-			"Super Abilities",
-			"Aspect",
-			"Aspects",
-		],
-		classSectionSeparator: " - ",
-		titleColumn: 1,
-		descriptionColumn: 3,
-		statColumn: 5,
-		allowContinuationRows: true,
-		fragmentNameColumn: 1,
-		glossaryHeaderKeywords: [
-			"fragments",
-			"icon",
-			"information",
-			"stat changes",
-		],
-		minDescriptionLength: 6,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
+		type: "element",
+		skipStart: 2,
+		sections: elementSections,
 	},
 	Void: {
 		strategy: "same-row",
-		skipRowsAtStart: 4,
-		initialSectionName: "Glossary",
-		glossaryHeaderSectionName: "Fragments",
-		classHeaderNames: ["Hunter", "Titan", "Warlock"],
-		classScopedSectionNames: [
-			"Class Abilities",
-			"Melee Abilities",
-			"Super Abilities",
-			"Aspect",
-			"Aspects",
-		],
-		classSectionSeparator: " - ",
-		titleColumn: 1,
-		descriptionColumn: 3,
-		statColumn: 5,
-		allowContinuationRows: true,
-		fragmentNameColumn: 1,
-		glossaryHeaderKeywords: [
-			"fragments",
-			"icon",
-			"information",
-			"stat changes",
-		],
-		minDescriptionLength: 6,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
+		type: "element",
+		skipStart: 2,
+		sections: elementSections,
 	},
 	Stasis: {
 		strategy: "same-row",
-		skipRowsAtStart: 4,
-		initialSectionName: "Glossary",
-		glossaryHeaderSectionName: "Fragments",
-		classHeaderNames: ["Hunter", "Titan", "Warlock"],
-		classScopedSectionNames: [
-			"Class Abilities",
-			"Melee Abilities",
-			"Super Abilities",
-			"Aspect",
-			"Aspects",
-		],
-		classSectionSeparator: " - ",
-		titleColumn: 1,
-		descriptionColumn: 3,
-		statColumn: 5,
-		allowContinuationRows: true,
-		fragmentNameColumn: 1,
-		glossaryHeaderKeywords: [
-			"fragments",
-			"icon",
-			"information",
-			"stat changes",
-		],
-		minDescriptionLength: 6,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
+		type: "element",
+		skipStart: 2,
+		sections: elementSections,
 	},
 	Strand: {
 		strategy: "same-row",
-		skipRowsAtStart: 4,
-		initialSectionName: "Glossary",
-		glossaryHeaderSectionName: "Fragments",
-		classHeaderNames: ["Hunter", "Titan", "Warlock"],
-		classScopedSectionNames: [
-			"Class Abilities",
-			"Melee Abilities",
-			"Super Abilities",
-			"Aspect",
-			"Aspects",
-		],
-		classSectionSeparator: " - ",
-		titleColumn: 1,
-		descriptionColumn: 3,
-		statColumn: 5,
-		allowContinuationRows: true,
-		fragmentNameColumn: 1,
-		glossaryHeaderKeywords: [
-			"fragments",
-			"icon",
-			"information",
-			"stat changes",
-		],
-		minDescriptionLength: 6,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
+		type: "element",
+		skipStart: 2,
+		sections: elementSections,
 	},
 };

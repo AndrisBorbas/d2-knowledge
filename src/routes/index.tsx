@@ -1,14 +1,16 @@
 import { cache, createAsync } from "@solidjs/router";
 import {
-	For,
-	Show,
-	Suspense,
 	createEffect,
 	createMemo,
 	createSignal,
+	For,
 	type JSX,
+	Show,
+	Suspense,
 	type VoidComponent,
 } from "solid-js";
+
+import { TextWithTooltips } from "~/components/description/Tooltip";
 import { buildCompendiumDataset } from "~/lib/sheet/compendium";
 import type {
 	Annotation,
@@ -23,15 +25,6 @@ const getCompendiumData = cache(async (): Promise<CompendiumDataset> => {
 	"use server";
 	return buildCompendiumDataset();
 }, "compendium-dataset-v1");
-
-interface AnnotatedTextProps {
-	text: string;
-	annotations: Annotation[];
-	keywordById: Map<string, Keyword>;
-	onKeywordHover?: (keywordId: string) => void;
-	onKeywordLeave?: () => void;
-	onKeywordClick?: (keywordId: string) => void;
-}
 
 function categoryClass(category: KeywordCategory) {
 	if (category === "element")
@@ -58,54 +51,7 @@ function tabClass(isActive: boolean) {
 	);
 }
 
-function AnnotatedText(props: AnnotatedTextProps) {
-	const segments = createMemo(() => {
-		const sorted = [...props.annotations]
-			.filter((item) => item.end > item.start && item.start >= 0)
-			.sort((a, b) => a.start - b.start);
-
-		const nodes: JSX.Element[] = [];
-		let cursor = 0;
-
-		for (const annotation of sorted) {
-			if (annotation.start > cursor) {
-				nodes.push(props.text.slice(cursor, annotation.start));
-			}
-
-			const keyword = props.keywordById.get(annotation.keywordId);
-			if (!keyword) {
-				nodes.push(props.text.slice(annotation.start, annotation.end));
-				cursor = annotation.end;
-				continue;
-			}
-
-			nodes.push(
-				<button
-					type="button"
-					class={cn(KEYWORD_CHIP_BASE, categoryClass(keyword.category))}
-					onMouseEnter={() => props.onKeywordHover?.(keyword.id)}
-					onMouseLeave={() => props.onKeywordLeave?.()}
-					onClick={() => props.onKeywordClick?.(keyword.id)}
-					title={`Open ${keyword.label}`}
-				>
-					{props.text.slice(annotation.start, annotation.end)}
-				</button>,
-			);
-
-			cursor = annotation.end;
-		}
-
-		if (cursor < props.text.length) {
-			nodes.push(props.text.slice(cursor));
-		}
-
-		return nodes;
-	});
-
-	return <>{segments()}</>;
-}
-
-interface KeywordPanelProps {
+type KeywordPanelProps = {
 	keywordId: string;
 	label: string;
 	keywordById: Map<string, Keyword>;
@@ -114,7 +60,7 @@ interface KeywordPanelProps {
 	onKeywordLeave: () => void;
 	onKeywordClick: (keywordId: string) => void;
 	onRemove?: () => void;
-}
+};
 
 function KeywordPanel(props: KeywordPanelProps) {
 	const keyword = createMemo(() => props.keywordById.get(props.keywordId));
@@ -183,9 +129,15 @@ function KeywordPanel(props: KeywordPanelProps) {
 							<button
 								type="button"
 								class={cn(KEYWORD_CHIP_BASE, categoryClass(item.category))}
-								onMouseEnter={() => props.onKeywordHover(item.id)}
-								onMouseLeave={() => props.onKeywordLeave()}
-								onClick={() => props.onKeywordClick(item.id)}
+								onMouseEnter={() => {
+									props.onKeywordHover(item.id);
+								}}
+								onMouseLeave={() => {
+									props.onKeywordLeave();
+								}}
+								onClick={() => {
+									props.onKeywordClick(item.id);
+								}}
 							>
 								{item.label}
 							</button>
@@ -202,9 +154,9 @@ function KeywordPanel(props: KeywordPanelProps) {
 								{entry.title}
 							</h4>
 							<p class="m-0 mt-1.5 text-[0.83rem] leading-[1.43] text-(--color-slate-body)">
-								<AnnotatedText
+								<TextWithTooltips
 									text={entry.description}
-									annotations={entry.annotations}
+									annotations={[]}
 									keywordById={props.keywordById}
 									onKeywordHover={props.onKeywordHover}
 									onKeywordLeave={props.onKeywordLeave}
@@ -260,7 +212,7 @@ const Home: VoidComponent = () => {
 	};
 
 	return (
-		<main class="mx-auto grid min-h-screen max-w-[1440px] grid-rows-[auto_auto_1fr] gap-5 bg-(--bg-main) px-4 pt-5 pb-7 font-[Trebuchet_MS,Avenir_Next,Segoe_UI,sans-serif] text-(--color-ink)">
+		<main class="mx-auto grid min-h-screen max-w-[1440px] grid-rows-[auto_auto_1fr] gap-5 px-4 pt-5 pb-7 font-[Trebuchet_MS,Avenir_Next,Segoe_UI,sans-serif] text-(--color-ink)">
 			<header class="rounded-[18px] bg-(--bg-header) px-4 pt-4 pb-3 text-(--color-header-text) shadow-(--shadow-panel)">
 				<h1 class="m-0 text-[clamp(1.4rem,2vw+1rem,2.7rem)] leading-[1.1] font-extrabold">
 					Destiny Data Compendium
@@ -325,14 +277,14 @@ const Home: VoidComponent = () => {
 													{entry.title}
 												</div>
 											</div>
-											<div class="border-b border-(--color-ink-soft) px-3 py-2.5 text-[0.92rem] leading-[1.48] md:pt-2.5">
-												<AnnotatedText
+											<div class="text-foreground border-b border-(--color-ink-soft) bg-gray-900 px-3 py-2.5 text-center text-[0.92rem] leading-[1.48] whitespace-pre-wrap md:pt-2.5">
+												<TextWithTooltips
 													text={entry.description}
-													annotations={entry.annotations}
+													annotations={[]}
 													keywordById={keywordById()}
 													onKeywordHover={(id) => setHoverKeywordId(id)}
 													onKeywordLeave={() => setHoverKeywordId(null)}
-													onKeywordClick={(id) => pinKeyword(id)}
+													onKeywordClick={pinKeyword}
 												/>
 											</div>
 										</>
@@ -369,7 +321,9 @@ const Home: VoidComponent = () => {
 										onKeywordHover={(id) => setHoverKeywordId(id)}
 										onKeywordLeave={() => setHoverKeywordId(null)}
 										onKeywordClick={pinKeyword}
-										onRemove={() => removePinAt(idx())}
+										onRemove={() => {
+											removePinAt(idx());
+										}}
 									/>
 								)}
 							</For>

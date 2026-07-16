@@ -17,10 +17,10 @@ export const entrySchema = z.object({
 	id: z.string(),
 	tab: z.string(),
 	section: z.string().nullable(),
+	source: sourceSpanSchema,
 	title: z.string(),
 	description: z.string(),
-	source: sourceSpanSchema,
-	annotations: z.array(annotationSchema),
+	extraInfo: z.string().optional(),
 });
 
 export const keywordCategorySchema = z.enum([
@@ -30,11 +30,22 @@ export const keywordCategorySchema = z.enum([
 	"mechanic",
 ]);
 
+export const keywordVariantSchema = z.enum([
+	"default",
+	"arc",
+	"solar",
+	"void",
+	"stasis",
+	"strand",
+	"prismatic",
+	"masterwork",
+]);
+
 export const keywordSchema = z.object({
 	id: z.string(),
 	label: z.string(),
 	aliases: z.array(z.string()),
-	category: keywordCategorySchema,
+	types: z.array(z.string()),
 	references: z.array(z.string()),
 });
 

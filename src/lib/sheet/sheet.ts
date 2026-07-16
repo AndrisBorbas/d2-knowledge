@@ -45,8 +45,7 @@ function fetchSheetTab(sheet: string, tab: string) {
 		if (!res.ok) {
 			throw new Error(`HTTP ${res.status}`);
 		}
-		const text = await res.text();
-		return parseCSV(text);
+		return parseCSV(await res.text());
 	});
 }
 

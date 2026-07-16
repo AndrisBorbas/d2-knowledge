@@ -1,31 +1,6 @@
+import { Verbs } from "~/lib/data/glossary";
+
 import type { Annotation, Entry, Keyword, KeywordCategory } from "./model";
-
-interface KeywordOverride {
-	exclude?: boolean;
-	aliases?: string[];
-	category?: KeywordCategory;
-}
-
-const KEYWORD_OVERRIDES: Record<string, KeywordOverride> = {
-	"orb of power": {
-		aliases: ["orbs of power"],
-		category: "mechanic",
-	},
-	"void breach": {
-		aliases: ["void breaches"],
-		category: "mechanic",
-	},
-	"ionic trace": {
-		aliases: ["ionic traces"],
-		category: "mechanic",
-	},
-	"stasis shard": {
-		aliases: ["stasis shards"],
-		category: "mechanic",
-	},
-	the: { exclude: true },
-	image: { exclude: true },
-};
 
 const ELEMENT_TERMS = new Set([
 	"arc",
@@ -73,18 +48,10 @@ function toSlug(value: string) {
 		.replace(/(^-|-$)/g, "");
 }
 
-function inferCategory(label: string): KeywordCategory {
-	const normalized = label.toLowerCase();
-	if (ELEMENT_TERMS.has(normalized)) return "element";
-	if (WEAPON_TERMS.some((term) => normalized.includes(term))) return "weapon";
-	if (STATUS_TERMS.some((term) => normalized.includes(term))) return "status";
-	return "mechanic";
-}
-
-export interface KeywordMatchTerm {
+export type KeywordMatchTerm = {
 	keywordId: string;
 	term: string;
-}
+};
 
 export function buildKeywords(entries: Entry[]) {
 	const map = new Map<string, Keyword>();
@@ -93,18 +60,15 @@ export function buildKeywords(entries: Entry[]) {
 		const label = entry.title.trim();
 		if (!label) continue;
 
-		const normalized = label.toLowerCase();
-		const override = KEYWORD_OVERRIDES[normalized];
-		if (override?.exclude) continue;
-
-		const id = toSlug(normalized);
+		const id = toSlug(label);
 		const existing = map.get(id);
 		if (!existing) {
+			const verb = Verbs.find((verb) => toSlug(verb.name) === id);
 			map.set(id, {
 				id,
 				label,
-				aliases: override?.aliases ?? [],
-				category: override?.category ?? inferCategory(label),
+				aliases: verb?.aliases ?? [],
+				types: verb?.types ?? ["default"],
 				references: [entry.id],
 			});
 			continue;

@@ -1,11 +1,13 @@
 // @refresh reload
+import "./app.css";
+
 import { MetaProvider, Title } from "@solidjs/meta";
 import { cache, Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-import { Suspense, type ParentProps } from "solid-js";
+import { ErrorBoundary, type ParentProps, Suspense } from "solid-js";
 import { getRequestEvent } from "solid-js/web";
-import { getSession, type AuthSession } from "start-authjs";
-import "./app.css";
+import { type AuthSession, getSession } from "start-authjs";
+
 import { authConfig } from "~/server/auth";
 
 export const getSessionData = cache(async (): Promise<AuthSession | null> => {
@@ -26,8 +28,21 @@ function RootLayout(props: ParentProps) {
 
 export default function App() {
 	return (
-		<Router root={RootLayout}>
-			<FileRoutes />
-		</Router>
+		<>
+			<ErrorBoundary
+				fallback={(err) => {
+					console.log(err);
+					return <div class="error">{JSON.stringify(err.stack)}</div>;
+				}}
+			>
+				<div class="background">
+					<div class="background-image" />
+					<div class="background-effect" />
+				</div>
+				<Router root={RootLayout}>
+					<FileRoutes />
+				</Router>
+			</ErrorBoundary>
+		</>
 	);
 }

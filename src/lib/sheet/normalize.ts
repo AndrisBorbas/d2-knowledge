@@ -1,3 +1,6 @@
+import { classNames } from "~/lib/data/base";
+import type { Section, TabRules } from "~/lib/sheet/types";
+
 import type { Entry, SourceSpan, TabData } from "./model";
 
 export type RowSectionSelector = {
@@ -65,7 +68,7 @@ export type SetBonusRowsRule = {
 };
 
 export type TabNormalizationRule =
-	PairedRowsRule | SameRowRule | SetBonusRowsRule;
+	PairedRowsRule | SameRowRule | SetBonusRowsRule | TabRules;
 
 export type TabNormalizationConfigMap = Partial<
 	Record<string, TabNormalizationRule>
@@ -88,7 +91,7 @@ export const DEFAULT_TAB_NORMALIZATION_RULE: TabNormalizationRule = {
 };
 
 function normalizeCell(value: string | undefined) {
-	return (value ?? "").replace(/\s+/g, " ").trim();
+	return (value ?? "").trim();
 }
 
 function slug(value: string) {
@@ -121,7 +124,7 @@ function getColumnsForRule(row: string[], explicitColumns?: number[]) {
 }
 
 function normalizeForMatch(value: string) {
-	return value.trim().toLowerCase();
+	return value.trim().toLowerCase().replace(/s$/, "");
 }
 
 function isGlossaryHeaderRow(row: string[], keywords?: string[]) {
@@ -130,55 +133,6 @@ function isGlossaryHeaderRow(row: string[], keywords?: string[]) {
 		getNonEmptyCells(row).map((cell) => normalizeForMatch(cell.text)),
 	);
 	return keywords.every((keyword) => rowValues.has(normalizeForMatch(keyword)));
-}
-
-function isClassHeaderRow(row: string[], rule: SameRowRule) {
-	const classHeaderNames = rule.classHeaderNames;
-	if (!classHeaderNames || classHeaderNames.length === 0) {
-		return { isHeader: false, className: null as string | null };
-	}
-
-	const nonEmpty = getNonEmptyCells(row);
-	if (nonEmpty.length === 0) {
-		return { isHeader: false, className: null as string | null };
-	}
-
-	const allowedColumn = rule.classHeaderColumn;
-	const candidateCells =
-		typeof allowedColumn === "number"
-			? nonEmpty.filter((cell) => cell.column === allowedColumn)
-			: nonEmpty;
-
-	if (candidateCells.length === 0) {
-		return { isHeader: false, className: null as string | null };
-	}
-
-	const matched = new Set<string>();
-	for (const cell of candidateCells) {
-		const current = normalizeForMatch(cell.text);
-		for (const className of classHeaderNames) {
-			const normalizedClass = normalizeForMatch(className);
-			if (current === normalizedClass || current === `${normalizedClass}s`) {
-				matched.add(className);
-			}
-		}
-	}
-
-	if (matched.size === 0) {
-		return { isHeader: false, className: null as string | null };
-	}
-
-	if (matched.size === 1) {
-		return {
-			isHeader: true,
-			className: [...matched][0],
-		};
-	}
-
-	return {
-		isHeader: true,
-		className: null as string | null,
-	};
 }
 
 function maybeScopeSectionWithClass(
@@ -238,29 +192,28 @@ function getFirstNonEmptyFromColumns(
 	return "";
 }
 
-function isSectionCandidate(row: string[], selector?: RowSectionSelector) {
-	if (!selector) return false;
-
-	const maxLength = selector.maxLength ?? 120;
-	const minLength = selector.minLength ?? 2;
-	const forbidSentenceEnding = selector.forbidSentenceEnding ?? true;
-
-	if (typeof selector.column === "number") {
-		const text = getCell(row, selector.column);
-		if (text.length < minLength || text.length > maxLength) return false;
-		if (forbidSentenceEnding && /[.!?]$/.test(text)) return false;
-
-		const nonEmpty = getNonEmptyCells(row);
-		if (nonEmpty.length > 1) return false;
-		return true;
+function checkCurrentClass(row: string[]) {
+	for (const cell of row) {
+		const cellText = normalizeForMatch(cell);
+		if (cellText.length > 0) {
+			return classNames.find(
+				(className) => normalizeForMatch(className) === cellText,
+			);
+		}
 	}
+}
 
-	const nonEmpty = getNonEmptyCells(row);
-	if (nonEmpty.length !== 1) return false;
-	const text = nonEmpty[0].text;
-	if (text.length < minLength || text.length > maxLength) return false;
-	if (forbidSentenceEnding && /[.!?]$/.test(text)) return false;
-	return true;
+function isSectionCandidate(row: string[], sections: Section[] | undefined) {
+	if (sections) {
+		for (const cell of row) {
+			const cellText = normalizeForMatch(cell);
+			if (cellText.length > 0) {
+				return sections.find(
+					(section) => normalizeForMatch(section.name) === cellText,
+				);
+			}
+		}
+	}
 }
 
 function isNoteCandidate(
@@ -368,37 +321,35 @@ function buildEntryFromSameRow(
 	tabName: string,
 	rowIndex: number,
 	row: string[],
-	section: string | null,
-	rule: SameRowRule,
+	state: NormalizerState,
+	rule: TabRules,
 ) {
-	const maxTitleLength = rule.maxTitleLength ?? 80;
-	const minDescriptionLength = rule.minDescriptionLength ?? 12;
-	const title = getCell(row, rule.titleColumn);
-	const baseDescription = getCell(row, rule.descriptionColumn);
-	const statSuffix =
-		typeof rule.statColumn === "number" ? getCell(row, rule.statColumn) : "";
-	const description =
-		statSuffix.length > 0
-			? `${baseDescription}\nStat/Cooldown: ${statSuffix}`
-			: baseDescription;
+	const nonEmptyCells = getNonEmptyCells(row);
 
-	if (!title || title.length > maxTitleLength) return null;
-	if (!description || description.length < minDescriptionLength) return null;
-
+	let title = "",
+		description = "",
+		extraInfo: string | undefined = undefined;
 	const source: SourceSpan = {
 		tab: tabName,
 		row: rowIndex,
-		column: rule.titleColumn,
+		column: 0,
 	};
 
+	if (rule.type === "element") {
+		title = nonEmptyCells[0].text;
+		description = nonEmptyCells[1]?.text;
+		source.column = nonEmptyCells[0].column;
+		extraInfo = nonEmptyCells[2]?.text;
+	}
+
 	return {
-		id: createEntryId(tabName, section, title, source),
+		id: createEntryId(tabName, state.section, title, source),
 		tab: tabName,
-		section,
+		section: state.section,
 		title,
 		description,
 		source,
-		annotations: [],
+		extraInfo,
 	} as Entry;
 }
 
@@ -442,10 +393,10 @@ function buildEntriesFromSetBonusRows(
 			column: rule.titleColumn,
 		};
 		entries.push({
-			id: createEntryId(tabName, section, `${title}`, source),
+			id: createEntryId(tabName, section, title, source),
 			tab: tabName,
 			section,
-			title: `${title}`,
+			title: title,
 			description: firstDescription,
 			source,
 			annotations: [],
@@ -459,10 +410,10 @@ function buildEntriesFromSetBonusRows(
 			column: rule.titleColumn,
 		};
 		entries.push({
-			id: createEntryId(tabName, section, `${title}`, source),
+			id: createEntryId(tabName, section, title, source),
 			tab: tabName,
 			section,
-			title: `${title}`,
+			title: title,
 			description: secondDescription,
 			source,
 			annotations: [],
@@ -492,85 +443,73 @@ export function normalizeTab(tabName: string, rows: string[][]): TabData {
 	return normalizeTabWithRule(tabName, rows, DEFAULT_TAB_NORMALIZATION_RULE);
 }
 
+type NormalizerState = {
+	section: string | null;
+	activeClassName: string | null;
+};
+
 export function normalizeTabWithRule(
 	tabName: string,
-	rows: string[][],
-	rule: TabNormalizationRule,
+	rows: (string[] | null)[],
+	rule: TabRules,
 ): TabData {
 	const entries: Entry[] = [];
-	let section: string | null = rule.initialSectionName ?? null;
-	let activeClassName: string | null = null;
 
-	const skipRowsAtStart = Math.max(0, rule.skipRowsAtStart ?? 0);
-	const startRow = (rule.startRow ?? 0) + skipRowsAtStart;
-	const endRow = Math.min(rule.endRow ?? rows.length - 1, rows.length - 1);
+	const currentState: NormalizerState = {
+		section: rule.sections?.[0]?.name ?? null,
+		activeClassName: null,
+	};
+
+	const startRow = rule.skipStart ?? 0;
+	const endRow = rows.length - 1;
 
 	for (let rowIndex = startRow; rowIndex <= endRow; rowIndex++) {
 		const row = rows[rowIndex];
 		if (!row) continue;
 		if (getNonEmptyCells(row).length === 0) continue;
 
-		if (rule.strategy === "same-row") {
-			const classHeader = isClassHeaderRow(row, rule);
-			if (classHeader.isHeader) {
-				activeClassName = classHeader.className;
+		if (rule.type === "element") {
+			const currentClass = checkCurrentClass(row);
+			if (currentClass) {
+				currentState.activeClassName = currentClass;
 				continue;
 			}
 		}
 
-		if (isSectionCandidate(row, rule.section)) {
-			const sectionName =
-				typeof rule.section?.column === "number"
-					? getCell(row, rule.section.column)
-					: (getNonEmptyCells(row)[0]?.text ?? "");
-
-			section =
-				rule.strategy === "same-row"
-					? maybeScopeSectionWithClass(sectionName, activeClassName, rule)
-					: sectionName;
+		const sectionName = isSectionCandidate(row, rule.sections);
+		if (sectionName) {
+			currentState.section = sectionName.name;
 			continue;
 		}
 
+		if (rule.type === "element") {
+			if (getNonEmptyCells(row).length === 1) {
+				continue;
+			}
+		}
+
 		if (rule.strategy === "paired-rows") {
-			const descriptionRowOffset = rule.descriptionRowOffset ?? 1;
-			const nextDescriptionRow = rows[rowIndex + descriptionRowOffset];
-			const pairedEntries = buildEntriesFromPairedRows(
-				tabName,
-				rowIndex,
-				row,
-				nextDescriptionRow,
-				section,
-				rule,
-			);
-
-			if (pairedEntries.length > 0) {
-				entries.push(...pairedEntries);
-				rowIndex += descriptionRowOffset;
-				continue;
-			}
+			// const descriptionRowOffset = rule.descriptionRowOffset ?? 1;
+			// const nextDescriptionRow = rows[rowIndex + descriptionRowOffset];
+			// const pairedEntries = buildEntriesFromPairedRows(
+			// 	tabName,
+			// 	rowIndex,
+			// 	row,
+			// 	nextDescriptionRow,
+			// 	currentState.section,
+			// 	rule,
+			// );
+			// if (pairedEntries.length > 0) {
+			// 	entries.push(...pairedEntries);
+			// 	rowIndex += descriptionRowOffset;
+			// 	continue;
+			// }
 		} else if (rule.strategy === "same-row") {
-			if (isGlossaryHeaderRow(row, rule.glossaryHeaderKeywords)) {
-				if (rule.glossaryHeaderSectionName) {
-					section = rule.glossaryHeaderSectionName;
-				}
-				continue;
-			}
-
-			const inlineSectionHeader = getInlineSectionHeaderName(
-				row,
-				rule,
-				activeClassName,
-			);
-			if (inlineSectionHeader) {
-				section = inlineSectionHeader;
-				continue;
-			}
-
 			const sameRowEntry = buildEntryFromSameRow(
 				tabName,
 				rowIndex,
 				row,
-				section,
+				currentState,
 				rule,
 			);
 			if (sameRowEntry) {
