@@ -33,30 +33,28 @@ function parseCSV(rawText: string) {
 	return rows;
 }
 
-function fetchSheetTab(sheet: string, tab: string) {
+async function fetchSheetTab(sheet: string, tab: string) {
 	const url = `https://docs.google.com/spreadsheets/d/${sheet}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tab)}`;
 
-	return fetch(url, {
+	const res = await fetch(url, {
 		headers: {
 			accept: "text/csv,text/plain,*/*",
 		},
 		signal: AbortSignal.timeout(15000),
-	}).then(async (res) => {
-		if (!res.ok) {
-			throw new Error(`HTTP ${res.status}`);
-		}
-		return parseCSV(await res.text());
 	});
+	if (!res.ok) {
+		throw new Error(`HTTP ${res.status}`);
+	}
+	return await parseCSV(await res.text());
 }
 
-export function fetchSheetTabs(sheet: string, tabs: string[]) {
-	return Promise.all(tabs.map((tab) => fetchSheetTab(sheet, tab))).then(
-		(results) => {
-			const data: Record<string, string[][]> = {};
-			for (let i = 0; i < tabs.length; i++) {
-				data[tabs[i]] = results[i];
-			}
-			return data;
-		},
+export async function fetchSheetTabs(sheet: string, tabs: string[]) {
+	const results = await Promise.all(
+		tabs.map((tab) => fetchSheetTab(sheet, tab)),
 	);
+	const data: Record<string, string[][]> = {};
+	for (let i = 0; i < tabs.length; i++) {
+		data[tabs[i]] = results[i];
+	}
+	return data;
 }

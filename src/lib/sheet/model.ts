@@ -23,6 +23,10 @@ export const entrySchema = z.object({
 	extraInfo: z.string().optional(),
 });
 
+export const annotatedEntrySchema = entrySchema.extend({
+	annotations: z.array(annotationSchema),
+});
+
 export const keywordCategorySchema = z.enum([
 	"element",
 	"weapon",
@@ -46,6 +50,7 @@ export const keywordSchema = z.object({
 	label: z.string(),
 	aliases: z.array(z.string()),
 	types: z.array(z.string()),
+	variant: keywordVariantSchema,
 	references: z.array(z.string()),
 });
 
@@ -54,16 +59,23 @@ export const tabDataSchema = z.object({
 	entries: z.array(entrySchema),
 });
 
+export const annotatedTabDataSchema = z.object({
+	name: z.string(),
+	entries: z.array(annotatedEntrySchema),
+});
+
 export const compendiumDatasetSchema = z.object({
 	generatedAt: z.string(),
-	tabs: z.array(tabDataSchema),
+	tabs: z.array(annotatedTabDataSchema),
 	keywords: z.array(keywordSchema),
 });
 
 export type SourceSpan = z.infer<typeof sourceSpanSchema>;
 export type Annotation = z.infer<typeof annotationSchema>;
 export type Entry = z.infer<typeof entrySchema>;
+export type AnnotatedEntry = z.infer<typeof annotatedEntrySchema>;
 export type KeywordCategory = z.infer<typeof keywordCategorySchema>;
 export type Keyword = z.infer<typeof keywordSchema>;
 export type TabData = z.infer<typeof tabDataSchema>;
+export type AnnotatedTabData = z.infer<typeof annotatedTabDataSchema>;
 export type CompendiumDataset = z.infer<typeof compendiumDatasetSchema>;

@@ -15,8 +15,8 @@ import { fetchSheetTabs } from "./sheet";
 export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 	const rawTabs = await fetchSheetTabs(
 		COMPENDIUM_SHEET_ID,
-		// COMPENDIUM_ACTIVE_TAB_NAMES,
-		["Arc"],
+		COMPENDIUM_ACTIVE_TAB_NAMES,
+		// ["Arc"],
 	);
 	const normalizedTabs = normalizeTabs(rawTabs, COMPENDIUM_TAB_NORMALIZATION);
 

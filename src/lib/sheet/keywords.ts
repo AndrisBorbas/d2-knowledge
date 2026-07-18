@@ -1,6 +1,12 @@
-import { Verbs } from "~/lib/data/glossary";
+import { Verbs } from "@/lib/data/glossary";
 
-import type { Annotation, Entry, Keyword, KeywordCategory } from "./model";
+import type {
+	AnnotatedEntry,
+	Annotation,
+	Entry,
+	Keyword,
+	KeywordCategory,
+} from "./model";
 
 const ELEMENT_TERMS = new Set([
 	"arc",
@@ -69,6 +75,7 @@ export function buildKeywords(entries: Entry[]) {
 				label,
 				aliases: verb?.aliases ?? [],
 				types: verb?.types ?? ["default"],
+				variant: "default",
 				references: [entry.id],
 			});
 			continue;
@@ -153,7 +160,7 @@ export function annotateText(text: string, terms: KeywordMatchTerm[]) {
 
 export function annotateEntries(entries: Entry[], keywords: Keyword[]) {
 	const terms = buildKeywordTerms(keywords);
-	return entries.map((entry) => ({
+	return entries.map((entry): AnnotatedEntry => ({
 		...entry,
 		annotations: annotateText(entry.description, terms),
 	}));

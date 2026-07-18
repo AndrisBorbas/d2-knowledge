@@ -1,5 +1,5 @@
-import { classNames } from "~/lib/data/base";
-import type { Section, TabRules } from "~/lib/sheet/types";
+import { classNames } from "@/lib/data/base";
+import type { Section, TabRules } from "@/lib/sheet/types";
 
 import type { Entry, SourceSpan, TabData } from "./model";
 
@@ -277,7 +277,6 @@ function buildEntriesFromPairedRows(
 				title: titleCell.text,
 				description,
 				source,
-				annotations: [],
 			});
 		}
 
@@ -310,7 +309,6 @@ function buildEntriesFromPairedRows(
 			title: titleCell.text,
 			description: descriptionCell.text,
 			source,
-			annotations: [],
 		});
 	}
 
@@ -322,8 +320,8 @@ function buildEntryFromSameRow(
 	rowIndex: number,
 	row: string[],
 	state: NormalizerState,
-	rule: TabRules,
-) {
+	rule: SameRowRule | TabRules,
+): Entry | null {
 	const nonEmptyCells = getNonEmptyCells(row);
 
 	let title = "",
@@ -335,11 +333,27 @@ function buildEntryFromSameRow(
 		column: 0,
 	};
 
-	if (rule.type === "element") {
+	if ("type" in rule && rule.type === "element") {
+		if (nonEmptyCells.length < 2) return null;
 		title = nonEmptyCells[0].text;
 		description = nonEmptyCells[1]?.text;
 		source.column = nonEmptyCells[0].column;
 		extraInfo = nonEmptyCells[2]?.text;
+	} else if ("titleColumn" in rule) {
+		title = getCell(row, rule.titleColumn);
+		description = getCell(row, rule.descriptionColumn);
+		source.column = rule.titleColumn;
+
+		if (!title || !description) return null;
+
+		if (typeof rule.statColumn === "number") {
+			const stat = getCell(row, rule.statColumn);
+			if (stat.length > 0) {
+				extraInfo = stat;
+			}
+		}
+	} else {
+		return null;
 	}
 
 	return {
@@ -350,13 +364,13 @@ function buildEntryFromSameRow(
 		description,
 		source,
 		extraInfo,
-	} as Entry;
+	};
 }
 
 function buildEntriesFromSetBonusRows(
 	tabName: string,
 	rowIndex: number,
-	rows: string[][],
+	rows: (string[] | null)[],
 	section: string | null,
 	rule: SetBonusRowsRule,
 ) {
@@ -399,7 +413,6 @@ function buildEntriesFromSetBonusRows(
 			title: title,
 			description: firstDescription,
 			source,
-			annotations: [],
 		});
 	}
 
@@ -416,7 +429,6 @@ function buildEntriesFromSetBonusRows(
 			title: title,
 			description: secondDescription,
 			source,
-			annotations: [],
 		});
 	}
 
@@ -451,16 +463,21 @@ type NormalizerState = {
 export function normalizeTabWithRule(
 	tabName: string,
 	rows: (string[] | null)[],
-	rule: TabRules,
+	rule: TabNormalizationRule,
 ): TabData {
 	const entries: Entry[] = [];
 
 	const currentState: NormalizerState = {
-		section: rule.sections?.[0]?.name ?? null,
+		section: "sections" in rule ? (rule.sections?.[0]?.name ?? null) : null,
 		activeClassName: null,
 	};
 
-	const startRow = rule.skipStart ?? 0;
+	const startRow =
+		"skipStart" in rule
+			? (rule.skipStart ?? 0)
+			: "skipRowsAtStart" in rule
+				? (rule.skipRowsAtStart ?? 0)
+				: 0;
 	const endRow = rows.length - 1;
 
 	for (let rowIndex = startRow; rowIndex <= endRow; rowIndex++) {
@@ -468,7 +485,7 @@ export function normalizeTabWithRule(
 		if (!row) continue;
 		if (getNonEmptyCells(row).length === 0) continue;
 
-		if (rule.type === "element") {
+		if ("type" in rule && rule.type === "element") {
 			const currentClass = checkCurrentClass(row);
 			if (currentClass) {
 				currentState.activeClassName = currentClass;
@@ -476,13 +493,16 @@ export function normalizeTabWithRule(
 			}
 		}
 
-		const sectionName = isSectionCandidate(row, rule.sections);
+		const sectionName = isSectionCandidate(
+			row,
+			"sections" in rule ? rule.sections : undefined,
+		);
 		if (sectionName) {
 			currentState.section = sectionName.name;
 			continue;
 		}
 
-		if (rule.type === "element") {
+		if ("type" in rule && rule.type === "element") {
 			if (getNonEmptyCells(row).length === 1) {
 				continue;
 			}
@@ -517,7 +537,11 @@ export function normalizeTabWithRule(
 				continue;
 			}
 
-			if (rule.allowContinuationRows && entries.length > 0) {
+			if (
+				"allowContinuationRows" in rule &&
+				rule.allowContinuationRows &&
+				entries.length > 0
+			) {
 				const titleValue = getCell(row, rule.titleColumn);
 				if (titleValue.length === 0) {
 					const fragmentColumn =
@@ -542,12 +566,15 @@ export function normalizeTabWithRule(
 					}
 				}
 			}
-		} else {
+		} else if (
+			rule.strategy === "set-bonus-two-rows" &&
+			"titleColumn" in rule
+		) {
 			const setBonusEntries = buildEntriesFromSetBonusRows(
 				tabName,
 				rowIndex,
 				rows,
-				section,
+				currentState.section,
 				rule,
 			);
 			if (setBonusEntries.length > 0) {
@@ -555,14 +582,18 @@ export function normalizeTabWithRule(
 				rowIndex += rule.bonusRowOffset ?? 1;
 				continue;
 			}
+		} else {
+			continue;
 		}
 
 		const noteMinLength =
-			rule.strategy === "paired-rows" ? rule.noteMinLength : rule.noteMinLength;
+			"noteMinLength" in rule ? rule.noteMinLength : undefined;
 		const allowNoteRows =
-			rule.strategy === "paired-rows" ? rule.allowNoteRows : rule.allowNoteRows;
+			"allowNoteRows" in rule ? rule.allowNoteRows : undefined;
 
-		if (isNoteCandidate(row, section, allowNoteRows, noteMinLength)) {
+		if (
+			isNoteCandidate(row, currentState.section, allowNoteRows, noteMinLength)
+		) {
 			const cell = getNonEmptyCells(row)[0];
 			const source: SourceSpan = {
 				tab: tabName,
@@ -570,13 +601,17 @@ export function normalizeTabWithRule(
 				column: cell.column,
 			};
 			entries.push({
-				id: createEntryId(tabName, section, `note-${rowIndex + 1}`, source),
+				id: createEntryId(
+					tabName,
+					currentState.section,
+					`note-${rowIndex + 1}`,
+					source,
+				),
 				tab: tabName,
-				section,
+				section: currentState.section,
 				title: "Note",
 				description: cell.text,
 				source,
-				annotations: [],
 			});
 		}
 	}
