@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import type { CompendiumDataset } from "@/lib/sheet/model";
 
-import { TextWithTooltips } from "./Tooltip";
+import { Tooltip } from "./Tooltip";
 
 type CompendiumPreviewProps = {
 	dataset: CompendiumDataset;
@@ -12,7 +12,7 @@ type CompendiumPreviewProps = {
 
 export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	const [activeKeywordId, setActiveKeywordId] = useState<string | null>(null);
-	const keywordById = new Map(
+	const keywordMap = new Map(
 		dataset.keywords.map((keyword) => [keyword.id, keyword]),
 	);
 	const allEntries = dataset.tabs.flatMap((tab) => tab.entries);
@@ -21,8 +21,20 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		0,
 	);
 	const activeKeyword = activeKeywordId
-		? (keywordById.get(activeKeywordId) ?? null)
+		? (keywordMap.get(activeKeywordId) ?? null)
 		: null;
+
+	const handleKeywordHover = (keywordId: string) => {
+		setActiveKeywordId(keywordId);
+	};
+
+	const handleKeywordClick = (keywordId: string) => {
+		setActiveKeywordId(keywordId);
+	};
+
+	const handleKeywordLeave = () => {
+		// Keep the last selected keyword visible instead of clearing immediately.
+	};
 
 	return (
 		<div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-8 px-6 py-10 text-sm md:px-8 lg:px-10">
@@ -72,7 +84,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 					</div>
 				</div>
 				<p className="mt-4 text-xs text-white/45">
-					Generated {new Date(dataset.generatedAt).toLocaleString()}
+					Generated {new Date(dataset.generatedAt).toLocaleString("de-DE")}
 				</p>
 			</header>
 
@@ -137,70 +149,15 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 							</summary>
 							<div className="mt-5 grid gap-4 lg:grid-cols-2">
 								{tab.entries.map((entry) => {
-									const uniqueAnnotationIds = [
-										...new Set(entry.annotations.map((item) => item.keywordId)),
-									];
-
 									return (
-										<article
+										<Tooltip
 											key={entry.id}
-											className="rounded-2xl border border-white/10 bg-white/6 p-4"
-										>
-											<div className="flex items-start justify-between gap-4">
-												<div>
-													<p className="text-xs tracking-[0.18em] text-white/45 uppercase">
-														{entry.section ?? "Unsectioned"}
-													</p>
-													<h3 className="mt-2 text-xl font-semibold text-white">
-														{entry.title}
-													</h3>
-												</div>
-												<span className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs text-white/65">
-													r{entry.source.row + 1} c{entry.source.column + 1}
-												</span>
-											</div>
-
-											<p className="mt-4 text-sm leading-7 whitespace-pre-wrap text-white/80">
-												<TextWithTooltips
-													text={entry.description}
-													annotations={entry.annotations}
-													keywordById={keywordById}
-													onKeywordHover={setActiveKeywordId}
-													onKeywordLeave={() => setActiveKeywordId(null)}
-													onKeywordClick={setActiveKeywordId}
-												/>
-											</p>
-
-											{entry.extraInfo ? (
-												<p className="mt-4 rounded-2xl border border-white/10 bg-black/25 px-3 py-2 text-xs leading-6 text-white/60">
-													{entry.extraInfo}
-												</p>
-											) : null}
-
-											<div className="mt-4 flex flex-wrap gap-2">
-												{uniqueAnnotationIds.length > 0 ? (
-													uniqueAnnotationIds.map((keywordId) => {
-														const keyword = keywordById.get(keywordId);
-														if (!keyword) return null;
-
-														return (
-															<button
-																key={keyword.id}
-																type="button"
-																onClick={() => setActiveKeywordId(keyword.id)}
-																className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs text-white/72 transition hover:bg-white/14"
-															>
-																{keyword.label}
-															</button>
-														);
-													})
-												) : (
-													<span className="text-xs text-white/45">
-														No keyword matches
-													</span>
-												)}
-											</div>
-										</article>
+											entry={entry}
+											keywordMap={keywordMap}
+											onKeywordHover={handleKeywordHover}
+											onKeywordLeave={handleKeywordLeave}
+											onKeywordClick={handleKeywordClick}
+										></Tooltip>
 									);
 								})}
 							</div>

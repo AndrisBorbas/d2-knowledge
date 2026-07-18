@@ -13,6 +13,35 @@ export const annotationSchema = z.object({
 	text: z.string(),
 });
 
+export const unifiedSourceIdSchema = z.enum([
+	"sheet",
+	"foundry",
+	"bungie",
+	"manual",
+]);
+
+export const unifiedEntryKindSchema = z.enum([
+	"armor_set_bonus",
+	"weapon_perk_or_verb",
+	"ability",
+	"artifact_perk",
+	"exotic_item_perk",
+	"general",
+]);
+
+export const unifiedSourceRefSchema = z.object({
+	sourceId: unifiedSourceIdSchema,
+	sourceKey: z.string(),
+	tab: z.string().optional(),
+	row: z.number().int().nonnegative().optional(),
+	column: z.number().int().nonnegative().optional(),
+	hash: z.number().int().nonnegative().optional(),
+	itemHash: z.number().int().nonnegative().optional(),
+	itemName: z.string().optional(),
+	type: z.string().optional(),
+	updatedAt: z.number().int().nonnegative().optional(),
+});
+
 export const entrySchema = z.object({
 	id: z.string(),
 	tab: z.string(),
@@ -21,6 +50,14 @@ export const entrySchema = z.object({
 	title: z.string(),
 	description: z.string(),
 	extraInfo: z.string().optional(),
+	kind: unifiedEntryKindSchema.optional(),
+	sourceId: unifiedSourceIdSchema.optional(),
+	sourceRefs: z.array(unifiedSourceRefSchema).optional(),
+	secondaryName: z.string().optional(),
+	iconPath: z.string().optional(),
+	secondaryIconPath: z.string().optional(),
+	itemHash: z.number().int().nonnegative().optional(),
+	perkHash: z.number().int().nonnegative().optional(),
 });
 
 export const annotatedEntrySchema = entrySchema.extend({
@@ -72,6 +109,9 @@ export const compendiumDatasetSchema = z.object({
 
 export type SourceSpan = z.infer<typeof sourceSpanSchema>;
 export type Annotation = z.infer<typeof annotationSchema>;
+export type UnifiedSourceId = z.infer<typeof unifiedSourceIdSchema>;
+export type UnifiedEntryKind = z.infer<typeof unifiedEntryKindSchema>;
+export type UnifiedSourceRef = z.infer<typeof unifiedSourceRefSchema>;
 export type Entry = z.infer<typeof entrySchema>;
 export type AnnotatedEntry = z.infer<typeof annotatedEntrySchema>;
 export type KeywordCategory = z.infer<typeof keywordCategorySchema>;

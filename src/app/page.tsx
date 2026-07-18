@@ -1,9 +1,9 @@
 import { CompendiumPreview } from "@/components/CompendiumPreview";
-import { buildCompendiumDataset } from "@/lib/sheet/compendium";
+import { loadCompendiumDataset } from "@/lib/sheet/compiled";
 
 export default async function Home() {
 	try {
-		const dataset = await buildCompendiumDataset();
+		const dataset = await loadCompendiumDataset();
 
 		return (
 			<main className="flex-1">

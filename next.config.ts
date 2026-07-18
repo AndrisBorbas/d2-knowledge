@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
 	/* config options here */
 	reactCompiler: true,
 	reactStrictMode: true,
+	transpilePackages: ["bungie-api-ts"],
 	images: {
 		unoptimized: true,
 		remotePatterns: [

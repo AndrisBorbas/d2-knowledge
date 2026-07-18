@@ -1,34 +1,42 @@
 import {
-	COMPENDIUM_ACTIVE_TAB_NAMES,
-	COMPENDIUM_SHEET_ID,
-	COMPENDIUM_TAB_NORMALIZATION,
-} from "./data";
+	groupEntriesByTab,
+	mergeUnifiedEntries,
+	toEntries,
+} from "@/lib/data/aggregate";
+import { loadFoundrySource } from "@/lib/data/sources/foundry";
+import { loadSheetSource } from "@/lib/data/sources/sheet";
 import { annotateEntries, buildKeywords } from "./keywords";
-import {
-	type CompendiumDataset,
-	compendiumDatasetSchema,
-	type Entry,
-} from "./model";
-import { normalizeTabs } from "./normalize";
-import { fetchSheetTabs } from "./sheet";
+import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
 
 export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
-	const rawTabs = await fetchSheetTabs(
-		COMPENDIUM_SHEET_ID,
-		COMPENDIUM_ACTIVE_TAB_NAMES,
-		// ["Arc"],
-	);
-	const normalizedTabs = normalizeTabs(rawTabs, COMPENDIUM_TAB_NORMALIZATION);
+	const [sheetSource, foundrySource] = await Promise.all([
+		loadSheetSource(),
+		loadFoundrySource(),
+	]);
 
-	const allEntries: Entry[] = normalizedTabs.flatMap((tab) => tab.entries);
-	const keywords = buildKeywords(allEntries);
-	const annotatedEntries = annotateEntries(allEntries, keywords);
+	const mergedUnifiedEntries = mergeUnifiedEntries([
+		...sheetSource.unifiedEntries,
+		...foundrySource.unifiedEntries,
+	]);
+	const mergedEntries = toEntries(mergedUnifiedEntries);
 
-	const entryMap = new Map(annotatedEntries.map((entry) => [entry.id, entry]));
-	const tabs = normalizedTabs.map((tab) => ({
-		name: tab.name,
-		entries: tab.entries.map((entry) => entryMap.get(entry.id) ?? entry),
-	}));
+	const keywords = buildKeywords(mergedEntries);
+	const annotatedEntries = annotateEntries(mergedEntries, keywords);
+
+	const groupedByTab = groupEntriesByTab(annotatedEntries);
+	const orderedTabNames = [
+		...sheetSource.tabs.map((tab) => tab.name),
+		...Array.from(groupedByTab.keys()).filter(
+			(tabName) => !sheetSource.tabs.some((tab) => tab.name === tabName),
+		),
+	];
+
+	const tabs = orderedTabNames
+		.map((tabName) => ({
+			name: tabName,
+			entries: groupedByTab.get(tabName) ?? [],
+		}))
+		.filter((tab) => tab.entries.length > 0);
 
 	const dataset = {
 		generatedAt: new Date().toISOString(),

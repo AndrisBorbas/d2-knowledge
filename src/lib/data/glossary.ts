@@ -4,6 +4,16 @@ export type Verb = {
 	aliases?: string[];
 };
 
+export type KeywordColor =
+	| "default"
+	| "arc"
+	| "solar"
+	| "void"
+	| "stasis"
+	| "strand"
+	| "prismatic"
+	| "masterwork";
+
 export const Verbs: Verb[] = [
 	// Arc
 	{ name: "Amplified", types: ["Arc", "Buff"] },
@@ -73,7 +83,11 @@ export const Verbs: Verb[] = [
 	{ name: "Woven Mail", types: ["Strand", "Buff"] },
 	{ name: "Sever", types: ["Strand", "Debuff"], aliases: ["Severed"] },
 	{ name: "Suspend", types: ["Strand", "Debuff"], aliases: ["Suspended"] },
-	{ name: "Unravel", types: ["Strand", "Debuff"], aliases: ["Unraveled"] },
+	{
+		name: "Unravel",
+		types: ["Strand", "Debuff"],
+		aliases: ["Unraveled", "Unraveling Threads", "Thread", "Threads"],
+	},
 	{
 		name: "Unraveling Rounds",
 		types: ["Strand", "Buff"],
@@ -86,3 +100,35 @@ export const Verbs: Verb[] = [
 	},
 	// General
 ] as const;
+
+export function getKeywordColorFromTypes(types: string[]): KeywordColor {
+	if (types.includes("Arc")) return "arc";
+	if (types.includes("Solar")) return "solar";
+	if (types.includes("Void")) return "void";
+	if (types.includes("Stasis")) return "stasis";
+	if (types.includes("Strand")) return "strand";
+	if (types.includes("Prismatic")) return "prismatic";
+	if (types.includes("Masterwork")) return "masterwork";
+	return "default";
+}
+
+export function getClassFromColor(colors: KeywordColor): string {
+	switch (colors) {
+		case "arc":
+			return "text-arc";
+		case "solar":
+			return "text-solar";
+		case "void":
+			return "text-void";
+		case "stasis":
+			return "text-stasis";
+		case "strand":
+			return "text-strand";
+		case "prismatic":
+			return "text-prismatic";
+		case "masterwork":
+			return "text-masterwork";
+		default:
+			return "text-foreground";
+	}
+}

@@ -116,4 +116,10 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		skipStart: 2,
 		sections: elementSections,
 	},
+	Prismatic: {
+		strategy: "same-row",
+		type: "element",
+		skipStart: 2,
+		sections: elementSections,
+	},
 };
