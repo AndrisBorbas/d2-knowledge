@@ -67,7 +67,7 @@ export function classifyUnifiedKind(params: {
 	}
 
 	if (
-		tabText.includes("ability") ||
+		tabText.includes("abilit") ||
 		tabText.includes("grenade") ||
 		tabText.includes("melee") ||
 		tabText.includes("aspect") ||

@@ -1,14 +1,15 @@
 "use client";
 
 import { X } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
 import { useQueryState } from "nuqs";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Group, Panel, Separator } from "react-resizable-panels";
 
 import type { CompendiumDataset } from "@/lib/sheet/model";
 import { cn, fuzzyFilterCompendiumTabs } from "@/lib/utils";
 
 import { Tooltip } from "./Tooltip";
+import { VirtualEntryGrid } from "./VirtualEntryGrid";
 
 type CompendiumPreviewProps = {
 	dataset: CompendiumDataset;
@@ -314,22 +315,13 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		}
 
 		return (
-			<div className="grid gap-4 xl:grid-cols-2">
-				{orderedEntryItems.map(({ tabName, entry }) => (
-					<div key={entry.id} className="space-y-2">
-						<span className="inline-flex rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs tracking-[0.12em] text-white/65 uppercase">
-							{tabName}
-						</span>
-						<Tooltip
-							entry={entry}
-							keywordMap={keywordMap}
-							onKeywordHover={handleKeywordHover}
-							onKeywordLeave={handleKeywordLeave}
-							onKeywordClick={handleKeywordClick}
-						/>
-					</div>
-				))}
-			</div>
+			<VirtualEntryGrid
+				items={orderedEntryItems}
+				keywordMap={keywordMap}
+				onKeywordHover={handleKeywordHover}
+				onKeywordLeave={handleKeywordLeave}
+				onKeywordClick={handleKeywordClick}
+			/>
 		);
 	};
 
@@ -459,18 +451,18 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 			</header>
 
 			<div className="min-h-[60vh]">
-				<div className="lg:hidden">{renderEntryList()}</div>
+				<div className="h-[70vh] lg:hidden">{renderEntryList()}</div>
 
 				<Group
 					orientation="horizontal"
 					className="hidden max-h-[calc(100vh-2rem)] min-h-[60vh] lg:flex"
 				>
 					<Panel defaultSize="68%" minSize="40%">
-						<div className="h-full p-4">
-							<p className="text-xs font-semibold tracking-[0.25em] text-white/55 uppercase">
+						<div className="flex h-full flex-col p-4">
+							<p className="shrink-0 text-xs font-semibold tracking-[0.25em] text-white/55 uppercase">
 								Tooltip Browser
 							</p>
-							<div className="mt-4">{renderEntryList()}</div>
+							<div className="mt-4 min-h-0 flex-1">{renderEntryList()}</div>
 						</div>
 					</Panel>
 					<Separator className="group mx-2 flex w-2 items-center justify-center rounded-full bg-white/6 transition hover:bg-white/12">

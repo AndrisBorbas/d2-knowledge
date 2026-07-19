@@ -24,6 +24,18 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 		if (entry.iconPath) return entry;
 		if (!bungieResolver) return entry;
 
+		if (entry.section === "Aspect") {
+			const itemEnrichment = bungieResolver.getItemEnrichmentByTitle(
+				entry.title,
+			);
+			if (itemEnrichment?.itemIconPath) {
+				return {
+					...entry,
+					iconPath: itemEnrichment.itemIconPath,
+				};
+			}
+		}
+
 		const enrichment = bungieResolver.getPerkEnrichmentByTitle(entry.title);
 		if (!enrichment?.perkIconPath) return entry;
 

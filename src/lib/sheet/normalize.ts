@@ -356,8 +356,6 @@ function buildEntryFromSameRow(
 		return null;
 	}
 
-	console.log(`Processing row ${rowIndex + 1} in tab "${tabName}":`);
-
 	if (
 		"type" in rule &&
 		rule.type === "element" &&
@@ -370,7 +368,6 @@ function buildEntryFromSameRow(
 		if (!normalizedTitle.startsWith(normalizedPrefix)) {
 			title = `${rule.fragmentTitlePrefix} ${title}`;
 		}
-		console.log(title);
 	}
 
 	return {

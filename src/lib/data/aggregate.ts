@@ -1,5 +1,6 @@
 import type { Entry } from "@/lib/sheet/model";
 
+import { FOUNDRY_FALLBACK_TAB } from "./sources/foundry";
 import {
 	toCanonicalTitleKey,
 	type UnifiedEntry,
@@ -96,8 +97,14 @@ export function mergeUnifiedEntries(
 		const candidatePriority = getPriorityIndex(candidate.sourceId, priority);
 		const existingPriority = getPriorityIndex(existing.sourceId, priority);
 		if (candidatePriority < existingPriority) {
+			const preserveExistingTab =
+				candidate.tab === FOUNDRY_FALLBACK_TAB &&
+				existing.tab !== FOUNDRY_FALLBACK_TAB;
 			byKey.set(key, {
 				...candidate,
+				...(preserveExistingTab
+					? { tab: existing.tab, section: existing.section }
+					: {}),
 				sourceRefs: [...candidate.sourceRefs, ...existing.sourceRefs],
 			});
 			continue;

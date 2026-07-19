@@ -102,6 +102,8 @@ function flattenFoundryDescription(
 	return cleanupText(lines.join("\n"));
 }
 
+export const FOUNDRY_FALLBACK_TAB = "Foundry";
+
 function mapFoundryTypeToTab(type: string | undefined) {
 	const normalized = (type ?? "").toLowerCase();
 	if (normalized.includes("trait exotic")) return "Exotic Perks";
@@ -113,7 +115,7 @@ function mapFoundryTypeToTab(type: string | undefined) {
 		return "Weapon Perks";
 	}
 	if (normalized.includes("armor mod")) return "Armor Mods";
-	return "Foundry";
+	return FOUNDRY_FALLBACK_TAB;
 }
 
 function toEntry(record: FoundryRecord, index: number): Entry | null {

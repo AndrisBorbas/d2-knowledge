@@ -13,6 +13,7 @@
 		"data:compile": "bun run data:bungie:snapshot && bun run data:compendium:snapshot"
 	},
 	"dependencies": {
+		"@tanstack/react-virtual": "^3.14.6",
 		"bungie-api-ts": "^5.10.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",

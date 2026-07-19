@@ -78,6 +78,10 @@ export type BungieManifestSnapshotResolver = {
 		perkName?: string;
 		perkIconPath?: string;
 	} | null;
+	getItemEnrichmentByTitle(title: string): {
+		itemName?: string;
+		itemIconPath?: string;
+	} | null;
 };
 
 class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
@@ -85,6 +89,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly perkTable: Record<string, BungieManifestRow> | null;
 	private readonly traitTable: Record<string, BungieManifestRow> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
+	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
 
 	constructor(snapshot: BungieManifestSnapshot) {
 		this.inventoryTable = asRecord<BungieManifestRow>(
@@ -97,13 +102,18 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			snapshot.tables?.DestinyTraitDefinition,
 		);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
+		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
 
-		this.addDisplayNames(this.traitTable);
-		this.addDisplayNames(this.perkTable);
-		this.addDisplayNames(this.inventoryTable);
+		this.addDisplayNames(this.traitTable, this.displayByName);
+		this.addDisplayNames(this.perkTable, this.displayByName);
+		this.addDisplayNames(this.inventoryTable, this.displayByName);
+		this.addDisplayNames(this.inventoryTable, this.itemDisplayByName);
 	}
 
-	private addDisplayNames(table: Record<string, BungieManifestRow> | null) {
+	private addDisplayNames(
+		table: Record<string, BungieManifestRow> | null,
+		target: Map<string, BungieDisplayProperties>,
+	) {
 		if (!table) return;
 
 		for (const row of Object.values(table)) {
@@ -111,8 +121,8 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			const icon = row.i ?? row.displayProperties?.icon;
 			if (!name || !icon) continue;
 			const key = normalizeLookupName(name);
-			if (!key || this.displayByName.has(key)) continue;
-			this.displayByName.set(key, { name, icon });
+			if (!key || target.has(key)) continue;
+			target.set(key, { name, icon });
 		}
 	}
 
@@ -155,6 +165,18 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		return {
 			perkName: display.name,
 			perkIconPath: normalizeIconPath(display.icon),
+		};
+	}
+
+	getItemEnrichmentByTitle(title: string) {
+		const key = normalizeLookupName(title);
+		if (!key) return null;
+		const display = this.itemDisplayByName.get(key);
+		if (!display) return null;
+
+		return {
+			itemName: display.name,
+			itemIconPath: normalizeIconPath(display.icon),
 		};
 	}
 }
