@@ -6,22 +6,29 @@ type BungieDisplayProperties = {
 	icon?: string;
 };
 
-type BungieInventoryDefinition = {
-	displayProperties?: BungieDisplayProperties;
-};
-
-type BungieSandboxPerkDefinition = {
+type BungieManifestRow = {
+	n?: string;
+	i?: string;
 	displayProperties?: BungieDisplayProperties;
 };
 
 type BungieManifestSnapshot = {
 	tables?: {
-		DestinyInventoryItemDefinition?: Record<string, BungieInventoryDefinition>;
-		DestinySandboxPerkDefinition?: Record<string, BungieSandboxPerkDefinition>;
+		DestinyInventoryItemDefinition?: Record<string, BungieManifestRow>;
+		DestinySandboxPerkDefinition?: Record<string, BungieManifestRow>;
+		DestinyTraitDefinition?: Record<string, BungieManifestRow>;
 	};
 };
 
 const BUNGIE_CDN_BASE = "https://www.bungie.net";
+
+function normalizeLookupName(value: string) {
+	return value
+		.toLowerCase()
+		.trim()
+		.replace(/[^a-z0-9]+/g, " ")
+		.replace(/\s+/g, " ");
+}
 
 function asRecord<T>(value: unknown) {
 	if (!value || typeof value !== "object") return null;
@@ -40,16 +47,19 @@ function normalizeIconPath(value: string | undefined) {
 }
 
 function getDisplayProperties(
-	table: Record<
-		string,
-		BungieInventoryDefinition | BungieSandboxPerkDefinition
-	> | null,
+	table: Record<string, BungieManifestRow> | null,
 	hash: number | undefined,
 ) {
 	if (!table || hash === undefined) return null;
 	const row = table[String(hash)];
 	if (!row) return null;
-	return row.displayProperties ?? null;
+	const name = row.n ?? row.displayProperties?.name;
+	const icon = row.i ?? row.displayProperties?.icon;
+	if (!name && !icon) return null;
+	return {
+		name,
+		icon,
+	} satisfies BungieDisplayProperties;
 }
 
 export type BungieExoticEnrichment = {
@@ -64,25 +74,46 @@ export type BungieManifestSnapshotResolver = {
 		itemHash?: number;
 		perkHash?: number;
 	}): BungieExoticEnrichment;
+	getPerkEnrichmentByTitle(title: string): {
+		perkName?: string;
+		perkIconPath?: string;
+	} | null;
 };
 
 class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
-	private readonly inventoryTable: Record<
-		string,
-		BungieInventoryDefinition
-	> | null;
-	private readonly perkTable: Record<
-		string,
-		BungieSandboxPerkDefinition
-	> | null;
+	private readonly inventoryTable: Record<string, BungieManifestRow> | null;
+	private readonly perkTable: Record<string, BungieManifestRow> | null;
+	private readonly traitTable: Record<string, BungieManifestRow> | null;
+	private readonly displayByName: Map<string, BungieDisplayProperties>;
 
 	constructor(snapshot: BungieManifestSnapshot) {
-		this.inventoryTable = asRecord<BungieInventoryDefinition>(
+		this.inventoryTable = asRecord<BungieManifestRow>(
 			snapshot.tables?.DestinyInventoryItemDefinition,
 		);
-		this.perkTable = asRecord<BungieSandboxPerkDefinition>(
+		this.perkTable = asRecord<BungieManifestRow>(
 			snapshot.tables?.DestinySandboxPerkDefinition,
 		);
+		this.traitTable = asRecord<BungieManifestRow>(
+			snapshot.tables?.DestinyTraitDefinition,
+		);
+		this.displayByName = new Map<string, BungieDisplayProperties>();
+
+		this.addDisplayNames(this.traitTable);
+		this.addDisplayNames(this.perkTable);
+		this.addDisplayNames(this.inventoryTable);
+	}
+
+	private addDisplayNames(table: Record<string, BungieManifestRow> | null) {
+		if (!table) return;
+
+		for (const row of Object.values(table)) {
+			const name = row.n ?? row.displayProperties?.name;
+			const icon = row.i ?? row.displayProperties?.icon;
+			if (!name || !icon) continue;
+			const key = normalizeLookupName(name);
+			if (!key || this.displayByName.has(key)) continue;
+			this.displayByName.set(key, { name, icon });
+		}
 	}
 
 	getExoticEnrichment(params: { itemHash?: number; perkHash?: number }) {
@@ -98,13 +129,32 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			this.inventoryTable,
 			params.perkHash,
 		);
-		const perkDisplay = perkDisplayFromSandbox ?? perkDisplayFromInventory;
+		const perkDisplayFromTrait = getDisplayProperties(
+			this.traitTable,
+			params.perkHash,
+		);
+		const perkDisplay =
+			perkDisplayFromInventory ??
+			perkDisplayFromTrait ??
+			perkDisplayFromSandbox;
 
 		return {
 			itemName: itemDisplay?.name,
 			itemIconPath: normalizeIconPath(itemDisplay?.icon),
 			perkName: perkDisplay?.name,
 			perkIconPath: normalizeIconPath(perkDisplay?.icon),
+		};
+	}
+
+	getPerkEnrichmentByTitle(title: string) {
+		const key = normalizeLookupName(title);
+		if (!key) return null;
+		const display = this.displayByName.get(key);
+		if (!display) return null;
+
+		return {
+			perkName: display.name,
+			perkIconPath: normalizeIconPath(display.icon),
 		};
 	}
 }

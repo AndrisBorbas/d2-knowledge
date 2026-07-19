@@ -3,6 +3,7 @@ import {
 	mergeUnifiedEntries,
 	toEntries,
 } from "@/lib/data/aggregate";
+import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
 import { loadFoundrySource } from "@/lib/data/sources/foundry";
 import { loadSheetSource } from "@/lib/data/sources/sheet";
 import { annotateEntries, buildKeywords } from "./keywords";
@@ -18,7 +19,20 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 		...sheetSource.unifiedEntries,
 		...foundrySource.unifiedEntries,
 	]);
-	const mergedEntries = toEntries(mergedUnifiedEntries);
+	const bungieResolver = await loadBungieManifestSnapshotResolver();
+	const enrichedUnifiedEntries = mergedUnifiedEntries.map((entry) => {
+		if (entry.iconPath) return entry;
+		if (!bungieResolver) return entry;
+
+		const enrichment = bungieResolver.getPerkEnrichmentByTitle(entry.title);
+		if (!enrichment?.perkIconPath) return entry;
+
+		return {
+			...entry,
+			iconPath: enrichment.perkIconPath,
+		};
+	});
+	const mergedEntries = toEntries(enrichedUnifiedEntries);
 
 	const keywords = buildKeywords(mergedEntries);
 	const annotatedEntries = annotateEntries(mergedEntries, keywords);

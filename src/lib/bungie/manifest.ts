@@ -9,7 +9,6 @@ import { getBungieHttpClient } from "./client";
 export const DEFAULT_MANIFEST_TABLES: DestinyManifestComponentName[] = [
 	"DestinyInventoryItemDefinition",
 	"DestinySandboxPerkDefinition",
-	"DestinyPlugSetDefinition",
 	"DestinyTraitDefinition",
 ];
 

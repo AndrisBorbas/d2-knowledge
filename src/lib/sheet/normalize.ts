@@ -356,6 +356,23 @@ function buildEntryFromSameRow(
 		return null;
 	}
 
+	console.log(`Processing row ${rowIndex + 1} in tab "${tabName}":`);
+
+	if (
+		"type" in rule &&
+		rule.type === "element" &&
+		state.section === "Fragments" &&
+		typeof rule.fragmentTitlePrefix === "string" &&
+		rule.fragmentTitlePrefix.length > 0
+	) {
+		const normalizedTitle = normalizeForMatch(title);
+		const normalizedPrefix = normalizeForMatch(rule.fragmentTitlePrefix);
+		if (!normalizedTitle.startsWith(normalizedPrefix)) {
+			title = `${rule.fragmentTitlePrefix} ${title}`;
+		}
+		console.log(title);
+	}
+
 	return {
 		id: createEntryId(tabName, state.section, title, source),
 		tab: tabName,

@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import { CompendiumPreview } from "@/components/CompendiumPreview";
 import { loadCompendiumDataset } from "@/lib/sheet/compiled";
 
@@ -7,7 +9,9 @@ export default async function Home() {
 
 		return (
 			<main className="flex-1">
-				<CompendiumPreview dataset={dataset} />
+				<Suspense fallback={null}>
+					<CompendiumPreview dataset={dataset} />
+				</Suspense>
 			</main>
 		);
 	} catch (error) {
