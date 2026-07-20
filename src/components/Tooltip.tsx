@@ -262,7 +262,7 @@ function SetBonusContent({
 	onKeywordClick,
 }: TooltipContentProps) {
 	return (
-		<p className="p-4 text-sm leading-7 whitespace-pre-wrap text-white/90">
+		<p className="p-4 text-sm whitespace-pre-wrap text-white/90">
 			<TextWithTooltips
 				text={entry.description}
 				annotations={entry.annotations}
@@ -289,7 +289,7 @@ function ExoticContent({
 		<>
 			<div className="grid gap-2 px-4 sm:grid-cols-2">
 				<div className="rounded-xl border border-white/10 bg-black/30 px-3 py-2">
-					<div className="flex items-center gap-2">
+					<div className="grid grid-cols-[50px_1fr] items-center gap-2">
 						<IconSlot
 							iconPath={entry.secondaryIconPath}
 							label={entry.secondaryName ?? "Exotic Item"}
@@ -305,7 +305,7 @@ function ExoticContent({
 					</div>
 				</div>
 				<div className="rounded-xl border border-white/10 bg-black/30 px-3 py-2">
-					<div className="flex items-center gap-2">
+					<div className="grid grid-cols-[50px_1fr] items-center gap-2">
 						<IconSlot iconPath={entry.iconPath} label={entry.title} />
 						<div>
 							<p className="text-[11px] tracking-[0.14em] text-white/45 uppercase">
@@ -317,7 +317,7 @@ function ExoticContent({
 				</div>
 			</div>
 
-			<p className="p-4 text-sm leading-7 whitespace-pre-wrap text-white/90">
+			<p className="p-4 text-sm whitespace-pre-wrap text-white/90">
 				<TextWithTooltips
 					text={entry.description}
 					annotations={entry.annotations}
@@ -397,7 +397,7 @@ export function Tooltip({
 			key={entry.id}
 			className="h-fit border border-white/10 bg-blue-950/10 backdrop-blur-md"
 		>
-			<div className="flex items-center justify-start gap-4 border-b border-blue-600/50 bg-blue-950/30">
+			<div className="grid grid-cols-[66px_1fr] items-center justify-start gap-4 border-b border-blue-600/50 bg-blue-950/30">
 				<div className="bg-blue-950/50 p-2">
 					<IconSlot iconPath={entry.iconPath} label={entry.title} />
 				</div>
@@ -414,7 +414,7 @@ export function Tooltip({
 			/>
 
 			{entry.extraInfo ? (
-				<p className="m-4 mt-0 rounded-2xl border border-white/10 bg-black/25 px-3 py-2 text-xs leading-6 text-white/60">
+				<p className="m-4 mt-0 rounded-2xl border border-white/10 bg-black/25 px-3 py-2 text-xs text-white/60">
 					{entry.extraInfo}
 				</p>
 			) : null}
