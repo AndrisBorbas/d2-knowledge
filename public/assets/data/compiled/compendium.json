@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T17:01:08.336Z",
+  "generatedAt": "2026-07-20T15:11:00.990Z",
   "tabs": [
     {
       "name": "Armor Perks",
@@ -468,7 +468,7 @@
             "column": 0
           },
           "title": "Crystocrene\n\nEuropa\nDestination",
-          "description": "2-piece: 2 Piece | Resupply\n\nScoring a kill spawns an Orb of Power that grants 1?% Super Energy, as well as +20% Special Ammo Progress and +20% Power Ammo Progress.\nIncurs a 12 second cooldown before it can retrigger.\n4-piece: 4 Piece | From the Storm\n\nAfter having maintained a state of not dealing or receiving damage for at least 12 seconds:\nGrants a stack of Frost Armor every 3 seconds.\nStacks up to x5 Frost Armor, refreshing its duration every 3 seconds.",
+          "description": "2-piece: 2 Piece | Resupply\n\nScoring a kill spawns an Orb of Power that grants 1?% Super Energy, as well as +20% Special Ammo Progress and +20% Heavy Ammo Progress.\nIncurs a 12 second cooldown before it can retrigger.\n4-piece: 4 Piece | From the Storm\n\nAfter having maintained a state of not dealing or receiving damage for at least 12 seconds:\nGrants a stack of Frost Armor every 3 seconds.\nStacks up to x5 Frost Armor, refreshing its duration every 3 seconds.",
           "kind": "armor_set_bonus",
           "sourceId": "sheet",
           "sourceRefs": [
@@ -905,7 +905,7 @@
             "column": 0
           },
           "title": "Great Hunt\n\nLast Wish\nRaid",
-          "description": "2-piece: 2 Piece | Taken Barrier\n\nOn Grenade Kill:\nResist x1 (10% [2.5%] DR) for 7 seconds.\n4-piece: 4 Piece | Taken Armaments\n\nOn Grenade Kill:\n?% Heavy Ammo Progress.",
+          "description": "2-piece: 2 Piece | Taken Barrier\n\nOn Grenade Kill:\nResist x1 (10% [2.5%] DR) for 7 seconds.\n4-piece: 4 Piece | Taken Armaments\n\nOn Grenade Kill:\n+10% Heavy Ammo Progress.",
           "kind": "armor_set_bonus",
           "sourceId": "sheet",
           "sourceRefs": [
@@ -1267,7 +1267,7 @@
             "column": 0
           },
           "title": "Oryx's Memory\n\nKing's Fall\nRaid",
-          "description": "2-piece: 2 Piece | Iron Sharpens Iron\n\nOn Elite+/Guardian Kill:\n+12% Special and +8% Power Ammo Progress.\n4-piece: 4 Piece | Ascendant Escape\n\nOn Elite+ Kill:\nGrants Ascendant Escape.\n\nAscendant Escape: Upon reaching Critical Health or being damaged while at Critical Health:\nInvisibility for 6+? seconds.",
+          "description": "2-piece: 2 Piece | Iron Sharpens Iron\n\nOn Elite+/Guardian Kill:\n+12% Special and +7.5% Heavy Ammo Progress.\n4-piece: 4 Piece | Ascendant Escape\n\nOn Elite+ Kill:\nGrants Ascendant Escape.\n\nAscendant Escape: Upon reaching Critical Health or being damaged while at Critical Health:\nInvisibility for 6+? seconds.",
           "kind": "armor_set_bonus",
           "sourceId": "sheet",
           "sourceRefs": [
@@ -1289,8 +1289,8 @@
           "annotations": [
             {
               "keywordId": "invisibility",
-              "start": 276,
-              "end": 288,
+              "start": 278,
+              "end": 290,
               "text": "Invisibility"
             }
           ]
@@ -1869,7 +1869,7 @@
             "column": 0
           },
           "title": "TM Custom\n\nSpire of the Watcher\nDungeon",
-          "description": "2-piece: 2 Piece | Old Martian Diplomacy\n\nOn Weapon Stow after scoring an Elite+ or Guardian Kill:\nRestores 40? HP and disorients Combatants within 12 meters.\nIncurs a 2? second cooldown between activations\n4-piece: 4 Piece | High Noon\n\nUpon readying a weapon:\n7% Increased Weakspot Damage against Combatants for 4 seconds.\n\n\nBonus is doubled to 14% Increased Weakspot Damage for the following:\nWeapons with the Tex Balanced Stock Origin Trait and Tex Mechanica Exotics.\nDead Man's Tale | Huckleberry | Last Word | Tarrabah | Chaperone | Prospector",
+          "description": "2-piece: 2 Piece | Old Martian Diplomacy\n\nOn Weapon Stow after scoring an Elite+ or Guardian Kill:\nRestores 40? HP and disorients Combatants within 12 meters.\nIncurs a 2? second cooldown between activations\n4-piece: 4 Piece | High Noon\n\nUpon readying a weapon:\n7% Increased Weakspot Damage against Combatants for 4 seconds.\nBuffs \"Precision Hits\" against Shielded Combatants and works on weapons without Precision Multipliers as long as they hit the weakspot.\nWeakspot Buffs do not work on a Divinity Bubble\n\nBonus is doubled to 14% Increased Weakspot Damage for the following:\nWeapons with the Tex Balanced Stock Origin Trait and Tex Mechanica Exotics.\nDead Man's Tale | Huckleberry | Last Word | Tarrabah | Chaperone | Prospector",
           "kind": "armor_set_bonus",
           "sourceId": "sheet",
           "sourceRefs": [
@@ -1891,8 +1891,8 @@
           "annotations": [
             {
               "keywordId": "tex-balanced-stock",
-              "start": 412,
-              "end": 430,
+              "start": 595,
+              "end": 613,
               "text": "Tex Balanced Stock"
             }
           ]
@@ -7511,7 +7511,7 @@
             "column": 1
           },
           "title": "Flashbang Grenade",
-          "description": "Medium Trajectory\n\nExplodes after its speed is sufficiently reduced. Has a brief delay before it can explode.\n\nExplosion deals up to 684 [120] damage, down to 0% damage over a 7.5 meter radius, and inflicts blind to enemies within 10 meters for up to 5 [3] seconds.\nThe user is immune to self-blind.",
+          "description": "Medium Trajectory\n\nExplodes after its speed is sufficiently reduced. Has a brief delay before it can explode.\n\nExplosion deals up to 684 [120] damage, down to 0% damage over a 7.5 meter radius, and inflicts blind to enemies within 10 meters for up to 5 [3] seconds.\nThe user is immune to self-blind.\n\nAspect — Touch of Thunder: Explodes an additional time on impact, dealing up to 684 [?] damage over 7.5 meters and inflicting blind to enemies within 5 meters.",
           "extraInfo": "Base Cooldown: 131.7 seconds\n\nChunk Scalar: 0.875x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -7537,65 +7537,17 @@
               "start": 293,
               "end": 298,
               "text": "blind"
-            }
-          ]
-        },
-        {
-          "id": "sheet:touch-of-thunder:29:1",
-          "tab": "Arc",
-          "section": "Grenade Abilities",
-          "source": {
-            "tab": "Arc",
-            "row": 29,
-            "column": 1
-          },
-          "title": "Touch of Thunder",
-          "description": "Explodes an additional time on impact, dealing up to 684 [?] damage over 7.5 meters and inflicting blind to enemies within 5 meters.",
-          "kind": "ability",
-          "sourceId": "sheet",
-          "sourceRefs": [
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Arc:29:1",
-              "tab": "Arc",
-              "row": 29,
-              "column": 1
             },
             {
-              "sourceId": "sheet",
-              "sourceKey": "Arc:32:1",
-              "tab": "Arc",
-              "row": 32,
-              "column": 1
+              "keywordId": "touch-of-thunder",
+              "start": 310,
+              "end": 326,
+              "text": "Touch of Thunder"
             },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Arc:34:1",
-              "tab": "Arc",
-              "row": 34,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Arc:37:1",
-              "tab": "Arc",
-              "row": 37,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Arc:65:1",
-              "tab": "Arc",
-              "row": 65,
-              "column": 1
-            }
-          ],
-          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/59f9a26f34c1da1664d911c3ab12ded5.png",
-          "annotations": [
             {
               "keywordId": "blind",
-              "start": 99,
-              "end": 104,
+              "start": 427,
+              "end": 432,
               "text": "blind"
             }
           ]
@@ -7636,7 +7588,7 @@
             "column": 1
           },
           "title": "Lightning Grenade",
-          "description": "Medium Trajectory | Wall-Mounted\n\nAttaches to surfaces and enemies, projecting a laser for 1 second before triggering.\n\nEmits a Lightning Bolt every 1.67 seconds, up to a maximum of 4+1 times.\nLightning Bolts deal 373 [120] damage, up to a total of 1492 [1865] [480 [600]] damage.",
+          "description": "Medium Trajectory | Wall-Mounted\n\nAttaches to surfaces and enemies, projecting a laser for 1 second before triggering.\n\nEmits a Lightning Bolt every 1.67 seconds, up to a maximum of 4+1 times.\nLightning Bolts deal 373 [120] damage, up to a total of 1492 [1865] [480 [600]] damage.\n\nAspect — Touch of Thunder: Grants an additional Grenade Ability Charge.\nLightning Bolts after the first inflict Jolt on hit.\nGrants x5 Bolt Charge upon dealing damage, up to once per lightning bolt.",
           "extraInfo": "Base Cooldown: 219.5 seconds\n\nChunk Scalar: 0.5x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -7650,7 +7602,26 @@
             }
           ],
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/fd8f038f2d0a62c6a43024767998f383.jpg",
-          "annotations": []
+          "annotations": [
+            {
+              "keywordId": "touch-of-thunder",
+              "start": 291,
+              "end": 307,
+              "text": "Touch of Thunder"
+            },
+            {
+              "keywordId": "jolted",
+              "start": 394,
+              "end": 398,
+              "text": "Jolt"
+            },
+            {
+              "keywordId": "bolt-charge",
+              "start": 417,
+              "end": 428,
+              "text": "Bolt Charge"
+            }
+          ]
         },
         {
           "id": "sheet:pulse-grenade:33:1",
@@ -7662,7 +7633,7 @@
             "column": 1
           },
           "title": "Pulse Grenade",
-          "description": "Medium Trajectory\n\nDetonates on impact, dealing up to 156 [50] damage in a 6 meter radius.\n\nPeriodically pulses every 0.7 seconds, dealing up to 249 [80] damage in a 6 meter radius an additional 5+2 times.\nCan deal up to a total of 1,245 [1,743] [530 [690]] damage.",
+          "description": "Medium Trajectory\n\nDetonates on impact, dealing up to 156 [50] damage in a 6 meter radius.\n\nPeriodically pulses every 0.7 seconds, dealing up to 249 [80] damage in a 6 meter radius an additional 5+2 times.\nCan deal up to a total of 1,245 [1,743] [530 [690]] damage.\n\nAspect — Touch of Thunder: Pulse Grenade hits spawn an Ionic Trace and deal increased damage. Incurs a 1 second cooldown between Ionic Trace spawns.\n\nPulse Damage Increases: 1st = 2% | 2nd = 9% | 3rd = 18.5% | 4th = 24% | 5th onwards = 25%",
           "extraInfo": "Base Cooldown: 175.6 seconds\n\nChunk Scalar: 0.625x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -7683,7 +7654,32 @@
             }
           ],
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
-          "annotations": []
+          "annotations": [
+            {
+              "keywordId": "touch-of-thunder",
+              "start": 276,
+              "end": 292,
+              "text": "Touch of Thunder"
+            },
+            {
+              "keywordId": "pulse-grenade",
+              "start": 294,
+              "end": 307,
+              "text": "Pulse Grenade"
+            },
+            {
+              "keywordId": "ionic-trace",
+              "start": 322,
+              "end": 333,
+              "text": "Ionic Trace"
+            },
+            {
+              "keywordId": "ionic-trace",
+              "start": 396,
+              "end": 407,
+              "text": "Ionic Trace"
+            }
+          ]
         },
         {
           "id": "sheet:skip-grenade:35:1",
@@ -7721,7 +7717,7 @@
             "column": 1
           },
           "title": "Storm Grenade",
-          "description": "Medium Trajectory\n\nCalls down a focused strike on impact which hits after 0.85 seconds, dealing up to 440 [70] damage in a 7 meter radius.\n\nAfter 0.6 seconds of the initial strike:\nCalls down a barrage of bolts in a X pattern over 7 meters, dealing up to 311 [50] damage.\nSpark of Magnitude: Calls down a second barrage of bolts in an + pattern over 7 meters, dealing up to 311 [50] damage.\nCombatants can only be damaged once per barrage, up to a maximum of 751 [1062] damage.\nGuardians can only be hurt once by the barrage of bolts, regardless of pattern, for a maximum of 120 damage.",
+          "description": "Medium Trajectory\n\nCalls down a focused strike on impact which hits after 0.85 seconds, dealing up to 440 [70] damage in a 7 meter radius.\n\nAfter 0.6 seconds of the initial strike:\nCalls down a barrage of bolts in a X pattern over 7 meters, dealing up to 311 [50] damage.\nSpark of Magnitude: Calls down a second barrage of bolts in an + pattern over 7 meters, dealing up to 311 [50] damage.\nCombatants can only be damaged once per barrage, up to a maximum of 751 [1062] damage.\nGuardians can only be hurt once by the barrage of bolts, regardless of pattern, for a maximum of 120 damage.\n\nAspect — Touch of Thunder: Creates a roaming storm for 4+1.5 seconds after detonating, chasing after enemies at an initial speed of 2 [1.5] m/s, increasing to 4 [3] m/s after 1.3 seconds.\n Roaming Storm fires lightning bolts underneath it that deal 158 [30] damage up to 11+4 times.",
           "extraInfo": "Base Cooldown: 175.6 seconds\n\nChunk Scalar: 0.625x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -7748,6 +7744,12 @@
               "start": 272,
               "end": 290,
               "text": "Spark of Magnitude"
+            },
+            {
+              "keywordId": "touch-of-thunder",
+              "start": 597,
+              "end": 613,
+              "text": "Touch of Thunder"
             }
           ]
         },
@@ -8544,6 +8546,56 @@
               "start": 258,
               "end": 269,
               "text": "Bolt Charge"
+            }
+          ]
+        },
+        {
+          "id": "sheet:touch-of-thunder:65:1",
+          "tab": "Arc",
+          "section": "Aspect",
+          "source": {
+            "tab": "Arc",
+            "row": 65,
+            "column": 1
+          },
+          "title": "Touch of Thunder",
+          "description": "Enhances certain Grenade types:\n\nFlashbang: Explodes an additional time on impact, dealing up to 684 [?] damage, down to 0% damage over 7.5 meters, and inflicting blind to enemies within 5 meters.\n\nLightning: Grants an additional Grenade Charge, lightning strikes after the first inflict jolt, and hits grant x5 Bolt Charge up to once per lightning bolt.\n\nPulse: Damaging an enemy creates an Ionic Trace with a 1 second cooldown. Deals up to 25% increased damage as it lingers.\n1st = 2% | 2nd = 9% | 3rd = 18.5% | 4th = 24% | 5th onwards = 25%\n\nStorm: Creates a roaming storm for 4.5+1.5 seconds after detonating, chasing after enemies at an initial speed of 2 [1.5] m/s, increasing to 5.5 [3] m/s after 1.6 seconds.\n Roaming Storm fires lightning bolts underneath it that deal 164 [30] damage up to 11+4 times.",
+          "kind": "ability",
+          "sourceId": "sheet",
+          "sourceRefs": [
+            {
+              "sourceId": "sheet",
+              "sourceKey": "Arc:65:1",
+              "tab": "Arc",
+              "row": 65,
+              "column": 1
+            }
+          ],
+          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/2e639c65526c331f1d97623d51ca3a09.jpg",
+          "annotations": [
+            {
+              "keywordId": "blind",
+              "start": 163,
+              "end": 168,
+              "text": "blind"
+            },
+            {
+              "keywordId": "jolted",
+              "start": 288,
+              "end": 292,
+              "text": "jolt"
+            },
+            {
+              "keywordId": "bolt-charge",
+              "start": 312,
+              "end": 323,
+              "text": "Bolt Charge"
+            },
+            {
+              "keywordId": "ionic-trace",
+              "start": 392,
+              "end": 403,
+              "text": "Ionic Trace"
             }
           ]
         },
@@ -10194,7 +10246,7 @@
             "column": 1
           },
           "title": "Firebolt Grenade",
-          "description": "Heavy Trajectory | Scan\n\nScans up to 4 enemies in Line of Sight within 8.5 metres upon impact, firing a bolt of Solar Light towards scanned enemies after a 1 second delay.\n\nSolar Light Bolts deal 337 [65] damage and inflict x20+10 Scorch.",
+          "description": "Heavy Trajectory | Scan\n\nScans up to 4 enemies in Line of Sight within 8.5 metres upon impact, firing a bolt of Solar Light towards scanned enemies after a 1 second delay.\n\nSolar Light Bolts deal 337 [65] damage and inflict x20+10 Scorch.\n\nAspect — Touch of Flame: Scans up to ↑5 enemies in Line of Sight within ↑12 metres upon impact.",
           "extraInfo": "Base Cooldown: 83.8 seconds\n\nChunk Scalar:  1x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -10214,61 +10266,14 @@
               "start": 231,
               "end": 237,
               "text": "Scorch"
+            },
+            {
+              "keywordId": "touch-of-flame",
+              "start": 249,
+              "end": 263,
+              "text": "Touch of Flame"
             }
           ]
-        },
-        {
-          "id": "sheet:touch-of-flame:29:1",
-          "tab": "Solar",
-          "section": "Grenade Abilities",
-          "source": {
-            "tab": "Solar",
-            "row": 29,
-            "column": 1
-          },
-          "title": "Touch of Flame",
-          "description": "Scans up to ↑5 enemies in Line of Sight within ↑12 metres upon impact.",
-          "kind": "ability",
-          "sourceId": "sheet",
-          "sourceRefs": [
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Solar:29:1",
-              "tab": "Solar",
-              "row": 29,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Solar:31:1",
-              "tab": "Solar",
-              "row": 31,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Solar:33:1",
-              "tab": "Solar",
-              "row": 33,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Solar:36:1",
-              "tab": "Solar",
-              "row": 36,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Solar:84:1",
-              "tab": "Solar",
-              "row": 84,
-              "column": 1
-            }
-          ],
-          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/2bba1d19a50f50d9cca71e45440e0761.png",
-          "annotations": []
         },
         {
           "id": "sheet:fusion-grenade:30:1",
@@ -10280,7 +10285,7 @@
             "column": 1
           },
           "title": "Fusion Grenade",
-          "description": "Light Trajectory | Slightly Homing | Sticky\n\nAttaches to enemies or surfaces, exploding after a brief delay.\n\nExplosion deals up to 738 [130] damage and inflict x40+20 Scorch over 6 meters on detonation.",
+          "description": "Light Trajectory | Slightly Homing | Sticky\n\nAttaches to enemies or surfaces, exploding after a brief delay.\n\nExplosion deals up to 738 [130] damage and inflict x40+20 Scorch over 6 meters on detonation.\n\nAspect — Touch of Flame: Explodes again after 0.5 seconds, dealing up to 851 [50] damage in a 8 metre radius.\nDeals up to 1,589 [180] damage and inflicts x40+20 Scorch with both explosions.",
           "extraInfo": "Base Cooldown: 95.8 seconds\n\nChunk Scalar:  1x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -10300,6 +10305,18 @@
               "start": 168,
               "end": 174,
               "text": "Scorch"
+            },
+            {
+              "keywordId": "touch-of-flame",
+              "start": 214,
+              "end": 228,
+              "text": "Touch of Flame"
+            },
+            {
+              "keywordId": "scorch",
+              "start": 366,
+              "end": 372,
+              "text": "Scorch"
             }
           ]
         },
@@ -10313,7 +10330,7 @@
             "column": 1
           },
           "title": "Healing Grenade",
-          "description": "Very Light Trajectory | Strong Ally Homing\n\nApplies Cure x1 to the user and allies within 7.5 metres of impact, and creates a Restoration Orb that lasts 7.5 seconds.\n\nRestoration Orb applies Restoration x1 for 4+2 seconds upon being picked up. Orb has a 7.5 meter pickup radius, and 100 HP.",
+          "description": "Very Light Trajectory | Strong Ally Homing\n\nApplies Cure x1 to the user and allies within 7.5 metres of impact, and creates a Restoration Orb that lasts 7.5 seconds.\n\nRestoration Orb applies Restoration x1 for 4+2 seconds upon being picked up. Orb has a 7.5 meter pickup radius, and 100 HP.\n\nAspect — Touch of Flame: Applies Cure ↑x2 to user and allies. Restoration Orb applies ↑x2 Restoration for 4+2 seconds.",
           "extraInfo": "Base Cooldown: 119.7 seconds\n\nChunk Scalar: 0.875x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -10350,6 +10367,30 @@
               "keywordId": "restoration",
               "start": 191,
               "end": 202,
+              "text": "Restoration"
+            },
+            {
+              "keywordId": "touch-of-flame",
+              "start": 301,
+              "end": 315,
+              "text": "Touch of Flame"
+            },
+            {
+              "keywordId": "cure",
+              "start": 325,
+              "end": 329,
+              "text": "Cure"
+            },
+            {
+              "keywordId": "restoration",
+              "start": 354,
+              "end": 365,
+              "text": "Restoration"
+            },
+            {
+              "keywordId": "restoration",
+              "start": 382,
+              "end": 393,
               "text": "Restoration"
             }
           ]
@@ -10397,7 +10438,7 @@
             "column": 1
           },
           "title": "Solar Grenade",
-          "description": "Medium Trajectory | DoT Field\n\nDeals up to 63 [20] damage and inflicts x17+4.5 [x10+10] Scorch to enemies within 5 metres on impact, as well as creating a Solar Flare. \n\nSolar Flare:\nDeals 78 [25] damage every 0.267 seconds up to 13 times over its 4 second duration, for a total of 1,014 [325] damage to enemies within its 4 metre radius.\nDoes not Scorch within its DoT Field, it inflicts up to x17+13 Scorch to Combatants inside the Solar Flare when it expires, although it's inconsistent.\nInflicts x1 Scorch after 0.75 seconds, followed by x7.5+2.5 Scorch every 0.533 seconds, up to x53+27 Scorch over its duration.\nSolar Flare only begin dealing damage or inflicting scorch after 1 second of being created.",
+          "description": "Medium Trajectory | DoT Field\n\nDeals up to 63 [20] damage and inflicts x17+4.5 [x10+10] Scorch to enemies within 5 metres on impact, as well as creating a Solar Flare. \n\nSolar Flare:\nDeals 78 [25] damage every 0.267 seconds up to 13 times over its 4 second duration, for a total of 1,014 [325] damage to enemies within its 4 metre radius.\nDoes not Scorch within its DoT Field, it inflicts up to x17+13 Scorch to Combatants inside the Solar Flare when it expires, although it's inconsistent.\nInflicts x1 Scorch after 0.75 seconds, followed by x7.5+2.5 Scorch every 0.533 seconds, up to x53+27 Scorch over its duration.\nSolar Flare only begin dealing damage or inflicting scorch after 1 second of being created.\n\nAspect — Touch of Flame: Solar Grenade lasts for ↑6 seconds.\nSolar Flare releases Magma Orbs around it every ? seconds, each dealing 125 [50] damage without falloff.",
           "extraInfo": "Base Cooldown: 199.5 seconds\n\nChunk Scalar: 0.5x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -10453,6 +10494,18 @@
               "start": 670,
               "end": 676,
               "text": "scorch"
+            },
+            {
+              "keywordId": "touch-of-flame",
+              "start": 720,
+              "end": 734,
+              "text": "Touch of Flame"
+            },
+            {
+              "keywordId": "solar-grenade",
+              "start": 736,
+              "end": 749,
+              "text": "Solar Grenade"
             }
           ]
         },
@@ -12242,6 +12295,44 @@
               "text": "Cure"
             }
           ]
+        },
+        {
+          "id": "sheet:touch-of-flame:84:1",
+          "tab": "Solar",
+          "section": "Aspect",
+          "source": {
+            "tab": "Solar",
+            "row": 84,
+            "column": 1
+          },
+          "title": "Touch of Flame",
+          "description": "Enhances certain Grenade types:\n\nHealing Grenades grant Cure x2 and Restoration x2 for 4+2 seconds.\nFirebolt Grenades seek radius is increased by 50% to 12 meters and target up to 5 enemies.\nSolar Grenades linger for 2 seconds longer and release Magma Orbs that deal 125 [50] damage each. Magma Orbs do not have damage falloff.\nFusion Grenades explode again after 0.5 seconds, dealing up to 851 [50] damage in a 8 metre radius.",
+          "kind": "ability",
+          "sourceId": "sheet",
+          "sourceRefs": [
+            {
+              "sourceId": "sheet",
+              "sourceKey": "Solar:84:1",
+              "tab": "Solar",
+              "row": 84,
+              "column": 1
+            }
+          ],
+          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/d6b44fe69ff876449e732b52b7d9d334.jpg",
+          "annotations": [
+            {
+              "keywordId": "cure",
+              "start": 56,
+              "end": 60,
+              "text": "Cure"
+            },
+            {
+              "keywordId": "restoration",
+              "start": 68,
+              "end": 79,
+              "text": "Restoration"
+            }
+          ]
         }
       ]
     },
@@ -13449,7 +13540,7 @@
             "column": 1
           },
           "title": "Axion Bolt",
-          "description": "Heavy Trajectory | Scan\n\nScans up to 2 enemies in Line of Sight within 10 metres upon impact, releasing a slow-moving Axion Bolt towards scanned enemies after a 1 second delay.\n\nAxion Bolts deal 575 [65] damage and travel at a speed of ? m/s for up to ? seconds. Bolts have 10 HP and can be destroyed.",
+          "description": "Heavy Trajectory | Scan\n\nScans up to 2 enemies in Line of Sight within 10 metres upon impact, releasing a slow-moving Axion Bolt towards scanned enemies after a 1 second delay.\n\nAxion Bolts deal 575 [65] damage and travel at a speed of ? m/s for up to ? seconds. Bolts have 10 HP and can be destroyed.\n\nAspect — Chaos Accelerant (Charged): Scans up to ↑4 enemies within 12 meters. Axion Bolts travel ↑?% faster and deal 25% increased damage. Triggers again after 1 second of landing.",
           "extraInfo": "Base Cooldown: 219.5 seconds\n\nChunk Scalar: 0.5x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -13475,46 +13566,14 @@
               "start": 118,
               "end": 128,
               "text": "Axion Bolt"
+            },
+            {
+              "keywordId": "chaos-accelerant",
+              "start": 312,
+              "end": 328,
+              "text": "Chaos Accelerant"
             }
           ]
-        },
-        {
-          "id": "sheet:chaos-accelerant-charged:30:1",
-          "tab": "Void",
-          "section": "Grenade Abilities",
-          "source": {
-            "tab": "Void",
-            "row": 30,
-            "column": 1
-          },
-          "title": "Chaos Accelerant\n(Charged)",
-          "description": "Scans up to ↑4 enemies within 12 meters. Axion Bolts travel ↑?% faster and deal 25% increased damage. Triggers again after 1 second of landing.",
-          "kind": "ability",
-          "sourceId": "sheet",
-          "sourceRefs": [
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Void:30:1",
-              "tab": "Void",
-              "row": 30,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Void:34:1",
-              "tab": "Void",
-              "row": 34,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Void:39:1",
-              "tab": "Void",
-              "row": 39,
-              "column": 1
-            }
-          ],
-          "annotations": []
         },
         {
           "id": "sheet:handheld-supernova-chaos-accelerant:31:1",
@@ -13607,7 +13666,7 @@
             "column": 1
           },
           "title": "Scatter Grenade",
-          "description": "Heavy Trajectory\n\nExplodes on impact, dealing 5 [1] damage and releasing 8 submunitions over 4 meters.\n\nSubmunitions explode twice, each dealing up to 70 [16] damage over 4 meters on their first explosion.\nAfter 0.5 seconds of exploding, each submunition detonates again, dealing up to 115 [20] damage over 4 meters on their second explosion.\n\nDeals up to 1480 [288] damage with all 8 submunitions dealing their maximum damage.",
+          "description": "Heavy Trajectory\n\nExplodes on impact, dealing 5 [1] damage and releasing 8 submunitions over 4 meters.\n\nSubmunitions explode twice, each dealing up to 70 [16] damage over 4 meters on their first explosion.\nAfter 0.5 seconds of exploding, each submunition detonates again, dealing up to 115 [20] damage over 4 meters on their second explosion.\n\nDeals up to 1480 [288] damage with all 8 submunitions dealing their maximum damage.\n\nAspect — Chaos Accelerant (Charged): Adds 4 additional submunitions, totalling 12. Submunitions now strongly track enemies within 5 meters, and deal 25% increased damage towards Combatants.",
           "extraInfo": "Base Cooldown: 151.5 seconds\n\nChunk Scalar: 0.75x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -13621,7 +13680,14 @@
             }
           ],
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/562f1b6ca7ecda82248f4b02e833d211.jpg",
-          "annotations": []
+          "annotations": [
+            {
+              "keywordId": "chaos-accelerant",
+              "start": 438,
+              "end": 454,
+              "text": "Chaos Accelerant"
+            }
+          ]
         },
         {
           "id": "sheet:suppressor-grenade:35:1",
@@ -13724,7 +13790,7 @@
             "column": 1
           },
           "title": "Vortex Grenade",
-          "description": "Medium Trajectory | DoT Field\n\nDeals up to 195 [25] damage over 5 metres on impact, as well as creating a Void Vortex. \n\nVoid Vortex\nPulls enemies within 5? meters after 0.833 seconds of impacting.\nAfter 1.45-0.13 seconds of being created, deals 78 [20] damage every 0.267 seconds up to 12+7 times over its 4+1 second duration to enemies within its 4 meter radius.\nThe 13th 20th tick has falloff and deals up to 54 [?] damage.\n\nDeals up to 990 [1536] [240 [380]] damage with the Void Vortex field.",
+          "description": "Medium Trajectory | DoT Field\n\nDeals up to 195 [25] damage over 5 metres on impact, as well as creating a Void Vortex. \n\nVoid Vortex\nPulls enemies within 5? meters after 0.833 seconds of impacting.\nAfter 1.45-0.13 seconds of being created, deals 78 [20] damage every 0.267 seconds up to 12+7 times over its 4+1 second duration to enemies within its 4 meter radius.\nThe 13th 20th tick has falloff and deals up to 54 [?] damage.\n\nDeals up to 990 [1536] [240 [380]] damage with the Void Vortex field.\n\nAspect — Chaos Accelerant (Charged): Pulls enemies within ? meters after 0.617 seconds of impacting.\nAfter 1.2 seconds of being created, deals 78 [20] damage every 0.267 seconds up to 17+7 times over its 4.3+2.3 second duration to enemies within its 7 meter radius.\nThe 17th 24th tick has falloff and deals up to 54 [?] damage.\n\nDeals up to 1380 [1926] [340 [480]] damage with the Void Vortex field.",
           "extraInfo": "Base Cooldown: 219.5 seconds\n\nChunk Scalar: 0.5x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -13738,7 +13804,14 @@
             }
           ],
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/12997544665705bbbd94742268ce7091.jpg",
-          "annotations": []
+          "annotations": [
+            {
+              "keywordId": "chaos-accelerant",
+              "start": 508,
+              "end": 524,
+              "text": "Chaos Accelerant"
+            }
+          ]
         },
         {
           "id": "sheet:phantom-surge:42:1",
@@ -16250,7 +16323,7 @@
             "column": 1
           },
           "title": "Coldsnap Grenade",
-          "description": "Medium Trajectory | Seeker\n\nDirectly hitting an enemy inflicts x50 [x?] Slow Stacks for 4+2 seconds.\nDirect Hits count as Stasis Grenade Ability Damage.\n\nSpawns a seeker after 0.8 seconds of impacting the ground, tracking the closest enemy within 20 meters at a speed of 17m/s for 1 second.\nTracking strength gets weaker over the seeker's lifespan.\n\nSeeker detonates upon reaching an enemy or expiring, dealing 20 [20] damage and freezing enemies within 3 [1.75] meters.\n\nIf the seeker freezes an enemy, another seeker is spawned, targeting a different enemy, chaining up to 2 times.",
+          "description": "Medium Trajectory | Seeker\n\nDirectly hitting an enemy inflicts x50 [x?] Slow Stacks for 4+2 seconds.\nDirect Hits count as Stasis Grenade Ability Damage.\n\nSpawns a seeker after 0.8 seconds of impacting the ground, tracking the closest enemy within 20 meters at a speed of 17m/s for 1 second.\nTracking strength gets weaker over the seeker's lifespan.\n\nSeeker detonates upon reaching an enemy or expiring, dealing 20 [20] damage and freezing enemies within 3 [1.75] meters.\n\nIf the seeker freezes an enemy, another seeker is spawned, targeting a different enemy, chaining up to 2 times.\n\nAspect — Touch of Winter: Seekers duplicate upon freezing an enemy. \nSeekers now spawn a Small, Medium, and Large Stasis Crystal on detonation upon chaining 1, 2, and 3 times respectively.",
           "extraInfo": "Base Cooldown: 175.6 seconds\n\nChunk Scalar: 0.625x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -16270,65 +16343,17 @@
               "start": 72,
               "end": 76,
               "text": "Slow"
-            }
-          ]
-        },
-        {
-          "id": "sheet:touch-of-winter:28:1",
-          "tab": "Stasis",
-          "section": "Grenade Abilities",
-          "source": {
-            "tab": "Stasis",
-            "row": 28,
-            "column": 1
-          },
-          "title": "Touch of Winter",
-          "description": "Seekers duplicate upon freezing an enemy. \nSeekers now spawn a Small, Medium, and Large Stasis Crystal on detonation upon chaining 1, 2, and 3 times respectively.",
-          "kind": "ability",
-          "sourceId": "sheet",
-          "sourceRefs": [
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Stasis:28:1",
-              "tab": "Stasis",
-              "row": 28,
-              "column": 1
             },
             {
-              "sourceId": "sheet",
-              "sourceKey": "Stasis:30:1",
-              "tab": "Stasis",
-              "row": 30,
-              "column": 1
+              "keywordId": "touch-of-winter",
+              "start": 594,
+              "end": 609,
+              "text": "Touch of Winter"
             },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Stasis:32:1",
-              "tab": "Stasis",
-              "row": 32,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Stasis:34:1",
-              "tab": "Stasis",
-              "row": 34,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Stasis:43:1",
-              "tab": "Stasis",
-              "row": 43,
-              "column": 1
-            }
-          ],
-          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/b8e7bcaa96ec08540ff225a6d113a0d8.png",
-          "annotations": [
             {
               "keywordId": "stasis-crystal",
-              "start": 88,
-              "end": 102,
+              "start": 699,
+              "end": 713,
               "text": "Stasis Crystal"
             }
           ]
@@ -16343,7 +16368,7 @@
             "column": 1
           },
           "title": "Duskfield Grenade",
-          "description": "Medium Trajectory | DoT Field\n\nDetonates on impact, dealing up to 20 [20] damage and inflicting x20 [x10] Slow Stacks for 2+2 seconds in a ? meter radius, as well as creating a Slowing Field.\n\nSlowing Field:\nDeals 1 damage and applies x10 [x5] Slow Stacks for 2+2 seconds every 0.35 [0.3] seconds for 7+2 seconds in a 4 meter radius.",
+          "description": "Medium Trajectory | DoT Field\n\nDetonates on impact, dealing up to 20 [20] damage and inflicting x20 [x10] Slow Stacks for 2+2 seconds in a ? meter radius, as well as creating a Slowing Field.\n\nSlowing Field:\nDeals 1 damage and applies x10 [x5] Slow Stacks for 2+2 seconds every 0.35 [0.3] seconds for 7+2 seconds in a 4 meter radius.\n\nAspect — Touch of Winter: Duskfield Radius is increased by 50% to ↑6 meters.\nDuskfield now creates a Small Stasis Crystal on impact.",
           "extraInfo": "Base Cooldown: 131.7 seconds\n\nChunk Scalar: 0.875x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -16369,6 +16394,18 @@
               "start": 244,
               "end": 248,
               "text": "Slow"
+            },
+            {
+              "keywordId": "touch-of-winter",
+              "start": 344,
+              "end": 359,
+              "text": "Touch of Winter"
+            },
+            {
+              "keywordId": "stasis-crystal",
+              "start": 442,
+              "end": 456,
+              "text": "Stasis Crystal"
             }
           ]
         },
@@ -16382,7 +16419,7 @@
             "column": 1
           },
           "title": "Glacier Grenade",
-          "description": "Medium Trajectory\n\nCreates 5 Stasis Crystals in a straight line on impact, perpendicularly from where it was thrown.\nGlacier Grenades' Stasis Crystals deal up to 158 [?] Stasis Grenade Damage upon being shattered, down to 66% damage over 8 meters.",
+          "description": "Medium Trajectory\n\nCreates 5 Stasis Crystals in a straight line on impact, perpendicularly from where it was thrown.\nGlacier Grenades' Stasis Crystals deal up to 158 [?] Stasis Grenade Damage upon being shattered, down to 66% damage over 8 meters.\n\nAspect — Touch of Winter: Creates ↑7 Stasis Crystals in a heptagon shape on impact.",
           "extraInfo": "Base Cooldown: 175.6 seconds\n\nChunk Scalar: 0.625x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -16414,6 +16451,18 @@
               "start": 203,
               "end": 212,
               "text": "shattered"
+            },
+            {
+              "keywordId": "touch-of-winter",
+              "start": 258,
+              "end": 273,
+              "text": "Touch of Winter"
+            },
+            {
+              "keywordId": "stasis-crystal",
+              "start": 286,
+              "end": 301,
+              "text": "Stasis Crystals"
             }
           ]
         },
@@ -16427,7 +16476,7 @@
             "column": 1
           },
           "title": "Shatter Grenade",
-          "description": "Medium Trajectory | Sticky\n\nAttaches to enemies, inflicting Freeze [x? Slow] on direct hits.\nExplodes after ? seconds, dealing up to 325? [?] damage over ? meters and releasing 9 Tracking Stasis Shrapnel in 3 groups of 3, forming a Y shape.\nStasis Shrapnel deals 216 [?] damage and bounces up to ? times.\nSticking a Frozen Enemy causes an instantaneous explosion and increases the explosion damage by 100%.",
+          "description": "Medium Trajectory | Sticky\n\nAttaches to enemies, inflicting Freeze [x? Slow] on direct hits.\nExplodes after ? seconds, dealing up to 325? [?] damage over ? meters and releasing 9 Tracking Stasis Shrapnel in 3 groups of 3, forming a Y shape.\nStasis Shrapnel deals 216 [?] damage and bounces up to ? times.\nSticking a Frozen Enemy causes an instantaneous explosion and increases the explosion damage by 100%.\n\nAspect — Touch of Winter: Creates 9 additional Shrapnel.\nHitting Frozen Enemies grants FPS-based Grenade Ability Energy.\n42% at 30 FPS | 30% at 60FPS | 28% at 120+FPS",
           "extraInfo": "Base Cooldown: 105 seconds\n\nChunk Scalar: 0.?x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -16458,6 +16507,18 @@
               "keywordId": "freeze",
               "start": 316,
               "end": 322,
+              "text": "Frozen"
+            },
+            {
+              "keywordId": "touch-of-winter",
+              "start": 417,
+              "end": 432,
+              "text": "Touch of Winter"
+            },
+            {
+              "keywordId": "freeze",
+              "start": 473,
+              "end": 479,
               "text": "Frozen"
             }
           ]
@@ -16708,6 +16769,74 @@
               "start": 483,
               "end": 490,
               "text": "Shatter"
+            }
+          ]
+        },
+        {
+          "id": "sheet:touch-of-winter:43:1",
+          "tab": "Stasis",
+          "section": "Aspect",
+          "source": {
+            "tab": "Stasis",
+            "row": 43,
+            "column": 1
+          },
+          "title": "Touch of Winter",
+          "description": "Enhances Stasis Grenades.\n\nColdsnap Grenade Seekers duplicate upon freezing an enemy. \nSeekers now spawn a Small, Medium, and Large Stasis Crystal on detonation upon chaining 1, 2, and 3 times respectively.\n\nDuskfield Grenade create a Small Stasis Crystal on impact, and their Slowing Field has 50% Increased Radius.\n\nGlacier Grenades form a heptagon hexagon, and creates an additional 2 Large Stasis Crystal.\n\nShatter Grenades release 9 additional Shrapnel and refund ~30% Grenade Ability Energy upon directly hitting a Frozen Enemy.",
+          "kind": "ability",
+          "sourceId": "sheet",
+          "sourceRefs": [
+            {
+              "sourceId": "sheet",
+              "sourceKey": "Stasis:43:1",
+              "tab": "Stasis",
+              "row": 43,
+              "column": 1
+            }
+          ],
+          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/b8e7bcaa96ec08540ff225a6d113a0d8.png",
+          "annotations": [
+            {
+              "keywordId": "coldsnap-grenade",
+              "start": 27,
+              "end": 43,
+              "text": "Coldsnap Grenade"
+            },
+            {
+              "keywordId": "stasis-crystal",
+              "start": 132,
+              "end": 146,
+              "text": "Stasis Crystal"
+            },
+            {
+              "keywordId": "duskfield-grenade",
+              "start": 208,
+              "end": 225,
+              "text": "Duskfield Grenade"
+            },
+            {
+              "keywordId": "stasis-crystal",
+              "start": 241,
+              "end": 255,
+              "text": "Stasis Crystal"
+            },
+            {
+              "keywordId": "stasis-crystal",
+              "start": 394,
+              "end": 408,
+              "text": "Stasis Crystal"
+            },
+            {
+              "keywordId": "shatter",
+              "start": 411,
+              "end": 418,
+              "text": "Shatter"
+            },
+            {
+              "keywordId": "freeze",
+              "start": 521,
+              "end": 527,
+              "text": "Frozen"
             }
           ]
         },
@@ -18527,7 +18656,7 @@
             "column": 1
           },
           "title": "Grapple",
-          "description": "Hooks up to 22 metres away, dealing 38 [?] damage and staggering enemies on impact, as well as attaching to enemies or objects.\nCancelling a Grapple within 1 second of activation refunds 50% Grenade Energy.\n\nUpon Grappling a Tangle or Grapple Tangle:\nFully refunds a Grapple Ability Charge and grants Grapple Returned for 4 seconds, allowing immediate reactivation if Grappling ends while the buff is active.\nGrenade Kickstart does not activate when grappling a Tangle or Grapple Tangle.\n\nGrapple Melee:\nPerformed by pressing [Melee Attack] while grappling, or for up to ? seconds after, while at a sufficiently fast speed.\nDeals 432 [61] impact damage, and up to 432 [61] radial damage over a 4? metre radius, unraveling and pushing enemies back.\nGuardians directly hit by Grapple Melee have their Melee Lunge disabled for 0.5 seconds\n\nGrapple Melee counts as both a Grenade and Melee Ability.\nAshes to Assets grants 50% less Super Energy when a Grapple Melee is used with a Grapple Tangle.\n\nGrapple Passive Ability Regeneration is disabled until no longer airborne. Also applies to Silkstrike.",
+          "description": "Hooks up to 22 metres away, dealing 38 [?] damage and staggering enemies on impact, as well as attaching to enemies or objects.\nCancelling a Grapple within 1 second of activation refunds 50% Grenade Energy.\n\nUpon Grappling a Tangle or Grapple Tangle:\nFully refunds a Grapple Ability Charge and grants Grapple Returned for 4 seconds, allowing immediate reactivation if Grappling ends while the buff is active.\nGrenade Kickstart does not activate when grappling a Tangle or Grapple Tangle.\n\nGrapple Melee:\nPerformed by pressing [Melee Attack] while grappling, or for up to ? seconds after, while at a sufficiently fast speed.\nDeals 432 [61] impact damage, and up to 432 [61] radial damage over a 4? metre radius, unraveling and pushing enemies back.\nGuardians directly hit by Grapple Melee have their Melee Lunge disabled for 0.5 seconds\n\nGrapple Melee counts as both a Grenade and Melee Ability.\nAshes to Assets grants 50% less Super Energy when a Grapple Melee is used with a Grapple Tangle.\n\nGrapple Passive Ability Regeneration is disabled until no longer airborne. Also applies to Silkstrike.\n\nAspect — Mindspun Invocation: Grapple Melee creates 3 Threadlings on hit.",
           "extraInfo": "Base Cooldown: 107.9 seconds\n\nChunk Scalar: 0.875x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -18637,71 +18766,23 @@
               "start": 1084,
               "end": 1094,
               "text": "Silkstrike"
-            }
-          ]
-        },
-        {
-          "id": "sheet:mindspun-invocation:28:1",
-          "tab": "Strand",
-          "section": "Grenade Abilities",
-          "source": {
-            "tab": "Strand",
-            "row": 28,
-            "column": 1
-          },
-          "title": "Mindspun Invocation",
-          "description": "Grapple Melee creates 3 Threadlings on hit.",
-          "kind": "ability",
-          "sourceId": "sheet",
-          "sourceRefs": [
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Strand:28:1",
-              "tab": "Strand",
-              "row": 28,
-              "column": 1
             },
             {
-              "sourceId": "sheet",
-              "sourceKey": "Strand:30:1",
-              "tab": "Strand",
-              "row": 30,
-              "column": 1
+              "keywordId": "mindspun-invocation",
+              "start": 1106,
+              "end": 1125,
+              "text": "Mindspun Invocation"
             },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Strand:32:1",
-              "tab": "Strand",
-              "row": 32,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Strand:34:1",
-              "tab": "Strand",
-              "row": 34,
-              "column": 1
-            },
-            {
-              "sourceId": "sheet",
-              "sourceKey": "Strand:61:1",
-              "tab": "Strand",
-              "row": 61,
-              "column": 1
-            }
-          ],
-          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/5505d58e64843bf398306b9a023b0395.png",
-          "annotations": [
             {
               "keywordId": "grapple",
-              "start": 0,
-              "end": 7,
+              "start": 1127,
+              "end": 1134,
               "text": "Grapple"
             },
             {
               "keywordId": "threadling",
-              "start": 24,
-              "end": 35,
+              "start": 1151,
+              "end": 1162,
               "text": "Threadlings"
             }
           ]
@@ -18716,7 +18797,7 @@
             "column": 1
           },
           "title": "Shackle Grenade",
-          "description": "Bola Trajectory\n\nThrows a bola, releasing an explosion on impact that deals 190 [?] damage and inflict Suspension in a ? metre radius to enemies hit, then releases smaller bolas.\n2 Small Bolas are released on direct hit. 3 Smaller Bolas are released if they instead impact a surface.\n\nSmaller Bolas are released towards nearby enemies, each dealing 81 [?] damage and inflicting Suspension on hit.",
+          "description": "Bola Trajectory\n\nThrows a bola, releasing an explosion on impact that deals 190 [?] damage and inflict Suspension in a ? metre radius to enemies hit, then releases smaller bolas.\n2 Small Bolas are released on direct hit. 3 Smaller Bolas are released if they instead impact a surface.\n\nSmaller Bolas are released towards nearby enemies, each dealing 81 [?] damage and inflicting Suspension on hit.\n\nAspect — Mindspun Invocation: Grants Weaver's Trance for 25 seconds.\nKills while Weaver's Trance is active cause the enemy to trigger a Suspending explosion on death.\nSuspending Explosion deals 108 [?] Strand Grenade Ability Damage to enemies within 6 meters.",
           "extraInfo": "Base Cooldown: 219.5 seconds\n\nChunk Scalar: 0.5x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -18730,7 +18811,14 @@
             }
           ],
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/a2c73298753fdd565a22d3d6712820ab.jpg",
-          "annotations": []
+          "annotations": [
+            {
+              "keywordId": "mindspun-invocation",
+              "start": 407,
+              "end": 426,
+              "text": "Mindspun Invocation"
+            }
+          ]
         },
         {
           "id": "sheet:slicewire:31:1",
@@ -18742,7 +18830,7 @@
             "column": 1
           },
           "title": "Slicewire",
-          "description": "Medium? Trajectory\n\nThrows a bouncing grenade that explodes soon after impact, dealing splash damage over 4 hits and inflicting Sever for 10+5 seconds over 6 meters.\n\nSlicewire Maximum Damage:\n1st = 178 [?] | 2nd = 178 [?] | 3rd = 222 [?] | 4th = 267 [?] damage.\nThe first hit against any enemy deals an additional instance of 307 [?] damage.",
+          "description": "Medium? Trajectory\n\nThrows a bouncing grenade that explodes soon after impact, dealing splash damage over 4 hits and inflicting Sever for 10+5 seconds over 6 meters.\n\nSlicewire Maximum Damage:\n1st = 178 [?] | 2nd = 178 [?] | 3rd = 222 [?] | 4th = 267 [?] damage.\nThe first hit against any enemy deals an additional instance of 307 [?] damage.\n\nAspect — Mindspun Invocation: The fourth explosion will release 4 submunition in a X formation, each dealing up to 64 [?] damage and spawning a Tangle.\nIgnores Tangle Creation Cooldown.",
           "extraInfo": "Base Cooldown: 219.5 seconds\n\nChunk Scalar: 0.5x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -18767,6 +18855,24 @@
               "start": 167,
               "end": 176,
               "text": "Slicewire"
+            },
+            {
+              "keywordId": "mindspun-invocation",
+              "start": 353,
+              "end": 372,
+              "text": "Mindspun Invocation"
+            },
+            {
+              "keywordId": "tangle",
+              "start": 488,
+              "end": 494,
+              "text": "Tangle"
+            },
+            {
+              "keywordId": "tangle",
+              "start": 504,
+              "end": 510,
+              "text": "Tangle"
             }
           ]
         },
@@ -18780,7 +18886,7 @@
             "column": 1
           },
           "title": "Threadling Grenade",
-          "description": "Medium Trajectory\n\nSplits into 3 projectiles while midair, each creating a Threadling on impact.",
+          "description": "Medium Trajectory\n\nSplits into 3 projectiles while midair, each creating a Threadling on impact.\n\nAspect — Mindspun Invocation: Hold [Grenade] to prepare a Nest Grenade.\nNest Grenade creates a Teeming Nest on impact.\n\nTeeming Nest: 300 Construct HP. Lasts for 17.5 seconds, constantly draining 6.7% (-20) HP per second 1.5 seconds after reaching Full Health.\nGives birth to 3 Threadlings on deployment, followed by a Threadling every 5 seconds.",
           "extraInfo": "Base Cooldown: 175.6 seconds\n\nChunk Scalar: 0.625x",
           "kind": "ability",
           "sourceId": "sheet",
@@ -18799,6 +18905,24 @@
               "keywordId": "threadling",
               "start": 75,
               "end": 85,
+              "text": "Threadling"
+            },
+            {
+              "keywordId": "mindspun-invocation",
+              "start": 107,
+              "end": 126,
+              "text": "Mindspun Invocation"
+            },
+            {
+              "keywordId": "threadling",
+              "start": 376,
+              "end": 387,
+              "text": "Threadlings"
+            },
+            {
+              "keywordId": "threadling",
+              "start": 417,
+              "end": 427,
               "text": "Threadling"
             }
           ]
@@ -19464,6 +19588,86 @@
               "start": 204,
               "end": 215,
               "text": "Needlestorm"
+            }
+          ]
+        },
+        {
+          "id": "sheet:mindspun-invocation:61:1",
+          "tab": "Strand",
+          "section": "Aspect",
+          "source": {
+            "tab": "Strand",
+            "row": 61,
+            "column": 1
+          },
+          "title": "Mindspun Invocation",
+          "description": "Enhances Strand Grenades:\n\nGrapple | Grapple Melees create 3 Threadlings.\n\nThreadling Grenade | Hold [Grenade] to throw a Threadling nest.\n\nShackle Grenade | Hold [Grenade] to consume a Grenade Charge, granting Weaver's Trance for 25 seconds. \nKills create a Suspending Explosion while Weaver's Trance is active that deals 108 [?] Strand Grenade Ability Damage to enemies within 6 meters.\n\nSlicewire Grenade: Hold [Grenade] to overcharge it.\n The fourth explosion will release 4 submunition in a X formation, each dealing up to 64 [?] damage and spawning a Tangle.\nIgnores Tangle Creation Cooldown.",
+          "kind": "ability",
+          "sourceId": "sheet",
+          "sourceRefs": [
+            {
+              "sourceId": "sheet",
+              "sourceKey": "Strand:61:1",
+              "tab": "Strand",
+              "row": 61,
+              "column": 1
+            }
+          ],
+          "iconPath": "https://www.bungie.net/common/destiny2_content/icons/277c475b9d3a3c1d167626b1bf9815ca.jpg",
+          "annotations": [
+            {
+              "keywordId": "grapple",
+              "start": 27,
+              "end": 34,
+              "text": "Grapple"
+            },
+            {
+              "keywordId": "grapple",
+              "start": 37,
+              "end": 44,
+              "text": "Grapple"
+            },
+            {
+              "keywordId": "threadling",
+              "start": 61,
+              "end": 72,
+              "text": "Threadlings"
+            },
+            {
+              "keywordId": "threadling-grenade",
+              "start": 75,
+              "end": 93,
+              "text": "Threadling Grenade"
+            },
+            {
+              "keywordId": "threadling",
+              "start": 122,
+              "end": 132,
+              "text": "Threadling"
+            },
+            {
+              "keywordId": "shackle-grenade",
+              "start": 140,
+              "end": 155,
+              "text": "Shackle Grenade"
+            },
+            {
+              "keywordId": "slicewire",
+              "start": 390,
+              "end": 399,
+              "text": "Slicewire"
+            },
+            {
+              "keywordId": "tangle",
+              "start": 557,
+              "end": 563,
+              "text": "Tangle"
+            },
+            {
+              "keywordId": "tangle",
+              "start": 573,
+              "end": 579,
+              "text": "Tangle"
             }
           ]
         },
@@ -65215,18 +65419,6 @@
       ]
     },
     {
-      "id": "chaos-accelerant-charged",
-      "label": "Chaos Accelerant\n(Charged)",
-      "aliases": [],
-      "types": [
-        "default"
-      ],
-      "variant": "default",
-      "references": [
-        "sheet:chaos-accelerant-charged:30:1"
-      ]
-    },
-    {
       "id": "chaos-reach",
       "label": "Chaos Reach",
       "aliases": [],
@@ -72071,7 +72263,7 @@
       ],
       "variant": "default",
       "references": [
-        "sheet:mindspun-invocation:28:1"
+        "sheet:mindspun-invocation:61:1"
       ]
     },
     {
@@ -78476,7 +78668,7 @@
       ],
       "variant": "default",
       "references": [
-        "sheet:touch-of-flame:29:1"
+        "sheet:touch-of-flame:84:1"
       ]
     },
     {
@@ -78512,7 +78704,7 @@
       ],
       "variant": "default",
       "references": [
-        "sheet:touch-of-thunder:29:1"
+        "sheet:touch-of-thunder:65:1"
       ]
     },
     {
@@ -78536,7 +78728,7 @@
       ],
       "variant": "default",
       "references": [
-        "sheet:touch-of-winter:28:1"
+        "sheet:touch-of-winter:43:1"
       ]
     },
     {

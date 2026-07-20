@@ -449,6 +449,56 @@ function buildEntriesFromSetBonusRows(
 	return entries;
 }
 
+function firstTitleLine(title: string) {
+	return title.split("\n")[0] ?? "";
+}
+
+function joinTitleLines(title: string) {
+	return title
+		.split("\n")
+		.map((line) => line.trim())
+		.filter((line) => line.length > 0)
+		.join(" ");
+}
+
+// Grenade rows in the element tabs are sometimes followed by a row bearing an
+// Aspect's name, whose "description" is really a synergy note for the grenade
+// above it (e.g. Arc's "Touch of Thunder" under "Lightning Grenade"). Left
+// alone these become phantom duplicate entries that also pollute the real
+// Aspect's keyword references. Fold them into the preceding grenade instead.
+function mergeGrenadeAspectSynergies(entries: Entry[]): Entry[] {
+	const aspectTitles = new Set(
+		entries
+			.filter((entry) => entry.section === "Aspect")
+			.map((entry) => normalizeForMatch(firstTitleLine(entry.title))),
+	);
+
+	if (aspectTitles.size === 0) {
+		return entries;
+	}
+
+	const merged: Entry[] = [];
+
+	for (const entry of entries) {
+		const previous = merged[merged.length - 1];
+
+		if (
+			entry.section === "Grenade Abilities" &&
+			previous?.section === "Grenade Abilities" &&
+			aspectTitles.has(normalizeForMatch(firstTitleLine(entry.title)))
+		) {
+			previous.description =
+				`${previous.description}\n\n` +
+				`Aspect — ${joinTitleLines(entry.title)}: ${entry.description}`;
+			continue;
+		}
+
+		merged.push(entry);
+	}
+
+	return merged;
+}
+
 function createEntryId(
 	tab: string,
 	section: string | null,
@@ -630,9 +680,14 @@ export function normalizeTabWithRule(
 		}
 	}
 
+	const finalEntries =
+		"type" in rule && rule.type === "element"
+			? mergeGrenadeAspectSynergies(entries)
+			: entries;
+
 	return {
 		name: tabName,
-		entries,
+		entries: finalEntries,
 	};
 }
 

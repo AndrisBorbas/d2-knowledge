@@ -239,7 +239,6 @@ function IconSlot({ iconPath, label }: { iconPath?: string; label: string }) {
 					alt={label}
 					width={48}
 					height={48}
-					objectFit="cover"
 					className="size-12 object-cover"
 				/>
 			</div>
