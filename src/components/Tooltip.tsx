@@ -1,28 +1,27 @@
 "use client";
 
+import { cva, VariantProps } from "class-variance-authority";
+import { MoveUp, SquareArrowRightExit } from "lucide-react";
 import type { ReactNode } from "react";
 
+import { getKeywordColor } from "@/lib/data/glossary";
 import type { AnnotatedEntry, Annotation, Keyword } from "@/lib/sheet/model";
-import { getKeywordColorFromTypes } from "@/lib/data/glossary";
-import { cn } from "@/lib/utils";
-import { cva, VariantProps } from "class-variance-authority";
-import { MoveUp } from "lucide-react";
+import { cn } from "@/lib/utils/utils";
 
-const tooltipButtonVariants = cva("rounded-full", {
+const tooltipButtonVariants = cva("font-bold cursor-pointer", {
 	variants: {
 		color: {
-			default:
-				"bg-white/14 border-gray-300 focus:border-gray-400 active:border-gray-400",
-			arc: "bg-arc/20 border-[1.5px] border-arc/50",
-			solar: "bg-solar/20 border-[1.5px] border-solar/50",
-			void: "bg-void/20 border-[1.5px] border-void/50",
-			stasis: "bg-stasis/20 border-[1.5px] border-stasis/50",
-			strand: "bg-strand/20 border-[1.5px] border-strand/50",
-			prismatic: "bg-prismatic/20 border-[1.5px] border-prismatic/50",
-			masterwork: "bg-masterwork/20 border-[1.5px] border-masterwork/50",
+			default: "text-white",
+			arc: "text-arc",
+			solar: "text-solar",
+			void: "text-void",
+			stasis: "text-stasis",
+			strand: "text-strand",
+			prismatic: "text-prismatic",
+			masterwork: "text-masterwork",
 		},
 		size: {
-			default: "px-2 py-0 my-px text-sm",
+			default: "text-sm",
 		},
 	},
 	defaultVariants: {
@@ -56,7 +55,7 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 	if (keyword.types.includes("Buff")) {
 		return (
 			<MoveUp
-				className={cn("my-auto -ml-1 text-green-400", className)}
+				className={cn("my-auto -ml-0.5 text-green-400", className)}
 				{...restProps}
 			/>
 		);
@@ -64,7 +63,18 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 	if (keyword.types.includes("Debuff")) {
 		return (
 			<MoveUp
-				className={cn("my-auto -ml-1 rotate-180 text-red-400", className)}
+				className={cn("my-auto -ml-0.5 rotate-180 text-red-400", className)}
+				{...restProps}
+			/>
+		);
+	}
+	if (keyword.types.includes("Elemental Pickup")) {
+		return (
+			<SquareArrowRightExit
+				className={cn(
+					"my-auto mr-1 ml-0.5 -rotate-90 text-blue-400",
+					className,
+				)}
 				{...restProps}
 			/>
 		);
@@ -74,6 +84,7 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 
 type TooltipButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 	keyword: Keyword;
+	entry: AnnotatedEntry;
 	onKeywordClick?: (payload: KeywordClickPayload) => void;
 	onKeywordHover?: (payload: KeywordHoverPayload) => void;
 	onKeywordLeave?: () => void;
@@ -81,6 +92,7 @@ type TooltipButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 function TooltipButton({
 	keyword,
+	entry,
 	onKeywordClick,
 	onKeywordHover,
 	onKeywordLeave,
@@ -106,9 +118,8 @@ function TooltipButton({
 			onMouseLeave={onKeywordLeave}
 			onBlur={onKeywordLeave}
 			className={cn(
-				"cursor-pointer",
 				tooltipButtonVariants({
-					color: color ?? getKeywordColorFromTypes(keyword.types),
+					color: color ?? getKeywordColor(keyword, entry) ?? "default",
 					size: size,
 					className: className,
 				}),
@@ -124,11 +135,26 @@ function TooltipButton({
 type TextWithTooltipsProps = {
 	text?: string;
 	annotations: Annotation[];
+	entry: AnnotatedEntry;
+	entryMap: Map<string, AnnotatedEntry>;
 	keywordById: Map<string, Keyword>;
 	onKeywordHover?: (payload: KeywordHoverPayload) => void;
 	onKeywordLeave?: () => void;
 	onKeywordClick?: (payload: KeywordClickPayload) => void;
 };
+
+function resolveColorEntry(
+	keyword: Keyword,
+	entry: AnnotatedEntry,
+	entryMap: Map<string, AnnotatedEntry>,
+): AnnotatedEntry {
+	const referencedEntryId = keyword.references.find((id) => entryMap.has(id));
+	if (!referencedEntryId) {
+		return entry;
+	}
+
+	return entryMap.get(referencedEntryId) ?? entry;
+}
 
 export function TextWithTooltips(props: TextWithTooltipsProps) {
 	const text = props.text ?? "";
@@ -155,10 +181,11 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 			<TooltipButton
 				key={`${annotation.keywordId}-${annotation.start}-${annotation.end}`}
 				keyword={keyword}
+				entry={resolveColorEntry(keyword, props.entry, props.entryMap)}
 				onKeywordClick={props.onKeywordClick}
 				onKeywordHover={props.onKeywordHover}
 				onKeywordLeave={props.onKeywordLeave}
-				className="inline-flex align-baseline"
+				className="inline-flex align-bottom"
 				size="default"
 			>
 				{annotation.text}
@@ -177,6 +204,7 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 
 type TooltipProps = {
 	entry: AnnotatedEntry;
+	entryMap: Map<string, AnnotatedEntry>;
 	keywordMap: Map<string, Keyword>;
 	onKeywordHover?: (payload: TooltipKeywordHoverPayload) => void;
 	onKeywordLeave?: () => void;
@@ -185,6 +213,7 @@ type TooltipProps = {
 
 type TooltipContentProps = {
 	entry: AnnotatedEntry;
+	entryMap: Map<string, AnnotatedEntry>;
 	keywordMap: Map<string, Keyword>;
 	onKeywordHover?: (payload: KeywordHoverPayload) => void;
 	onKeywordLeave?: () => void;
@@ -218,6 +247,7 @@ function IconSlot({ iconPath, label }: { iconPath?: string; label: string }) {
 
 function SetBonusContent({
 	entry,
+	entryMap,
 	keywordMap,
 	onKeywordHover,
 	onKeywordLeave,
@@ -228,6 +258,8 @@ function SetBonusContent({
 			<TextWithTooltips
 				text={entry.description}
 				annotations={entry.annotations}
+				entry={entry}
+				entryMap={entryMap}
 				keywordById={keywordMap}
 				onKeywordHover={onKeywordHover}
 				onKeywordLeave={onKeywordLeave}
@@ -239,6 +271,7 @@ function SetBonusContent({
 
 function ExoticContent({
 	entry,
+	entryMap,
 	keywordMap,
 	onKeywordHover,
 	onKeywordLeave,
@@ -280,6 +313,8 @@ function ExoticContent({
 				<TextWithTooltips
 					text={entry.description}
 					annotations={entry.annotations}
+					entry={entry}
+					entryMap={entryMap}
 					keywordById={keywordMap}
 					onKeywordHover={onKeywordHover}
 					onKeywordLeave={onKeywordLeave}
@@ -292,6 +327,7 @@ function ExoticContent({
 
 function DefaultContent({
 	entry,
+	entryMap,
 	keywordMap,
 	onKeywordHover,
 	onKeywordLeave,
@@ -302,6 +338,8 @@ function DefaultContent({
 			<TextWithTooltips
 				text={entry.description}
 				annotations={entry.annotations}
+				entry={entry}
+				entryMap={entryMap}
 				keywordById={keywordMap}
 				onKeywordHover={onKeywordHover}
 				onKeywordLeave={onKeywordLeave}
@@ -325,6 +363,7 @@ function TooltipBody(props: TooltipContentProps) {
 
 export function Tooltip({
 	entry,
+	entryMap,
 	keywordMap,
 	onKeywordHover,
 	onKeywordLeave,
@@ -348,7 +387,7 @@ export function Tooltip({
 	return (
 		<article
 			key={entry.id}
-			className="border border-white/10 bg-blue-950/10 backdrop-blur-md"
+			className="h-fit border border-white/10 bg-blue-950/10 backdrop-blur-md"
 		>
 			<div className="flex items-center justify-start gap-4 border-b border-blue-600/50 bg-blue-950/30">
 				<div className="bg-blue-950/50 p-2">
@@ -359,6 +398,7 @@ export function Tooltip({
 
 			<TooltipBody
 				entry={entry}
+				entryMap={entryMap}
 				keywordMap={keywordMap}
 				onKeywordHover={handleKeywordHover}
 				onKeywordLeave={onKeywordLeave}

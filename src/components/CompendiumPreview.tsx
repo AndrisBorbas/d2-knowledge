@@ -6,7 +6,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Group, Panel, Separator } from "react-resizable-panels";
 
 import type { CompendiumDataset } from "@/lib/sheet/model";
-import { cn, fuzzyFilterCompendiumTabs } from "@/lib/utils";
+import {
+	fuzzyFilterCompendiumTabs,
+	fuzzySortCompendiumEntries,
+} from "@/lib/utils/fuzzy";
+import { cn } from "@/lib/utils/utils";
 
 import { Tooltip } from "./Tooltip";
 import { VirtualEntryGrid } from "./VirtualEntryGrid";
@@ -81,8 +85,13 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		() => dataset.tabs.map((tab) => tab.name),
 		[dataset.tabs],
 	);
+	const hasActiveQuery = effectiveQuery.trim().length > 0;
 	const filteredTabs = useMemo(
 		() => fuzzyFilterCompendiumTabs(dataset.tabs, effectiveQuery),
+		[dataset.tabs, effectiveQuery],
+	);
+	const sortedEntries = useMemo(
+		() => fuzzySortCompendiumEntries(dataset.tabs, effectiveQuery),
 		[dataset.tabs, effectiveQuery],
 	);
 	const visibleTabs = useMemo(() => {
@@ -92,22 +101,28 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 
 		return filteredTabs.filter((tab) => tab.name === activeTab);
 	}, [activeTab, filteredTabs]);
-	const entryItems = useMemo<VisibleEntryItem[]>(
-		() =>
-			visibleTabs.flatMap((tab) =>
+	const entryItems = useMemo<VisibleEntryItem[]>(() => {
+		if (!hasActiveQuery) {
+			return visibleTabs.flatMap((tab) =>
 				tab.entries.map((entry) => ({
 					tabName: tab.name,
 					entry,
 				})),
-			),
-		[visibleTabs],
-	);
+			);
+		}
+
+		return sortedEntries
+			.filter((entry) => activeTab === "all" || entry.tab === activeTab)
+			.map((entry) => ({
+				tabName: entry.tab,
+				entry,
+			}));
+	}, [visibleTabs, sortedEntries, hasActiveQuery, activeTab]);
 	const allEntries = dataset.tabs.flatMap((tab) => tab.entries);
 	const entryMap = useMemo(
 		() => new Map(allEntries.map((entry) => [entry.id, entry])),
 		[allEntries],
 	);
-	const hasActiveQuery = effectiveQuery.trim().length > 0;
 	const shouldRandomize = !hasActiveQuery && activeTab === "all";
 	const orderedEntryItems = useMemo(() => {
 		if (!shouldRandomize) {
@@ -317,6 +332,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		return (
 			<VirtualEntryGrid
 				items={orderedEntryItems}
+				entryMap={entryMap}
 				keywordMap={keywordMap}
 				onKeywordHover={handleKeywordHover}
 				onKeywordLeave={handleKeywordLeave}
@@ -365,6 +381,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 								</div>
 								<Tooltip
 									entry={entry}
+									entryMap={entryMap}
 									keywordMap={keywordMap}
 									onKeywordHover={handleKeywordHover}
 									onKeywordLeave={handleKeywordLeave}
@@ -383,7 +400,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	};
 
 	return (
-		<main className="relative flex min-h-screen w-full flex-col gap-8 text-sm">
+		<div className="relative flex min-h-screen w-full flex-col text-sm">
 			<header className="border-b border-blue-500/50 backdrop-blur-md">
 				<div className="">
 					<div className="flex gap-3">
@@ -450,7 +467,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				</div>
 			</header>
 
-			<div className="min-h-[60vh]">
+			<main className="mx-4 min-h-[60vh]">
 				<div className="h-[70vh] lg:hidden">{renderEntryList()}</div>
 
 				<Group
@@ -458,10 +475,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 					className="hidden max-h-[calc(100vh-2rem)] min-h-[60vh] lg:flex"
 				>
 					<Panel defaultSize="68%" minSize="40%">
-						<div className="flex h-full flex-col p-4">
-							<p className="shrink-0 text-xs font-semibold tracking-[0.25em] text-white/55 uppercase">
-								Tooltip Browser
-							</p>
+						<div className="flex h-full flex-col">
 							<div className="mt-4 min-h-0 flex-1">{renderEntryList()}</div>
 						</div>
 					</Panel>
@@ -472,7 +486,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						{renderClickedPanel()}
 					</Panel>
 				</Group>
-			</div>
+			</main>
 
 			{hoveredEntry && hoverCardStyle ? (
 				<div
@@ -489,6 +503,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				>
 					<Tooltip
 						entry={hoveredEntry}
+						entryMap={entryMap}
 						keywordMap={keywordMap}
 						onKeywordHover={handleKeywordHover}
 						onKeywordLeave={handleKeywordLeave}
@@ -547,6 +562,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 									</div>
 									<Tooltip
 										entry={entry}
+										entryMap={entryMap}
 										keywordMap={keywordMap}
 										onKeywordHover={handleKeywordHover}
 										onKeywordLeave={handleKeywordLeave}
@@ -562,7 +578,8 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 					)}
 				</aside>
 			</div>
-			<footer className="mt-8 p-4 backdrop-blur-md md:px-6 lg:px-8">
+
+			<footer className="p-4 backdrop-blur-md md:px-6 lg:px-8">
 				<h1 className="mt-3 text-3xl font-semibold text-white md:text-4xl">
 					Destiny 2 Knowledge
 				</h1>
@@ -607,6 +624,6 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 					Generated {new Date(dataset.generatedAt).toLocaleString("de-DE")}
 				</p>
 			</footer>
-		</main>
+		</div>
 	);
 }

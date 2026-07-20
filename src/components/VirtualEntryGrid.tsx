@@ -4,7 +4,7 @@ import { useVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import type { AnnotatedEntry, Keyword } from "@/lib/sheet/model";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/utils";
 
 import { Tooltip } from "./Tooltip";
 
@@ -26,6 +26,7 @@ type KeywordClickPayload = {
 
 type VirtualEntryGridProps = {
 	items: EntryListItem[];
+	entryMap: Map<string, AnnotatedEntry>;
 	keywordMap: Map<string, Keyword>;
 	onKeywordHover: (payload: KeywordHoverPayload) => void;
 	onKeywordLeave: () => void;
@@ -104,6 +105,7 @@ function useContainerWidth(elementRef: React.RefObject<HTMLDivElement | null>) {
 
 export function VirtualEntryGrid({
 	items,
+	entryMap,
 	keywordMap,
 	onKeywordHover,
 	onKeywordLeave,
@@ -155,21 +157,18 @@ export function VirtualEntryGrid({
 								gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))`,
 								gap: GRID_GAP,
 							}}
-							className="pb-4"
+							className="pr-4 pb-4"
 						>
-							{row.map(({ tabName, entry }) => (
-								<div key={entry.id} className="space-y-2">
-									<span className="inline-flex rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs tracking-[0.12em] text-white/65 uppercase">
-										{tabName}
-									</span>
-									<Tooltip
-										entry={entry}
-										keywordMap={keywordMap}
-										onKeywordHover={onKeywordHover}
-										onKeywordLeave={onKeywordLeave}
-										onKeywordClick={onKeywordClick}
-									/>
-								</div>
+							{row.map(({ entry }) => (
+								<Tooltip
+									key={entry.id}
+									entry={entry}
+									entryMap={entryMap}
+									keywordMap={keywordMap}
+									onKeywordHover={onKeywordHover}
+									onKeywordLeave={onKeywordLeave}
+									onKeywordClick={onKeywordClick}
+								/>
 							))}
 						</div>
 					);

@@ -1,7 +1,10 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
+
+import { Analytics } from "@/components/Analytics";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -33,7 +36,19 @@ export default function RootLayout({
 					<div className="background-effect" />
 					<div className="background-image" />
 				</div>
+
 				<NuqsAdapter>{children}</NuqsAdapter>
+
+				<Analytics />
+
+				<noscript>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img
+						src="https://succ.andrisborbas.com/backend/log/noscript?pid=nnP0JjPlBA7b"
+						alt=""
+						referrerPolicy="no-referrer-when-downgrade"
+					/>
+				</noscript>
 			</body>
 		</html>
 	);
