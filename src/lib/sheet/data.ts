@@ -73,15 +73,13 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		},
 	},
 	"Artifact Perks": {
-		strategy: "paired-rows",
+		strategy: "paired-columns",
+		skipStart: 3,
 		titleColumns: [2, 5, 8],
-		descriptionMatch: "by-order",
-		descriptionRowOffset: 1,
 		maxTitleLength: 80,
 		minDescriptionLength: 16,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
+		dynamicSection: {
+			maxLength: 80,
 			minLength: 2,
 			forbidSentenceEnding: true,
 		},

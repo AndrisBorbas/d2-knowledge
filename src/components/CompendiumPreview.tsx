@@ -69,7 +69,11 @@ function isMobileViewport() {
 export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	const [searchQuery, setSearchQuery] = useQueryState("q");
 	const [searchInput, setSearchInput] = useState("");
-	const [activeTab, setActiveTab] = useState<TabFilter>("all");
+	const [tabQuery, setTabQuery] = useQueryState("tab");
+	const activeTab: TabFilter = tabQuery ?? "all";
+	const setActiveTab = (nextTab: TabFilter) => {
+		void setTabQuery(nextTab === "all" ? null : nextTab);
+	};
 	const [clickedEntryIds, setClickedEntryIds] = useState<string[]>([]);
 	const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 	const [hoverPreview, setHoverPreview] = useState<HoverPreviewState | null>(
@@ -188,9 +192,9 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		}
 
 		if (!tabNames.includes(activeTab)) {
-			setActiveTab("all");
+			void setTabQuery(null);
 		}
-	}, [activeTab, tabNames]);
+	}, [activeTab, tabNames, setTabQuery]);
 
 	useEffect(() => {
 		setSearchInput(searchQuery ?? "");
@@ -443,7 +447,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 										role="tab"
 										aria-selected={isActive}
 										className={cn(
-											"rounded-full border px-3 py-1.5 text-xs font-semibold tracking-[0.08em] uppercase transition",
+											"borderHover px-3 py-1.5 text-xs font-semibold tracking-[0.08em] uppercase transition",
 											isActive
 												? "border-sky-300/60 bg-sky-400/18 text-sky-100"
 												: "border-white/14 bg-white/6 text-white/68 hover:bg-white/10",
@@ -467,7 +471,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				</div>
 			</header>
 
-			<main className="mx-4 min-h-[60vh]">
+			<main className="mr-4 min-h-[60vh]">
 				<div className="h-[70vh] lg:hidden">{renderEntryList()}</div>
 
 				<Group
@@ -476,7 +480,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				>
 					<Panel defaultSize="68%" minSize="40%">
 						<div className="flex h-full flex-col">
-							<div className="mt-4 min-h-0 flex-1">{renderEntryList()}</div>
+							<div className="min-h-0 flex-1">{renderEntryList()}</div>
 						</div>
 					</Panel>
 					<Separator className="group mx-2 flex w-2 items-center justify-center rounded-full bg-white/6 transition hover:bg-white/12">

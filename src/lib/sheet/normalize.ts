@@ -315,6 +315,53 @@ function buildEntriesFromPairedRows(
 	return entries;
 }
 
+function buildEntriesFromPairedColumns(
+	tabName: string,
+	rowIndex: number,
+	titleRow: string[],
+	descriptionRow: string[] | undefined,
+	section: string | null,
+	rule: TabRules,
+): Entry[] {
+	if (!descriptionRow || !rule.titleColumns) return [];
+
+	const maxTitleLength = rule.maxTitleLength ?? 80;
+	const minDescriptionLength = rule.minDescriptionLength ?? 16;
+
+	const titleCells = rule.titleColumns
+		.map((column) => ({ column, text: getCell(titleRow, column) }))
+		.filter(
+			(cell) => cell.text.length > 0 && cell.text.length <= maxTitleLength,
+		);
+	const descriptionCells = getNonEmptyCells(descriptionRow).filter(
+		(cell) => cell.text.length >= minDescriptionLength,
+	);
+
+	const pairCount = Math.min(titleCells.length, descriptionCells.length);
+	const entries: Entry[] = [];
+
+	for (let i = 0; i < pairCount; i++) {
+		const titleCell = titleCells[i];
+		const descriptionCell = descriptionCells[i];
+		const source: SourceSpan = {
+			tab: tabName,
+			row: rowIndex,
+			column: titleCell.column,
+		};
+
+		entries.push({
+			id: createEntryId(tabName, section, titleCell.text, source),
+			tab: tabName,
+			section,
+			title: titleCell.text,
+			description: descriptionCell.text,
+			source,
+		});
+	}
+
+	return entries;
+}
+
 function buildEntryFromSameRow(
 	tabName: string,
 	rowIndex: number,
@@ -522,6 +569,7 @@ export function normalizeTab(tabName: string, rows: string[][]): TabData {
 type NormalizerState = {
 	section: string | null;
 	activeClassName: string | null;
+	lastRowWasDynamicSection: boolean;
 };
 
 export function normalizeTabWithRule(
@@ -534,6 +582,7 @@ export function normalizeTabWithRule(
 	const currentState: NormalizerState = {
 		section: "sections" in rule ? (rule.sections?.[0]?.name ?? null) : null,
 		activeClassName: null,
+		lastRowWasDynamicSection: false,
 	};
 
 	const startRow =
@@ -555,6 +604,29 @@ export function normalizeTabWithRule(
 				currentState.activeClassName = currentClass;
 				continue;
 			}
+		}
+
+		if ("dynamicSection" in rule && rule.dynamicSection) {
+			const singleCellCandidates = getNonEmptyCells(row);
+			if (singleCellCandidates.length === 1) {
+				const candidateText = singleCellCandidates[0].text;
+				const maxLength = rule.dynamicSection.maxLength ?? 80;
+				const minLength = rule.dynamicSection.minLength ?? 2;
+				const endsWithSentence = /[.!?]$/.test(candidateText);
+				const isCandidate =
+					candidateText.length >= minLength &&
+					candidateText.length <= maxLength &&
+					!(rule.dynamicSection.forbidSentenceEnding && endsWithSentence);
+
+				if (isCandidate) {
+					if (!currentState.lastRowWasDynamicSection) {
+						currentState.section = candidateText;
+					}
+					currentState.lastRowWasDynamicSection = true;
+					continue;
+				}
+			}
+			currentState.lastRowWasDynamicSection = false;
 		}
 
 		const sectionName = isSectionCandidate(
@@ -588,6 +660,22 @@ export function normalizeTabWithRule(
 			// 	rowIndex += descriptionRowOffset;
 			// 	continue;
 			// }
+		} else if (rule.strategy === "paired-columns" && "titleColumns" in rule) {
+			const descriptionRowOffset = rule.descriptionRowOffset ?? 1;
+			const descriptionRow = rows[rowIndex + descriptionRowOffset];
+			const pairedEntries = buildEntriesFromPairedColumns(
+				tabName,
+				rowIndex,
+				row,
+				descriptionRow ?? undefined,
+				currentState.section,
+				rule,
+			);
+			if (pairedEntries.length > 0) {
+				entries.push(...pairedEntries);
+				rowIndex += descriptionRowOffset;
+				continue;
+			}
 		} else if (rule.strategy === "same-row") {
 			const sameRowEntry = buildEntryFromSameRow(
 				tabName,

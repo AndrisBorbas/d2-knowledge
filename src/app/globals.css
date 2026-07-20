@@ -41,10 +41,20 @@ html {
 		@apply fixed inset-0 box-content opacity-25 mix-blend-color;
 		background: url("/assets/images/BrightRainSmall.webp") repeat center center;
 	}
+
+	.borderHover {
+		@apply relative;
+		@apply after:pointer-events-none after:absolute after:inset-0 after:block after:border after:border-gray-500/0 after:border-t-gray-500 after:transition-all after:duration-200 after:ease-out;
+		@apply hover:after:-inset-1.5 hover:after:border hover:after:border-gray-500;
+	}
 }
 
 body {
 	@apply bg-background text-foreground relative flex min-h-screen flex-col;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
+}
+
+button {
+	@apply cursor-pointer;
 }

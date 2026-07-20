@@ -157,7 +157,7 @@ export function VirtualEntryGrid({
 								gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))`,
 								gap: GRID_GAP,
 							}}
-							className="pr-4 pb-4"
+							className="p-4"
 						>
 							{row.map(({ entry }) => (
 								<Tooltip

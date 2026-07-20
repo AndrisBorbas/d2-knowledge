@@ -286,8 +286,8 @@ function ExoticContent({
 }: TooltipContentProps) {
 	return (
 		<>
-			<div className="grid gap-2 px-4 sm:grid-cols-2">
-				<div className="rounded-xl border border-white/10 bg-black/30 px-3 py-2">
+			<div className="mt-2 grid gap-1 px-2 sm:grid-cols-2">
+				<div className="bg-blue-950/15 px-2 py-2 shadow-md shadow-blue-950/15">
 					<div className="grid grid-cols-[50px_1fr] items-center gap-2">
 						<IconSlot
 							iconPath={entry.secondaryIconPath}
@@ -303,7 +303,7 @@ function ExoticContent({
 						</div>
 					</div>
 				</div>
-				<div className="rounded-xl border border-white/10 bg-black/30 px-3 py-2">
+				<div className="bg-blue-950/15 px-3 py-2 shadow-md shadow-blue-950/15">
 					<div className="grid grid-cols-[50px_1fr] items-center gap-2">
 						<IconSlot iconPath={entry.iconPath} label={entry.title} />
 						<div>
@@ -391,16 +391,29 @@ export function Tooltip({
 		});
 	};
 
+	const tabs = [entry.tab, entry.section];
+
 	return (
 		<article
 			key={entry.id}
-			className="h-fit border border-white/10 bg-blue-950/10 backdrop-blur-md"
+			className="borderHover h-fit bg-blue-950/10 backdrop-blur-md"
 		>
 			<div className="grid grid-cols-[66px_1fr] items-center justify-start gap-4 border-b border-blue-600/50 bg-blue-950/30">
 				<div className="bg-blue-950/50 p-2">
 					<IconSlot iconPath={entry.iconPath} label={entry.title} />
 				</div>
 				<h3 className="text-xl font-semibold text-white">{entry.title}</h3>
+			</div>
+
+			<div className="mx-2 mt-2 flex gap-2">
+				{tabs.map((tab, index) => (
+					<span
+						key={index}
+						className="borderHover inline-block bg-blue-950/20 px-3 py-1 text-xs text-white/60"
+					>
+						{tab}
+					</span>
+				))}
 			</div>
 
 			<TooltipBody
@@ -412,7 +425,7 @@ export function Tooltip({
 				onKeywordClick={handleKeywordClick}
 			/>
 
-			{entry.extraInfo ? (
+			{entry.extraInfo && !entry.extraInfo.startsWith("Item: ") ? (
 				<p className="m-4 mt-0 rounded-2xl border border-white/10 bg-black/25 px-3 py-2 text-xs text-white/60">
 					{entry.extraInfo}
 				</p>
