@@ -2,6 +2,7 @@
 
 import { cva, VariantProps } from "class-variance-authority";
 import { MoveUp, SquareArrowRightExit } from "lucide-react";
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 import { getKeywordColor } from "@/lib/data/glossary";
@@ -232,8 +233,15 @@ function EntryKindBadge({ kind }: { kind: AnnotatedEntry["kind"] }) {
 function IconSlot({ iconPath, label }: { iconPath?: string; label: string }) {
 	if (iconPath) {
 		return (
-			<div className="border border-white/20 bg-black/50">
-				<img src={iconPath} alt={label} className="size-12 object-cover" />
+			<div className="relative border border-white/20 bg-black/50">
+				<Image
+					src={iconPath}
+					alt={label}
+					width={48}
+					height={48}
+					objectFit="cover"
+					className="size-12 object-cover"
+				/>
 			</div>
 		);
 	}
