@@ -327,7 +327,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 
 	const renderClickedPanel = () => {
 		return (
-			<div className="flex flex-col rounded-3xl border border-white/12 bg-black/45 p-5 shadow-2xl shadow-black/20 backdrop-blur-md">
+			<div className="flex flex-col p-5">
 				<div className="flex items-center justify-between gap-3">
 					<div>
 						<p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
@@ -468,12 +468,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 					<Separator className="group mx-2 flex w-2 items-center justify-center rounded-full bg-white/6 transition hover:bg-white/12">
 						<div className="h-18 w-1 rounded-full bg-white/30 transition group-hover:bg-sky-200/80" />
 					</Separator>
-					<Panel
-						defaultSize="32%"
-						minSize="20%"
-						maxSize="50%"
-						className="overflow-visible"
-					>
+					<Panel defaultSize="32%" minSize="15%" maxSize="50%">
 						{renderClickedPanel()}
 					</Panel>
 				</Group>
