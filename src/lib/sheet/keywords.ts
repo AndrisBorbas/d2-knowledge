@@ -7,6 +7,7 @@ import type {
 	Keyword,
 	KeywordCategory,
 } from "./model";
+import { annotatePatterns } from "./patterns";
 
 const ELEMENT_TERMS = new Set([
 	"arc",
@@ -111,11 +112,11 @@ export function buildKeywordTerms(keywords: Keyword[]): KeywordMatchTerm[] {
 	return terms;
 }
 
-function escapeRegExp(value: string) {
+export function escapeRegExp(value: string) {
 	return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function intersects(
+export function intersects(
 	a: { start: number; end: number },
 	b: { start: number; end: number },
 ) {
@@ -169,8 +170,18 @@ export function annotateText(text: string, terms: KeywordMatchTerm[]) {
 
 export function annotateEntries(entries: Entry[], keywords: Keyword[]) {
 	const terms = buildKeywordTerms(keywords);
-	return entries.map((entry): AnnotatedEntry => ({
-		...entry,
-		annotations: annotateText(entry.description, terms),
-	}));
+	return entries.map((entry): AnnotatedEntry => {
+		const keywordAnnotations = annotateText(entry.description, terms);
+		const patternAnnotations = annotatePatterns(entry.description).filter(
+			(pattern) =>
+				!keywordAnnotations.some((keyword) => intersects(keyword, pattern)),
+		);
+
+		return {
+			...entry,
+			annotations: [...keywordAnnotations, ...patternAnnotations].sort(
+				(a, b) => a.start - b.start,
+			),
+		};
+	});
 }

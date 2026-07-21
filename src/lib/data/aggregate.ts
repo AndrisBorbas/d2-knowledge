@@ -103,7 +103,7 @@ export function mergeUnifiedEntries(
 			byKey.set(key, {
 				...candidate,
 				...(preserveExistingTab
-					? { tab: existing.tab, section: existing.section }
+					? { tab: existing.tab, section: existing.section, groups: existing.groups }
 					: {}),
 				sourceRefs: [...candidate.sourceRefs, ...existing.sourceRefs],
 			});

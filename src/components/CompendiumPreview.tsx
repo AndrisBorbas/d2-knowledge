@@ -70,6 +70,11 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				: [...current, group],
 		);
 	};
+	const filterBarGroups = useMemo(() => {
+		const curated: string[] = [...CURATED_TOP_GROUPS];
+		const extra = activeGroups.filter((group) => !curated.includes(group));
+		return [...curated, ...extra];
+	}, [activeGroups]);
 	const [clickedEntryIds, setClickedEntryIds] = useState<string[]>([]);
 	const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 	const [hoverPreview, setHoverPreview] = useState<HoverPreviewState | null>(
@@ -100,7 +105,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		}
 
 		return filteredEntries.filter((entry) =>
-			entry.groups.some((group) => activeGroups.includes(group)),
+			activeGroups.every((group) => entry.groups.includes(group)),
 		);
 	}, [filteredEntries, hasActiveGroups, activeGroups]);
 	const entryMap = useMemo(
@@ -429,7 +434,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 							role="group"
 							aria-label="Filter entries"
 						>
-							{CURATED_TOP_GROUPS.map((group) => {
+							{filterBarGroups.map((group) => {
 								const isActive = activeGroups.includes(group);
 
 								return (

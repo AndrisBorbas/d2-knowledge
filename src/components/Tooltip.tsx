@@ -236,6 +236,19 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 			);
 		}
 
+		if (annotation.colorClass) {
+			nodes.push(
+				<span
+					key={`pattern-${annotation.start}-${annotation.end}`}
+					className={annotation.colorClass}
+				>
+					{annotation.text}
+				</span>,
+			);
+			cursor = annotation.end;
+			continue;
+		}
+
 		const keyword = props.keywordById.get(annotation.keywordId);
 		if (!keyword) {
 			nodes.push(

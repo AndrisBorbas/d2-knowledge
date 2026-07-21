@@ -11,6 +11,8 @@ export const annotationSchema = z.object({
 	start: z.number().int().nonnegative(),
 	end: z.number().int().positive(),
 	text: z.string(),
+	// Present => render as a plain colored span (pattern match), not a keyword TooltipButton.
+	colorClass: z.string().optional(),
 });
 
 export const iconGlyphSchema = z.object({

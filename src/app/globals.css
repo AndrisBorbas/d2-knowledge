@@ -22,6 +22,20 @@ html {
 
 	--color-masterwork: #fdc700;
 
+	--color-pve-damage: var(--color-green-400);
+	--color-pvp-damage: var(--color-red-400);
+	--color-tier-minor: var(--color-gray-400);
+	--color-tier-elite: var(--color-orange-400);
+	--color-tier-miniboss: var(--color-yellow-300);
+	--color-tier-boss: var(--color-yellow-300);
+	--color-tier-champion: var(--color-yellow-300);
+	--color-tier-guardian: var(--color-red-400);
+	--color-energy-grenade: var(--color-amber-400);
+	--color-energy-melee: var(--color-teal-400);
+	--color-energy-super: var(--color-yellow-400);
+	--color-energy-class: var(--color-violet-400);
+	--color-energy-ability: var(--color-blue-400);
+
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 }
