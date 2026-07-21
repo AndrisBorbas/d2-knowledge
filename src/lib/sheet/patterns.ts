@@ -40,18 +40,34 @@ const ENEMY_TIER_TERMS: TermColor[] = [
 		term: "Overload Champion",
 		colorClass: PATTERN_COLORS.tierChampion,
 	},
+	{ term: "Overload Champions", colorClass: PATTERN_COLORS.tierChampion },
 	{
 		term: "Unstoppable Champion",
 		colorClass: PATTERN_COLORS.tierChampion,
 	},
+	{
+		term: "Unstoppable Champions",
+		colorClass: PATTERN_COLORS.tierChampion,
+	},
 	{ term: "Barrier Champion", colorClass: PATTERN_COLORS.tierChampion },
+	{
+		term: "Barrier Champions",
+		colorClass: PATTERN_COLORS.tierChampion,
+	},
 	{ term: "Champion", colorClass: PATTERN_COLORS.tierChampion },
+	{ term: "Champions", colorClass: PATTERN_COLORS.tierChampion },
 	{ term: "Miniboss", colorClass: PATTERN_COLORS.tierMiniboss },
+	{ term: "Minibosses", colorClass: PATTERN_COLORS.tierMiniboss },
 	{ term: "Minor", colorClass: PATTERN_COLORS.tierMinor },
+	{ term: "Minors", colorClass: PATTERN_COLORS.tierMinor },
 	{ term: "Rank-And-File", colorClass: PATTERN_COLORS.tierMinor },
 	{ term: "Elite", colorClass: PATTERN_COLORS.tierElite },
+	{ term: "Elites", colorClass: PATTERN_COLORS.tierElite },
+	{ term: "Elite+", colorClass: PATTERN_COLORS.tierElite },
 	{ term: "Boss", colorClass: PATTERN_COLORS.tierBoss },
+	{ term: "Bosses", colorClass: PATTERN_COLORS.tierBoss },
 	{ term: "Guardian", colorClass: PATTERN_COLORS.tierGuardian },
+	{ term: "Guardians", colorClass: PATTERN_COLORS.tierGuardian },
 ];
 
 const ABILITY_ENERGY_TERMS: TermColor[] = [

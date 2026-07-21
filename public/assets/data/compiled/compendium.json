@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T02:06:17.812Z",
+  "generatedAt": "2026-07-21T02:10:51.324Z",
   "entries": [
     {
       "id": "sheet:aion-renewal-kepler-destination:2:0",
@@ -723,15 +723,15 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 388,
-          "end": 393,
-          "text": "Elite",
+          "end": 394,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 446,
-          "end": 451,
-          "text": "Elite",
+          "end": 452,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -1050,15 +1050,15 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 54,
-          "end": 59,
-          "text": "Elite",
+          "end": 60,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 126,
-          "end": 131,
-          "text": "Elite",
+          "end": 132,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -1918,8 +1918,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 196,
-          "end": 201,
-          "text": "Elite",
+          "end": 202,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -1972,8 +1972,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 42,
-          "end": 47,
-          "text": "Elite",
+          "end": 48,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -1986,8 +1986,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 148,
-          "end": 153,
-          "text": "Elite",
+          "end": 154,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -2138,8 +2138,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 40,
-          "end": 45,
-          "text": "Elite",
+          "end": 46,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -2366,8 +2366,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 501,
-          "end": 506,
-          "text": "Elite",
+          "end": 507,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -2483,8 +2483,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 382,
-          "end": 387,
-          "text": "Elite",
+          "end": 388,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         }
       ]
@@ -2771,8 +2771,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 473,
-          "end": 478,
-          "text": "Elite",
+          "end": 479,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         }
       ]
@@ -2952,8 +2952,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 74,
-          "end": 79,
-          "text": "Elite",
+          "end": 80,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -3180,8 +3180,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 296,
-          "end": 301,
-          "text": "Elite",
+          "end": 302,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -3514,6 +3514,13 @@
           "end": 1147,
           "text": "Super Energy",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 1315,
+          "end": 1324,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -3812,8 +3819,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 60,
-          "end": 65,
-          "text": "Elite",
+          "end": 66,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -5580,6 +5587,13 @@
           "start": 271,
           "end": 281,
           "text": "Threadling"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 295,
+          "end": 316,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
         }
       ]
     },
@@ -5729,6 +5743,13 @@
           "end": 169,
           "text": "[20]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 195,
+          "end": 216,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
         }
       ]
     },
@@ -6179,6 +6200,13 @@
           "start": 186,
           "end": 195,
           "text": "Flashover"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 228,
+          "end": 237,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -6241,8 +6269,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 274,
-          "end": 279,
-          "text": "Elite",
+          "end": 280,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         },
         {
@@ -6501,9 +6529,16 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 90,
-          "end": 95,
-          "text": "Elite",
+          "end": 96,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 113,
+          "end": 122,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -7262,8 +7297,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 18,
-          "end": 23,
-          "text": "Elite",
+          "end": 24,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         }
       ]
@@ -7643,6 +7678,13 @@
           "colorClass": "text-energy-grenade"
         },
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 289,
+          "end": 310,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "pattern:text-energy-grenade",
           "start": 537,
           "end": 544,
@@ -7862,6 +7904,13 @@
           "end": 144,
           "text": "Miniboss",
           "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 154,
+          "end": 163,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "void-breach",
@@ -8767,6 +8816,13 @@
           "text": "Stasis Crystals"
         },
         {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 56,
+          "end": 62,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "stasis-crystal",
           "start": 71,
           "end": 86,
@@ -8956,7 +9012,15 @@
         }
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/472be0e9c6152c0a702bd3d148c6b0a7.png",
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 51,
+          "end": 60,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        }
+      ]
     },
     {
       "id": "sheet:solo-operative:96:8",
@@ -9723,8 +9787,8 @@
         {
           "keywordId": "pattern:text-tier-elite",
           "start": 9,
-          "end": 14,
-          "text": "Elite",
+          "end": 15,
+          "text": "Elite+",
           "colorClass": "text-tier-elite"
         }
       ]
@@ -9992,6 +10056,13 @@
           "colorClass": "text-tier-miniboss"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 190,
+          "end": 199,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "amplified",
           "start": 207,
           "end": 216,
@@ -10130,6 +10201,13 @@
           "text": "shatter"
         },
         {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 1195,
+          "end": 1201,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "tangle",
           "start": 1205,
           "end": 1211,
@@ -10152,6 +10230,13 @@
           "start": 1260,
           "end": 1267,
           "text": "Suspend"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 1276,
+          "end": 1282,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "jolted",
@@ -10279,6 +10364,20 @@
           "text": "Blinded"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 110,
+          "end": 119,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 197,
+          "end": 218,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "blind",
           "start": 245,
           "end": 252,
@@ -10394,10 +10493,31 @@
           "text": "chain lightning"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 351,
+          "end": 360,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "chain-lightning",
           "start": 374,
           "end": 389,
           "text": "Chain Lightning"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 450,
+          "end": 459,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 462,
+          "end": 480,
+          "text": "Overload Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "jolted",
@@ -10683,6 +10803,34 @@
           "start": 116,
           "end": 127,
           "text": "Ionic Trace"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 207,
+          "end": 213,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 221,
+          "end": 227,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 244,
+          "end": 254,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 259,
+          "end": 265,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -11999,6 +12147,13 @@
           "colorClass": "text-pvp-damage"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 478,
+          "end": 487,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "touch-of-thunder",
           "start": 597,
           "end": 613,
@@ -13083,7 +13238,15 @@
         }
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/24fec20486dcadb8be276226b56c5500.jpg",
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 113,
+          "end": 122,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        }
+      ]
     },
     {
       "id": "sheet:ballistic-slam:55:1",
@@ -13189,6 +13352,13 @@
           "end": 113,
           "text": "Melee Ability Energy",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 178,
+          "end": 187,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-energy-melee",
@@ -15025,6 +15195,13 @@
           "text": "Radiant"
         },
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 258,
+          "end": 267,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "radiant",
           "start": 274,
           "end": 281,
@@ -15175,6 +15352,13 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/a9f9c3ee61dca93b76abd3fee8323864.png",
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 30,
+          "end": 39,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "scorch",
           "start": 143,
           "end": 149,
@@ -15228,6 +15412,13 @@
           "start": 452,
           "end": 458,
           "text": "Scorch"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 468,
+          "end": 489,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "ignition",
@@ -15776,6 +15967,55 @@
           "colorClass": "text-energy-grenade"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 101,
+          "end": 107,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 117,
+          "end": 123,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 128,
+          "end": 134,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 148,
+          "end": 154,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 159,
+          "end": 165,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 196,
+          "end": 202,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 207,
+          "end": 213,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-energy-ability",
           "start": 232,
           "end": 246,
@@ -16033,6 +16273,55 @@
           "start": 169,
           "end": 176,
           "text": "Radiant"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 294,
+          "end": 300,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 312,
+          "end": 318,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 323,
+          "end": 329,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 342,
+          "end": 348,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 353,
+          "end": 359,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 384,
+          "end": 390,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 395,
+          "end": 401,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         }
       ]
     },
@@ -16327,6 +16616,55 @@
           "end": 84,
           "text": "Melee Ability Energy",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 120,
+          "end": 126,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 136,
+          "end": 142,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 147,
+          "end": 153,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 164,
+          "end": 170,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 175,
+          "end": 181,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 209,
+          "end": 215,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 220,
+          "end": 226,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -18423,6 +18761,13 @@
           "colorClass": "text-energy-class"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 378,
+          "end": 387,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "pattern:text-energy-class",
           "start": 391,
           "end": 404,
@@ -18492,6 +18837,13 @@
           "end": 113,
           "text": "Melee Ability Energy",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 177,
+          "end": 186,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-energy-melee",
@@ -20462,6 +20814,13 @@
           "text": "Well of Radiance"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 556,
+          "end": 565,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "well-of-radiance",
           "start": 577,
           "end": 593,
@@ -20479,6 +20838,13 @@
           "start": 729,
           "end": 736,
           "text": "Radiant"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 764,
+          "end": 773,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "restoration",
@@ -20531,6 +20897,13 @@
           "end": 137,
           "text": "Melee Energy",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 197,
+          "end": 206,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
@@ -20613,10 +20986,24 @@
           "text": "Heat Rises"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 1022,
+          "end": 1031,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "heat-rises",
           "start": 1224,
           "end": 1234,
           "text": "Heat Rises"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 1365,
+          "end": 1374,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
@@ -20833,6 +21220,27 @@
           "colorClass": "text-tier-minor"
         },
         {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 600,
+          "end": 606,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 615,
+          "end": 621,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 631,
+          "end": 640,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "cure",
           "start": 655,
           "end": 659,
@@ -20979,6 +21387,13 @@
           "end": 278,
           "text": "Grenade Ability Energy",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 352,
+          "end": 361,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -21028,6 +21443,13 @@
           "start": 308,
           "end": 320,
           "text": "invisibility"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 512,
+          "end": 521,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "invisibility",
@@ -21252,6 +21674,13 @@
           "text": "Suppressed"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 217,
+          "end": 226,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 257,
           "end": 270,
@@ -21297,6 +21726,13 @@
           "start": 359,
           "end": 372,
           "text": "Transcendence"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 375,
+          "end": 393,
+          "text": "Overload Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "suppression",
@@ -21436,6 +21872,13 @@
           "start": 21,
           "end": 29,
           "text": "Volatile"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 95,
+          "end": 104,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "volatile-rounds",
@@ -21838,6 +22281,55 @@
           "end": 32,
           "text": "Grenade Energy",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 93,
+          "end": 99,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 111,
+          "end": 117,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 122,
+          "end": 128,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 139,
+          "end": 145,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 150,
+          "end": 156,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 183,
+          "end": 189,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 194,
+          "end": 200,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -24385,6 +24877,13 @@
           "text": "Invisibility"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 235,
+          "end": 244,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "devour",
           "start": 393,
           "end": 399,
@@ -24524,6 +25023,13 @@
           "end": 113,
           "text": "Melee Ability Energy",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 178,
+          "end": 187,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-energy-melee",
@@ -24761,6 +25267,13 @@
           "end": 361,
           "text": "[?]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 587,
+          "end": 596,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-pve-damage",
@@ -25085,6 +25598,13 @@
           "text": "Ward of Dawn"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 352,
+          "end": 361,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "ward-of-dawn",
           "start": 575,
           "end": 587,
@@ -25156,6 +25676,13 @@
           "text": "weakened"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 1223,
+          "end": 1232,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "overshield",
           "start": 1296,
           "end": 1306,
@@ -25223,6 +25750,13 @@
           "start": 115,
           "end": 125,
           "text": "Overshield"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 220,
+          "end": 229,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "overshield",
@@ -25642,6 +26176,13 @@
           "start": 515,
           "end": 523,
           "text": "Volatile"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 526,
+          "end": 535,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pocket-singularity",
@@ -26246,6 +26787,13 @@
           "end": 400,
           "text": "Grenade Ability Energy",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 472,
+          "end": 481,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -26435,6 +26983,34 @@
           "start": 200,
           "end": 212,
           "text": "Stasis Shard"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 215,
+          "end": 221,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 223,
+          "end": 233,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 235,
+          "end": 241,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 247,
+          "end": 256,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "stasis-shard",
@@ -26728,6 +27304,13 @@
           "text": "Slowed"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 208,
+          "end": 217,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "slow",
           "start": 388,
           "end": 394,
@@ -26738,6 +27321,13 @@
           "start": 586,
           "end": 590,
           "text": "slow"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 718,
+          "end": 736,
+          "text": "Overload Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "slow",
@@ -26823,6 +27413,13 @@
           "colorClass": "text-tier-elite"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 331,
+          "end": 340,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "pattern:text-energy-melee",
           "start": 370,
           "end": 375,
@@ -26874,6 +27471,13 @@
           "text": "shatter"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 664,
+          "end": 673,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 689,
           "end": 702,
@@ -26887,10 +27491,24 @@
           "text": "Freeze"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 742,
+          "end": 751,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "freeze",
           "start": 752,
           "end": 758,
           "text": "frozen"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 768,
+          "end": 777,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "freeze",
@@ -26903,6 +27521,13 @@
           "start": 817,
           "end": 823,
           "text": "Freeze"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 825,
+          "end": 834,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "freeze",
@@ -26930,6 +27555,13 @@
           "text": "Frozen"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 935,
+          "end": 944,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "pattern:text-energy-class",
           "start": 956,
           "end": 969,
@@ -26941,6 +27573,13 @@
           "start": 1040,
           "end": 1046,
           "text": "freeze"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 1074,
+          "end": 1083,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "freeze",
@@ -27017,6 +27656,13 @@
           "end": 113,
           "text": "[?]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 150,
+          "end": 171,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "shatter",
@@ -27140,6 +27786,34 @@
           "start": 64,
           "end": 76,
           "text": "Stasis Shard"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 125,
+          "end": 131,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 139,
+          "end": 145,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 153,
+          "end": 163,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 168,
+          "end": 174,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -27190,6 +27864,27 @@
           "start": 56,
           "end": 68,
           "text": "Stasis Shard"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 117,
+          "end": 123,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 132,
+          "end": 138,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 164,
+          "end": 174,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -27705,6 +28400,76 @@
           "end": 68,
           "text": "Class Ability Energy",
           "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 104,
+          "end": 110,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 120,
+          "end": 126,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 131,
+          "end": 137,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 169,
+          "end": 175,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 180,
+          "end": 186,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 197,
+          "end": 203,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 208,
+          "end": 214,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 225,
+          "end": 231,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 233,
+          "end": 243,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 251,
+          "end": 257,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -29153,6 +29918,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 599,
+          "end": 608,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "shiver-strike",
           "start": 625,
           "end": 638,
@@ -30497,6 +31269,13 @@
           "text": "Frost Armor"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 234,
+          "end": 243,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "slow",
           "start": 285,
           "end": 289,
@@ -31032,6 +31811,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 86,
+          "end": 95,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "woven-mail",
           "start": 123,
           "end": 133,
@@ -31147,6 +31933,13 @@
           "text": "suspended"
         },
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 138,
+          "end": 148,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
           "keywordId": "suspend",
           "start": 158,
           "end": 167,
@@ -31183,6 +31976,20 @@
           "start": 451,
           "end": 460,
           "text": "Suspended"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 461,
+          "end": 470,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 604,
+          "end": 625,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "suspend",
@@ -31679,6 +32486,55 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 107,
+          "end": 113,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 124,
+          "end": 130,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 135,
+          "end": 141,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 152,
+          "end": 158,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 163,
+          "end": 169,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 195,
+          "end": 201,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 206,
+          "end": 212,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-energy-ability",
           "start": 231,
           "end": 245,
@@ -31846,6 +32702,55 @@
           "colorClass": "text-energy-class"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 94,
+          "end": 100,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 111,
+          "end": 117,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 122,
+          "end": 128,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 139,
+          "end": 145,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 150,
+          "end": 156,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 176,
+          "end": 182,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 187,
+          "end": 193,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-energy-ability",
           "start": 253,
           "end": 267,
@@ -31988,10 +32893,38 @@
           "text": "Threadling"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 172,
+          "end": 178,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
           "keywordId": "threadling",
           "start": 208,
           "end": 218,
           "text": "Threadling"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 221,
+          "end": 227,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 239,
+          "end": 249,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 254,
+          "end": 260,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -32318,6 +33251,13 @@
           "end": 672,
           "text": "[61]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 748,
+          "end": 757,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "grapple",
@@ -33180,6 +34120,13 @@
           "end": 16,
           "text": "Class Ability",
           "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 468,
+          "end": 477,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "threadling",
@@ -34566,6 +35513,13 @@
           "end": 546,
           "text": "Boss",
           "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 556,
+          "end": 565,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -34863,6 +35817,34 @@
           "start": 1214,
           "end": 1226,
           "text": "Transcendent"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 1363,
+          "end": 1369,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 1371,
+          "end": 1381,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 1386,
+          "end": 1392,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 1401,
+          "end": 1410,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -35849,6 +36831,27 @@
           "start": 95,
           "end": 108,
           "text": "Transcendence"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 119,
+          "end": 125,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 132,
+          "end": 138,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 145,
+          "end": 155,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -35996,6 +36999,76 @@
           "end": 94,
           "text": "Super Energy",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 242,
+          "end": 248,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 265,
+          "end": 271,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 276,
+          "end": 282,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 299,
+          "end": 305,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 310,
+          "end": 316,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 333,
+          "end": 339,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 344,
+          "end": 350,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 367,
+          "end": 373,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 375,
+          "end": 385,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 399,
+          "end": 405,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -38139,11 +39212,39 @@
           "text": "Sword Logic"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 148,
+          "end": 154,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 182,
+          "end": 188,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 243,
           "end": 248,
           "text": "Super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 253,
+          "end": 263,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 293,
+          "end": 299,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "pattern:text-pve-damage",
@@ -38763,6 +39864,13 @@
           "start": 164,
           "end": 182,
           "text": "Whisper of Durance"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 186,
+          "end": 192,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -38801,7 +39909,50 @@
       "secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/e8030d75835eaf1c9014f2d63338d518.jpg",
       "itemHash": 3121540812,
       "perkHash": 77818606,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 47,
+          "end": 57,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 62,
+          "end": 68,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 119,
+          "end": 125,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 130,
+          "end": 136,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 137,
+          "end": 147,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 152,
+          "end": 158,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        }
+      ]
     },
     {
       "id": "foundry:79448657:psychohack",
@@ -38952,7 +40103,15 @@
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyBreakerTypeDefinition_da558352b624d799cf50de14d7cb9565.png"
         }
       ],
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 256,
+          "end": 274,
+          "text": "Overload Champions",
+          "colorClass": "text-tier-champion"
+        }
+      ]
     },
     {
       "id": "foundry:84503918:empowered-finish",
@@ -39542,6 +40701,20 @@
           "colorClass": "text-energy-class"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 523,
+          "end": 529,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 537,
+          "end": 543,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-energy-ability",
           "start": 577,
           "end": 591,
@@ -39561,6 +40734,20 @@
           "end": 854,
           "text": "Class Ability",
           "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 935,
+          "end": 941,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 949,
+          "end": 955,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         }
       ]
     },
@@ -40978,6 +42165,34 @@
           "text": "Snareweaver"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 184,
+          "end": 190,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 196,
+          "end": 202,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 204,
+          "end": 214,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 220,
+          "end": 226,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "snareweaver",
           "start": 285,
           "end": 296,
@@ -41050,6 +42265,13 @@
           "start": 772,
           "end": 779,
           "text": "Suspend"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 807,
+          "end": 817,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -41653,6 +42875,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 276,
+          "end": 286,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
           "keywordId": "pattern:text-energy-melee",
           "start": 335,
           "end": 348,
@@ -41757,6 +42986,34 @@
           "start": 77,
           "end": 89,
           "text": "Invisibility"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 125,
+          "end": 131,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 145,
+          "end": 151,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 181,
+          "end": 191,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 196,
+          "end": 202,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "invisibility",
@@ -42009,6 +43266,20 @@
           "end": 304,
           "text": "[PVP: ?]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 498,
+          "end": 504,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 512,
+          "end": 518,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         }
       ]
     },
@@ -42520,7 +43791,15 @@
       "secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/6bd65ae8981e4cac3c00825abedd3fbb.jpg",
       "itemHash": 3413860063,
       "perkHash": 299272945,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 295,
+          "end": 301,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        }
+      ]
     },
     {
       "id": "foundry:307683764:delicate-tuning",
@@ -43509,6 +44788,20 @@
           "text": "Vorpal Weapon"
         },
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 63,
+          "end": 73,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 75,
+          "end": 81,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 125,
           "end": 138,
@@ -43954,6 +45247,13 @@
           "text": "Fastball"
         },
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 81,
+          "end": 102,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "fusion-grenade",
           "start": 112,
           "end": 126,
@@ -43965,6 +45265,34 @@
           "end": 154,
           "text": "Grenade Energy",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 178,
+          "end": 184,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 192,
+          "end": 198,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 215,
+          "end": 225,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 231,
+          "end": 237,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -45770,6 +47098,27 @@
           "end": 244,
           "text": "Minor",
           "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 278,
+          "end": 284,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 286,
+          "end": 296,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 302,
+          "end": 308,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -45936,6 +47285,27 @@
           "end": 75,
           "text": "Minor",
           "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 289,
+          "end": 298,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 300,
+          "end": 310,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 315,
+          "end": 321,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -45990,6 +47360,13 @@
           "start": 99,
           "end": 105,
           "text": "Scorch"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 214,
+          "end": 220,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -46256,6 +47633,13 @@
           "colorClass": "text-tier-boss"
         },
         {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 326,
+          "end": 332,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "pattern:text-energy-melee",
           "start": 755,
           "end": 760,
@@ -46333,6 +47717,13 @@
           "start": 277,
           "end": 281,
           "text": "Boss",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 331,
+          "end": 337,
+          "text": "Bosses",
           "colorClass": "text-tier-boss"
         }
       ]
@@ -47724,6 +49115,20 @@
           "colorClass": "text-tier-minor"
         },
         {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 207,
+          "end": 213,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 218,
+          "end": 227,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "overshield",
           "start": 255,
           "end": 265,
@@ -47947,6 +49352,20 @@
           "start": 66,
           "end": 72,
           "text": "Devour"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 126,
+          "end": 132,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 140,
+          "end": 146,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         }
       ]
     },
@@ -48925,6 +50344,20 @@
           "text": "Vorpal Weapon"
         },
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 246,
+          "end": 256,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 258,
+          "end": 264,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 308,
           "end": 321,
@@ -49131,6 +50564,20 @@
           "colorClass": "text-pvp-damage"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 320,
+          "end": 326,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 332,
+          "end": 338,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "slow",
           "start": 444,
           "end": 448,
@@ -49276,6 +50723,41 @@
           "start": 211,
           "end": 217,
           "text": "Weaken"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 348,
+          "end": 354,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 394,
+          "end": 400,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 438,
+          "end": 448,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 450,
+          "end": 456,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 652,
+          "end": 658,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "weaken",
@@ -51768,11 +53250,39 @@
           "colorClass": "text-pvp-damage"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 288,
+          "end": 294,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 319,
+          "end": 325,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-tier-miniboss",
           "start": 336,
           "end": 344,
           "text": "Miniboss",
           "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 349,
+          "end": 355,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 366,
+          "end": 375,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         }
       ]
     },
@@ -51853,6 +53363,20 @@
           "start": 22,
           "end": 34,
           "text": "Blast Radius"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 227,
+          "end": 236,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 241,
+          "end": 247,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "blind",
@@ -52845,6 +54369,20 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 87,
+          "end": 93,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 113,
+          "end": 119,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 313,
           "end": 317,
@@ -52857,6 +54395,13 @@
           "end": 328,
           "text": "[PVP: 537]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 380,
+          "end": 389,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
         },
         {
           "keywordId": "ignition",
@@ -53596,6 +55141,27 @@
           "end": 174,
           "text": "Minor",
           "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 208,
+          "end": 214,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 216,
+          "end": 226,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 232,
+          "end": 238,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -53648,6 +55214,55 @@
           "end": 41,
           "text": "Grenade",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 108,
+          "end": 114,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 128,
+          "end": 134,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 139,
+          "end": 145,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 158,
+          "end": 164,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 169,
+          "end": 175,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 188,
+          "end": 194,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 202,
+          "end": 208,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -54372,6 +55987,13 @@
       "perkHash": 891750160,
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 36,
+          "end": 45,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 327,
           "end": 331,
@@ -54438,6 +56060,13 @@
       "perkHash": 891750166,
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 36,
+          "end": 45,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 327,
           "end": 331,
@@ -54503,6 +56132,13 @@
       "itemHash": 1473821207,
       "perkHash": 891750167,
       "annotations": [
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 36,
+          "end": 45,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
         {
           "keywordId": "pattern:text-pve-damage",
           "start": 327,
@@ -54992,6 +56628,13 @@
           "text": "Suspend"
         },
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 301,
+          "end": 311,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
           "keywordId": "thruster",
           "start": 334,
           "end": 342,
@@ -55108,6 +56751,55 @@
           "end": 200,
           "text": "Grenade Energy",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 262,
+          "end": 268,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 279,
+          "end": 285,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 290,
+          "end": 296,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 307,
+          "end": 313,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 318,
+          "end": 324,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 335,
+          "end": 341,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 346,
+          "end": 352,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -55706,6 +57398,13 @@
           "start": 388,
           "end": 407,
           "text": "Cayde's Retribution"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 470,
+          "end": 476,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "cayde-s-retribution",
@@ -57528,6 +59227,55 @@
           "colorClass": "text-energy-super"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 93,
+          "end": 99,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 119,
+          "end": 125,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 130,
+          "end": 136,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 160,
+          "end": 166,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 171,
+          "end": 177,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 197,
+          "end": 203,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 211,
+          "end": 217,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "ashes-to-assets",
           "start": 311,
           "end": 326,
@@ -57898,6 +59646,34 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/dd40ae6216feb003f2998c50d67a53c0.png",
       "perkHash": 1050127423,
       "annotations": [
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 180,
+          "end": 186,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 204,
+          "end": 210,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 241,
+          "end": 251,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 256,
+          "end": 262,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
         {
           "keywordId": "pattern:text-pvp-damage",
           "start": 447,
@@ -58528,6 +60304,76 @@
           "end": 95,
           "text": "Class Ability Energy",
           "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 131,
+          "end": 137,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 148,
+          "end": 154,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 159,
+          "end": 165,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 176,
+          "end": 182,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 187,
+          "end": 193,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 204,
+          "end": 210,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 215,
+          "end": 221,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 232,
+          "end": 238,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 240,
+          "end": 250,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 258,
+          "end": 264,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "healing-rift",
@@ -59636,6 +61482,34 @@
           "text": "Suspending Blast"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 335,
+          "end": 341,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 347,
+          "end": 353,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 360,
+          "end": 370,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 377,
+          "end": 383,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "arcane-needle",
           "start": 404,
           "end": 417,
@@ -59684,6 +61558,55 @@
           "end": 709,
           "text": "Melee Energy",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 745,
+          "end": 751,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 762,
+          "end": 768,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 773,
+          "end": 779,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 792,
+          "end": 798,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 803,
+          "end": 809,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 835,
+          "end": 841,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 846,
+          "end": 852,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -60756,6 +62679,20 @@
           "text": "Worm's Hunger"
         },
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 187,
+          "end": 197,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 199,
+          "end": 205,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "worm-s-hunger",
           "start": 230,
           "end": 243,
@@ -61335,6 +63272,27 @@
       "perkHash": 1206010521,
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 19,
+          "end": 28,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 30,
+          "end": 40,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 45,
+          "end": 51,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "transmutation",
           "start": 63,
           "end": 76,
@@ -61657,6 +63615,20 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 58,
+          "end": 68,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 73,
+          "end": 79,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
         {
           "keywordId": "suppression",
           "start": 125,
@@ -62136,6 +64108,20 @@
           "start": 29,
           "end": 42,
           "text": "Vorpal Weapon"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 81,
+          "end": 91,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 93,
+          "end": 99,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -63253,6 +65239,20 @@
           "end": 105,
           "text": "Elite",
           "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 335,
+          "end": 345,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 350,
+          "end": 356,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -66898,6 +68898,20 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 31,
+          "end": 41,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 43,
+          "end": 49,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 93,
           "end": 106,
@@ -67399,7 +69413,15 @@
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/9d1c49edb2d2b24c74067742c09fd5a5.png",
       "perkHash": 1561002382,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 57,
+          "end": 63,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        }
+      ]
     },
     {
       "id": "foundry:1561736585:kinetic-dexterity",
@@ -71102,6 +73124,13 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 70,
+          "end": 91,
+          "text": "Unstoppable champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 219,
           "end": 222,
@@ -71901,6 +73930,13 @@
           "text": "Suppression"
         },
         {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 506,
+          "end": 515,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 525,
           "end": 530,
@@ -72241,6 +74277,13 @@
           "end": 163,
           "text": "Elite",
           "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 212,
+          "end": 221,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "shiver-strike",
@@ -72936,6 +74979,13 @@
           "start": 138,
           "end": 145,
           "text": "Suspend"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 173,
+          "end": 183,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -76457,6 +78507,27 @@
       "perkHash": 2041432007,
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 182,
+          "end": 188,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 208,
+          "end": 214,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 221,
+          "end": 231,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 376,
           "end": 379,
@@ -77415,6 +79486,34 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 739,
+          "end": 745,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 766,
+          "end": 772,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 782,
+          "end": 788,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 820,
+          "end": 826,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-energy-grenade",
           "start": 986,
           "end": 993,
@@ -78316,6 +80415,13 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 121,
+          "end": 130,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 214,
           "end": 216,
@@ -79060,7 +81166,36 @@
       "secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/74e1434dd585c5c305f4d331d05895c6.jpg",
       "itemHash": 1665952087,
       "perkHash": 2223914385,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 72,
+          "end": 78,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 89,
+          "end": 95,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 112,
+          "end": 122,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 127,
+          "end": 133,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        }
+      ]
     },
     {
       "id": "foundry:2224838837:unstoppable-force",
@@ -79239,6 +81374,41 @@
           "start": 228,
           "end": 244,
           "text": "together Forever"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 474,
+          "end": 480,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 485,
+          "end": 491,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 500,
+          "end": 510,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 515,
+          "end": 524,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 533,
+          "end": 539,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -80780,6 +82950,13 @@
           "text": "Edge"
         },
         {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 170,
+          "end": 176,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "overshield",
           "start": 258,
           "end": 268,
@@ -81936,6 +84113,20 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 30,
+          "end": 40,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 42,
+          "end": 48,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
         {
           "keywordId": "bolt-charge",
           "start": 148,
@@ -83680,6 +85871,34 @@
           "start": 179,
           "end": 191,
           "text": "Ionic Traces"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 220,
+          "end": 226,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 234,
+          "end": 240,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 242,
+          "end": 252,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 258,
+          "end": 264,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -84107,6 +86326,55 @@
           "end": 83,
           "text": "Super Energy",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 119,
+          "end": 125,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 137,
+          "end": 143,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 148,
+          "end": 154,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 164,
+          "end": 170,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 175,
+          "end": 181,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 191,
+          "end": 197,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 202,
+          "end": 208,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -84600,6 +86868,34 @@
           "text": "Snareweaver"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 184,
+          "end": 190,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 196,
+          "end": 202,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 204,
+          "end": 214,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 220,
+          "end": 226,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "snareweaver",
           "start": 285,
           "end": 296,
@@ -84672,6 +86968,13 @@
           "start": 772,
           "end": 779,
           "text": "Suspend"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 807,
+          "end": 817,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -84740,6 +87043,34 @@
           "text": "Snareweaver"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 184,
+          "end": 190,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 196,
+          "end": 202,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 204,
+          "end": 214,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 220,
+          "end": 226,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "snareweaver",
           "start": 285,
           "end": 296,
@@ -84812,6 +87143,13 @@
           "start": 772,
           "end": 779,
           "text": "Suspend"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 807,
+          "end": 817,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -84880,6 +87218,34 @@
           "text": "Snareweaver"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 184,
+          "end": 190,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 196,
+          "end": 202,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 204,
+          "end": 214,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 220,
+          "end": 226,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        },
+        {
           "keywordId": "snareweaver",
           "start": 285,
           "end": 296,
@@ -84952,6 +87318,13 @@
           "start": 772,
           "end": 779,
           "text": "Suspend"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 807,
+          "end": 817,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -86074,6 +88447,34 @@
           "start": 212,
           "end": 231,
           "text": "Charged With Blight"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 342,
+          "end": 348,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 358,
+          "end": 364,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 366,
+          "end": 376,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 382,
+          "end": 388,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -87008,7 +89409,15 @@
       "secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/8fc373a11adc417aab9a3ef4bab3bbe3.jpg",
       "itemHash": 4207066264,
       "perkHash": 2767894946,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 64,
+          "end": 70,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        }
+      ]
     },
     {
       "id": "foundry:2769013282:property-undecidable",
@@ -88122,6 +90531,27 @@
           "end": 12,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 142,
+          "end": 148,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 158,
+          "end": 164,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 180,
+          "end": 190,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         }
       ]
     },
@@ -92991,6 +95421,13 @@
         },
         {
           "keywordId": "pattern:text-tier-champion",
+          "start": 120,
+          "end": 137,
+          "text": "Barrier Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
           "start": 196,
           "end": 212,
           "text": "Barrier Champion",
@@ -93007,6 +95444,13 @@
           "start": 264,
           "end": 272,
           "text": "Ignition"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 324,
+          "end": 341,
+          "text": "Barrier Champions",
+          "colorClass": "text-tier-champion"
         }
       ]
     },
@@ -95814,6 +98258,27 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 239,
+          "end": 245,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 272,
+          "end": 278,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 305,
+          "end": 315,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
           "keywordId": "edge",
           "start": 415,
           "end": 419,
@@ -98222,6 +100687,13 @@
           "colorClass": "text-energy-super"
         },
         {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 188,
+          "end": 194,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "pattern:text-tier-miniboss",
           "start": 221,
           "end": 229,
@@ -98672,6 +101144,13 @@
           "end": 474,
           "text": "[PVP: 100%]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 504,
+          "end": 525,
+          "text": "Unstoppable Champions",
+          "colorClass": "text-tier-champion"
         }
       ]
     },
@@ -99217,6 +101696,13 @@
           "colorClass": "text-tier-minor"
         },
         {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 246,
+          "end": 252,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "burning-souls",
           "start": 280,
           "end": 293,
@@ -99685,7 +102171,15 @@
       "secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/d63292c9248c5e3ae823605307140199.jpg",
       "itemHash": 3049715579,
       "perkHash": 3794918801,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 29,
+          "end": 35,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        }
+      ]
     },
     {
       "id": "foundry:3796465595:impact-casing",
@@ -100292,6 +102786,13 @@
       "perkHash": 3834106778,
       "annotations": [
         {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 36,
+          "end": 45,
+          "text": "Champions",
+          "colorClass": "text-tier-champion"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 327,
           "end": 331,
@@ -100863,6 +103364,13 @@
           "end": 251,
           "text": "[PVP: 145]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 261,
+          "end": 267,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         }
       ]
     },
@@ -101237,7 +103745,36 @@
       "secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/3ae064e4a93ea26a394ff35171193eed.jpg",
       "itemHash": 3899270607,
       "perkHash": 3913463509,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 158,
+          "end": 164,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 170,
+          "end": 176,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 182,
+          "end": 192,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 197,
+          "end": 203,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
+        }
+      ]
     },
     {
       "id": "foundry:3927963100:cerebral-uplink",
@@ -103034,6 +105571,20 @@
           "start": 81,
           "end": 93,
           "text": "Misdirection"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 151,
+          "end": 157,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 162,
+          "end": 168,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
         }
       ]
     },
@@ -103699,6 +106250,13 @@
           "end": 125,
           "text": "Miniboss",
           "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 131,
+          "end": 140,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
@@ -105205,7 +107763,15 @@
           "iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyBreakerTypeDefinition_825a438c85404efd6472ff9e97fc7251.png"
         }
       ],
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-tier-champion",
+          "start": 87,
+          "end": 108,
+          "text": "Unstoppable champions",
+          "colorClass": "text-tier-champion"
+        }
+      ]
     },
     {
       "id": "foundry:4199529752:whirling-ovation-catalyst",
@@ -105980,6 +108546,55 @@
           "colorClass": "text-energy-super"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 77,
+          "end": 83,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 96,
+          "end": 102,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 107,
+          "end": 113,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 125,
+          "end": 131,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 136,
+          "end": 142,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 152,
+          "end": 158,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 163,
+          "end": 169,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "thundercrash",
           "start": 205,
           "end": 217,
@@ -106117,6 +108732,55 @@
           "colorClass": "text-energy-super"
         },
         {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 334,
+          "end": 340,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 371,
+          "end": 377,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 382,
+          "end": 388,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 403,
+          "end": 409,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 414,
+          "end": 420,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 435,
+          "end": 441,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 446,
+          "end": 452,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
           "keywordId": "gathering-storm",
           "start": 544,
           "end": 559,
@@ -106128,6 +108792,27 @@
           "end": 572,
           "text": "Super Energy",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 576,
+          "end": 582,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 589,
+          "end": 595,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 613,
+          "end": 623,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
         },
         {
           "keywordId": "jolted",
@@ -106267,6 +108952,41 @@
           "end": 209,
           "text": "Class Ability Energy",
           "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-tier-minor",
+          "start": 306,
+          "end": 312,
+          "text": "Minors",
+          "colorClass": "text-tier-minor"
+        },
+        {
+          "keywordId": "pattern:text-tier-guardian",
+          "start": 317,
+          "end": 326,
+          "text": "Guardians",
+          "colorClass": "text-tier-guardian"
+        },
+        {
+          "keywordId": "pattern:text-tier-elite",
+          "start": 337,
+          "end": 343,
+          "text": "Elites",
+          "colorClass": "text-tier-elite"
+        },
+        {
+          "keywordId": "pattern:text-tier-miniboss",
+          "start": 345,
+          "end": 355,
+          "text": "Minibosses",
+          "colorClass": "text-tier-miniboss"
+        },
+        {
+          "keywordId": "pattern:text-tier-boss",
+          "start": 361,
+          "end": 367,
+          "text": "Bosses",
+          "colorClass": "text-tier-boss"
         },
         {
           "keywordId": "pattern:text-energy-ability",
