@@ -25,10 +25,10 @@ export const Verbs: Verb[] = [
 		types: ["Arc", "Elemental Pickup"],
 		aliases: ["Ionic Traces"],
 	},
-	{ name: "Blind", types: ["Arc", "Debuff"], aliases: ["Blinded"] },
-	{ name: "Jolted", types: ["Arc", "Debuff"], aliases: ["Jolt"] },
+	{ name: "Blind", types: ["Arc", "Debuff"], aliases: ["Blinded", "Blinding"] },
+	{ name: "Jolted", types: ["Arc", "Debuff"], aliases: ["Jolt", "Jolting"] },
 	// Solar
-	{ name: "Cure", types: ["Solar", "Buff"], aliases: ["Cured"] },
+	{ name: "Cure", types: ["Solar", "Buff"], aliases: ["Cured", "Curing"] },
 	{
 		name: "Firesprite",
 		types: ["Solar", "Elemental Pickup"],
@@ -36,8 +36,16 @@ export const Verbs: Verb[] = [
 	},
 	{ name: "Radiant", types: ["Solar", "Buff"] },
 	{ name: "Restoration", types: ["Solar", "Buff"] },
-	{ name: "Ignition", types: ["Solar", "Debuff"], aliases: ["Ignited"] },
-	{ name: "Scorch", types: ["Solar", "Debuff"], aliases: ["Scorched"] },
+	{
+		name: "Ignition",
+		types: ["Solar", "Debuff"],
+		aliases: ["Ignited", "Igniting"],
+	},
+	{
+		name: "Scorch",
+		types: ["Solar", "Debuff"],
+		aliases: ["Scorched", "Schorching"],
+	},
 	// Void
 	{ name: "Devour", types: ["Void", "Buff"] },
 	{ name: "Invisibility", types: ["Void", "Buff"], aliases: ["Invisible"] },
@@ -47,7 +55,11 @@ export const Verbs: Verb[] = [
 		types: ["Void", "Elemental Pickup"],
 		aliases: ["Void Breaches"],
 	},
-	{ name: "Suppression", types: ["Void", "Debuff"], aliases: ["Suppressed"] },
+	{
+		name: "Suppression",
+		types: ["Void", "Debuff"],
+		aliases: ["Suppressed", "Suppressing"],
+	},
 	{ name: "Volatile", types: ["Void", "Debuff"] },
 	{ name: "Volatile Rounds", types: ["Void", "Buff"] },
 	{
@@ -67,9 +79,17 @@ export const Verbs: Verb[] = [
 		aliases: ["Stasis Crystals"],
 	},
 	{ name: "Frost Armor", types: ["Stasis", "Buff"] },
-	{ name: "Slow", types: ["Stasis", "Debuff"], aliases: ["Slowed"] },
-	{ name: "Freeze", types: ["Stasis", "Debuff"], aliases: ["Frozen"] },
-	{ name: "Shatter", types: ["Stasis", "Debuff"], aliases: ["Shattered"] },
+	{ name: "Slow", types: ["Stasis", "Debuff"], aliases: ["Slowed", "Slowing"] },
+	{
+		name: "Freeze",
+		types: ["Stasis", "Debuff"],
+		aliases: ["Frozen", "Freezing"],
+	},
+	{
+		name: "Shatter",
+		types: ["Stasis", "Debuff"],
+		aliases: ["Shattered", "Shattering"],
+	},
 	// Strand
 	{
 		name: "Tangle",
@@ -84,7 +104,11 @@ export const Verbs: Verb[] = [
 	},
 	{ name: "Woven Mail", types: ["Strand", "Buff"] },
 	{ name: "Sever", types: ["Strand", "Debuff"], aliases: ["Severed"] },
-	{ name: "Suspend", types: ["Strand", "Debuff"], aliases: ["Suspended"] },
+	{
+		name: "Suspend",
+		types: ["Strand", "Debuff"],
+		aliases: ["Suspended", "Suspends", "Suspension", "Suspending"],
+	},
 	{
 		name: "Unravel",
 		types: ["Strand", "Debuff"],
