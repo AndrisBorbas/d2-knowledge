@@ -1,12 +1,18 @@
 "use client";
 
 import { cva, VariantProps } from "class-variance-authority";
-import { MoveUp, SquareArrowRightExit } from "lucide-react";
+import { MoveUp, Settings, SquareArrowRightExit } from "lucide-react";
 import Image from "next/image";
-import type { ReactNode } from "react";
+import { type ReactNode, useRef } from "react";
 
 import { getKeywordColor } from "@/lib/data/glossary";
-import type { AnnotatedEntry, Annotation, Keyword } from "@/lib/sheet/model";
+import type {
+	AnnotatedEntry,
+	Annotation,
+	IconGlyph,
+	Keyword,
+} from "@/lib/sheet/model";
+import { splitDescriptionIconMarkers } from "@/lib/utils/iconGlyph";
 import { cn } from "@/lib/utils/utils";
 
 const tooltipButtonVariants = cva("font-bold cursor-pointer", {
@@ -42,6 +48,7 @@ type KeywordClickPayload = {
 
 type TooltipKeywordHoverPayload = KeywordHoverPayload & {
 	entryId: string;
+	entryRect: DOMRect;
 };
 
 type TooltipKeywordClickPayload = KeywordClickPayload & {
@@ -56,7 +63,7 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 	if (keyword.types.includes("Buff")) {
 		return (
 			<MoveUp
-				className={cn("my-auto -ml-0.5 text-green-400", className)}
+				className={cn("my-auto text-green-400", className)}
 				{...restProps}
 			/>
 		);
@@ -64,7 +71,7 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 	if (keyword.types.includes("Debuff")) {
 		return (
 			<MoveUp
-				className={cn("my-auto -ml-0.5 rotate-180 text-red-400", className)}
+				className={cn("my-auto rotate-180 text-red-400", className)}
 				{...restProps}
 			/>
 		);
@@ -73,9 +80,17 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 		return (
 			<SquareArrowRightExit
 				className={cn(
-					"my-auto mr-1 ml-0.5 -rotate-90 text-blue-400",
+					"my-auto mr-0.5 ml-0.5 -rotate-90 text-blue-400",
 					className,
 				)}
+				{...restProps}
+			/>
+		);
+	}
+	if (keyword.types.includes("Construct")) {
+		return (
+			<Settings
+				className={cn("my-auto ml-0.5 rotate-30 text-yellow-400", className)}
 				{...restProps}
 			/>
 		);
@@ -128,6 +143,15 @@ function TooltipButton({
 			{...restProps}
 		>
 			<ExtraElement size={12} keyword={keyword} />
+			{/* {keyword.iconPath ? (
+				<Image
+					src={keyword.iconPath}
+					alt=""
+					width={14}
+					height={14}
+					className="my-auto inline-block align-middle"
+				/>
+			) : null} */}
 			{restProps.children ?? keyword.label}
 		</button>
 	);
@@ -157,8 +181,43 @@ function resolveColorEntry(
 	return entryMap.get(referencedEntryId) ?? entry;
 }
 
+function InlineGlyphIcon({ glyph }: { glyph: IconGlyph }) {
+	return (
+		<Image
+			src={glyph.iconPath}
+			alt={glyph.label}
+			title={glyph.label}
+			width={16}
+			height={16}
+			className="-mt-0.5 -mr-0.5 inline-block align-middle"
+		/>
+	);
+}
+
+function renderDescriptionSegment(
+	text: string,
+	iconGlyphs: IconGlyph[] | undefined,
+	keyPrefix: string,
+): ReactNode[] {
+	if (!iconGlyphs || iconGlyphs.length === 0) {
+		return [text];
+	}
+
+	return splitDescriptionIconMarkers(text).map((part, index) => {
+		if (part.type === "text") {
+			return part.text;
+		}
+
+		const glyph = iconGlyphs[part.glyphIndex];
+		return glyph ? (
+			<InlineGlyphIcon key={`${keyPrefix}-icon-${index}`} glyph={glyph} />
+		) : null;
+	});
+}
+
 export function TextWithTooltips(props: TextWithTooltipsProps) {
 	const text = props.text ?? "";
+	const iconGlyphs = props.entry.iconGlyphs;
 	const sorted = [...props.annotations]
 		.filter((item) => item.end > item.start && item.start >= 0)
 		.sort((a, b) => a.start - b.start);
@@ -168,12 +227,24 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 
 	for (const annotation of sorted) {
 		if (annotation.start > cursor) {
-			nodes.push(text.slice(cursor, annotation.start));
+			nodes.push(
+				...renderDescriptionSegment(
+					text.slice(cursor, annotation.start),
+					iconGlyphs,
+					`pre-${annotation.start}`,
+				),
+			);
 		}
 
 		const keyword = props.keywordById.get(annotation.keywordId);
 		if (!keyword) {
-			nodes.push(text.slice(annotation.start, annotation.end));
+			nodes.push(
+				...renderDescriptionSegment(
+					text.slice(annotation.start, annotation.end),
+					iconGlyphs,
+					`missing-${annotation.start}`,
+				),
+			);
 			cursor = annotation.end;
 			continue;
 		}
@@ -197,7 +268,9 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 	}
 
 	if (cursor < text.length) {
-		nodes.push(text.slice(cursor));
+		nodes.push(
+			...renderDescriptionSegment(text.slice(cursor), iconGlyphs, "suffix"),
+		);
 	}
 
 	return <>{nodes}</>;
@@ -210,6 +283,7 @@ type TooltipProps = {
 	onKeywordHover?: (payload: TooltipKeywordHoverPayload) => void;
 	onKeywordLeave?: () => void;
 	onKeywordClick?: (payload: TooltipKeywordClickPayload) => void;
+	onGroupClick?: (group: string) => void;
 };
 
 type TooltipContentProps = {
@@ -375,12 +449,17 @@ export function Tooltip({
 	onKeywordHover,
 	onKeywordLeave,
 	onKeywordClick,
+	onGroupClick,
 }: TooltipProps) {
+	const articleRef = useRef<HTMLElement>(null);
+
 	const handleKeywordHover = (payload: KeywordHoverPayload) => {
 		onKeywordHover?.({
 			keywordId: payload.keywordId,
 			anchorRect: payload.anchorRect,
 			entryId: entry.id,
+			entryRect:
+				articleRef.current?.getBoundingClientRect() ?? payload.anchorRect,
 		});
 	};
 
@@ -391,11 +470,12 @@ export function Tooltip({
 		});
 	};
 
-	const tabs = [entry.tab, entry.section];
+	const groups = entry.groups;
 
 	return (
 		<article
 			key={entry.id}
+			ref={articleRef}
 			className="borderHover h-fit bg-blue-950/10 backdrop-blur-md"
 		>
 			<div className="grid grid-cols-[66px_1fr] items-center justify-start gap-4 border-b border-blue-600/50 bg-blue-950/30">
@@ -405,14 +485,16 @@ export function Tooltip({
 				<h3 className="text-xl font-semibold text-white">{entry.title}</h3>
 			</div>
 
-			<div className="mx-2 mt-2 flex gap-2">
-				{tabs.map((tab, index) => (
-					<span
-						key={index}
-						className="borderHover inline-block bg-blue-950/20 px-3 py-1 text-xs text-white/60"
+			<div className="mx-2 mt-2 flex flex-wrap gap-2">
+				{groups.map((group) => (
+					<button
+						key={group}
+						type="button"
+						onClick={() => onGroupClick?.(group)}
+						className="borderHover inline-block bg-blue-950/20 px-3 py-1 text-xs text-white/60 transition hover:bg-blue-950/40"
 					>
-						{tab}
-					</span>
+						{group}
+					</button>
 				))}
 			</div>
 

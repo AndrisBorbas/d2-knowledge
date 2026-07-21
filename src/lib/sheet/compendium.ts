@@ -1,12 +1,10 @@
-import {
-	groupEntriesByTab,
-	mergeUnifiedEntries,
-	toEntries,
-} from "@/lib/data/aggregate";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
+import { mergeUnifiedEntries, toEntries } from "@/lib/data/aggregate";
+import { Verbs } from "@/lib/data/glossary";
 import { loadFoundrySource } from "@/lib/data/sources/foundry";
 import { loadSheetSource } from "@/lib/data/sources/sheet";
-import { annotateEntries, buildKeywords } from "./keywords";
+
+import { annotateEntries, buildKeywords, toSlug } from "./keywords";
 import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
 
 export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
@@ -46,27 +44,21 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 	});
 	const mergedEntries = toEntries(enrichedUnifiedEntries);
 
-	const keywords = buildKeywords(mergedEntries);
-	const annotatedEntries = annotateEntries(mergedEntries, keywords);
-
-	const groupedByTab = groupEntriesByTab(annotatedEntries);
-	const orderedTabNames = [
-		...sheetSource.tabs.map((tab) => tab.name),
-		...Array.from(groupedByTab.keys()).filter(
-			(tabName) => !sheetSource.tabs.some((tab) => tab.name === tabName),
-		),
-	];
-
-	const tabs = orderedTabNames
-		.map((tabName) => ({
-			name: tabName,
-			entries: groupedByTab.get(tabName) ?? [],
-		}))
-		.filter((tab) => tab.entries.length > 0);
+	const keywords = buildKeywords(mergedEntries, (className) =>
+		bungieResolver?.getGlyphIconPath(className),
+	);
+	const annotatedEntries = annotateEntries(mergedEntries, keywords).map(
+		(entry) => {
+			const isVerb = Verbs.some(
+				(verb) => toSlug(verb.name) === toSlug(entry.title.trim()),
+			);
+			return isVerb ? { ...entry, groups: [...entry.groups, "Verb"] } : entry;
+		},
+	);
 
 	const dataset = {
 		generatedAt: new Date().toISOString(),
-		tabs,
+		entries: annotatedEntries,
 		keywords,
 	};
 

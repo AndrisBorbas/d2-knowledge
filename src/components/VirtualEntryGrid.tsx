@@ -8,15 +8,11 @@ import { cn } from "@/lib/utils/utils";
 
 import { Tooltip } from "./Tooltip";
 
-export type EntryListItem = {
-	tabName: string;
-	entry: AnnotatedEntry;
-};
-
 type KeywordHoverPayload = {
 	keywordId: string;
 	entryId: string;
 	anchorRect: DOMRect;
+	entryRect: DOMRect;
 };
 
 type KeywordClickPayload = {
@@ -25,12 +21,13 @@ type KeywordClickPayload = {
 };
 
 type VirtualEntryGridProps = {
-	items: EntryListItem[];
+	items: AnnotatedEntry[];
 	entryMap: Map<string, AnnotatedEntry>;
 	keywordMap: Map<string, Keyword>;
 	onKeywordHover: (payload: KeywordHoverPayload) => void;
 	onKeywordLeave: () => void;
 	onKeywordClick: (payload: KeywordClickPayload) => void;
+	onGroupClick: (group: string) => void;
 	className?: string;
 };
 
@@ -110,6 +107,7 @@ export function VirtualEntryGrid({
 	onKeywordHover,
 	onKeywordLeave,
 	onKeywordClick,
+	onGroupClick,
 	className,
 }: VirtualEntryGridProps) {
 	const scrollElementRef = useRef<HTMLDivElement>(null);
@@ -159,7 +157,7 @@ export function VirtualEntryGrid({
 							}}
 							className="p-4"
 						>
-							{row.map(({ entry }) => (
+							{row.map((entry) => (
 								<Tooltip
 									key={entry.id}
 									entry={entry}
@@ -168,6 +166,7 @@ export function VirtualEntryGrid({
 									onKeywordHover={onKeywordHover}
 									onKeywordLeave={onKeywordLeave}
 									onKeywordClick={onKeywordClick}
+									onGroupClick={onGroupClick}
 								/>
 							))}
 						</div>

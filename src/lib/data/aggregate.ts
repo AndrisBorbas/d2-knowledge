@@ -129,15 +129,3 @@ export function mergeUnifiedEntries(
 export function toEntries(unifiedEntries: UnifiedEntry[]): Entry[] {
 	return unifiedEntries.map((entry) => ({ ...entry }));
 }
-
-export function groupEntriesByTab(entries: Entry[]) {
-	const map = new Map<string, Entry[]>();
-	for (const entry of entries) {
-		if (!map.has(entry.tab)) {
-			map.set(entry.tab, []);
-		}
-		map.get(entry.tab)?.push(entry);
-	}
-
-	return map;
-}

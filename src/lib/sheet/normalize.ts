@@ -230,6 +230,28 @@ function isNoteCandidate(
 	return nonEmpty[0].text.length >= minLength;
 }
 
+const CLASS_SCOPED_SECTIONS = [
+	"Aspect",
+	"Grenade Abilities",
+	"Melee Abilities",
+	"Super Abilities",
+	"Class Abilities",
+];
+
+function buildBaseGroups(
+	tabName: string,
+	section: string | null,
+	activeClassName: string | null = null,
+) {
+	const groups = [tabName];
+	if (section) groups.push(section);
+	if (section && CLASS_SCOPED_SECTIONS.includes(section)) {
+		groups.push("Abilities");
+		if (activeClassName) groups.push(activeClassName);
+	}
+	return groups;
+}
+
 function buildEntriesFromPairedRows(
 	tabName: string,
 	rowIndex: number,
@@ -274,6 +296,7 @@ function buildEntriesFromPairedRows(
 				id: createEntryId(tabName, section, titleCell.text, source),
 				tab: tabName,
 				section,
+				groups: buildBaseGroups(tabName, section),
 				title: titleCell.text,
 				description,
 				source,
@@ -306,6 +329,7 @@ function buildEntriesFromPairedRows(
 			id: createEntryId(tabName, section, titleCell.text, source),
 			tab: tabName,
 			section,
+			groups: buildBaseGroups(tabName, section),
 			title: titleCell.text,
 			description: descriptionCell.text,
 			source,
@@ -353,6 +377,7 @@ function buildEntriesFromPairedColumns(
 			id: createEntryId(tabName, section, titleCell.text, source),
 			tab: tabName,
 			section,
+			groups: buildBaseGroups(tabName, section),
 			title: titleCell.text,
 			description: descriptionCell.text,
 			source,
@@ -421,6 +446,7 @@ function buildEntryFromSameRow(
 		id: createEntryId(tabName, state.section, title, source),
 		tab: tabName,
 		section: state.section,
+		groups: buildBaseGroups(tabName, state.section, state.activeClassName),
 		title,
 		description,
 		source,
@@ -471,6 +497,7 @@ function buildEntriesFromSetBonusRows(
 			id: createEntryId(tabName, section, title, source),
 			tab: tabName,
 			section,
+			groups: buildBaseGroups(tabName, section),
 			title: title,
 			description: firstDescription,
 			source,
@@ -487,6 +514,7 @@ function buildEntriesFromSetBonusRows(
 			id: createEntryId(tabName, section, title, source),
 			tab: tabName,
 			section,
+			groups: buildBaseGroups(tabName, section),
 			title: title,
 			description: secondDescription,
 			source,
@@ -761,6 +789,7 @@ export function normalizeTabWithRule(
 				),
 				tab: tabName,
 				section: currentState.section,
+				groups: buildBaseGroups(tabName, currentState.section),
 				title: "Note",
 				description: cell.text,
 				source,

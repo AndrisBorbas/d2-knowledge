@@ -6,3 +6,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- END:nextjs-agent-rules -->
 
 Use bun as package manager and runtime.
+
+Don't try to inspect in browser, dev server is running, i'll check changes.

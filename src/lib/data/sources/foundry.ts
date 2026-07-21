@@ -1,8 +1,13 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import {
+	SKIPPED_GLYPH_CLASS_NAMES,
+	STATIC_ICON_PATH_BY_GLYPH,
+} from "@/lib/bungie/glyphs";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
-import type { Entry } from "@/lib/sheet/model";
+import type { Entry, IconGlyph } from "@/lib/sheet/model";
+import { buildIconMarker } from "@/lib/utils/iconGlyph";
 
 import {
 	classifyUnifiedKind,
@@ -34,15 +39,6 @@ type FoundryRecord = {
 
 type FoundryPayload = Record<string, FoundryRecord>;
 
-const ELEMENT_CLASS_NAMES = new Set([
-	"arc",
-	"solar",
-	"void",
-	"stasis",
-	"strand",
-	"prismatic",
-]);
-
 function normalizeTitle(value: string) {
 	return value
 		.toLowerCase()
@@ -64,12 +60,20 @@ function cleanupText(value: string) {
 		.trim();
 }
 
+type FlattenedFoundryDescription = {
+	text: string;
+	iconGlyphs: IconGlyph[];
+};
+
 function flattenFoundryDescription(
 	blocks: FoundryDescriptionBlock[] | undefined,
-) {
-	if (!blocks || blocks.length === 0) return "";
+	resolveGlyphIcon: (className: string) => string | undefined,
+): FlattenedFoundryDescription {
+	if (!blocks || blocks.length === 0) return { text: "", iconGlyphs: [] };
 
+	const iconGlyphs: IconGlyph[] = [];
 	const lines: string[] = [];
+
 	for (const block of blocks) {
 		if (block.classNames?.includes("spacer")) {
 			lines.push("");
@@ -87,10 +91,20 @@ function flattenFoundryDescription(
 				continue;
 			}
 
-			const className = part.classNames?.[0]?.toLowerCase();
-			if (className && ELEMENT_CLASS_NAMES.has(className)) {
-				line += `${toTitleCase(className)} `;
+			const className = part.classNames?.[0];
+			if (!className || SKIPPED_GLYPH_CLASS_NAMES.has(className)) {
+				continue;
 			}
+
+			const label = toTitleCase(className);
+			const iconPath = resolveGlyphIcon(className);
+			if (iconPath) {
+				iconGlyphs.push({ label, iconPath });
+				line += `${buildIconMarker(iconGlyphs.length - 1)} `;
+				continue;
+			}
+
+			line += `${label} `;
 		}
 
 		const normalized = line.trim();
@@ -99,7 +113,10 @@ function flattenFoundryDescription(
 		}
 	}
 
-	return cleanupText(lines.join("\n"));
+	return {
+		text: cleanupText(lines.join("\n")),
+		iconGlyphs,
+	};
 }
 
 export const FOUNDRY_FALLBACK_TAB = "Foundry";
@@ -118,11 +135,43 @@ function mapFoundryTypeToTab(type: string | undefined) {
 	return FOUNDRY_FALLBACK_TAB;
 }
 
-function toEntry(record: FoundryRecord, index: number): Entry | null {
+function mapFoundryTypeToGroups(type: string | undefined): string[] {
+	const normalized = (type ?? "").toLowerCase();
+	const groups: string[] = [];
+
+	if (normalized.startsWith("armor")) {
+		groups.push("Armor Perks");
+	} else if (normalized.startsWith("weapon") || normalized.includes("trait")) {
+		groups.push("Weapon Perks");
+	} else if (normalized.includes("artifact")) {
+		groups.push("Artifact Perks");
+	} else if (normalized.startsWith("subclass")) {
+		groups.push("Abilities");
+	}
+
+	if (normalized.includes("exotic")) {
+		groups.push("Exotic");
+	}
+
+	if (type?.trim()) {
+		groups.push(type.trim());
+	}
+
+	return groups.length > 0 ? groups : [FOUNDRY_FALLBACK_TAB];
+}
+
+function toEntry(
+	record: FoundryRecord,
+	index: number,
+	resolveGlyphIcon: (className: string) => string | undefined,
+): Entry | null {
 	const title = record.name?.trim() ?? "";
 	if (!title) return null;
 
-	const description = flattenFoundryDescription(record.descriptions?.en);
+	const { text: description, iconGlyphs } = flattenFoundryDescription(
+		record.descriptions?.en,
+		resolveGlyphIcon,
+	);
 	if (!description) return null;
 
 	const tabName = mapFoundryTypeToTab(record.type);
@@ -132,6 +181,7 @@ function toEntry(record: FoundryRecord, index: number): Entry | null {
 		id: `foundry:${record.hash}:${normalizeTitle(title)}`,
 		tab: tabName,
 		section,
+		groups: mapFoundryTypeToGroups(record.type),
 		source: {
 			tab: "foundry",
 			row: index,
@@ -139,6 +189,7 @@ function toEntry(record: FoundryRecord, index: number): Entry | null {
 		},
 		title,
 		description,
+		iconGlyphs: iconGlyphs.length > 0 ? iconGlyphs : undefined,
 		extraInfo: record.itemName ? `Item: ${record.itemName}` : undefined,
 	};
 }
@@ -159,13 +210,16 @@ export async function loadFoundrySource() {
 	const payload = await loadFoundryRecords();
 	const records = Object.values(payload);
 	const bungieResolver = await loadBungieManifestSnapshotResolver();
+	const resolveGlyphIcon = (className: string) =>
+		STATIC_ICON_PATH_BY_GLYPH[className] ??
+		bungieResolver?.getGlyphIconPath(className);
 
 	const entries: Entry[] = [];
 	const unifiedEntries: UnifiedEntry[] = [];
 
 	for (let index = 0; index < records.length; index++) {
 		const record = records[index];
-		const entry = toEntry(record, index);
+		const entry = toEntry(record, index, resolveGlyphIcon);
 		if (!entry) continue;
 
 		entries.push(entry);

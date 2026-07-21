@@ -1,7 +1,7 @@
 import {
+	type DestinyManifestComponentName,
 	getDestinyManifest,
 	getDestinyManifestSlice,
-	type DestinyManifestComponentName,
 } from "bungie-api-ts/destiny2";
 
 import { getBungieHttpClient } from "./client";
@@ -10,6 +10,8 @@ export const DEFAULT_MANIFEST_TABLES: DestinyManifestComponentName[] = [
 	"DestinyInventoryItemDefinition",
 	"DestinySandboxPerkDefinition",
 	"DestinyTraitDefinition",
+	"DestinyDamageTypeDefinition",
+	"DestinyBreakerTypeDefinition",
 ];
 
 export async function fetchDestinyManifestSummary() {

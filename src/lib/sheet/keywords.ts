@@ -46,7 +46,7 @@ const STATUS_TERMS = [
 	"blind",
 ];
 
-function toSlug(value: string) {
+export function toSlug(value: string) {
 	return value
 		.toLowerCase()
 		.trim()
@@ -59,7 +59,10 @@ export type KeywordMatchTerm = {
 	term: string;
 };
 
-export function buildKeywords(entries: Entry[]) {
+export function buildKeywords(
+	entries: Entry[],
+	resolveGlyphIcon?: (className: string) => string | undefined,
+) {
 	const map = new Map<string, Keyword>();
 
 	for (const entry of entries) {
@@ -70,6 +73,9 @@ export function buildKeywords(entries: Entry[]) {
 		const existing = map.get(id);
 		if (!existing) {
 			const verb = Verbs.find((verb) => toSlug(verb.name) === id);
+			const elementType = verb?.types.find((type) =>
+				ELEMENT_TERMS.has(type.toLowerCase()),
+			);
 			map.set(id, {
 				id,
 				label,
@@ -77,6 +83,9 @@ export function buildKeywords(entries: Entry[]) {
 				types: verb?.types ?? ["default"],
 				variant: "default",
 				references: [entry.id],
+				iconPath: elementType
+					? resolveGlyphIcon?.(elementType.toLowerCase())
+					: undefined,
 			});
 			continue;
 		}

@@ -71,7 +71,6 @@ export function classifyUnifiedKind(params: {
 		tabText.includes("grenade") ||
 		tabText.includes("melee") ||
 		tabText.includes("aspect") ||
-		tabText.includes("fragment") ||
 		tabText.includes("super")
 	) {
 		return "ability" as const;

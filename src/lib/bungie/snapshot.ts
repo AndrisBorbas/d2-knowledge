@@ -1,6 +1,8 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import { BREAKER_TYPE_ENUM_BY_GLYPH, DAMAGE_TYPE_ENUM_BY_GLYPH } from "./glyphs";
+
 type BungieDisplayProperties = {
 	name?: string;
 	icon?: string;
@@ -17,6 +19,8 @@ type BungieManifestSnapshot = {
 		DestinyInventoryItemDefinition?: Record<string, BungieManifestRow>;
 		DestinySandboxPerkDefinition?: Record<string, BungieManifestRow>;
 		DestinyTraitDefinition?: Record<string, BungieManifestRow>;
+		DestinyDamageTypeDefinition?: Record<string, BungieManifestRow>;
+		DestinyBreakerTypeDefinition?: Record<string, BungieManifestRow>;
 	};
 };
 
@@ -82,12 +86,15 @@ export type BungieManifestSnapshotResolver = {
 		itemName?: string;
 		itemIconPath?: string;
 	} | null;
+	getGlyphIconPath(className: string): string | undefined;
 };
 
 class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly inventoryTable: Record<string, BungieManifestRow> | null;
 	private readonly perkTable: Record<string, BungieManifestRow> | null;
 	private readonly traitTable: Record<string, BungieManifestRow> | null;
+	private readonly damageTypeTable: Record<string, BungieManifestRow> | null;
+	private readonly breakerTypeTable: Record<string, BungieManifestRow> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
 
@@ -100,6 +107,12 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		);
 		this.traitTable = asRecord<BungieManifestRow>(
 			snapshot.tables?.DestinyTraitDefinition,
+		);
+		this.damageTypeTable = asRecord<BungieManifestRow>(
+			snapshot.tables?.DestinyDamageTypeDefinition,
+		);
+		this.breakerTypeTable = asRecord<BungieManifestRow>(
+			snapshot.tables?.DestinyBreakerTypeDefinition,
 		);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
@@ -178,6 +191,22 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			itemName: display.name,
 			itemIconPath: normalizeIconPath(display.icon),
 		};
+	}
+
+	getGlyphIconPath(className: string) {
+		const key = className.toLowerCase();
+
+		const damageEnum = DAMAGE_TYPE_ENUM_BY_GLYPH[key];
+		if (damageEnum !== undefined) {
+			return normalizeIconPath(this.damageTypeTable?.[String(damageEnum)]?.i);
+		}
+
+		const breakerEnum = BREAKER_TYPE_ENUM_BY_GLYPH[key];
+		if (breakerEnum !== undefined) {
+			return normalizeIconPath(this.breakerTypeTable?.[String(breakerEnum)]?.i);
+		}
+
+		return undefined;
 	}
 }
 

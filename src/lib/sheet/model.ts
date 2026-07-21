@@ -13,6 +13,11 @@ export const annotationSchema = z.object({
 	text: z.string(),
 });
 
+export const iconGlyphSchema = z.object({
+	label: z.string(),
+	iconPath: z.string(),
+});
+
 export const unifiedSourceIdSchema = z.enum([
 	"sheet",
 	"foundry",
@@ -46,6 +51,7 @@ export const entrySchema = z.object({
 	id: z.string(),
 	tab: z.string(),
 	section: z.string().nullable(),
+	groups: z.array(z.string()),
 	source: sourceSpanSchema,
 	title: z.string(),
 	description: z.string(),
@@ -58,6 +64,7 @@ export const entrySchema = z.object({
 	secondaryIconPath: z.string().optional(),
 	itemHash: z.number().int().nonnegative().optional(),
 	perkHash: z.number().int().nonnegative().optional(),
+	iconGlyphs: z.array(iconGlyphSchema).optional(),
 });
 
 export const annotatedEntrySchema = entrySchema.extend({
@@ -89,6 +96,7 @@ export const keywordSchema = z.object({
 	types: z.array(z.string()),
 	variant: keywordVariantSchema,
 	references: z.array(z.string()),
+	iconPath: z.string().optional(),
 });
 
 export const tabDataSchema = z.object({
@@ -96,19 +104,15 @@ export const tabDataSchema = z.object({
 	entries: z.array(entrySchema),
 });
 
-export const annotatedTabDataSchema = z.object({
-	name: z.string(),
-	entries: z.array(annotatedEntrySchema),
-});
-
 export const compendiumDatasetSchema = z.object({
 	generatedAt: z.string(),
-	tabs: z.array(annotatedTabDataSchema),
+	entries: z.array(annotatedEntrySchema),
 	keywords: z.array(keywordSchema),
 });
 
 export type SourceSpan = z.infer<typeof sourceSpanSchema>;
 export type Annotation = z.infer<typeof annotationSchema>;
+export type IconGlyph = z.infer<typeof iconGlyphSchema>;
 export type UnifiedSourceId = z.infer<typeof unifiedSourceIdSchema>;
 export type UnifiedEntryKind = z.infer<typeof unifiedEntryKindSchema>;
 export type UnifiedSourceRef = z.infer<typeof unifiedSourceRefSchema>;
@@ -117,5 +121,4 @@ export type AnnotatedEntry = z.infer<typeof annotatedEntrySchema>;
 export type KeywordCategory = z.infer<typeof keywordCategorySchema>;
 export type Keyword = z.infer<typeof keywordSchema>;
 export type TabData = z.infer<typeof tabDataSchema>;
-export type AnnotatedTabData = z.infer<typeof annotatedTabDataSchema>;
 export type CompendiumDataset = z.infer<typeof compendiumDatasetSchema>;

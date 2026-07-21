@@ -21,6 +21,8 @@ type CompactManifestTables = {
 	DestinyInventoryItemDefinition: Record<string, CompactDefinition>;
 	DestinySandboxPerkDefinition: Record<string, CompactDefinition>;
 	DestinyTraitDefinition: Record<string, CompactDefinition>;
+	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
+	DestinyBreakerTypeDefinition: Record<string, CompactDefinition>;
 };
 
 function normalizeLookupName(value: string) {
@@ -139,6 +141,30 @@ function filterTableToHashesAndTitles(
 	return Object.fromEntries(entries);
 }
 
+// Damage/breaker type tables are small fixed enumerations we always look up
+// by their enumValue (e.g. DamageType.Arc), not by hash, so key the compact
+// table by enumValue instead.
+function buildEnumKeyedTable(table: unknown) {
+	const source = asRecord<unknown>(table);
+	if (!source) {
+		return {} as Record<string, CompactDefinition>;
+	}
+
+	const entries: Array<[string, CompactDefinition]> = [];
+	for (const value of Object.values(source)) {
+		const row = asRecord<unknown>(value);
+		const enumValue = row?.enumValue;
+		if (typeof enumValue !== "number") continue;
+
+		const compact = toCompactDefinition(value);
+		if (!compact) continue;
+
+		entries.push([String(enumValue), compact]);
+	}
+
+	return Object.fromEntries(entries);
+}
+
 async function main() {
 	const outputDir = path.join(
 		process.cwd(),
@@ -168,6 +194,12 @@ async function main() {
 			snapshot.tables.DestinyTraitDefinition,
 			perkHashes,
 			sheetTitleKeys,
+		),
+		DestinyDamageTypeDefinition: buildEnumKeyedTable(
+			snapshot.tables.DestinyDamageTypeDefinition,
+		),
+		DestinyBreakerTypeDefinition: buildEnumKeyedTable(
+			snapshot.tables.DestinyBreakerTypeDefinition,
 		),
 	};
 

@@ -1,15 +1,13 @@
 "use client";
 
 import { X } from "lucide-react";
-import { useQueryState } from "nuqs";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { parseAsArrayOf, parseAsString, useQueryState } from "nuqs";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Group, Panel, Separator } from "react-resizable-panels";
 
-import type { CompendiumDataset } from "@/lib/sheet/model";
-import {
-	fuzzyFilterCompendiumTabs,
-	fuzzySortCompendiumEntries,
-} from "@/lib/utils/fuzzy";
+import { CURATED_TOP_GROUPS } from "@/lib/data/groups";
+import type { AnnotatedEntry, CompendiumDataset } from "@/lib/sheet/model";
+import { fuzzyFilterCompendiumEntries } from "@/lib/utils/fuzzy";
 import { cn } from "@/lib/utils/utils";
 
 import { Tooltip } from "./Tooltip";
@@ -19,26 +17,18 @@ type CompendiumPreviewProps = {
 	dataset: CompendiumDataset;
 };
 
-type TabFilter = "all" | string;
-
 type HoverPreviewState = {
 	entryId: string;
-	placement: "top" | "bottom";
+	placement: "left" | "right";
 	anchor: {
 		top: number;
 		bottom: number;
 		left: number;
-		width: number;
+		right: number;
 	};
 };
 
-type VisibleEntryItem = {
-	tabName: string;
-	entry: CompendiumDataset["tabs"][number]["entries"][number];
-};
-
 const MOBILE_MEDIA_QUERY = "(max-width: 1023px)";
-const HOVER_CARD_WIDTH = 520;
 const HOVER_CARD_MARGIN = 12;
 const HOVER_CARD_OFFSET = 10;
 const SEARCH_DEBOUNCE_MS = 500;
@@ -69,80 +59,68 @@ function isMobileViewport() {
 export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	const [searchQuery, setSearchQuery] = useQueryState("q");
 	const [searchInput, setSearchInput] = useState("");
-	const [tabQuery, setTabQuery] = useQueryState("tab");
-	const activeTab: TabFilter = tabQuery ?? "all";
-	const setActiveTab = (nextTab: TabFilter) => {
-		void setTabQuery(nextTab === "all" ? null : nextTab);
+	const [activeGroups, setActiveGroups] = useQueryState(
+		"groups",
+		parseAsArrayOf(parseAsString).withDefault([]),
+	);
+	const toggleGroup = (group: string) => {
+		void setActiveGroups((current) =>
+			current.includes(group)
+				? current.filter((existing) => existing !== group)
+				: [...current, group],
+		);
 	};
 	const [clickedEntryIds, setClickedEntryIds] = useState<string[]>([]);
 	const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 	const [hoverPreview, setHoverPreview] = useState<HoverPreviewState | null>(
 		null,
 	);
+	const hoverCardRef = useRef<HTMLDivElement>(null);
+	const [resolvedHoverTop, setResolvedHoverTop] = useState<number | null>(null);
 	const shuffleSeedRef = useRef(Math.floor(Math.random() * 0x7fffffff));
 	const effectiveQuery = searchQuery ?? "";
 	const keywordMap = useMemo(
 		() => new Map(dataset.keywords.map((keyword) => [keyword.id, keyword])),
 		[dataset.keywords],
 	);
-	const tabNames = useMemo(
-		() => dataset.tabs.map((tab) => tab.name),
-		[dataset.tabs],
+	const allEntries = dataset.entries;
+	const knownGroups = useMemo(
+		() => new Set(allEntries.flatMap((entry) => entry.groups)),
+		[allEntries],
 	);
 	const hasActiveQuery = effectiveQuery.trim().length > 0;
-	const filteredTabs = useMemo(
-		() => fuzzyFilterCompendiumTabs(dataset.tabs, effectiveQuery),
-		[dataset.tabs, effectiveQuery],
+	const filteredEntries = useMemo(
+		() => fuzzyFilterCompendiumEntries(allEntries, effectiveQuery),
+		[allEntries, effectiveQuery],
 	);
-	const sortedEntries = useMemo(
-		() => fuzzySortCompendiumEntries(dataset.tabs, effectiveQuery),
-		[dataset.tabs, effectiveQuery],
-	);
-	const visibleTabs = useMemo(() => {
-		if (activeTab === "all") {
-			return filteredTabs;
+	const hasActiveGroups = activeGroups.length > 0;
+	const visibleEntriesFiltered = useMemo(() => {
+		if (!hasActiveGroups) {
+			return filteredEntries;
 		}
 
-		return filteredTabs.filter((tab) => tab.name === activeTab);
-	}, [activeTab, filteredTabs]);
-	const entryItems = useMemo<VisibleEntryItem[]>(() => {
-		if (!hasActiveQuery) {
-			return visibleTabs.flatMap((tab) =>
-				tab.entries.map((entry) => ({
-					tabName: tab.name,
-					entry,
-				})),
-			);
-		}
-
-		return sortedEntries
-			.filter((entry) => activeTab === "all" || entry.tab === activeTab)
-			.map((entry) => ({
-				tabName: entry.tab,
-				entry,
-			}));
-	}, [visibleTabs, sortedEntries, hasActiveQuery, activeTab]);
-	const allEntries = dataset.tabs.flatMap((tab) => tab.entries);
+		return filteredEntries.filter((entry) =>
+			entry.groups.some((group) => activeGroups.includes(group)),
+		);
+	}, [filteredEntries, hasActiveGroups, activeGroups]);
 	const entryMap = useMemo(
 		() => new Map(allEntries.map((entry) => [entry.id, entry])),
 		[allEntries],
 	);
-	const shouldRandomize = !hasActiveQuery && activeTab === "all";
-	const orderedEntryItems = useMemo(() => {
+	const shouldRandomize = !hasActiveQuery && !hasActiveGroups;
+	const orderedEntries = useMemo(() => {
 		if (!shouldRandomize) {
-			return entryItems;
+			return visibleEntriesFiltered;
 		}
 
 		const seed = shuffleSeedRef.current;
-		return [...entryItems].sort((left, right) => {
-			const leftScore = hashStringWithSeed(left.entry.id, seed);
-			const rightScore = hashStringWithSeed(right.entry.id, seed);
+		return [...visibleEntriesFiltered].sort((left, right) => {
+			const leftScore = hashStringWithSeed(left.id, seed);
+			const rightScore = hashStringWithSeed(right.id, seed);
 			return leftScore - rightScore;
 		});
-	}, [entryItems, shouldRandomize]);
-	const visibleEntries = orderedEntryItems.map((item) => item.entry);
-	const visibleTabsCount =
-		activeTab === "all" ? visibleTabs.length : visibleTabs.length;
+	}, [visibleEntriesFiltered, shouldRandomize]);
+	const visibleEntries = orderedEntries;
 	const totalAnnotations = allEntries.reduce(
 		(count, entry) => count + entry.annotations.length,
 		0,
@@ -151,12 +129,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		() =>
 			clickedEntryIds
 				.map((entryId) => entryMap.get(entryId))
-				.filter(
-					(
-						entry,
-					): entry is CompendiumDataset["tabs"][number]["entries"][number] =>
-						Boolean(entry),
-				),
+				.filter((entry): entry is AnnotatedEntry => Boolean(entry)),
 		[clickedEntryIds, entryMap],
 	);
 	const hoveredEntry = hoverPreview
@@ -168,17 +141,18 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 			return null;
 		}
 
-		const centerX = hoverPreview.anchor.left + hoverPreview.anchor.width / 2;
-		const maxLeft = window.innerWidth - HOVER_CARD_WIDTH - HOVER_CARD_MARGIN;
-		const left = clamp(
-			centerX - HOVER_CARD_WIDTH / 2,
+		const centerY =
+			hoverPreview.anchor.top +
+			(hoverPreview.anchor.bottom - hoverPreview.anchor.top) / 2;
+		const top = clamp(
+			centerY,
 			HOVER_CARD_MARGIN,
-			maxLeft,
+			window.innerHeight - HOVER_CARD_MARGIN,
 		);
-		const top =
-			hoverPreview.placement === "top"
-				? hoverPreview.anchor.top - HOVER_CARD_OFFSET
-				: hoverPreview.anchor.bottom + HOVER_CARD_OFFSET;
+		const left =
+			hoverPreview.placement === "right"
+				? hoverPreview.anchor.right + HOVER_CARD_OFFSET
+				: hoverPreview.anchor.left - HOVER_CARD_OFFSET;
 
 		return {
 			left,
@@ -186,15 +160,35 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		};
 	}, [hoverPreview]);
 
-	useEffect(() => {
-		if (activeTab === "all") {
+	useLayoutEffect(() => {
+		if (!hoverPreview || !hoverCardStyle || !hoverCardRef.current) {
+			setResolvedHoverTop(null);
 			return;
 		}
 
-		if (!tabNames.includes(activeTab)) {
-			void setTabQuery(null);
+		const height = hoverCardRef.current.offsetHeight;
+		const centerY =
+			hoverPreview.anchor.top +
+			(hoverPreview.anchor.bottom - hoverPreview.anchor.top) / 2;
+		const maxTop = Math.max(
+			HOVER_CARD_MARGIN,
+			window.innerHeight - height - HOVER_CARD_MARGIN,
+		);
+		const nextTop = clamp(centerY - height / 2, HOVER_CARD_MARGIN, maxTop);
+
+		setResolvedHoverTop((current) => (current === nextTop ? current : nextTop));
+	}, [hoverPreview, hoverCardStyle]);
+
+	useEffect(() => {
+		if (activeGroups.length === 0) {
+			return;
 		}
-	}, [activeTab, tabNames, setTabQuery]);
+
+		const prunedGroups = activeGroups.filter((group) => knownGroups.has(group));
+		if (prunedGroups.length !== activeGroups.length) {
+			void setActiveGroups(prunedGroups.length > 0 ? prunedGroups : null);
+		}
+	}, [activeGroups, knownGroups, setActiveGroups]);
 
 	useEffect(() => {
 		setSearchInput(searchQuery ?? "");
@@ -236,11 +230,11 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	const handleKeywordHover = ({
 		keywordId,
 		entryId,
-		anchorRect,
+		entryRect,
 	}: {
 		keywordId: string;
 		entryId: string;
-		anchorRect: DOMRect;
+		entryRect: DOMRect;
 	}) => {
 		const referencedEntryId = keywordMap
 			.get(keywordId)
@@ -248,18 +242,16 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		const targetEntryId = referencedEntryId ?? entryId;
 
 		const placement: HoverPreviewState["placement"] =
-			anchorRect.top > window.innerHeight - anchorRect.bottom
-				? "top"
-				: "bottom";
+			entryRect.left > window.innerWidth - entryRect.right ? "left" : "right";
 
 		setHoverPreview({
 			entryId: targetEntryId,
 			placement,
 			anchor: {
-				top: anchorRect.top,
-				bottom: anchorRect.bottom,
-				left: anchorRect.left,
-				width: anchorRect.width,
+				top: entryRect.top,
+				bottom: entryRect.bottom,
+				left: entryRect.left,
+				right: entryRect.right,
 			},
 		});
 	};
@@ -310,7 +302,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	};
 
 	const renderEntryList = () => {
-		if (orderedEntryItems.length === 0) {
+		if (orderedEntries.length === 0) {
 			return (
 				<div className="rounded-3xl border border-white/12 bg-black/45 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">
 					<p className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
@@ -335,19 +327,20 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 
 		return (
 			<VirtualEntryGrid
-				items={orderedEntryItems}
+				items={orderedEntries}
 				entryMap={entryMap}
 				keywordMap={keywordMap}
 				onKeywordHover={handleKeywordHover}
 				onKeywordLeave={handleKeywordLeave}
 				onKeywordClick={handleKeywordClick}
+				onGroupClick={toggleGroup}
 			/>
 		);
 	};
 
 	const renderClickedPanel = () => {
 		return (
-			<div className="flex flex-col p-5">
+			<div className="mt-2 flex flex-col">
 				<div className="flex items-center justify-between gap-3">
 					<div>
 						<p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
@@ -370,19 +363,9 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				</div>
 
 				{clickedEntries.length > 0 ? (
-					<div className="mt-4 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
+					<div className="mt-4 min-h-0 flex-1 space-y-3 overflow-y-auto p-2">
 						{clickedEntries.map((entry) => (
-							<div key={entry.id} className="space-y-2">
-								<div className="flex justify-end">
-									<button
-										type="button"
-										onClick={() => handleRemoveClickedEntry(entry.id)}
-										className="rounded-lg border border-white/12 bg-white/8 p-1.5 text-white/70 transition hover:bg-white/14"
-										aria-label={`Remove ${entry.title}`}
-									>
-										<X size={14} />
-									</button>
-								</div>
+							<div key={entry.id} className="relative">
 								<Tooltip
 									entry={entry}
 									entryMap={entryMap}
@@ -390,7 +373,18 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 									onKeywordHover={handleKeywordHover}
 									onKeywordLeave={handleKeywordLeave}
 									onKeywordClick={handleKeywordClick}
+									onGroupClick={toggleGroup}
 								/>
+								<div className="flex justify-end">
+									<button
+										type="button"
+										onClick={() => handleRemoveClickedEntry(entry.id)}
+										className="borderHover absolute top-1 right-1 bg-red-500/15 p-1 text-white/70 transition hover:bg-red-500/30"
+										aria-label={`Remove ${entry.title}`}
+									>
+										<X size={14} className="text-red-500" />
+									</button>
+								</div>
 							</div>
 						))}
 					</div>
@@ -407,7 +401,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 		<div className="relative flex min-h-screen w-full flex-col text-sm">
 			<header className="border-b border-blue-500/50 backdrop-blur-md">
 				<div className="">
-					<div className="flex gap-3">
+					<div className="flex gap-3 p-2">
 						<input
 							id="compendium-search"
 							type="search"
@@ -420,40 +414,38 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 							<button
 								type="button"
 								onClick={handleClearSearch}
-								className="border border-white/16 bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
+								className="borderHover bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
 							>
 								Clear
 							</button>
 						) : null}
 					</div>
-					<div className="m-2 flex flex-row items-center gap-4">
+					<div className="m-2 ml-3 flex flex-row items-center gap-4">
 						<p className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 							Filter:
 						</p>
 						<div
 							className="flex flex-wrap gap-2"
-							role="tablist"
+							role="group"
 							aria-label="Filter entries"
 						>
-							{(["all", ...tabNames] as TabFilter[]).map((tabName) => {
-								const isActive = activeTab === tabName;
-								const label = tabName === "all" ? "All" : tabName;
+							{CURATED_TOP_GROUPS.map((group) => {
+								const isActive = activeGroups.includes(group);
 
 								return (
 									<button
-										key={tabName}
+										key={group}
 										type="button"
-										onClick={() => setActiveTab(tabName)}
-										role="tab"
-										aria-selected={isActive}
+										onClick={() => toggleGroup(group)}
+										aria-pressed={isActive}
 										className={cn(
 											"borderHover px-3 py-1.5 text-xs font-semibold tracking-[0.08em] uppercase transition",
 											isActive
-												? "border-sky-300/60 bg-sky-400/18 text-sky-100"
-												: "border-white/14 bg-white/6 text-white/68 hover:bg-white/10",
+												? "borderActive bg-blue-500/30 text-sky-100"
+												: "bg-blue-500/10 text-white/68 hover:bg-blue-500/20",
 										)}
 									>
-										{label}
+										{group}
 									</button>
 								);
 							})}
@@ -494,15 +486,16 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 
 			{hoveredEntry && hoverCardStyle ? (
 				<div
+					ref={hoverCardRef}
 					className={cn(
 						"pointer-events-none fixed z-50 w-130 bg-gray-900/50 shadow-2xl shadow-black/50",
-						hoverPreview?.placement === "top"
-							? "-translate-y-full"
-							: "translate-y-0",
+						hoverPreview?.placement === "left"
+							? "-translate-x-full"
+							: "translate-x-0",
 					)}
 					style={{
 						left: hoverCardStyle.left,
-						top: hoverCardStyle.top,
+						top: resolvedHoverTop ?? hoverCardStyle.top,
 					}}
 				>
 					<Tooltip
@@ -512,6 +505,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						onKeywordHover={handleKeywordHover}
 						onKeywordLeave={handleKeywordLeave}
 						onKeywordClick={handleKeywordClick}
+						onGroupClick={toggleGroup}
 					/>
 				</div>
 			) : null}
@@ -571,6 +565,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 										onKeywordHover={handleKeywordHover}
 										onKeywordLeave={handleKeywordLeave}
 										onKeywordClick={handleKeywordClick}
+										onGroupClick={toggleGroup}
 									/>
 								</div>
 							))}
@@ -588,17 +583,15 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 					Destiny 2 Knowledge
 				</h1>
 				<div className="mt-6 grid gap-3 md:grid-cols-4">
-					<div className="rounded-2xl border border-white/10 bg-white/6 p-4">
+					<div className="borderHover bg-white/6 p-4">
 						<div className="text-xs tracking-[0.2em] text-white/50 uppercase">
-							Tabs
+							Groups
 						</div>
 						<div className="mt-2 text-2xl font-semibold text-white">
-							{activeTab === "all"
-								? `${visibleTabsCount}/${dataset.tabs.length}`
-								: `${visibleTabsCount}/1`}
+							{activeGroups.length}/{CURATED_TOP_GROUPS.length}
 						</div>
 					</div>
-					<div className="rounded-2xl border border-white/10 bg-white/6 p-4">
+					<div className="borderHover bg-white/6 p-4">
 						<div className="text-xs tracking-[0.2em] text-white/50 uppercase">
 							Entries
 						</div>
@@ -606,7 +599,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 							{visibleEntries.length}/{allEntries.length}
 						</div>
 					</div>
-					<div className="rounded-2xl border border-white/10 bg-white/6 p-4">
+					<div className="borderHover bg-white/6 p-4">
 						<div className="text-xs tracking-[0.2em] text-white/50 uppercase">
 							Keywords
 						</div>
@@ -614,7 +607,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 							{dataset.keywords.length}
 						</div>
 					</div>
-					<div className="rounded-2xl border border-white/10 bg-white/6 p-4">
+					<div className="borderHover bg-white/6 p-4">
 						<div className="text-xs tracking-[0.2em] text-white/50 uppercase">
 							Annotations
 						</div>
