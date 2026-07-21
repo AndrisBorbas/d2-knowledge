@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T01:43:26.335Z",
+  "generatedAt": "2026-07-21T01:52:38.394Z",
   "entries": [
     {
       "id": "sheet:aion-renewal-kepler-destination:2:0",
@@ -801,6 +801,20 @@
           "start": 341,
           "end": 347,
           "text": "Scorch"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 458,
+          "end": 463,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 718,
+          "end": 723,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -983,6 +997,13 @@
           "end": 183,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 185,
+          "end": 190,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -1493,16 +1514,9 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 506,
-          "end": 511,
-          "text": "Super",
-          "colorClass": "text-energy-super"
-        },
-        {
-          "keywordId": "pattern:text-energy-ability",
-          "start": 512,
           "end": 526,
-          "text": "Ability Energy",
-          "colorClass": "text-energy-ability"
+          "text": "Super Ability Energy",
+          "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -1521,16 +1535,9 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 671,
-          "end": 676,
-          "text": "Super",
-          "colorClass": "text-energy-super"
-        },
-        {
-          "keywordId": "pattern:text-energy-ability",
-          "start": 677,
           "end": 691,
-          "text": "Ability Energy",
-          "colorClass": "text-energy-ability"
+          "text": "Super Ability Energy",
+          "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -2711,6 +2718,13 @@
           "end": 766,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 807,
+          "end": 812,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -3387,6 +3401,13 @@
           "text": "Ionic Traces"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 654,
+          "end": 659,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-grenade",
           "start": 666,
           "end": 673,
@@ -3415,6 +3436,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 712,
+          "end": 717,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-grenade",
           "start": 725,
           "end": 732,
@@ -3429,6 +3457,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 745,
+          "end": 750,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 756,
           "end": 761,
@@ -3440,6 +3475,13 @@
           "start": 762,
           "end": 775,
           "text": "Void Breaches"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 800,
+          "end": 812,
+          "text": "Class Energy",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "stasis-shard",
@@ -6005,16 +6047,9 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 87,
-          "end": 92,
-          "text": "Super",
-          "colorClass": "text-energy-super"
-        },
-        {
-          "keywordId": "pattern:text-energy-ability",
-          "start": 93,
           "end": 107,
-          "text": "Ability Energy",
-          "colorClass": "text-energy-ability"
+          "text": "Super Ability Energy",
+          "colorClass": "text-energy-super"
         }
       ]
     },
@@ -7048,6 +7083,13 @@
           "text": "Crystalline Converter"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 290,
+          "end": 295,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "stasis-shard",
           "start": 348,
           "end": 360,
@@ -7409,6 +7451,13 @@
           "start": 0,
           "end": 13,
           "text": "Stasis Shards"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 37,
+          "end": 49,
+          "text": "Class Energy",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "void-breach",
@@ -10687,6 +10736,20 @@
           "end": 142,
           "text": "[PVP: 75%]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 159,
+          "end": 164,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 232,
+          "end": 237,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -11952,6 +12015,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 39,
+          "end": 44,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "combination-blow",
           "start": 97,
           "end": 113,
@@ -12321,6 +12391,13 @@
           "text": "Bolt Charge"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 897,
+          "end": 902,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 928,
           "end": 940,
@@ -12597,10 +12674,31 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/3bfe666002e12ec6ea3d0c3661f81f31.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 28,
+          "end": 33,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 72,
+          "end": 77,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "arc-staff",
           "start": 115,
           "end": 124,
           "text": "Arc Staff"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 169,
+          "end": 174,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "amplified",
@@ -12621,6 +12719,13 @@
           "end": 272,
           "text": "[?]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 354,
+          "end": 359,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -12671,6 +12776,13 @@
           "start": 54,
           "end": 63,
           "text": "Amplified"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 86,
+          "end": 91,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-pve-damage",
@@ -12736,6 +12848,13 @@
           "start": 37,
           "end": 42,
           "text": "Blind"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 48,
+          "end": 53,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-melee",
@@ -13694,6 +13813,13 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/58cee87c4df6399921797be06a7aa608.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 3,
+          "end": 8,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "bolt-charge",
           "start": 34,
           "end": 45,
@@ -14343,6 +14469,13 @@
           "end": 332,
           "text": "Grenade",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 379,
+          "end": 384,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-pve-damage",
@@ -15465,6 +15598,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 81,
+          "end": 86,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "cure",
           "start": 181,
           "end": 185,
@@ -16163,6 +16303,13 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 28,
+          "end": 33,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "scorch",
           "start": 92,
@@ -17390,6 +17537,13 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/5875031ec666d94d7358a0c7d3a1191f.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 144,
+          "end": 149,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "scorch",
           "start": 190,
           "end": 198,
@@ -17793,16 +17947,37 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/c1f8cb8d59fc2d885b607e68020465b6.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 108,
+          "end": 113,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "crackshot",
           "start": 127,
           "end": 136,
           "text": "Crackshot"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 157,
+          "end": 162,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "marksman-s-dodge",
           "start": 183,
           "end": 199,
           "text": "Marksman's Dodge"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 238,
+          "end": 243,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "crackshot",
@@ -17853,6 +18028,13 @@
           "start": 677,
           "end": 686,
           "text": "Crackshot"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 733,
+          "end": 738,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-pve-damage",
@@ -18137,10 +18319,31 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/6b1ce964c0d1dc6beba3083353efc3f6.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 55,
+          "end": 60,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "on-your-mark",
           "start": 126,
           "end": 138,
           "text": "On Your Mark"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 250,
+          "end": 255,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 391,
+          "end": 396,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "on-your-mark",
@@ -19065,16 +19268,37 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/7082b2bae0f0c4dfc49b7b070d8ce9e8.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 39,
+          "end": 44,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "hammer-strike",
           "start": 355,
           "end": 368,
           "text": "Hammer Strike"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 445,
+          "end": 450,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "overshield",
           "start": 501,
           "end": 511,
           "text": "Overshield"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 520,
+          "end": 525,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "towering-barricade",
@@ -19185,6 +19409,13 @@
           "end": 1698,
           "text": "[?]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 1743,
+          "end": 1748,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -19532,6 +19763,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 179,
+          "end": 184,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "radiant",
           "start": 186,
           "end": 193,
@@ -19823,11 +20061,25 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 2389,
+          "end": 2394,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 2414,
           "end": 2426,
           "text": "Super Energy",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 2501,
+          "end": 2506,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -20329,6 +20581,13 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 3,
+          "end": 8,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "hellion",
           "start": 31,
           "end": 38,
@@ -20712,6 +20971,13 @@
           "end": 928,
           "text": "Super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 1107,
+          "end": 1112,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -20927,6 +21193,13 @@
           "end": 319,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 321,
+          "end": 326,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -24002,6 +24275,20 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/e91760df2b81d191da9e2c62cb3fcda7.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 43,
+          "end": 48,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 102,
+          "end": 107,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "invisibility",
           "start": 147,
           "end": 159,
@@ -24030,6 +24317,13 @@
           "start": 525,
           "end": 537,
           "text": "invisibility"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 608,
+          "end": 613,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -25722,6 +26016,13 @@
           "text": "suppressed"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 652,
+          "end": 657,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "healing-rift",
           "start": 667,
           "end": 679,
@@ -26531,6 +26832,13 @@
           "start": 928,
           "end": 934,
           "text": "Frozen"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 956,
+          "end": 961,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "freeze",
@@ -28509,6 +28817,20 @@
           "colorClass": "text-pvp-damage"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 69,
+          "end": 74,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 120,
+          "end": 125,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "slow",
           "start": 160,
           "end": 164,
@@ -29897,6 +30219,13 @@
           "start": 11,
           "end": 31,
           "text": "Class Ability Energy",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 60,
+          "end": 65,
+          "text": "Class",
           "colorClass": "text-energy-class"
         },
         {
@@ -32387,6 +32716,13 @@
           "colorClass": "text-energy-grenade"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 544,
+          "end": 549,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 570,
           "end": 582,
@@ -32480,6 +32816,13 @@
           "colorClass": "text-pvp-damage"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 179,
+          "end": 184,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "threaded-specter",
           "start": 205,
           "end": 221,
@@ -32543,10 +32886,24 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/f0311771bc0f771779301102d62c0ae0.jpg",
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 3,
+          "end": 8,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "threadling",
           "start": 575,
           "end": 586,
           "text": "Threadlings"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 612,
+          "end": 617,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -33161,6 +33518,13 @@
           "start": 47,
           "end": 67,
           "text": "Class Ability Energy",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 73,
+          "end": 78,
+          "text": "Class",
           "colorClass": "text-energy-class"
         },
         {
@@ -33846,6 +34210,13 @@
           "text": "Threadling"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 354,
+          "end": 359,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "threadling",
           "start": 385,
           "end": 396,
@@ -34071,6 +34442,13 @@
           "end": 609,
           "text": "Grenade",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 633,
+          "end": 638,
+          "text": "class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
@@ -35506,7 +35884,15 @@
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/4be1e24b8d7073827be07dfc066b2517.png",
       "perkHash": 2626922122,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 62,
+          "end": 67,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        }
+      ]
     },
     {
       "id": "foundry:2626922115:facet-of-justice",
@@ -36674,7 +37060,15 @@
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/f66a443a73883ec0c196ac7be4551cfc.png",
       "perkHash": 11126525,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        }
+      ]
     },
     {
       "id": "foundry:11551321:iron-grip",
@@ -37135,6 +37529,13 @@
           "end": 403,
           "text": "[PVP: 92%]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 420,
+          "end": 425,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -37496,6 +37897,13 @@
       "perkHash": 40751621,
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 53,
+          "end": 58,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 123,
           "end": 135,
@@ -37733,6 +38141,13 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "pattern:text-energy-super",
           "start": 122,
@@ -38766,6 +39181,13 @@
           "end": 751,
           "text": "Class Ability energy",
           "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 841,
+          "end": 846,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -39632,6 +40054,13 @@
           "end": 27,
           "text": "Super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 133,
+          "end": 138,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "frost-armor",
@@ -41000,6 +41429,13 @@
       "itemHash": 2423243921,
       "perkHash": 242794439,
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 64,
+          "end": 69,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 262,
@@ -47538,6 +47974,13 @@
       "perkHash": 593361144,
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 87,
+          "end": 92,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "wraithmetal-mail",
           "start": 109,
           "end": 125,
@@ -47554,6 +47997,13 @@
           "start": 274,
           "end": 290,
           "text": "Wraithmetal Mail"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 488,
+          "end": 493,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -49937,6 +50387,13 @@
           "text": "Light Shift"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 741,
+          "end": 746,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "light-shift",
           "start": 800,
           "end": 811,
@@ -50743,6 +51200,13 @@
           "end": 321,
           "text": "[PVP: 15%]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 354,
+          "end": 359,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -51230,6 +51694,13 @@
           "end": 248,
           "text": "Grenade",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 253,
+          "end": 258,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-ability",
@@ -53350,6 +53821,13 @@
           "colorClass": "text-energy-class"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 121,
+          "end": 126,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-ability",
           "start": 176,
           "end": 190,
@@ -53705,6 +54183,13 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "frost-armor",
           "start": 160,
           "end": 171,
@@ -53737,6 +54222,13 @@
           "end": 215,
           "text": "[PVP: 200%]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 232,
+          "end": 237,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
@@ -53876,6 +54368,13 @@
           "start": 314,
           "end": 329,
           "text": "Empowering Rift"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 349,
+          "end": 354,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-pve-damage",
@@ -54260,6 +54759,13 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 11,
+          "end": 16,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "slice",
           "start": 71,
@@ -56826,6 +57332,13 @@
       "annotations": [
         {
           "keywordId": "pattern:text-energy-class",
+          "start": 7,
+          "end": 12,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
           "start": 122,
           "end": 142,
           "text": "Class Ability Energy",
@@ -58112,6 +58625,13 @@
           "end": 254,
           "text": "[PVP: 70]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 344,
+          "end": 349,
+          "text": "class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -58454,6 +58974,20 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 10,
+          "end": 15,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 118,
+          "end": 123,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "pattern:text-pve-damage",
           "start": 254,
@@ -59266,6 +59800,20 @@
           "end": 33,
           "text": "Super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 92,
+          "end": 97,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 163,
+          "end": 168,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "sol-invictus",
@@ -60144,7 +60692,15 @@
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/859a93ee38aa9cf96d96c8a4b55d59a4.png",
       "perkHash": 1193713026,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 16,
+          "end": 21,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        }
+      ]
     },
     {
       "id": "foundry:1194056669:closing-time",
@@ -63384,6 +63940,13 @@
           "end": 139,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 147,
+          "end": 152,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "ionic-trace",
@@ -66911,18 +67474,18 @@
       ],
       "annotations": [
         {
-          "keywordId": "pattern:text-energy-super",
-          "start": 62,
-          "end": 67,
-          "text": "Super",
-          "colorClass": "text-energy-super"
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
-          "keywordId": "pattern:text-energy-ability",
-          "start": 68,
+          "keywordId": "pattern:text-energy-super",
+          "start": 62,
           "end": 82,
-          "text": "Ability Energy",
-          "colorClass": "text-energy-ability"
+          "text": "Super Ability Energy",
+          "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -66958,6 +67521,13 @@
           "end": 154,
           "text": "[PVP: 2.4%]",
           "colorClass": "text-pvp-damage"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 184,
+          "end": 189,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -67329,6 +67899,13 @@
           "end": 693,
           "text": "super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 718,
+          "end": 723,
+          "text": "class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -67999,6 +68576,13 @@
           "colorClass": "text-energy-grenade"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 452,
+          "end": 457,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 561,
           "end": 566,
@@ -68011,6 +68595,13 @@
           "end": 611,
           "text": "Grenade",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 616,
+          "end": 621,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -68080,6 +68671,13 @@
         }
       ],
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "thruster",
           "start": 170,
@@ -70671,6 +71269,13 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "parting-gift",
           "start": 28,
           "end": 40,
@@ -72405,6 +73010,13 @@
           "colorClass": "text-energy-grenade"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 11,
+          "end": 16,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-melee",
           "start": 53,
           "end": 58,
@@ -72557,6 +73169,20 @@
           "end": 688,
           "text": "Grenade",
           "colorClass": "text-energy-grenade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 718,
+          "end": 723,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 774,
+          "end": 779,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -73991,16 +74617,9 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 30,
-          "end": 35,
-          "text": "Super",
-          "colorClass": "text-energy-super"
-        },
-        {
-          "keywordId": "pattern:text-energy-ability",
-          "start": 36,
           "end": 50,
-          "text": "Ability Energy",
-          "colorClass": "text-energy-ability"
+          "text": "Super Ability Energy",
+          "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -75371,6 +75990,13 @@
           "end": 74,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 80,
+          "end": 85,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -76157,6 +76783,13 @@
           "start": 320,
           "end": 336,
           "text": "Vanishing Shadow"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 403,
+          "end": 408,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
@@ -77293,6 +77926,13 @@
       "itemHash": 1474735277,
       "perkHash": 2192678015,
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 16,
+          "end": 21,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "reaper",
           "start": 61,
@@ -79265,6 +79905,13 @@
           "colorClass": "text-energy-ability"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 304,
+          "end": 309,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-super",
           "start": 335,
           "end": 340,
@@ -80188,6 +80835,13 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 81,
+          "end": 86,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-grenade",
           "start": 119,
           "end": 126,
@@ -80201,10 +80855,24 @@
           "text": "Barri-Nade"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 154,
+          "end": 159,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "barri-nade",
           "start": 175,
           "end": 185,
           "text": "Barri-Nade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 197,
+          "end": 202,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "barri-nade",
@@ -80223,6 +80891,13 @@
           "start": 364,
           "end": 377,
           "text": "Drengr's Lash"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 393,
+          "end": 398,
+          "text": "class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "towering-barricade",
@@ -80632,6 +81307,13 @@
           "colorClass": "text-energy-super"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 46,
+          "end": 51,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "stasis-crystal",
           "start": 84,
           "end": 98,
@@ -80654,6 +81336,13 @@
           "start": 288,
           "end": 303,
           "text": "Rally Barricade"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 410,
+          "end": 415,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "towering-barricade",
@@ -84071,6 +84760,13 @@
           "end": 690,
           "text": "super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 715,
+          "end": 720,
+          "text": "class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -95149,6 +95845,20 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 10,
+          "end": 15,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 70,
+          "end": 75,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-pve-damage",
           "start": 141,
           "end": 144,
@@ -95344,6 +96054,13 @@
       "itemHash": 1909305643,
       "perkHash": 3495263107,
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 135,
+          "end": 140,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "pattern:text-pve-damage",
           "start": 240,
@@ -97866,6 +98583,13 @@
       ],
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 13,
+          "end": 18,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "cure",
           "start": 38,
           "end": 42,
@@ -97889,6 +98613,13 @@
           "start": 280,
           "end": 293,
           "text": "Burning Souls"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 381,
+          "end": 386,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "burning-souls",
@@ -98532,6 +99263,20 @@
           "text": "Overshield"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 359,
+          "end": 364,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 405,
+          "end": 410,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "overshield",
           "start": 461,
           "end": 471,
@@ -99033,7 +99778,15 @@
       ],
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/0eac4566f9f8eb2179d2734e886f958e.png",
       "perkHash": 3846229553,
-      "annotations": []
+      "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 53,
+          "end": 58,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        }
+      ]
     },
     {
       "id": "foundry:3865920552:relentless-strikes-refit",
@@ -99923,6 +100676,13 @@
           "colorClass": "text-energy-melee"
         },
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 87,
+          "end": 92,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "invisibility",
           "start": 258,
           "end": 270,
@@ -100052,6 +100812,13 @@
           "end": 413,
           "text": "Super",
           "colorClass": "text-energy-super"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 418,
+          "end": 423,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         }
       ]
     },
@@ -101622,6 +102389,13 @@
       "perkHash": 4024170927,
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "misdirection",
           "start": 28,
           "end": 40,
@@ -101723,6 +102497,13 @@
       "perkHash": 4039026690,
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-grenade",
           "start": 62,
           "end": 69,
@@ -101735,6 +102516,13 @@
           "end": 76,
           "text": "Melee",
           "colorClass": "text-energy-melee"
+        },
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 78,
+          "end": 83,
+          "text": "Class",
+          "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
@@ -103068,6 +103856,13 @@
       "perkHash": 4160037471,
       "annotations": [
         {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
+        {
           "keywordId": "pattern:text-energy-melee",
           "start": 27,
           "end": 39,
@@ -103550,6 +104345,13 @@
       "iconPath": "https://www.bungie.net/common/destiny2_content/icons/50c475e2cfd57472dc9426cc9f3d4233.png",
       "perkHash": 4188291233,
       "annotations": [
+        {
+          "keywordId": "pattern:text-energy-class",
+          "start": 0,
+          "end": 5,
+          "text": "Class",
+          "colorClass": "text-energy-class"
+        },
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 27,
