@@ -346,7 +346,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	const renderClickedPanel = () => {
 		return (
 			<div className="mt-2 flex flex-col">
-				<div className="flex items-center justify-between gap-3">
+				<div className="mx-2 flex items-center justify-between gap-2">
 					<div>
 						<p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
 							Clicked Tooltips
@@ -360,7 +360,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						<button
 							type="button"
 							onClick={handleClearClickedEntries}
-							className="rounded-xl border border-white/16 bg-white/8 px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] text-white/70 uppercase transition hover:bg-white/14"
+							className="borderHover bg-red-500/10 px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] text-red-500 uppercase transition hover:bg-red-500/20"
 						>
 							Clear all
 						</button>
