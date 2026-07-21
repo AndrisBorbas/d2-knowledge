@@ -483,8 +483,6 @@ export function Tooltip({
 		});
 	};
 
-	const groups = entry.groups;
-
 	return (
 		<article
 			key={entry.id}
@@ -499,7 +497,7 @@ export function Tooltip({
 			</div>
 
 			<div className="mx-2 mt-2 flex flex-wrap gap-2">
-				{groups.map((group) => (
+				{entry.groups.map((group) => (
 					<button
 						key={group}
 						type="button"
@@ -511,6 +509,12 @@ export function Tooltip({
 				))}
 			</div>
 
+			{entry.extraInfo && !entry.extraInfo.startsWith("Item: ") ? (
+				<p className="m-2 mb-0 border-t border-gray-500 bg-blue-950/15 px-2 py-2 text-center leading-none font-bold whitespace-pre-wrap shadow-md shadow-blue-950/15">
+					{entry.extraInfo}
+				</p>
+			) : null}
+
 			<TooltipBody
 				entry={entry}
 				entryMap={entryMap}
@@ -519,12 +523,6 @@ export function Tooltip({
 				onKeywordLeave={onKeywordLeave}
 				onKeywordClick={handleKeywordClick}
 			/>
-
-			{entry.extraInfo && !entry.extraInfo.startsWith("Item: ") ? (
-				<p className="m-4 mt-0 rounded-2xl border border-white/10 bg-black/25 px-3 py-2 text-xs text-white/60">
-					{entry.extraInfo}
-				</p>
-			) : null}
 		</article>
 	);
 }
