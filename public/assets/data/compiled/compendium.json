@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T01:52:38.394Z",
+  "generatedAt": "2026-07-21T01:54:28.400Z",
   "entries": [
     {
       "id": "sheet:aion-renewal-kepler-destination:2:0",
@@ -211,8 +211,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 545,
-          "end": 550,
-          "text": "Melee",
+          "end": 558,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -805,15 +805,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 458,
-          "end": 463,
-          "text": "Class",
+          "end": 471,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 718,
-          "end": 723,
-          "text": "Class",
+          "end": 731,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -1008,8 +1008,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 195,
-          "end": 200,
-          "text": "Super",
+          "end": 208,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         }
       ]
@@ -1316,8 +1316,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 746,
-          "end": 753,
-          "text": "Grenade",
+          "end": 761,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -1507,8 +1507,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 429,
-          "end": 434,
-          "text": "Super",
+          "end": 442,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -1528,8 +1528,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 594,
-          "end": 599,
-          "text": "Super",
+          "end": 607,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -1542,15 +1542,15 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 694,
-          "end": 699,
-          "text": "Super",
+          "end": 707,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-super",
           "start": 731,
-          "end": 736,
-          "text": "Super",
+          "end": 744,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         }
       ]
@@ -2531,8 +2531,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 193,
-          "end": 200,
-          "text": "Grenade",
+          "end": 208,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -2862,8 +2862,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 41,
-          "end": 48,
-          "text": "Grenade",
+          "end": 56,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -6222,8 +6222,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 193,
-          "end": 198,
-          "text": "Melee",
+          "end": 206,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -6528,8 +6528,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 160,
-          "end": 165,
-          "text": "Super",
+          "end": 173,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -6549,8 +6549,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 255,
-          "end": 260,
-          "text": "Super",
+          "end": 268,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         }
       ]
@@ -6701,8 +6701,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 96,
-          "end": 101,
-          "text": "Super",
+          "end": 109,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -7085,8 +7085,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 290,
-          "end": 295,
-          "text": "Class",
+          "end": 303,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -9706,8 +9706,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 7,
-          "end": 14,
-          "text": "Grenade",
+          "end": 22,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -9750,8 +9750,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 5,
-          "end": 12,
-          "text": "Grenade",
+          "end": 20,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         }
       ]
@@ -9867,8 +9867,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 154,
-          "end": 159,
-          "text": "Super",
+          "end": 167,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -10740,15 +10740,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 159,
-          "end": 164,
-          "text": "Class",
+          "end": 172,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 232,
-          "end": 237,
-          "text": "Class",
+          "end": 245,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -11173,8 +11173,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 80,
-          "end": 85,
-          "text": "Melee",
+          "end": 93,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -11630,8 +11630,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 330,
-          "end": 337,
-          "text": "Grenade",
+          "end": 345,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -12017,8 +12017,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 39,
-          "end": 44,
-          "text": "Class",
+          "end": 52,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -12393,8 +12393,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 897,
-          "end": 902,
-          "text": "Class",
+          "end": 910,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -12676,15 +12676,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 28,
-          "end": 33,
-          "text": "Class",
+          "end": 41,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 72,
-          "end": 77,
-          "text": "Class",
+          "end": 85,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -12696,8 +12696,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 169,
-          "end": 174,
-          "text": "Class",
+          "end": 182,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -12780,8 +12780,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 86,
-          "end": 91,
-          "text": "Class",
+          "end": 99,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -12852,8 +12852,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 48,
-          "end": 53,
-          "text": "Class",
+          "end": 61,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -12937,8 +12937,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 68,
-          "end": 73,
-          "text": "Melee",
+          "end": 81,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -13815,8 +13815,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 3,
-          "end": 8,
-          "text": "Class",
+          "end": 16,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -14466,15 +14466,15 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 325,
-          "end": 332,
-          "text": "Grenade",
+          "end": 340,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 379,
-          "end": 384,
-          "text": "Class",
+          "end": 392,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -14663,15 +14663,15 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 169,
-          "end": 176,
-          "text": "Grenade",
+          "end": 184,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 210,
-          "end": 217,
-          "text": "Grenade",
+          "end": 225,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -14754,8 +14754,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 16,
-          "end": 21,
-          "text": "Melee",
+          "end": 29,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -15600,8 +15600,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 81,
-          "end": 86,
-          "text": "Class",
+          "end": 94,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -15851,8 +15851,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 169,
-          "end": 174,
-          "text": "Super",
+          "end": 182,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -16306,8 +16306,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 28,
-          "end": 33,
-          "text": "Class",
+          "end": 41,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -16576,8 +16576,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 295,
-          "end": 300,
-          "text": "Melee",
+          "end": 308,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -17406,8 +17406,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 15,
-          "end": 20,
-          "text": "Melee",
+          "end": 28,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -17539,8 +17539,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 144,
-          "end": 149,
-          "text": "Class",
+          "end": 157,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -17949,8 +17949,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 108,
-          "end": 113,
-          "text": "Class",
+          "end": 121,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -17962,8 +17962,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 157,
-          "end": 162,
-          "text": "Class",
+          "end": 170,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -17975,8 +17975,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 238,
-          "end": 243,
-          "text": "Class",
+          "end": 251,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -18236,15 +18236,15 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 23,
-          "end": 28,
-          "text": "Melee",
+          "end": 36,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 60,
-          "end": 65,
-          "text": "Melee",
+          "end": 73,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -18256,8 +18256,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 161,
-          "end": 166,
-          "text": "Melee",
+          "end": 174,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -18334,15 +18334,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 250,
-          "end": 255,
-          "text": "Class",
+          "end": 263,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 391,
-          "end": 396,
-          "text": "Class",
+          "end": 404,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -18979,8 +18979,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 16,
-          "end": 21,
-          "text": "Melee",
+          "end": 29,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -19019,15 +19019,15 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 286,
-          "end": 291,
-          "text": "Melee",
+          "end": 299,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 302,
-          "end": 307,
-          "text": "Melee",
+          "end": 315,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -19205,8 +19205,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 340,
-          "end": 345,
-          "text": "Super",
+          "end": 353,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -19270,8 +19270,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 39,
-          "end": 44,
-          "text": "Class",
+          "end": 52,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -19283,8 +19283,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 445,
-          "end": 450,
-          "text": "Class",
+          "end": 458,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -19813,8 +19813,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 489,
-          "end": 494,
-          "text": "Melee",
+          "end": 502,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -19884,8 +19884,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 1242,
-          "end": 1249,
-          "text": "Grenade",
+          "end": 1257,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -19936,8 +19936,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 1808,
-          "end": 1813,
-          "text": "Melee",
+          "end": 1821,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -20056,15 +20056,15 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 2366,
-          "end": 2371,
-          "text": "Melee",
+          "end": 2379,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 2389,
-          "end": 2394,
-          "text": "Class",
+          "end": 2402,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -20077,8 +20077,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 2501,
-          "end": 2506,
-          "text": "Class",
+          "end": 2514,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -20405,8 +20405,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 990,
-          "end": 995,
-          "text": "Super",
+          "end": 1003,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         }
       ]
@@ -20458,8 +20458,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 242,
-          "end": 249,
-          "text": "Grenade",
+          "end": 257,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -20583,8 +20583,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 3,
-          "end": 8,
-          "text": "Class",
+          "end": 16,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -20628,8 +20628,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 289,
-          "end": 296,
-          "text": "Grenade",
+          "end": 304,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -20698,8 +20698,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 184,
-          "end": 189,
-          "text": "Super",
+          "end": 197,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -20711,8 +20711,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 225,
-          "end": 230,
-          "text": "Melee",
+          "end": 238,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -20730,8 +20730,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 431,
-          "end": 436,
-          "text": "Melee",
+          "end": 444,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -20975,8 +20975,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 1107,
-          "end": 1112,
-          "text": "Class",
+          "end": 1120,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -21170,8 +21170,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 257,
-          "end": 262,
-          "text": "Super",
+          "end": 270,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -22195,8 +22195,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 0,
-          "end": 7,
-          "text": "Grenade",
+          "end": 15,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -24277,15 +24277,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 43,
-          "end": 48,
-          "text": "Class",
+          "end": 56,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 102,
-          "end": 107,
-          "text": "Class",
+          "end": 115,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -24749,8 +24749,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 1648,
-          "end": 1655,
-          "text": "Grenade",
+          "end": 1663,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -24970,8 +24970,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 89,
-          "end": 96,
-          "text": "Grenade",
+          "end": 104,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -25383,8 +25383,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 50,
-          "end": 57,
-          "text": "Grenade",
+          "end": 65,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -25422,8 +25422,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 756,
-          "end": 761,
-          "text": "Super",
+          "end": 769,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -25509,8 +25509,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 15,
-          "end": 20,
-          "text": "Melee",
+          "end": 28,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -25892,8 +25892,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 1,
-          "end": 8,
-          "text": "Grenade",
+          "end": 16,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -25906,8 +25906,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 74,
-          "end": 81,
-          "text": "Grenade",
+          "end": 89,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -25985,8 +25985,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 243,
-          "end": 250,
-          "text": "Grenade",
+          "end": 258,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -26018,8 +26018,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 652,
-          "end": 657,
-          "text": "Class",
+          "end": 665,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -26199,8 +26199,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 31,
-          "end": 36,
-          "text": "Melee",
+          "end": 44,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -26780,8 +26780,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 689,
-          "end": 694,
-          "text": "Super",
+          "end": 702,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -26836,8 +26836,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 956,
-          "end": 961,
-          "text": "Class",
+          "end": 969,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -27983,8 +27983,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 129,
-          "end": 136,
-          "text": "Grenade",
+          "end": 144,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -28313,8 +28313,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 15,
-          "end": 20,
-          "text": "Melee",
+          "end": 28,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -28819,15 +28819,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 69,
-          "end": 74,
-          "text": "Class",
+          "end": 82,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 120,
-          "end": 125,
-          "text": "Class",
+          "end": 133,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -29095,8 +29095,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 261,
-          "end": 266,
-          "text": "Melee",
+          "end": 274,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -29654,8 +29654,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 21,
-          "end": 26,
-          "text": "Melee",
+          "end": 34,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -29686,8 +29686,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 191,
-          "end": 196,
-          "text": "Melee",
+          "end": 204,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -30159,8 +30159,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 129,
-          "end": 136,
-          "text": "Grenade",
+          "end": 144,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -30178,8 +30178,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 491,
-          "end": 498,
-          "text": "Grenade",
+          "end": 506,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         }
       ]
@@ -30224,8 +30224,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 60,
-          "end": 65,
-          "text": "Class",
+          "end": 73,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -30590,8 +30590,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 339,
-          "end": 346,
-          "text": "Grenade",
+          "end": 354,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -30793,8 +30793,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 162,
-          "end": 167,
-          "text": "Super",
+          "end": 175,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         }
       ]
@@ -31139,8 +31139,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 11,
-          "end": 18,
-          "text": "Grenade",
+          "end": 26,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         }
       ]
@@ -32103,8 +32103,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 880,
-          "end": 885,
-          "text": "Melee",
+          "end": 893,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -32259,8 +32259,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 607,
-          "end": 614,
-          "text": "Grenade",
+          "end": 622,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         }
       ]
@@ -32718,8 +32718,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 544,
-          "end": 549,
-          "text": "Class",
+          "end": 557,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -32818,8 +32818,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 179,
-          "end": 184,
-          "text": "Class",
+          "end": 192,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -32888,8 +32888,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 3,
-          "end": 8,
-          "text": "Class",
+          "end": 16,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -32901,8 +32901,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 612,
-          "end": 617,
-          "text": "Class",
+          "end": 625,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -33046,8 +33046,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 21,
-          "end": 28,
-          "text": "Grenade",
+          "end": 36,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -33147,8 +33147,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 15,
-          "end": 20,
-          "text": "Melee",
+          "end": 28,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -33235,8 +33235,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 124,
-          "end": 129,
-          "text": "Melee",
+          "end": 137,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -33523,8 +33523,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 73,
-          "end": 78,
-          "text": "Class",
+          "end": 86,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -33576,8 +33576,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 16,
-          "end": 21,
-          "text": "Melee",
+          "end": 29,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -33604,15 +33604,15 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 217,
-          "end": 222,
-          "text": "Melee",
+          "end": 230,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 233,
-          "end": 238,
-          "text": "Melee",
+          "end": 246,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -33639,8 +33639,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 381,
-          "end": 386,
-          "text": "Melee",
+          "end": 394,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -33783,8 +33783,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 15,
-          "end": 20,
-          "text": "Melee",
+          "end": 28,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -33999,8 +33999,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 338,
-          "end": 345,
-          "text": "Grenade",
+          "end": 353,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -34212,8 +34212,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 354,
-          "end": 359,
-          "text": "Class",
+          "end": 367,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -34283,8 +34283,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 43,
-          "end": 48,
-          "text": "Melee",
+          "end": 56,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -34432,15 +34432,15 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 556,
-          "end": 561,
-          "text": "Melee",
+          "end": 569,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 602,
-          "end": 609,
-          "text": "Grenade",
+          "end": 617,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -34453,8 +34453,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 658,
-          "end": 665,
-          "text": "Grenade",
+          "end": 673,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -34488,8 +34488,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 895,
-          "end": 902,
-          "text": "Grenade",
+          "end": 910,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -34515,8 +34515,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 1044,
-          "end": 1049,
-          "text": "Melee",
+          "end": 1057,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -35578,8 +35578,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 9,
-          "end": 16,
-          "text": "Grenade",
+          "end": 24,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -35605,8 +35605,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 84,
-          "end": 91,
-          "text": "Grenade",
+          "end": 99,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -35888,8 +35888,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 62,
-          "end": 67,
-          "text": "Class",
+          "end": 75,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -36001,8 +36001,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 0,
-          "end": 7,
-          "text": "Grenade",
+          "end": 15,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -37064,8 +37064,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -37899,8 +37899,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 53,
-          "end": 58,
-          "text": "Class",
+          "end": 66,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -38144,15 +38144,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-super",
           "start": 122,
-          "end": 127,
-          "text": "Super",
+          "end": 135,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -39185,8 +39185,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 841,
-          "end": 846,
-          "text": "Class",
+          "end": 854,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -40051,15 +40051,15 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 22,
-          "end": 27,
-          "text": "Super",
+          "end": 35,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 133,
-          "end": 138,
-          "text": "Class",
+          "end": 146,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -41270,8 +41270,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 335,
-          "end": 340,
-          "text": "Melee",
+          "end": 348,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -41432,8 +41432,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 64,
-          "end": 69,
-          "text": "Class",
+          "end": 77,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -43126,8 +43126,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 125,
-          "end": 130,
-          "text": "Super",
+          "end": 138,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -43353,8 +43353,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 573,
-          "end": 578,
-          "text": "Melee",
+          "end": 586,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -47026,8 +47026,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 31,
-          "end": 36,
-          "text": "Melee",
+          "end": 44,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -47976,8 +47976,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 87,
-          "end": 92,
-          "text": "Class",
+          "end": 100,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -48309,8 +48309,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 26,
-          "end": 31,
-          "text": "Melee",
+          "end": 39,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -48536,8 +48536,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 308,
-          "end": 313,
-          "text": "Super",
+          "end": 321,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -49993,8 +49993,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 130,
-          "end": 137,
-          "text": "grenade",
+          "end": 145,
+          "text": "grenade ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -50027,8 +50027,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 360,
-          "end": 367,
-          "text": "grenade",
+          "end": 375,
+          "text": "grenade ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -50389,8 +50389,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 741,
-          "end": 746,
-          "text": "Class",
+          "end": 754,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -51279,8 +51279,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 0,
-          "end": 7,
-          "text": "Grenade",
+          "end": 15,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -51299,8 +51299,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 93,
-          "end": 98,
-          "text": "Super",
+          "end": 106,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -51320,8 +51320,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 392,
-          "end": 397,
-          "text": "Melee",
+          "end": 405,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -51698,8 +51698,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 253,
-          "end": 258,
-          "text": "Class",
+          "end": 266,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -52068,15 +52068,15 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 0,
-          "end": 7,
-          "text": "Grenade",
+          "end": 15,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 134,
-          "end": 141,
-          "text": "Grenade",
+          "end": 149,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -52089,8 +52089,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 389,
-          "end": 396,
-          "text": "Grenade",
+          "end": 404,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -53823,8 +53823,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 121,
-          "end": 126,
-          "text": "Class",
+          "end": 134,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -53875,8 +53875,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 16,
-          "end": 23,
-          "text": "Grenade",
+          "end": 31,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -53895,8 +53895,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 132,
-          "end": 139,
-          "text": "Grenade",
+          "end": 147,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         }
       ]
@@ -54185,8 +54185,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -54226,8 +54226,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 232,
-          "end": 237,
-          "text": "Class",
+          "end": 245,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -54240,8 +54240,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 309,
-          "end": 314,
-          "text": "Melee",
+          "end": 322,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -54762,8 +54762,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 11,
-          "end": 16,
-          "text": "Class",
+          "end": 24,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -54938,8 +54938,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 18,
-          "end": 23,
-          "text": "Super",
+          "end": 31,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -55049,8 +55049,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 164,
-          "end": 171,
-          "text": "Grenade",
+          "end": 179,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -57333,8 +57333,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 7,
-          "end": 12,
-          "text": "Class",
+          "end": 20,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -58832,8 +58832,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 7,
-          "end": 12,
-          "text": "Melee",
+          "end": 20,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -58977,15 +58977,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 10,
-          "end": 15,
-          "text": "Class",
+          "end": 23,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 118,
-          "end": 123,
-          "text": "Class",
+          "end": 131,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -59797,22 +59797,22 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 28,
-          "end": 33,
-          "text": "Super",
+          "end": 41,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 92,
-          "end": 97,
-          "text": "Class",
+          "end": 105,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 163,
-          "end": 168,
-          "text": "Class",
+          "end": 176,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -61670,8 +61670,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 143,
-          "end": 148,
-          "text": "Super",
+          "end": 156,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -63944,8 +63944,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 147,
-          "end": 152,
-          "text": "Class",
+          "end": 160,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -64860,8 +64860,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 38,
-          "end": 43,
-          "text": "Melee",
+          "end": 51,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -64886,8 +64886,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 226,
-          "end": 231,
-          "text": "Melee",
+          "end": 239,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -65579,8 +65579,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 0,
-          "end": 7,
-          "text": "Grenade",
+          "end": 15,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -66406,8 +66406,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 93,
-          "end": 98,
-          "text": "Super",
+          "end": 106,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -67476,8 +67476,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -68026,8 +68026,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 157,
-          "end": 162,
-          "text": "Super",
+          "end": 170,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -68578,8 +68578,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 452,
-          "end": 457,
-          "text": "Class",
+          "end": 465,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -68599,8 +68599,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 616,
-          "end": 621,
-          "text": "Class",
+          "end": 629,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -68674,8 +68674,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -69715,8 +69715,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 400,
-          "end": 405,
-          "text": "Melee",
+          "end": 413,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -71271,8 +71271,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -71304,8 +71304,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 210,
-          "end": 215,
-          "text": "Super",
+          "end": 223,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -72629,8 +72629,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 24,
-          "end": 29,
-          "text": "Super",
+          "end": 37,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -72776,8 +72776,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 138,
-          "end": 145,
-          "text": "Grenade",
+          "end": 153,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -73012,8 +73012,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 11,
-          "end": 16,
-          "text": "Class",
+          "end": 24,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -73173,15 +73173,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 718,
-          "end": 723,
-          "text": "Class",
+          "end": 731,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 774,
-          "end": 779,
-          "text": "Class",
+          "end": 787,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -73225,8 +73225,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 7,
-          "end": 14,
-          "text": "Grenade",
+          "end": 22,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -74558,8 +74558,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 486,
-          "end": 493,
-          "text": "Grenade",
+          "end": 501,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -75599,8 +75599,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 41,
-          "end": 48,
-          "text": "Grenade",
+          "end": 56,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -76787,8 +76787,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 403,
-          "end": 408,
-          "text": "Class",
+          "end": 416,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -77562,8 +77562,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 211,
-          "end": 216,
-          "text": "Melee",
+          "end": 224,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -77929,8 +77929,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 16,
-          "end": 21,
-          "text": "Class",
+          "end": 29,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -79907,8 +79907,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 304,
-          "end": 309,
-          "text": "Class",
+          "end": 317,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -80837,15 +80837,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 81,
-          "end": 86,
-          "text": "Class",
+          "end": 94,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 119,
-          "end": 126,
-          "text": "Grenade",
+          "end": 134,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -80857,8 +80857,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 154,
-          "end": 159,
-          "text": "Class",
+          "end": 167,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -80870,8 +80870,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 197,
-          "end": 202,
-          "text": "Class",
+          "end": 210,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -81302,8 +81302,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 19,
-          "end": 24,
-          "text": "Super",
+          "end": 32,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -81340,8 +81340,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 410,
-          "end": 415,
-          "text": "Class",
+          "end": 423,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -83488,8 +83488,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 531,
-          "end": 536,
-          "text": "Melee",
+          "end": 544,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -83597,8 +83597,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 417,
-          "end": 422,
-          "text": "Super",
+          "end": 430,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -83849,8 +83849,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 16,
-          "end": 21,
-          "text": "Melee",
+          "end": 29,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -85640,8 +85640,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 457,
-          "end": 462,
-          "text": "Melee",
+          "end": 470,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -85668,8 +85668,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 787,
-          "end": 792,
-          "text": "Melee",
+          "end": 800,
+          "text": "Melee ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -85881,8 +85881,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 282,
-          "end": 289,
-          "text": "Grenade",
+          "end": 297,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -87425,8 +87425,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 117,
-          "end": 122,
-          "text": "Melee",
+          "end": 130,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -87638,8 +87638,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 183,
-          "end": 190,
-          "text": "Grenade",
+          "end": 198,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -87896,8 +87896,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 188,
-          "end": 195,
-          "text": "Grenade",
+          "end": 203,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         }
       ]
@@ -90277,8 +90277,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 49,
-          "end": 54,
-          "text": "Super",
+          "end": 62,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -93541,8 +93541,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 41,
-          "end": 48,
-          "text": "Grenade",
+          "end": 56,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -95847,15 +95847,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 10,
-          "end": 15,
-          "text": "Class",
+          "end": 23,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 70,
-          "end": 75,
-          "text": "Class",
+          "end": 83,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -96057,8 +96057,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 135,
-          "end": 140,
-          "text": "Class",
+          "end": 148,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -97786,8 +97786,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 569,
-          "end": 574,
-          "text": "Melee",
+          "end": 582,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         }
       ]
@@ -97866,8 +97866,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 133,
-          "end": 138,
-          "text": "Super",
+          "end": 146,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -97941,8 +97941,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 37,
-          "end": 42,
-          "text": "Melee",
+          "end": 50,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -98140,8 +98140,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 26,
-          "end": 31,
-          "text": "Melee",
+          "end": 39,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -98585,8 +98585,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 13,
-          "end": 18,
-          "text": "Class",
+          "end": 26,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -98617,8 +98617,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 381,
-          "end": 386,
-          "text": "Class",
+          "end": 394,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -99265,15 +99265,15 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 359,
-          "end": 364,
-          "text": "Class",
+          "end": 372,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
           "keywordId": "pattern:text-energy-class",
           "start": 405,
-          "end": 410,
-          "text": "Class",
+          "end": 418,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -99782,8 +99782,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 53,
-          "end": 58,
-          "text": "Class",
+          "end": 66,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -100678,8 +100678,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 87,
-          "end": 92,
-          "text": "Class",
+          "end": 100,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -100802,8 +100802,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 357,
-          "end": 362,
-          "text": "Melee",
+          "end": 370,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
@@ -100816,8 +100816,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 418,
-          "end": 423,
-          "text": "Class",
+          "end": 431,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         }
       ]
@@ -101325,15 +101325,15 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 271,
-          "end": 278,
-          "text": "Grenade",
+          "end": 286,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 405,
-          "end": 412,
-          "text": "Grenade",
+          "end": 420,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -101346,8 +101346,8 @@
         {
           "keywordId": "pattern:text-energy-grenade",
           "start": 660,
-          "end": 667,
-          "text": "Grenade",
+          "end": 675,
+          "text": "Grenade Ability",
           "colorClass": "text-energy-grenade"
         },
         {
@@ -102391,8 +102391,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -102499,8 +102499,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -102520,8 +102520,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 78,
-          "end": 83,
-          "text": "Class",
+          "end": 91,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -102734,15 +102734,15 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 121,
-          "end": 126,
-          "text": "Super",
+          "end": 134,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
           "keywordId": "pattern:text-energy-super",
           "start": 179,
-          "end": 184,
-          "text": "Super",
+          "end": 192,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -103858,8 +103858,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -104022,8 +104022,8 @@
         {
           "keywordId": "pattern:text-energy-super",
           "start": 0,
-          "end": 5,
-          "text": "Super",
+          "end": 13,
+          "text": "Super Ability",
           "colorClass": "text-energy-super"
         },
         {
@@ -104348,8 +104348,8 @@
         {
           "keywordId": "pattern:text-energy-class",
           "start": 0,
-          "end": 5,
-          "text": "Class",
+          "end": 13,
+          "text": "Class Ability",
           "colorClass": "text-energy-class"
         },
         {
@@ -105959,8 +105959,8 @@
         {
           "keywordId": "pattern:text-energy-melee",
           "start": 546,
-          "end": 551,
-          "text": "Melee",
+          "end": 559,
+          "text": "Melee Ability",
           "colorClass": "text-energy-melee"
         },
         {
