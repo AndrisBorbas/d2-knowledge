@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-07-30T02:36:24.100Z",
+	"generatedAt": "2026-07-30T16:19:03.957Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -131,6 +131,10 @@
 			"48578555": {
 				"n": "Shield Break Charge",
 				"i": "/common/destiny2_content/icons/65377096f43b915e700dc968c3cdf72c.png"
+			},
+			"50291571": {
+				"n": "Speaker's Sight",
+				"i": "/common/destiny2_content/icons/95a96d8b0ec34340d47d5e74ba45e794.jpg"
 			},
 			"51032914": {
 				"n": "Anti-Champion Nosecone",
@@ -912,6 +916,10 @@
 				"n": "Grave Robber",
 				"i": "/common/destiny2_content/icons/043d100167af67d6041719044a033221.png"
 			},
+			"405059572": {
+				"n": "Young Ahamkara's Spine",
+				"i": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg"
+			},
 			"405677814": {
 				"n": "Cold Steel",
 				"i": "/common/destiny2_content/icons/3f0da1e4b12adccd39509c6f7afdd233.png"
@@ -1047,10 +1055,6 @@
 			"470163129": {
 				"n": "Harvester Spike",
 				"i": "/common/destiny2_content/icons/1680e76b1f327649603c8ac48682d681.png"
-			},
-			"475652357": {
-				"n": "Young Ahamkara's Spine",
-				"i": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg"
 			},
 			"481338655": {
 				"n": "Shrapnel Launcher",

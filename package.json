@@ -10,7 +10,8 @@
 		"lint": "eslint",
 		"data:compendium:snapshot": "bun run scripts/compile-compendium.mts",
 		"data:bungie:snapshot": "bun run scripts/fetch-bungie-manifest.mts",
-		"data:compile": "bun run data:bungie:snapshot && bun run data:compendium:snapshot"
+		"data:foundry:snapshot": "bun run scripts/fetch-foundry.mts",
+		"data:compile": "bun run data:foundry:snapshot && bun run data:bungie:snapshot && bun run data:compendium:snapshot"
 	},
 	"dependencies": {
 		"@tanstack/react-virtual": "^3.14.6",
