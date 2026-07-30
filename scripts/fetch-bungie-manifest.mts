@@ -6,7 +6,7 @@ import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
 } from "../src/lib/bungie/manifest";
-import { loadSheetSource } from "../src/lib/data/sources/sheet";
+import { loadSheetSource } from "../src/lib/sheet/source";
 
 type FoundryRecord = {
 	hash?: number;

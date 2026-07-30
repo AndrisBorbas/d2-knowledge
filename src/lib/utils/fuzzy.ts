@@ -1,6 +1,6 @@
 import Fuse from "fuse.js/min";
 
-import type { AnnotatedEntry } from "@/lib/sheet/model";
+import type { AnnotatedEntry } from "@/lib/compendium/model";
 
 const SEARCH_THRESHOLD = 0.28;
 

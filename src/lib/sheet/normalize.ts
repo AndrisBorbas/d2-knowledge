@@ -1,7 +1,12 @@
-import { classNames } from "@/lib/data/base";
+import type {
+	DescriptionSegment,
+	Entry,
+	SourceSpan,
+	TabData,
+} from "@/lib/compendium/model";
 import type { Section } from "@/lib/sheet/types";
 
-import type { DescriptionSegment, Entry, SourceSpan, TabData } from "./model";
+import { classNames } from "./class-names";
 
 export type TabNormalizationRule = {
 	strategy:

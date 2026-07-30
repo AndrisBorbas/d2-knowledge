@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { buildCompendiumDataset } from "../src/lib/sheet/compendium";
+import { buildCompendiumDataset } from "../src/lib/compendium/build";
 
 async function main() {
 	const outputDir = path.join(

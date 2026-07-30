@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
-import { CompendiumPreview } from "@/components/CompendiumPreview";
-import { loadCompendiumDataset } from "@/lib/sheet/compiled";
+import { CompendiumPreview } from "@/components/compendium/CompendiumPreview";
+import { loadCompendiumDataset } from "@/lib/compendium/load";
 
 export default async function Home() {
 	let dataset: Awaited<ReturnType<typeof loadCompendiumDataset>> | null = null;
