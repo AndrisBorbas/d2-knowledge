@@ -16,7 +16,7 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 	const [searchInput, setSearchInput] = useState(() => searchQuery ?? "");
 	const [priorSearchQuery, setPriorSearchQuery] = useState(searchQuery);
 	const [activeGroups, setActiveGroups] = useQueryState(
-		"groups",
+		"g",
 		parseAsArrayOf(parseAsString).withDefault([]),
 	);
 	const [shuffleSeed] = useState(() => Math.floor(Math.random() * 0x7fffffff));

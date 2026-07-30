@@ -16,6 +16,7 @@ export const PATTERN_COLORS = {
 	energyClass: "text-energy-class",
 	energySuper: "text-energy-super",
 	energyAbility: "text-energy-ability",
+	masterwork: "text-masterwork",
 } as const;
 
 const NUMBER = String.raw`[+]?\d+(?:\.\d+)?%?`;
@@ -139,6 +140,30 @@ function buildTermAnnotations(text: string, terms: TermColor[]): Annotation[] {
 	return accepted;
 }
 
+const MASTERWORK_ARROW = /🡅/g;
+
+function buildMasterworkArrowAnnotations(text: string): Annotation[] {
+	const accepted: Annotation[] = [];
+
+	let match = MASTERWORK_ARROW.exec(text);
+	while (match) {
+		const start = match.index;
+		const end = start + match[0].length;
+
+		accepted.push({
+			keywordId: `pattern:${PATTERN_COLORS.masterwork}`,
+			start,
+			end,
+			text: match[0],
+			colorClass: PATTERN_COLORS.masterwork,
+		});
+
+		match = MASTERWORK_ARROW.exec(text);
+	}
+
+	return accepted;
+}
+
 function buildDamagePairAnnotations(text: string): Annotation[] {
 	const accepted: Annotation[] = [];
 
@@ -193,6 +218,7 @@ function buildDamagePairAnnotations(text: string): Annotation[] {
 
 export function annotatePatterns(text: string): Annotation[] {
 	const damage = buildDamagePairAnnotations(text);
+	const masterwork = buildMasterworkArrowAnnotations(text);
 	const tiers = buildTermAnnotations(text, ENEMY_TIER_TERMS).filter(
 		(item) => !damage.some((d) => intersects(d, item)),
 	);
@@ -202,5 +228,7 @@ export function annotatePatterns(text: string): Annotation[] {
 			!tiers.some((t) => intersects(t, item)),
 	);
 
-	return [...damage, ...tiers, ...energy].sort((a, b) => a.start - b.start);
+	return [...damage, ...masterwork, ...tiers, ...energy].sort(
+		(a, b) => a.start - b.start,
+	);
 }

@@ -67,9 +67,9 @@ export function Tooltip({
 				<p className="m-2 mb-0 border-t border-gray-500 bg-blue-950/15 px-2 py-2 text-center leading-none font-bold whitespace-pre-wrap shadow-md shadow-blue-950/15">
 					{entry.extraInfo}
 					{entry.secondaryDetail ? (
-						<div className="text-foreground/70 mt-1 text-xs">
+						<span className="text-foreground/70 mt-1 block text-xs">
 							{entry.secondaryDetail}
-						</div>
+						</span>
 					) : null}
 				</p>
 			) : null}
