@@ -122,3 +122,5 @@ export const extraAliases: Verb[] = [
 		types: ["Weapon"],
 	},
 ];
+
+export const classNames = ["Hunter", "Titan", "Warlock"];

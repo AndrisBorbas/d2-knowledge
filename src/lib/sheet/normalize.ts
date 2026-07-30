@@ -1,3 +1,4 @@
+import { classNames } from "@/lib/compendium/keywords/data";
 import type {
 	DescriptionSegment,
 	Entry,
@@ -5,8 +6,6 @@ import type {
 	TabData,
 } from "@/lib/compendium/model";
 import type { Section } from "@/lib/sheet/types";
-
-import { classNames } from "./class-names";
 
 export type TabNormalizationRule = {
 	strategy:
@@ -292,7 +291,11 @@ function buildEntryFromSameRow(
 			descriptionColumn >= 0
 				? [
 						{
-							source: { tab: tabName, row: rowIndex, column: descriptionColumn },
+							source: {
+								tab: tabName,
+								row: rowIndex,
+								column: descriptionColumn,
+							},
 							start: 0,
 							length: description.length,
 						},
@@ -338,7 +341,10 @@ function buildEntriesFromSetBonusRows(
 
 	const entries: Entry[] = [];
 
-	if (firstDescription && firstDescription.text.length >= minDescriptionLength) {
+	if (
+		firstDescription &&
+		firstDescription.text.length >= minDescriptionLength
+	) {
 		const source: SourceSpan = {
 			tab: tabName,
 			row: rowIndex,
@@ -353,7 +359,11 @@ function buildEntriesFromSetBonusRows(
 			description: firstDescription.text,
 			descriptionSegments: [
 				{
-					source: { tab: tabName, row: rowIndex, column: firstDescription.column },
+					source: {
+						tab: tabName,
+						row: rowIndex,
+						column: firstDescription.column,
+					},
 					start: 0,
 					length: firstDescription.text.length,
 				},
@@ -436,7 +446,8 @@ function mergeGrenadeAspectSynergies(entries: Entry[]): Entry[] {
 			aspectTitles.has(normalizeForMatch(firstTitleLine(entry.title)))
 		) {
 			const prefix = `Aspect — ${joinTitleLines(entry.title)}: `;
-			const glueOffset = previous.description.length + "\n\n".length + prefix.length;
+			const glueOffset =
+				previous.description.length + "\n\n".length + prefix.length;
 
 			previous.description = `${previous.description}\n\n${prefix}${entry.description}`;
 			previous.descriptionSegments = [
@@ -617,7 +628,10 @@ export function normalizeTabWithRule(
 									row: rowIndex,
 									column: rule.descriptionColumn,
 								},
-								start: fragmentPrefix.length + fragmentName.length + fragmentMid.length,
+								start:
+									fragmentPrefix.length +
+									fragmentName.length +
+									fragmentMid.length,
 								length: fragmentEffect.length,
 							});
 						}
@@ -626,7 +640,11 @@ export function normalizeTabWithRule(
 							fragmentLine += `${statPrefix}${fragmentStat}`;
 							if (typeof rule.statColumn === "number") {
 								fragmentSegments.push({
-									source: { tab: tabName, row: rowIndex, column: rule.statColumn },
+									source: {
+										tab: tabName,
+										row: rowIndex,
+										column: rule.statColumn,
+									},
 									start: statStart,
 									length: fragmentStat.length,
 								});
