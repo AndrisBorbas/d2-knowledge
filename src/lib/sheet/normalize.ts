@@ -1,74 +1,46 @@
 import { classNames } from "@/lib/data/base";
-import type { Section, TabRules } from "@/lib/sheet/types";
+import type { Section } from "@/lib/sheet/types";
 
-import type { Entry, SourceSpan, TabData } from "./model";
+import type { DescriptionSegment, Entry, SourceSpan, TabData } from "./model";
 
-export type RowSectionSelector = {
-	mode: "single-cell";
-	column?: number;
-	maxLength?: number;
-	minLength?: number;
-	forbidSentenceEnding?: boolean;
-};
+export type TabNormalizationRule = {
+	strategy:
+		| "paired-rows"
+		| "same-row"
+		| "set-bonus-two-rows"
+		| "skip"
+		| "paired-columns";
+	type?: "element";
+	fragmentTitlePrefix?: string;
+	skipStart?: number;
+	sections?: Section[];
+	dynamicSection?: {
+		maxLength?: number;
+		minLength?: number;
+		forbidSentenceEnding?: boolean;
+	};
 
-export type PairedRowsRule = {
-	strategy: "paired-rows";
-	initialSectionName?: string;
-	skipRowsAtStart?: number;
-	titleColumns?: number[];
-	descriptionColumns?: number[];
-	descriptionMatch?: "by-order" | "by-column";
-	descriptionRowOffset?: number;
-	maxTitleLength?: number;
-	minDescriptionLength?: number;
-	allowNoteRows?: boolean;
-	noteMinLength?: number;
-	section?: RowSectionSelector;
-	startRow?: number;
-	endRow?: number;
-};
-
-export type SameRowRule = {
-	strategy: "same-row";
-	initialSectionName?: string;
-	skipRowsAtStart?: number;
-	titleColumn: number;
-	descriptionColumn: number;
+	// same-row (non-element)
+	titleColumn?: number;
+	descriptionColumn?: number;
 	statColumn?: number;
 	allowContinuationRows?: boolean;
 	fragmentNameColumn?: number;
-	glossaryHeaderKeywords?: string[];
-	glossaryHeaderSectionName?: string;
-	classHeaderNames?: string[];
-	classHeaderColumn?: number;
-	classScopedSectionNames?: string[];
-	classSectionSeparator?: string;
-	minDescriptionLength?: number;
-	maxTitleLength?: number;
-	allowNoteRows?: boolean;
-	noteMinLength?: number;
-	section?: RowSectionSelector;
-	startRow?: number;
-	endRow?: number;
-};
 
-export type SetBonusRowsRule = {
-	strategy: "set-bonus-two-rows";
-	initialSectionName?: string;
-	skipRowsAtStart?: number;
-	titleColumn: number;
+	// paired-columns
+	titleColumns?: number[];
+	descriptionRowOffset?: number;
+
+	// set-bonus-two-rows
 	bonusRowOffset?: number;
 	descriptionColumns?: number[];
-	bonusLabels?: [string, string];
-	minDescriptionLength?: number;
-	maxTitleLength?: number;
-	section?: RowSectionSelector;
-	startRow?: number;
-	endRow?: number;
-};
 
-export type TabNormalizationRule =
-	PairedRowsRule | SameRowRule | SetBonusRowsRule | TabRules;
+	// shared sizing/filtering
+	maxTitleLength?: number;
+	minDescriptionLength?: number;
+	allowNoteRows?: boolean;
+	noteMinLength?: number;
+};
 
 export type TabNormalizationConfigMap = Partial<
 	Record<string, TabNormalizationRule>
@@ -76,18 +48,11 @@ export type TabNormalizationConfigMap = Partial<
 
 export const DEFAULT_TAB_NORMALIZATION_RULE: TabNormalizationRule = {
 	strategy: "paired-rows",
-	descriptionMatch: "by-order",
 	descriptionRowOffset: 1,
 	maxTitleLength: 64,
 	minDescriptionLength: 20,
 	allowNoteRows: true,
 	noteMinLength: 20,
-	section: {
-		mode: "single-cell",
-		maxLength: 64,
-		minLength: 2,
-		forbidSentenceEnding: true,
-	},
 };
 
 function normalizeCell(value: string | undefined) {
@@ -113,83 +78,25 @@ function getNonEmptyCells(row: string[]) {
 	return cells;
 }
 
-function getCell(row: string[] | undefined, column: number) {
-	if (!row) return "";
+function getCell(row: string[] | undefined, column: number | undefined) {
+	if (!row || typeof column !== "number") return "";
 	return normalizeCell(row[column]);
-}
-
-function getColumnsForRule(row: string[], explicitColumns?: number[]) {
-	if (explicitColumns && explicitColumns.length > 0) return explicitColumns;
-	return getNonEmptyCells(row).map((cell) => cell.column);
 }
 
 function normalizeForMatch(value: string) {
 	return value.trim().toLowerCase().replace(/s$/, "");
 }
 
-function isGlossaryHeaderRow(row: string[], keywords?: string[]) {
-	if (!keywords || keywords.length === 0) return false;
-	const rowValues = new Set(
-		getNonEmptyCells(row).map((cell) => normalizeForMatch(cell.text)),
-	);
-	return keywords.every((keyword) => rowValues.has(normalizeForMatch(keyword)));
-}
-
-function maybeScopeSectionWithClass(
-	sectionName: string,
-	activeClassName: string | null,
-	rule: SameRowRule,
-) {
-	if (!activeClassName) return sectionName;
-	const scopedNames = rule.classScopedSectionNames;
-	if (!scopedNames || scopedNames.length === 0) return sectionName;
-
-	const normalized = normalizeForMatch(sectionName);
-	const isScoped = scopedNames.some(
-		(item) => normalizeForMatch(item) === normalized,
-	);
-	if (!isScoped) return sectionName;
-
-	const separator = rule.classSectionSeparator ?? " - ";
-	return `${activeClassName}${separator}${sectionName}`;
-}
-
-function getInlineSectionHeaderName(
-	row: string[],
-	rule: SameRowRule,
-	activeClassName: string | null,
-) {
-	const titleValue = normalizeForMatch(getCell(row, rule.titleColumn));
-	const descriptionValue = normalizeForMatch(
-		getCell(row, rule.descriptionColumn),
-	);
-	const statValue =
-		typeof rule.statColumn === "number"
-			? normalizeForMatch(getCell(row, rule.statColumn))
-			: "";
-
-	// Some tabs use a 3-column header row for aspects instead of a single-cell section row.
-	if (
-		(titleValue === "aspect" || titleValue === "aspects") &&
-		descriptionValue === "information" &&
-		(statValue === "fragment slots" || statValue.length === 0)
-	) {
-		return maybeScopeSectionWithClass("Aspects", activeClassName, rule);
-	}
-
-	return null;
-}
-
 function getFirstNonEmptyFromColumns(
 	row: string[] | undefined,
 	columns: number[],
-) {
-	if (!row) return "";
+): { column: number; text: string } | null {
+	if (!row) return null;
 	for (const column of columns) {
-		const value = getCell(row, column);
-		if (value.length > 0) return value;
+		const text = getCell(row, column);
+		if (text.length > 0) return { column, text };
 	}
-	return "";
+	return null;
 }
 
 function checkCurrentClass(row: string[]) {
@@ -252,100 +159,14 @@ function buildBaseGroups(
 	return groups;
 }
 
-function buildEntriesFromPairedRows(
-	tabName: string,
-	rowIndex: number,
-	titleRow: string[],
-	descriptionRow: string[] | undefined,
-	section: string | null,
-	rule: PairedRowsRule,
-) {
-	if (!descriptionRow) return [] as Entry[];
-
-	const maxTitleLength = rule.maxTitleLength ?? 64;
-	const minDescriptionLength = rule.minDescriptionLength ?? 20;
-	const descriptionMatch = rule.descriptionMatch ?? "by-order";
-	const titleColumns = getColumnsForRule(titleRow, rule.titleColumns);
-	const descriptionColumns = getColumnsForRule(
-		descriptionRow,
-		rule.descriptionColumns,
-	);
-	const entries: Entry[] = [];
-
-	const titleCells = titleColumns
-		.map((column) => ({
-			column,
-			text: getCell(titleRow, column),
-		}))
-		.filter(
-			(cell) => cell.text.length > 0 && cell.text.length <= maxTitleLength,
-		);
-
-	if (descriptionMatch === "by-column") {
-		for (const titleCell of titleCells) {
-			const description = getCell(descriptionRow, titleCell.column);
-			if (!description || description.length < minDescriptionLength) continue;
-
-			const source: SourceSpan = {
-				tab: tabName,
-				row: rowIndex,
-				column: titleCell.column,
-			};
-
-			entries.push({
-				id: createEntryId(tabName, section, titleCell.text, source),
-				tab: tabName,
-				section,
-				groups: buildBaseGroups(tabName, section),
-				title: titleCell.text,
-				description,
-				source,
-			});
-		}
-
-		return entries;
-	}
-
-	const descriptionCells = descriptionColumns
-		.map((column) => ({
-			column,
-			text: getCell(descriptionRow, column),
-		}))
-		.filter((cell) => cell.text.length >= minDescriptionLength);
-
-	const pairCount = Math.min(titleCells.length, descriptionCells.length);
-
-	for (let i = 0; i < pairCount; i++) {
-		const titleCell = titleCells[i];
-		const descriptionCell = descriptionCells[i];
-
-		const source: SourceSpan = {
-			tab: tabName,
-			row: rowIndex,
-			column: titleCell.column,
-		};
-
-		entries.push({
-			id: createEntryId(tabName, section, titleCell.text, source),
-			tab: tabName,
-			section,
-			groups: buildBaseGroups(tabName, section),
-			title: titleCell.text,
-			description: descriptionCell.text,
-			source,
-		});
-	}
-
-	return entries;
-}
-
 function buildEntriesFromPairedColumns(
 	tabName: string,
 	rowIndex: number,
 	titleRow: string[],
 	descriptionRow: string[] | undefined,
+	descriptionRowIndex: number,
 	section: string | null,
-	rule: TabRules,
+	rule: TabNormalizationRule,
 ): Entry[] {
 	if (!descriptionRow || !rule.titleColumns) return [];
 
@@ -380,6 +201,17 @@ function buildEntriesFromPairedColumns(
 			groups: buildBaseGroups(tabName, section),
 			title: titleCell.text,
 			description: descriptionCell.text,
+			descriptionSegments: [
+				{
+					source: {
+						tab: tabName,
+						row: descriptionRowIndex,
+						column: descriptionCell.column,
+					},
+					start: 0,
+					length: descriptionCell.text.length,
+				},
+			],
 			source,
 		});
 	}
@@ -392,28 +224,31 @@ function buildEntryFromSameRow(
 	rowIndex: number,
 	row: string[],
 	state: NormalizerState,
-	rule: SameRowRule | TabRules,
+	rule: TabNormalizationRule,
 ): Entry | null {
 	const nonEmptyCells = getNonEmptyCells(row);
 
 	let title = "",
 		description = "",
 		extraInfo: string | undefined = undefined;
+	let descriptionColumn = -1;
 	const source: SourceSpan = {
 		tab: tabName,
 		row: rowIndex,
 		column: 0,
 	};
 
-	if ("type" in rule && rule.type === "element") {
+	if (rule.type === "element") {
 		if (nonEmptyCells.length < 2) return null;
 		title = nonEmptyCells[0].text;
 		description = nonEmptyCells[1]?.text;
+		descriptionColumn = nonEmptyCells[1].column;
 		source.column = nonEmptyCells[0].column;
 		extraInfo = nonEmptyCells[2]?.text;
-	} else if ("titleColumn" in rule) {
+	} else if (typeof rule.titleColumn === "number") {
 		title = getCell(row, rule.titleColumn);
 		description = getCell(row, rule.descriptionColumn);
+		descriptionColumn = rule.descriptionColumn ?? -1;
 		source.column = rule.titleColumn;
 
 		if (!title || !description) return null;
@@ -429,7 +264,6 @@ function buildEntryFromSameRow(
 	}
 
 	if (
-		"type" in rule &&
 		rule.type === "element" &&
 		state.section === "Fragments" &&
 		typeof rule.fragmentTitlePrefix === "string" &&
@@ -449,6 +283,16 @@ function buildEntryFromSameRow(
 		groups: buildBaseGroups(tabName, state.section, state.activeClassName),
 		title,
 		description,
+		descriptionSegments:
+			descriptionColumn >= 0
+				? [
+						{
+							source: { tab: tabName, row: rowIndex, column: descriptionColumn },
+							start: 0,
+							length: description.length,
+						},
+					]
+				: undefined,
 		source,
 		extraInfo,
 	};
@@ -459,8 +303,10 @@ function buildEntriesFromSetBonusRows(
 	rowIndex: number,
 	rows: (string[] | null)[],
 	section: string | null,
-	rule: SetBonusRowsRule,
+	rule: TabNormalizationRule,
 ) {
+	if (typeof rule.titleColumn !== "number") return [] as Entry[];
+
 	const bonusRowOffset = rule.bonusRowOffset ?? 1;
 	const firstRow = rows[rowIndex];
 	const secondRow = rows[rowIndex + bonusRowOffset];
@@ -487,7 +333,7 @@ function buildEntriesFromSetBonusRows(
 
 	const entries: Entry[] = [];
 
-	if (firstDescription.length >= minDescriptionLength) {
+	if (firstDescription && firstDescription.text.length >= minDescriptionLength) {
 		const source: SourceSpan = {
 			tab: tabName,
 			row: rowIndex,
@@ -499,15 +345,26 @@ function buildEntriesFromSetBonusRows(
 			section,
 			groups: [...buildBaseGroups(tabName, section), "Armor Sets"],
 			title: title,
-			description: firstDescription,
+			description: firstDescription.text,
+			descriptionSegments: [
+				{
+					source: { tab: tabName, row: rowIndex, column: firstDescription.column },
+					start: 0,
+					length: firstDescription.text.length,
+				},
+			],
 			source,
 		});
 	}
 
-	if (secondDescription.length >= minDescriptionLength) {
+	if (
+		secondDescription &&
+		secondDescription.text.length >= minDescriptionLength
+	) {
+		const descriptionRow = rowIndex + bonusRowOffset;
 		const source: SourceSpan = {
 			tab: tabName,
-			row: rowIndex + bonusRowOffset,
+			row: descriptionRow,
 			column: rule.titleColumn,
 		};
 		entries.push({
@@ -516,7 +373,18 @@ function buildEntriesFromSetBonusRows(
 			section,
 			groups: [...buildBaseGroups(tabName, section), "Armor Sets"],
 			title: title,
-			description: secondDescription,
+			description: secondDescription.text,
+			descriptionSegments: [
+				{
+					source: {
+						tab: tabName,
+						row: descriptionRow,
+						column: secondDescription.column,
+					},
+					start: 0,
+					length: secondDescription.text.length,
+				},
+			],
 			source,
 		});
 	}
@@ -562,9 +430,17 @@ function mergeGrenadeAspectSynergies(entries: Entry[]): Entry[] {
 			previous?.section === "Grenade Abilities" &&
 			aspectTitles.has(normalizeForMatch(firstTitleLine(entry.title)))
 		) {
-			previous.description =
-				`${previous.description}\n\n` +
-				`Aspect — ${joinTitleLines(entry.title)}: ${entry.description}`;
+			const prefix = `Aspect — ${joinTitleLines(entry.title)}: `;
+			const glueOffset = previous.description.length + "\n\n".length + prefix.length;
+
+			previous.description = `${previous.description}\n\n${prefix}${entry.description}`;
+			previous.descriptionSegments = [
+				...(previous.descriptionSegments ?? []),
+				...(entry.descriptionSegments ?? []).map((segment) => ({
+					...segment,
+					start: segment.start + glueOffset,
+				})),
+			];
 			continue;
 		}
 
@@ -608,17 +484,12 @@ export function normalizeTabWithRule(
 	const entries: Entry[] = [];
 
 	const currentState: NormalizerState = {
-		section: "sections" in rule ? (rule.sections?.[0]?.name ?? null) : null,
+		section: rule.sections?.[0]?.name ?? null,
 		activeClassName: null,
 		lastRowWasDynamicSection: false,
 	};
 
-	const startRow =
-		"skipStart" in rule
-			? (rule.skipStart ?? 0)
-			: "skipRowsAtStart" in rule
-				? (rule.skipRowsAtStart ?? 0)
-				: 0;
+	const startRow = rule.skipStart ?? 0;
 	const endRow = rows.length - 1;
 
 	for (let rowIndex = startRow; rowIndex <= endRow; rowIndex++) {
@@ -626,7 +497,7 @@ export function normalizeTabWithRule(
 		if (!row) continue;
 		if (getNonEmptyCells(row).length === 0) continue;
 
-		if ("type" in rule && rule.type === "element") {
+		if (rule.type === "element") {
 			const currentClass = checkCurrentClass(row);
 			if (currentClass) {
 				currentState.activeClassName = currentClass;
@@ -634,7 +505,7 @@ export function normalizeTabWithRule(
 			}
 		}
 
-		if ("dynamicSection" in rule && rule.dynamicSection) {
+		if (rule.dynamicSection) {
 			const singleCellCandidates = getNonEmptyCells(row);
 			if (singleCellCandidates.length === 1) {
 				const candidateText = singleCellCandidates[0].text;
@@ -657,45 +528,31 @@ export function normalizeTabWithRule(
 			currentState.lastRowWasDynamicSection = false;
 		}
 
-		const sectionName = isSectionCandidate(
-			row,
-			"sections" in rule ? rule.sections : undefined,
-		);
+		const sectionName = isSectionCandidate(row, rule.sections);
 		if (sectionName) {
 			currentState.section = sectionName.name;
 			continue;
 		}
 
-		if ("type" in rule && rule.type === "element") {
+		if (rule.type === "element") {
 			if (getNonEmptyCells(row).length === 1) {
 				continue;
 			}
 		}
 
 		if (rule.strategy === "paired-rows") {
-			// const descriptionRowOffset = rule.descriptionRowOffset ?? 1;
-			// const nextDescriptionRow = rows[rowIndex + descriptionRowOffset];
-			// const pairedEntries = buildEntriesFromPairedRows(
-			// 	tabName,
-			// 	rowIndex,
-			// 	row,
-			// 	nextDescriptionRow,
-			// 	currentState.section,
-			// 	rule,
-			// );
-			// if (pairedEntries.length > 0) {
-			// 	entries.push(...pairedEntries);
-			// 	rowIndex += descriptionRowOffset;
-			// 	continue;
-			// }
-		} else if (rule.strategy === "paired-columns" && "titleColumns" in rule) {
+			// No title/description strategy implemented for this row shape;
+			// falls through to note-row detection below.
+		} else if (rule.strategy === "paired-columns") {
 			const descriptionRowOffset = rule.descriptionRowOffset ?? 1;
-			const descriptionRow = rows[rowIndex + descriptionRowOffset];
+			const descriptionRowIndex = rowIndex + descriptionRowOffset;
+			const descriptionRow = rows[descriptionRowIndex];
 			const pairedEntries = buildEntriesFromPairedColumns(
 				tabName,
 				rowIndex,
 				row,
 				descriptionRow ?? undefined,
+				descriptionRowIndex,
 				currentState.section,
 				rule,
 			);
@@ -717,11 +574,7 @@ export function normalizeTabWithRule(
 				continue;
 			}
 
-			if (
-				"allowContinuationRows" in rule &&
-				rule.allowContinuationRows &&
-				entries.length > 0
-			) {
+			if (rule.allowContinuationRows && entries.length > 0) {
 				const titleValue = getCell(row, rule.titleColumn);
 				if (titleValue.length === 0) {
 					const fragmentColumn =
@@ -737,19 +590,58 @@ export function normalizeTabWithRule(
 
 					if (fragmentName.length > 0 && fragmentEffect.length > 0) {
 						const lastEntry = entries[entries.length - 1];
-						const fragmentLine =
-							fragmentStat.length > 0
-								? `Fragment ${fragmentName}: ${fragmentEffect} | Stat/Cooldown: ${fragmentStat}`
-								: `Fragment ${fragmentName}: ${fragmentEffect}`;
+
+						const fragmentPrefix = "Fragment ";
+						const fragmentMid = ": ";
+						const statPrefix = " | Stat/Cooldown: ";
+
+						let fragmentLine = `${fragmentPrefix}${fragmentName}${fragmentMid}${fragmentEffect}`;
+						const fragmentSegments: DescriptionSegment[] = [];
+
+						if (typeof fragmentColumn === "number") {
+							fragmentSegments.push({
+								source: { tab: tabName, row: rowIndex, column: fragmentColumn },
+								start: fragmentPrefix.length,
+								length: fragmentName.length,
+							});
+						}
+						if (typeof rule.descriptionColumn === "number") {
+							fragmentSegments.push({
+								source: {
+									tab: tabName,
+									row: rowIndex,
+									column: rule.descriptionColumn,
+								},
+								start: fragmentPrefix.length + fragmentName.length + fragmentMid.length,
+								length: fragmentEffect.length,
+							});
+						}
+						if (fragmentStat.length > 0) {
+							const statStart = fragmentLine.length + statPrefix.length;
+							fragmentLine += `${statPrefix}${fragmentStat}`;
+							if (typeof rule.statColumn === "number") {
+								fragmentSegments.push({
+									source: { tab: tabName, row: rowIndex, column: rule.statColumn },
+									start: statStart,
+									length: fragmentStat.length,
+								});
+							}
+						}
+
+						const glueOffset = lastEntry.description.length + "\n\n".length;
 						lastEntry.description = `${lastEntry.description}\n\n${fragmentLine}`;
+						lastEntry.descriptionSegments = [
+							...(lastEntry.descriptionSegments ?? []),
+							...fragmentSegments.map((segment) => ({
+								...segment,
+								start: segment.start + glueOffset,
+							})),
+						];
 						continue;
 					}
 				}
 			}
-		} else if (
-			rule.strategy === "set-bonus-two-rows" &&
-			"titleColumn" in rule
-		) {
+		} else if (rule.strategy === "set-bonus-two-rows") {
 			const setBonusEntries = buildEntriesFromSetBonusRows(
 				tabName,
 				rowIndex,
@@ -766,10 +658,8 @@ export function normalizeTabWithRule(
 			continue;
 		}
 
-		const noteMinLength =
-			"noteMinLength" in rule ? rule.noteMinLength : undefined;
-		const allowNoteRows =
-			"allowNoteRows" in rule ? rule.allowNoteRows : undefined;
+		const noteMinLength = rule.noteMinLength;
+		const allowNoteRows = rule.allowNoteRows;
 
 		if (
 			isNoteCandidate(row, currentState.section, allowNoteRows, noteMinLength)
@@ -798,9 +688,7 @@ export function normalizeTabWithRule(
 	}
 
 	const finalEntries =
-		"type" in rule && rule.type === "element"
-			? mergeGrenadeAspectSynergies(entries)
-			: entries;
+		rule.type === "element" ? mergeGrenadeAspectSynergies(entries) : entries;
 
 	return {
 		name: tabName,

@@ -1,15 +1,15 @@
 import {
-	loadBungieManifestSnapshotResolver,
 	type BungieManifestSnapshotResolver,
+	loadBungieManifestSnapshotResolver,
 } from "@/lib/bungie/snapshot";
 import {
 	COMPENDIUM_ACTIVE_TAB_NAMES,
 	COMPENDIUM_SHEET_ID,
 	COMPENDIUM_TAB_NORMALIZATION,
 } from "@/lib/sheet/data";
-import type { Entry, TabData } from "@/lib/sheet/model";
+import { type Entry, shiftSegmentsForSlice, type TabData } from "@/lib/sheet/model";
 import { normalizeTabs } from "@/lib/sheet/normalize";
-import { fetchSheetTabs } from "@/lib/sheet/sheet";
+import { fetchSheetTabsWithColors, type SheetColorIndex } from "@/lib/sheet/sheet";
 
 import {
 	classifyUnifiedKind,
@@ -49,6 +49,7 @@ function parseArmorSetBonusFields(entry: Entry) {
 		return {
 			title: entry.title,
 			description: entry.description,
+			descriptionSegments: entry.descriptionSegments ?? [],
 			secondaryName: setName,
 			secondaryDetail: source,
 			extraInfo: buildExtraInfo(undefined, setName),
@@ -57,9 +58,17 @@ function parseArmorSetBonusFields(entry: Entry) {
 	}
 
 	const [, pieceCount, bonusName, remainder] = match;
+	const description = remainder.trim();
+	const sliceStart = entry.description.indexOf(description);
+
 	return {
 		title: bonusName.trim(),
-		description: remainder.trim(),
+		description,
+		descriptionSegments: shiftSegmentsForSlice(
+			entry.descriptionSegments ?? [],
+			sliceStart,
+			description.length,
+		),
 		secondaryName: setName,
 		secondaryDetail: source,
 		extraInfo: buildExtraInfo(pieceCount, setName),
@@ -67,12 +76,19 @@ function parseArmorSetBonusFields(entry: Entry) {
 	};
 }
 
-export async function loadSheetTabs(): Promise<TabData[]> {
-	const rawTabs = await fetchSheetTabs(
+export async function loadSheetTabs(): Promise<{
+	tabs: TabData[];
+	colors: SheetColorIndex;
+}> {
+	const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
+	if (!apiKey) throw new Error("GOOGLE_SHEETS_API_KEY is not set");
+
+	const { grid, colors } = await fetchSheetTabsWithColors(
 		COMPENDIUM_SHEET_ID,
 		COMPENDIUM_ACTIVE_TAB_NAMES,
+		apiKey,
 	);
-	return normalizeTabs(rawTabs, COMPENDIUM_TAB_NORMALIZATION);
+	return { tabs: normalizeTabs(grid, COMPENDIUM_TAB_NORMALIZATION), colors };
 }
 
 export function toUnifiedSheetEntries(
@@ -114,6 +130,7 @@ export function toUnifiedSheetEntries(
 				sourceRefs: [sourceRef],
 				title: bonusEnrichment?.perkName ?? parsed.title,
 				description: parsed.description,
+				descriptionSegments: parsed.descriptionSegments,
 				secondaryName: parsed.secondaryName,
 				secondaryDetail: parsed.secondaryDetail,
 				extraInfo: parsed.extraInfo,
@@ -141,10 +158,11 @@ export type SheetSourceResult = {
 	tabs: TabData[];
 	entries: Entry[];
 	unifiedEntries: UnifiedEntry[];
+	colors: SheetColorIndex;
 };
 
 export async function loadSheetSource(): Promise<SheetSourceResult> {
-	const [tabs, bungieResolver] = await Promise.all([
+	const [{ tabs, colors }, bungieResolver] = await Promise.all([
 		loadSheetTabs(),
 		loadBungieManifestSnapshotResolver(),
 	]);
@@ -152,5 +170,5 @@ export async function loadSheetSource(): Promise<SheetSourceResult> {
 		tabs,
 		bungieResolver,
 	);
-	return { tabs, entries, unifiedEntries };
+	return { tabs, entries, unifiedEntries, colors };
 }

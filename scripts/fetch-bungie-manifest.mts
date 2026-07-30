@@ -313,13 +313,17 @@ async function main() {
 	const outputPath = path.join(outputDir, "bungie-manifest.json");
 	await writeFile(
 		outputPath,
-		JSON.stringify({
-			generatedAt: new Date().toISOString(),
-			tableNames: DEFAULT_MANIFEST_TABLES,
-			manifestVersion: snapshot.manifest.version,
-			manifestPath: snapshot.manifest.mobileWorldContentPaths?.en ?? null,
-			tables: compactTables,
-		}),
+		JSON.stringify(
+			{
+				generatedAt: new Date().toISOString(),
+				tableNames: DEFAULT_MANIFEST_TABLES,
+				manifestVersion: snapshot.manifest.version,
+				manifestPath: snapshot.manifest.mobileWorldContentPaths?.en ?? null,
+				tables: compactTables,
+			},
+			null,
+			"\t",
+		),
 		"utf8",
 	);
 

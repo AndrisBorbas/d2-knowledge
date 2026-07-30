@@ -15,7 +15,7 @@ async function main() {
 
 	const dataset = await buildCompendiumDataset();
 	const outputPath = path.join(outputDir, "compendium.json");
-	await writeFile(outputPath, JSON.stringify(dataset, null, 2), "utf8");
+	await writeFile(outputPath, JSON.stringify(dataset, null, "\t"), "utf8");
 
 	console.log(`Wrote compiled compendium dataset: ${outputPath}`);
 }

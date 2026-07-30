@@ -249,6 +249,19 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 			continue;
 		}
 
+		if (annotation.color) {
+			nodes.push(
+				<span
+					key={`sheet-color-${annotation.start}-${annotation.end}`}
+					style={{ color: annotation.color }}
+				>
+					{annotation.text}
+				</span>,
+			);
+			cursor = annotation.end;
+			continue;
+		}
+
 		const keyword = props.keywordById.get(annotation.keywordId);
 		if (!keyword) {
 			nodes.push(
@@ -349,7 +362,7 @@ function SetBonusContent({
 }: TooltipContentProps) {
 	return (
 		<>
-			<p className="p-4 text-sm whitespace-pre-wrap text-white/90">
+			<p className="p-4 text-center text-sm whitespace-pre-wrap text-white/90">
 				<TextWithTooltips
 					text={entry.description}
 					annotations={entry.annotations}
@@ -375,37 +388,24 @@ function ExoticContent({
 }: TooltipContentProps) {
 	return (
 		<>
-			<div className="mt-2 grid gap-1 px-2 sm:grid-cols-2">
-				<div className="bg-blue-950/15 px-2 py-2 shadow-md shadow-blue-950/15">
-					<div className="grid grid-cols-[50px_1fr] items-center gap-2">
-						<IconSlot
-							iconPath={entry.secondaryIconPath}
-							label={entry.secondaryName ?? "Exotic Item"}
-						/>
-						<div>
-							<p className="text-[11px] tracking-[0.14em] text-white/45 uppercase">
-								Item
-							</p>
-							<p className="text-sm font-medium text-white/90">
-								{entry.secondaryName ?? "Unknown Item"}
-							</p>
-						</div>
-					</div>
-				</div>
-				<div className="bg-blue-950/15 px-3 py-2 shadow-md shadow-blue-950/15">
-					<div className="grid grid-cols-[50px_1fr] items-center gap-2">
-						<IconSlot iconPath={entry.iconPath} label={entry.title} />
-						<div>
-							<p className="text-[11px] tracking-[0.14em] text-white/45 uppercase">
-								Perk
-							</p>
-							<p className="text-sm font-medium text-white/90">{entry.title}</p>
-						</div>
+			<div className="m-2 bg-blue-950/15 px-2 py-2 shadow-md shadow-blue-950/15">
+				<div className="grid grid-cols-[50px_1fr] items-center gap-2">
+					<IconSlot
+						iconPath={entry.secondaryIconPath}
+						label={entry.secondaryName ?? "Exotic Item"}
+					/>
+					<div>
+						<p className="text-[11px] tracking-[0.14em] text-white/45 uppercase">
+							Item
+						</p>
+						<p className="text-sm font-medium text-white/90">
+							{entry.secondaryName ?? "Unknown Item"}
+						</p>
 					</div>
 				</div>
 			</div>
 
-			<p className="p-4 text-sm whitespace-pre-wrap text-white/90">
+			<p className="p-4 text-center text-sm whitespace-pre-wrap text-white/90">
 				<TextWithTooltips
 					text={entry.description}
 					annotations={entry.annotations}
@@ -515,9 +515,9 @@ export function Tooltip({
 				<p className="m-2 mb-0 border-t border-gray-500 bg-blue-950/15 px-2 py-2 text-center leading-none font-bold whitespace-pre-wrap shadow-md shadow-blue-950/15">
 					{entry.extraInfo}
 					{entry.secondaryDetail ? (
-						<p className="text-foreground/70 mt-1 text-xs">
+						<div className="text-foreground/70 mt-1 text-xs">
 							{entry.secondaryDetail}
-						</p>
+						</div>
 					) : null}
 				</p>
 			) : null}

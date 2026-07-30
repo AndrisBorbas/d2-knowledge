@@ -130,7 +130,7 @@ export const Verbs: Verb[] = [
 export const extraAliases: Verb[] = [
 	{
 		name: "Nanotech Tracer Missiles",
-		aliases: ["Nanotech Tracer Rounds"],
+		aliases: ["Nanotech Tracer Rounds", "Nanotech Tracer Round"],
 		types: ["Weapon"],
 	},
 ];

@@ -8,6 +8,7 @@ import type {
 	KeywordCategory,
 } from "./model";
 import { annotatePatterns } from "./patterns";
+import { type SheetColorIndex,sheetColorKey } from "./sheet";
 
 const ELEMENT_TERMS = new Set([
 	"arc",
@@ -175,7 +176,88 @@ export function annotateText(text: string, terms: KeywordMatchTerm[]) {
 	return accepted;
 }
 
-export function annotateEntries(entries: Entry[], keywords: Keyword[]) {
+// Splits `range` into the sub-ranges not covered by any `blockers` range,
+// so a small keyword/pattern match in the middle of a long sheet-colored
+// sentence only carves out its exact span instead of discarding the whole
+// sentence's color.
+function subtractIntervals(
+	range: { start: number; end: number },
+	blockers: { start: number; end: number }[],
+): { start: number; end: number }[] {
+	const relevant = blockers
+		.filter((blocker) => intersects(range, blocker))
+		.sort((a, b) => a.start - b.start);
+
+	const pieces: { start: number; end: number }[] = [];
+	let cursor = range.start;
+
+	for (const blocker of relevant) {
+		const blockerStart = Math.max(blocker.start, range.start);
+		const blockerEnd = Math.min(blocker.end, range.end);
+		if (blockerStart > cursor) {
+			pieces.push({ start: cursor, end: blockerStart });
+		}
+		cursor = Math.max(cursor, blockerEnd);
+	}
+
+	if (cursor < range.end) {
+		pieces.push({ start: cursor, end: range.end });
+	}
+
+	return pieces;
+}
+
+function buildSheetColorAnnotations(
+	entry: Entry,
+	sheetColors: SheetColorIndex,
+	blockers: { start: number; end: number }[],
+): Annotation[] {
+	const results: Annotation[] = [];
+
+	for (const segment of entry.descriptionSegments ?? []) {
+		const cell = sheetColors.get(
+			sheetColorKey(segment.source.tab, segment.source.row, segment.source.column),
+		);
+		if (!cell) continue;
+
+		const segmentText = entry.description.slice(
+			segment.start,
+			segment.start + segment.length,
+		);
+		const cellOffset = cell.text.indexOf(segmentText);
+		if (cellOffset === -1) continue;
+
+		for (const run of cell.runs) {
+			if (!run.color) continue;
+
+			const runStartInCell = Math.max(run.start, cellOffset);
+			const runEndInCell = Math.min(run.end, cellOffset + segmentText.length);
+			if (runStartInCell >= runEndInCell) continue;
+
+			const start = segment.start + (runStartInCell - cellOffset);
+			const end = segment.start + (runEndInCell - cellOffset);
+
+			const pieces = subtractIntervals({ start, end }, blockers);
+			for (const piece of pieces) {
+				results.push({
+					keywordId: `sheet-color:${segment.source.tab}:${segment.source.row}:${segment.source.column}:${run.start}:${piece.start}`,
+					start: piece.start,
+					end: piece.end,
+					text: entry.description.slice(piece.start, piece.end),
+					color: run.color,
+				});
+			}
+		}
+	}
+
+	return results;
+}
+
+export function annotateEntries(
+	entries: Entry[],
+	keywords: Keyword[],
+	sheetColors: SheetColorIndex = new Map(),
+) {
 	const terms = buildKeywordTerms(keywords);
 	return entries.map((entry): AnnotatedEntry => {
 		const keywordAnnotations = annotateText(entry.description, terms);
@@ -183,12 +265,18 @@ export function annotateEntries(entries: Entry[], keywords: Keyword[]) {
 			(pattern) =>
 				!keywordAnnotations.some((keyword) => intersects(keyword, pattern)),
 		);
+		const sheetColorAnnotations = buildSheetColorAnnotations(entry, sheetColors, [
+			...keywordAnnotations,
+			...patternAnnotations,
+		]);
 
 		return {
 			...entry,
-			annotations: [...keywordAnnotations, ...patternAnnotations].sort(
-				(a, b) => a.start - b.start,
-			),
+			annotations: [
+				...keywordAnnotations,
+				...patternAnnotations,
+				...sheetColorAnnotations,
+			].sort((a, b) => a.start - b.start),
 		};
 	});
 }

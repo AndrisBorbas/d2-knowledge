@@ -47,7 +47,11 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 	const keywords = buildKeywords(mergedEntries, (className) =>
 		bungieResolver?.getGlyphIconPath(className),
 	);
-	const annotatedEntries = annotateEntries(mergedEntries, keywords).map(
+	const annotatedEntries = annotateEntries(
+		mergedEntries,
+		keywords,
+		sheetSource.colors,
+	).map(
 		(entry) => {
 			const isVerb = Verbs.some(
 				(verb) => toSlug(verb.name) === toSlug(entry.title.trim()),

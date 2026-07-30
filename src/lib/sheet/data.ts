@@ -46,31 +46,17 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 	"Weapon Perks": {
 		strategy: "same-row",
 		titleColumn: 0,
-		skipRowsAtStart: 4,
+		skipStart: 4,
 		descriptionColumn: 2,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
 	},
 	"Armor Perks": {
 		strategy: "set-bonus-two-rows",
-		initialSectionName: "Armor Set Bonuses",
-		skipRowsAtStart: 2,
+		skipStart: 2,
 		titleColumn: 0,
 		bonusRowOffset: 1,
 		descriptionColumns: [2, 3, 4, 5],
-		bonusLabels: ["", ""],
 		minDescriptionLength: 12,
 		maxTitleLength: 120,
-		section: {
-			mode: "single-cell",
-			maxLength: 120,
-			minLength: 2,
-			forbidSentenceEnding: true,
-		},
 	},
 	"Artifact Perks": {
 		strategy: "paired-columns",
