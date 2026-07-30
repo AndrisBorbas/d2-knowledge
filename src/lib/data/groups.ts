@@ -7,7 +7,8 @@ export const CURATED_TOP_GROUPS = [
 	"Prismatic",
 	"Abilities",
 	"Weapon Perks",
-	"Armor Perks",
+	"Armor Sets",
+	"Armor Mods",
 	"Artifact Perks",
 ] as const;
 

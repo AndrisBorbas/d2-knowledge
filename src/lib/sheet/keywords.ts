@@ -1,4 +1,4 @@
-import { Verbs } from "@/lib/data/glossary";
+import { extraAliases, Verbs } from "@/lib/data/glossary";
 
 import type {
 	AnnotatedEntry,
@@ -74,14 +74,21 @@ export function buildKeywords(
 		const existing = map.get(id);
 		if (!existing) {
 			const verb = Verbs.find((verb) => toSlug(verb.name) === id);
+			const extraAlias = extraAliases.find((verb) => toSlug(verb.name) === id);
 			const elementType = verb?.types.find((type) =>
 				ELEMENT_TERMS.has(type.toLowerCase()),
 			);
+			const types = [];
+			types.push(...(verb?.types ?? []));
+			types.push(...(extraAlias?.types ?? []));
+			if (elementType) {
+				types.push(elementType);
+			}
 			map.set(id, {
 				id,
 				label,
-				aliases: verb?.aliases ?? [],
-				types: verb?.types ?? ["default"],
+				aliases: [...(verb?.aliases ?? []), ...(extraAlias?.aliases ?? [])],
+				types: types.length > 0 ? types : ["default"],
 				variant: "default",
 				references: [entry.id],
 				iconPath: elementType

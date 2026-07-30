@@ -1,8 +1,8 @@
-import Fuse from "fuse.js";
+import Fuse from "fuse.js/min";
 
 import type { AnnotatedEntry } from "@/lib/sheet/model";
 
-const SEARCH_THRESHOLD = 0.38;
+const SEARCH_THRESHOLD = 0.28;
 
 function scoreCompendiumEntries(
 	entries: AnnotatedEntry[],
@@ -13,6 +13,7 @@ function scoreCompendiumEntries(
 		title: entry.title,
 		description: entry.description,
 		secondaryName: entry.secondaryName ?? "",
+		secondaryDetail: entry.secondaryDetail ?? "",
 		extraInfo: entry.extraInfo ?? "",
 		itemHash: entry.itemHash != null ? String(entry.itemHash) : "",
 		perkHash: entry.perkHash != null ? String(entry.perkHash) : "",
@@ -22,14 +23,16 @@ function scoreCompendiumEntries(
 		includeScore: true,
 		ignoreLocation: true,
 		threshold: SEARCH_THRESHOLD,
-		minMatchCharLength: 1,
+		minMatchCharLength: 2,
+		useExtendedSearch: true,
 		keys: [
 			{ name: "title", weight: 0.58 },
-			{ name: "description", weight: 0.22 },
-			{ name: "secondaryName", weight: 0.08 },
-			{ name: "extraInfo", weight: 0.04 },
-			{ name: "itemHash", weight: 0.05 },
-			{ name: "perkHash", weight: 0.03 },
+			{ name: "secondaryName", weight: 0.56 },
+			{ name: "description", weight: 0.54 },
+			{ name: "secondaryDetail", weight: 0.52 },
+			{ name: "extraInfo", weight: 0.5 },
+			{ name: "itemHash", weight: 0.4 },
+			{ name: "perkHash", weight: 0.4 },
 		],
 	});
 
@@ -38,6 +41,8 @@ function scoreCompendiumEntries(
 	for (const result of fuse.search(query)) {
 		scores.set(result.item.entry.id, result.score ?? Number.MAX_SAFE_INTEGER);
 	}
+
+	console.log(scores);
 
 	return scores;
 }
@@ -54,12 +59,22 @@ export function fuzzyFilterCompendiumEntries(
 
 	const scores = scoreCompendiumEntries(entries, query);
 
-	return entries
+	const filteredEntries = entries
 		.filter((entry) => scores.has(entry.id))
 		.sort((left, right) => {
 			const leftScore = scores.get(left.id) ?? Number.MAX_SAFE_INTEGER;
 			const rightScore = scores.get(right.id) ?? Number.MAX_SAFE_INTEGER;
 
+			console.log(
+				`Comparing "${left.title}" (score: ${leftScore}) vs "${right.title}" (score: ${rightScore})`,
+			);
+
 			return leftScore - rightScore;
 		});
+
+	console.log(filteredEntries);
+
+	console.log(rawQuery);
+
+	return filteredEntries;
 }

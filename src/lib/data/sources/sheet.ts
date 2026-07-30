@@ -1,4 +1,8 @@
 import {
+	loadBungieManifestSnapshotResolver,
+	type BungieManifestSnapshotResolver,
+} from "@/lib/bungie/snapshot";
+import {
 	COMPENDIUM_ACTIVE_TAB_NAMES,
 	COMPENDIUM_SHEET_ID,
 	COMPENDIUM_TAB_NORMALIZATION,
@@ -21,6 +25,48 @@ function normalizeTitle(value: string) {
 		.replace(/(^-|-$)/g, "");
 }
 
+const ARMOR_SET_BONUS_DESCRIPTION_PATTERN =
+	/^(\d+)\s*Piece\s*\|\s*(.+?)\s*\n+([\s\S]*)$/i;
+
+function buildExtraInfo(
+	pieceCount: string | undefined,
+	setName: string,
+) {
+	const pieceLabel = pieceCount ? `${pieceCount} Piece` : undefined;
+	return [pieceLabel, setName].filter(Boolean).join(" | ") || undefined;
+}
+
+function parseArmorSetBonusFields(entry: Entry) {
+	const titleLines = entry.title
+		.split("\n")
+		.map((line) => line.trim())
+		.filter((line) => line.length > 0);
+	const setName = titleLines[0] ?? entry.title;
+	const source = titleLines.slice(1).join(" - ") || undefined;
+
+	const match = entry.description.match(ARMOR_SET_BONUS_DESCRIPTION_PATTERN);
+	if (!match) {
+		return {
+			title: entry.title,
+			description: entry.description,
+			secondaryName: setName,
+			secondaryDetail: source,
+			extraInfo: buildExtraInfo(undefined, setName),
+			requiredSetCount: undefined as number | undefined,
+		};
+	}
+
+	const [, pieceCount, bonusName, remainder] = match;
+	return {
+		title: bonusName.trim(),
+		description: remainder.trim(),
+		secondaryName: setName,
+		secondaryDetail: source,
+		extraInfo: buildExtraInfo(pieceCount, setName),
+		requiredSetCount: Number(pieceCount),
+	};
+}
+
 export async function loadSheetTabs(): Promise<TabData[]> {
 	const rawTabs = await fetchSheetTabs(
 		COMPENDIUM_SHEET_ID,
@@ -29,7 +75,10 @@ export async function loadSheetTabs(): Promise<TabData[]> {
 	return normalizeTabs(rawTabs, COMPENDIUM_TAB_NORMALIZATION);
 }
 
-export function toUnifiedSheetEntries(tabs: TabData[]) {
+export function toUnifiedSheetEntries(
+	tabs: TabData[],
+	bungieResolver: BungieManifestSnapshotResolver | null = null,
+) {
 	const entries = tabs.flatMap((tab) => tab.entries);
 	const unifiedEntries = entries.map((entry): UnifiedEntry => {
 		const sourceRef: UnifiedSourceRef = {
@@ -40,13 +89,43 @@ export function toUnifiedSheetEntries(tabs: TabData[]) {
 			column: entry.source.column,
 		};
 
+		const kind = classifyUnifiedKind({
+			tab: entry.tab,
+			section: entry.section,
+		});
+
+		if (kind === "armor_set_bonus") {
+			const parsed = parseArmorSetBonusFields(entry);
+			const bonusEnrichment = parsed.requiredSetCount
+				? bungieResolver?.getArmorSetBonusPerkEnrichment({
+						setName: parsed.secondaryName,
+						requiredSetCount: parsed.requiredSetCount,
+					})
+				: null;
+			const setIconPath = bungieResolver?.getArmorSetIconPath(
+				parsed.secondaryName,
+			);
+
+			return {
+				...entry,
+				id: `sheet:${normalizeTitle(parsed.title)}:${entry.source.row}:${entry.source.column}`,
+				kind,
+				sourceId: "sheet",
+				sourceRefs: [sourceRef],
+				title: bonusEnrichment?.perkName ?? parsed.title,
+				description: parsed.description,
+				secondaryName: parsed.secondaryName,
+				secondaryDetail: parsed.secondaryDetail,
+				extraInfo: parsed.extraInfo,
+				iconPath: bonusEnrichment?.perkIconPath,
+				secondaryIconPath: setIconPath,
+			};
+		}
+
 		return {
 			...entry,
 			id: `sheet:${normalizeTitle(entry.title)}:${entry.source.row}:${entry.source.column}`,
-			kind: classifyUnifiedKind({
-				tab: entry.tab,
-				section: entry.section,
-			}),
+			kind,
 			sourceId: "sheet",
 			sourceRefs: [sourceRef],
 		};
@@ -65,7 +144,13 @@ export type SheetSourceResult = {
 };
 
 export async function loadSheetSource(): Promise<SheetSourceResult> {
-	const tabs = await loadSheetTabs();
-	const { entries, unifiedEntries } = toUnifiedSheetEntries(tabs);
+	const [tabs, bungieResolver] = await Promise.all([
+		loadSheetTabs(),
+		loadBungieManifestSnapshotResolver(),
+	]);
+	const { entries, unifiedEntries } = toUnifiedSheetEntries(
+		tabs,
+		bungieResolver,
+	);
 	return { tabs, entries, unifiedEntries };
 }

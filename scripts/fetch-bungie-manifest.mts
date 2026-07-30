@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
+import { ARMOR_SET_NAME_ALIASES } from "../src/lib/bungie/armor-set-aliases";
 import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
@@ -17,12 +18,22 @@ type CompactDefinition = {
 	i?: string;
 };
 
+type CompactItemSetPerk = {
+	c: number;
+	h: number;
+};
+
+type CompactItemSetDefinition = CompactDefinition & {
+	sp?: CompactItemSetPerk[];
+};
+
 type CompactManifestTables = {
 	DestinyInventoryItemDefinition: Record<string, CompactDefinition>;
 	DestinySandboxPerkDefinition: Record<string, CompactDefinition>;
 	DestinyTraitDefinition: Record<string, CompactDefinition>;
 	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
 	DestinyBreakerTypeDefinition: Record<string, CompactDefinition>;
+	DestinyEquipableItemSetDefinition: Record<string, CompactItemSetDefinition>;
 };
 
 function normalizeLookupName(value: string) {
@@ -31,6 +42,10 @@ function normalizeLookupName(value: string) {
 		.trim()
 		.replace(/[^a-z0-9]+/g, " ")
 		.replace(/\s+/g, " ");
+}
+
+function removeFromName(value: string, remove: string) {
+	return value.replace(remove, "").trim();
 }
 
 function asRecord<T>(value: unknown) {
@@ -83,6 +98,26 @@ async function collectSheetLookupTitles() {
 		return titleKeys;
 	} catch (error) {
 		console.warn("Unable to collect sheet lookup titles:", error);
+		return new Set<string>();
+	}
+}
+
+async function collectArmorSetNames() {
+	try {
+		const sheetSource = await loadSheetSource();
+		const setNames = new Set<string>();
+
+		for (const entry of sheetSource.unifiedEntries) {
+			if (entry.kind !== "armor_set_bonus" || !entry.secondaryName) continue;
+			const key = normalizeLookupName(entry.secondaryName);
+			if (!key) continue;
+			const alias = ARMOR_SET_NAME_ALIASES[key];
+			setNames.add(alias ? normalizeLookupName(alias) : key);
+		}
+
+		return setNames;
+	} catch (error) {
+		console.warn("Unable to collect armor set names:", error);
 		return new Set<string>();
 	}
 }
@@ -141,6 +176,66 @@ function filterTableToHashesAndTitles(
 	return Object.fromEntries(entries);
 }
 
+type ItemSetPerkSource = {
+	requiredSetCount?: number;
+	sandboxPerkHash?: number;
+};
+
+function filterItemSetTableToNames(table: unknown, setNameKeys: Set<string>) {
+	const source = asRecord<unknown>(table);
+	if (!source) {
+		return {
+			compact: {} as Record<string, CompactItemSetDefinition>,
+			perkHashes: new Set<number>(),
+		};
+	}
+
+	const compact: Record<string, CompactItemSetDefinition> = {};
+	const perkHashes = new Set<number>();
+
+	for (const [key, value] of Object.entries(source)) {
+		const row = asRecord<unknown>(value);
+		if (!row) continue;
+
+		const displayProperties = asRecord<unknown>(row.displayProperties);
+		const name =
+			typeof displayProperties?.name === "string"
+				? displayProperties.name
+				: undefined;
+		if (
+			!name ||
+			(!setNameKeys.has(normalizeLookupName(name)) &&
+				!setNameKeys.has(normalizeLookupName(removeFromName(name, "Set"))))
+		) {
+			continue;
+		}
+
+		const icon =
+			typeof displayProperties?.icon === "string"
+				? displayProperties.icon
+				: undefined;
+
+		const setPerksSource = Array.isArray(row.setPerks)
+			? (row.setPerks as ItemSetPerkSource[])
+			: [];
+		const sp: CompactItemSetPerk[] = [];
+		for (const perk of setPerksSource) {
+			if (
+				typeof perk.requiredSetCount !== "number" ||
+				typeof perk.sandboxPerkHash !== "number"
+			) {
+				continue;
+			}
+			sp.push({ c: perk.requiredSetCount, h: perk.sandboxPerkHash });
+			perkHashes.add(perk.sandboxPerkHash);
+		}
+
+		compact[key] = { n: name, i: icon, sp: sp.length > 0 ? sp : undefined };
+	}
+
+	return { compact, perkHashes };
+}
+
 // Damage/breaker type tables are small fixed enumerations we always look up
 // by their enumValue (e.g. DamageType.Arc), not by hash, so key the compact
 // table by enumValue instead.
@@ -177,8 +272,19 @@ async function main() {
 
 	const { perkHashes, itemHashes } = await collectFoundryManifestHashes();
 	const sheetTitleKeys = await collectSheetLookupTitles();
+	const armorSetNameKeys = await collectArmorSetNames();
 	const snapshot = await fetchDestinyManifestTables(DEFAULT_MANIFEST_TABLES);
-	const inventoryHashes = new Set<number>([...itemHashes, ...perkHashes]);
+
+	const itemSetResult = filterItemSetTableToNames(
+		snapshot.tables.DestinyEquipableItemSetDefinition,
+		armorSetNameKeys,
+	);
+	const allPerkHashes = new Set<number>([
+		...perkHashes,
+		...itemSetResult.perkHashes,
+	]);
+
+	const inventoryHashes = new Set<number>([...itemHashes, ...allPerkHashes]);
 	const compactTables: CompactManifestTables = {
 		DestinyInventoryItemDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinyInventoryItemDefinition,
@@ -187,12 +293,12 @@ async function main() {
 		),
 		DestinySandboxPerkDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinySandboxPerkDefinition,
-			perkHashes,
+			allPerkHashes,
 			sheetTitleKeys,
 		),
 		DestinyTraitDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinyTraitDefinition,
-			perkHashes,
+			allPerkHashes,
 			sheetTitleKeys,
 		),
 		DestinyDamageTypeDefinition: buildEnumKeyedTable(
@@ -201,6 +307,7 @@ async function main() {
 		DestinyBreakerTypeDefinition: buildEnumKeyedTable(
 			snapshot.tables.DestinyBreakerTypeDefinition,
 		),
+		DestinyEquipableItemSetDefinition: itemSetResult.compact,
 	};
 
 	const outputPath = path.join(outputDir, "bungie-manifest.json");

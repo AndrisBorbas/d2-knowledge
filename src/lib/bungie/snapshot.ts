@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import { ARMOR_SET_NAME_ALIASES } from "./armor-set-aliases";
 import { BREAKER_TYPE_ENUM_BY_GLYPH, DAMAGE_TYPE_ENUM_BY_GLYPH } from "./glyphs";
 
 type BungieDisplayProperties = {
@@ -14,6 +15,15 @@ type BungieManifestRow = {
 	displayProperties?: BungieDisplayProperties;
 };
 
+type BungieItemSetPerkRow = {
+	c: number;
+	h: number;
+};
+
+type BungieItemSetRow = BungieManifestRow & {
+	sp?: BungieItemSetPerkRow[];
+};
+
 type BungieManifestSnapshot = {
 	tables?: {
 		DestinyInventoryItemDefinition?: Record<string, BungieManifestRow>;
@@ -21,6 +31,7 @@ type BungieManifestSnapshot = {
 		DestinyTraitDefinition?: Record<string, BungieManifestRow>;
 		DestinyDamageTypeDefinition?: Record<string, BungieManifestRow>;
 		DestinyBreakerTypeDefinition?: Record<string, BungieManifestRow>;
+		DestinyEquipableItemSetDefinition?: Record<string, BungieItemSetRow>;
 	};
 };
 
@@ -86,6 +97,14 @@ export type BungieManifestSnapshotResolver = {
 		itemName?: string;
 		itemIconPath?: string;
 	} | null;
+	getArmorSetBonusPerkEnrichment(params: {
+		setName: string;
+		requiredSetCount: number;
+	}): {
+		perkName?: string;
+		perkIconPath?: string;
+	} | null;
+	getArmorSetIconPath(setName: string): string | undefined;
 	getGlyphIconPath(className: string): string | undefined;
 };
 
@@ -95,8 +114,10 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly traitTable: Record<string, BungieManifestRow> | null;
 	private readonly damageTypeTable: Record<string, BungieManifestRow> | null;
 	private readonly breakerTypeTable: Record<string, BungieManifestRow> | null;
+	private readonly itemSetTable: Record<string, BungieItemSetRow> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
+	private readonly itemSetByName: Map<string, BungieItemSetRow>;
 
 	constructor(snapshot: BungieManifestSnapshot) {
 		this.inventoryTable = asRecord<BungieManifestRow>(
@@ -114,13 +135,33 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		this.breakerTypeTable = asRecord<BungieManifestRow>(
 			snapshot.tables?.DestinyBreakerTypeDefinition,
 		);
+		this.itemSetTable = asRecord<BungieItemSetRow>(
+			snapshot.tables?.DestinyEquipableItemSetDefinition,
+		);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
+		this.itemSetByName = new Map<string, BungieItemSetRow>();
 
 		this.addDisplayNames(this.traitTable, this.displayByName);
 		this.addDisplayNames(this.perkTable, this.displayByName);
 		this.addDisplayNames(this.inventoryTable, this.displayByName);
 		this.addDisplayNames(this.inventoryTable, this.itemDisplayByName);
+
+		if (this.itemSetTable) {
+			for (const row of Object.values(this.itemSetTable)) {
+				const name = row.n ?? row.displayProperties?.name;
+				if (!name) continue;
+				const key = normalizeLookupName(name);
+				if (!key || this.itemSetByName.has(key)) continue;
+				this.itemSetByName.set(key, row);
+			}
+		}
+	}
+
+	private resolveArmorSetNameKey(setName: string) {
+		const key = normalizeLookupName(setName);
+		const alias = ARMOR_SET_NAME_ALIASES[key];
+		return alias ? normalizeLookupName(alias) : key;
 	}
 
 	private addDisplayNames(
@@ -191,6 +232,33 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			itemName: display.name,
 			itemIconPath: normalizeIconPath(display.icon),
 		};
+	}
+
+	getArmorSetBonusPerkEnrichment(params: {
+		setName: string;
+		requiredSetCount: number;
+	}) {
+		const key = this.resolveArmorSetNameKey(params.setName);
+		if (!key) return null;
+		const itemSet = this.itemSetByName.get(key);
+		if (!itemSet?.sp) return null;
+
+		const perkEntry = itemSet.sp.find((p) => p.c === params.requiredSetCount);
+		if (!perkEntry) return null;
+
+		const perkDisplay = getDisplayProperties(this.perkTable, perkEntry.h);
+		if (!perkDisplay) return null;
+
+		return {
+			perkName: perkDisplay.name,
+			perkIconPath: normalizeIconPath(perkDisplay.icon),
+		};
+	}
+
+	getArmorSetIconPath(setName: string) {
+		const key = this.resolveArmorSetNameKey(setName);
+		if (!key) return undefined;
+		return normalizeIconPath(this.itemSetByName.get(key)?.i);
 	}
 
 	getGlyphIconPath(className: string) {

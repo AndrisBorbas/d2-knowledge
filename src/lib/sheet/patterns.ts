@@ -32,7 +32,7 @@ const PVP_BRACKET_ONLY = new RegExp(
 	"gi",
 );
 
-type TermColor = { term: string; colorClass: string };
+type TermColor = { term: string; colorClass: string; notFollowedBy?: string[] };
 
 // Longest term first so e.g. "Overload Champion" wins over bare "Champion".
 const ENEMY_TIER_TERMS: TermColor[] = [
@@ -74,7 +74,11 @@ const ABILITY_ENERGY_TERMS: TermColor[] = [
 	{ term: "Grenade Ability Energy", colorClass: PATTERN_COLORS.energyGrenade },
 	{ term: "Grenade Ability", colorClass: PATTERN_COLORS.energyGrenade },
 	{ term: "Grenade Energy", colorClass: PATTERN_COLORS.energyGrenade },
-	{ term: "Grenade", colorClass: PATTERN_COLORS.energyGrenade },
+	{
+		term: "Grenade",
+		colorClass: PATTERN_COLORS.energyGrenade,
+		notFollowedBy: ["Launcher", "Launchers"],
+	},
 	{ term: "Melee Ability Energy", colorClass: PATTERN_COLORS.energyMelee },
 	{ term: "Melee Ability", colorClass: PATTERN_COLORS.energyMelee },
 	{ term: "Melee Energy", colorClass: PATTERN_COLORS.energyMelee },
@@ -93,9 +97,12 @@ const ABILITY_ENERGY_TERMS: TermColor[] = [
 function buildTermAnnotations(text: string, terms: TermColor[]): Annotation[] {
 	const candidates: Annotation[] = [];
 
-	for (const { term, colorClass } of terms) {
+	for (const { term, colorClass, notFollowedBy } of terms) {
+		const exclusion = notFollowedBy?.length
+			? `(?!\\s*(?:${notFollowedBy.map(escapeRegExp).join("|")})\\b)`
+			: "";
 		const pattern = new RegExp(
-			`(^|[^A-Za-z0-9])(${escapeRegExp(term)})(?=$|[^A-Za-z0-9])`,
+			`(^|[^A-Za-z0-9])(${escapeRegExp(term)})${exclusion}(?=$|[^A-Za-z0-9])`,
 			"gi",
 		);
 

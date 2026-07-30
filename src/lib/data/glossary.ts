@@ -127,6 +127,14 @@ export const Verbs: Verb[] = [
 	// General
 ] as const;
 
+export const extraAliases: Verb[] = [
+	{
+		name: "Nanotech Tracer Missiles",
+		aliases: ["Nanotech Tracer Rounds"],
+		types: ["Weapon"],
+	},
+];
+
 function getKeywordColorFromArray(types: string[]): KeywordColor | null {
 	const lowerTypes = types.map((type) => type.toLowerCase());
 	if (lowerTypes.includes("arc")) return "arc";

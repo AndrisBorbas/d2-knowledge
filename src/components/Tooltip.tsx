@@ -348,18 +348,20 @@ function SetBonusContent({
 	onKeywordClick,
 }: TooltipContentProps) {
 	return (
-		<p className="p-4 text-sm whitespace-pre-wrap text-white/90">
-			<TextWithTooltips
-				text={entry.description}
-				annotations={entry.annotations}
-				entry={entry}
-				entryMap={entryMap}
-				keywordById={keywordMap}
-				onKeywordHover={onKeywordHover}
-				onKeywordLeave={onKeywordLeave}
-				onKeywordClick={onKeywordClick}
-			/>
-		</p>
+		<>
+			<p className="p-4 text-sm whitespace-pre-wrap text-white/90">
+				<TextWithTooltips
+					text={entry.description}
+					annotations={entry.annotations}
+					entry={entry}
+					entryMap={entryMap}
+					keywordById={keywordMap}
+					onKeywordHover={onKeywordHover}
+					onKeywordLeave={onKeywordLeave}
+					onKeywordClick={onKeywordClick}
+				/>
+			</p>
+		</>
 	);
 }
 
@@ -512,6 +514,11 @@ export function Tooltip({
 			{entry.extraInfo && !entry.extraInfo.startsWith("Item: ") ? (
 				<p className="m-2 mb-0 border-t border-gray-500 bg-blue-950/15 px-2 py-2 text-center leading-none font-bold whitespace-pre-wrap shadow-md shadow-blue-950/15">
 					{entry.extraInfo}
+					{entry.secondaryDetail ? (
+						<p className="text-foreground/70 mt-1 text-xs">
+							{entry.secondaryDetail}
+						</p>
+					) : null}
 				</p>
 			) : null}
 

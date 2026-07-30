@@ -12,6 +12,7 @@ export const DEFAULT_MANIFEST_TABLES: DestinyManifestComponentName[] = [
 	"DestinyTraitDefinition",
 	"DestinyDamageTypeDefinition",
 	"DestinyBreakerTypeDefinition",
+	"DestinyEquipableItemSetDefinition",
 ];
 
 export async function fetchDestinyManifestSummary() {

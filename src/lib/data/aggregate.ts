@@ -18,7 +18,6 @@ export const DEFAULT_SOURCE_PRIORITY: SourcePriority = [
 
 function getUnifiedMergeKey(entry: UnifiedEntry) {
 	const titleKey = toCanonicalTitleKey(entry.title);
-	const sectionKey = toCanonicalTitleKey(entry.section ?? "");
 
 	if (entry.kind === "exotic_item_perk") {
 		const itemKey = toCanonicalTitleKey(entry.secondaryName ?? "");
@@ -28,49 +27,11 @@ function getUnifiedMergeKey(entry: UnifiedEntry) {
 	}
 
 	if (entry.kind === "armor_set_bonus") {
-		return ["armor_set", titleKey, sectionKey].join("|");
+		const setKey = toCanonicalTitleKey(entry.secondaryName ?? "");
+		return ["armor_set", setKey, titleKey].join("|");
 	}
 
 	return [entry.kind ?? "general", titleKey].join("|");
-}
-
-function combineArmorSetBonusDescriptions(
-	existing: UnifiedEntry,
-	candidate: UnifiedEntry,
-) {
-	if (
-		existing.kind !== "armor_set_bonus" ||
-		candidate.kind !== "armor_set_bonus"
-	) {
-		return existing;
-	}
-
-	const descriptions = [existing.description, candidate.description].filter(
-		(description) => description.trim().length > 0,
-	);
-	if (descriptions.length < 2) {
-		return existing;
-	}
-
-	const hasLabels = descriptions.some((description) =>
-		/^\s*(2-piece|4-piece)\s*:/i.test(description),
-	);
-	if (hasLabels) {
-		return existing;
-	}
-
-	const ordered = [existing, candidate].sort(
-		(a, b) => a.source.row - b.source.row,
-	);
-	const mergedDescription = [
-		`2-piece: ${ordered[0].description.trim()}`,
-		`4-piece: ${ordered[1].description.trim()}`,
-	].join("\n");
-
-	return {
-		...existing,
-		description: mergedDescription,
-	};
 }
 
 function getPriorityIndex(sourceId: UnifiedSourceId, priority: SourcePriority) {
@@ -103,7 +64,11 @@ export function mergeUnifiedEntries(
 			byKey.set(key, {
 				...candidate,
 				...(preserveExistingTab
-					? { tab: existing.tab, section: existing.section, groups: existing.groups }
+					? {
+							tab: existing.tab,
+							section: existing.section,
+							groups: existing.groups,
+						}
 					: {}),
 				sourceRefs: [...candidate.sourceRefs, ...existing.sourceRefs],
 			});
@@ -112,12 +77,8 @@ export function mergeUnifiedEntries(
 
 		if (candidatePriority === existingPriority) {
 			const sourceRefs = [...existing.sourceRefs, ...candidate.sourceRefs];
-			const mergedByKind = combineArmorSetBonusDescriptions(
-				existing,
-				candidate,
-			);
 			byKey.set(key, {
-				...mergedByKind,
+				...existing,
 				sourceRefs,
 			});
 		}

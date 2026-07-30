@@ -62,6 +62,7 @@ export const entrySchema = z.object({
 	sourceId: unifiedSourceIdSchema.optional(),
 	sourceRefs: z.array(unifiedSourceRefSchema).optional(),
 	secondaryName: z.string().optional(),
+	secondaryDetail: z.string().optional(),
 	iconPath: z.string().optional(),
 	secondaryIconPath: z.string().optional(),
 	itemHash: z.number().int().nonnegative().optional(),
