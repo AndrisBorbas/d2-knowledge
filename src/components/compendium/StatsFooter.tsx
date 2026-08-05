@@ -62,7 +62,7 @@ export function StatsFooter({
 					</a>{" "}
 					sheet, support them on{" "}
 					<a
-						href="https://www.patreon.com/DataCompendium"
+						href="https://www.patreon.com/DataCompendium?utm_source=d2-knowledge"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-white underline decoration-sky-300/60 underline-offset-2 hover:text-sky-200"
@@ -74,7 +74,7 @@ export function StatsFooter({
 				<p>
 					Perk data from{" "}
 					<a
-						href="https://d2clarity.com"
+						href="https://d2clarity.com?utm_source=d2-knowledge"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-white underline decoration-sky-300/60 underline-offset-2 hover:text-sky-200"
@@ -83,7 +83,7 @@ export function StatsFooter({
 					</a>
 					. Tooltip feedback goes to their{" "}
 					<a
-						href="https://d2clarity.com/discord"
+						href="https://d2clarity.com/discord?utm_source=d2-knowledge"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-white underline decoration-sky-300/60 underline-offset-2 hover:text-sky-200"
@@ -92,7 +92,7 @@ export function StatsFooter({
 					</a>
 					, support on{" "}
 					<a
-						href="https://url.d2clarity.com/ko-fi"
+						href="https://url.d2clarity.com/ko-fi?utm_source=d2-knowledge"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-white underline decoration-sky-300/60 underline-offset-2 hover:text-sky-200"
@@ -123,7 +123,7 @@ export function StatsFooter({
 					</div>
 				</a>
 				<a
-					href="https://ko-fi.com/andrisborbas"
+					href="https://ko-fi.com/andrisborbas?utm_source=d2-knowledge"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="underline hover:text-white"
