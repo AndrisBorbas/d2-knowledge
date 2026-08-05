@@ -12,12 +12,20 @@ import { hashStringWithSeed } from "./helpers";
 const SEARCH_DEBOUNCE_MS = 500;
 
 export function useEntryFiltering(dataset: CompendiumDataset) {
-	const [searchQuery, setSearchQuery] = useQueryState("q");
+	const [searchQuery, setSearchQuery] = useQueryState("q", {
+		history: "push",
+		limitUrlUpdates: { method: "throttle", timeMs: 200 },
+	});
 	const [searchInput, setSearchInput] = useState(() => searchQuery ?? "");
 	const [priorSearchQuery, setPriorSearchQuery] = useState(searchQuery);
 	const [activeGroups, setActiveGroups] = useQueryState(
 		"g",
-		parseAsArrayOf(parseAsString).withDefault([]),
+		parseAsArrayOf(parseAsString)
+			.withDefault([])
+			.withOptions({
+				history: "push",
+				limitUrlUpdates: { method: "throttle", timeMs: 200 },
+			}),
 	);
 	const [shuffleSeed] = useState(() => Math.floor(Math.random() * 0x7fffffff));
 
