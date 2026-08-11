@@ -16,9 +16,58 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
+const siteUrl = "https://owlsector.net";
+const siteName = "Owl Sector";
+const siteDescription =
+	"The unofficial Destiny 2 knowledge base — hidden numbers, undocumented mechanics, and unexplained interactions dug out of the game and cross-referenced with the community compendium.";
+
 export const metadata: Metadata = {
-	title: "D2 Knowledge",
-	description: "Destiny 2 Knowledge Base",
+	metadataBase: new URL(siteUrl),
+	title: {
+		default: `${siteName} — Destiny 2 Knowledge Base`,
+		template: `%s — ${siteName}`,
+	},
+	description: siteDescription,
+	applicationName: siteName,
+	keywords: [
+		"Destiny 2",
+		"Destiny 2 wiki",
+		"Destiny 2 database",
+		"Destiny 2 mechanics",
+		"Destiny 2 hidden mechanics",
+		"Destiny 2 compendium",
+		"Destiny 2 Clarity",
+		"weapon perks",
+		"armor mods",
+		"Bungie API",
+	],
+	authors: [{ name: "Owl Sector" }],
+	creator: "Owl Sector",
+	publisher: "Owl Sector",
+	category: "gaming",
+	icons: {
+		icon: "/favicon.ico",
+	},
+	openGraph: {
+		type: "website",
+		url: siteUrl,
+		siteName,
+		title: `${siteName} — Destiny 2 Knowledge Base`,
+		description: siteDescription,
+		locale: "en_US",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: `${siteName} — Destiny 2 Knowledge Base`,
+		description: siteDescription,
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+	alternates: {
+		canonical: siteUrl,
+	},
 };
 
 export default function RootLayout({

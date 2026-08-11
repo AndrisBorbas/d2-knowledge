@@ -20,7 +20,7 @@ export function StatsFooter({
 	return (
 		<footer className="p-4 backdrop-blur-md md:px-6 lg:px-8">
 			<h1 className="mt-3 text-3xl font-semibold text-white md:text-4xl">
-				Destiny 2 Knowledge
+				Owl Sector
 			</h1>
 			<div className="mt-6 grid gap-3 md:grid-cols-3">
 				<div className="borderHover bg-white/6 p-4">

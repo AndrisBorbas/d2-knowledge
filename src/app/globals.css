@@ -8,6 +8,30 @@ html {
 	scroll-behavior: smooth;
 }
 
+@font-face {
+	font-display: swap;
+	font-family: "NeueHaasGroteskDisp";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.ttf")
+			format("truetype"),
+		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"),
+		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.woff2")
+			format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "NeueHaasGroteskText";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("../../public/assets/fonts/NHaasGroteskTXPro-55Rg.woff2")
+			format("woff2"),
+		url("../../public/assets/fonts/NHaasGroteskTXPro-55Rg.woff") format("woff");
+}
+
 @theme {
 	--color-background: oklch(17% 0.03 273);
 	--color-foreground: oklch(95% 0.03 273);
@@ -38,6 +62,24 @@ html {
 
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+	--font-display: "NeueHaasGroteskDisp", var(--font-geist-sans);
+	--font-text: "NeueHaasGroteskText", var(--font-geist-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-display);
+}
+
+p,
+div,
+span,
+li {
+	font-family: var(--font-text);
 }
 
 @layer components {
