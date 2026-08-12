@@ -46,7 +46,21 @@ export const metadata: Metadata = {
 	publisher: "Owl Sector",
 	category: "gaming",
 	icons: {
-		icon: "/favicon.ico",
+		icon: [
+			{ url: "/assets/icons/owlsector_small.svg", type: "image/svg+xml" },
+			{
+				url: "/assets/icons/owlsector64x.png",
+				sizes: "64x64",
+				type: "image/png",
+			},
+			{
+				url: "/assets/icons/owlsector16x.png",
+				sizes: "16x16",
+				type: "image/png",
+			},
+		],
+		shortcut: ["/favicon.ico"],
+		apple: [{ url: "/assets/icons/owlsector64x.png", type: "image/png" }],
 	},
 	openGraph: {
 		type: "website",
@@ -55,11 +69,20 @@ export const metadata: Metadata = {
 		title: `${siteName} — Destiny 2 Knowledge Base`,
 		description: siteDescription,
 		locale: "en_US",
+		images: [
+			{
+				url: "/assets/page.png",
+				width: 1900,
+				height: 913,
+				alt: `${siteName} — Destiny 2 perk and mechanic descriptions with hidden values`,
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: `${siteName} — Destiny 2 Knowledge Base`,
 		description: siteDescription,
+		images: ["/assets/page.png"],
 	},
 	robots: {
 		index: true,

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import manifest from "@/../package.json";
 
 type StatsFooterProps = {
@@ -19,9 +21,18 @@ export function StatsFooter({
 }: StatsFooterProps) {
 	return (
 		<footer className="p-4 backdrop-blur-md md:px-6 lg:px-8">
-			<h1 className="mt-3 text-3xl font-semibold text-white md:text-4xl">
-				Owl Sector
-			</h1>
+			<div className="mt-3 flex items-center gap-2">
+				<Image
+					src="/assets/icons/owlsector.svg"
+					alt="Owl Sector"
+					width={32}
+					height={32}
+				/>
+				<h1 className="text-masterwork text-shadow-masterwork/60 text-4xl font-semibold text-shadow-[0px_0px_7px] md:text-4xl">
+					Owl Sector
+				</h1>
+			</div>
+
 			<div className="mt-6 grid gap-3 md:grid-cols-3">
 				<div className="borderHover bg-white/6 p-4">
 					<div className="text-xs tracking-[0.2em] text-white/50 uppercase">

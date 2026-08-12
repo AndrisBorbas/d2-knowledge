@@ -75,13 +75,6 @@ h6 {
 	font-family: var(--font-display);
 }
 
-p,
-div,
-span,
-li {
-	font-family: var(--font-text);
-}
-
 @layer components {
 	.background {
 		@apply fixed inset-0 -z-1 box-content;
@@ -111,7 +104,7 @@ li {
 
 body {
 	@apply bg-background text-foreground relative flex min-h-screen flex-col;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-text), Helvetica, sans-serif;
 	margin: 0;
 }
 
