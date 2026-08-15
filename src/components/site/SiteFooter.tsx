@@ -1,6 +1,13 @@
 import Image from "next/image";
 
 import manifest from "@/../package.json";
+import {
+	CLARITY_DISCORD_URL,
+	CLARITY_KOFI_URL,
+	CLARITY_URL,
+	DATA_COMPENDIUM_PATREON_URL,
+	DATA_COMPENDIUM_SHEET_URL,
+} from "@/lib/site/meta";
 
 type SiteFooterProps = {
 	generatedAt: string;
@@ -25,7 +32,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 				<p>
 					Sandbox data from the{" "}
 					<a
-						href="https://docs.google.com/spreadsheets/d/1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4/edit?utm_source=d2-knowledge"
+						href={DATA_COMPENDIUM_SHEET_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
@@ -34,7 +41,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					</a>{" "}
 					sheet, support them on{" "}
 					<a
-						href="https://www.patreon.com/DataCompendium?utm_source=d2-knowledge"
+						href={DATA_COMPENDIUM_PATREON_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
@@ -46,7 +53,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 				<p>
 					Perk data from{" "}
 					<a
-						href="https://d2clarity.com?utm_source=d2-knowledge"
+						href={CLARITY_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
@@ -55,7 +62,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					</a>
 					. Tooltip feedback goes to their{" "}
 					<a
-						href="https://d2clarity.com/discord?utm_source=d2-knowledge"
+						href={CLARITY_DISCORD_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
@@ -64,7 +71,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					</a>
 					, support on{" "}
 					<a
-						href="https://url.d2clarity.com/ko-fi?utm_source=d2-knowledge"
+						href={CLARITY_KOFI_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
@@ -124,7 +131,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 						href="https://www.github.com/AndrisBorbas/d2-knowledge"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="decoration-masterwork/90 underline-offset-2 transition-all hover:text-white/75 hover:underline"
+						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/80 hover:underline hover:underline-offset-2"
 					>
 						Data last refreshed on{" "}
 						{new Date(generatedAt).toLocaleString("de-DE")} · v

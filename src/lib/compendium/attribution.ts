@@ -1,32 +1,43 @@
+import { CLARITY_URL, DATA_COMPENDIUM_SHEET_URL } from "@/lib/site/meta";
+
 import type { Entry, UnifiedSourceId } from "./model";
 
-const SOURCE_LABELS: Partial<Record<UnifiedSourceId, string>> = {
-	foundry: "Clarity",
-	sheet: "the Data Compendium",
+export type AttributionSource = {
+	id: UnifiedSourceId;
+	label: string;
+	href: string;
+};
+
+const SOURCES: Partial<Record<UnifiedSourceId, AttributionSource>> = {
+	foundry: {
+		id: "foundry",
+		label: "Clarity",
+		href: CLARITY_URL,
+	},
+	sheet: {
+		id: "sheet",
+		label: "the Data Compendium",
+		href: DATA_COMPENDIUM_SHEET_URL,
+	},
 };
 
 // Merged entries keep the union of every source that contributed, so an entry
 // present in both Clarity and the sheet credits both.
-export function getSourceAttribution(entry: Entry): string | null {
+export function getSourceAttribution(entry: Entry): AttributionSource[] {
 	const sourceIds: UnifiedSourceId[] = entry.sourceRefs?.length
 		? entry.sourceRefs.map((ref) => ref.sourceId)
 		: entry.sourceId
 			? [entry.sourceId]
 			: [];
 
-	const labels: string[] = [];
+	const sources: AttributionSource[] = [];
 	for (const sourceId of sourceIds) {
-		const label = SOURCE_LABELS[sourceId];
-		if (!label || labels.includes(label)) continue;
-		labels.push(label);
+		const source = SOURCES[sourceId];
+		if (!source || sources.some((existing) => existing.id === source.id)) {
+			continue;
+		}
+		sources.push(source);
 	}
 
-	if (labels.length === 0) return null;
-
-	const joined =
-		labels.length === 1
-			? labels[0]
-			: `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]}`;
-
-	return `Extra info provided by ${joined}`;
+	return sources;
 }

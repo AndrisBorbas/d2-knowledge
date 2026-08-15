@@ -2,7 +2,10 @@
 
 import Image from "next/image";
 
-import { getSourceAttribution } from "@/lib/compendium/attribution";
+import {
+	type AttributionSource,
+	getSourceAttribution,
+} from "@/lib/compendium/attribution";
 import type { Annotation } from "@/lib/compendium/model";
 import { cn } from "@/lib/utils/utils";
 
@@ -73,11 +76,32 @@ function DescriptionText({
 	);
 }
 
+function SourceAttribution({ sources }: { sources: AttributionSource[] }) {
+	return (
+		<p className="border-t border-blue-600/30 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/45 uppercase">
+			Extra info provided by{" "}
+			{sources.map((source, index) => (
+				<span key={source.id}>
+					{index > 0 ? (index === sources.length - 1 ? " and " : ", ") : null}
+					<a
+						href={source.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/90 hover:underline hover:underline-offset-2"
+					>
+						{source.label}
+					</a>
+				</span>
+			))}
+		</p>
+	);
+}
+
 // In-game text first, then who the community text below it came from, then the
 // community text itself.
 function EntryDescriptions(props: TooltipContentProps) {
 	const { entry } = props;
-	const attribution = getSourceAttribution(entry);
+	const attributionSources = getSourceAttribution(entry);
 
 	return (
 		<>
@@ -89,17 +113,19 @@ function EntryDescriptions(props: TooltipContentProps) {
 				/>
 			) : null}
 
-			{attribution ? (
-				<p className="border-t border-blue-600/30 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/45 uppercase">
-					{attribution}
-				</p>
+			{attributionSources.length > 0 ? (
+				<SourceAttribution sources={attributionSources} />
 			) : null}
 
 			<DescriptionText
 				{...props}
 				text={entry.description}
 				annotations={entry.annotations}
-				className={attribution ? "border-t border-blue-600/30" : undefined}
+				className={
+					attributionSources.length > 0
+						? "border-t border-blue-600/30"
+						: undefined
+				}
 			/>
 		</>
 	);
