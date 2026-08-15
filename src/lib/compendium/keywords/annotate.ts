@@ -75,7 +75,9 @@ export function buildKeywords(
 		const existing = map.get(id);
 		if (!existing) {
 			const verb = Verbs.find((verb) => toSlug(verb.name) === id);
-			const extraAlias = extraAliases.find((verb) => toSlug(verb.name) === id);
+			const extraAlias = extraAliases.find(
+				(entry) => toSlug(entry.name) === id,
+			);
 			const elementType = verb?.types.find((type) =>
 				ELEMENT_TERMS.has(type.toLowerCase()),
 			);
@@ -216,7 +218,11 @@ function buildSheetColorAnnotations(
 
 	for (const segment of entry.descriptionSegments ?? []) {
 		const cell = sheetColors.get(
-			sheetColorKey(segment.source.tab, segment.source.row, segment.source.column),
+			sheetColorKey(
+				segment.source.tab,
+				segment.source.row,
+				segment.source.column,
+			),
 		);
 		if (!cell) continue;
 
@@ -265,10 +271,11 @@ export function annotateEntries(
 			(pattern) =>
 				!keywordAnnotations.some((keyword) => intersects(keyword, pattern)),
 		);
-		const sheetColorAnnotations = buildSheetColorAnnotations(entry, sheetColors, [
-			...keywordAnnotations,
-			...patternAnnotations,
-		]);
+		const sheetColorAnnotations = buildSheetColorAnnotations(
+			entry,
+			sheetColors,
+			[...keywordAnnotations, ...patternAnnotations],
+		);
 
 		return {
 			...entry,
@@ -277,6 +284,26 @@ export function annotateEntries(
 				...patternAnnotations,
 				...sheetColorAnnotations,
 			].sort((a, b) => a.start - b.start),
+			officialAnnotations: annotateDescription(entry.officialDescription, terms),
 		};
 	});
+}
+
+// Keyword + pattern passes only: the official description comes from the Bungie
+// manifest, so it has no sheet cells behind it and no rich-text colors to apply.
+function annotateDescription(
+	description: string | undefined,
+	terms: KeywordMatchTerm[],
+): Annotation[] | undefined {
+	if (!description) return undefined;
+
+	const keywordAnnotations = annotateText(description, terms);
+	const patternAnnotations = annotatePatterns(description).filter(
+		(pattern) =>
+			!keywordAnnotations.some((keyword) => intersects(keyword, pattern)),
+	);
+
+	return [...keywordAnnotations, ...patternAnnotations].sort(
+		(a, b) => a.start - b.start,
+	);
 }

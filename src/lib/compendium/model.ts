@@ -68,6 +68,9 @@ export const entrySchema = z.object({
 	title: z.string(),
 	description: z.string(),
 	descriptionSegments: z.array(descriptionSegmentSchema).optional(),
+	// In-game text from the Destiny 2 manifest, shown above the community
+	// description. Has no sheet provenance, so it never gets descriptionSegments.
+	officialDescription: z.string().optional(),
 	extraInfo: z.string().optional(),
 	kind: unifiedEntryKindSchema.optional(),
 	sourceId: unifiedSourceIdSchema.optional(),
@@ -83,6 +86,9 @@ export const entrySchema = z.object({
 
 export const annotatedEntrySchema = entrySchema.extend({
 	annotations: z.array(annotationSchema),
+	// Offsets index into `officialDescription`, never into `description` — the
+	// two arrays live in different coordinate spaces and must not be mixed.
+	officialAnnotations: z.array(annotationSchema).optional(),
 });
 
 export const keywordCategorySchema = z.enum([

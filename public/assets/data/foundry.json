@@ -26528,13 +26528,13 @@
 		"name": "Rapid Cooldown",
 		"itemHash": 609852545,
 		"itemName": "Fr0st-EE5",
-		"lastUpload": 1783935545841,
+		"lastUpload": 1786577327548,
 		"type": "Armor Trait Exotic",
 		"uploadedBy": "Hawkmoona",
 		"updateTracker": {
 			"descriptions": {
 				"en": {
-					"lastUpdate": 1783920762646,
+					"lastUpdate": 1786577313591,
 					"updatedBy": "Hawkmoona"
 				}
 			}
@@ -26621,7 +26621,7 @@
 							"text": "[PVP: 100% Additional]"
 						},
 						{
-							"text": " Grenade and Melee Ability Regeneration Rate"
+							"text": " Base Grenade and Melee Ability Regeneration Rate"
 						}
 					]
 				},
@@ -40683,13 +40683,13 @@
 	"1365187766": {
 		"hash": 1365187766,
 		"name": "Gutshot Straight",
-		"lastUpload": 1783446631691,
+		"lastUpload": 1786577327548,
 		"type": "Weapon Trait",
 		"uploadedBy": "Hawkmoona",
 		"updateTracker": {
 			"descriptions": {
 				"en": {
-					"lastUpdate": 1782527936030,
+					"lastUpdate": 1786566105935,
 					"updatedBy": "Hawkmoona"
 				}
 			}
@@ -40732,14 +40732,14 @@
 				{
 					"linesContent": [
 						{
-							"text": "• Auto/Scout Rifle, Bow, Hand Cannon: 20%"
+							"text": "• Auto/Scout/Sniper Rifles, Bows, Hand Cannons: 20%"
 						}
 					]
 				},
 				{
 					"linesContent": [
 						{
-							"text": "• Pulse/Trace Rifle, Sidearm, SMG: 10%"
+							"text": "• Pulse/Trace Rifles, Sidearms, SMGs, LMGs: 10%"
 						}
 					]
 				}
@@ -81533,13 +81533,13 @@
 		"name": "Nightmare Fuel",
 		"itemHash": 1688602431,
 		"itemName": "Sealed Ahamkara Grasps",
-		"lastUpload": 1767472203079,
+		"lastUpload": 1786593493348,
 		"type": "Armor Trait Exotic",
-		"uploadedBy": "Stardust",
+		"uploadedBy": "Hawkmoona",
 		"updateTracker": {
 			"descriptions": {
 				"en": {
-					"lastUpdate": 1766959625399,
+					"lastUpdate": 1786580717080,
 					"updatedBy": "Hawkmoona"
 				}
 			}
@@ -81549,15 +81549,7 @@
 				{
 					"linesContent": [
 						{
-							"text": "Powered Melee Kills and Finishers grant Nightmare Fuel for 7 seconds. "
-						},
-						{
-							"classNames": [
-								"strand"
-							]
-						},
-						{
-							"text": "Grapple Melees do not count."
+							"text": "Powered Melee Kills and Finishers grant Nightmare Fuel for 7 seconds."
 						}
 					]
 				},
@@ -81569,37 +81561,7 @@
 				{
 					"linesContent": [
 						{
-							"text": "Gaining Nightmare Fuel "
-						},
-						{
-							"text": "refills"
-						},
-						{
-							"text": " the magazine of all stowed weapons from reserves."
-						}
-					]
-				},
-				{
-					"classNames": [
-						"spacer"
-					]
-				},
-				{
-					"linesContent": [
-						{
-							"text": "Nightmare Fuel grants ? Handling and 50 Airborne Effectiveness while active."
-						}
-					]
-				},
-				{
-					"classNames": [
-						"spacer"
-					]
-				},
-				{
-					"linesContent": [
-						{
-							"text": "Readying a different weapon after gaining Nightmare Fuel refreshes its duration and grants "
+							"text": "Gaining Nightmare Fuel grants "
 						},
 						{
 							"text": "35%"
@@ -81617,7 +81579,13 @@
 							"text": "Empowering Buff"
 						},
 						{
-							"text": "). Swapping weapons again removes Nightmare Fuel."
+							"text": "), ? Handling, 50 Airborne Effectiveness, and "
+						},
+						{
+							"text": "refills"
+						},
+						{
+							"text": " the magazine of all stowed weapons from reserves."
 						}
 					]
 				},
@@ -81629,7 +81597,19 @@
 				{
 					"linesContent": [
 						{
-							"text": "Scoring a Kill with a weapon currently benefiting from the damage buff grants you a fresh instance of Nightmare Fuel (as if you scored another Powered Melee Kill)."
+							"text": "Readying a different weapon after gaining Nightmare Fuel refreshes its duration. Swapping weapons again removes the buff."
+						}
+					]
+				},
+				{
+					"classNames": [
+						"spacer"
+					]
+				},
+				{
+					"linesContent": [
+						{
+							"text": "Scoring a kill with a weapon currently benefitting from Nightmare Fuel grants you a fresh instance of the buff (as if you scored another Powered Melee Kill), allowing you to switch weapons again."
 						}
 					]
 				}
@@ -119185,14 +119165,14 @@
 				{
 					"linesContent": [
 						{
-							"text": "• Auto/Scout Rifle, Bow, Hand Cannon: 20%"
+							"text": "• Auto/Scout/Sniper Rifles, Bows, Hand Cannons: 20%"
 						}
 					]
 				},
 				{
 					"linesContent": [
 						{
-							"text": "• Pulse/Trace Rifle, Sidearm, SMG: 10%"
+							"text": "• Pulse/Trace Rifles, Sidearms, SMGs, LMGs: 10%"
 						}
 					]
 				},
@@ -119210,7 +119190,7 @@
 							]
 						},
 						{
-							"text": " Reduces Auto Aim penalty by 33?% (20%⁠🠚⁠15%)."
+							"text": " Reduces Auto Aim penalty by 33?% (15%⁠🠚⁠10%)."
 						}
 					]
 				}

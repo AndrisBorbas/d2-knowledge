@@ -40,3 +40,24 @@ export const STATIC_ICON_PATH_BY_GLYPH: Record<string, string> = {
 
 // "Enhanced" trait indicator glyph — not an ability/element/ammo icon, skip.
 export const SKIPPED_GLYPH_CLASS_NAMES = new Set(["enhancedArrow"]);
+
+// Bungie's own manifest descriptions spell their inline icons as bracketed
+// tokens ("[Solar]", "[Shield-Piercing]") instead of Clarity's classNames.
+// Keys here are the token text lowercased with every run of non-alphanumeric
+// characters collapsed to a single space; values are the glyph classNames the
+// maps above already understand. Tokens with no entry (e.g. "[Grenade]") keep
+// their word and just lose the brackets.
+export const GLYPH_CLASS_NAME_BY_BUNGIE_TOKEN: Record<string, string> = {
+	kinetic: "kinetic",
+	arc: "arc",
+	solar: "solar",
+	void: "void",
+	stasis: "stasis",
+	strand: "strand",
+	"shield piercing": "barrier",
+	disruption: "overload",
+	stagger: "unstoppable",
+	"primary weapon": "primary",
+	"special weapon": "special",
+	"heavy weapon": "heavy",
+};

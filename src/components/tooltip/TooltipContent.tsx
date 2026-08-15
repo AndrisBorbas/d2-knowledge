@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 
+import { getSourceAttribution } from "@/lib/compendium/attribution";
+import type { Annotation } from "@/lib/compendium/model";
+import { cn } from "@/lib/utils/utils";
+
 import { TextWithTooltips } from "./TextWithTooltips";
 import type { TooltipContentProps } from "./types";
 
@@ -33,19 +37,31 @@ export function IconSlot({
 	);
 }
 
-function SetBonusContent({
+function DescriptionText({
+	text,
+	annotations,
+	className,
 	entry,
 	entryMap,
 	keywordMap,
 	onKeywordHover,
 	onKeywordLeave,
 	onKeywordClick,
-}: TooltipContentProps) {
+}: TooltipContentProps & {
+	text: string;
+	annotations: Annotation[];
+	className?: string;
+}) {
 	return (
-		<p className="p-4 text-center text-sm whitespace-pre-wrap text-white/90">
+		<p
+			className={cn(
+				"p-4 text-center text-sm whitespace-pre-wrap text-white/90",
+				className,
+			)}
+		>
 			<TextWithTooltips
-				text={entry.description}
-				annotations={entry.annotations}
+				text={text}
+				annotations={annotations}
 				entry={entry}
 				entryMap={entryMap}
 				keywordById={keywordMap}
@@ -57,14 +73,41 @@ function SetBonusContent({
 	);
 }
 
-function ExoticContent({
-	entry,
-	entryMap,
-	keywordMap,
-	onKeywordHover,
-	onKeywordLeave,
-	onKeywordClick,
-}: TooltipContentProps) {
+// In-game text first, then who the community text below it came from, then the
+// community text itself.
+function EntryDescriptions(props: TooltipContentProps) {
+	const { entry } = props;
+	const attribution = getSourceAttribution(entry);
+
+	return (
+		<>
+			{entry.officialDescription ? (
+				<DescriptionText
+					{...props}
+					text={entry.officialDescription}
+					annotations={entry.officialAnnotations ?? []}
+				/>
+			) : null}
+
+			{attribution ? (
+				<p className="border-t border-blue-600/30 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/45 uppercase">
+					{attribution}
+				</p>
+			) : null}
+
+			<DescriptionText
+				{...props}
+				text={entry.description}
+				annotations={entry.annotations}
+				className={attribution ? "border-t border-blue-600/30" : undefined}
+			/>
+		</>
+	);
+}
+
+function ExoticContent(props: TooltipContentProps) {
+	const { entry } = props;
+
 	return (
 		<>
 			<div className="m-2 bg-blue-950/15 px-2 py-2 shadow-md shadow-blue-950/15">
@@ -84,43 +127,8 @@ function ExoticContent({
 				</div>
 			</div>
 
-			<p className="p-4 text-center text-sm whitespace-pre-wrap text-white/90">
-				<TextWithTooltips
-					text={entry.description}
-					annotations={entry.annotations}
-					entry={entry}
-					entryMap={entryMap}
-					keywordById={keywordMap}
-					onKeywordHover={onKeywordHover}
-					onKeywordLeave={onKeywordLeave}
-					onKeywordClick={onKeywordClick}
-				/>
-			</p>
+			<EntryDescriptions {...props} />
 		</>
-	);
-}
-
-function DefaultContent({
-	entry,
-	entryMap,
-	keywordMap,
-	onKeywordHover,
-	onKeywordLeave,
-	onKeywordClick,
-}: TooltipContentProps) {
-	return (
-		<p className="p-4 text-center text-sm whitespace-pre-wrap text-white/90">
-			<TextWithTooltips
-				text={entry.description}
-				annotations={entry.annotations}
-				entry={entry}
-				entryMap={entryMap}
-				keywordById={keywordMap}
-				onKeywordHover={onKeywordHover}
-				onKeywordLeave={onKeywordLeave}
-				onKeywordClick={onKeywordClick}
-			/>
-		</p>
 	);
 }
 
@@ -129,9 +137,5 @@ export function TooltipBody(props: TooltipContentProps) {
 		return <ExoticContent {...props} />;
 	}
 
-	if (props.entry.kind === "armor_set_bonus") {
-		return <SetBonusContent {...props} />;
-	}
-
-	return <DefaultContent {...props} />;
+	return <EntryDescriptions {...props} />;
 }

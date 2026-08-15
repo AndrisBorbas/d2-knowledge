@@ -7,11 +7,13 @@ import { BREAKER_TYPE_ENUM_BY_GLYPH, DAMAGE_TYPE_ENUM_BY_GLYPH } from "./glyphs"
 type BungieDisplayProperties = {
 	name?: string;
 	icon?: string;
+	description?: string;
 };
 
 type BungieManifestRow = {
 	n?: string;
 	i?: string;
+	d?: string;
 	displayProperties?: BungieDisplayProperties;
 };
 
@@ -70,10 +72,12 @@ function getDisplayProperties(
 	if (!row) return null;
 	const name = row.n ?? row.displayProperties?.name;
 	const icon = row.i ?? row.displayProperties?.icon;
+	const description = row.d ?? row.displayProperties?.description;
 	if (!name && !icon) return null;
 	return {
 		name,
 		icon,
+		description,
 	} satisfies BungieDisplayProperties;
 }
 
@@ -106,6 +110,11 @@ export type BungieManifestSnapshotResolver = {
 	} | null;
 	getArmorSetIconPath(setName: string): string | undefined;
 	getGlyphIconPath(className: string): string | undefined;
+	getOfficialDescription(params: {
+		perkHash?: number;
+		itemHash?: number;
+		title?: string;
+	}): string | undefined;
 };
 
 class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
@@ -118,6 +127,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemSetByName: Map<string, BungieItemSetRow>;
+	private readonly descriptionByName: Map<string, string>;
 
 	constructor(snapshot: BungieManifestSnapshot) {
 		this.inventoryTable = asRecord<BungieManifestRow>(
@@ -141,11 +151,19 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
 		this.itemSetByName = new Map<string, BungieItemSetRow>();
+		this.descriptionByName = new Map<string, string>();
 
 		this.addDisplayNames(this.traitTable, this.displayByName);
 		this.addDisplayNames(this.perkTable, this.displayByName);
 		this.addDisplayNames(this.inventoryTable, this.displayByName);
 		this.addDisplayNames(this.inventoryTable, this.itemDisplayByName);
+
+		// Separate walk from addDisplayNames: that one only keeps rows that have
+		// *both* a name and an icon, and plenty of perk rows carry description
+		// text without an icon.
+		this.addDescriptionNames(this.traitTable);
+		this.addDescriptionNames(this.perkTable);
+		this.addDescriptionNames(this.inventoryTable);
 
 		if (this.itemSetTable) {
 			for (const row of Object.values(this.itemSetTable)) {
@@ -177,6 +195,23 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			const key = normalizeLookupName(name);
 			if (!key || target.has(key)) continue;
 			target.set(key, { name, icon });
+		}
+	}
+
+	private addDescriptionNames(table: Record<string, BungieManifestRow> | null) {
+		if (!table) return;
+
+		for (const row of Object.values(table)) {
+			const name = row.n ?? row.displayProperties?.name;
+			const description = (
+				row.d ??
+				row.displayProperties?.description ??
+				""
+			).trim();
+			if (!name || !description) continue;
+			const key = normalizeLookupName(name);
+			if (!key || this.descriptionByName.has(key)) continue;
+			this.descriptionByName.set(key, description);
 		}
 	}
 
@@ -259,6 +294,31 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		const key = this.resolveArmorSetNameKey(setName);
 		if (!key) return undefined;
 		return normalizeIconPath(this.itemSetByName.get(key)?.i);
+	}
+
+	getOfficialDescription(params: {
+		perkHash?: number;
+		itemHash?: number;
+		title?: string;
+	}) {
+		// Same table precedence as getExoticEnrichment: the inventory item's own
+		// copy of a perk is the string the game actually shows, the sandbox perk
+		// row is the last resort.
+		const byHash = [
+			getDisplayProperties(this.inventoryTable, params.perkHash),
+			getDisplayProperties(this.traitTable, params.perkHash),
+			getDisplayProperties(this.perkTable, params.perkHash),
+			getDisplayProperties(this.inventoryTable, params.itemHash),
+		];
+
+		for (const display of byHash) {
+			const description = display?.description?.trim();
+			if (description) return description;
+		}
+
+		const key = params.title ? normalizeLookupName(params.title) : "";
+		if (!key) return undefined;
+		return this.descriptionByName.get(key);
 	}
 
 	getGlyphIconPath(className: string) {

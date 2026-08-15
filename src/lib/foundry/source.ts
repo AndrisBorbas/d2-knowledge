@@ -13,6 +13,7 @@ import {
 	type UnifiedSourceRef,
 } from "@/lib/compendium/unified";
 import { buildIconMarker } from "@/lib/utils/iconGlyph";
+import { cleanupDescriptionText } from "@/lib/utils/text";
 
 type FoundryLinePart = {
 	text?: string;
@@ -49,14 +50,6 @@ function normalizeTitle(value: string) {
 function toTitleCase(value: string) {
 	if (value.length === 0) return value;
 	return value[0].toUpperCase() + value.slice(1).toLowerCase();
-}
-
-function cleanupText(value: string) {
-	return value
-		.replace(/[ \t]+\n/g, "\n")
-		.replace(/\n{3,}/g, "\n\n")
-		.replace(/[ \t]{2,}/g, " ")
-		.trim();
 }
 
 type FlattenedFoundryDescription = {
@@ -113,7 +106,7 @@ function flattenFoundryDescription(
 	}
 
 	return {
-		text: cleanupText(lines.join("\n")),
+		text: cleanupDescriptionText(lines.join("\n")),
 		iconGlyphs,
 	};
 }

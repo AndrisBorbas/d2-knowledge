@@ -16,6 +16,7 @@ type FoundryRecord = {
 type CompactDefinition = {
 	n?: string;
 	i?: string;
+	d?: string;
 };
 
 type CompactItemSetPerk = {
@@ -135,11 +136,16 @@ function toCompactDefinition(value: unknown) {
 		typeof displayProperties?.icon === "string"
 			? displayProperties.icon
 			: undefined;
+	const description =
+		typeof displayProperties?.description === "string"
+			? displayProperties.description.trim()
+			: undefined;
 
 	if (!name && !icon) return null;
 	return {
 		n: name,
 		i: icon,
+		d: description || undefined,
 	} satisfies CompactDefinition;
 }
 
