@@ -1,5 +1,6 @@
 "use client";
 
+import { X } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { parseAsString, useQueryState } from "nuqs";
@@ -130,23 +131,32 @@ export function ArtifactExplorer({ artifacts, bundle }: ArtifactExplorerProps) {
 								<button
 									type="button"
 									onClick={() => setPinnedIds([])}
-									className="borderHover bg-white/8 px-3 py-1.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
+									className="borderHover bg-red-500/10 px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] text-red-500 uppercase backdrop-blur-md transition hover:bg-red-500/20"
 								>
-									Clear
+									Clear all
 								</button>
 							</div>
 							<div className="3xl:grid-cols-4 grid gap-3 lg:grid-cols-2 2xl:grid-cols-3">
 								{pinnedEntries.map((entry) => (
-									<Tooltip
-										key={entry.id}
-										entry={entry}
-										entryMap={entryMap}
-										keywordMap={keywordMap}
-										onKeywordHover={handleKeywordHover}
-										onKeywordLeave={handleKeywordLeave}
-										onKeywordClick={handleKeywordClick}
-										onGroupClick={handleGroupClick}
-									/>
+									<div key={entry.id} className="relative">
+										<Tooltip
+											entry={entry}
+											entryMap={entryMap}
+											keywordMap={keywordMap}
+											onKeywordHover={handleKeywordHover}
+											onKeywordLeave={handleKeywordLeave}
+											onKeywordClick={handleKeywordClick}
+											onGroupClick={handleGroupClick}
+										/>
+										<button
+											type="button"
+											onClick={() => togglePinned(entry.id)}
+											className="borderHover absolute top-1 right-1 bg-red-500/15 p-1 text-white/70 transition hover:bg-red-500/30"
+											aria-label={`Remove ${entry.title}`}
+										>
+											<X size={14} className="text-red-500" />
+										</button>
+									</div>
 								))}
 							</div>
 						</div>

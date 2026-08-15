@@ -9,27 +9,30 @@ import { cn } from "@/lib/utils/utils";
 
 import type { KeywordClickPayload, KeywordHoverPayload } from "./types";
 
-const tooltipButtonVariants = cva("font-bold cursor-pointer", {
-	variants: {
-		color: {
-			default: "text-white",
-			arc: "text-arc",
-			solar: "text-solar",
-			void: "text-void",
-			stasis: "text-stasis",
-			strand: "text-strand",
-			prismatic: "text-prismatic",
-			masterwork: "text-masterwork",
+const tooltipButtonVariants = cva(
+	"font-bold cursor-pointer underline hover:underline-offset-2 transition-all underline decoration-dashed",
+	{
+		variants: {
+			color: {
+				default: "text-white",
+				arc: "text-arc",
+				solar: "text-solar",
+				void: "text-void",
+				stasis: "text-stasis",
+				strand: "text-strand",
+				prismatic: "text-prismatic",
+				masterwork: "text-masterwork",
+			},
+			size: {
+				default: "text-sm",
+			},
 		},
-		size: {
-			default: "text-sm",
+		defaultVariants: {
+			color: "default",
+			size: "default",
 		},
 	},
-	defaultVariants: {
-		color: "default",
-		size: "default",
-	},
-});
+);
 
 type ExtraElementProps = {
 	keyword: Keyword;
@@ -39,7 +42,7 @@ function ExtraElement({ keyword, className, ...restProps }: ExtraElementProps) {
 	if (keyword.types.includes("Buff")) {
 		return (
 			<MoveUp
-				className={cn("my-auto text-green-400", className)}
+				className={cn("dec my-auto text-green-400", className)}
 				{...restProps}
 			/>
 		);

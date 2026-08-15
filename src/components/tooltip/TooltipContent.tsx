@@ -78,7 +78,7 @@ function DescriptionText({
 
 function SourceAttribution({ sources }: { sources: AttributionSource[] }) {
 	return (
-		<p className="border-t border-blue-600/30 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/45 uppercase">
+		<p className="border-y border-t-gray-500 border-b-blue-600/50 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/75 uppercase">
 			Extra info provided by{" "}
 			{sources.map((source, index) => (
 				<span key={source.id}>
@@ -87,7 +87,7 @@ function SourceAttribution({ sources }: { sources: AttributionSource[] }) {
 						href={source.href}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/90 hover:underline hover:underline-offset-2"
+						className="decoration-masterwork/80 text-masterwork/80 underline-offset-0 transition-all hover:text-white/90 hover:underline hover:underline-offset-2"
 					>
 						{source.label}
 					</a>
@@ -121,11 +121,6 @@ function EntryDescriptions(props: TooltipContentProps) {
 				{...props}
 				text={entry.description}
 				annotations={entry.annotations}
-				className={
-					attributionSources.length > 0
-						? "border-t border-blue-600/30"
-						: undefined
-				}
 			/>
 		</>
 	);

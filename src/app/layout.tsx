@@ -121,8 +121,8 @@ export default async function RootLayout({
 		>
 			<body className="flex min-h-full flex-col">
 				<div className="background">
-					<div className="background-effect" />
 					<div className="background-image" />
+					<div className="background-effect" />
 				</div>
 
 				<NuqsAdapter>

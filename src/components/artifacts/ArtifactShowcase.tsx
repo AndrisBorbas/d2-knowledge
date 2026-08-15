@@ -33,7 +33,7 @@ export function ArtifactShowcase({
 							onClick={() => onSelect(artifact.slug)}
 							aria-pressed={isActive}
 							className={cn(
-								"borderHover flex items-center gap-3 px-3 py-2 text-left transition",
+								"borderHover flex items-center gap-3 px-3 py-2 text-left backdrop-blur-md transition",
 								isActive
 									? "borderActive bg-blue-500/30"
 									: "bg-blue-500/10 hover:bg-blue-500/20",
