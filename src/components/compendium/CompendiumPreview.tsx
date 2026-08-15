@@ -2,6 +2,7 @@
 
 import { Group, Panel, Separator } from "react-resizable-panels";
 
+import { StatTiles } from "@/components/site/StatTiles";
 import type { CompendiumDataset } from "@/lib/compendium/model";
 
 import { ClickedTooltipsDrawer } from "./ClickedTooltipsDrawer";
@@ -9,7 +10,6 @@ import { ClickedTooltipsPanel } from "./ClickedTooltipsPanel";
 import { EntryListPanel } from "./EntryListPanel";
 import { FilterHeader } from "./FilterHeader";
 import { HoverPreviewCard } from "./HoverPreviewCard";
-import { StatsFooter } from "./StatsFooter";
 import { useClickedEntries } from "./useClickedEntries";
 import { useEntryFiltering } from "./useEntryFiltering";
 import { useHoverPreview } from "./useHoverPreview";
@@ -55,7 +55,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 	} = useClickedEntries({ keywordMap, entryMap });
 
 	return (
-		<div className="relative flex min-h-screen w-full flex-col text-sm">
+		<div className="relative flex w-full flex-col text-sm">
 			<FilterHeader
 				searchInput={searchInput}
 				onSearchChange={handleSearchChange}
@@ -152,14 +152,6 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 				onKeywordClick={handleKeywordClick}
 				onGroupClick={toggleGroup}
 				onRemove={handleRemoveClickedEntry}
-			/>
-
-			<StatsFooter
-				visibleEntryCount={visibleEntries.length}
-				totalEntryCount={allEntries.length}
-				keywordCount={dataset.keywords.length}
-				annotationCount={totalAnnotations}
-				generatedAt={dataset.generatedAt}
 			/>
 		</div>
 	);

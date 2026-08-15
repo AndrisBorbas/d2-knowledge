@@ -34,7 +34,7 @@ export function FilterHeader({
 						type="search"
 						value={searchInput}
 						onChange={onSearchChange}
-						placeholder="Search by title, description, item hash, or perk hash"
+						placeholder="Search by title, description, item, or hash..."
 						className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/65 focus:border-sky-300/60 focus:outline-none"
 					/>
 					{hasActiveQuery ? (

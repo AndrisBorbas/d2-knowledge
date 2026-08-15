@@ -6,6 +6,10 @@ import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
 } from "../src/lib/bungie/manifest";
+import {
+	ARTIFACT_TAB_NAME,
+	stripReleaseLabel,
+} from "../src/lib/compendium/artifacts";
 import { loadSheetSource } from "../src/lib/sheet/source";
 
 type FoundryRecord = {
@@ -89,7 +93,16 @@ async function collectSheetLookupTitles() {
 		const titleKeys = new Set<string>();
 
 		for (const entry of sheetSource.entries) {
-			for (const candidate of [entry.title]) {
+			const candidates = [entry.title];
+
+			// Artifact names only ever appear as a section header ("Hunter's
+			// Journal (Echoes)"), never as an entry title, so allowlist them
+			// explicitly to keep their inventory item — and its icon — around.
+			if (entry.tab === ARTIFACT_TAB_NAME && entry.section) {
+				candidates.push(stripReleaseLabel(entry.section));
+			}
+
+			for (const candidate of candidates) {
 				const key = normalizeLookupName(candidate);
 				if (!key) continue;
 				titleKeys.add(key);

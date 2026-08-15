@@ -445,7 +445,7 @@ function mergeGrenadeAspectSynergies(entries: Entry[]): Entry[] {
 			previous?.section === "Grenade Abilities" &&
 			aspectTitles.has(normalizeForMatch(firstTitleLine(entry.title)))
 		) {
-			const prefix = `Aspect — ${joinTitleLines(entry.title)}: `;
+			const prefix = `Aspect - ${joinTitleLines(entry.title)}: `;
 			const glueOffset =
 				previous.description.length + "\n\n".length + prefix.length;
 

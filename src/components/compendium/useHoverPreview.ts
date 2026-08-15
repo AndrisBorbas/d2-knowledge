@@ -96,6 +96,26 @@ export function useHoverPreview(params: {
 		};
 	}, [hoverPreview]);
 
+	// Anchor a preview to an arbitrary element without going through a keyword —
+	// used by the artifact grid, where the icon *is* the entry.
+	const showEntryPreview = (entryId: string, anchorRect: DOMRect) => {
+		if (!entryMap.has(entryId)) return;
+
+		const placement: HoverPreviewState["placement"] =
+			anchorRect.left > window.innerWidth - anchorRect.right ? "left" : "right";
+
+		setHoverPreview({
+			entryId,
+			placement,
+			anchor: {
+				top: anchorRect.top,
+				bottom: anchorRect.bottom,
+				left: anchorRect.left,
+				right: anchorRect.right,
+			},
+		});
+	};
+
 	const handleKeywordHover = ({
 		keywordId,
 		entryId,
@@ -110,19 +130,7 @@ export function useHoverPreview(params: {
 			?.references.find((candidateId) => entryMap.has(candidateId));
 		const targetEntryId = referencedEntryId ?? entryId;
 
-		const placement: HoverPreviewState["placement"] =
-			entryRect.left > window.innerWidth - entryRect.right ? "left" : "right";
-
-		setHoverPreview({
-			entryId: targetEntryId,
-			placement,
-			anchor: {
-				top: entryRect.top,
-				bottom: entryRect.bottom,
-				left: entryRect.left,
-				right: entryRect.right,
-			},
-		});
+		showEntryPreview(targetEntryId, entryRect);
 	};
 
 	const handleKeywordLeave = () => {
@@ -135,6 +143,7 @@ export function useHoverPreview(params: {
 		resolvedHoverTop,
 		hoverCardStyle,
 		hoveredEntry,
+		showEntryPreview,
 		handleKeywordHover,
 		handleKeywordLeave,
 	};

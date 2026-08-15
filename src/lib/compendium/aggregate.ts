@@ -31,6 +31,14 @@ function getUnifiedMergeKey(entry: UnifiedEntry) {
 		return ["armor_set", setKey, titleKey].join("|");
 	}
 
+	// Artifacts reuse perk names across releases, and the reused perk often does
+	// something different (see Dielectric on Encrypted Data Disk vs Tablet of
+	// Ruin), so the artifact — the sheet section — is part of the identity.
+	if (entry.kind === "artifact_perk") {
+		const artifactKey = toCanonicalTitleKey(entry.section ?? "");
+		return ["artifact", artifactKey, titleKey].join("|");
+	}
+
 	return [entry.kind ?? "general", titleKey].join("|");
 }
 

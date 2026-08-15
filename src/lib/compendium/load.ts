@@ -22,8 +22,22 @@ export async function loadCompiledCompendiumDataset() {
 	}
 }
 
-export async function loadCompendiumDataset() {
+async function readCompendiumDataset() {
 	const compiled = await loadCompiledCompendiumDataset();
 	if (compiled) return compiled;
 	return buildCompendiumDataset();
+}
+
+// The compiled dataset is ~5 MB of JSON that has to be zod-parsed. Several
+// routes plus the root layout ask for it, so keep one promise per server
+// process instead of re-reading per call.
+let cachedDataset: Promise<CompendiumDataset> | null = null;
+
+export function loadCompendiumDataset() {
+	cachedDataset ??= readCompendiumDataset().catch((error: unknown) => {
+		// Don't let a transient failure poison every later request.
+		cachedDataset = null;
+		throw error;
+	});
+	return cachedDataset;
 }

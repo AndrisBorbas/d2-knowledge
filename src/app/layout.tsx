@@ -5,6 +5,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import { Analytics } from "@/components/Analytics";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { loadCompendiumDataset } from "@/lib/compendium/load";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site/meta";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -16,30 +20,29 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
-const siteUrl = "https://owlsector.net";
-const siteName = "Owl Sector";
-const siteDescription =
-	"The unofficial Destiny 2 knowledge base — hidden numbers, undocumented mechanics, and unexplained interactions dug out of the game and cross-referenced with the community compendium.";
+const siteUrl = SITE_URL;
+const siteName = SITE_NAME;
+const siteDescription = SITE_DESCRIPTION;
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
 	title: {
-		default: `${siteName} — Destiny 2 Knowledge Base`,
-		template: `%s — ${siteName}`,
+		default: `${siteName} | Destiny 2 Knowledge Base`,
+		template: `%s | ${siteName}`,
 	},
 	description: siteDescription,
 	applicationName: siteName,
 	keywords: [
+		"Owl Sector",
 		"Destiny 2",
+		"Destiny 2 knowledge base",
+		"Destiny 2 perks",
 		"Destiny 2 wiki",
 		"Destiny 2 database",
 		"Destiny 2 mechanics",
 		"Destiny 2 hidden mechanics",
 		"Destiny 2 compendium",
 		"Destiny 2 Clarity",
-		"weapon perks",
-		"armor mods",
-		"Bungie API",
 	],
 	authors: [{ name: "Owl Sector" }],
 	creator: "Owl Sector",
@@ -66,7 +69,7 @@ export const metadata: Metadata = {
 		type: "website",
 		url: siteUrl,
 		siteName,
-		title: `${siteName} — Destiny 2 Knowledge Base`,
+		title: `${siteName} | Destiny 2 Knowledge Base`,
 		description: siteDescription,
 		locale: "en_US",
 		images: [
@@ -74,13 +77,13 @@ export const metadata: Metadata = {
 				url: "/assets/page.png",
 				width: 1900,
 				height: 913,
-				alt: `${siteName} — Destiny 2 perk and mechanic descriptions with hidden values`,
+				alt: `${siteName} | Destiny 2 perk and mechanic descriptions with hidden values`,
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: `${siteName} — Destiny 2 Knowledge Base`,
+		title: `${siteName} | Destiny 2 Knowledge Base`,
 		description: siteDescription,
 		images: ["/assets/page.png"],
 	},
@@ -93,11 +96,24 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({
+// The footer only needs the dataset's timestamp, but a failed load must not
+// take the whole site down — the pages render their own error states.
+async function readGeneratedAt() {
+	try {
+		const dataset = await loadCompendiumDataset();
+		return dataset.generatedAt;
+	} catch {
+		return null;
+	}
+}
+
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const generatedAt = await readGeneratedAt();
+
 	return (
 		<html
 			lang="en"
@@ -109,7 +125,11 @@ export default function RootLayout({
 					<div className="background-image" />
 				</div>
 
-				<NuqsAdapter>{children}</NuqsAdapter>
+				<NuqsAdapter>
+					<SiteHeader />
+					{children}
+					{generatedAt ? <SiteFooter generatedAt={generatedAt} /> : null}
+				</NuqsAdapter>
 
 				<Analytics />
 

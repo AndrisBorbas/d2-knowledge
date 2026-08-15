@@ -64,6 +64,8 @@ html {
 	--font-mono: var(--font-geist-mono);
 	--font-display: "NeueHaasGroteskDisp", var(--font-geist-sans);
 	--font-text: "NeueHaasGroteskText", var(--font-geist-sans);
+
+	--breakpoint-3xl: 124rem;
 }
 
 h1,

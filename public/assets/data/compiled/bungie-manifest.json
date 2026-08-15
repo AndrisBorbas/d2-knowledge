@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-08-15T10:00:48.706Z",
+	"generatedAt": "2026-08-15T17:17:52.034Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -81,6 +81,11 @@
 				"n": "Nano-Munitions",
 				"i": "/common/destiny2_content/icons/3af17bb526ecf91b31a3cab210bbf744.png",
 				"d": "Being near allies slowly builds up a partial emergency ammo refill for the next time this weapon runs out of ammo. Emergency ammo amount increases with time spent near allies."
+			},
+			"23349941": {
+				"n": "Implement of Curiosity",
+				"i": "/common/destiny2_content/icons/51d5606acfeda827603f33b4c562270f.jpg",
+				"d": "Works best with:\nElements: [Solar] [Stasis] [Strand] [Kill]\nWeapons: [Bow] [Sword] "
 			},
 			"23371658": {
 				"n": "Box Breathing",
@@ -697,6 +702,11 @@
 			"255237663": {
 				"n": "Volatile Flow",
 				"i": "/common/destiny2_content/icons/e695f6722f6b804915497124a4ca1878.png"
+			},
+			"258025496": {
+				"n": "NPA Repulsion Regulator",
+				"i": "/common/destiny2_content/icons/d710c0340c78b1eecd6821bd5dd104ce.jpg",
+				"d": "\"Should be reliable, but if it stops working, you'll know almost immediately.\" —Deputy Commander Sloane"
 			},
 			"262821312": {
 				"n": "Weavewalk",
@@ -2398,6 +2408,11 @@
 				"i": "/common/destiny2_content/icons/64642b7455e88ffde77be53ce7cb7c05.png",
 				"d": "Automatically reloads the magazine and improves weapon handling when wounded—even when this weapon is stowed."
 			},
+			"972833348": {
+				"n": "Slayer Baron Apothecary Satchel",
+				"i": "/common/destiny2_content/icons/fe806a8c8e4ef23813ec195d74bb74f7.jpg",
+				"d": "A tonic receptacle of Eliksni make, traditionally crafted for high-ranking officials. \n\nGiven to you by Eido of House Light in honor of your role as Slayer Baron."
+			},
 			"975429949": {
 				"n": "Gathering Light",
 				"i": "/common/destiny2_content/icons/4b1d2ca4cbd7f20e5e2b25ef8aa14bed.png",
@@ -2495,6 +2510,11 @@
 				"n": "Overshield",
 				"i": "/common/destiny2_content/icons/9aa4002a8b199d7b8c1444d6f0aec030.png",
 				"d": "You are armored with a protective barrier of [Void] Void Light. Reduces damage taken from combatants."
+			},
+			"1014202826": {
+				"n": "Encrypted Data Disk",
+				"i": "/common/destiny2_content/icons/d567549c87bb8fb18c1972027341a5f4.jpg",
+				"d": "Works best with:\nElements: [Kill] [Void] [Arc] \nWeapons: [Sword] [Sniper Rifle] [Machine Gun]"
 			},
 			"1015611457": {
 				"n": "Kill Clip",
@@ -2671,6 +2691,11 @@
 				"n": "Chaos Reach",
 				"i": "/common/destiny2_content/icons/b54195b2d82a31ae970ca85fb7fb0be7.png",
 				"d": "Unleash a long-range channeled beam of concentrated Arc energy. Sustained damage on a single target creates a jolting lightning strike at their position.\n\n [Super]  while active to deactivate your Super early, saving Super energy."
+			},
+			"1085005333": {
+				"n": "Encrypted Data Disk",
+				"i": "/common/destiny2_content/icons/d567549c87bb8fb18c1972027341a5f4.jpg",
+				"d": "Drifter stole this heavily encrypted disk from the Barant Imperium."
 			},
 			"1086997255": {
 				"n": "Solar Siphon",
@@ -3036,6 +3061,11 @@
 				"n": "Ascending Amplitude",
 				"i": "/common/destiny2_content/icons/37ed1658b106c79b87bdc7476c2b3666.png",
 				"d": "Stormtrance hits and final blows increase the damage it deals. Refunds Super energy when it ends. While Stormtrance is equipped, ability damage while amplified grants Bolt Charge."
+			},
+			"1213492937": {
+				"n": "Hunter's Journal",
+				"i": "/common/destiny2_content/icons/564591352b31aab76307d09689d8c6f3.jpg",
+				"d": "A collection of memories made real by the Traveler's Light."
 			},
 			"1218164788": {
 				"n": "The Lament Catalyst",
@@ -3566,6 +3596,11 @@
 				"i": "/common/destiny2_content/icons/775f67a65132fc728618f8a18df1f905.jpg",
 				"d": "Upgrades this weapon to a Masterwork. Once upgraded, the weapon will obtain enhanced capabilities, such as increased stats and/or additional perks.\n\nDefeat targets using this weapon to unlock this upgrade."
 			},
+			"1410465636": {
+				"n": "Queensfoil Censer",
+				"i": "/common/destiny2_content/icons/95227d27dee5447e7c59b8f9f482bd63.jpg",
+				"d": "Awoken and Ahamkara magics mingle in the mist rising from this censer as it swings back and forth, back and forth…"
+			},
 			"1419069769": {
 				"n": "Lightning Rounds",
 				"i": "/common/destiny2_content/icons/c968c0de1d01c6bfc13fc4d08d6cb312.png",
@@ -3717,6 +3752,10 @@
 				"i": "/common/destiny2_content/icons/43466a6d5e3baf4d87f4037ee2043847.png",
 				"d": "Dealing damage with this weapon reduces your melee cooldown and grants a chance to fully charge your melee ability with each kill."
 			},
+			"1485241460": {
+				"n": "Tablet of Ruin",
+				"i": "/common/destiny2_content/icons/b5232124b599b3984700d48026d240ec.jpg"
+			},
 			"1489048135": {
 				"n": "Explosive Pact",
 				"i": "/common/destiny2_content/icons/1dbfce413bb144936a3f4a5f83cf623b.png",
@@ -3735,6 +3774,11 @@
 			"1501094193": {
 				"n": "Strand Weapon Surge",
 				"i": "/common/destiny2_content/icons/7f270af35d5c11f721562de3eb9b226b.png"
+			},
+			"1504442987": {
+				"n": "NPA Repulsion Regulator",
+				"i": "/common/destiny2_content/icons/d710c0340c78b1eecd6821bd5dd104ce.jpg",
+				"d": "Works best with:\nElements: [Arc] [Void] [Strand]\nWeapons: [Glaive] [Auto Rifle]"
 			},
 			"1508896098": {
 				"n": "The Wardcliff Coil",
@@ -4300,6 +4344,11 @@
 				"i": "/common/destiny2_content/icons/ea99a5550787bc2196c717e98baff076.png",
 				"d": "Final blows with this weapon grant class ability energy."
 			},
+			"1708748798": {
+				"n": "Implement of Curiosity",
+				"i": "/common/destiny2_content/icons/51d5606acfeda827603f33b4c562270f.jpg",
+				"d": "Things didn't get interesting until the first apology."
+			},
 			"1709236482": {
 				"n": "Heavy Handed",
 				"i": "/common/destiny2_content/icons/b4f287bb2bea2ae61431cfc3a35f6fa5.png"
@@ -4452,6 +4501,11 @@
 				"n": "Melee Kickstart",
 				"i": "/common/destiny2_content/icons/574425b9621b95a0720f6f664828d414.png",
 				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+			},
+			"1770364095": {
+				"n": "Slayer Baron Apothecary Satchel",
+				"i": "/common/destiny2_content/icons/fe806a8c8e4ef23813ec195d74bb74f7.jpg",
+				"d": "Works best with:\nElements: [Stasis] [Void] [Arc]\nWeapons: [Grenade Launcher] [Special Grenade Launcher] [Shotgun]"
 			},
 			"1771339417": {
 				"n": "Firing Line",
@@ -4774,6 +4828,11 @@
 				"n": "Demolitionist",
 				"i": "/common/destiny2_content/icons/da009697110e06b65d6f827b3b6d5f70.png",
 				"d": "Final blows with this weapon generate an improved amount of grenade energy. Activating your grenade ability reloads this weapon from reserves."
+			},
+			"1907110519": {
+				"n": "Tablet of Ruin",
+				"i": "/common/destiny2_content/icons/e95e1ed79044d40ba6f32092cc2a3179.jpg",
+				"d": "\"The world is not built on the laws they love… Not on peace, but by victory at any means.\" –The Winnower"
 			},
 			"1909124648": {
 				"n": "Thermal Atomization",
@@ -5331,6 +5390,11 @@
 				"n": "Banshee's Wail",
 				"i": "/common/destiny2_content/icons/3a2fe8c1bd3fa1219922bf180b8e96e8.png",
 				"d": "[Block]  : Hold to rev the blade.\n • Increases damage and adds [Shield-Piercing] shield piercing to all attacks.\n • Gain stacks when dealing damage with revved attacks.\n • Additional stacks increase the damage and damage resistance of heavy attacks."
+			},
+			"2180638678": {
+				"n": "Hunter's Journal",
+				"i": "/common/destiny2_content/icons/564591352b31aab76307d09689d8c6f3.jpg",
+				"d": "Works best with:\nElements:  [Solar] [Arc] [Void]\nWeapons: [Sword] [Sniper Rifle] [Auto Rifle]"
 			},
 			"2186532310": {
 				"n": "Poison Arrows",
@@ -5912,6 +5976,11 @@
 				"n": "Zen Moment",
 				"i": "/common/destiny2_content/icons/9650a58cd3a439bf3b53a53dbc8122a0.png",
 				"d": "Causing damage with this weapon reduces recoil and flinch over time."
+			},
+			"2392273483": {
+				"n": "Tablet of Ruin",
+				"i": "/common/destiny2_content/icons/e95e1ed79044d40ba6f32092cc2a3179.jpg",
+				"d": "\"The world is not built on the laws they love… Not on peace, but by victory at any means.\" –The Winnower"
 			},
 			"2395713912": {
 				"n": "Umbral Sustenance",
@@ -6725,6 +6794,11 @@
 				"n": "Two-Tailed Fox",
 				"i": "/common/destiny2_content/icons/c065e1c0d03d9648fcad7762031eede9.jpg"
 			},
+			"2694905144": {
+				"n": "Implement of Curiosity",
+				"i": "/common/destiny2_content/icons/51d5606acfeda827603f33b4c562270f.jpg",
+				"d": "Things didn't get interesting until the first apology."
+			},
 			"2696719570": {
 				"n": "Adaptive Glaive",
 				"i": "/common/destiny2_content/icons/7fa898f1f8ec97eaad5c5214a850f85c.png",
@@ -6989,6 +7063,11 @@
 				"n": "Eddy Current",
 				"i": "/common/destiny2_content/icons/e0f3c00a8b2cbccb8f1f1b318026aeee.png",
 				"d": "Temporarily increases reload speed and handling after sprinting or while amplified; increased reload speed and handling have a longer duration. This effect is significantly improved when you are amplified."
+			},
+			"2785855278": {
+				"n": "NPA Repulsion Regulator",
+				"i": "/common/destiny2_content/icons/d710c0340c78b1eecd6821bd5dd104ce.jpg",
+				"d": "\"Should be reliable, but if it stops working, you'll know almost immediately.\" —Deputy Commander Sloane"
 			},
 			"2788997987": {
 				"n": "Void Resistance",
@@ -7711,6 +7790,11 @@
 				"i": "/common/destiny2_content/icons/986aeac26e30b3d5509e83f10a953da7.png",
 				"d": "The number of precision final blows before reloading affects the total rounds granted with increased range and damage. Precision final blows with Magnificent Howl active extend the effect for additional rounds. Improves reload."
 			},
+			"3044482290": {
+				"n": "Slayer Baron Apothecary Satchel",
+				"i": "/common/destiny2_content/icons/fe806a8c8e4ef23813ec195d74bb74f7.jpg",
+				"d": "A tonic receptacle of Eliksni make, traditionally crafted for high-ranking officials. \n\nGiven to you by Eido of House Light in honor of your role as Slayer Baron."
+			},
 			"3046678542": {
 				"n": "Arc Loader",
 				"i": "/common/destiny2_content/icons/110e01c4c108a0b8873aac3161825f81.png"
@@ -7723,6 +7807,11 @@
 				"n": "Desperado",
 				"i": "/common/destiny2_content/icons/1c95bff6fa57919ab0f5547d1f107fad.png",
 				"d": "Reloading after a precision final blow or after rapidly defeating targets increases your rate of fire."
+			},
+			"3048807337": {
+				"n": "Hunter's Journal",
+				"i": "/common/destiny2_content/icons/564591352b31aab76307d09689d8c6f3.jpg",
+				"d": "A collection of memories made real by the Traveler's Light."
 			},
 			"3049715579": {
 				"n": "Praxic Blade",
@@ -8603,6 +8692,10 @@
 				"n": "Threaded Blast",
 				"i": "/common/destiny2_content/icons/1857757ec95e15d5e42311e647f86163.png"
 			},
+			"3459646244": {
+				"n": "That Fresh Bullets Smell",
+				"i": "/common/destiny2_content/icons/6c3ed1334ca597eb7c4a3efeca50d172.png"
+			},
 			"3459646245": {
 				"n": "Energy Acceleration",
 				"i": "/common/destiny2_content/icons/7b7148c2dbb084f5ce94262022ff9c21.png"
@@ -8759,6 +8852,11 @@
 				"n": "Balanced Tang",
 				"i": "/common/destiny2_content/icons/83764ab897b1b0498f5fa62ff40195a8.png",
 				"d": "A balanced tang for flexing between attack and deflection."
+			},
+			"3518286241": {
+				"n": "Queensfoil Censer",
+				"i": "/common/destiny2_content/icons/95227d27dee5447e7c59b8f9f482bd63.jpg",
+				"d": "Works best with:\nElements: [Solar] [Stasis] [Strand]\nWeapons: [Rocket Launcher] [Grenade Launcher] [Special Grenade Launcher]"
 			},
 			"3518670115": {
 				"n": "In-Flight Compensator",
@@ -9431,6 +9529,11 @@
 				"n": "Ex Diris",
 				"i": "/common/destiny2_content/icons/8bf07148479f8894c483db879ed46c4a.jpg"
 			},
+			"3821685388": {
+				"n": "Tablet of Ruin",
+				"i": "/common/destiny2_content/icons/e95e1ed79044d40ba6f32092cc2a3179.jpg",
+				"d": "Works best with:\nElements: [Arc] [Strand] [Void] \nWeapons: [Fusion Rifle] [Glaive] [Trace Rifle]"
+			},
 			"3824105627": {
 				"n": "Firefly",
 				"i": "/common/destiny2_content/icons/629e225e6f8214326bc1eb0a911a6f6d.png",
@@ -9807,6 +9910,11 @@
 			"3979621113": {
 				"n": "Unflinching Strand Aim",
 				"i": "/common/destiny2_content/icons/61d43323b3b08725e51537e0d52dcfe7.png"
+			},
+			"3980449645": {
+				"n": "Encrypted Data Disk",
+				"i": "/common/destiny2_content/icons/d567549c87bb8fb18c1972027341a5f4.jpg",
+				"d": "Drifter stole this heavily encrypted disk from the Barant Imperium."
 			},
 			"3980769162": {
 				"n": "Void Loader",
@@ -10229,6 +10337,11 @@
 				"n": "Bitterspite",
 				"i": "/common/destiny2_content/icons/f8b7f71e2a9dbb4ad23fe0f31b644f95.png",
 				"d": "While this weapon is equipped, taking damage accelerates its next reload.\n\nTaking more damage increases the effect."
+			},
+			"4156549634": {
+				"n": "Queensfoil Censer",
+				"i": "/common/destiny2_content/icons/95227d27dee5447e7c59b8f9f482bd63.jpg",
+				"d": "Awoken and Ahamkara magics mingle in the mist rising from this censer as it swings back and forth, back and forth…"
 			},
 			"4160037471": {
 				"n": "Outreach",
@@ -12679,6 +12792,11 @@
 				"n": "Energy Acceleration",
 				"i": "/common/destiny2_content/icons/7b7148c2dbb084f5ce94262022ff9c21.png",
 				"d": "Sustained damage with micro-missiles causes the combatant to emit a Kinetic shockwave that damages nearby combatants. Strong against [Stagger] Unstoppable Champions."
+			},
+			"3593115881": {
+				"n": "That Fresh Bullets Smell",
+				"i": "/common/destiny2_content/icons/6c3ed1334ca597eb7c4a3efeca50d172.png",
+				"d": "Picking up an ammo brick gives your Kinetic weapons increased damage for a short duration."
 			},
 			"3593115882": {
 				"n": "Elemental Coalescence",

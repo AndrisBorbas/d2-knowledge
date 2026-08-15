@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
 		unoptimized: true,
 		remotePatterns: [
 			{
-				hostname: "bungie.net",
+				hostname: "www.bungie.net",
 			},
 		],
 	},

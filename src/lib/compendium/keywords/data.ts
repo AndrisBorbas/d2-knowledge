@@ -126,6 +126,11 @@ export const extraAliases: Verb[] = [
 		aliases: ["Marksman's Sights"],
 		types: ["Weapon"],
 	},
+	{
+		name: "That Fresh Bullets Smell",
+		aliases: ["That Fresh Bullet Smell"],
+		types: ["Artifact"],
+	},
 ];
 
 export const classNames = ["Hunter", "Titan", "Warlock"];
