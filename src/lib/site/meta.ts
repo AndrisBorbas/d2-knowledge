@@ -1,7 +1,7 @@
 export const SITE_URL = "https://owlsector.net";
 export const SITE_NAME = "Owl Sector";
 export const SITE_DESCRIPTION =
-	"The unofficial Destiny 2 knowledge base — hidden numbers, undocumented mechanics, and unexplained interactions dug out of the game and cross-referenced with the community compendium.";
+	"Destiny 2 community knowledge base - hidden numbers, undocumented mechanics, and unexplained interactions dug out of the game by dedicated players - shown in a clear and accessible format.";
 
 // Upstream data sources, credited in the footer and in every entry tooltip.
 export const DATA_COMPENDIUM_SHEET_URL =
