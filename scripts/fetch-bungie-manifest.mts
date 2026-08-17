@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { ARMOR_SET_NAME_ALIASES } from "../src/lib/bungie/armor-set-aliases";
+import { EXOTIC_PERK_ITEM_NAME_ALIASES } from "../src/lib/bungie/exotic-perk-item-aliases";
 import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
@@ -108,6 +109,15 @@ async function collectSheetLookupTitles() {
 				if (!key) continue;
 				titleKeys.add(key);
 			}
+		}
+
+		// Perks whose foundry record has no itemHash (see
+		// exotic-perk-item-aliases.ts) resolve their item by title instead, so
+		// that item needs to survive the manifest filter too.
+		for (const itemName of Object.values(EXOTIC_PERK_ITEM_NAME_ALIASES)) {
+			const key = normalizeLookupName(itemName);
+			if (!key) continue;
+			titleKeys.add(key);
 		}
 
 		return titleKeys;

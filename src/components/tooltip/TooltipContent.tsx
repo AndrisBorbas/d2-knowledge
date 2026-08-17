@@ -7,6 +7,7 @@ import {
 	getSourceAttribution,
 } from "@/lib/compendium/attribution";
 import type { Annotation } from "@/lib/compendium/model";
+import { useTooltipAlignStore } from "@/lib/site/tooltipAlignStore";
 import { cn } from "@/lib/utils/utils";
 
 import { TextWithTooltips } from "./TextWithTooltips";
@@ -64,10 +65,13 @@ function DescriptionText({
 	annotations: Annotation[];
 	className?: string;
 }) {
+	const align = useTooltipAlignStore((state) => state.align);
+
 	return (
 		<p
 			className={cn(
-				"p-4 text-center text-sm whitespace-pre-wrap text-white/90",
+				"p-4 text-sm whitespace-pre-wrap text-white/90",
+				align === "left" ? "text-left" : "text-center",
 				className,
 			)}
 		>

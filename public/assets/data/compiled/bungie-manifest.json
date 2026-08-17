@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-08-17T12:47:59.973Z",
+	"generatedAt": "2026-08-17T15:02:24.188Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -366,6 +366,10 @@
 				"i": "/common/destiny2_content/icons/5093df9aa6de6a8bb36be30e8ba81ea1.png",
 				"d": "Reloading near allies overflows the magazine. Bows receive faster draw time and Swords receive faster charge rate."
 			},
+			"121305948": {
+				"n": "Geomag Stabilizers",
+				"i": "/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg"
+			},
 			"122204356": {
 				"n": "Adhesive Ordnance",
 				"i": "/common/destiny2_content/icons/0f07b685b342c7354c29eb8cc06dec52.png",
@@ -439,6 +443,10 @@
 				"n": "Dynamic Charge",
 				"i": "/common/destiny2_content/icons/8a7cd3e5365c5830d9ca1d9ca5e26a03.png",
 				"d": "Final blows and precision hits build up Dynamic Charge. Swapping to Arc Seeker mode increases damage and partially reloads the magazine based on the number of charges. Charged Arc Seeker hits grant, and can spend, Bolt Charge."
+			},
+			"132452792": {
+				"n": "Apotheosis Veil",
+				"i": "/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg"
 			},
 			"136208450": {
 				"n": "Soulburn",
@@ -997,6 +1005,10 @@
 			"370712896": {
 				"n": "Salvation's Grip",
 				"i": "/common/destiny2_content/icons/f7a37e909fe6f923501f2175dc3784b6.jpg"
+			},
+			"370930766": {
+				"n": "Wings of Sacred Dawn",
+				"i": "/common/destiny2_content/icons/97eadd6736bd5146bc28ff6d14bb2d8e.jpg"
 			},
 			"371216963": {
 				"n": "Radar Tuner",
@@ -2082,6 +2094,10 @@
 				"i": "/common/destiny2_content/icons/03981cecd0cb26e4ec4c79960b87034a.png",
 				"d": "Reduces flinching from incoming fire while aiming an Arc weapon."
 			},
+			"796577360": {
+				"n": "Aeon Safe",
+				"i": "/common/destiny2_content/icons/7963b44801745431cdd7638c5445fe49.jpg"
+			},
 			"798520364": {
 				"n": "Evolution",
 				"i": "/common/destiny2_content/icons/923177d4eefa95820043119f1c93ce24.png",
@@ -2228,6 +2244,10 @@
 			"858758105": {
 				"n": "Khepri's Horn",
 				"i": "/common/destiny2_content/icons/c7da6c00a574bbadaec01099a3134626.jpg"
+			},
+			"859709617": {
+				"n": "Aeon Soul",
+				"i": "/common/destiny2_content/icons/3fffe9417297d68ad3384c0b601bda88.jpg"
 			},
 			"859780267": {
 				"n": "One for All",
@@ -2852,6 +2872,14 @@
 				"i": "/common/destiny2_content/icons/c47e43df7db6047a5a8b0d9963e5043a.png",
 				"d": "While a Solar Super is equipped, weapon final blows grant class ability energy. Defeating targets with your weapon while standing in a healing rift creates a pulse that grants Radiant to you and nearby allies; an empowering rift instead grants Cure to you and nearby allies. Daybreak final blows grant both effects."
 			},
+			"1096253259": {
+				"n": "Apotheosis Veil",
+				"i": "/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg"
+			},
+			"1096864740": {
+				"n": "Aeon Swift",
+				"i": "/common/destiny2_content/icons/693bbd8d8099d9284cf507c7a58d869b.jpg"
+			},
 			"1097608874": {
 				"n": "Kinetic Scavenger",
 				"i": "/common/destiny2_content/icons/84677bd229b40667e88bc777e6970d49.png",
@@ -3092,6 +3120,10 @@
 				"n": "Mechanized Autoloader",
 				"i": "/common/destiny2_content/icons/fc20c5992b1467f23e34d7350be8305a.png",
 				"d": "This weapon automatically reloads on ammo pickup."
+			},
+			"1179169099": {
+				"n": "Wings of Sacred Dawn",
+				"i": "/common/destiny2_content/icons/97eadd6736bd5146bc28ff6d14bb2d8e.jpg"
 			},
 			"1180907940": {
 				"n": "Spindle",
@@ -4350,6 +4382,10 @@
 				"i": "/common/destiny2_content/icons/07cd000cf69e2ec5506935a25dde6eed.png",
 				"d": "Detect enemies on your radar from farther away."
 			},
+			"1654461647": {
+				"n": "Aeon Safe",
+				"i": "/common/destiny2_content/icons/7963b44801745431cdd7638c5445fe49.jpg"
+			},
 			"1656118680": {
 				"n": "Nova Warp",
 				"i": "/common/destiny2_content/icons/feb001db8e9776bc822007c74564c1b6.png",
@@ -4384,6 +4420,10 @@
 				"n": "Storm's Keep",
 				"i": "/common/destiny2_content/icons/58cee87c4df6399921797be06a7aa608.jpg",
 				"d": "Cast your class ability to grant a moderate amount of Bolt Charge stacks to you and nearby allies.\n\nWhile behind your Barricade, you and allies gain stacks of Bolt Charge over time and your weapons can discharge max stacks of Bolt Charge."
+			},
+			"1656912113": {
+				"n": "Aeon Swift",
+				"i": "/common/destiny2_content/icons/693bbd8d8099d9284cf507c7a58d869b.jpg"
 			},
 			"1656957541": {
 				"n": "Charge Shot",
@@ -4583,6 +4623,10 @@
 			"1725917554": {
 				"n": "Vesper of Radius",
 				"i": "/common/destiny2_content/icons/f8e0d42b08a0a02f172f76d331326a8f.jpg"
+			},
+			"1726944726": {
+				"n": "Aeon Safe",
+				"i": "/common/destiny2_content/icons/7963b44801745431cdd7638c5445fe49.jpg"
 			},
 			"1727069360": {
 				"n": "Spark of Focus",
@@ -5058,6 +5102,10 @@
 				"i": "/common/destiny2_content/icons/da009697110e06b65d6f827b3b6d5f70.png",
 				"d": "Final blows with this weapon generate an improved amount of grenade energy. Activating your grenade ability reloads this weapon from reserves."
 			},
+			"1906855381": {
+				"n": "Aeon Safe",
+				"i": "/common/destiny2_content/icons/7963b44801745431cdd7638c5445fe49.jpg"
+			},
 			"1907110519": {
 				"n": "Tablet of Ruin",
 				"i": "/common/destiny2_content/icons/e95e1ed79044d40ba6f32092cc2a3179.jpg",
@@ -5412,6 +5460,10 @@
 				"i": "/common/destiny2_content/icons/05ff3c3914a333ff12abdea5782ceed9.png",
 				"d": "Reloading after a precision final blow causes precision hits to refill a round from reserves."
 			},
+			"2054874830": {
+				"n": "Apotheosis Veil",
+				"i": "/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg"
+			},
 			"2057080438": {
 				"n": "Meaning-Making",
 				"i": "/common/destiny2_content/icons/2d5fe28cfb79560e7609d98b037eead3.png",
@@ -5440,6 +5492,10 @@
 				"n": "Kinetic Dexterity",
 				"i": "/common/destiny2_content/icons/f26dd22ff54d884dcb7dd47988249645.png",
 				"d": "Faster ready and stow speed for Kinetic weapons."
+			},
+			"2076339106": {
+				"n": "Aeon Soul",
+				"i": "/common/destiny2_content/icons/3fffe9417297d68ad3384c0b601bda88.jpg"
 			},
 			"2077819806": {
 				"n": "Eager Edge",
@@ -6125,6 +6181,10 @@
 				"i": "/common/destiny2_content/icons/87b2e30a913f17f2eedaf153365547b6.png",
 				"d": "Black Armory weapon final blows briefly grant ammo generation, reload speed, and damage against combatants when the weapon is redrawn. Buff potency and duration increases for each equipped Black Armory weapon."
 			},
+			"2328599478": {
+				"n": "Sanguine Alchemy",
+				"i": "/common/destiny2_content/icons/e55c1cbf65fabab485bbc34272f59b11.jpg"
+			},
 			"2333607307": {
 				"n": "Impetus",
 				"i": "/common/destiny2_content/icons/534cb3d60aae6e5d3e5fc067e0fa58cb.png",
@@ -6351,6 +6411,10 @@
 				"n": "Adrenaline Junkie",
 				"i": "/common/destiny2_content/icons/6f8bde03140b53e6dc583ada1aeaa51d.png",
 				"d": "This weapon gains increased damage and handling from final blows with grenades or this weapon for an improved duration."
+			},
+			"2422973183": {
+				"n": "Sanguine Alchemy",
+				"i": "/common/destiny2_content/icons/e55c1cbf65fabab485bbc34272f59b11.jpg"
 			},
 			"2423243921": {
 				"n": "Antaeus Wards",
@@ -6832,6 +6896,10 @@
 				"i": "/common/destiny2_content/icons/8ad63f37f2513f56892e0ed20621f5dc.png",
 				"d": "Final blows with this weapon grant bonus damage. While this buff is active, grenade or melee kills of the same damage type greatly increase its damage and duration."
 			},
+			"2615220262": {
+				"n": "Aeon Swift",
+				"i": "/common/destiny2_content/icons/693bbd8d8099d9284cf507c7a58d869b.jpg"
+			},
 			"2617553311": {
 				"n": "Rimestealer",
 				"i": "/common/destiny2_content/icons/b88380f8b364c2743d53f12d4d98e273.png",
@@ -7090,6 +7158,10 @@
 				"n": "Upgraded Sensor Pack",
 				"i": "/common/destiny2_content/icons/6fd9aecd4c810d6dafd2517ebd50cbe0.png",
 				"d": "Provides radar while you're aiming. Enhances your radar resolution while crouched. Visually marks targets. Deals more damage to low-health marked targets. Provides a small benefit to the airborne effectiveness stat of all weapons."
+			},
+			"2668199515": {
+				"n": "Geomag Stabilizers",
+				"i": "/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg"
 			},
 			"2670025099": {
 				"n": "MIDA Synergy",
@@ -7412,6 +7484,10 @@
 				"i": "/common/destiny2_content/icons/a64f5d3e972ea35b1789f62999235083.png",
 				"d": "Kills increase this weapon's damage until it is stowed or reloaded."
 			},
+			"2782999716": {
+				"n": "Wings of Sacred Dawn",
+				"i": "/common/destiny2_content/icons/97eadd6736bd5146bc28ff6d14bb2d8e.jpg"
+			},
 			"2785334058": {
 				"n": "Eddy Current",
 				"i": "/common/destiny2_content/icons/e0f3c00a8b2cbccb8f1f1b318026aeee.png",
@@ -7495,6 +7571,10 @@
 			"2808156426": {
 				"n": "Eternal Warrior",
 				"i": "/common/destiny2_content/icons/83255143cc395d2d15fef32bf435e229.jpg"
+			},
+			"2808445048": {
+				"n": "Geomag Stabilizers",
+				"i": "/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg"
 			},
 			"2809141585": {
 				"n": "Void Wall",
@@ -7956,6 +8036,10 @@
 				"i": "/common/destiny2_content/icons/05609c418be3a985a640632ccaca796b.jpg",
 				"d": "An explosive grenade that sticks to surfaces and detonates when targets pass through its laser trigger, dealing damage and moderately scorching them."
 			},
+			"2950045886": {
+				"n": "Aeon Soul",
+				"i": "/common/destiny2_content/icons/3fffe9417297d68ad3384c0b601bda88.jpg"
+			},
 			"2951499542": {
 				"n": "Beacons of Empowerment",
 				"i": "/common/destiny2_content/icons/4a17f2216c0951713c49ea4f08928742.png",
@@ -7990,6 +8074,10 @@
 				"n": "Screaming Swarm",
 				"i": "/common/destiny2_content/icons/cbd704c7339e678a447f22a83bf67b61.png",
 				"d": "Fires a stream of sentient, toxic projectiles that track the targeted enemy."
+			},
+			"2966741808": {
+				"n": "Sanguine Alchemy",
+				"i": "/common/destiny2_content/icons/e55c1cbf65fabab485bbc34272f59b11.jpg"
 			},
 			"2973900274": {
 				"n": "Third Iteration",
@@ -8252,6 +8340,10 @@
 				"n": "Solar Dexterity",
 				"i": "/common/destiny2_content/icons/b77c4592c9bd332a94b75cc0179bb319.png",
 				"d": "Faster ready and stow speed for Solar weapons."
+			},
+			"3070555693": {
+				"n": "Sanguine Alchemy",
+				"i": "/common/destiny2_content/icons/e55c1cbf65fabab485bbc34272f59b11.jpg"
 			},
 			"3072857252": {
 				"n": "Heartshadow Catalyst",
@@ -9543,6 +9635,10 @@
 				"i": "/common/destiny2_content/icons/94d482b2fc2a9d67cdd7cdb85e708488.png",
 				"d": "Landing multiple hits turns your next shot into a homing micro-missile."
 			},
+			"3608857511": {
+				"n": "Geomag Stabilizers",
+				"i": "/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg"
+			},
 			"3609952942": {
 				"n": "Iron Gaze",
 				"i": "/common/destiny2_content/icons/a09bd02ced2eaf494fe335858c256154.png",
@@ -10011,6 +10107,10 @@
 				"i": "/common/destiny2_content/icons/bd7a131851dd9dad2da3e9f198f67f6e.png",
 				"d": "Your Void weapons gain Volatile Rounds after you emerge from being invisible. When you are invisible and defeat a combatant while using a finisher, all of your weapons gain bonus damage; you and your nearby allies gain a reserve overshield and improved class ability regeneration. These reserve overshields can be deployed by using a class ability."
 			},
+			"3809979407": {
+				"n": "Wings of Sacred Dawn",
+				"i": "/common/destiny2_content/icons/97eadd6736bd5146bc28ff6d14bb2d8e.jpg"
+			},
 			"3810173190": {
 				"n": "Black Talon Catalyst",
 				"i": "/common/destiny2_content/icons/81a960edb615892ed0b9bb58098b9258.png",
@@ -10217,6 +10317,10 @@
 				"i": "/common/destiny2_content/icons/c9203c038eb442c9bfacd38bd0968e81.png",
 				"d": "Dealing sustained damage with this weapon spawns Threadlings at your target's location."
 			},
+			"3897389303": {
+				"n": "Apotheosis Veil",
+				"i": "/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg"
+			},
 			"3897682694": {
 				"n": "Arcbolt Grenade",
 				"i": "/common/destiny2_content/icons/04c36b4cfebda156a8eca2b257e3ce4f.jpg",
@@ -10344,6 +10448,10 @@
 				"n": "Alethonym Catalyst",
 				"i": "/common/destiny2_content/icons/b1bce269c3cd21393131b4f5cffae692.png",
 				"d": "Hitting three separate targets increases damage for a moderate duration."
+			},
+			"3942036043": {
+				"n": "Aeon Swift",
+				"i": "/common/destiny2_content/icons/693bbd8d8099d9284cf507c7a58d869b.jpg"
 			},
 			"3948284065": {
 				"n": "Astrocyte Verse",
@@ -11173,6 +11281,10 @@
 				"n": "Storm Grenade",
 				"i": "/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 				"d": "A grenade that calls down a focused lightning storm."
+			},
+			"4242416109": {
+				"n": "Aeon Soul",
+				"i": "/common/destiny2_content/icons/3fffe9417297d68ad3384c0b601bda88.jpg"
 			},
 			"4244246940": {
 				"n": "Strand Loader",

@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import { EXOTIC_PERK_ITEM_NAME_ALIASES } from "@/lib/bungie/exotic-perk-item-aliases";
 import {
 	SKIPPED_GLYPH_CLASS_NAMES,
 	STATIC_ICON_PATH_BY_GLYPH,
@@ -230,7 +231,22 @@ export async function loadFoundrySource() {
 			itemHash: record.itemHash,
 			perkHash: record.hash,
 		});
-		const resolvedItemName = enrichment?.itemName ?? record.itemName;
+
+		// Some Clarity records have no itemHash at all (e.g. "Blood Magic",
+		// which belongs to Sanguine Alchemy), so getExoticEnrichment has
+		// nothing to look the item up by. Fall back to a manually maintained
+		// title alias in that case.
+		const itemAliasName = !record.itemHash
+			? EXOTIC_PERK_ITEM_NAME_ALIASES[record.name]
+			: undefined;
+		const itemAliasEnrichment = itemAliasName
+			? bungieResolver?.getItemEnrichmentByTitle(itemAliasName)
+			: undefined;
+
+		const resolvedItemName =
+			enrichment?.itemName ?? itemAliasEnrichment?.itemName ?? record.itemName;
+		const resolvedItemIconPath =
+			enrichment?.itemIconPath ?? itemAliasEnrichment?.itemIconPath;
 		const isCatalyst = (record.type ?? "").toLowerCase().includes("catalyst");
 
 		unifiedEntries.push({
@@ -246,7 +262,7 @@ export async function loadFoundrySource() {
 			secondaryName: resolvedItemName,
 			iconPath: enrichment?.perkIconPath,
 			iconBorder: isCatalyst ? "masterwork" : undefined,
-			secondaryIconPath: enrichment?.itemIconPath,
+			secondaryIconPath: resolvedItemIconPath,
 			itemHash: record.itemHash,
 			perkHash: record.hash,
 			extraInfo: resolvedItemName

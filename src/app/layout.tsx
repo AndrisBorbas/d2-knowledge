@@ -7,6 +7,7 @@ import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { TooltipAlignHydrator } from "@/components/site/TooltipAlignHydrator";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site/meta";
 
@@ -121,6 +122,8 @@ export default async function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
 		>
 			<body className="flex min-h-full flex-col">
+				<TooltipAlignHydrator />
+
 				<div className="background">
 					<div className="background-image" />
 					<div className="background-effect" />
