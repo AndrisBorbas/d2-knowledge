@@ -78,6 +78,10 @@ export const entrySchema = z.object({
 	secondaryName: z.string().optional(),
 	secondaryDetail: z.string().optional(),
 	iconPath: z.string().optional(),
+	// Present => render entry.iconPath with a gold masterwork-style border
+	// (currently just exotic weapon catalysts, whose icon is the catalyst
+	// perk's own icon rather than a masterwork-treated item icon).
+	iconBorder: z.enum(["masterwork"]).optional(),
 	secondaryIconPath: z.string().optional(),
 	itemHash: z.number().int().nonnegative().optional(),
 	perkHash: z.number().int().nonnegative().optional(),

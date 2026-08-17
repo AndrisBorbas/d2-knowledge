@@ -45,7 +45,11 @@ export function Tooltip({
 		>
 			<div className="grid grid-cols-[66px_1fr] items-center justify-start gap-4 border-b border-blue-600/50 bg-blue-950/30">
 				<div className="bg-blue-950/50 p-2">
-					<IconSlot iconPath={entry.iconPath} label={entry.title} />
+					<IconSlot
+						iconPath={entry.iconPath}
+						label={entry.title}
+						border={entry.iconBorder}
+					/>
 				</div>
 				<h3 className="text-xl font-semibold text-white">{entry.title}</h3>
 			</div>

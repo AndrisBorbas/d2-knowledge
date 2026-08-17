@@ -25,7 +25,7 @@ export function SiteHeader() {
 				>
 					<Image
 						src="/assets/icons/owlsector.svg"
-						alt=""
+						alt="Owl Sector logo"
 						width={24}
 						height={24}
 					/>

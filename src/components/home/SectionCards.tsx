@@ -34,7 +34,7 @@ export function SectionCards() {
 							<div
 								key={section.slug}
 								aria-disabled="true"
-								className="border border-dashed border-white/15 bg-white/4 p-4 opacity-60"
+								className="border border-dashed border-white/15 bg-white/4 p-4 opacity-60 backdrop-blur-md"
 							>
 								{body}
 							</div>
@@ -45,7 +45,7 @@ export function SectionCards() {
 						<Link
 							key={section.slug}
 							href={section.href}
-							className="borderHover bg-blue-950/20 p-4 transition hover:bg-blue-950/40"
+							className="borderHover bg-blue-950/20 p-4 backdrop-blur-md transition hover:bg-blue-950/40"
 						>
 							{body}
 						</Link>

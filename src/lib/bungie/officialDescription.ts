@@ -27,6 +27,15 @@ export type BuiltOfficialDescription = {
 	iconGlyphs: IconGlyph[];
 };
 
+// Exotic catalyst items carry this boilerplate as their own displayProperties
+// description — the actual catalyst effect lives on a perk referenced by the
+// item's `perks` array instead. Shared with scripts/fetch-bungie-manifest.mts,
+// which swaps the boilerplate for that perk's description before this filter runs.
+export const CATALYST_MASTERWORK_BOILERPLATE_PREFIXES = [
+	"Upgrades this weapon to a Masterwork",
+	"When upgraded to a Masterwork",
+];
+
 /**
  * Turns a raw Destiny 2 manifest description into the app's description format:
  * bracketed glyph tokens become inline icon markers, everything else stays text.
@@ -60,7 +69,12 @@ export function buildOfficialDescription(params: {
 	);
 
 	const cleaned = cleanupDescriptionText(text);
-	if (!cleaned || cleaned.startsWith("Upgrades this weapon to a Masterwork."))
+	if (
+		!cleaned ||
+		CATALYST_MASTERWORK_BOILERPLATE_PREFIXES.some((prefix) =>
+			cleaned.startsWith(prefix),
+		)
+	)
 		return null;
 
 	return { text: cleaned, iconGlyphs };

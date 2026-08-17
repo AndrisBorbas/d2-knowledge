@@ -15,13 +15,22 @@ import type { TooltipContentProps } from "./types";
 export function IconSlot({
 	iconPath,
 	label,
+	border,
 }: {
 	iconPath?: string;
 	label: string;
+	border?: "masterwork";
 }) {
 	if (iconPath) {
 		return (
-			<div className="relative border border-white/20 bg-black/50">
+			<div
+				className={cn(
+					"relative border bg-black/50",
+					border === "masterwork"
+						? "border-masterwork shadow-[0_0_6px_var(--color-masterwork)]"
+						: "border-white/20",
+				)}
+			>
 				<Image
 					src={iconPath}
 					alt={label}

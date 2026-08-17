@@ -44,8 +44,6 @@ function scoreCompendiumEntries(
 		scores.set(result.item.entry.id, result.score ?? Number.MAX_SAFE_INTEGER);
 	}
 
-	console.log(scores);
-
 	return scores;
 }
 
@@ -61,22 +59,11 @@ export function fuzzyFilterCompendiumEntries(
 
 	const scores = scoreCompendiumEntries(entries, query);
 
-	const filteredEntries = entries
+	return entries
 		.filter((entry) => scores.has(entry.id))
-		.sort((left, right) => {
-			const leftScore = scores.get(left.id) ?? Number.MAX_SAFE_INTEGER;
-			const rightScore = scores.get(right.id) ?? Number.MAX_SAFE_INTEGER;
-
-			console.log(
-				`Comparing "${left.title}" (score: ${leftScore}) vs "${right.title}" (score: ${rightScore})`,
-			);
-
-			return leftScore - rightScore;
-		});
-
-	console.log(filteredEntries);
-
-	console.log(rawQuery);
-
-	return filteredEntries;
+		.sort(
+			(left, right) =>
+				(scores.get(left.id) ?? Number.MAX_SAFE_INTEGER) -
+				(scores.get(right.id) ?? Number.MAX_SAFE_INTEGER),
+		);
 }

@@ -231,6 +231,7 @@ export async function loadFoundrySource() {
 			perkHash: record.hash,
 		});
 		const resolvedItemName = enrichment?.itemName ?? record.itemName;
+		const isCatalyst = (record.type ?? "").toLowerCase().includes("catalyst");
 
 		unifiedEntries.push({
 			...entry,
@@ -244,6 +245,7 @@ export async function loadFoundrySource() {
 			title: enrichment?.perkName?.trim() || entry.title,
 			secondaryName: resolvedItemName,
 			iconPath: enrichment?.perkIconPath,
+			iconBorder: isCatalyst ? "masterwork" : undefined,
 			secondaryIconPath: enrichment?.itemIconPath,
 			itemHash: record.itemHash,
 			perkHash: record.hash,

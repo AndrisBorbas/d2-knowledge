@@ -6,6 +6,7 @@ import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
 } from "../src/lib/bungie/manifest";
+import { CATALYST_MASTERWORK_BOILERPLATE_PREFIXES } from "../src/lib/bungie/officialDescription";
 import {
 	ARTIFACT_TAB_NAME,
 	stripReleaseLabel,
@@ -162,10 +163,79 @@ function toCompactDefinition(value: unknown) {
 	} satisfies CompactDefinition;
 }
 
+type PerkFallbackDisplay = {
+	description: string;
+	icon?: string;
+};
+
+// Many plug items — exotic catalysts, weapon mods (e.g. Icarus Grip) — carry
+// no useful text of their own: catalysts show the generic "Upgrades this
+// weapon to a Masterwork" boilerplate, and mods often have a flat-out empty
+// displayProperties.description. In both cases the real effect text — and
+// icon, for catalysts — lives on the first of the item's `perks`
+// (DestinySandboxPerkDefinition entries) that has a non-empty description.
+// See destinysets for the same lookup.
+function resolvePerkFallbackDisplay(
+	value: unknown,
+	sandboxPerkTable: Record<string, unknown> | null,
+): PerkFallbackDisplay | undefined {
+	if (!sandboxPerkTable) return undefined;
+
+	const row = asRecord<unknown>(value);
+	const perks = Array.isArray(row?.perks)
+		? (row.perks as Array<{ perkHash?: number }>)
+		: [];
+
+	for (const perk of perks) {
+		if (typeof perk.perkHash !== "number") continue;
+		const perkRow = asRecord<unknown>(sandboxPerkTable[String(perk.perkHash)]);
+		const perkDisplay = asRecord<unknown>(perkRow?.displayProperties);
+		const description =
+			typeof perkDisplay?.description === "string"
+				? perkDisplay.description.trim()
+				: "";
+		if (!description) continue;
+
+		const icon =
+			typeof perkDisplay?.icon === "string" ? perkDisplay.icon : undefined;
+		return { description, icon };
+	}
+
+	return undefined;
+}
+
+function toCompactItemDefinition(
+	value: unknown,
+	sandboxPerkTable: Record<string, unknown> | null,
+) {
+	const compact = toCompactDefinition(value);
+	if (!compact) return null;
+
+	const isCatalystBoilerplate = CATALYST_MASTERWORK_BOILERPLATE_PREFIXES.some(
+		(prefix) => compact.d?.startsWith(prefix),
+	);
+	const isMissingDescription = !compact.d;
+	if (!isCatalystBoilerplate && !isMissingDescription) return compact;
+
+	const perkDisplay = resolvePerkFallbackDisplay(value, sandboxPerkTable);
+	if (!perkDisplay) return compact;
+
+	return {
+		...compact,
+		d: perkDisplay.description,
+		// The catalyst item's own icon is a generic masterwork box, so the
+		// perk's icon (the actual effect) replaces it. Other plug items (e.g.
+		// weapon mods) usually already show their own icon correctly — only
+		// their description is missing — so leave that icon alone.
+		i: isCatalystBoilerplate ? (perkDisplay.icon ?? compact.i) : compact.i,
+	};
+}
+
 function filterTableToHashesAndTitles(
 	table: unknown,
 	allowedHashes: Set<number>,
 	titleKeys: Set<string>,
+	toCompact: (value: unknown) => CompactDefinition | null = toCompactDefinition,
 ) {
 	const source = asRecord<unknown>(table);
 	if (!source) {
@@ -179,7 +249,7 @@ function filterTableToHashesAndTitles(
 
 	const entries: Array<[string, CompactDefinition]> = [];
 	for (const [key, value] of Object.entries(source)) {
-		const compact = toCompactDefinition(value);
+		const compact = toCompact(value);
 		if (!compact) continue;
 
 		const shouldKeepForHash = allowedHashStrings.has(key);
@@ -309,6 +379,11 @@ async function main() {
 			snapshot.tables.DestinyInventoryItemDefinition,
 			inventoryHashes,
 			sheetTitleKeys,
+			(value) =>
+				toCompactItemDefinition(
+					value,
+					asRecord<unknown>(snapshot.tables.DestinySandboxPerkDefinition),
+				),
 		),
 		DestinySandboxPerkDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinySandboxPerkDefinition,
