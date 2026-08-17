@@ -1,6 +1,6 @@
 {
 	"name": "d2-knowledge",
-	"version": "1.0.6",
+	"version": "1.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
@@ -14,18 +14,18 @@
 		"data:compile": "bun run data:foundry:snapshot && bun run data:bungie:snapshot && bun run data:compendium:snapshot"
 	},
 	"dependencies": {
-		"@tanstack/react-virtual": "^3.14.6",
+		"@tanstack/react-virtual": "^3.14.9",
 		"bungie-api-ts": "^5.10.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"fuse.js": "^7.5.0",
-		"lucide-react": "^1.25.0",
-		"next": "16.2.10",
-		"nuqs": "^2.9.1",
-		"react": "19.2.7",
-		"react-dom": "19.2.7",
-		"react-resizable-panels": "^4.12.2",
-		"swetrix": "^4.4.0",
+		"lucide-react": "^1.31.0",
+		"next": "16.3.1",
+		"nuqs": "^2.9.6",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"react-resizable-panels": "^4.12.3",
+		"swetrix": "^4.5.0",
 		"tailwind-merge": "^3.6.0",
 		"tailwindcss": "^4",
 		"zustand": "^5.0.15"
@@ -37,10 +37,10 @@
 		"@types/react-dom": "^19",
 		"babel-plugin-react-compiler": "1.0.0",
 		"eslint": "^10",
-		"eslint-config-next": "16.2.10",
+		"eslint-config-next": "16.3.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-simple-import-sort": "^14.0.0",
-		"prettier": "^3.9.5",
+		"prettier": "^3.9.6",
 		"prettier-plugin-tailwindcss": "^0.8.1",
 		"typescript": "^5"
 	},

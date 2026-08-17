@@ -49,7 +49,9 @@ function PerkButton({
 			onClick={() => onToggle(entry.id)}
 			className={cn(
 				"borderHover block shrink-0 bg-blue-950/40 transition after:border-t-0 hover:after:border-t",
-				isPinned ? "borderActive bg-blue-500/30" : "hover:bg-blue-500/20",
+				isPinned
+					? "borderActive bg-blue-500/30 after:border-t"
+					: "hover:bg-blue-500/20",
 			)}
 		>
 			{entry.iconPath ? (
