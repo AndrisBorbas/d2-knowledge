@@ -18,6 +18,14 @@ export type TabNormalizationRule = {
 	fragmentTitlePrefix?: string;
 	skipStart?: number;
 	sections?: Section[];
+	// element only: a class-marker row (a cell reading exactly "Hunter" /
+	// "Titan" / "Warlock") resets the current section to this value. Needed
+	// for tabs like Prismatic, where each class's exclusive grenade follows
+	// its class marker directly with no "Grenade Abilities" header row of its
+	// own — without this the row inherits whatever section header last
+	// appeared (elsewhere in the tab), mislabeling it and, if that section
+	// happens to be "Fragments", wrongly prepending fragmentTitlePrefix too.
+	sectionAfterClassMarker?: string;
 	dynamicSection?: {
 		maxLength?: number;
 		minLength?: number;
@@ -249,6 +257,18 @@ function buildEntryFromSameRow(
 		descriptionColumn = nonEmptyCells[1].column;
 		source.column = nonEmptyCells[0].column;
 		extraInfo = nonEmptyCells[2]?.text;
+
+		// Prismatic lists each class's shared (non-exclusive) grenades/melees
+		// as a flat row of names borrowed from other subclasses ("Arcbolt
+		// Grenade", "Swarm Grenade", ...) rather than a title+description
+		// pair — reject those instead of treating the next name as a
+		// "description".
+		if (
+			typeof rule.minDescriptionLength === "number" &&
+			description.length < rule.minDescriptionLength
+		) {
+			return null;
+		}
 	} else if (typeof rule.titleColumn === "number") {
 		title = getCell(row, rule.titleColumn);
 		description = getCell(row, rule.descriptionColumn);
@@ -517,6 +537,9 @@ export function normalizeTabWithRule(
 			const currentClass = checkCurrentClass(row);
 			if (currentClass) {
 				currentState.activeClassName = currentClass;
+				if (rule.sectionAfterClassMarker) {
+					currentState.section = rule.sectionAfterClassMarker;
+				}
 				continue;
 			}
 		}

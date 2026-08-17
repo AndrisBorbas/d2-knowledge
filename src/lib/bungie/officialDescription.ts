@@ -49,6 +49,15 @@ export const CATALYST_MASTERWORK_BOILERPLATE_PREFIXES = [
 	"When upgraded to a Masterwork",
 ];
 
+// Armor charge mods (Weapon Surge, etc.) carry this generic Armor Charge
+// blurb as their own displayProperties description instead of their actual
+// per-mod effect, which — same as the catalyst case above — lives on a perk
+// referenced by the item's `perks` array. Shared with
+// scripts/fetch-bungie-manifest.mts for the same swap-before-filter reason.
+export const ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES = [
+	"Collecting an Orb of Power causes you to gain 1 temporary Armor Charge.",
+];
+
 /**
  * Turns a raw Destiny 2 manifest description into the app's description format:
  * bracketed glyph tokens become inline icon markers, everything else stays text.
@@ -104,9 +113,10 @@ export function buildOfficialDescription(params: {
 	const cleaned = cleanupDescriptionText(text);
 	if (
 		!cleaned ||
-		CATALYST_MASTERWORK_BOILERPLATE_PREFIXES.some((prefix) =>
-			cleaned.startsWith(prefix),
-		)
+		[
+			...CATALYST_MASTERWORK_BOILERPLATE_PREFIXES,
+			...ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES,
+		].some((prefix) => cleaned.startsWith(prefix))
 	)
 		return null;
 

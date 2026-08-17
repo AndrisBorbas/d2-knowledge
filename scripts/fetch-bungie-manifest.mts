@@ -7,7 +7,10 @@ import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
 } from "../src/lib/bungie/manifest";
-import { CATALYST_MASTERWORK_BOILERPLATE_PREFIXES } from "../src/lib/bungie/officialDescription";
+import {
+	ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES,
+	CATALYST_MASTERWORK_BOILERPLATE_PREFIXES,
+} from "../src/lib/bungie/officialDescription";
 import {
 	ARTIFACT_TAB_NAME,
 	stripReleaseLabel,
@@ -224,8 +227,17 @@ function toCompactItemDefinition(
 	const isCatalystBoilerplate = CATALYST_MASTERWORK_BOILERPLATE_PREFIXES.some(
 		(prefix) => compact.d?.startsWith(prefix),
 	);
+	const isArmorChargeModBoilerplate =
+		ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES.some((prefix) =>
+			compact.d?.startsWith(prefix),
+		);
 	const isMissingDescription = !compact.d;
-	if (!isCatalystBoilerplate && !isMissingDescription) return compact;
+	if (
+		!isCatalystBoilerplate &&
+		!isArmorChargeModBoilerplate &&
+		!isMissingDescription
+	)
+		return compact;
 
 	const perkDisplay = resolvePerkFallbackDisplay(value, sandboxPerkTable);
 	if (!perkDisplay) return compact;

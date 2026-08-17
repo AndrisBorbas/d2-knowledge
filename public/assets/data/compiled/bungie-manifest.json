@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-08-17T15:02:24.188Z",
+	"generatedAt": "2026-08-17T15:20:47.527Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -69,7 +69,7 @@
 			"14520248": {
 				"n": "Kinetic Weapon Surge",
 				"i": "/common/destiny2_content/icons/c2fe612aa5de8e32052e4d679f13fb8b.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Your Kinetic weapons gain a small bonus to damage while you have any Armor Charge. Your Armor Charge now decays over time."
 			},
 			"17096506": {
 				"n": "Dragon's Breath",
@@ -1715,7 +1715,7 @@
 			"633101315": {
 				"n": "Melee Font",
 				"i": "/common/destiny2_content/icons/fe487c4b4ad9a64f597df822d9f098b2.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "You gain a bonus to your melee stat while you have any Armor Charge. Your Armor Charge decays over time."
 			},
 			"634608391": {
 				"n": "Solar Loader",
@@ -1838,7 +1838,7 @@
 			"686455429": {
 				"n": "Health Font",
 				"i": "/common/destiny2_content/icons/301b534fef656d07ee6486b17f1e9ce0.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "You gain a bonus to your health stat while you have any Armor Charge. Your Armor Charge decays over time."
 			},
 			"688956976": {
 				"n": "Solar Scavenger",
@@ -2626,6 +2626,11 @@
 				"i": "/common/destiny2_content/icons/32fd1da58165d07b35d320e2bd6f0de5.png",
 				"d": "Picking up ammunition increases this weapon's flinch resistance and range, which lasts until it is fired again.\n\nSwords gain a large increase to charge rate instead."
 			},
+			"1005476557": {
+				"n": "Hailfire Spike",
+				"i": "/common/destiny2_content/icons/3c5212d88869db30df6236cfd5e59a19.jpg",
+				"d": "[Grenade]  : Throw a device charged with [Stasis] Stasis matter and [Solar] Solar energy that attaches to surfaces or targets, then erupts into a slowing storm. After a short duration, the device ignites, creating a deadly scorching cyclone."
+			},
 			"1008128453": {
 				"n": "Cornered",
 				"i": "/common/destiny2_content/icons/4155ec85e6c1e11b24d9986f21528d34.png",
@@ -2704,7 +2709,7 @@
 			"1024379611": {
 				"n": "Emergency Reinforcement",
 				"i": "/common/destiny2_content/icons/270088b5b11f0bf479e9c86ec8730c84.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "When your shields become broken, you gain temporary damage reduction.\n\nConsumes 3 or more stacks of Armor Charge, granting a longer duration to the damage reduction for each charge consumed."
 			},
 			"1030017949": {
 				"n": "Skull of Dire Ahamkara",
@@ -2927,7 +2932,7 @@
 			"1125986156": {
 				"n": "Utility Finisher",
 				"i": "/common/destiny2_content/icons/e9cd963fdeffc1e3997b2576abf68cae.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finishers restore class abilities. \n\nConsumes 3 or more stacks of Armor Charge, granting additional energy for each charge consumed."
 			},
 			"1126264488": {
 				"n": "Threat Remover",
@@ -2942,7 +2947,7 @@
 			"1130820873": {
 				"n": "Super Font",
 				"i": "/common/destiny2_content/icons/a7520cb2f31ec33730b77cdb78e058a5.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "You gain a bonus to your Super stat while you have any Armor Charge. Armor Charges decay over time."
 			},
 			"1133590731": {
 				"n": "Enhanced Athletics",
@@ -3084,7 +3089,7 @@
 			"1170405455": {
 				"n": "Restorative Finisher",
 				"i": "/common/destiny2_content/icons/72059d0104ec304f3cc2af4f0f008bfd.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "When you use a finisher, you gain a portion of energy for your least-recharged ability. \n\nConsumes 2 stacks of Armor Charge."
 			},
 			"1171147302": {
 				"n": "Feeding Frenzy",
@@ -3170,7 +3175,7 @@
 			"1193713026": {
 				"n": "Class Font",
 				"i": "/common/destiny2_content/icons/859a93ee38aa9cf96d96c8a4b55d59a4.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "You gain a bonus to your class stat while you have any Armor Charge. Your Armor Charge decays over time."
 			},
 			"1194056669": {
 				"n": "Closing Time",
@@ -4765,7 +4770,7 @@
 			"1763780622": {
 				"n": "Melee Kickstart",
 				"i": "/common/destiny2_content/icons/574425b9621b95a0720f6f664828d414.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "When your melee energy is fully expended, your Armor Charge is consumed and you gain melee energy for each Armor Charge used."
 			},
 			"1770364095": {
 				"n": "Slayer Baron Apothecary Satchel",
@@ -4790,7 +4795,7 @@
 			"1781551382": {
 				"n": "Grenade Font",
 				"i": "/common/destiny2_content/icons/5edbc054d836cc9f8504e938bd0c0a35.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "You gain a bonus to your grenade stat while you have any Armor Charge. Your Armor Charge decays over time."
 			},
 			"1782407750": {
 				"n": "Close to Melee",
@@ -4902,7 +4907,7 @@
 			"1834163303": {
 				"n": "Arc Weapon Surge",
 				"i": "/common/destiny2_content/icons/89a7bc1015802e86a624c1cc434bb15c.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Your Arc weapons gain a small bonus to damage while you have any Armor Charge. Your Armor Charge now decays over time."
 			},
 			"1841016428": {
 				"n": "Healing Grenade",
@@ -6145,7 +6150,7 @@
 			"2319885414": {
 				"n": "Solar Weapon Surge",
 				"i": "/common/destiny2_content/icons/5a986074a3872e3b3d73ea61d4e7b09b.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Your Solar weapons gain a small bonus to damage while you have any Armor Charge. Your Armor Charge now decays over time."
 			},
 			"2321120637": {
 				"n": "Cuirass of the Falling Star",
@@ -7984,7 +7989,7 @@
 			"2921714558": {
 				"n": "Stasis Weapon Surge",
 				"i": "/common/destiny2_content/icons/1a59e8a90a6231452a7af9362d694fd0.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Your Stasis weapons gain a small bonus to damage while you have any Armor Charge. Your Armor Charge now decays over time."
 			},
 			"2922950962": {
 				"n": "Crystalline Corpsebloom",
@@ -8314,7 +8319,7 @@
 			"3064687909": {
 				"n": "Benevolent Finisher",
 				"i": "/common/destiny2_content/icons/95b93c9d87ef7b5b9c73607538080ae1.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Using a finisher on a combatant spawns Orbs of Power for your allies. \n\nConsumes 3 stacks of Armor Charge."
 			},
 			"3066103996": {
 				"n": "Gunpowder Gamble",
@@ -8420,7 +8425,7 @@
 			"3112965625": {
 				"n": "Strand Weapon Surge",
 				"i": "/common/destiny2_content/icons/7f270af35d5c11f721562de3eb9b226b.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Your Strand weapons gain a small bonus to damage while you have any Armor Charge. Your Armor Charge now decays over time."
 			},
 			"3116569677": {
 				"n": "The Navigator Catalyst",
@@ -8625,7 +8630,7 @@
 			"3160387771": {
 				"n": "Utility Kickstart",
 				"i": "/common/destiny2_content/icons/e61338971f390d8187d36bf3649ad5c3.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "When your class ability energy is fully expended, your Armor Charge is consumed and you gain class ability energy for each Armor Charge used."
 			},
 			"3161816588": {
 				"n": "Slideshot",
@@ -9282,7 +9287,7 @@
 			"3467460423": {
 				"n": "Void Weapon Surge",
 				"i": "/common/destiny2_content/icons/1ddb23b77d10dbd2e5597017160f71e9.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Your Void weapons gain a small bonus to damage while you have any Armor Charge. Your Armor Charge now decays over time."
 			},
 			"3469412968": {
 				"n": "Whisper of Refraction",
@@ -10602,32 +10607,32 @@
 			"4004774872": {
 				"n": "Special Finisher",
 				"i": "/common/destiny2_content/icons/64a3f58dd3fc38a5b05f4a2908cbde64.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finishers generate Special ammo for the whole fireteam. \n\nConsumes 3 stacks of Armor Charge."
 			},
 			"4004774873": {
 				"n": "One-Two Finisher",
 				"i": "/common/destiny2_content/icons/cebf69b3cd6b1983ae0d839ef8dae0af.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finishers restore melee abilities.\n\nConsumes 3 or more stacks of Armor Charge, granting additional energy for each charge consumed."
 			},
 			"4004774874": {
 				"n": "Bulwark Finisher",
 				"i": "/common/destiny2_content/icons/f681e4b545a2917e7d38374a9f57907b.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finisher final blows generate an overshield.\n\nConsumes 3 or more stacks of Armor Charge, granting a longer duration to the overshield for each charge consumed."
 			},
 			"4004774875": {
 				"n": "Healthy Finisher",
 				"i": "/common/destiny2_content/icons/11b1d769354405ddeab1a63fe5a2d21a.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finishers heal you.\n\nConsumes 1 stack of Armor Charge."
 			},
 			"4004774876": {
 				"n": "Snapload Finisher",
 				"i": "/common/destiny2_content/icons/0b97df6ca29f46ad871c05471f2ac8a6.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finishers reload all your weapons. \n\nConsumes 1 stack of Armor Charge."
 			},
 			"4004774877": {
 				"n": "Explosive Finisher",
 				"i": "/common/destiny2_content/icons/90ce232628f1bf651ae905b72224e650.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "Finishers restore grenades. \n\nConsumes 3 or more stacks of Armor Charge, granting additional energy for each charge consumed."
 			},
 			"4004944400": {
 				"n": "String of Curses",
@@ -10754,7 +10759,7 @@
 			"4046357305": {
 				"n": "Weapons Font",
 				"i": "/common/destiny2_content/icons/d50bb589a2497a809716093ca7ea5300.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "You gain a bonus to your weapons stat while you have any Armor Charge. Your Armor Charge decays over time."
 			},
 			"4048389864": {
 				"n": "Feast of Light",
@@ -11023,7 +11028,7 @@
 			"4182064480": {
 				"n": "Grenade Kickstart",
 				"i": "/common/destiny2_content/icons/ec798418c7f516ed308a9dfc91aff036.png",
-				"d": "Collecting an Orb of Power causes you to gain 1 temporary Armor Charge."
+				"d": "When your grenade energy is fully expended, your Armor Charge is consumed and you gain grenade energy for each Armor Charge used."
 			},
 			"4183521337": {
 				"n": "Tireless Blade",

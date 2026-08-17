@@ -111,5 +111,13 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		fragmentTitlePrefix: "Facet of",
 		skipStart: 2,
 		sections: elementSections,
+		// Prismatic has no "Grenade Abilities" header of its own — each
+		// class's exclusive grenade follows its class-name row directly.
+		sectionAfterClassMarker: "Grenade Abilities",
+		// Rejects the flat rows listing each class's *shared* grenades/melees
+		// by name only (e.g. "Arcbolt Grenade" | "Swarm Grenade" | ...) —
+		// those aren't title+description pairs, they're borrowed from other
+		// subclasses' own tabs.
+		minDescriptionLength: 20,
 	},
 };
