@@ -61,3 +61,26 @@ export const GLYPH_CLASS_NAME_BY_BUNGIE_TOKEN: Record<string, string> = {
 	"special weapon": "special",
 	"heavy weapon": "heavy",
 };
+
+// Bracketed "[###DestinyNamedSubstitutions.<key>###]" tokens are Bungie's
+// dynamic input prompts — the actual button/verb shown in-game depends on the
+// player's platform (keyboard vs. Xbox vs. PlayStation), which the manifest
+// text can't tell us. Each entry here supplies a static stand-in: either a
+// literal replacement string, or an icon (pulled from the manifest via
+// `resolveGlyphIcon`, same as the damage/breaker glyphs above, or from a
+// static asset path). Add entries as new keys turn up in fetched
+// descriptions — an unlisted key falls back to a readable version of itself
+// (see `buildOfficialDescription`) instead of the raw "###...###" text.
+export type NamedSubstitutionReplacement =
+	| { text: string }
+	| { iconPath: string; label: string };
+
+export const NAMED_SUBSTITUTION_BY_TOKEN: Record<
+	string,
+	NamedSubstitutionReplacement
+> = {
+	ui_player_action_interact_button: { text: "[Interact]" },
+	ui_player_action_interact_verb: { text: "Hold" },
+	ui_player_action_melee_uncharged_button: { text: "[Melee]" },
+	ui_player_action_melee_uncharged_verb: { text: "Press" },
+};

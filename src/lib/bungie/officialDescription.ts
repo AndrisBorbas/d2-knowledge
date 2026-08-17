@@ -2,12 +2,25 @@ import type { IconGlyph } from "@/lib/compendium/model";
 import { buildIconMarker } from "@/lib/utils/iconGlyph";
 import { cleanupDescriptionText } from "@/lib/utils/text";
 
-import { GLYPH_CLASS_NAME_BY_BUNGIE_TOKEN } from "./glyphs";
+import {
+	GLYPH_CLASS_NAME_BY_BUNGIE_TOKEN,
+	NAMED_SUBSTITUTION_BY_TOKEN,
+} from "./glyphs";
 
 // Bungie's spacing after a token is inconsistent — "[Arc]Arc", "[Stasis] Stasis"
 // and "[Heavy Attack]  :" all occur — so the trailing whitespace is swallowed
 // and re-emitted as exactly one space.
 const BRACKET_TOKEN_PATTERN = /\[([^\][]+)\][ \t]*/g;
+
+// Matches the "###DestinyNamedSubstitutions.<key>###" tokens Bungie embeds
+// for dynamic input prompts (see glyphs.ts for why these need a lookup table
+// instead of resolving straight from the manifest).
+const NAMED_SUBSTITUTION_TOKEN_PATTERN =
+	/^###DestinyNamedSubstitutions\.([a-zA-Z0-9_]+)###$/;
+
+function humanizeNamedSubstitutionKey(key: string) {
+	return `[${key.replace(/^ui_player_action_/, "").replace(/_/g, " ")}]`;
+}
 
 function normalizeToken(value: string) {
 	return value
@@ -56,12 +69,32 @@ export function buildOfficialDescription(params: {
 	const text = rawDescription.replace(
 		BRACKET_TOKEN_PATTERN,
 		(match, tokenText: string) => {
+			const trimmedToken = tokenText.trim();
+			const substitutionMatch = trimmedToken.match(
+				NAMED_SUBSTITUTION_TOKEN_PATTERN,
+			);
+			if (substitutionMatch) {
+				const key = substitutionMatch[1];
+				const replacement = NAMED_SUBSTITUTION_BY_TOKEN[key];
+				if (!replacement) return `${humanizeNamedSubstitutionKey(key)} `;
+
+				if ("iconPath" in replacement) {
+					iconGlyphs.push({
+						label: replacement.label,
+						iconPath: replacement.iconPath,
+					});
+					return `${buildIconMarker(iconGlyphs.length - 1)} `;
+				}
+
+				return `${replacement.text} `;
+			}
+
 			const token = normalizeToken(tokenText);
 			const className = GLYPH_CLASS_NAME_BY_BUNGIE_TOKEN[token];
-			if (!className) return `${tokenText.trim()} `;
+			if (!className) return `${trimmedToken} `;
 
 			const iconPath = resolveGlyphIcon(className);
-			if (!iconPath) return `${tokenText.trim()} `;
+			if (!iconPath) return `${trimmedToken} `;
 
 			iconGlyphs.push({ label: toTitleCase(className), iconPath });
 			return `${buildIconMarker(iconGlyphs.length - 1)} `;

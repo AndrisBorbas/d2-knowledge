@@ -9,21 +9,19 @@ export function SectionCards() {
 				Sections
 			</h2>
 
-			<div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+			<div className="grid gap-3 text-white md:grid-cols-2 xl:grid-cols-3">
 				{SITE_SECTIONS.map((section) => {
 					const body = (
 						<>
 							<div className="flex items-center justify-between gap-2">
-								<h3 className="text-xl font-semibold text-white">
-									{section.title}
-								</h3>
+								<h3 className="text-xl font-semibold">{section.title}</h3>
 								{section.status === "planned" ? (
-									<span className="border border-white/20 px-2 py-0.5 text-[10px] tracking-[0.16em] text-white/50 uppercase">
+									<span className="border border-white/20 px-2 py-0.5 text-[10px] tracking-[0.16em] opacity-90">
 										Coming soon
 									</span>
 								) : null}
 							</div>
-							<p className="mt-2 text-sm leading-6 text-white/68">
+							<p className="mt-2 text-sm leading-6 opacity-70">
 								{section.description}
 							</p>
 						</>
@@ -34,7 +32,7 @@ export function SectionCards() {
 							<div
 								key={section.slug}
 								aria-disabled="true"
-								className="border border-dashed border-white/15 bg-white/4 p-4 opacity-60 backdrop-blur-md"
+								className="border border-dashed border-white/10 bg-white/4 p-4 text-white/70 backdrop-blur-xs"
 							>
 								{body}
 							</div>
