@@ -1,7 +1,7 @@
 "use client";
 
-import { useVirtualizer } from "@tanstack/react-virtual";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useVirtualizer, useWindowVirtualizer } from "@tanstack/react-virtual";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 
 import type { AnnotatedEntry, Keyword } from "@/lib/compendium/model";
 import { cn } from "@/lib/utils/utils";
@@ -20,16 +20,24 @@ type KeywordClickPayload = {
 	entryId: string;
 };
 
-type VirtualEntryGridProps = {
-	items: AnnotatedEntry[];
+type EntryCallbacks = {
 	entryMap: Map<string, AnnotatedEntry>;
 	keywordMap: Map<string, Keyword>;
 	onKeywordHover: (payload: KeywordHoverPayload) => void;
 	onKeywordLeave: () => void;
 	onKeywordClick: (payload: KeywordClickPayload) => void;
 	onGroupClick: (group: string) => void;
+};
+
+type VirtualEntryGridProps = EntryCallbacks & {
+	items: AnnotatedEntry[];
+	// "element" keeps the list in its own scroll container (desktop panels),
+	// "window" lets the page scroll so anything above can scroll out of view.
+	scrollMode?: "element" | "window";
 	className?: string;
 };
+
+type GridProps = Omit<VirtualEntryGridProps, "scrollMode">;
 
 const MIN_ITEM_WIDTH = 360;
 const MAX_ITEM_WIDTH = 520;
@@ -101,8 +109,9 @@ function chunk<T>(items: T[], size: number): T[][] {
 	return rows;
 }
 
-function useColumnCount(elementRef: React.RefObject<HTMLDivElement | null>) {
+function useGridMetrics(elementRef: React.RefObject<HTMLDivElement | null>) {
 	const [columnCount, setColumnCount] = useState(1);
+	const [isVisible, setIsVisible] = useState(false);
 	// The hysteresis is only meaningful once there is a real previous count to
 	// stick to; the first measurement has to take the plain answer or a wide
 	// container would be stranded on the placeholder single column.
@@ -118,6 +127,8 @@ function useColumnCount(elementRef: React.RefObject<HTMLDivElement | null>) {
 		// so quantise before the column math sees them.
 		const apply = (width: number) => {
 			const flooredWidth = Math.floor(width);
+			setIsVisible(flooredWidth > 0);
+
 			if (flooredWidth <= 0) {
 				// Hidden by a breakpoint; nothing to derive a column count from.
 				return;
@@ -148,10 +159,14 @@ function useColumnCount(elementRef: React.RefObject<HTMLDivElement | null>) {
 		};
 	}, [elementRef]);
 
-	return columnCount;
+	return { columnCount, isVisible };
 }
 
-export function VirtualEntryGrid({
+// The row markup below is deliberately duplicated in both grids instead of
+// living in a shared child component: React Compiler skips memoizing components
+// that call a virtualizer hook, but it would happily memoize a child that only
+// receives the (stable) virtualizer instance, freezing the list on first paint.
+function ElementScrollGrid({
 	items,
 	entryMap,
 	keywordMap,
@@ -160,9 +175,9 @@ export function VirtualEntryGrid({
 	onKeywordClick,
 	onGroupClick,
 	className,
-}: VirtualEntryGridProps) {
+}: GridProps) {
 	const scrollElementRef = useRef<HTMLDivElement>(null);
-	const columnCount = useColumnCount(scrollElementRef);
+	const { columnCount } = useGridMetrics(scrollElementRef);
 	const rows = useMemo(() => chunk(items, columnCount), [items, columnCount]);
 
 	const rowVirtualizer = useVirtualizer({
@@ -231,4 +246,113 @@ export function VirtualEntryGrid({
 			</div>
 		</div>
 	);
+}
+
+function WindowScrollGrid({
+	items,
+	entryMap,
+	keywordMap,
+	onKeywordHover,
+	onKeywordLeave,
+	onKeywordClick,
+	onGroupClick,
+	className,
+}: GridProps) {
+	// React Compiler bails out of `useVirtualizer` on its own, but it doesn't
+	// know `useWindowVirtualizer` has the same mutable-getter shape — memoizing
+	// this component freezes the list at its first paint.
+	"use no memo";
+
+	const containerRef = useRef<HTMLDivElement>(null);
+	const { columnCount, isVisible } = useGridMetrics(containerRef);
+	const rows = useMemo(() => chunk(items, columnCount), [items, columnCount]);
+
+	// The grid starts partway down the document, so the window virtualizer needs
+	// that document-relative offset to line up with the page scroll position.
+	const [scrollMargin, setScrollMargin] = useState(0);
+
+	useLayoutEffect(() => {
+		const element = containerRef.current;
+		if (!element || !isVisible) {
+			return;
+		}
+
+		setScrollMargin(element.getBoundingClientRect().top + window.scrollY);
+	}, [columnCount, isVisible, items]);
+
+	const rowVirtualizer = useWindowVirtualizer({
+		// This grid stays mounted at desktop widths but is hidden by CSS, where
+		// its rows measure as zero-height and keep re-notifying the virtualizer
+		// without ever settling.
+		count: isVisible ? rows.length : 0,
+		estimateSize: () => ESTIMATED_ROW_HEIGHT,
+		overscan: OVERSCAN_ROWS,
+		scrollMargin,
+		// Row measurement happens from a ref callback during commit, and the
+		// virtualizer's default sync notify would `flushSync` from there.
+		useFlushSync: false,
+	});
+
+	return (
+		<div ref={containerRef} className={className}>
+			<div
+				style={{
+					position: "relative",
+					height: rowVirtualizer.getTotalSize(),
+					width: "100%",
+				}}
+			>
+				{rowVirtualizer.getVirtualItems().map((virtualRow) => {
+					const row = rows[virtualRow.index];
+					if (!row) {
+						return null;
+					}
+
+					return (
+						<div
+							key={virtualRow.key}
+							data-index={virtualRow.index}
+							ref={rowVirtualizer.measureElement}
+							style={{
+								position: "absolute",
+								top: 0,
+								left: 0,
+								width: "100%",
+								transform: `translateY(${virtualRow.start - scrollMargin}px)`,
+								display: "grid",
+								gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))`,
+								gap: GRID_GAP,
+							}}
+							className="p-4"
+						>
+							{row.map((entry) => (
+								<Tooltip
+									key={entry.id}
+									entry={entry}
+									entryMap={entryMap}
+									keywordMap={keywordMap}
+									onKeywordHover={onKeywordHover}
+									onKeywordLeave={onKeywordLeave}
+									onKeywordClick={onKeywordClick}
+									onGroupClick={onGroupClick}
+									showPinButton={true}
+								/>
+							))}
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+}
+
+export function VirtualEntryGrid({
+	scrollMode = "element",
+	...props
+}: VirtualEntryGridProps) {
+	if (scrollMode === "window") {
+		return <WindowScrollGrid {...props} />;
+	}
+
+	return <ElementScrollGrid {...props} />;
 }

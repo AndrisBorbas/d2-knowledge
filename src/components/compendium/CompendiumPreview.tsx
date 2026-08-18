@@ -69,7 +69,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 			/>
 
 			<main className="mr-4 min-h-[60vh]">
-				<div className="h-[70vh] lg:hidden">
+				<div className="lg:hidden">
 					<EntryListPanel
 						entries={visibleEntries}
 						entryMap={entryMap}
@@ -81,6 +81,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						onKeywordLeave={handleKeywordLeave}
 						onKeywordClick={handleKeywordClick}
 						onGroupClick={toggleGroup}
+						scrollMode="window"
 					/>
 				</div>
 
