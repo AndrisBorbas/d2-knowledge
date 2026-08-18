@@ -36,6 +36,7 @@ const MAX_ITEM_WIDTH = 520;
 const GRID_GAP = 16;
 const ESTIMATED_ROW_HEIGHT = 240;
 const OVERSCAN_ROWS = 4;
+const COLUMN_HYSTERESIS = 32;
 
 function getColumnCount(containerWidth: number) {
 	if (containerWidth <= 0) {
@@ -60,6 +61,33 @@ function getColumnCount(containerWidth: number) {
 	return count;
 }
 
+function widthForColumns(count: number) {
+	return count * MIN_ITEM_WIDTH + (count - 1) * GRID_GAP;
+}
+
+// A container parked exactly on a column threshold would otherwise flip counts
+// on every sub-pixel width change, and each flip changes row heights, which
+// nudges the width again. Require a margin past the threshold before switching.
+function resolveColumnCount(containerWidth: number, previousCount: number) {
+	const target = getColumnCount(containerWidth);
+
+	if (
+		target > previousCount &&
+		containerWidth < widthForColumns(target) + COLUMN_HYSTERESIS
+	) {
+		return previousCount;
+	}
+
+	if (
+		target < previousCount &&
+		containerWidth > widthForColumns(previousCount) - COLUMN_HYSTERESIS
+	) {
+		return previousCount;
+	}
+
+	return target;
+}
+
 function chunk<T>(items: T[], size: number): T[][] {
 	if (size <= 1) {
 		return items.map((item) => [item]);
@@ -73,8 +101,12 @@ function chunk<T>(items: T[], size: number): T[][] {
 	return rows;
 }
 
-function useContainerWidth(elementRef: React.RefObject<HTMLDivElement | null>) {
-	const [width, setWidth] = useState(0);
+function useColumnCount(elementRef: React.RefObject<HTMLDivElement | null>) {
+	const [columnCount, setColumnCount] = useState(1);
+	// The hysteresis is only meaningful once there is a real previous count to
+	// stick to; the first measurement has to take the plain answer or a wide
+	// container would be stranded on the placeholder single column.
+	const hasMeasuredRef = useRef(false);
 
 	useEffect(() => {
 		const element = elementRef.current;
@@ -82,12 +114,31 @@ function useContainerWidth(elementRef: React.RefObject<HTMLDivElement | null>) {
 			return;
 		}
 
-		setWidth(element.clientWidth);
+		// Sub-pixel widths would keep re-chunking the grid for no visible gain,
+		// so quantise before the column math sees them.
+		const apply = (width: number) => {
+			const flooredWidth = Math.floor(width);
+			if (flooredWidth <= 0) {
+				// Hidden by a breakpoint; nothing to derive a column count from.
+				return;
+			}
+
+			const hasMeasured = hasMeasuredRef.current;
+			hasMeasuredRef.current = true;
+
+			setColumnCount((previousCount) =>
+				hasMeasured
+					? resolveColumnCount(flooredWidth, previousCount)
+					: getColumnCount(flooredWidth),
+			);
+		};
+
+		apply(element.clientWidth);
 
 		const observer = new ResizeObserver((entries) => {
 			const entry = entries[0];
 			if (entry) {
-				setWidth(entry.contentRect.width);
+				apply(entry.contentRect.width);
 			}
 		});
 		observer.observe(element);
@@ -97,7 +148,7 @@ function useContainerWidth(elementRef: React.RefObject<HTMLDivElement | null>) {
 		};
 	}, [elementRef]);
 
-	return width;
+	return columnCount;
 }
 
 export function VirtualEntryGrid({
@@ -111,8 +162,7 @@ export function VirtualEntryGrid({
 	className,
 }: VirtualEntryGridProps) {
 	const scrollElementRef = useRef<HTMLDivElement>(null);
-	const containerWidth = useContainerWidth(scrollElementRef);
-	const columnCount = getColumnCount(containerWidth);
+	const columnCount = useColumnCount(scrollElementRef);
 	const rows = useMemo(() => chunk(items, columnCount), [items, columnCount]);
 
 	const rowVirtualizer = useVirtualizer({
@@ -125,7 +175,12 @@ export function VirtualEntryGrid({
 	return (
 		<div
 			ref={scrollElementRef}
-			className={cn("h-full overflow-y-auto", className)}
+			// A reserved gutter keeps the scrollbar from changing the width the
+			// column count is derived from.
+			className={cn(
+				"h-full [scrollbar-gutter:stable] overflow-y-auto",
+				className,
+			)}
 		>
 			<div
 				style={{
