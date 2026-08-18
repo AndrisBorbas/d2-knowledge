@@ -20,7 +20,6 @@ type EntryListPanelProps = {
 	onKeywordLeave: () => void;
 	onKeywordClick: (payload: { keywordId: string; entryId: string }) => void;
 	onGroupClick: (group: string) => void;
-	scrollMode?: "element" | "window";
 };
 
 export function EntryListPanel({
@@ -34,7 +33,6 @@ export function EntryListPanel({
 	onKeywordLeave,
 	onKeywordClick,
 	onGroupClick,
-	scrollMode,
 }: EntryListPanelProps) {
 	if (entries.length === 0) {
 		return (
@@ -68,7 +66,6 @@ export function EntryListPanel({
 			onKeywordLeave={onKeywordLeave}
 			onKeywordClick={onKeywordClick}
 			onGroupClick={onGroupClick}
-			scrollMode={scrollMode}
 		/>
 	);
 }
