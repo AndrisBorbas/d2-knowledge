@@ -48,11 +48,11 @@ export function FilterHeader({
 					) : null}
 				</div>
 				<div className="m-2 ml-3 flex flex-row items-center gap-4">
-					<p className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
+					<p className="shrink-0 text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 						Filter:
 					</p>
 					<div
-						className="flex flex-wrap gap-2"
+						className="flex min-w-0 [scrollbar-width:none] flex-nowrap gap-2 overflow-x-auto [-ms-overflow-style:none] lg:flex-wrap lg:overflow-x-visible [&::-webkit-scrollbar]:hidden"
 						role="group"
 						aria-label="Filter entries"
 					>
@@ -66,7 +66,7 @@ export function FilterHeader({
 									onClick={() => onToggleGroup(group)}
 									aria-pressed={isActive}
 									className={cn(
-										"borderHover px-3 py-1.5 text-xs font-semibold tracking-[0.08em] uppercase transition",
+										"borderHover shrink-0 px-3 py-1.5 text-xs font-semibold tracking-[0.08em] whitespace-nowrap uppercase transition",
 										isActive
 											? "borderActive bg-blue-500/30 text-sky-100"
 											: "bg-blue-500/10 text-white/68 hover:bg-blue-500/20",
@@ -82,7 +82,7 @@ export function FilterHeader({
 					<button
 						type="button"
 						onClick={onOpenMobileDrawer}
-						className="rounded-xl border border-white/16 bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
+						className="border border-white/16 bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
 					>
 						Open clicked tooltips ({clickedCount})
 					</button>
