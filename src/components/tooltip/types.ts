@@ -26,6 +26,7 @@ export type TooltipProps = {
 	onKeywordLeave?: () => void;
 	onKeywordClick?: (payload: TooltipKeywordClickPayload) => void;
 	onGroupClick?: (group: string) => void;
+	showPinButton?: boolean;
 };
 
 export type TooltipContentProps = {

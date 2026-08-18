@@ -89,7 +89,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						orientation="horizontal"
 						className="max-h-[calc(100vh-2rem)] min-h-[60vh]"
 					>
-						<Panel defaultSize="68%" minSize="40%">
+						<Panel defaultSize="68%" minSize="20%">
 							<div className="flex h-full flex-col">
 								<div className="min-h-0 flex-1">
 									<EntryListPanel
@@ -110,7 +110,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						<Separator className="group mx-2 flex w-2 items-center justify-center rounded-full bg-white/6 transition hover:bg-white/12">
 							<div className="h-18 w-1 rounded-full bg-white/30 transition group-hover:bg-sky-200/80" />
 						</Separator>
-						<Panel defaultSize="32%" minSize="15%" maxSize="50%">
+						<Panel defaultSize="32%" minSize="15%">
 							<ClickedTooltipsPanel
 								clickedEntries={clickedEntries}
 								entryMap={entryMap}

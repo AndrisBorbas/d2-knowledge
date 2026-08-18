@@ -167,6 +167,7 @@ export function VirtualEntryGrid({
 									onKeywordLeave={onKeywordLeave}
 									onKeywordClick={onKeywordClick}
 									onGroupClick={onGroupClick}
+									showPinButton={true}
 								/>
 							))}
 						</div>

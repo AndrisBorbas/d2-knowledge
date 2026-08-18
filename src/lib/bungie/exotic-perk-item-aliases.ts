@@ -9,8 +9,8 @@ export const EXOTIC_PERK_ITEM_NAME_ALIASES: Record<string, string> = {
 	"Blood Magic": "Sanguine Alchemy", //2966741808
 	"Tome of Dawn": "Wings of Sacred Dawn", //370930766
 	"Close Enough": "Geomag Stabilizers", //121305948
+	Insatiable: "Apotheosis Veil", //132452792
 	"Sect of Force": "Aeon Safe", //796577360
 	"Sect of Insight": "Aeon Soul", //859709617
 	"Sect of Vigor": "Aeon Swift", //1096864740
-	Insatiable: "Apotheosis Veil", //132452792
 };

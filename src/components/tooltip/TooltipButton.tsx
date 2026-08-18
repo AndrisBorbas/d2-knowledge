@@ -106,7 +106,6 @@ export function TooltipButton({
 	return (
 		<button
 			type="button"
-			title={`Open ${keyword.label}`}
 			onClick={() => onKeywordClick?.({ keywordId: keyword.id })}
 			onMouseEnter={(event) => handleHover(event.currentTarget)}
 			onFocus={(event) => handleHover(event.currentTarget)}

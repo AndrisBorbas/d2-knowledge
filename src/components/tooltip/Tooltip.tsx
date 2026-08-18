@@ -1,5 +1,6 @@
 "use client";
 
+import { Pin } from "lucide-react";
 import { useRef } from "react";
 
 import { IconSlot, TooltipBody } from "./TooltipContent";
@@ -17,6 +18,7 @@ export function Tooltip({
 	onKeywordLeave,
 	onKeywordClick,
 	onGroupClick,
+	showPinButton = false,
 }: TooltipProps) {
 	const articleRef = useRef<HTMLElement>(null);
 
@@ -52,6 +54,18 @@ export function Tooltip({
 					/>
 				</div>
 				<h3 className="text-xl font-semibold text-white">{entry.title}</h3>
+				{showPinButton && (
+					<button
+						type="button"
+						onClick={() =>
+							onKeywordClick?.({ keywordId: entry.id, entryId: entry.id })
+						}
+						className="borderHover absolute top-1 right-1 bg-blue-500/20 p-1 text-white/70 transition hover:bg-blue-600/30"
+						aria-label={`Remove ${entry.title}`}
+					>
+						<Pin size={14} />
+					</button>
+				)}
 			</div>
 
 			<div className="mx-2 mt-2 flex flex-wrap gap-2">

@@ -63,7 +63,7 @@ export function ClickedTooltipsDrawer({
 					<button
 						type="button"
 						onClick={onClose}
-						className="rounded-lg border border-white/16 bg-white/8 p-1.5 text-white/75"
+						className="border border-white/16 bg-white/8 p-1.5 text-white/75"
 						aria-label="Close clicked tooltip drawer"
 					>
 						<X size={16} />
@@ -78,7 +78,7 @@ export function ClickedTooltipsDrawer({
 									<button
 										type="button"
 										onClick={() => onRemove(entry.id)}
-										className="rounded-lg border border-white/12 bg-white/8 p-1.5 text-white/70 transition hover:bg-white/14"
+										className="border border-white/12 bg-white/8 p-1.5 text-white/70 transition hover:bg-white/14"
 										aria-label={`Remove ${entry.title}`}
 									>
 										<X size={14} />

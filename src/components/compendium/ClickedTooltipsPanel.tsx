@@ -1,6 +1,6 @@
 "use client";
 
-import { X } from "lucide-react";
+import { PinOff } from "lucide-react";
 
 import { Tooltip } from "@/components/tooltip/Tooltip";
 import type {
@@ -33,7 +33,7 @@ export function ClickedTooltipsPanel({
 	onClearAll,
 }: ClickedTooltipsPanelProps) {
 	return (
-		<div className="mt-2 flex flex-col">
+		<div className="@container mt-2 flex flex-col">
 			<div className="mx-2 flex items-center justify-between gap-2">
 				<div>
 					<p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
@@ -56,7 +56,7 @@ export function ClickedTooltipsPanel({
 			</div>
 
 			{clickedEntries.length > 0 ? (
-				<div className="mt-4 min-h-0 flex-1 space-y-3 overflow-y-auto p-2">
+				<div className="mt-4 grid min-h-0 grid-cols-1 gap-4 space-y-3 overflow-y-auto p-2 @3xl:grid-cols-2 @6xl:grid-cols-3">
 					{clickedEntries.map((entry) => (
 						<div key={entry.id} className="relative">
 							<Tooltip
@@ -75,7 +75,7 @@ export function ClickedTooltipsPanel({
 									className="borderHover absolute top-1 right-1 bg-red-500/15 p-1 text-white/70 transition hover:bg-red-500/30"
 									aria-label={`Remove ${entry.title}`}
 								>
-									<X size={14} className="text-red-500" />
+									<PinOff size={14} className="text-red-500" />
 								</button>
 							</div>
 						</div>
