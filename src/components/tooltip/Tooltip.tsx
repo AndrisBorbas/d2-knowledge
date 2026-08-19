@@ -53,7 +53,7 @@ export function Tooltip({
 						border={entry.iconBorder}
 					/>
 				</div>
-				<h3 className="text-xl font-semibold text-white">{entry.title}</h3>
+				<h5 className="text-xl font-semibold text-white">{entry.title}</h5>
 				{showPinButton && (
 					<button
 						type="button"

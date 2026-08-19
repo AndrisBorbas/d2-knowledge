@@ -5,16 +5,16 @@ import { SITE_SECTIONS } from "@/lib/site/sections";
 export function SectionCards() {
 	return (
 		<section className="flex flex-col gap-4">
-			<h2 className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
+			<h3 className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 				Sections
-			</h2>
+			</h3>
 
 			<div className="grid gap-3 text-white md:grid-cols-2 xl:grid-cols-3">
 				{SITE_SECTIONS.map((section) => {
 					const body = (
 						<>
 							<div className="flex items-center justify-between gap-2">
-								<h3 className="text-xl font-semibold">{section.title}</h3>
+								<h4 className="text-xl font-semibold">{section.title}</h4>
 								{section.status === "planned" ? (
 									<span className="border border-white/20 px-2 py-0.5 text-[10px] tracking-[0.16em] opacity-90">
 										Coming soon

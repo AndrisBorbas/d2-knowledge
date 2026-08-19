@@ -87,9 +87,9 @@ export default async function HomePage() {
 						Owl Sector
 					</h1>
 				</span>
-				<p className="max-w-3xl text-sm leading-7 text-white/72">
+				<h2 className="max-w-3xl text-base leading-7 text-white/80">
 					{SITE_DESCRIPTION}
-				</p>
+				</h2>
 				<div className="max-w-3xl">
 					<Suspense fallback={null}>
 						<GlossarySearchBox />
