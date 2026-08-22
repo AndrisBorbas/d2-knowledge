@@ -259,9 +259,9 @@ function WindowScrollGrid({
 	className,
 }: GridProps) {
 	// React Compiler bails out of `useVirtualizer` on its own, but it doesn't
-	// know `useWindowVirtualizer` has the same mutable-getter shape — memoizing
+	// know `useWindowVirtualizer` has the same mutable-getter shape - memoizing
 	// this component freezes the list at its first paint.
-	"use no memo";
+	("use no memo");
 
 	const containerRef = useRef<HTMLDivElement>(null);
 	const { columnCount, isVisible } = useGridMetrics(containerRef);

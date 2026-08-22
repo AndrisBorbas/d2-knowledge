@@ -24,7 +24,9 @@ function rgbToCss(color: { red?: number; green?: number; blue?: number }) {
 
 type SheetsApiTextFormatRun = {
 	startIndex?: number;
-	format?: { foregroundColor?: { red?: number; green?: number; blue?: number } };
+	format?: {
+		foregroundColor?: { red?: number; green?: number; blue?: number };
+	};
 };
 
 type SheetsApiCellData = {

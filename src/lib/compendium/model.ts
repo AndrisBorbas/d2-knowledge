@@ -13,7 +13,7 @@ export const annotationSchema = z.object({
 	text: z.string(),
 	// Present => render as a plain colored span (pattern match), not a keyword TooltipButton.
 	colorClass: z.string().optional(),
-	// Present => render as a plain span with this literal CSS color (sheet-native
+	// Present => render as a plain span with this literal CSS color (DDC-native
 	// rich text), for colors that only exist as runtime data and have no
 	// precompiled Tailwind class.
 	color: z.string().optional(),
@@ -30,12 +30,7 @@ export const iconGlyphSchema = z.object({
 	iconPath: z.string(),
 });
 
-export const unifiedSourceIdSchema = z.enum([
-	"sheet",
-	"foundry",
-	"bungie",
-	"manual",
-]);
+export const unifiedSourceIdSchema = z.enum(["ddc", "clarity", "bungie", "manual"]);
 
 export const unifiedEntryKindSchema = z.enum([
 	"armor_set_bonus",
@@ -59,6 +54,17 @@ export const unifiedSourceRefSchema = z.object({
 	updatedAt: z.number().int().nonnegative().optional(),
 });
 
+export const alternateDescriptionSchema = z.object({
+	sourceId: unifiedSourceIdSchema,
+	text: z.string(),
+	// DDC-only rich-text provenance. Offsets index into `text`, never into the
+	// entry's own `description`.
+	descriptionSegments: z.array(descriptionSegmentSchema).optional(),
+	// Inline glyph markers in `text` are indices into THIS array, not the
+	// entry's `iconGlyphs` - the two texts were built against different arrays.
+	iconGlyphs: z.array(iconGlyphSchema).optional(),
+});
+
 export const entrySchema = z.object({
 	id: z.string(),
 	tab: z.string(),
@@ -69,7 +75,7 @@ export const entrySchema = z.object({
 	description: z.string(),
 	descriptionSegments: z.array(descriptionSegmentSchema).optional(),
 	// In-game text from the Destiny 2 manifest, shown above the community
-	// description. Has no sheet provenance, so it never gets descriptionSegments.
+	// description. Has no DDC provenance, so it never gets descriptionSegments.
 	officialDescription: z.string().optional(),
 	extraInfo: z.string().optional(),
 	kind: unifiedEntryKindSchema.optional(),
@@ -86,13 +92,25 @@ export const entrySchema = z.object({
 	itemHash: z.number().int().nonnegative().optional(),
 	perkHash: z.number().int().nonnegative().optional(),
 	iconGlyphs: z.array(iconGlyphSchema).optional(),
+	// Descriptions from the sources that lost the merge, kept so the tooltip can
+	// show Clarity's and the DDC's take side by side. The winner's text stays
+	// in `description`; nothing is duplicated here.
+	alternateDescriptions: z.array(alternateDescriptionSchema).optional(),
+});
+
+export const annotatedAlternateDescriptionSchema = alternateDescriptionSchema.extend({
+	// Offsets index into this block's own `text`.
+	annotations: z.array(annotationSchema),
 });
 
 export const annotatedEntrySchema = entrySchema.extend({
 	annotations: z.array(annotationSchema),
-	// Offsets index into `officialDescription`, never into `description` — the
+	// Offsets index into `officialDescription`, never into `description` - the
 	// two arrays live in different coordinate spaces and must not be mixed.
 	officialAnnotations: z.array(annotationSchema).optional(),
+	alternateDescriptions: z
+		.array(annotatedAlternateDescriptionSchema)
+		.optional(),
 });
 
 export const keywordCategorySchema = z.enum([
@@ -141,6 +159,10 @@ export type IconGlyph = z.infer<typeof iconGlyphSchema>;
 export type UnifiedSourceId = z.infer<typeof unifiedSourceIdSchema>;
 export type UnifiedEntryKind = z.infer<typeof unifiedEntryKindSchema>;
 export type UnifiedSourceRef = z.infer<typeof unifiedSourceRefSchema>;
+export type AlternateDescription = z.infer<typeof alternateDescriptionSchema>;
+export type AnnotatedAlternateDescription = z.infer<
+	typeof annotatedAlternateDescriptionSchema
+>;
 export type Entry = z.infer<typeof entrySchema>;
 export type AnnotatedEntry = z.infer<typeof annotatedEntrySchema>;
 export type KeywordCategory = z.infer<typeof keywordCategorySchema>;
@@ -150,7 +172,7 @@ export type CompendiumDataset = z.infer<typeof compendiumDatasetSchema>;
 
 // Clips+shifts description segments when a description is regex-sliced down
 // to a substring of itself (e.g. armor-set-bonus text stripped of its
-// "N Piece | Name" prefix) — keeps each segment's cell source correct in the
+// "N Piece | Name" prefix) - keeps each segment's cell source correct in the
 // new, shorter description's coordinate space.
 export function shiftSegmentsForSlice(
 	segments: DescriptionSegment[],

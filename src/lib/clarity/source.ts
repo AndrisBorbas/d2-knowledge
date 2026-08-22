@@ -16,17 +16,17 @@ import {
 import { buildIconMarker } from "@/lib/utils/iconGlyph";
 import { cleanupDescriptionText } from "@/lib/utils/text";
 
-type FoundryLinePart = {
+type ClarityLinePart = {
 	text?: string;
 	classNames?: string[];
 };
 
-type FoundryDescriptionBlock = {
-	linesContent?: FoundryLinePart[];
+type ClarityDescriptionBlock = {
+	linesContent?: ClarityLinePart[];
 	classNames?: string[];
 };
 
-type FoundryRecord = {
+type ClarityRecord = {
 	hash: number;
 	name: string;
 	itemHash?: number;
@@ -34,11 +34,11 @@ type FoundryRecord = {
 	type?: string;
 	lastUpload?: number;
 	descriptions?: {
-		en?: FoundryDescriptionBlock[];
+		en?: ClarityDescriptionBlock[];
 	};
 };
 
-type FoundryPayload = Record<string, FoundryRecord>;
+type ClarityPayload = Record<string, ClarityRecord>;
 
 function normalizeTitle(value: string) {
 	return value
@@ -53,15 +53,15 @@ function toTitleCase(value: string) {
 	return value[0].toUpperCase() + value.slice(1).toLowerCase();
 }
 
-type FlattenedFoundryDescription = {
+type FlattenedClarityDescription = {
 	text: string;
 	iconGlyphs: IconGlyph[];
 };
 
-function flattenFoundryDescription(
-	blocks: FoundryDescriptionBlock[] | undefined,
+function flattenClarityDescription(
+	blocks: ClarityDescriptionBlock[] | undefined,
 	resolveGlyphIcon: (className: string) => string | undefined,
-): FlattenedFoundryDescription {
+): FlattenedClarityDescription {
 	if (!blocks || blocks.length === 0) return { text: "", iconGlyphs: [] };
 
 	const iconGlyphs: IconGlyph[] = [];
@@ -112,9 +112,9 @@ function flattenFoundryDescription(
 	};
 }
 
-export const FOUNDRY_FALLBACK_TAB = "Foundry";
+export const CLARITY_FALLBACK_TAB = "Clarity";
 
-function mapFoundryTypeToTab(type: string | undefined) {
+function mapClarityTypeToTab(type: string | undefined) {
 	const normalized = (type ?? "").toLowerCase();
 	if (normalized.includes("trait exotic")) return "Exotic Perks";
 	if (normalized.includes("artifact")) return "Artifact Perks";
@@ -125,10 +125,10 @@ function mapFoundryTypeToTab(type: string | undefined) {
 		return "Weapon Perks";
 	}
 	if (normalized.includes("armor mod")) return "Armor Mods";
-	return FOUNDRY_FALLBACK_TAB;
+	return CLARITY_FALLBACK_TAB;
 }
 
-function mapFoundryTypeToGroups(type: string | undefined): string[] {
+function mapClarityTypeToGroups(type: string | undefined): string[] {
 	const normalized = (type ?? "").toLowerCase();
 	const groups: string[] = [];
 
@@ -150,33 +150,33 @@ function mapFoundryTypeToGroups(type: string | undefined): string[] {
 		groups.push(type.trim());
 	}
 
-	return groups.length > 0 ? groups : [FOUNDRY_FALLBACK_TAB];
+	return groups.length > 0 ? groups : [CLARITY_FALLBACK_TAB];
 }
 
 function toEntry(
-	record: FoundryRecord,
+	record: ClarityRecord,
 	index: number,
 	resolveGlyphIcon: (className: string) => string | undefined,
 ): Entry | null {
 	const title = record.name?.trim() ?? "";
 	if (!title) return null;
 
-	const { text: description, iconGlyphs } = flattenFoundryDescription(
+	const { text: description, iconGlyphs } = flattenClarityDescription(
 		record.descriptions?.en,
 		resolveGlyphIcon,
 	);
 	if (!description) return null;
 
-	const tabName = mapFoundryTypeToTab(record.type);
-	const section = record.type?.trim() || "Foundry";
+	const tabName = mapClarityTypeToTab(record.type);
+	const section = record.type?.trim() || "Clarity";
 
 	return {
-		id: `foundry:${record.hash}:${normalizeTitle(title)}`,
+		id: `clarity:${record.hash}:${normalizeTitle(title)}`,
 		tab: tabName,
 		section,
-		groups: mapFoundryTypeToGroups(record.type),
+		groups: mapClarityTypeToGroups(record.type),
 		source: {
-			tab: "foundry",
+			tab: "clarity",
 			row: index,
 			column: 0,
 		},
@@ -187,20 +187,20 @@ function toEntry(
 	};
 }
 
-export async function loadFoundryRecords() {
+export async function loadClarityRecords() {
 	const filePath = path.join(
 		process.cwd(),
 		"public",
 		"assets",
 		"data",
-		"foundry.json",
+		"clarity.json",
 	);
 	const contents = await readFile(filePath, "utf8");
-	return JSON.parse(contents) as FoundryPayload;
+	return JSON.parse(contents) as ClarityPayload;
 }
 
-export async function loadFoundrySource() {
-	const payload = await loadFoundryRecords();
+export async function loadClaritySource() {
+	const payload = await loadClarityRecords();
 	const records = Object.values(payload);
 	const bungieResolver = await loadBungieManifestSnapshotResolver();
 	const resolveGlyphIcon = (className: string) =>
@@ -218,7 +218,7 @@ export async function loadFoundrySource() {
 		entries.push(entry);
 
 		const sourceRef: UnifiedSourceRef = {
-			sourceId: "foundry",
+			sourceId: "clarity",
 			sourceKey: String(record.hash),
 			hash: record.hash,
 			itemHash: record.itemHash,
@@ -256,7 +256,7 @@ export async function loadFoundrySource() {
 				section: entry.section,
 				sourceType: record.type,
 			}),
-			sourceId: "foundry",
+			sourceId: "clarity",
 			sourceRefs: [sourceRef],
 			title: enrichment?.perkName?.trim() || entry.title,
 			secondaryName: resolvedItemName,

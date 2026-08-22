@@ -54,7 +54,7 @@ export default async function ArtifactsPage() {
 	}));
 
 	// Only the artifact perks (plus whatever their keywords reference) get
-	// serialized into the RSC payload — the full dataset is ~5 MB.
+	// serialized into the RSC payload - the full dataset is ~5 MB.
 	const bundle = buildTooltipBundle(
 		dataset,
 		getArtifactPerkEntries(dataset.entries),

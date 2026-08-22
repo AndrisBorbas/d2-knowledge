@@ -13,6 +13,9 @@ function scoreCompendiumEntries(
 		title: entry.title,
 		description: entry.description,
 		originalDescription: entry.officialDescription ?? "",
+		alternateDescriptions: (entry.alternateDescriptions ?? [])
+			.map((alternate) => alternate.text)
+			.join("\n"),
 		secondaryName: entry.secondaryName ?? "",
 		secondaryDetail: entry.secondaryDetail ?? "",
 		extraInfo: entry.extraInfo ?? "",
@@ -31,6 +34,7 @@ function scoreCompendiumEntries(
 			{ name: "secondaryName", weight: 0.56 },
 			{ name: "description", weight: 0.54 },
 			{ name: "originalDescription", weight: 0.53 },
+			{ name: "alternateDescriptions", weight: 0.53 },
 			{ name: "secondaryDetail", weight: 0.52 },
 			{ name: "extraInfo", weight: 0.5 },
 			{ name: "itemHash", weight: 0.4 },

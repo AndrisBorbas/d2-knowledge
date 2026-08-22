@@ -4,10 +4,18 @@ import Image from "next/image";
 
 import {
 	type AttributionSource,
+	getAttributionSource,
 	getSourceAttribution,
 } from "@/lib/compendium/attribution";
-import type { Annotation } from "@/lib/compendium/model";
-import { useTooltipAlignStore } from "@/lib/site/tooltipAlignStore";
+import {
+	type DescriptionBlock,
+	getDescriptionBlocks,
+} from "@/lib/compendium/descriptions";
+import type { Annotation, IconGlyph } from "@/lib/compendium/model";
+import {
+	type DescriptionSourceToggle,
+	useSettingsStore,
+} from "@/lib/site/settingsStore";
 import { cn } from "@/lib/utils/utils";
 
 import { TextWithTooltips } from "./TextWithTooltips";
@@ -53,6 +61,7 @@ export function IconSlot({
 function DescriptionText({
 	text,
 	annotations,
+	iconGlyphs,
 	className,
 	entry,
 	entryMap,
@@ -63,9 +72,10 @@ function DescriptionText({
 }: TooltipContentProps & {
 	text: string;
 	annotations: Annotation[];
+	iconGlyphs?: IconGlyph[];
 	className?: string;
 }) {
-	const align = useTooltipAlignStore((state) => state.align);
+	const align = useSettingsStore((state) => state.tooltipAlign);
 
 	return (
 		<p
@@ -78,6 +88,7 @@ function DescriptionText({
 			<TextWithTooltips
 				text={text}
 				annotations={annotations}
+				iconGlyphs={iconGlyphs}
 				entry={entry}
 				entryMap={entryMap}
 				keywordById={keywordMap}
@@ -89,7 +100,13 @@ function DescriptionText({
 	);
 }
 
-function SourceAttribution({ sources }: { sources: AttributionSource[] }) {
+function SourceAttribution({
+	sources,
+	variantLabel,
+}: {
+	sources: AttributionSource[];
+	variantLabel?: string;
+}) {
 	return (
 		<p className="border-y border-t-gray-500 border-b-blue-600/50 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/75 uppercase">
 			Extra info provided by{" "}
@@ -106,35 +123,90 @@ function SourceAttribution({ sources }: { sources: AttributionSource[] }) {
 					</a>
 				</span>
 			))}
+			{variantLabel ? (
+				<span className="text-white/55"> ({variantLabel})</span>
+			) : null}
 		</p>
 	);
 }
 
+function isToggleableSource(
+	sourceId: DescriptionBlock["sourceId"],
+): sourceId is DescriptionSourceToggle {
+	return sourceId === "bungie" || sourceId === "clarity" || sourceId === "ddc";
+}
+
 // In-game text first, then who the community text below it came from, then the
-// community text itself.
+// community text itself - but the per-group config can reorder the bodies, and
+// an entry can now carry two community descriptions (Clarity's and the
+// DDC's), so the attribution has to say which is which.
 function EntryDescriptions(props: TooltipContentProps) {
 	const { entry } = props;
-	const attributionSources = getSourceAttribution(entry);
+	const visibleSources = useSettingsStore((state) => state.visibleSources);
+
+	const blocks = getDescriptionBlocks(entry).filter(
+		(block) =>
+			!isToggleableSource(block.sourceId) || visibleSources[block.sourceId],
+	);
+
+	if (blocks.length === 0) {
+		return (
+			<p className="p-4 text-center text-xs text-white/45">
+				All description sources are hidden. Re-enable one in the settings menu.
+			</p>
+		);
+	}
+
+	const communityBlocks = blocks.filter((block) => block.sourceId !== "bungie");
+	// With a single community body the combined bar can credit every source that
+	// fed the entry, exactly as before. With two, that bar would be ambiguous -
+	// label each body with its own source instead.
+	const labelPerBlock = communityBlocks.length > 1;
+	const combinedSources = labelPerBlock ? [] : getSourceAttribution(entry);
+	const firstCommunityBlock = communityBlocks[0];
+	// Two bodies from the same source (the Arc and Prismatic DDC rows for an
+	// aspect, say) need the tab name to tell them apart.
+	const duplicatedSourceIds = new Set(
+		communityBlocks
+			.map((block) => block.sourceId)
+			.filter((sourceId, index, all) => all.indexOf(sourceId) !== index),
+	);
 
 	return (
 		<>
-			{entry.officialDescription ? (
-				<DescriptionText
-					{...props}
-					text={entry.officialDescription}
-					annotations={entry.officialAnnotations ?? []}
-				/>
-			) : null}
+			{blocks.map((block, index) => {
+				const isCommunity = block.sourceId !== "bungie";
+				const blockSource = getAttributionSource(block.sourceId);
 
-			{attributionSources.length > 0 ? (
-				<SourceAttribution sources={attributionSources} />
-			) : null}
+				return (
+					<div key={`${block.sourceId}-${index}`}>
+						{isCommunity && labelPerBlock && blockSource ? (
+							<SourceAttribution
+								sources={[blockSource]}
+								variantLabel={
+									duplicatedSourceIds.has(block.sourceId)
+										? block.variantLabel
+										: undefined
+								}
+							/>
+						) : null}
 
-			<DescriptionText
-				{...props}
-				text={entry.description}
-				annotations={entry.annotations}
-			/>
+						{isCommunity &&
+						!labelPerBlock &&
+						block === firstCommunityBlock &&
+						combinedSources.length > 0 ? (
+							<SourceAttribution sources={combinedSources} />
+						) : null}
+
+						<DescriptionText
+							{...props}
+							text={block.text}
+							annotations={block.annotations}
+							iconGlyphs={block.iconGlyphs}
+						/>
+					</div>
+				);
+			})}
 		</>
 	);
 }

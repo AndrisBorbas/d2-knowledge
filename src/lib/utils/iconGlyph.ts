@@ -1,7 +1,7 @@
 // Private Use Area sentinels: guaranteed to never appear in source game text,
 // and never mistaken for a keyword term by the annotation matcher in
-// src/lib/sheet/keywords.ts (which treats any non-alphanumeric character as a
-// valid word boundary).
+// src/lib/compendium/keywords/annotate.ts (which treats any non-alphanumeric
+// character as a valid word boundary).
 const ICON_MARKER_OPEN = "";
 const ICON_MARKER_CLOSE = "";
 const ICON_MARKER_PATTERN = new RegExp(

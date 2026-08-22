@@ -18,6 +18,9 @@ type TextWithTooltipsProps = {
 	text?: string;
 	annotations: Annotation[];
 	entry: AnnotatedEntry;
+	// Inline glyph markers are indices into whichever array `text` was built
+	// against, so an alternate description has to bring its own.
+	iconGlyphs?: IconGlyph[];
 	entryMap: Map<string, AnnotatedEntry>;
 	keywordById: Map<string, Keyword>;
 	onKeywordHover?: (payload: KeywordHoverPayload) => void;
@@ -74,7 +77,7 @@ function renderDescriptionSegment(
 
 export function TextWithTooltips(props: TextWithTooltipsProps) {
 	const text = props.text ?? "";
-	const iconGlyphs = props.entry.iconGlyphs;
+	const iconGlyphs = props.iconGlyphs ?? props.entry.iconGlyphs;
 	const sorted = [...props.annotations]
 		.filter((item) => item.end > item.start && item.start >= 0)
 		.sort((a, b) => a.start - b.start);

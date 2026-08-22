@@ -1,4 +1,4 @@
-// Foundry perk descriptions embed inline icon glyphs as classNames instead
+// Clarity perk descriptions embed inline icon glyphs as classNames instead
 // of text (e.g. "arc", "overload"). These maps translate a glyph's className
 // to where its icon lives in the Bungie manifest.
 
@@ -38,7 +38,7 @@ export const STATIC_ICON_PATH_BY_GLYPH: Record<string, string> = {
 	warlock: `${DESTINY_ICONS_BASE}/general/class_warlock_outline.svg`,
 };
 
-// "Enhanced" trait indicator glyph — not an ability/element/ammo icon, skip.
+// "Enhanced" trait indicator glyph - not an ability/element/ammo icon, skip.
 export const SKIPPED_GLYPH_CLASS_NAMES = new Set(["enhancedArrow"]);
 
 // Bungie's own manifest descriptions spell their inline icons as bracketed
@@ -63,17 +63,16 @@ export const GLYPH_CLASS_NAME_BY_BUNGIE_TOKEN: Record<string, string> = {
 };
 
 // Bracketed "[###DestinyNamedSubstitutions.<key>###]" tokens are Bungie's
-// dynamic input prompts — the actual button/verb shown in-game depends on the
+// dynamic input prompts - the actual button/verb shown in-game depends on the
 // player's platform (keyboard vs. Xbox vs. PlayStation), which the manifest
 // text can't tell us. Each entry here supplies a static stand-in: either a
 // literal replacement string, or an icon (pulled from the manifest via
 // `resolveGlyphIcon`, same as the damage/breaker glyphs above, or from a
 // static asset path). Add entries as new keys turn up in fetched
-// descriptions — an unlisted key falls back to a readable version of itself
+// descriptions - an unlisted key falls back to a readable version of itself
 // (see `buildOfficialDescription`) instead of the raw "###...###" text.
 export type NamedSubstitutionReplacement =
-	| { text: string }
-	| { iconPath: string; label: string };
+	{ text: string } | { iconPath: string; label: string };
 
 export const NAMED_SUBSTITUTION_BY_TOKEN: Record<
 	string,

@@ -15,9 +15,9 @@ import {
 	ARTIFACT_TAB_NAME,
 	stripReleaseLabel,
 } from "../src/lib/compendium/artifacts";
-import { loadSheetSource } from "../src/lib/sheet/source";
+import { loadDdcSource } from "../src/lib/ddc/source";
 
-type FoundryRecord = {
+type ClarityRecord = {
 	hash?: number;
 	itemHash?: number;
 };
@@ -63,16 +63,16 @@ function asRecord<T>(value: unknown) {
 	return value as Record<string, T>;
 }
 
-async function collectFoundryManifestHashes() {
-	const foundryPath = path.join(
+async function collectClarityManifestHashes() {
+	const clarityPath = path.join(
 		process.cwd(),
 		"public",
 		"assets",
 		"data",
-		"foundry.json",
+		"clarity.json",
 	);
-	const contents = await readFile(foundryPath, "utf8");
-	const payload = JSON.parse(contents) as Record<string, FoundryRecord>;
+	const contents = await readFile(clarityPath, "utf8");
+	const payload = JSON.parse(contents) as Record<string, ClarityRecord>;
 
 	const perkHashes = new Set<number>();
 	const itemHashes = new Set<number>();
@@ -92,17 +92,17 @@ async function collectFoundryManifestHashes() {
 	};
 }
 
-async function collectSheetLookupTitles() {
+async function collectDdcLookupTitles() {
 	try {
-		const sheetSource = await loadSheetSource();
+		const ddcSource = await loadDdcSource();
 		const titleKeys = new Set<string>();
 
-		for (const entry of sheetSource.entries) {
+		for (const entry of ddcSource.entries) {
 			const candidates = [entry.title];
 
 			// Artifact names only ever appear as a section header ("Hunter's
 			// Journal (Echoes)"), never as an entry title, so allowlist them
-			// explicitly to keep their inventory item — and its icon — around.
+			// explicitly to keep their inventory item - and its icon - around.
 			if (entry.tab === ARTIFACT_TAB_NAME && entry.section) {
 				candidates.push(stripReleaseLabel(entry.section));
 			}
@@ -114,7 +114,7 @@ async function collectSheetLookupTitles() {
 			}
 		}
 
-		// Perks whose foundry record has no itemHash (see
+		// Perks whose clarity record has no itemHash (see
 		// exotic-perk-item-aliases.ts) resolve their item by title instead, so
 		// that item needs to survive the manifest filter too.
 		for (const itemName of Object.values(EXOTIC_PERK_ITEM_NAME_ALIASES)) {
@@ -125,17 +125,17 @@ async function collectSheetLookupTitles() {
 
 		return titleKeys;
 	} catch (error) {
-		console.warn("Unable to collect sheet lookup titles:", error);
+		console.warn("Unable to collect DDC lookup titles:", error);
 		return new Set<string>();
 	}
 }
 
 async function collectArmorSetNames() {
 	try {
-		const sheetSource = await loadSheetSource();
+		const ddcSource = await loadDdcSource();
 		const setNames = new Set<string>();
 
-		for (const entry of sheetSource.unifiedEntries) {
+		for (const entry of ddcSource.unifiedEntries) {
 			if (entry.kind !== "armor_set_bonus" || !entry.secondaryName) continue;
 			const key = normalizeLookupName(entry.secondaryName);
 			if (!key) continue;
@@ -181,11 +181,11 @@ type PerkFallbackDisplay = {
 	icon?: string;
 };
 
-// Many plug items — exotic catalysts, weapon mods (e.g. Icarus Grip) — carry
+// Many plug items - exotic catalysts, weapon mods (e.g. Icarus Grip) - carry
 // no useful text of their own: catalysts show the generic "Upgrades this
 // weapon to a Masterwork" boilerplate, and mods often have a flat-out empty
-// displayProperties.description. In both cases the real effect text — and
-// icon, for catalysts — lives on the first of the item's `perks`
+// displayProperties.description. In both cases the real effect text - and
+// icon, for catalysts - lives on the first of the item's `perks`
 // (DestinySandboxPerkDefinition entries) that has a non-empty description.
 // See destinysets for the same lookup.
 function resolvePerkFallbackDisplay(
@@ -247,8 +247,8 @@ function toCompactItemDefinition(
 		d: perkDisplay.description,
 		// The catalyst item's own icon is a generic masterwork box, so the
 		// perk's icon (the actual effect) replaces it. Other plug items (e.g.
-		// weapon mods) usually already show their own icon correctly — only
-		// their description is missing — so leave that icon alone.
+		// weapon mods) usually already show their own icon correctly - only
+		// their description is missing - so leave that icon alone.
 		i: isCatalystBoilerplate ? (perkDisplay.icon ?? compact.i) : compact.i,
 	};
 }
@@ -381,8 +381,8 @@ async function main() {
 	);
 	await mkdir(outputDir, { recursive: true });
 
-	const { perkHashes, itemHashes } = await collectFoundryManifestHashes();
-	const sheetTitleKeys = await collectSheetLookupTitles();
+	const { perkHashes, itemHashes } = await collectClarityManifestHashes();
+	const ddcTitleKeys = await collectDdcLookupTitles();
 	const armorSetNameKeys = await collectArmorSetNames();
 	const snapshot = await fetchDestinyManifestTables(DEFAULT_MANIFEST_TABLES);
 
@@ -400,7 +400,7 @@ async function main() {
 		DestinyInventoryItemDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinyInventoryItemDefinition,
 			inventoryHashes,
-			sheetTitleKeys,
+			ddcTitleKeys,
 			(value) =>
 				toCompactItemDefinition(
 					value,
@@ -410,12 +410,12 @@ async function main() {
 		DestinySandboxPerkDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinySandboxPerkDefinition,
 			allPerkHashes,
-			sheetTitleKeys,
+			ddcTitleKeys,
 		),
 		DestinyTraitDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinyTraitDefinition,
 			allPerkHashes,
-			sheetTitleKeys,
+			ddcTitleKeys,
 		),
 		DestinyDamageTypeDefinition: buildEnumKeyedTable(
 			snapshot.tables.DestinyDamageTypeDefinition,

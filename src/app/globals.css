@@ -77,6 +77,55 @@ h6 {
 	font-family: var(--font-display);
 }
 
+/* Radix keeps the dialog mounted until these finish, so the closed variants
+   are what give it an exit transition rather than a pop. */
+@theme {
+	--animate-dialog-overlay-in: dialog-overlay-in 150ms ease-out;
+	--animate-dialog-overlay-out: dialog-overlay-out 120ms ease-in;
+	--animate-dialog-content-in: dialog-content-in 150ms ease-out;
+	--animate-dialog-content-out: dialog-content-out 120ms ease-in;
+
+	@keyframes dialog-overlay-in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes dialog-overlay-out {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	/* Animate the standalone `scale` property, not `transform` - the centering
+	   comes from Tailwind's translate utilities, which set `translate`, and a
+	   `transform: translate(...)` here would stack on top of it. */
+	@keyframes dialog-content-in {
+		from {
+			opacity: 0;
+			scale: 0.97;
+		}
+		to {
+			opacity: 1;
+			scale: 1;
+		}
+	}
+	@keyframes dialog-content-out {
+		from {
+			opacity: 1;
+			scale: 1;
+		}
+		to {
+			opacity: 0;
+			scale: 0.97;
+		}
+	}
+}
+
 @layer components {
 	.background {
 		@apply fixed inset-0 -z-1 box-content;

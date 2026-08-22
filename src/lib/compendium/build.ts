@@ -1,32 +1,24 @@
 import { STATIC_ICON_PATH_BY_GLYPH } from "@/lib/bungie/glyphs";
 import { buildOfficialDescription } from "@/lib/bungie/officialDescription";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
-import { loadFoundrySource } from "@/lib/foundry/source";
-import { loadSheetSource } from "@/lib/sheet/source";
+import { loadClaritySource } from "@/lib/clarity/source";
+import { loadDdcSource } from "@/lib/ddc/source";
+import { isSameDescription } from "@/lib/utils/text";
 
 import { mergeUnifiedEntries, toEntries } from "./aggregate";
 import { annotateEntries, buildKeywords, toSlug } from "./keywords/annotate";
 import { Verbs } from "./keywords/data";
 import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
 
-function isSameDescription(a: string, b: string) {
-	const normalize = (value: string) =>
-		value
-			.toLowerCase()
-			.replace(/[^a-z0-9]+/g, " ")
-			.trim();
-	return normalize(a) === normalize(b);
-}
-
 export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
-	const [sheetSource, foundrySource] = await Promise.all([
-		loadSheetSource(),
-		loadFoundrySource(),
+	const [ddcSource, claritySource] = await Promise.all([
+		loadDdcSource(),
+		loadClaritySource(),
 	]);
 
 	const mergedUnifiedEntries = mergeUnifiedEntries([
-		...sheetSource.unifiedEntries,
-		...foundrySource.unifiedEntries,
+		...ddcSource.unifiedEntries,
+		...claritySource.unifiedEntries,
 	]);
 	const bungieResolver = await loadBungieManifestSnapshotResolver();
 	const enrichedUnifiedEntries = mergedUnifiedEntries.map((entry) => {
@@ -58,7 +50,7 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 		bungieResolver?.getGlyphIconPath(className);
 
 	// Runs after the merge so each surviving entry is looked up once, using
-	// whichever title/hashes won — the icon pass above can't host this because
+	// whichever title/hashes won - the icon pass above can't host this because
 	// it early-returns for entries that already have an icon.
 	const withOfficialDescriptions = enrichedUnifiedEntries.map((entry) => {
 		const raw = bungieResolver?.getOfficialDescription({
@@ -74,14 +66,23 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 			resolveGlyphIcon,
 		});
 		if (!built) return entry;
-		// Sheet/Clarity text that just copies the in-game string would print the
-		// same paragraph twice on the card.
+		// DDC/Clarity text that just copies the in-game string would print the
+		// same paragraph twice on the card - and with alternates the card can now
+		// hold three bodies, so every one of them has to be checked.
 		if (isSameDescription(built.text, entry.description)) return entry;
+
+		const alternateDescriptions = entry.alternateDescriptions?.filter(
+			(alternate) => !isSameDescription(built.text, alternate.text),
+		);
 
 		return {
 			...entry,
 			officialDescription: built.text,
 			iconGlyphs: built.iconGlyphs.length > 0 ? built.iconGlyphs : undefined,
+			alternateDescriptions:
+				alternateDescriptions && alternateDescriptions.length > 0
+					? alternateDescriptions
+					: undefined,
 		};
 	});
 
@@ -93,15 +94,13 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 	const annotatedEntries = annotateEntries(
 		mergedEntries,
 		keywords,
-		sheetSource.colors,
-	).map(
-		(entry) => {
-			const isVerb = Verbs.some(
-				(verb) => toSlug(verb.name) === toSlug(entry.title.trim()),
-			);
-			return isVerb ? { ...entry, groups: [...entry.groups, "Verb"] } : entry;
-		},
-	);
+		ddcSource.colors,
+	).map((entry) => {
+		const isVerb = Verbs.some(
+			(verb) => toSlug(verb.name) === toSlug(entry.title.trim()),
+		);
+		return isVerb ? { ...entry, groups: [...entry.groups, "Verb"] } : entry;
+	});
 
 	const dataset = {
 		generatedAt: new Date().toISOString(),

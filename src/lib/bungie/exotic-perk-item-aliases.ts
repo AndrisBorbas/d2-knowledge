@@ -1,8 +1,8 @@
-// Some exotic-armor perks in the Clarity database (foundry.json) ship
+// Some exotic-armor perks in the Clarity database (clarity.json) ship
 // without an `itemHash` at all, so getExoticEnrichment() has nothing to look
-// up the owning item by — the perk shows with no "Item: ..." attribution.
-// This maps the perk's exact foundry `name` to the item it belongs to, used
-// as a fallback only when the foundry record has no itemHash. Also read by
+// up the owning item by - the perk shows with no "Item: ..." attribution.
+// This maps the perk's exact Clarity `name` to the item it belongs to, used
+// as a fallback only when the Clarity record has no itemHash. Also read by
 // scripts/fetch-bungie-manifest.mts, which needs the item title allowlisted
 // so its icon/name make it into the compiled manifest snapshot at all.
 export const EXOTIC_PERK_ITEM_NAME_ALIASES: Record<string, string> = {

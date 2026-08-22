@@ -133,4 +133,9 @@ export const extraAliases: Verb[] = [
 	},
 ];
 
+// Terms whose plural is an ordinary English word that has nothing to do with
+// the perk - "at the edges", "the laws of physics", "elemental synergies".
+// `buildTermPattern` matches these in the singular only.
+export const noPluralTerms = ["Edge", "Physic", "Synergy"];
+
 export const classNames = ["Hunter", "Titan", "Warlock"];

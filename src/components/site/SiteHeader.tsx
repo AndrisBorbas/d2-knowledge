@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import { LIVE_SITE_SECTIONS } from "@/lib/site/sections";
 import { cn } from "@/lib/utils/utils";
 
+import { SettingsDialog } from "./SettingsDialog";
+
 export function SiteHeader() {
 	const pathname = usePathname();
 
@@ -54,6 +56,10 @@ export function SiteHeader() {
 							</Link>
 						);
 					})}
+				</div>
+
+				<div className="ml-auto flex items-center">
+					<SettingsDialog />
 				</div>
 			</nav>
 		</header>

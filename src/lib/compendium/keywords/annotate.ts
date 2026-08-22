@@ -1,13 +1,15 @@
-import { type SheetColorIndex, sheetColorKey } from "@/lib/sheet/api";
+import { type SheetColorIndex, sheetColorKey } from "@/lib/ddc/api";
 
 import type {
+	AnnotatedAlternateDescription,
 	AnnotatedEntry,
 	Annotation,
+	DescriptionSegment,
 	Entry,
 	Keyword,
 	KeywordCategory,
 } from "../model";
-import { extraAliases, Verbs } from "./data";
+import { extraAliases, noPluralTerms, Verbs } from "./data";
 import { annotatePatterns } from "./patterns";
 
 const ELEMENT_TERMS = new Set([
@@ -133,12 +135,36 @@ export function intersects(
 	return a.start < b.end && b.start < a.end;
 }
 
+// Descriptions say "healing grenades" as readily as "healing grenade", and the
+// trailing-boundary lookahead below rejects the `s`, so the plural went
+// unannotated. The suffix is part of the matched group, not a lookahead, so the
+// whole word ends up inside one annotation span instead of leaving an orphan
+// letter outside the link.
+const NO_PLURAL_TERMS = new Set(
+	noPluralTerms.map((term) => term.toLowerCase()),
+);
+
+export function buildTermPattern(term: string) {
+	if (NO_PLURAL_TERMS.has(term.toLowerCase())) {
+		return escapeRegExp(term);
+	}
+	// ability -> abilities
+	if (/[^aeiou]y$/i.test(term)) {
+		return `${escapeRegExp(term.slice(0, -1))}(?:y|ies)`;
+	}
+	// boss -> bosses, punch -> punches
+	if (/(?:s|x|z|ch|sh)$/i.test(term)) {
+		return `${escapeRegExp(term)}(?:es)?`;
+	}
+	return `${escapeRegExp(term)}s?`;
+}
+
 export function annotateText(text: string, terms: KeywordMatchTerm[]) {
 	const candidates: Annotation[] = [];
 
 	for (const term of terms) {
 		const pattern = new RegExp(
-			`(^|[^A-Za-z0-9])(${escapeRegExp(term.term)})(?=$|[^A-Za-z0-9])`,
+			`(^|[^A-Za-z0-9])(${buildTermPattern(term.term)})(?=$|[^A-Za-z0-9])`,
 			"gi",
 		);
 
@@ -210,13 +236,14 @@ function subtractIntervals(
 }
 
 function buildSheetColorAnnotations(
-	entry: Entry,
+	text: string,
+	segments: DescriptionSegment[] | undefined,
 	sheetColors: SheetColorIndex,
 	blockers: { start: number; end: number }[],
 ): Annotation[] {
 	const results: Annotation[] = [];
 
-	for (const segment of entry.descriptionSegments ?? []) {
+	for (const segment of segments ?? []) {
 		const cell = sheetColors.get(
 			sheetColorKey(
 				segment.source.tab,
@@ -226,7 +253,7 @@ function buildSheetColorAnnotations(
 		);
 		if (!cell) continue;
 
-		const segmentText = entry.description.slice(
+		const segmentText = text.slice(
 			segment.start,
 			segment.start + segment.length,
 		);
@@ -249,7 +276,7 @@ function buildSheetColorAnnotations(
 					keywordId: `sheet-color:${segment.source.tab}:${segment.source.row}:${segment.source.column}:${run.start}:${piece.start}`,
 					start: piece.start,
 					end: piece.end,
-					text: entry.description.slice(piece.start, piece.end),
+					text: text.slice(piece.start, piece.end),
 					color: run.color,
 				});
 			}
@@ -259,6 +286,33 @@ function buildSheetColorAnnotations(
 	return results;
 }
 
+// Keyword pass, then patterns carved around the keywords, then sheet colors
+// carved around both. Every offset it returns indexes into `text` alone.
+function annotateBody(
+	text: string,
+	segments: DescriptionSegment[] | undefined,
+	terms: KeywordMatchTerm[],
+	sheetColors: SheetColorIndex,
+): Annotation[] {
+	const keywordAnnotations = annotateText(text, terms);
+	const patternAnnotations = annotatePatterns(text).filter(
+		(pattern) =>
+			!keywordAnnotations.some((keyword) => intersects(keyword, pattern)),
+	);
+	const sheetColorAnnotations = buildSheetColorAnnotations(
+		text,
+		segments,
+		sheetColors,
+		[...keywordAnnotations, ...patternAnnotations],
+	);
+
+	return [
+		...keywordAnnotations,
+		...patternAnnotations,
+		...sheetColorAnnotations,
+	].sort((a, b) => a.start - b.start);
+}
+
 export function annotateEntries(
 	entries: Entry[],
 	keywords: Keyword[],
@@ -266,25 +320,30 @@ export function annotateEntries(
 ) {
 	const terms = buildKeywordTerms(keywords);
 	return entries.map((entry): AnnotatedEntry => {
-		const keywordAnnotations = annotateText(entry.description, terms);
-		const patternAnnotations = annotatePatterns(entry.description).filter(
-			(pattern) =>
-				!keywordAnnotations.some((keyword) => intersects(keyword, pattern)),
-		);
-		const sheetColorAnnotations = buildSheetColorAnnotations(
-			entry,
-			sheetColors,
-			[...keywordAnnotations, ...patternAnnotations],
-		);
+		const alternateDescriptions: AnnotatedAlternateDescription[] | undefined =
+			entry.alternateDescriptions?.map((alternate) => ({
+				...alternate,
+				annotations: annotateBody(
+					alternate.text,
+					alternate.descriptionSegments,
+					terms,
+					sheetColors,
+				),
+			}));
 
 		return {
 			...entry,
-			annotations: [
-				...keywordAnnotations,
-				...patternAnnotations,
-				...sheetColorAnnotations,
-			].sort((a, b) => a.start - b.start),
-			officialAnnotations: annotateDescription(entry.officialDescription, terms),
+			annotations: annotateBody(
+				entry.description,
+				entry.descriptionSegments,
+				terms,
+				sheetColors,
+			),
+			officialAnnotations: annotateDescription(
+				entry.officialDescription,
+				terms,
+			),
+			alternateDescriptions,
 		};
 	});
 }

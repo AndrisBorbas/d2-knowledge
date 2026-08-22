@@ -7,8 +7,8 @@ import {
 	NAMED_SUBSTITUTION_BY_TOKEN,
 } from "./glyphs";
 
-// Bungie's spacing after a token is inconsistent — "[Arc]Arc", "[Stasis] Stasis"
-// and "[Heavy Attack]  :" all occur — so the trailing whitespace is swallowed
+// Bungie's spacing after a token is inconsistent - "[Arc]Arc", "[Stasis] Stasis"
+// and "[Heavy Attack]  :" all occur - so the trailing whitespace is swallowed
 // and re-emitted as exactly one space.
 const BRACKET_TOKEN_PATTERN = /\[([^\][]+)\][ \t]*/g;
 
@@ -41,7 +41,7 @@ export type BuiltOfficialDescription = {
 };
 
 // Exotic catalyst items carry this boilerplate as their own displayProperties
-// description — the actual catalyst effect lives on a perk referenced by the
+// description - the actual catalyst effect lives on a perk referenced by the
 // item's `perks` array instead. Shared with scripts/fetch-bungie-manifest.mts,
 // which swaps the boilerplate for that perk's description before this filter runs.
 export const CATALYST_MASTERWORK_BOILERPLATE_PREFIXES = [
@@ -51,7 +51,7 @@ export const CATALYST_MASTERWORK_BOILERPLATE_PREFIXES = [
 
 // Armor charge mods (Weapon Surge, etc.) carry this generic Armor Charge
 // blurb as their own displayProperties description instead of their actual
-// per-mod effect, which — same as the catalyst case above — lives on a perk
+// per-mod effect, which - same as the catalyst case above - lives on a perk
 // referenced by the item's `perks` array. Shared with
 // scripts/fetch-bungie-manifest.mts for the same swap-before-filter reason.
 export const ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES = [
@@ -62,7 +62,7 @@ export const ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES = [
  * Turns a raw Destiny 2 manifest description into the app's description format:
  * bracketed glyph tokens become inline icon markers, everything else stays text.
  *
- * `existingGlyphs` must be the entry's current `iconGlyphs` — markers are
+ * `existingGlyphs` must be the entry's current `iconGlyphs` - markers are
  * resolved against one flat per-entry array at render time, so new glyphs are
  * numbered starting at that array's length and returned appended to it.
  */

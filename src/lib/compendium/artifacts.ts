@@ -2,7 +2,7 @@ import type { AnnotatedEntry } from "./model";
 
 export const ARTIFACT_TAB_NAME = "Artifact Perks";
 
-// Sheet sections look like "Hunter's Journal (Echoes)": the artifact name plus
+// DDC sections look like "Hunter's Journal (Echoes)": the artifact name plus
 // the release it shipped with.
 const RELEASE_LABEL_PATTERN = /^(.*?)\s*\(([^()]+)\)\s*$/;
 
@@ -23,7 +23,7 @@ export function toArtifactSlug(name: string) {
 	);
 }
 
-// One slot group per sheet column — the three columns of the Artifact Perks tab
+// One slot group per DDC column - the three columns of the Artifact Perks tab
 // are the three unlock rows the game shows.
 export type ArtifactSlotGroup = {
 	column: number;
@@ -53,7 +53,7 @@ export function buildArtifacts(entries: AnnotatedEntry[]): Artifact[] {
 		}
 	}
 
-	// Insertion order mirrors the sheet, which lists artifacts newest first.
+	// Insertion order mirrors the DDC, which lists artifacts newest first.
 	return [...bySection.entries()].map(([section, sectionEntries]) => {
 		const match = RELEASE_LABEL_PATTERN.exec(section);
 		const name = match?.[1]?.trim() ?? section.trim();

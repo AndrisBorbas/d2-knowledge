@@ -5,7 +5,7 @@ import type {
 	SourceSpan,
 	TabData,
 } from "@/lib/compendium/model";
-import type { Section } from "@/lib/sheet/types";
+import type { Section } from "@/lib/ddc/types";
 
 export type TabNormalizationRule = {
 	strategy:
@@ -22,7 +22,7 @@ export type TabNormalizationRule = {
 	// "Titan" / "Warlock") resets the current section to this value. Needed
 	// for tabs like Prismatic, where each class's exclusive grenade follows
 	// its class marker directly with no "Grenade Abilities" header row of its
-	// own — without this the row inherits whatever section header last
+	// own - without this the row inherits whatever section header last
 	// appeared (elsewhere in the tab), mislabeling it and, if that section
 	// happens to be "Fragments", wrongly prepending fragmentTitlePrefix too.
 	sectionAfterClassMarker?: string;
@@ -261,7 +261,7 @@ function buildEntryFromSameRow(
 		// Prismatic lists each class's shared (non-exclusive) grenades/melees
 		// as a flat row of names borrowed from other subclasses ("Arcbolt
 		// Grenade", "Swarm Grenade", ...) rather than a title+description
-		// pair — reject those instead of treating the next name as a
+		// pair - reject those instead of treating the next name as a
 		// "description".
 		if (
 			typeof rule.minDescriptionLength === "number" &&

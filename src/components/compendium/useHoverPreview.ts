@@ -96,7 +96,7 @@ export function useHoverPreview(params: {
 		};
 	}, [hoverPreview]);
 
-	// Anchor a preview to an arbitrary element without going through a keyword —
+	// Anchor a preview to an arbitrary element without going through a keyword -
 	// used by the artifact grid, where the icon *is* the entry.
 	const showEntryPreview = (entryId: string, anchorRect: DOMRect) => {
 		if (!entryMap.has(entryId)) return;

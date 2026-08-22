@@ -5,9 +5,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import { Analytics } from "@/components/Analytics";
+import { SettingsHydrator } from "@/components/site/SettingsHydrator";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import { TooltipAlignHydrator } from "@/components/site/TooltipAlignHydrator";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site/meta";
 
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
 };
 
 // The footer only needs the dataset's timestamp, but a failed load must not
-// take the whole site down — the pages render their own error states.
+// take the whole site down - the pages render their own error states.
 async function readGeneratedAt() {
 	try {
 		const dataset = await loadCompendiumDataset();
@@ -122,7 +122,7 @@ export default async function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
 		>
 			<body className="flex min-h-full flex-col">
-				<TooltipAlignHydrator />
+				<SettingsHydrator />
 
 				<div className="background">
 					<div className="background-image" />

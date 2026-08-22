@@ -13,7 +13,7 @@ const SUPPORTED_EXTENSIONS = new Set([
 
 // The big in-game artifact graphics aren't exposed by the Bungie API, so they
 // are dropped into public/assets/images/artifacts/<slug>.<ext> by hand.
-// Missing art is expected — the showcase falls back to a placeholder.
+// Missing art is expected - the showcase falls back to a placeholder.
 let cachedArtMap: Promise<Map<string, string>> | null = null;
 
 async function readArtifactArtMap() {

@@ -32,10 +32,7 @@ function normalizeTitle(value: string) {
 const ARMOR_SET_BONUS_DESCRIPTION_PATTERN =
 	/^(\d+)\s*Piece\s*\|\s*(.+?)\s*\n+([\s\S]*)$/i;
 
-function buildExtraInfo(
-	pieceCount: string | undefined,
-	setName: string,
-) {
+function buildExtraInfo(pieceCount: string | undefined, setName: string) {
 	const pieceLabel = pieceCount ? `${pieceCount} Piece` : undefined;
 	return [pieceLabel, setName].filter(Boolean).join(" | ") || undefined;
 }
@@ -80,7 +77,7 @@ function parseArmorSetBonusFields(entry: Entry) {
 	};
 }
 
-export async function loadSheetTabs(): Promise<{
+export async function loadDdcTabs(): Promise<{
 	tabs: TabData[];
 	colors: SheetColorIndex;
 }> {
@@ -95,14 +92,14 @@ export async function loadSheetTabs(): Promise<{
 	return { tabs: normalizeTabs(grid, COMPENDIUM_TAB_NORMALIZATION), colors };
 }
 
-export function toUnifiedSheetEntries(
+export function toUnifiedDdcEntries(
 	tabs: TabData[],
 	bungieResolver: BungieManifestSnapshotResolver | null = null,
 ) {
 	const entries = tabs.flatMap((tab) => tab.entries);
 	const unifiedEntries = entries.map((entry): UnifiedEntry => {
 		const sourceRef: UnifiedSourceRef = {
-			sourceId: "sheet",
+			sourceId: "ddc",
 			sourceKey: `${entry.source.tab}:${entry.source.row}:${entry.source.column}`,
 			tab: entry.source.tab,
 			row: entry.source.row,
@@ -128,9 +125,9 @@ export function toUnifiedSheetEntries(
 
 			return {
 				...entry,
-				id: `sheet:${normalizeTitle(parsed.title)}:${entry.source.row}:${entry.source.column}`,
+				id: `ddc:${normalizeTitle(parsed.title)}:${entry.source.row}:${entry.source.column}`,
 				kind,
-				sourceId: "sheet",
+				sourceId: "ddc",
 				sourceRefs: [sourceRef],
 				title: bonusEnrichment?.perkName ?? parsed.title,
 				description: parsed.description,
@@ -145,9 +142,9 @@ export function toUnifiedSheetEntries(
 
 		return {
 			...entry,
-			id: `sheet:${normalizeTitle(entry.title)}:${entry.source.row}:${entry.source.column}`,
+			id: `ddc:${normalizeTitle(entry.title)}:${entry.source.row}:${entry.source.column}`,
 			kind,
-			sourceId: "sheet",
+			sourceId: "ddc",
 			sourceRefs: [sourceRef],
 		};
 	});
@@ -158,21 +155,18 @@ export function toUnifiedSheetEntries(
 	};
 }
 
-export type SheetSourceResult = {
+export type DdcSourceResult = {
 	tabs: TabData[];
 	entries: Entry[];
 	unifiedEntries: UnifiedEntry[];
 	colors: SheetColorIndex;
 };
 
-export async function loadSheetSource(): Promise<SheetSourceResult> {
+export async function loadDdcSource(): Promise<DdcSourceResult> {
 	const [{ tabs, colors }, bungieResolver] = await Promise.all([
-		loadSheetTabs(),
+		loadDdcTabs(),
 		loadBungieManifestSnapshotResolver(),
 	]);
-	const { entries, unifiedEntries } = toUnifiedSheetEntries(
-		tabs,
-		bungieResolver,
-	);
+	const { entries, unifiedEntries } = toUnifiedDdcEntries(tabs, bungieResolver);
 	return { tabs, entries, unifiedEntries, colors };
 }

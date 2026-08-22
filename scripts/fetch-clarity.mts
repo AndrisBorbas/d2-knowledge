@@ -1,14 +1,16 @@
 import { writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const FOUNDRY_URL =
+// Upstream still calls the file foundry.json - that is Clarity's own naming,
+// not ours, so the remote path stays as-is while the local copy is clarity.json.
+const CLARITY_URL =
 	"https://raw.githubusercontent.com/Database-Clarity/Live-Clarity-Database/live/descriptions/foundry.json";
 
 async function main() {
-	const response = await fetch(FOUNDRY_URL);
+	const response = await fetch(CLARITY_URL);
 	if (!response.ok) {
 		throw new Error(
-			`Failed to fetch foundry.json: ${response.status} ${response.statusText}`,
+			`Failed to fetch Clarity descriptions: ${response.status} ${response.statusText}`,
 		);
 	}
 
@@ -18,11 +20,11 @@ async function main() {
 		"public",
 		"assets",
 		"data",
-		"foundry.json",
+		"clarity.json",
 	);
 	await writeFile(outputPath, JSON.stringify(payload, null, "\t"), "utf8");
 
-	console.log(`Wrote foundry data: ${outputPath}`);
+	console.log(`Wrote Clarity data: ${outputPath}`);
 }
 
 main().catch((error) => {

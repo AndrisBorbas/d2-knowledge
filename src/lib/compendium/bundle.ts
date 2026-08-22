@@ -29,6 +29,9 @@ export function buildTooltipBundle(
 		const annotations = [
 			...entry.annotations,
 			...(entry.officialAnnotations ?? []),
+			...(entry.alternateDescriptions ?? []).flatMap(
+				(alternate) => alternate.annotations,
+			),
 		];
 
 		for (const annotation of annotations) {

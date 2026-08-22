@@ -1,6 +1,6 @@
 import type { Entry } from "@/lib/compendium/model";
 
-export type UnifiedSourceId = "sheet" | "foundry" | "bungie" | "manual";
+export type UnifiedSourceId = "ddc" | "clarity" | "bungie" | "manual";
 
 export type UnifiedEntryKind =
 	| "armor_set_bonus"
