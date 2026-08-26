@@ -28,11 +28,12 @@ async function main() {
 	try {
 		await access(vendorRoot);
 	} catch {
-		// Cloned without --recursive. The icons just won't render; not worth
-		// failing a build over.
-		console.warn(
-			`No destiny-icons checkout at ${vendorRoot}. Run: git submodule update --init`,
-		);
+		const message = `No destiny-icons checkout at ${vendorRoot}. Run: git submodule update --init`;
+		// Locally this is a warning - someone cloned without --recursive and the
+		// glyphs just won't render. On CI it means the deploy would silently ship
+		// without them, so fail instead.
+		if (process.env.CI) throw new Error(message);
+		console.warn(message);
 		return;
 	}
 
