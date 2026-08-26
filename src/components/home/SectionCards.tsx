@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import { HoverPrefetchLink } from "@/components/site/HoverPrefetchLink";
 import { SITE_SECTIONS } from "@/lib/site/sections";
 
 export function SectionCards() {
@@ -40,13 +39,13 @@ export function SectionCards() {
 					}
 
 					return (
-						<Link
+						<HoverPrefetchLink
 							key={section.slug}
 							href={section.href}
 							className="borderHover bg-blue-950/20 p-4 backdrop-blur-md transition hover:bg-blue-950/40"
 						>
 							{body}
-						</Link>
+						</HoverPrefetchLink>
 					);
 				})}
 			</div>

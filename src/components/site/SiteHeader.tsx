@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { LIVE_SITE_SECTIONS } from "@/lib/site/sections";
 import { cn } from "@/lib/utils/utils";
 
+import { HoverPrefetchLink } from "./HoverPrefetchLink";
 import { SettingsDialog } from "./SettingsDialog";
 
 export function SiteHeader() {
@@ -41,7 +42,7 @@ export function SiteHeader() {
 						const isActive = pathname.startsWith(section.href);
 
 						return (
-							<Link
+							<HoverPrefetchLink
 								key={section.slug}
 								href={section.href}
 								aria-current={isActive ? "page" : undefined}
@@ -53,7 +54,7 @@ export function SiteHeader() {
 								)}
 							>
 								{section.title}
-							</Link>
+							</HoverPrefetchLink>
 						);
 					})}
 				</div>

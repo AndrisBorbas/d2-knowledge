@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-08-22T23:24:11.767Z",
+	"generatedAt": "2026-08-26T12:20:40.886Z",
 	"entries": [
 		{
 			"id": "ddc:force-converter:2:0",
@@ -12822,7 +12822,7 @@
 				"column": 0
 			},
 			"title": "Old Martian Diplomacy",
-			"description": "On Weapon Stow after scoring an Elite+ or Guardian Kill:\nRestores 40? HP and disorients Combatants within 12 meters.\nIncurs a 2? second cooldown between activations",
+			"description": "On Weapon Stow after scoring an Elite+ or Guardian Weapon Kill:\nRestores 40? HP and disorients Combatants within 12 meters.\nIncurs a 2? second cooldown between activations",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -12831,7 +12831,7 @@
 						"column": 2
 					},
 					"start": 0,
-					"length": 164
+					"length": 171
 				}
 			],
 			"officialDescription": "Stowing a weapon after defeating a powerful combatant or a Guardian heals you a small amount and disorients nearby combatants.",
@@ -12880,30 +12880,30 @@
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:98:2:90:57",
-					"start": 57,
-					"end": 72,
+					"keywordId": "sheet-color:Armor Perks:98:2:97:64",
+					"start": 64,
+					"end": 79,
 					"text": "Restores 40? HP",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:98:2:110:77",
-					"start": 77,
-					"end": 88,
+					"keywordId": "sheet-color:Armor Perks:98:2:117:84",
+					"start": 84,
+					"end": 95,
 					"text": "disorients ",
 					"color": "rgb(153, 153, 153)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:98:2:121:88",
-					"start": 88,
-					"end": 99,
+					"keywordId": "sheet-color:Armor Perks:98:2:128:95",
+					"start": 95,
+					"end": 106,
 					"text": "Combatants ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:98:2:150:117",
-					"start": 117,
-					"end": 164,
+					"keywordId": "sheet-color:Armor Perks:98:2:157:124",
+					"start": 124,
+					"end": 171,
 					"text": "Incurs a 2? second cooldown between activations",
 					"color": "rgb(224, 102, 102)"
 				}
