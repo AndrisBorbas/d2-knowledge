@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 		locale: "en_US",
 		images: [
 			{
-				url: "/assets/page.png",
+				url: "/assets/page.jpg",
 				width: 1900,
 				height: 913,
 				alt: `${siteName} | Destiny 2 perk and mechanic descriptions with hidden values`,
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: `${siteName} | Destiny 2 Knowledge Base`,
 		description: siteDescription,
-		images: ["/assets/page.png"],
+		images: ["/assets/page.jpg"],
 	},
 	robots: {
 		index: true,
