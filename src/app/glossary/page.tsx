@@ -5,14 +5,17 @@ import { CompendiumPreview } from "@/components/compendium/CompendiumPreview";
 import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 import type { CompendiumDataset } from "@/lib/compendium/model";
+import { pickEvenlySpaced } from "@/lib/utils/sample";
 
 // Prerendered at build time. This is load-bearing for portability, not just
 // cost: `loadCompendiumDataset` reads the dataset off disk, and runtimes like
 // Cloudflare Workers have no filesystem at request time.
 export const dynamic = "force-static";
 
-// Enough to fill the tallest first screen. The client swaps in the full dataset
-// from the static asset as soon as it lands, so this only has to cover the gap.
+// Enough to fill the tallest first screen. These stay pinned to the top of the
+// list once the full dataset arrives (see `useEntryFiltering`), so they are
+// spread across the whole dataset rather than taken off the front - otherwise
+// every visit would open on 60 armor perks.
 const SEED_ENTRY_COUNT = 60;
 
 export const metadata: Metadata = {
@@ -52,7 +55,7 @@ export default async function GlossaryPage() {
 	// Only the seed entries and the keywords their annotations point at get
 	// serialized. Sending `dataset` whole put ~820 KB (gzipped) into the
 	// prerendered payload, which every prefetch of this route then had to read.
-	const seedEntries = dataset.entries.slice(0, SEED_ENTRY_COUNT);
+	const seedEntries = pickEvenlySpaced(dataset.entries, SEED_ENTRY_COUNT);
 	const seed: CompendiumDataset = {
 		generatedAt: dataset.generatedAt,
 		entries: seedEntries,

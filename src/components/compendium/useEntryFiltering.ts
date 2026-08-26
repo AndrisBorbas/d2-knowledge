@@ -28,6 +28,12 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 			}),
 	);
 	const [shuffleSeed] = useState(() => Math.floor(Math.random() * 0x7fffffff));
+	// The ids the page was rendered with before the full dataset arrived. They
+	// keep the top of the shuffled list so the order the reader is already
+	// looking at does not rearrange under them mid-scroll.
+	const [seedEntryIds] = useState(
+		() => new Set(dataset.entries.map((entry) => entry.id)),
+	);
 
 	if (searchQuery !== priorSearchQuery) {
 		setPriorSearchQuery(searchQuery);
@@ -84,11 +90,19 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 		}
 
 		return [...visibleEntriesFiltered].sort((left, right) => {
+			// Seed entries first, so their positions survive the dataset swap. Within
+			// each group the hash order is unchanged, which is what keeps the entries
+			// already on screen exactly where they were.
+			const leftIsSeed = seedEntryIds.has(left.id);
+			if (leftIsSeed !== seedEntryIds.has(right.id)) {
+				return leftIsSeed ? -1 : 1;
+			}
+
 			const leftScore = hashStringWithSeed(left.id, shuffleSeed);
 			const rightScore = hashStringWithSeed(right.id, shuffleSeed);
 			return leftScore - rightScore;
 		});
-	}, [visibleEntriesFiltered, shouldRandomize, shuffleSeed]);
+	}, [visibleEntriesFiltered, shouldRandomize, shuffleSeed, seedEntryIds]);
 	const totalAnnotations = allEntries.reduce(
 		(count, entry) => count + entry.annotations.length,
 		0,
