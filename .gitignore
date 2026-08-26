@@ -46,5 +46,6 @@ certificates
 mempalace.yaml
 entities.json
 
-# derived from compendium.json by `bun run data:minify`
+# generated into public/ by `bun run assets:prepare`
 public/assets/data/compendium.min.json
+public/assets/destiny-icons/

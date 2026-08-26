@@ -27,7 +27,10 @@ export const BREAKER_TYPE_ENUM_BY_GLYPH: Record<string, number> = {
 // public/assets/destiny-icons git submodule instead. The "_outline" class
 // variants are used (not the plain ones) because the plain ones have no
 // fill and render as invisible black glyphs on this app's dark background.
-const DESTINY_ICONS_BASE = "/assets/destiny-icons";
+// The submodule itself lives in vendor/; `scripts/copy-icons.mts` copies just
+// the icons referenced below into public/ at build time, so the deploy carries
+// 18 KB of SVG instead of the submodule's 3.2 MB.
+export const DESTINY_ICONS_BASE = "/assets/destiny-icons";
 
 export const STATIC_ICON_PATH_BY_GLYPH: Record<string, string> = {
 	primary: `${DESTINY_ICONS_BASE}/general/ammo-primary.svg`,
