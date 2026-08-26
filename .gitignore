@@ -45,3 +45,6 @@ certificates
 # MemPalace per-project files (issue #185)
 mempalace.yaml
 entities.json
+
+# derived from compendium.json by `bun run data:minify`
+public/assets/data/compendium.min.json

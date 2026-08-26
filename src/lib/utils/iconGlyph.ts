@@ -14,8 +14,7 @@ export function buildIconMarker(glyphIndex: number) {
 }
 
 export type DescriptionTextPart =
-	| { type: "text"; text: string }
-	| { type: "icon"; glyphIndex: number };
+	{ type: "text"; text: string } | { type: "icon"; glyphIndex: number };
 
 export function splitDescriptionIconMarkers(
 	text: string,

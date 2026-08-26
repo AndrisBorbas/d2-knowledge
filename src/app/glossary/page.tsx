@@ -2,7 +2,18 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { CompendiumPreview } from "@/components/compendium/CompendiumPreview";
+import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
+import type { CompendiumDataset } from "@/lib/compendium/model";
+
+// Prerendered at build time. This is load-bearing for portability, not just
+// cost: `loadCompendiumDataset` reads the dataset off disk, and runtimes like
+// Cloudflare Workers have no filesystem at request time.
+export const dynamic = "force-static";
+
+// Enough to fill the tallest first screen. The client swaps in the full dataset
+// from the static asset as soon as it lands, so this only has to cover the gap.
+const SEED_ENTRY_COUNT = 60;
 
 export const metadata: Metadata = {
 	title: "Glossary",
@@ -38,10 +49,20 @@ export default async function GlossaryPage() {
 		);
 	}
 
+	// Only the seed entries and the keywords their annotations point at get
+	// serialized. Sending `dataset` whole put ~820 KB (gzipped) into the
+	// prerendered payload, which every prefetch of this route then had to read.
+	const seedEntries = dataset.entries.slice(0, SEED_ENTRY_COUNT);
+	const seed: CompendiumDataset = {
+		generatedAt: dataset.generatedAt,
+		entries: seedEntries,
+		keywords: buildTooltipBundle(dataset, seedEntries).keywords,
+	};
+
 	return (
 		<main className="flex-1">
 			<Suspense fallback={null}>
-				<CompendiumPreview dataset={dataset} />
+				<CompendiumPreview seed={seed} />
 			</Suspense>
 		</main>
 	);

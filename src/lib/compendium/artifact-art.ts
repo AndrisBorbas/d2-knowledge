@@ -1,7 +1,6 @@
 import { readdir } from "node:fs/promises";
 import path from "node:path";
 
-const ARTIFACT_ART_DIR = ["public", "assets", "images", "artifacts"];
 const ARTIFACT_ART_PUBLIC_PATH = "/assets/images/artifacts";
 const SUPPORTED_EXTENSIONS = new Set([
 	".jpg",
@@ -17,7 +16,15 @@ const SUPPORTED_EXTENSIONS = new Set([
 let cachedArtMap: Promise<Map<string, string>> | null = null;
 
 async function readArtifactArtMap() {
-	const directory = path.join(process.cwd(), ...ARTIFACT_ART_DIR);
+	// Literal segments, not a spread: a dynamically built path makes Next trace
+	// and bundle the entire project, public/ and its 4.6 MB dataset included.
+	const directory = path.join(
+		process.cwd(),
+		"public",
+		"assets",
+		"images",
+		"artifacts",
+	);
 	const artBySlug = new Map<string, string>();
 
 	let fileNames: string[];

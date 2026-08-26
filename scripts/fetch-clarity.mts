@@ -15,13 +15,7 @@ async function main() {
 	}
 
 	const payload: unknown = await response.json();
-	const outputPath = path.join(
-		process.cwd(),
-		"public",
-		"assets",
-		"data",
-		"clarity.json",
-	);
+	const outputPath = path.join(process.cwd(), "data", "clarity.json");
 	await writeFile(outputPath, JSON.stringify(payload, null, "\t"), "utf8");
 
 	console.log(`Wrote Clarity data: ${outputPath}`);

@@ -2,7 +2,10 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { ARMOR_SET_NAME_ALIASES } from "./armor-set-aliases";
-import { BREAKER_TYPE_ENUM_BY_GLYPH, DAMAGE_TYPE_ENUM_BY_GLYPH } from "./glyphs";
+import {
+	BREAKER_TYPE_ENUM_BY_GLYPH,
+	DAMAGE_TYPE_ENUM_BY_GLYPH,
+} from "./glyphs";
 
 type BungieDisplayProperties = {
 	name?: string;
@@ -339,14 +342,9 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 }
 
 export async function loadBungieManifestSnapshotResolver() {
-	const filePath = path.join(
-		process.cwd(),
-		"public",
-		"assets",
-		"data",
-		"compiled",
-		"bungie-manifest.json",
-	);
+	// Build-time only, so it lives in data/ rather than public/ - nothing
+	// serves it and it should not be deployed.
+	const filePath = path.join(process.cwd(), "data", "bungie-manifest.json");
 
 	try {
 		const contents = await readFile(filePath, "utf8");

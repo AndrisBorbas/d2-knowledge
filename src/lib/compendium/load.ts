@@ -5,14 +5,10 @@ import { buildCompendiumDataset } from "./build";
 import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
 
 export async function loadCompiledCompendiumDataset() {
-	const filePath = path.join(
-		process.cwd(),
-		"public",
-		"assets",
-		"data",
-		"compiled",
-		"compendium.json",
-	);
+	// The pretty-printed source, kept out of public/ so the 6.2 MB file is not
+	// deployed. Only the derived compendium.min.json is served. Literal
+	// segments, not a spread: Next traces filesystem access statically.
+	const filePath = path.join(process.cwd(), "data", "compendium.json");
 
 	try {
 		const json = await readFile(filePath, "utf8");

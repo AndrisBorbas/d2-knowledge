@@ -11,14 +11,19 @@ import { EntryListPanel } from "./EntryListPanel";
 import { FilterHeader } from "./FilterHeader";
 import { HoverPreviewCard } from "./HoverPreviewCard";
 import { useClickedEntries } from "./useClickedEntries";
+import { useCompendiumDataset } from "./useCompendiumDataset";
 import { useEntryFiltering } from "./useEntryFiltering";
 import { useHoverPreview } from "./useHoverPreview";
 
 type CompendiumPreviewProps = {
-	dataset: CompendiumDataset;
+	// Just enough entries to fill the first screen. The rest is fetched client
+	// side so the prerendered payload stays small - see `useCompendiumDataset`.
+	seed: CompendiumDataset;
 };
 
-export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
+export function CompendiumPreview({ seed }: CompendiumPreviewProps) {
+	const { dataset, isComplete } = useCompendiumDataset(seed);
+
 	const {
 		searchInput,
 		handleSearchChange,
@@ -75,6 +80,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 						entryMap={entryMap}
 						keywordMap={keywordMap}
 						hasActiveQuery={hasActiveQuery}
+						isLoading={!isComplete}
 						effectiveQuery={effectiveQuery}
 						onClearSearch={() => void handleClearSearch()}
 						onKeywordHover={handleKeywordHover}
@@ -98,6 +104,7 @@ export function CompendiumPreview({ dataset }: CompendiumPreviewProps) {
 										entryMap={entryMap}
 										keywordMap={keywordMap}
 										hasActiveQuery={hasActiveQuery}
+										isLoading={!isComplete}
 										effectiveQuery={effectiveQuery}
 										onClearSearch={() => void handleClearSearch()}
 										onKeywordHover={handleKeywordHover}

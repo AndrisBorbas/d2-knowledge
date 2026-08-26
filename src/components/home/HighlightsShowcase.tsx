@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 
 import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
@@ -10,13 +10,25 @@ import { buildBundleMaps, type TooltipBundle } from "@/lib/compendium/bundle";
 
 const VISIBLE_COUNT = 4;
 
+// Picked once per page load. The page is prerendered, so the starting window has
+// to be chosen on the client; `useSyncExternalStore` is how you read a
+// client-only value without tripping a hydration mismatch.
+const SESSION_OFFSET = Math.floor(Math.random() * 0x7fffffff);
+const subscribeToNothing = () => () => {};
+
 type HighlightsShowcaseProps = {
 	bundle: TooltipBundle;
 };
 
 export function HighlightsShowcase({ bundle }: HighlightsShowcaseProps) {
 	const router = useRouter();
-	const [offset, setOffset] = useState(0);
+	// 0 during the prerender and the hydrating render, the session offset after.
+	const sessionOffset = useSyncExternalStore(
+		subscribeToNothing,
+		() => SESSION_OFFSET,
+		() => 0,
+	);
+	const [shuffleCount, setShuffleCount] = useState(0);
 
 	const { entryMap, keywordMap } = useMemo(
 		() => buildBundleMaps(bundle),
@@ -33,9 +45,10 @@ export function HighlightsShowcase({ bundle }: HighlightsShowcaseProps) {
 		handleKeywordLeave,
 	} = useHoverPreview({ keywordMap, entryMap });
 
-	// The server sends a pool; the button walks a window through it so a reshuffle
+	// The build sends a pool; the button walks a window through it so a reshuffle
 	// costs nothing.
 	const pool = bundle.entries;
+	const offset = sessionOffset + shuffleCount * VISIBLE_COUNT;
 	const visible = Array.from({ length: Math.min(VISIBLE_COUNT, pool.length) })
 		.map((_, index) => pool[(offset + index) % pool.length])
 		.filter((entry) => entry !== undefined);
@@ -54,7 +67,7 @@ export function HighlightsShowcase({ bundle }: HighlightsShowcaseProps) {
 				</h3>
 				<button
 					type="button"
-					onClick={() => setOffset((current) => current + VISIBLE_COUNT)}
+					onClick={() => setShuffleCount((current) => current + 1)}
 					className="borderHover bg-white/8 px-4 py-2 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
 				>
 					Shuffle

@@ -1,5 +1,5 @@
-import type { AlternateDescription, Entry } from "@/lib/compendium/model";
 import { CLARITY_FALLBACK_TAB } from "@/lib/clarity/source";
+import type { AlternateDescription, Entry } from "@/lib/compendium/model";
 import { isSameDescription } from "@/lib/utils/text";
 
 import {

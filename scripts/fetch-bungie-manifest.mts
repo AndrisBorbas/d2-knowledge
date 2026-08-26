@@ -64,13 +64,7 @@ function asRecord<T>(value: unknown) {
 }
 
 async function collectClarityManifestHashes() {
-	const clarityPath = path.join(
-		process.cwd(),
-		"public",
-		"assets",
-		"data",
-		"clarity.json",
-	);
+	const clarityPath = path.join(process.cwd(), "data", "clarity.json");
 	const contents = await readFile(clarityPath, "utf8");
 	const payload = JSON.parse(contents) as Record<string, ClarityRecord>;
 
@@ -372,13 +366,7 @@ function buildEnumKeyedTable(table: unknown) {
 }
 
 async function main() {
-	const outputDir = path.join(
-		process.cwd(),
-		"public",
-		"assets",
-		"data",
-		"compiled",
-	);
+	const outputDir = path.join(process.cwd(), "data");
 	await mkdir(outputDir, { recursive: true });
 
 	const { perkHashes, itemHashes } = await collectClarityManifestHashes();

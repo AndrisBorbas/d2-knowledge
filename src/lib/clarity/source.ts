@@ -188,13 +188,9 @@ function toEntry(
 }
 
 export async function loadClarityRecords() {
-	const filePath = path.join(
-		process.cwd(),
-		"public",
-		"assets",
-		"data",
-		"clarity.json",
-	);
+	// Build-time only, so it lives in data/ rather than public/ - nothing
+	// serves it and it should not be deployed.
+	const filePath = path.join(process.cwd(), "data", "clarity.json");
 	const contents = await readFile(filePath, "utf8");
 	return JSON.parse(contents) as ClarityPayload;
 }

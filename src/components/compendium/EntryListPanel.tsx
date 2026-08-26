@@ -9,6 +9,9 @@ type EntryListPanelProps = {
 	entryMap: Map<string, AnnotatedEntry>;
 	keywordMap: Map<string, Keyword>;
 	hasActiveQuery: boolean;
+	// The full dataset is still in flight, so an empty result set means "not here
+	// yet" rather than "no such entry".
+	isLoading?: boolean;
 	effectiveQuery: string;
 	onClearSearch: () => void;
 	onKeywordHover: (payload: {
@@ -28,6 +31,7 @@ export function EntryListPanel({
 	entryMap,
 	keywordMap,
 	hasActiveQuery,
+	isLoading,
 	effectiveQuery,
 	onClearSearch,
 	onKeywordHover,
@@ -36,6 +40,16 @@ export function EntryListPanel({
 	onGroupClick,
 	scrollMode,
 }: EntryListPanelProps) {
+	if (entries.length === 0 && isLoading) {
+		return (
+			<div className="rounded-3xl border border-white/12 bg-black/45 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">
+				<p className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
+					Loading entries
+				</p>
+			</div>
+		);
+	}
+
 	if (entries.length === 0) {
 		return (
 			<div className="rounded-3xl border border-white/12 bg-black/45 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">

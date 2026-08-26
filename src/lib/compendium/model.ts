@@ -30,7 +30,12 @@ export const iconGlyphSchema = z.object({
 	iconPath: z.string(),
 });
 
-export const unifiedSourceIdSchema = z.enum(["ddc", "clarity", "bungie", "manual"]);
+export const unifiedSourceIdSchema = z.enum([
+	"ddc",
+	"clarity",
+	"bungie",
+	"manual",
+]);
 
 export const unifiedEntryKindSchema = z.enum([
 	"armor_set_bonus",
@@ -98,10 +103,11 @@ export const entrySchema = z.object({
 	alternateDescriptions: z.array(alternateDescriptionSchema).optional(),
 });
 
-export const annotatedAlternateDescriptionSchema = alternateDescriptionSchema.extend({
-	// Offsets index into this block's own `text`.
-	annotations: z.array(annotationSchema),
-});
+export const annotatedAlternateDescriptionSchema =
+	alternateDescriptionSchema.extend({
+		// Offsets index into this block's own `text`.
+		annotations: z.array(annotationSchema),
+	});
 
 export const annotatedEntrySchema = entrySchema.extend({
 	annotations: z.array(annotationSchema),

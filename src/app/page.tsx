@@ -11,11 +11,15 @@ import { loadCompendiumDataset } from "@/lib/compendium/load";
 import type { AnnotatedEntry } from "@/lib/compendium/model";
 import { SITE_DESCRIPTION, SITE_URL } from "@/lib/site/meta";
 
-// The highlights are picked at random per request; without this the page would
-// be prerendered once at build and always show the same entries.
-export const dynamic = "force-dynamic";
+// Everything on this page comes from the compiled dataset, so it is prerendered
+// at build time. `force-static` also guarantees the dataset is only ever read
+// off disk during the build, which is what keeps the app portable to runtimes
+// with no filesystem (Cloudflare Workers).
+export const dynamic = "force-static";
 
-const HIGHLIGHT_POOL_SIZE = 27;
+// The pool is picked once at build; `HighlightsShowcase` picks a random window
+// into it per visit, so the page still feels different on every load.
+const HIGHLIGHT_POOL_SIZE = 48;
 
 export const metadata: Metadata = {
 	alternates: { canonical: SITE_URL },
@@ -26,18 +30,17 @@ function pickHighlightPool(entries: AnnotatedEntry[]) {
 		(entry) => entry.iconPath && entry.description.trim().length > 0,
 	);
 
-	const picked: AnnotatedEntry[] = [];
-	const seen = new Set<number>();
 	const size = Math.min(HIGHLIGHT_POOL_SIZE, candidates.length);
+	if (size === 0) return [];
 
-	while (picked.length < size) {
-		const index = Math.floor(Math.random() * candidates.length);
-		if (seen.has(index)) continue;
-		seen.add(index);
-		picked.push(candidates[index]);
-	}
-
-	return picked;
+	// Evenly spaced rather than random: the output has to be deterministic for a
+	// prerender, and striding the whole list spreads the pool across groups
+	// instead of clustering it at the top.
+	const stride = candidates.length / size;
+	return Array.from(
+		{ length: size },
+		(_, index) => candidates[Math.floor(index * stride)],
+	);
 }
 
 export default async function HomePage() {

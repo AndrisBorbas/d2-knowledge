@@ -11,6 +11,11 @@ import {
 import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 
+// Prerendered at build time. This is load-bearing for portability, not just
+// cost: `loadCompendiumDataset` reads the dataset off disk, and runtimes like
+// Cloudflare Workers have no filesystem at request time.
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
 	title: "Artifacts",
 	description:
