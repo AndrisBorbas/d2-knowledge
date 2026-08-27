@@ -28,8 +28,13 @@ export const LEGACY_TOOLTIP_ALIGN_STORAGE_KEY = "tooltip-text-align";
 type SettingsState = {
 	tooltipAlign: TooltipAlign;
 	visibleSources: Record<DescriptionSourceToggle, boolean>;
+	// Keeps an entry readable when every body it happens to carry comes from a
+	// hidden source: the card falls back to showing them instead of the
+	// "all sources are hidden" note.
+	alwaysShowExtraInfo: boolean;
 	setTooltipAlign: (align: TooltipAlign) => void;
 	toggleSource: (id: DescriptionSourceToggle) => void;
+	toggleAlwaysShowExtraInfo: () => void;
 };
 
 // skipHydration: the persisted value must not be read during the initial
@@ -41,6 +46,7 @@ export const useSettingsStore = create<SettingsState>()(
 		(set, get) => ({
 			tooltipAlign: "center",
 			visibleSources: { bungie: true, clarity: true, ddc: true },
+			alwaysShowExtraInfo: true,
 			setTooltipAlign: (align) => set({ tooltipAlign: align }),
 			toggleSource: (id) =>
 				set({
@@ -49,6 +55,8 @@ export const useSettingsStore = create<SettingsState>()(
 						[id]: !get().visibleSources[id],
 					},
 				}),
+			toggleAlwaysShowExtraInfo: () =>
+				set({ alwaysShowExtraInfo: !get().alwaysShowExtraInfo }),
 		}),
 		{
 			name: SETTINGS_STORAGE_KEY,
@@ -63,6 +71,10 @@ export const useSettingsStore = create<SettingsState>()(
 				return {
 					...current,
 					...stored,
+					alwaysShowExtraInfo:
+						typeof stored.alwaysShowExtraInfo === "boolean"
+							? stored.alwaysShowExtraInfo
+							: current.alwaysShowExtraInfo,
 					visibleSources: {
 						...current.visibleSources,
 						...Object.fromEntries(

@@ -143,11 +143,30 @@ function isToggleableSource(
 function EntryDescriptions(props: TooltipContentProps) {
 	const { entry } = props;
 	const visibleSources = useSettingsStore((state) => state.visibleSources);
+	const alwaysShowExtraInfo = useSettingsStore(
+		(state) => state.alwaysShowExtraInfo,
+	);
 
-	const blocks = getDescriptionBlocks(entry).filter(
+	const allBlocks = getDescriptionBlocks(entry);
+	// The in-game body is not extra info: its toggle is absolute, and it never
+	// counts towards the fallback below.
+	const communityBlocks = allBlocks.filter(
+		(block) => block.sourceId !== "bungie",
+	);
+	const hasVisibleCommunityBlock = communityBlocks.some(
 		(block) =>
 			!isToggleableSource(block.sourceId) || visibleSources[block.sourceId],
 	);
+	// An entry whose every extra-info body comes from a hidden source would
+	// otherwise read as empty. With the setting on, show them rather than nothing.
+	const showHiddenCommunityBlocks =
+		alwaysShowExtraInfo && !hasVisibleCommunityBlock;
+
+	const blocks = allBlocks.filter((block) => {
+		if (!isToggleableSource(block.sourceId)) return true;
+		if (visibleSources[block.sourceId]) return true;
+		return block.sourceId !== "bungie" && showHiddenCommunityBlocks;
+	});
 
 	if (blocks.length === 0) {
 		return (
@@ -157,17 +176,19 @@ function EntryDescriptions(props: TooltipContentProps) {
 		);
 	}
 
-	const communityBlocks = blocks.filter((block) => block.sourceId !== "bungie");
+	const shownCommunityBlocks = blocks.filter(
+		(block) => block.sourceId !== "bungie",
+	);
 	// With a single community body the combined bar can credit every source that
 	// fed the entry, exactly as before. With two, that bar would be ambiguous -
 	// label each body with its own source instead.
-	const labelPerBlock = communityBlocks.length > 1;
+	const labelPerBlock = shownCommunityBlocks.length > 1;
 	const combinedSources = labelPerBlock ? [] : getSourceAttribution(entry);
-	const firstCommunityBlock = communityBlocks[0];
+	const firstCommunityBlock = shownCommunityBlocks[0];
 	// Two bodies from the same source (the Arc and Prismatic DDC rows for an
 	// aspect, say) need the tab name to tell them apart.
 	const duplicatedSourceIds = new Set(
-		communityBlocks
+		shownCommunityBlocks
 			.map((block) => block.sourceId)
 			.filter((sourceId, index, all) => all.indexOf(sourceId) !== index),
 	);

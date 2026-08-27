@@ -27,9 +27,6 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 function SourceToggles() {
 	const visibleSources = useSettingsStore((state) => state.visibleSources);
 	const toggleSource = useSettingsStore((state) => state.toggleSource);
-	const hasVisibleSource = DESCRIPTION_SOURCE_TOGGLES.some(
-		(id) => visibleSources[id],
-	);
 
 	return (
 		<div className="space-y-2">
@@ -60,12 +57,43 @@ function SourceToggles() {
 					);
 				})}
 			</div>
+		</div>
+	);
+}
 
-			{hasVisibleSource ? null : (
-				<p className="text-xs text-amber-300/80">
-					Every source is hidden - cards will have no description text.
-				</p>
-			)}
+function ExtraInfoFallbackToggle() {
+	const alwaysShowExtraInfo = useSettingsStore(
+		(state) => state.alwaysShowExtraInfo,
+	);
+	const toggleAlwaysShowExtraInfo = useSettingsStore(
+		(state) => state.toggleAlwaysShowExtraInfo,
+	);
+
+	return (
+		<div className="space-y-2">
+			<SectionHeading>Extra info fallback</SectionHeading>
+
+			<button
+				type="button"
+				onClick={toggleAlwaysShowExtraInfo}
+				aria-pressed={alwaysShowExtraInfo}
+				className={cn(
+					"borderHover flex w-full items-center justify-between px-3 py-2 text-sm transition",
+					alwaysShowExtraInfo
+						? "bg-blue-500/25 text-sky-100"
+						: "bg-blue-500/8 text-white/55 hover:bg-blue-500/15",
+				)}
+			>
+				<span>Always show extra info</span>
+				<span className="text-masterwork text-[11px] tracking-[0.14em] uppercase">
+					{alwaysShowExtraInfo ? "On" : "Off"}
+				</span>
+			</button>
+
+			<p className="text-xs text-white/45">
+				When every community description an entry carries comes from a hidden
+				source, show it anyway instead of leaving the card without one.
+			</p>
 		</div>
 	);
 }
@@ -135,6 +163,7 @@ export function SettingsDialog() {
 
 					<div className="mt-4 space-y-5">
 						<SourceToggles />
+						<ExtraInfoFallbackToggle />
 						<AlignToggle />
 					</div>
 				</Dialog.Content>
