@@ -6,6 +6,8 @@ import { Settings, X } from "lucide-react";
 import {
 	DESCRIPTION_SOURCE_LABELS,
 	DESCRIPTION_SOURCE_TOGGLES,
+	EXTRA_INFO_ORDER_LABELS,
+	EXTRA_INFO_ORDERS,
 	type TooltipAlign,
 	useSettingsStore,
 } from "@/lib/site/settingsStore";
@@ -98,6 +100,43 @@ function ExtraInfoFallbackToggle() {
 	);
 }
 
+function ExtraInfoOrderToggle() {
+	const extraInfoOrder = useSettingsStore((state) => state.extraInfoOrder);
+	const setExtraInfoOrder = useSettingsStore(
+		(state) => state.setExtraInfoOrder,
+	);
+
+	return (
+		<div className="space-y-2">
+			<SectionHeading>Extra info order</SectionHeading>
+
+			<div className="flex gap-2 pt-1">
+				{EXTRA_INFO_ORDERS.map((order) => (
+					<button
+						key={order}
+						type="button"
+						onClick={() => setExtraInfoOrder(order)}
+						aria-pressed={extraInfoOrder === order}
+						className={cn(
+							"borderHover flex-1 px-2 py-2 text-xs transition",
+							extraInfoOrder === order
+								? "borderActive bg-blue-500/25 text-sky-100"
+								: "bg-blue-500/8 text-white/55 hover:bg-blue-500/15",
+						)}
+					>
+						{EXTRA_INFO_ORDER_LABELS[order]}
+					</button>
+				))}
+			</div>
+
+			<p className="text-xs text-white/45">
+				Which community source stacks on top when an entry carries both.
+				Automatic keeps the per-category order. The in-game text is unaffected.
+			</p>
+		</div>
+	);
+}
+
 function AlignToggle() {
 	const tooltipAlign = useSettingsStore((state) => state.tooltipAlign);
 	const setTooltipAlign = useSettingsStore((state) => state.setTooltipAlign);
@@ -143,8 +182,8 @@ export function SettingsDialog() {
 
 			<Dialog.Portal>
 				<Dialog.Overlay className="data-[state=closed]:animate-dialog-overlay-out data-[state=open]:animate-dialog-overlay-in fixed inset-0 z-50 bg-black/60" />
-				<Dialog.Content className="data-[state=closed]:animate-dialog-content-out data-[state=open]:animate-dialog-content-in fixed top-1/2 left-1/2 z-50 w-[min(92vw,24rem)] -translate-x-1/2 -translate-y-1/2 border border-white/14 bg-black/92 p-4 shadow-2xl shadow-black/60">
-					<div className="flex items-center justify-between">
+				<Dialog.Content className="data-[state=closed]:animate-dialog-content-out data-[state=open]:animate-dialog-content-in fixed top-1/2 left-1/2 z-50 flex max-h-[min(90dvh,44rem)] w-[min(92vw,24rem)] -translate-x-1/2 -translate-y-1/2 flex-col border border-white/14 bg-black/92 p-4 shadow-2xl shadow-black/60">
+					<div className="flex shrink-0 items-center justify-between">
 						<Dialog.Title className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
 							Settings
 						</Dialog.Title>
@@ -156,15 +195,20 @@ export function SettingsDialog() {
 						</Dialog.Close>
 					</div>
 
-					<Dialog.Description className="mt-3 text-xs text-white/50">
-						Entries can carry text from more than one source. Pick which ones
-						show up on a card.
-					</Dialog.Description>
+					{/* Scrolls on its own so a short viewport never pushes settings off
+					    screen - the title row above stays put. */}
+					<div className="-mr-2 min-h-0 flex-1 overflow-y-auto pr-2">
+						<Dialog.Description className="mt-3 text-xs text-white/50">
+							Entries can carry text from more than one source. Pick which ones
+							show up on a card.
+						</Dialog.Description>
 
-					<div className="mt-4 space-y-5">
-						<SourceToggles />
-						<ExtraInfoFallbackToggle />
-						<AlignToggle />
+						<div className="mt-4 space-y-5">
+							<SourceToggles />
+							<ExtraInfoFallbackToggle />
+							<ExtraInfoOrderToggle />
+							<AlignToggle />
+						</div>
 					</div>
 				</Dialog.Content>
 			</Dialog.Portal>

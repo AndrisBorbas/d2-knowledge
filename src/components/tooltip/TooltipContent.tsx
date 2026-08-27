@@ -5,11 +5,11 @@ import Image from "next/image";
 import {
 	type AttributionSource,
 	getAttributionSource,
-	getSourceAttribution,
 } from "@/lib/compendium/attribution";
 import {
 	type DescriptionBlock,
 	getDescriptionBlocks,
+	orderExtraInfoBlocks,
 } from "@/lib/compendium/descriptions";
 import type { Annotation, IconGlyph } from "@/lib/compendium/model";
 import {
@@ -101,28 +101,23 @@ function DescriptionText({
 }
 
 function SourceAttribution({
-	sources,
+	source,
 	variantLabel,
 }: {
-	sources: AttributionSource[];
+	source: AttributionSource;
 	variantLabel?: string;
 }) {
 	return (
 		<p className="border-y border-t-gray-500 border-b-blue-600/50 px-4 py-1.5 text-center text-[11px] tracking-[0.14em] text-white/75 uppercase">
 			Extra info provided by{" "}
-			{sources.map((source, index) => (
-				<span key={source.id}>
-					{index > 0 ? (index === sources.length - 1 ? " and " : ", ") : null}
-					<a
-						href={source.href}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="decoration-masterwork/80 text-masterwork/80 underline-offset-0 transition-all hover:text-white/90 hover:underline hover:underline-offset-2"
-					>
-						{source.label}
-					</a>
-				</span>
-			))}
+			<a
+				href={source.href}
+				target="_blank"
+				rel="noopener noreferrer"
+				className="decoration-masterwork/80 text-masterwork/80 underline-offset-0 transition-all hover:text-white/90 hover:underline hover:underline-offset-2"
+			>
+				{source.label}
+			</a>
 			{variantLabel ? (
 				<span className="text-white/55"> ({variantLabel})</span>
 			) : null}
@@ -146,8 +141,14 @@ function EntryDescriptions(props: TooltipContentProps) {
 	const alwaysShowExtraInfo = useSettingsStore(
 		(state) => state.alwaysShowExtraInfo,
 	);
+	const extraInfoOrder = useSettingsStore((state) => state.extraInfoOrder);
 
-	const allBlocks = getDescriptionBlocks(entry);
+	// Ordered before anything is filtered out, so the fallback below hands back
+	// hidden bodies in the reader's chosen order too.
+	const allBlocks =
+		extraInfoOrder === "auto"
+			? getDescriptionBlocks(entry)
+			: orderExtraInfoBlocks(getDescriptionBlocks(entry), extraInfoOrder);
 	// The in-game body is not extra info: its toggle is absolute, and it never
 	// counts towards the fallback below.
 	const communityBlocks = allBlocks.filter(
@@ -158,14 +159,18 @@ function EntryDescriptions(props: TooltipContentProps) {
 			!isToggleableSource(block.sourceId) || visibleSources[block.sourceId],
 	);
 	// An entry whose every extra-info body comes from a hidden source would
-	// otherwise read as empty. With the setting on, show them rather than nothing.
-	const showHiddenCommunityBlocks =
-		alwaysShowExtraInfo && !hasVisibleCommunityBlock;
+	// otherwise read as empty. With the setting on, bring back a single body -
+	// the reader hid these sources, so honour the order setting and show the one
+	// that would have stacked on top rather than every one of them.
+	const fallbackBlock =
+		alwaysShowExtraInfo && !hasVisibleCommunityBlock
+			? communityBlocks[0]
+			: undefined;
 
 	const blocks = allBlocks.filter((block) => {
 		if (!isToggleableSource(block.sourceId)) return true;
 		if (visibleSources[block.sourceId]) return true;
-		return block.sourceId !== "bungie" && showHiddenCommunityBlocks;
+		return block.sourceId !== "bungie" && block === fallbackBlock;
 	});
 
 	if (blocks.length === 0) {
@@ -179,12 +184,9 @@ function EntryDescriptions(props: TooltipContentProps) {
 	const shownCommunityBlocks = blocks.filter(
 		(block) => block.sourceId !== "bungie",
 	);
-	// With a single community body the combined bar can credit every source that
-	// fed the entry, exactly as before. With two, that bar would be ambiguous -
-	// label each body with its own source instead.
-	const labelPerBlock = shownCommunityBlocks.length > 1;
-	const combinedSources = labelPerBlock ? [] : getSourceAttribution(entry);
-	const firstCommunityBlock = shownCommunityBlocks[0];
+	// Every body is credited to the source that actually wrote it. A bar naming
+	// several sources at once cannot say which text came from which, and it also
+	// credits sources whose text is not on the card at all.
 	// Two bodies from the same source (the Arc and Prismatic DDC rows for an
 	// aspect, say) need the tab name to tell them apart.
 	const duplicatedSourceIds = new Set(
@@ -201,22 +203,15 @@ function EntryDescriptions(props: TooltipContentProps) {
 
 				return (
 					<div key={`${block.sourceId}-${index}`}>
-						{isCommunity && labelPerBlock && blockSource ? (
+						{isCommunity && blockSource ? (
 							<SourceAttribution
-								sources={[blockSource]}
+								source={blockSource}
 								variantLabel={
 									duplicatedSourceIds.has(block.sourceId)
 										? block.variantLabel
 										: undefined
 								}
 							/>
-						) : null}
-
-						{isCommunity &&
-						!labelPerBlock &&
-						block === firstCommunityBlock &&
-						combinedSources.length > 0 ? (
-							<SourceAttribution sources={combinedSources} />
 						) : null}
 
 						<DescriptionText

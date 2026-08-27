@@ -22,6 +22,23 @@ export const DESCRIPTION_SOURCE_LABELS: Record<
 	ddc: "Data Compendium",
 };
 
+// Which community source stacks on top when an entry carries two extra-info
+// bodies. "auto" keeps the per-group order shipped in `descriptionOrder.ts`;
+// the in-game text is never part of this - it keeps its configured slot.
+export type ExtraInfoOrder = "auto" | "clarity" | "ddc";
+
+export const EXTRA_INFO_ORDERS: readonly ExtraInfoOrder[] = [
+	"auto",
+	"clarity",
+	"ddc",
+];
+
+export const EXTRA_INFO_ORDER_LABELS: Record<ExtraInfoOrder, string> = {
+	auto: "Automatic",
+	clarity: "Clarity first",
+	ddc: "Compendium first",
+};
+
 export const SETTINGS_STORAGE_KEY = "owlsector-settings";
 export const LEGACY_TOOLTIP_ALIGN_STORAGE_KEY = "tooltip-text-align";
 
@@ -32,9 +49,11 @@ type SettingsState = {
 	// hidden source: the card falls back to showing them instead of the
 	// "all sources are hidden" note.
 	alwaysShowExtraInfo: boolean;
+	extraInfoOrder: ExtraInfoOrder;
 	setTooltipAlign: (align: TooltipAlign) => void;
 	toggleSource: (id: DescriptionSourceToggle) => void;
 	toggleAlwaysShowExtraInfo: () => void;
+	setExtraInfoOrder: (order: ExtraInfoOrder) => void;
 };
 
 // skipHydration: the persisted value must not be read during the initial
@@ -47,6 +66,7 @@ export const useSettingsStore = create<SettingsState>()(
 			tooltipAlign: "center",
 			visibleSources: { bungie: true, clarity: true, ddc: true },
 			alwaysShowExtraInfo: true,
+			extraInfoOrder: "auto",
 			setTooltipAlign: (align) => set({ tooltipAlign: align }),
 			toggleSource: (id) =>
 				set({
@@ -57,6 +77,7 @@ export const useSettingsStore = create<SettingsState>()(
 				}),
 			toggleAlwaysShowExtraInfo: () =>
 				set({ alwaysShowExtraInfo: !get().alwaysShowExtraInfo }),
+			setExtraInfoOrder: (order) => set({ extraInfoOrder: order }),
 		}),
 		{
 			name: SETTINGS_STORAGE_KEY,
@@ -75,6 +96,11 @@ export const useSettingsStore = create<SettingsState>()(
 						typeof stored.alwaysShowExtraInfo === "boolean"
 							? stored.alwaysShowExtraInfo
 							: current.alwaysShowExtraInfo,
+					extraInfoOrder:
+						stored.extraInfoOrder &&
+						EXTRA_INFO_ORDERS.includes(stored.extraInfoOrder)
+							? stored.extraInfoOrder
+							: current.extraInfoOrder,
 					visibleSources: {
 						...current.visibleSources,
 						...Object.fromEntries(

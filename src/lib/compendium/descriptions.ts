@@ -79,3 +79,35 @@ export function getDescriptionBlocks(
 		)
 		.map(({ block }) => block);
 }
+
+// Reorders only the community ("extra info") bodies, in place: the in-game
+// block - and any other non-toggleable source - keeps the slot the per-group
+// config gave it, so a reader flipping this setting never moves the Bungie
+// text. Stable, so two bodies from the same source keep their relative order.
+export function orderExtraInfoBlocks(
+	blocks: DescriptionBlock[],
+	preferred: "clarity" | "ddc",
+): DescriptionBlock[] {
+	const slots: number[] = [];
+	const extras: DescriptionBlock[] = [];
+
+	blocks.forEach((block, index) => {
+		if (block.sourceId !== "clarity" && block.sourceId !== "ddc") return;
+		slots.push(index);
+		extras.push(block);
+	});
+
+	if (extras.length < 2) return blocks;
+
+	const reordered = [
+		...extras.filter((block) => block.sourceId === preferred),
+		...extras.filter((block) => block.sourceId !== preferred),
+	];
+
+	const result = [...blocks];
+	slots.forEach((slot, index) => {
+		result[slot] = reordered[index]!;
+	});
+
+	return result;
+}
