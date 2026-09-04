@@ -2,6 +2,7 @@
 	"useTabs": true,
 	"trailingComma": "all",
 	"plugins": ["prettier-plugin-tailwindcss"],
+	"tailwindFunctions": ["cn", "cva", "clsx", "cx"],
 	"overrides": [
 		{
 			"files": "*.md",

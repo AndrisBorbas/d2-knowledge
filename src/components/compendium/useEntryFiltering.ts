@@ -3,7 +3,7 @@
 import { parseAsArrayOf, parseAsString, useQueryState } from "nuqs";
 import { useEffect, useMemo, useState } from "react";
 
-import { CURATED_TOP_GROUPS } from "@/lib/compendium/groups";
+import { categorizeGroups, CURATED_TOP_GROUPS } from "@/lib/compendium/groups";
 import type { CompendiumDataset } from "@/lib/compendium/model";
 import { fuzzyFilterCompendiumEntries } from "@/lib/utils/fuzzy";
 
@@ -48,6 +48,10 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 		);
 	};
 
+	const clearGroups = () => {
+		void setActiveGroups(null);
+	};
+
 	const filterBarGroups = useMemo(() => {
 		const curated: string[] = [...CURATED_TOP_GROUPS];
 		const extra = activeGroups.filter((group) => !curated.includes(group));
@@ -79,6 +83,24 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 			activeGroups.every((group) => entry.groups.includes(group)),
 		);
 	}, [filteredEntries, hasActiveGroups, activeGroups]);
+	// How many entries each group would leave once it joins the current
+	// selection. Active groups report the current result count, inactive ones
+	// preview the narrowed count, so a filter that leads nowhere reads as 0.
+	const groupResultCounts = useMemo(() => {
+		const counts = new Map<string, number>();
+
+		for (const entry of visibleEntriesFiltered) {
+			for (const group of entry.groups) {
+				counts.set(group, (counts.get(group) ?? 0) + 1);
+			}
+		}
+
+		return counts;
+	}, [visibleEntriesFiltered]);
+	const groupCategories = useMemo(
+		() => categorizeGroups([...knownGroups].sort((a, b) => a.localeCompare(b))),
+		[knownGroups],
+	);
 	const entryMap = useMemo(
 		() => new Map(allEntries.map((entry) => [entry.id, entry])),
 		[allEntries],
@@ -151,7 +173,10 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 		effectiveQuery,
 		activeGroups,
 		toggleGroup,
+		clearGroups,
 		filterBarGroups,
+		groupCategories,
+		groupResultCounts,
 		keywordMap,
 		entryMap,
 		allEntries,

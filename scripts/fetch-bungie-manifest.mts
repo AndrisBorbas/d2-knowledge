@@ -26,6 +26,11 @@ type CompactDefinition = {
 	n?: string;
 	i?: string;
 	d?: string;
+	// Names of the perks an exotic catalyst grants (see
+	// resolvePerkFallbackDisplay) - the catalyst item itself is only ever named
+	// after its weapon, so this is the only place the granted perk's name
+	// ("The Rock" on Forerunner Catalyst) survives the compaction.
+	gp?: string[];
 };
 
 type CompactItemSetPerk = {
@@ -173,6 +178,9 @@ function toCompactDefinition(value: unknown) {
 type PerkFallbackDisplay = {
 	description: string;
 	icon?: string;
+	// Every granted perk that carries effect text, in the item's own order, so
+	// the first one is the perk the description and icon above came from.
+	names: string[];
 };
 
 // Many plug items - exotic catalysts, weapon mods (e.g. Icarus Grip) - carry
@@ -193,6 +201,9 @@ function resolvePerkFallbackDisplay(
 		? (row.perks as Array<{ perkHash?: number }>)
 		: [];
 
+	let display: { description: string; icon?: string } | undefined;
+	const names: string[] = [];
+
 	for (const perk of perks) {
 		if (typeof perk.perkHash !== "number") continue;
 		const perkRow = asRecord<unknown>(sandboxPerkTable[String(perk.perkHash)]);
@@ -205,10 +216,17 @@ function resolvePerkFallbackDisplay(
 
 		const icon =
 			typeof perkDisplay?.icon === "string" ? perkDisplay.icon : undefined;
-		return { description, icon };
+		display ??= { description, icon };
+
+		const name =
+			typeof perkDisplay?.name === "string" ? perkDisplay.name.trim() : "";
+		if (name && !names.includes(name)) {
+			names.push(name);
+		}
 	}
 
-	return undefined;
+	if (!display) return undefined;
+	return { ...display, names };
 }
 
 function toCompactItemDefinition(
@@ -244,6 +262,13 @@ function toCompactItemDefinition(
 		// weapon mods) usually already show their own icon correctly - only
 		// their description is missing - so leave that icon alone.
 		i: isCatalystBoilerplate ? (perkDisplay.icon ?? compact.i) : compact.i,
+		// Same reasoning for the name: a catalyst's own name is its weapon's,
+		// where the granted perk carries the name the description and the
+		// community actually use. Mods already name themselves properly.
+		gp:
+			isCatalystBoilerplate && perkDisplay.names.length > 0
+				? perkDisplay.names
+				: undefined,
 	};
 }
 

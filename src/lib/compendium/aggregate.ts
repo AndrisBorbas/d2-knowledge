@@ -112,6 +112,35 @@ function isEnhancedVariant(entry: UnifiedEntry) {
 	return /enhanced/i.test(ownRef.type ?? "");
 }
 
+// Which entry decides where the merged one is filed. Clarity's section is its
+// own record type ("Weapon Trait Enhanced"), where DDC's is the category the
+// sheet lists the row under ("Origin Traits"), and those sections become the
+// group chips - so once a placement is resolved, an incoming record only
+// overrides it by moving the entry to a tab that placement doesn't have. That
+// keeps a DDC category from being scattered across several Clarity types, and
+// keeps the category's DDC-only rows from ending up alone in a chip.
+function resolvePlacement(winner: UnifiedEntry, resolved: UnifiedEntry) {
+	const keepResolved =
+		resolved.tab === winner.tab ||
+		(winner.tab === CLARITY_FALLBACK_TAB &&
+			resolved.tab !== CLARITY_FALLBACK_TAB);
+
+	if (!keepResolved) return {};
+
+	return {
+		tab: resolved.tab,
+		section: resolved.section,
+		groups: resolved.groups,
+	};
+}
+
+// The line above the description: where an origin trait drops, what a set
+// bonus needs, an ability's cooldown. Only DDC writes those, so a Clarity
+// record winning the merge would drop the line rather than replace it.
+function resolveExtraInfo(winner: UnifiedEntry, resolved: UnifiedEntry) {
+	return winner.extraInfo ?? resolved.extraInfo;
+}
+
 function getPriorityIndex(sourceId: UnifiedSourceId, priority: SourcePriority) {
 	const index = priority.indexOf(sourceId);
 	return index === -1 ? Number.MAX_SAFE_INTEGER : index;
@@ -136,18 +165,10 @@ export function mergeUnifiedEntries(
 		const candidatePriority = getPriorityIndex(candidate.sourceId, priority);
 		const existingPriority = getPriorityIndex(existing.sourceId, priority);
 		if (candidatePriority < existingPriority) {
-			const preserveExistingTab =
-				candidate.tab === CLARITY_FALLBACK_TAB &&
-				existing.tab !== CLARITY_FALLBACK_TAB;
 			byKey.set(key, {
 				...candidate,
-				...(preserveExistingTab
-					? {
-							tab: existing.tab,
-							section: existing.section,
-							groups: existing.groups,
-						}
-					: {}),
+				...resolvePlacement(candidate, existing),
+				extraInfo: resolveExtraInfo(candidate, existing),
 				sourceRefs: [...candidate.sourceRefs, ...existing.sourceRefs],
 				alternateDescriptions: collectAlternates(candidate, existing),
 			});
@@ -167,6 +188,10 @@ export function mergeUnifiedEntries(
 
 			byKey.set(key, {
 				...winner,
+				// `existing` is what has been resolved so far, whichever of the two
+				// records ends up carrying the description.
+				...resolvePlacement(winner, existing),
+				extraInfo: resolveExtraInfo(winner, existing),
 				sourceRefs: [...winner.sourceRefs, ...loser.sourceRefs],
 				alternateDescriptions: collectAlternates(winner, loser, {
 					keepLoserDescription: !isEnhancedPair,
@@ -176,6 +201,73 @@ export function mergeUnifiedEntries(
 	}
 
 	return [...byKey.values()];
+}
+
+// DDC lists an armor mod family once ("Dexterity", "Unflinching Aim"), where
+// Clarity - and the game - has one mod per element: "Arc Dexterity", "Void
+// Dexterity", "Unflinching Stasis Aim". The family row carries what Clarity's
+// records lack (the energy cost, the per-tier numbers, which slot it goes in),
+// so it is folded into every variant rather than merged with any single one.
+//
+// The qualifier is dropped wherever it sits in the name, which is what lets
+// "Unflinching Solar Aim" find "Unflinching Aim". A name with no qualifier is
+// left alone, so "Melee Damage Resistance" - a chest mod of its own - is never
+// mistaken for a variant of the element-matching "Resistance".
+const MOD_FAMILY_QUALIFIERS = new Set([
+	"arc",
+	"solar",
+	"void",
+	"stasis",
+	"strand",
+	"kinetic",
+	"harmonic",
+	"heavy",
+	"special",
+]);
+
+function toModFamilyKey(title: string) {
+	return toCanonicalTitleKey(
+		title
+			.split(/\s+/)
+			.filter((word) => !MOD_FAMILY_QUALIFIERS.has(word.toLowerCase()))
+			.join(" "),
+	);
+}
+
+export function foldModFamilies(entries: UnifiedEntry[]) {
+	const families = new Map<string, UnifiedEntry>();
+	for (const entry of entries) {
+		if (entry.sourceId !== "ddc") continue;
+		families.set(`${entry.tab}|${toCanonicalTitleKey(entry.title)}`, entry);
+	}
+
+	const folded = new Set<UnifiedEntry>();
+	const withFamilies = entries.map((entry) => {
+		if (entry.sourceId === "ddc") return entry;
+
+		const familyKey = toModFamilyKey(entry.title);
+		// An unqualified name is its own family - that pairing is an ordinary
+		// merge, and it already happened above.
+		if (!familyKey || familyKey === toCanonicalTitleKey(entry.title)) {
+			return entry;
+		}
+
+		const family = families.get(`${entry.tab}|${familyKey}`);
+		if (!family) return entry;
+
+		folded.add(family);
+		return {
+			...entry,
+			...resolvePlacement(entry, family),
+			extraInfo: resolveExtraInfo(entry, family),
+			sourceRefs: [...entry.sourceRefs, ...family.sourceRefs],
+			alternateDescriptions: collectAlternates(entry, family),
+		};
+	});
+
+	// A family row that reached no variant stays: DDC knows a mod Clarity does
+	// not, and dropping it would lose the entry outright.
+	return withFamilies.filter((entry) => !folded.has(entry));
 }
 
 export function toEntries(unifiedEntries: UnifiedEntry[]): Entry[] {

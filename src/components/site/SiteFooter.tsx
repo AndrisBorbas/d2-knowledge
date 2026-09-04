@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import manifest from "@/../package.json";
 import {
@@ -134,9 +135,16 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/80 hover:underline hover:underline-offset-2"
 					>
 						Data last refreshed on{" "}
-						{new Date(generatedAt).toLocaleString("de-DE")} · v
-						{manifest.version} © {new Date().getFullYear()} AndrisBorbas
-					</a>
+						{new Date(generatedAt).toLocaleString("de-DE")}
+					</a>{" "}
+					·{" "}
+					<Link
+						href="/changelog"
+						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/80 hover:underline hover:underline-offset-2"
+					>
+						v{manifest.version}
+					</Link>{" "}
+					© {new Date().getFullYear()} AndrisBorbas
 				</p>
 			</div>
 		</footer>

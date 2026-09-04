@@ -1,12 +1,11 @@
 "use client";
 
-import { X } from "lucide-react";
-
 import { Tooltip } from "@/components/tooltip/Tooltip";
 import type {
 	TooltipKeywordClickPayload,
 	TooltipKeywordHoverPayload,
 } from "@/components/tooltip/types";
+import { CloseButton, UnpinButton } from "@/components/ui/Button";
 import type { AnnotatedEntry, Keyword } from "@/lib/compendium/model";
 import { cn } from "@/lib/utils/utils";
 
@@ -60,14 +59,11 @@ export function ClickedTooltipsDrawer({
 					<p className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
 						Clicked Tooltips
 					</p>
-					<button
-						type="button"
+					<CloseButton
 						onClick={onClose}
-						className="border border-white/16 bg-white/8 p-1.5 text-white/75"
-						aria-label="Close clicked tooltip drawer"
-					>
-						<X size={16} />
-					</button>
+						size="iconSm"
+						label="Close clicked tooltip drawer"
+					/>
 				</div>
 
 				{clickedEntries.length > 0 ? (
@@ -75,14 +71,10 @@ export function ClickedTooltipsDrawer({
 						{clickedEntries.map((entry) => (
 							<div key={`drawer-${entry.id}`} className="space-y-2">
 								<div className="flex justify-end">
-									<button
-										type="button"
+									<UnpinButton
 										onClick={() => onRemove(entry.id)}
-										className="border border-white/12 bg-white/8 p-1.5 text-white/70 transition hover:bg-white/14"
-										aria-label={`Remove ${entry.title}`}
-									>
-										<X size={14} />
-									</button>
+										label={`Unpin ${entry.title}`}
+									/>
 								</div>
 								<Tooltip
 									entry={entry}

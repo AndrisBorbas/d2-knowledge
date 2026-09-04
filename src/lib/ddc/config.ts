@@ -24,7 +24,7 @@ export const COMPENDIUM_TAB_NAMES = [
 
 const LEGACY_TAB_PREFIX = "OLD ";
 
-const EXCLUDED_TAB_NAMES = ["Landing", "Weapon Perks", "Exotic Weapons"];
+const EXCLUDED_TAB_NAMES = ["Landing", "Exotic Weapons"];
 
 export const COMPENDIUM_ACTIVE_TAB_NAMES = COMPENDIUM_TAB_NAMES.filter(
 	(tabName) =>
@@ -48,6 +48,24 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		titleColumn: 0,
 		skipStart: 4,
 		descriptionColumn: 2,
+		// Perk names carry their source under a blank line ("Bray Inheritance"
+		// / "Deep Stone Crypt" / "Raid"), which belongs in extraInfo rather
+		// than the title.
+		splitTitleExtraInfo: true,
+		// Rejects the footer row that links Court's Modifier Database - it
+		// looks like a perk row (name in column 0, prose in column 2) and is
+		// only distinguishable by its sentence-length "name". The longest real
+		// name is "Micro-Missile Frame (Special Grenade Launchers)" at 47.
+		maxTitleLength: 56,
+		// The category separators ("Weapon Traits", "Intrinsic Traits", "Origin
+		// Traits", ...). Sentence-ending rows are the equippability notes that
+		// sit between them ("Heresy Mods are only equippable on ..."), which
+		// name no category worth keeping.
+		dynamicSection: {
+			maxLength: 56,
+			minLength: 2,
+			forbidSentenceEnding: true,
+		},
 	},
 	"Armor Perks": {
 		strategy: "set-bonus-two-rows",
@@ -57,6 +75,26 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		descriptionColumns: [2, 3, 4, 5],
 		minDescriptionLength: 12,
 		maxTitleLength: 120,
+	},
+	"Armor Mods": {
+		strategy: "column-groups",
+		skipStart: 1,
+		sectionHeaderRow: 0,
+		// name, icon, effect per group. The five armor slots come first, then
+		// the activity-specific mods, which fit any slot but only on armor that
+		// drops from the activity - those three columns each hold several
+		// activities, headed by a name with no effect beside it.
+		columnGroups: [
+			{ titleColumn: 1, descriptionColumn: 3 },
+			{ titleColumn: 4, descriptionColumn: 6 },
+			{ titleColumn: 7, descriptionColumn: 9 },
+			{ titleColumn: 10, descriptionColumn: 12 },
+			{ titleColumn: 13, descriptionColumn: 15 },
+			{ titleColumn: 17, descriptionColumn: 19 },
+			{ titleColumn: 20, descriptionColumn: 22 },
+			{ titleColumn: 23, descriptionColumn: 25 },
+		],
+		maxTitleLength: 56,
 	},
 	"Artifact Perks": {
 		strategy: "paired-columns",

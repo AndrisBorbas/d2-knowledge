@@ -1,16 +1,17 @@
-export type SiteSectionStatus = "live" | "planned";
+export type SiteSectionStatus =
+	"live" | "planned" | "navOnly" | "sectionsOnly" | "hidden";
 
 export type SiteSection = {
 	slug: string;
 	href: string;
 	title: string;
-	description: string;
+	description?: string;
 	status: SiteSectionStatus;
 };
 
 // Single source of truth for the landing page cards and the header nav.
 // Adding a page = one entry here plus the route.
-export const SITE_SECTIONS: SiteSection[] = [
+export const SITE_PAGES: SiteSection[] = [
 	{
 		slug: "artifacts",
 		href: "/artifacts",
@@ -34,8 +35,21 @@ export const SITE_SECTIONS: SiteSection[] = [
 			"Every perk, verb, mod and set bonus in one searchable list, with the community numbers spliced into the in-game text.",
 		status: "live",
 	},
+	{
+		slug: "changelog",
+		href: "/changelog",
+		title: "Changelog",
+		status: "navOnly",
+	},
 ];
 
-export const LIVE_SITE_SECTIONS = SITE_SECTIONS.filter(
-	(section) => section.status === "live",
+export const NAV_SITE_PAGES = SITE_PAGES.filter(
+	(section) => section.status === "live" || section.status === "navOnly",
+);
+
+export const SECTIONS_SITE_PAGES = SITE_PAGES.filter(
+	(section) =>
+		section.status === "live" ||
+		section.status === "sectionsOnly" ||
+		section.status === "planned",
 );

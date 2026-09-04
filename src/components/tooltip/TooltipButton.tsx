@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils/utils";
 import type { KeywordClickPayload, KeywordHoverPayload } from "./types";
 
 const tooltipButtonVariants = cva(
-	"font-bold cursor-pointer underline hover:underline-offset-1 underline-offset-2 transition-all underline decoration-dashed",
+	"cursor-pointer font-bold underline decoration-dashed underline-offset-2 transition-all hover:underline-offset-1",
 	{
 		variants: {
 			color: {

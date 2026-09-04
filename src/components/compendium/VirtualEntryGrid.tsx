@@ -180,6 +180,7 @@ function ElementScrollGrid({
 	const { columnCount } = useGridMetrics(scrollElementRef);
 	const rows = useMemo(() => chunk(items, columnCount), [items, columnCount]);
 
+	// eslint-disable-next-line react-hooks/incompatible-library
 	const rowVirtualizer = useVirtualizer({
 		count: rows.length,
 		getScrollElement: () => scrollElementRef.current,
@@ -193,7 +194,7 @@ function ElementScrollGrid({
 			// A reserved gutter keeps the scrollbar from changing the width the
 			// column count is derived from.
 			className={cn(
-				"h-full [scrollbar-gutter:stable] overflow-y-auto",
+				"h-full scrollbar-gutter-stable overflow-y-auto",
 				className,
 			)}
 		>
@@ -261,6 +262,7 @@ function WindowScrollGrid({
 	// React Compiler bails out of `useVirtualizer` on its own, but it doesn't
 	// know `useWindowVirtualizer` has the same mutable-getter shape - memoizing
 	// this component freezes the list at its first paint.
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	("use no memo");
 
 	const containerRef = useRef<HTMLDivElement>(null);

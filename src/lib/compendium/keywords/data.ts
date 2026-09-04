@@ -138,4 +138,38 @@ export const extraAliases: Verb[] = [
 // `buildTermPattern` matches these in the singular only.
 export const noPluralTerms = ["Edge", "Physic", "Synergy"];
 
+// Entry titles that read as ordinary English far more often than they name the
+// thing they title - "damage at the edge of the radius", "once no longer
+// surrounded", "Threadlings while in flight". Nothing in the corpus references
+// the minor mods behind these words, so they get no keyword at all. The entries
+// stay browsable and searchable; they just stop hijacking the prose.
+export const neverLinkedTerms = ["Edge", "Surrounded", "Flight", "Synergy"];
+
+// One-word entry titles are proper nouns, so they only match text that
+// capitalizes them too (see `buildKeywordTerms`) - except these, which the
+// descriptions write in lowercase as readily as in title case.
+export const caseInsensitiveTitleTerms = ["Grapple"];
+
+// Longer names that happen to contain a shorter keyword while meaning something
+// else entirely: "Flinch Resistance" is a stat, not the Resistance chest mod,
+// and Telesto's bolts are not crossbow Bolts. Keywords never match inside these
+// spans. Names that have an entry of their own need no listing - the longest
+// match already wins - so this is only for the ones the compendium never
+// defines.
+export const protectedPhrases = [
+	"Damage Resistance",
+	"Flinch Resistance",
+	"Arc Bolts",
+	"Light Bolts",
+	"Lightning Bolts",
+	"Telesto Bolts",
+	"Void Bolts",
+	"Godslayer Broadhead",
+	"Handheld Supernova",
+	"Voltaic Overflow",
+	// Sic: the Dark Ether Reaper entry exists, but this description misspells
+	// it, so the longest-match rule cannot protect the name here.
+	"Dark Eather Reaper",
+];
+
 export const classNames = ["Hunter", "Titan", "Warlock"];

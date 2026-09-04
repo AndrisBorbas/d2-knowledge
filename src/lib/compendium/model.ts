@@ -88,6 +88,12 @@ export const entrySchema = z.object({
 	sourceRefs: z.array(unifiedSourceRefSchema).optional(),
 	secondaryName: z.string().optional(),
 	secondaryDetail: z.string().optional(),
+	// Extra terms that should highlight to this entry on top of its title -
+	// currently the perks an exotic catalyst grants, whose names the game text
+	// uses instead of the catalyst's own ("The Rock", not "Forerunner
+	// Catalyst"). An alias that another entry already owns as its title is
+	// dropped when the keywords are built, so this never steals a term.
+	keywordAliases: z.array(z.string()).optional(),
 	iconPath: z.string().optional(),
 	// Present => render entry.iconPath with a gold masterwork-style border
 	// (currently just exotic weapon catalysts, whose icon is the catalyst

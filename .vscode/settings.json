@@ -11,6 +11,7 @@
 		"*.css": "tailwindcss",
 		"*.scss": "tailwindcss"
 	},
+	"tailwindCSS.classFunctions": ["cn", "cva", "clsx", "cx"],
 	"chat.tools.terminal.autoApprove": {
 		"bun": true
 	}

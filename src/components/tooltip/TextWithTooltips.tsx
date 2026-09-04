@@ -28,17 +28,22 @@ type TextWithTooltipsProps = {
 	onKeywordClick?: (payload: KeywordClickPayload) => void;
 };
 
+// Mirrors how the hover preview and the clicked-entries panel pick the entry a
+// keyword opens, so both sides agree on what a keyword points at.
+function resolveTargetEntryId(
+	keyword: Keyword,
+	entry: AnnotatedEntry,
+	entryMap: Map<string, AnnotatedEntry>,
+): string {
+	return keyword.references.find((id) => entryMap.has(id)) ?? entry.id;
+}
+
 function resolveColorEntry(
 	keyword: Keyword,
 	entry: AnnotatedEntry,
 	entryMap: Map<string, AnnotatedEntry>,
 ): AnnotatedEntry {
-	const referencedEntryId = keyword.references.find((id) => entryMap.has(id));
-	if (!referencedEntryId) {
-		return entry;
-	}
-
-	return entryMap.get(referencedEntryId) ?? entry;
+	return entryMap.get(resolveTargetEntryId(keyword, entry, entryMap)) ?? entry;
 }
 
 function InlineGlyphIcon({ glyph }: { glyph: IconGlyph }) {
@@ -129,6 +134,23 @@ export function TextWithTooltips(props: TextWithTooltipsProps) {
 					text.slice(annotation.start, annotation.end),
 					iconGlyphs,
 					`missing-${annotation.start}`,
+				),
+			);
+			cursor = annotation.end;
+			continue;
+		}
+
+		// An entry that mentions its own name would otherwise link back to the
+		// card the reader is already looking at, so leave it as plain text.
+		if (
+			resolveTargetEntryId(keyword, props.entry, props.entryMap) ===
+			props.entry.id
+		) {
+			nodes.push(
+				...renderDescriptionSegment(
+					text.slice(annotation.start, annotation.end),
+					iconGlyphs,
+					`self-${annotation.start}`,
 				),
 			);
 			cursor = annotation.end;

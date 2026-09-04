@@ -1,2 +1,5 @@
 data/*
 *.min.json
+vendor/*
+out/*
+build/*

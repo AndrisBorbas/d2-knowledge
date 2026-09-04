@@ -7,13 +7,19 @@ import type {
 } from "@/lib/compendium/model";
 import type { Section } from "@/lib/ddc/types";
 
+export type ColumnGroup = {
+	titleColumn: number;
+	descriptionColumn: number;
+};
+
 export type TabNormalizationRule = {
 	strategy:
 		| "paired-rows"
 		| "same-row"
 		| "set-bonus-two-rows"
 		| "skip"
-		| "paired-columns";
+		| "paired-columns"
+		| "column-groups";
 	type?: "element";
 	fragmentTitlePrefix?: string;
 	skipStart?: number;
@@ -35,6 +41,9 @@ export type TabNormalizationRule = {
 	// same-row (non-element)
 	titleColumn?: number;
 	descriptionColumn?: number;
+	// Splits the title cell on its first blank line: what precedes it is the
+	// name, what follows becomes extraInfo. See splitTitleCell.
+	splitTitleExtraInfo?: boolean;
 	statColumn?: number;
 	allowContinuationRows?: boolean;
 	fragmentNameColumn?: number;
@@ -42,6 +51,12 @@ export type TabNormalizationRule = {
 	// paired-columns
 	titleColumns?: number[];
 	descriptionRowOffset?: number;
+
+	// column-groups
+	columnGroups?: ColumnGroup[];
+	// Row holding each group's own header, used as that group's starting
+	// section ("Helmet" above the helmet mods).
+	sectionHeaderRow?: number;
 
 	// set-bonus-two-rows
 	bonusRowOffset?: number;
@@ -88,6 +103,15 @@ function getNonEmptyCells(row: string[]) {
 		}
 	}
 	return cells;
+}
+
+// The element tabs put a dash in the stat column when a fragment changes no
+// stats, and the tooltip would render that as a bare "-" above the
+// description.
+function toExtraInfo(value: string | undefined) {
+	const text = (value ?? "").trim();
+	if (text.length === 0 || /^[-–—]+$/.test(text)) return undefined;
+	return text;
 }
 
 function getCell(row: string[] | undefined, column: number | undefined) {
@@ -231,6 +255,116 @@ function buildEntriesFromPairedColumns(
 	return entries;
 }
 
+// The Weapon Perks tab writes the perk name and where it drops in the same
+// cell, separated by a blank line ("Bray Inheritance" / "Deep Stone Crypt" /
+// "Raid"). A single newline means something else there: it wraps a qualifier
+// that is part of the name ("Aggressive Frame" / "(Shotguns)"), which four
+// frames rely on to stay distinct from each other, so only a blank line
+// splits. Armor Mods writes its energy cost on a wrapped line of its own,
+// bracketed ("Ammo Finder" / "[3 Energy]"), and that belongs beside the name
+// rather than in it.
+function splitTitleCell(value: string) {
+	const toLines = (block: string) =>
+		block
+			.split("\n")
+			.map((line) => line.trim())
+			.filter((line) => line.length > 0);
+
+	const [nameBlock, ...rest] = value.replace(/\r/g, "").split(/\n\s*\n/);
+	const nameLines = toLines(nameBlock);
+	const isBracketed = (line: string) => /^\[.+\]$/.test(line);
+
+	const extraInfo = [
+		...nameLines.filter(isBracketed),
+		...rest.flatMap(toLines),
+	].join(" | ");
+
+	return {
+		title: nameLines.filter((line) => !isBracketed(line)).join(" "),
+		extraInfo: extraInfo.length > 0 ? extraInfo : undefined,
+	};
+}
+
+// Armor Mods is laid out across the page rather than down it: three columns
+// per list - name, icon, effect - repeated for Helmet, Arms, Chest, Legs and
+// Class Item, then for the activity-specific mods. Each group is an
+// independent list, so each gets its own pass and its own section, and the
+// icon column is skipped (the sheet's icons are floating images the API does
+// not return; the manifest supplies them by name instead).
+//
+// The activity columns stack several activities in one column, headed by a
+// name with no effect beside it ("Crota's End"), so a title-only row switches
+// that group's section rather than becoming an entry of its own.
+function buildEntriesFromColumnGroups(
+	tabName: string,
+	rows: (string[] | null)[],
+	rule: TabNormalizationRule,
+): Entry[] {
+	const entries: Entry[] = [];
+	const headerRow =
+		typeof rule.sectionHeaderRow === "number"
+			? (rows[rule.sectionHeaderRow] ?? undefined)
+			: undefined;
+	const startRow = rule.skipStart ?? 0;
+
+	for (const group of rule.columnGroups ?? []) {
+		let section: string | null = getCell(headerRow, group.titleColumn) || null;
+
+		for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
+			const row = rows[rowIndex];
+			if (!row) continue;
+
+			const titleCell = getCell(row, group.titleColumn);
+			if (!titleCell) continue;
+
+			const { title, extraInfo } = splitTitleCell(titleCell);
+			if (!title) continue;
+			if (
+				typeof rule.maxTitleLength === "number" &&
+				title.length > rule.maxTitleLength
+			) {
+				continue;
+			}
+
+			const description = getCell(row, group.descriptionColumn);
+			if (!description) {
+				section = title;
+				continue;
+			}
+
+			const source: SourceSpan = {
+				tab: tabName,
+				row: rowIndex,
+				column: group.titleColumn,
+			};
+
+			entries.push({
+				id: createEntryId(tabName, section, title, source),
+				tab: tabName,
+				section,
+				groups: buildBaseGroups(tabName, section),
+				title,
+				description,
+				descriptionSegments: [
+					{
+						source: {
+							tab: tabName,
+							row: rowIndex,
+							column: group.descriptionColumn,
+						},
+						start: 0,
+						length: description.length,
+					},
+				],
+				source,
+				extraInfo,
+			});
+		}
+	}
+
+	return entries;
+}
+
 function buildEntryFromSameRow(
 	tabName: string,
 	rowIndex: number,
@@ -256,7 +390,7 @@ function buildEntryFromSameRow(
 		description = nonEmptyCells[1]?.text;
 		descriptionColumn = nonEmptyCells[1].column;
 		source.column = nonEmptyCells[0].column;
-		extraInfo = nonEmptyCells[2]?.text;
+		extraInfo = toExtraInfo(nonEmptyCells[2]?.text);
 
 		// Prismatic lists each class's shared (non-exclusive) grenades/melees
 		// as a flat row of names borrowed from other subclasses ("Arcbolt
@@ -277,9 +411,28 @@ function buildEntryFromSameRow(
 
 		if (!title || !description) return null;
 
+		if (rule.splitTitleExtraInfo) {
+			const split = splitTitleCell(title);
+			title = split.title;
+			extraInfo = split.extraInfo;
+		}
+
+		if (
+			typeof rule.maxTitleLength === "number" &&
+			title.length > rule.maxTitleLength
+		) {
+			return null;
+		}
+		if (
+			typeof rule.minDescriptionLength === "number" &&
+			description.length < rule.minDescriptionLength
+		) {
+			return null;
+		}
+
 		if (typeof rule.statColumn === "number") {
-			const stat = getCell(row, rule.statColumn);
-			if (stat.length > 0) {
+			const stat = toExtraInfo(getCell(row, rule.statColumn));
+			if (stat) {
 				extraInfo = stat;
 			}
 		}
@@ -324,6 +477,15 @@ function buildEntryFromSameRow(
 		source,
 		extraInfo,
 	};
+}
+
+// A set bonus is filed under Armor Sets alone, not under the Armor Perks tab
+// it is read from: that group is the armor perks proper - exotic armor traits
+// and armor mods - and the 112 set bonuses would bury them.
+function setBonusGroups(section: string | null) {
+	const groups = ["Armor Sets"];
+	if (section) groups.push(section);
+	return groups;
 }
 
 function buildEntriesFromSetBonusRows(
@@ -374,7 +536,7 @@ function buildEntriesFromSetBonusRows(
 			id: createEntryId(tabName, section, title, source),
 			tab: tabName,
 			section,
-			groups: [...buildBaseGroups(tabName, section), "Armor Sets"],
+			groups: setBonusGroups(section),
 			title: title,
 			description: firstDescription.text,
 			descriptionSegments: [
@@ -406,7 +568,7 @@ function buildEntriesFromSetBonusRows(
 			id: createEntryId(tabName, section, title, source),
 			tab: tabName,
 			section,
-			groups: [...buildBaseGroups(tabName, section), "Armor Sets"],
+			groups: setBonusGroups(section),
 			title: title,
 			description: secondDescription.text,
 			descriptionSegments: [
@@ -425,6 +587,19 @@ function buildEntriesFromSetBonusRows(
 	}
 
 	return entries;
+}
+
+// The sheet keeps a superseded copy of a row right under the current one,
+// marked with a standalone uppercase OLD in the name cell ("Well of Radiance"
+// / "OLD", "Burning Ambition OLD"). Both copies carry the same perk name, so
+// without this the stale one shows up as a second entry beside the live one.
+// Case matters: "Old Martian Diplomacy", "Too Old for This" and "Child of the
+// Old Gods" are real names, and "Legacy" is one too ("Bray Legacy", "Legacy's
+// Oath"), so neither is a marker.
+const LEGACY_TITLE_MARKER = /(^|[^A-Za-z])OLD([^A-Za-z]|$)/;
+
+function isLegacyTitle(title: string) {
+	return LEGACY_TITLE_MARKER.test(title);
 }
 
 function firstTitleLine(title: string) {
@@ -512,11 +687,36 @@ type NormalizerState = {
 	lastRowWasDynamicSection: boolean;
 };
 
+function toTabData(
+	tabName: string,
+	entries: Entry[],
+	rule: TabNormalizationRule,
+): TabData {
+	const liveEntries = entries.filter((entry) => !isLegacyTitle(entry.title));
+
+	return {
+		name: tabName,
+		entries:
+			rule.type === "element"
+				? mergeGrenadeAspectSynergies(liveEntries)
+				: liveEntries,
+	};
+}
+
 export function normalizeTabWithRule(
 	tabName: string,
 	rows: (string[] | null)[],
 	rule: TabNormalizationRule,
 ): TabData {
+	// Read column-first, so the row walk below has nothing to do for it.
+	if (rule.strategy === "column-groups") {
+		return toTabData(
+			tabName,
+			buildEntriesFromColumnGroups(tabName, rows, rule),
+			rule,
+		);
+	}
+
 	const entries: Entry[] = [];
 
 	const currentState: NormalizerState = {
@@ -733,13 +933,7 @@ export function normalizeTabWithRule(
 		}
 	}
 
-	const finalEntries =
-		rule.type === "element" ? mergeGrenadeAspectSynergies(entries) : entries;
-
-	return {
-		name: tabName,
-		entries: finalEntries,
-	};
+	return toTabData(tabName, entries, rule);
 }
 
 export function normalizeTabs(

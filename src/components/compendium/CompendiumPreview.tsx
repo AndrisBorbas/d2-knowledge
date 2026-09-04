@@ -2,7 +2,6 @@
 
 import { Group, Panel, Separator } from "react-resizable-panels";
 
-import { StatTiles } from "@/components/site/StatTiles";
 import type { CompendiumDataset } from "@/lib/compendium/model";
 
 import { ClickedTooltipsDrawer } from "./ClickedTooltipsDrawer";
@@ -32,12 +31,13 @@ export function CompendiumPreview({ seed }: CompendiumPreviewProps) {
 		effectiveQuery,
 		activeGroups,
 		toggleGroup,
+		clearGroups,
 		filterBarGroups,
+		groupCategories,
+		groupResultCounts,
 		keywordMap,
 		entryMap,
-		allEntries,
 		visibleEntries,
-		totalAnnotations,
 	} = useEntryFiltering(dataset);
 
 	const {
@@ -69,6 +69,10 @@ export function CompendiumPreview({ seed }: CompendiumPreviewProps) {
 				filterBarGroups={filterBarGroups}
 				activeGroups={activeGroups}
 				onToggleGroup={toggleGroup}
+				onClearGroups={clearGroups}
+				groupCategories={groupCategories}
+				groupResultCounts={groupResultCounts}
+				resultCount={visibleEntries.length}
 				clickedCount={clickedEntries.length}
 				onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
 			/>

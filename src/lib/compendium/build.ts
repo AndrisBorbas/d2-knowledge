@@ -5,7 +5,7 @@ import { loadClaritySource } from "@/lib/clarity/source";
 import { loadDdcSource } from "@/lib/ddc/source";
 import { isSameDescription } from "@/lib/utils/text";
 
-import { mergeUnifiedEntries, toEntries } from "./aggregate";
+import { foldModFamilies, mergeUnifiedEntries, toEntries } from "./aggregate";
 import { annotateEntries, buildKeywords, toSlug } from "./keywords/annotate";
 import { Verbs } from "./keywords/data";
 import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
@@ -16,10 +16,12 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 		loadClaritySource(),
 	]);
 
-	const mergedUnifiedEntries = mergeUnifiedEntries([
-		...ddcSource.unifiedEntries,
-		...claritySource.unifiedEntries,
-	]);
+	const mergedUnifiedEntries = foldModFamilies(
+		mergeUnifiedEntries([
+			...ddcSource.unifiedEntries,
+			...claritySource.unifiedEntries,
+		]),
+	);
 	const bungieResolver = await loadBungieManifestSnapshotResolver();
 	const enrichedUnifiedEntries = mergedUnifiedEntries.map((entry) => {
 		if (entry.iconPath) return entry;

@@ -48,6 +48,43 @@ function normalizeTitle(value: string) {
 		.replace(/(^-|-$)/g, "");
 }
 
+function normalizeLookupName(value: string) {
+	return value
+		.toLowerCase()
+		.trim()
+		.replace(/[^a-z0-9]+/g, " ")
+		.replace(/\s+/g, " ");
+}
+
+// A catalyst item is named after its weapon ("Forerunner Catalyst"), while the
+// name the game text and the community use is the perk it grants ("The Rock").
+// Lead with the granted perk and keep the item name as the qualifier, so the
+// entry is findable under both.
+//
+// Names the item already carries are dropped first: the "<Perk> Refit" plugs
+// and a handful of catalysts (Osteo Striga, Grand Overture) name themselves
+// after their perk already, and "Subsistence (Subsistence Refit)" is noise.
+// What is left renames the entry only when it is a single perk - a catalyst
+// that grants two (Skyburner: Incandescent and Burning Ambition) has no one
+// name to lead with, so it keeps the item name and only takes the aliases.
+function resolveCatalystNaming(params: {
+	itemTitle: string;
+	grantedPerkNames: string[] | undefined;
+}) {
+	const itemKey = normalizeLookupName(params.itemTitle);
+	const perkNames = (params.grantedPerkNames ?? []).filter(
+		(name) => !itemKey.startsWith(normalizeLookupName(name)),
+	);
+
+	return {
+		title:
+			perkNames.length === 1
+				? `${perkNames[0]} (${params.itemTitle})`
+				: params.itemTitle,
+		keywordAliases: perkNames.length > 0 ? perkNames : undefined,
+	};
+}
+
 function toTitleCase(value: string) {
 	if (value.length === 0) return value;
 	return value[0].toUpperCase() + value.slice(1).toLowerCase();
@@ -244,6 +281,13 @@ export async function loadClaritySource() {
 		const resolvedItemIconPath =
 			enrichment?.itemIconPath ?? itemAliasEnrichment?.itemIconPath;
 		const isCatalyst = (record.type ?? "").toLowerCase().includes("catalyst");
+		const resolvedTitle = enrichment?.perkName?.trim() || entry.title;
+		const catalystNaming = isCatalyst
+			? resolveCatalystNaming({
+					itemTitle: resolvedTitle,
+					grantedPerkNames: enrichment?.grantedPerkNames,
+				})
+			: null;
 
 		unifiedEntries.push({
 			...entry,
@@ -254,7 +298,8 @@ export async function loadClaritySource() {
 			}),
 			sourceId: "clarity",
 			sourceRefs: [sourceRef],
-			title: enrichment?.perkName?.trim() || entry.title,
+			title: catalystNaming?.title ?? resolvedTitle,
+			keywordAliases: catalystNaming?.keywordAliases,
 			secondaryName: resolvedItemName,
 			iconPath: enrichment?.perkIconPath,
 			iconBorder: isCatalyst ? "masterwork" : undefined,

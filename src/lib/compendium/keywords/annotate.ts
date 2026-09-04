@@ -7,9 +7,15 @@ import type {
 	DescriptionSegment,
 	Entry,
 	Keyword,
-	KeywordCategory,
 } from "../model";
-import { extraAliases, noPluralTerms, Verbs } from "./data";
+import {
+	caseInsensitiveTitleTerms,
+	extraAliases,
+	neverLinkedTerms,
+	noPluralTerms,
+	protectedPhrases,
+	Verbs,
+} from "./data";
 import { annotatePatterns } from "./patterns";
 
 const ELEMENT_TERMS = new Set([
@@ -22,34 +28,6 @@ const ELEMENT_TERMS = new Set([
 	"kinetic",
 ]);
 
-const WEAPON_TERMS = [
-	"rifle",
-	"launcher",
-	"shotgun",
-	"sniper",
-	"sword",
-	"glaive",
-	"bow",
-	"trace",
-	"machine gun",
-];
-
-const STATUS_TERMS = [
-	"jolt",
-	"weaken",
-	"volatile",
-	"freeze",
-	"slow",
-	"scorch",
-	"radiant",
-	"amplified",
-	"devour",
-	"unravel",
-	"suspend",
-	"sever",
-	"blind",
-];
-
 export function toSlug(value: string) {
 	return value
 		.toLowerCase()
@@ -61,7 +39,24 @@ export function toSlug(value: string) {
 export type KeywordMatchTerm = {
 	keywordId: string;
 	term: string;
+	// One-word proper nouns only match text that capitalizes them too, see
+	// `buildKeywordTerms`.
+	requireCapitalized: boolean;
 };
+
+const NEVER_LINKED_TERMS = new Set(
+	neverLinkedTerms.map((term) => term.toLowerCase()),
+);
+
+const CASE_INSENSITIVE_TITLE_TERMS = new Set(
+	caseInsensitiveTitleTerms.map((term) => term.toLowerCase()),
+);
+
+// A term has to be worth matching on: the compendium has an entry titled "-",
+// and a one-character term would otherwise annotate every hyphen in the corpus.
+function isLinkableTerm(term: string) {
+	return term.trim().length > 1 && /[a-z0-9]/i.test(term);
+}
 
 export function buildKeywords(
 	entries: Entry[],
@@ -71,7 +66,8 @@ export function buildKeywords(
 
 	for (const entry of entries) {
 		const label = entry.title.trim();
-		if (!label) continue;
+		if (!isLinkableTerm(label)) continue;
+		if (NEVER_LINKED_TERMS.has(label.toLowerCase())) continue;
 
 		const id = toSlug(label);
 		const existing = map.get(id);
@@ -108,15 +104,71 @@ export function buildKeywords(
 		}
 	}
 
+	addEntryKeywordAliases(entries, map);
+
 	return [...map.values()].sort((a, b) => a.label.localeCompare(b.label));
+}
+
+// Second pass on purpose: an entry-supplied alias may name a perk that has its
+// own entry further down the list (Skyburner Catalyst grants Incandescent), and
+// that entry is the one the term should open. So aliases are only handed out
+// once every title has claimed its keyword, and a term that is already spoken
+// for - by a title, by a verb alias, or by an earlier entry's alias - is
+// dropped rather than fought over.
+function addEntryKeywordAliases(entries: Entry[], map: Map<string, Keyword>) {
+	const taken = new Set(map.keys());
+	for (const keyword of map.values()) {
+		for (const alias of keyword.aliases) {
+			taken.add(toSlug(alias));
+		}
+	}
+
+	for (const entry of entries) {
+		if (!entry.keywordAliases?.length) continue;
+
+		const keyword = map.get(toSlug(entry.title.trim()));
+		if (!keyword) continue;
+
+		for (const alias of entry.keywordAliases) {
+			const aliasSlug = toSlug(alias);
+			if (!aliasSlug || taken.has(aliasSlug)) continue;
+			taken.add(aliasSlug);
+			keyword.aliases.push(alias);
+		}
+	}
+}
+
+// A keyword the curated verb lists never claimed is just an entry title, so it
+// names a thing - a perk, a mod, an aspect - rather than describing an action.
+// One-word names of that sort collide with ordinary English constantly
+// ("no longer surrounded", "can overflow the magazine"), and the descriptions
+// capitalize a name every time they actually mean it, so demanding a capital
+// costs almost nothing and removes most of the noise. Curated verbs keep
+// matching either way: "freeze" is lowercase as often as not.
+// Only the leading letter is checked, never the rest: the sources disagree with
+// themselves about the inner capitals of hyphenated names ("Barri-nade" is
+// written "Barri-Nade" in the very text that defines it), and that disagreement
+// says nothing about whether the name was meant.
+function requiresCapitalizedMatch(keyword: Keyword, term: string) {
+	if (keyword.types.length !== 1 || keyword.types[0] !== "default") {
+		return false;
+	}
+	const trimmed = term.trim();
+	if (trimmed.split(/\s+/).length !== 1) return false;
+	if (!/^[A-Z]/.test(trimmed)) return false;
+	return !CASE_INSENSITIVE_TITLE_TERMS.has(trimmed.toLowerCase());
 }
 
 export function buildKeywordTerms(keywords: Keyword[]): KeywordMatchTerm[] {
 	const terms: KeywordMatchTerm[] = [];
 	for (const keyword of keywords) {
-		terms.push({ keywordId: keyword.id, term: keyword.label });
-		for (const alias of keyword.aliases) {
-			terms.push({ keywordId: keyword.id, term: alias });
+		for (const term of [keyword.label, ...keyword.aliases]) {
+			if (!isLinkableTerm(term)) continue;
+			terms.push({
+				keywordId: keyword.id,
+				term,
+				requireCapitalized: requiresCapitalizedMatch(keyword, term),
+			});
 		}
 	}
 
@@ -159,8 +211,32 @@ export function buildTermPattern(term: string) {
 	return `${escapeRegExp(term)}s?`;
 }
 
+// Spans of text that spell out a longer name which merely contains a keyword.
+// Nothing is annotated inside them, so "Flinch Resistance" stays a stat instead
+// of linking to the Resistance chest mod.
+function findProtectedRanges(text: string) {
+	const ranges: { start: number; end: number }[] = [];
+
+	for (const phrase of protectedPhrases) {
+		const pattern = new RegExp(
+			`(^|[^A-Za-z0-9])(${buildTermPattern(phrase)})(?=$|[^A-Za-z0-9])`,
+			"gi",
+		);
+
+		let match = pattern.exec(text);
+		while (match) {
+			const start = match.index + (match[1] ?? "").length;
+			ranges.push({ start, end: start + (match[2] ?? "").length });
+			match = pattern.exec(text);
+		}
+	}
+
+	return ranges;
+}
+
 export function annotateText(text: string, terms: KeywordMatchTerm[]) {
 	const candidates: Annotation[] = [];
+	const protectedRanges = findProtectedRanges(text);
 
 	for (const term of terms) {
 		const pattern = new RegExp(
@@ -175,7 +251,16 @@ export function annotateText(text: string, terms: KeywordMatchTerm[]) {
 			const start = match.index + leadingLength;
 			const end = start + matchedText.length;
 
-			if (matchedText.length > 1) {
+			// A candidate that spans the whole protected phrase is the longer name
+			// itself ("Melee Damage Resistance"), so it is what the phrase was
+			// protecting the text for.
+			const isProtected = protectedRanges.some(
+				(range) =>
+					intersects(range, { start, end }) &&
+					!(start <= range.start && end >= range.end),
+			);
+			const isMiscased = term.requireCapitalized && !/^[A-Z]/.test(matchedText);
+			if (!isProtected && !isMiscased) {
 				candidates.push({
 					keywordId: term.keywordId,
 					start,

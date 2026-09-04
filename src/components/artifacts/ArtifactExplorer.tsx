@@ -1,6 +1,5 @@
 "use client";
 
-import { X } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { parseAsString, useQueryState } from "nuqs";
@@ -9,13 +8,13 @@ import { useMemo, useState } from "react";
 import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
 import { Tooltip } from "@/components/tooltip/Tooltip";
+import { Button, UnpinButton } from "@/components/ui/Button";
 import type { Artifact } from "@/lib/compendium/artifacts";
 import { buildBundleMaps, type TooltipBundle } from "@/lib/compendium/bundle";
 
 import { ArtifactBackdrop } from "./ArtifactBackdrop";
 import { ArtifactPerkGrid } from "./ArtifactPerkGrid";
 import { ArtifactShowcase } from "./ArtifactShowcase";
-
 type ArtifactExplorerProps = {
 	artifacts: Artifact[];
 	bundle: TooltipBundle;
@@ -128,13 +127,14 @@ export function ArtifactExplorer({ artifacts, bundle }: ArtifactExplorerProps) {
 								<p className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 									Pinned ({pinnedEntries.length})
 								</p>
-								<button
-									type="button"
+								<Button
+									variant="danger"
+									size="xs"
 									onClick={() => setPinnedIds([])}
-									className="borderHover bg-red-500/10 px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] text-red-500 uppercase backdrop-blur-md transition hover:bg-red-500/20"
+									className="backdrop-blur-md"
 								>
 									Clear all
-								</button>
+								</Button>
 							</div>
 							<div className="3xl:grid-cols-4 grid gap-3 lg:grid-cols-2 2xl:grid-cols-3">
 								{pinnedEntries.map((entry) => (
@@ -148,14 +148,11 @@ export function ArtifactExplorer({ artifacts, bundle }: ArtifactExplorerProps) {
 											onKeywordClick={handleKeywordClick}
 											onGroupClick={handleGroupClick}
 										/>
-										<button
-											type="button"
+										<UnpinButton
 											onClick={() => togglePinned(entry.id)}
-											className="borderHover absolute top-1 right-1 bg-red-500/15 p-1 text-white/70 transition hover:bg-red-500/30"
-											aria-label={`Remove ${entry.title}`}
-										>
-											<X size={14} className="text-red-500" />
-										</button>
+											className="absolute top-1 right-1"
+											label={`Unpin ${entry.title}`}
+										/>
 									</div>
 								))}
 							</div>

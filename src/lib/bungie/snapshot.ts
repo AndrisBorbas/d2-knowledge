@@ -17,6 +17,10 @@ type BungieManifestRow = {
 	n?: string;
 	i?: string;
 	d?: string;
+	// Only exotic catalysts carry this: the names of the perks the catalyst
+	// grants, written by scripts/fetch-bungie-manifest.mts from the same perk
+	// lookup that supplies the catalyst's description and icon.
+	gp?: string[];
 	displayProperties?: BungieDisplayProperties;
 };
 
@@ -89,6 +93,8 @@ export type BungieExoticEnrichment = {
 	itemIconPath?: string;
 	perkName?: string;
 	perkIconPath?: string;
+	// Catalysts only - see BungieManifestRow.gp.
+	grantedPerkNames?: string[];
 };
 
 export type BungieManifestSnapshotResolver = {
@@ -240,11 +246,17 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			perkDisplayFromTrait ??
 			perkDisplayFromSandbox;
 
+		const grantedPerkNames =
+			params.perkHash === undefined
+				? undefined
+				: this.inventoryTable?.[String(params.perkHash)]?.gp;
+
 		return {
 			itemName: itemDisplay?.name,
 			itemIconPath: normalizeIconPath(itemDisplay?.icon),
 			perkName: perkDisplay?.name,
 			perkIconPath: normalizeIconPath(perkDisplay?.icon),
+			grantedPerkNames,
 		};
 	}
 

@@ -1,6 +1,11 @@
 "use client";
 
-import { cn } from "@/lib/utils/utils";
+import { X } from "lucide-react";
+
+import { Button } from "@/components/ui/Button";
+import type { CategorizedGroups } from "@/lib/compendium/groups";
+
+import { GroupFilterPopover } from "./GroupFilterPopover";
 
 type FilterHeaderProps = {
 	searchInput: string;
@@ -10,6 +15,10 @@ type FilterHeaderProps = {
 	filterBarGroups: string[];
 	activeGroups: string[];
 	onToggleGroup: (group: string) => void;
+	onClearGroups: () => void;
+	groupCategories: CategorizedGroups[];
+	groupResultCounts: Map<string, number>;
+	resultCount: number;
 	clickedCount: number;
 	onOpenMobileDrawer: () => void;
 };
@@ -22,71 +31,77 @@ export function FilterHeader({
 	filterBarGroups,
 	activeGroups,
 	onToggleGroup,
+	onClearGroups,
+	groupCategories,
+	groupResultCounts,
+	resultCount,
 	clickedCount,
 	onOpenMobileDrawer,
 }: FilterHeaderProps) {
+	// Active filters lead, so the current selection is always the first thing in
+	// the strip even when the suggestions overflow off the right edge.
+	const stripGroups = [
+		...activeGroups,
+		...filterBarGroups.filter((group) => !activeGroups.includes(group)),
+	];
+
 	return (
 		<header className="border-b border-blue-500/50 backdrop-blur-md">
-			<div className="">
-				<div className="flex gap-3 p-2">
-					<input
-						id="compendium-search"
-						type="search"
-						value={searchInput}
-						onChange={onSearchChange}
-						placeholder="Search by title, description, item, or hash..."
-						className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/65 focus:border-sky-300/60 focus:outline-none"
-					/>
-					{hasActiveQuery ? (
-						<button
-							type="button"
-							onClick={onClearSearch}
-							className="borderHover bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
-						>
-							Clear
-						</button>
-					) : null}
-				</div>
-				<div className="m-2 ml-3 flex flex-row items-center gap-4">
-					<p className="shrink-0 text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
-						Filter:
-					</p>
-					<div
-						className="flex min-w-0 [scrollbar-width:none] flex-nowrap gap-2 overflow-x-auto [-ms-overflow-style:none] lg:flex-wrap lg:overflow-x-visible [&::-webkit-scrollbar]:hidden"
-						role="group"
-						aria-label="Filter entries"
-					>
-						{filterBarGroups.map((group) => {
-							const isActive = activeGroups.includes(group);
+			<div className="flex gap-3 p-2">
+				<input
+					id="compendium-search"
+					type="search"
+					value={searchInput}
+					onChange={onSearchChange}
+					placeholder="Search by title, description, item, or hash..."
+					className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/65 focus:border-sky-300/60 focus:outline-none"
+				/>
+				{hasActiveQuery ? (
+					<Button size="md" onClick={onClearSearch}>
+						Clear
+					</Button>
+				) : null}
+			</div>
 
-							return (
-								<button
-									key={group}
-									type="button"
-									onClick={() => onToggleGroup(group)}
-									aria-pressed={isActive}
-									className={cn(
-										"borderHover shrink-0 px-3 py-1.5 text-xs font-semibold tracking-[0.08em] whitespace-nowrap uppercase transition",
-										isActive
-											? "borderActive bg-blue-500/30 text-sky-100"
-											: "bg-blue-500/10 text-white/68 hover:bg-blue-500/20",
-									)}
-								>
-									{group}
-								</button>
-							);
-						})}
-					</div>
+			<div className="m-2 ml-3 flex flex-row items-center gap-2">
+				<GroupFilterPopover
+					groupCategories={groupCategories}
+					groupResultCounts={groupResultCounts}
+					activeGroups={activeGroups}
+					onToggleGroup={onToggleGroup}
+					onClearGroups={onClearGroups}
+					resultCount={resultCount}
+				/>
+
+				<div
+					className="flex min-w-0 [scrollbar-width:none] flex-nowrap gap-2 overflow-x-auto [-ms-overflow-style:none] lg:flex-wrap lg:overflow-x-visible [&::-webkit-scrollbar]:hidden"
+					role="group"
+					aria-label="Filter entries"
+				>
+					{stripGroups.map((group) => {
+						const isActive = activeGroups.includes(group);
+
+						return (
+							<Button
+								key={group}
+								variant="subtle"
+								active={isActive}
+								onClick={() => onToggleGroup(group)}
+								aria-pressed={isActive}
+								className="flex shrink-0 items-center gap-1 whitespace-nowrap"
+							>
+								<span>{group}</span>
+								{isActive ? <X size={11} className="text-sky-100/80" /> : null}
+							</Button>
+						);
+					})}
 				</div>
-				<div className="mt-4 lg:hidden">
-					<button
-						type="button"
-						onClick={onOpenMobileDrawer}
-						className="border border-white/16 bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
-					>
-						Open clicked tooltips ({clickedCount})
-					</button>
-				</div>
+			</div>
+
+			<div className="mt-4 lg:hidden">
+				<Button size="md" onClick={onOpenMobileDrawer}>
+					Open clicked tooltips ({clickedCount})
+				</Button>
 			</div>
 		</header>
 	);

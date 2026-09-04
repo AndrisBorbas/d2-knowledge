@@ -1,8 +1,9 @@
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
-import { Settings, X } from "lucide-react";
+import { Settings } from "lucide-react";
 
+import { Button, CloseButton } from "@/components/ui/Button";
 import {
 	DESCRIPTION_SOURCE_LABELS,
 	DESCRIPTION_SOURCE_TOGGLES,
@@ -12,7 +13,6 @@ import {
 	useSettingsStore,
 } from "@/lib/site/settingsStore";
 import { cn } from "@/lib/utils/utils";
-
 const ALIGN_OPTIONS: { value: TooltipAlign; label: string }[] = [
 	{ value: "left", label: "Left" },
 	{ value: "center", label: "Center" },
@@ -39,23 +39,21 @@ function SourceToggles() {
 					const isVisible = visibleSources[id];
 
 					return (
-						<button
+						<Button
 							key={id}
-							type="button"
+							variant="option"
+							size="option"
+							active={isVisible}
 							onClick={() => toggleSource(id)}
 							aria-pressed={isVisible}
-							className={cn(
-								"borderHover flex items-center justify-between px-3 py-2 text-sm transition",
-								isVisible
-									? "bg-blue-500/25 text-sky-100"
-									: "bg-blue-500/8 text-white/55 hover:bg-blue-500/15",
-							)}
+							// The bg carries the state here, so the frame stays off.
+							className="flex items-center justify-between after:-inset-0 after:border-gray-500/0 after:border-t-gray-500"
 						>
 							<span>{DESCRIPTION_SOURCE_LABELS[id]}</span>
 							<span className="text-masterwork text-[11px] tracking-[0.14em] uppercase">
 								{isVisible ? "Shown" : "Hidden"}
 							</span>
-						</button>
+						</Button>
 					);
 				})}
 			</div>
@@ -112,20 +110,17 @@ function ExtraInfoOrderToggle() {
 
 			<div className="flex gap-2 pt-1">
 				{EXTRA_INFO_ORDERS.map((order) => (
-					<button
+					<Button
 						key={order}
-						type="button"
+						variant="option"
+						size="option"
+						active={extraInfoOrder === order}
 						onClick={() => setExtraInfoOrder(order)}
 						aria-pressed={extraInfoOrder === order}
-						className={cn(
-							"borderHover flex-1 px-2 py-2 text-xs transition",
-							extraInfoOrder === order
-								? "borderActive bg-blue-500/25 text-sky-100"
-								: "bg-blue-500/8 text-white/55 hover:bg-blue-500/15",
-						)}
+						className="flex-1 px-2 text-xs"
 					>
 						{EXTRA_INFO_ORDER_LABELS[order]}
-					</button>
+					</Button>
 				))}
 			</div>
 
@@ -147,20 +142,17 @@ function AlignToggle() {
 
 			<div className="flex gap-2 pt-1">
 				{ALIGN_OPTIONS.map((option) => (
-					<button
+					<Button
 						key={option.value}
-						type="button"
+						variant="option"
+						size="option"
+						active={tooltipAlign === option.value}
 						onClick={() => setTooltipAlign(option.value)}
 						aria-pressed={tooltipAlign === option.value}
-						className={cn(
-							"borderHover flex-1 px-3 py-2 text-sm transition",
-							tooltipAlign === option.value
-								? "borderActive bg-blue-500/25 text-sky-100"
-								: "bg-blue-500/8 text-white/55 hover:bg-blue-500/15",
-						)}
+						className="flex-1"
 					>
 						{option.label}
-					</button>
+					</Button>
 				))}
 			</div>
 		</div>
@@ -170,14 +162,18 @@ function AlignToggle() {
 export function SettingsDialog() {
 	return (
 		<Dialog.Root>
-			<Dialog.Trigger
-				aria-label="Open settings"
-				className="borderHover group bg-blue-500/10 p-2 text-white/68 hover:bg-blue-500/20"
-			>
-				<Settings
-					size={18}
-					className="transition-all duration-300 ease-in-out group-hover:rotate-90 group-data-[state=open]:-rotate-90"
-				/>
+			<Dialog.Trigger asChild>
+				<Button
+					variant="subtle"
+					size="icon"
+					aria-label="Open settings"
+					className="group"
+				>
+					<Settings
+						size={18}
+						className="transition-all duration-300 ease-in-out group-hover:rotate-90 group-data-[state=open]:-rotate-90"
+					/>
+				</Button>
 			</Dialog.Trigger>
 
 			<Dialog.Portal>
@@ -187,11 +183,12 @@ export function SettingsDialog() {
 						<Dialog.Title className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
 							Settings
 						</Dialog.Title>
-						<Dialog.Close
-							aria-label="Close settings"
-							className="borderHover bg-red-500/15 p-1.5 text-red-500 hover:bg-red-500/30"
-						>
-							<X size={16} />
+						<Dialog.Close asChild>
+							<CloseButton
+								variant="danger"
+								size="iconSm"
+								label="Close settings"
+							/>
 						</Dialog.Close>
 					</div>
 

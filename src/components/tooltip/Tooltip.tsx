@@ -1,7 +1,8 @@
 "use client";
 
-import { Pin } from "lucide-react";
 import { useRef } from "react";
+
+import { Button, PinButton } from "@/components/ui/Button";
 
 import { IconSlot, TooltipBody } from "./TooltipContent";
 import type {
@@ -55,29 +56,27 @@ export function Tooltip({
 				</div>
 				<h5 className="text-xl font-semibold text-white">{entry.title}</h5>
 				{showPinButton && (
-					<button
-						type="button"
+					<PinButton
 						onClick={() =>
 							onKeywordClick?.({ keywordId: entry.id, entryId: entry.id })
 						}
-						className="borderHover absolute top-1 right-1 bg-blue-500/20 p-1 text-white/70 transition hover:bg-blue-600/30"
-						aria-label={`Remove ${entry.title}`}
-					>
-						<Pin size={14} />
-					</button>
+						className="absolute top-1 right-1 text-white/70"
+						label={`Pin ${entry.title}`}
+					/>
 				)}
 			</div>
 
 			<div className="mx-2 mt-2 flex flex-wrap gap-2">
 				{entry.groups.map((group) => (
-					<button
+					<Button
 						key={group}
-						type="button"
+						variant="muted"
+						size="tag"
 						onClick={() => onGroupClick?.(group)}
-						className="borderHover inline-block bg-blue-950/20 px-3 py-1 text-xs text-white/60 transition hover:bg-blue-950/40"
+						className="inline-block"
 					>
 						{group}
-					</button>
+					</Button>
 				))}
 			</div>
 

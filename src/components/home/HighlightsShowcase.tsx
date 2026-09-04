@@ -6,8 +6,8 @@ import { useMemo, useState, useSyncExternalStore } from "react";
 import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
 import { Tooltip } from "@/components/tooltip/Tooltip";
+import { Button } from "@/components/ui/Button";
 import { buildBundleMaps, type TooltipBundle } from "@/lib/compendium/bundle";
-
 const VISIBLE_COUNT = 4;
 
 // Picked once per page load. The page is prerendered, so the starting window has
@@ -65,13 +65,12 @@ export function HighlightsShowcase({ bundle }: HighlightsShowcaseProps) {
 				<h3 className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 					Random entries
 				</h3>
-				<button
-					type="button"
+				<Button
+					size="md"
 					onClick={() => setShuffleCount((current) => current + 1)}
-					className="borderHover bg-white/8 px-4 py-2 text-xs font-semibold tracking-[0.12em] text-white/75 uppercase transition hover:bg-white/14"
 				>
 					Shuffle
-				</button>
+				</Button>
 			</div>
 
 			<div className="grid items-start gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

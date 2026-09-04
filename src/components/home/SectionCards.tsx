@@ -1,5 +1,5 @@
 import { HoverPrefetchLink } from "@/components/site/HoverPrefetchLink";
-import { SITE_SECTIONS } from "@/lib/site/sections";
+import { SECTIONS_SITE_PAGES } from "@/lib/site/sections";
 
 export function SectionCards() {
 	return (
@@ -9,7 +9,7 @@ export function SectionCards() {
 			</h3>
 
 			<div className="grid gap-3 text-white md:grid-cols-2 xl:grid-cols-3">
-				{SITE_SECTIONS.map((section) => {
+				{SECTIONS_SITE_PAGES.map((section) => {
 					const body = (
 						<>
 							<div className="flex items-center justify-between gap-2">

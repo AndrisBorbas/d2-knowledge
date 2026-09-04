@@ -1,12 +1,11 @@
 "use client";
 
-import { PinOff } from "lucide-react";
-
 import { Tooltip } from "@/components/tooltip/Tooltip";
 import type {
 	TooltipKeywordClickPayload,
 	TooltipKeywordHoverPayload,
 } from "@/components/tooltip/types";
+import { Button, UnpinButton } from "@/components/ui/Button";
 import type { AnnotatedEntry, Keyword } from "@/lib/compendium/model";
 
 type ClickedTooltipsPanelProps = {
@@ -45,13 +44,9 @@ export function ClickedTooltipsPanel({
 					</p>
 				</div>
 				{clickedEntries.length > 0 ? (
-					<button
-						type="button"
-						onClick={onClearAll}
-						className="borderHover bg-red-500/10 px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] text-red-500 uppercase transition hover:bg-red-500/20"
-					>
+					<Button variant="danger" size="xs" onClick={onClearAll}>
 						Clear all
-					</button>
+					</Button>
 				) : null}
 			</div>
 
@@ -69,14 +64,11 @@ export function ClickedTooltipsPanel({
 								onGroupClick={onGroupClick}
 							/>
 							<div className="flex justify-end">
-								<button
-									type="button"
+								<UnpinButton
 									onClick={() => onRemove(entry.id)}
-									className="borderHover absolute top-1 right-1 bg-red-500/15 p-1 text-white/70 transition hover:bg-red-500/30"
-									aria-label={`Remove ${entry.title}`}
-								>
-									<PinOff size={14} className="text-red-500" />
-								</button>
+									className="absolute top-1 right-1"
+									label={`Unpin ${entry.title}`}
+								/>
 							</div>
 						</div>
 					))}

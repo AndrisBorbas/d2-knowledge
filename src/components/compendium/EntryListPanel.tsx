@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/Button";
 import type { AnnotatedEntry, Keyword } from "@/lib/compendium/model";
 
 import { VirtualEntryGrid } from "./VirtualEntryGrid";
@@ -61,13 +62,9 @@ export function EntryListPanel({
 					<span className="font-semibold text-white">{effectiveQuery}</span>.
 				</p>
 				{hasActiveQuery ? (
-					<button
-						type="button"
-						onClick={onClearSearch}
-						className="mt-5 rounded-xl border border-white/16 bg-white/8 px-4 py-2.5 text-xs font-semibold tracking-[0.12em] text-white/80 uppercase transition hover:bg-white/14"
-					>
+					<Button size="md" onClick={onClearSearch} className="mt-5">
 						Clear search
-					</button>
+					</Button>
 				) : null}
 			</div>
 		);

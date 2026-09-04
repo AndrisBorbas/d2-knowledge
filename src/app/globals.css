@@ -146,6 +146,8 @@ h6 {
 		@apply relative;
 		@apply after:pointer-events-none after:absolute after:inset-0 after:block after:border after:border-gray-500/0 after:border-t-gray-500 after:transition-all after:duration-200 after:ease-out;
 		@apply hover:after:-inset-1.5 hover:after:border hover:after:border-gray-500;
+		/* A disabled control should not grow a hover frame. */
+		@apply disabled:hover:after:inset-0 disabled:hover:after:border-gray-500/0 disabled:hover:after:border-t-gray-500;
 	}
 
 	.borderActive {

@@ -1,3 +1,0 @@
-- [ ] Fix prismatic abilites and aspects parsing: https://docs.google.com/spreadsheets/d/1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4/htmlview?pru=AAABn_g8IC0*9A_ciqNgcVrRPXobikZNog#gid=1918152785
-- [x] Create an artifacts page that looks like the in game artifact.
-- [ ] Lightweight frame missing from clarity.
