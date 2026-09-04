@@ -85,7 +85,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 
 			<div className="mt-8 flex items-center justify-center gap-16 text-xs text-white/60">
 				<a
-					href="https://www.github.com/AndrisBorbas/owlsector"
+					href="https://www.github.com/AndrisBorbas/d2-knowledge"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="underline hover:text-white"
@@ -129,7 +129,7 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 				</p>
 				<p className="mt-2 text-xs text-white/45">
 					<a
-						href="https://www.github.com/AndrisBorbas/owlsector"
+						href="https://www.github.com/AndrisBorbas/d2-knowledge"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/80 hover:underline hover:underline-offset-2"
