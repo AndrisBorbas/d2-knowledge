@@ -1,12 +1,14 @@
 {
-	"generatedAt": "2026-09-08T13:05:55.394Z",
+	"generatedAt": "2026-09-08T13:57:32.056Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
 		"DestinyTraitDefinition",
 		"DestinyDamageTypeDefinition",
 		"DestinyBreakerTypeDefinition",
-		"DestinyEquipableItemSetDefinition"
+		"DestinyEquipableItemSetDefinition",
+		"DestinyPlugSetDefinition",
+		"DestinyStatDefinition"
 	],
 	"manifestVersion": "244213.26.06.29.2000-1-bnet.65864",
 	"manifestPath": "/common/destiny2_content/sqlite/en/world_sql_content_a695ee698e87bcb0333c1026ba10cd63.content",
@@ -46,6 +48,26 @@
 				"n": "Weft Cutter",
 				"i": "/common/destiny2_content/icons/353e4e6198aec5cc5cc299f17c2497a3.png",
 				"d": "Dealing sustained damage severs the target."
+			},
+			"5333292": {
+				"n": "Strafe Glide",
+				"i": "/common/destiny2_content/icons/393d6a9a013b5ecef2e6c23119ae751d.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with strong directional control."
+			},
+			"5333293": {
+				"n": "Burst Glide",
+				"i": "/common/destiny2_content/icons/656aa34f9a71bd3621b5719bd779b337.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed."
+			},
+			"5333294": {
+				"n": "Balanced Glide",
+				"i": "/common/destiny2_content/icons/cd3d17a16fba2ac5bcee4c1e8052401d.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control."
+			},
+			"5333295": {
+				"n": "Blink",
+				"i": "/common/destiny2_content/icons/6930fabff4175da3425bfe9e1c4b2c54.jpg",
+				"d": "Jump while airborne to teleport a short distance."
 			},
 			"8507332": {
 				"n": "Chaotic Exchanger",
@@ -93,6 +115,21 @@
 				"n": "Nano-Munitions",
 				"i": "/common/destiny2_content/icons/3af17bb526ecf91b31a3cab210bbf744.png",
 				"d": "Being near allies slowly builds up a partial emergency ammo refill for the next time this weapon runs out of ammo. Emergency ammo amount increases with time spent near allies."
+			},
+			"20616656": {
+				"n": "Triple Jump",
+				"i": "/common/destiny2_content/icons/733d623b28e7c56d2e1aa4f5d9aae685.jpg",
+				"d": "While airborne, sustain your air control with a second or third jump."
+			},
+			"20616658": {
+				"n": "High Jump",
+				"i": "/common/destiny2_content/icons/27879b83074e70dab436973f45b83cac.jpg",
+				"d": "While airborne, jump a second time to reach greater heights."
+			},
+			"20616659": {
+				"n": "Strafe Jump",
+				"i": "/common/destiny2_content/icons/1e236c74f7d5193df3472765245ca55c.jpg",
+				"d": "While airborne, jump a second time with strong directional control."
 			},
 			"23349941": {
 				"n": "Implement of Curiosity",
@@ -280,7 +317,17 @@
 			"74393640": {
 				"n": "Facet of Defiance",
 				"i": "/common/destiny2_content/icons/ee2901d9887ebf717331ee90bca2409b.png",
-				"d": "Finishers create a detonation that either jolts, scorches, slows, severs, or makes targets volatile based on the damage type of your equipped Super."
+				"d": "Finishers create a detonation that either jolts, scorches, slows, severs, or makes targets volatile based on the damage type of your equipped Super.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": 10
+					}
+				]
 			},
 			"75282108": {
 				"n": "Weighted Edge",
@@ -326,22 +373,46 @@
 			"83039192": {
 				"n": "Hellion",
 				"i": "/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
-				"d": "Activate your class ability to summon a [Solar] Solar mortar that lobs flaming projectiles at distant targets. Targets damaged by the mortar are scorched.\n\nHellion damage is scaled by the enhanced benefit of the Grenade stat."
+				"d": "Activate your class ability to summon a [Solar] Solar mortar that lobs flaming projectiles at distant targets. Targets damaged by the mortar are scorched.\n\nHellion damage is scaled by the enhanced benefit of the Grenade stat.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"83039193": {
 				"n": "Touch of Flame",
 				"i": "/common/destiny2_content/icons/d6b44fe69ff876449e732b52b7d9d334.jpg",
-				"d": "Your Healing, Solar, Firebolt, and Fusion Grenades have enhanced functionality.\n\nHealing Grenade: Improves the strength of cure and restoration effects applied. Consuming a Healing Grenade with Heat Rises also applies restoration to nearby allies.\n\nSolar Grenade: Increases linger duration. Periodically emits blobs of lava around its perimeter.\n\nFirebolt Grenade: Increases target search radius and maximum target count.\n\nFusion Grenade: Explodes twice."
+				"d": "Your Healing, Solar, Firebolt, and Fusion Grenades have enhanced functionality.\n\nHealing Grenade: Improves the strength of cure and restoration effects applied. Consuming a Healing Grenade with Heat Rises also applies restoration to nearby allies.\n\nSolar Grenade: Increases linger duration. Periodically emits blobs of lava around its perimeter.\n\nFirebolt Grenade: Increases target search radius and maximum target count.\n\nFusion Grenade: Explodes twice.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"83039194": {
 				"n": "Heat Rises",
 				"i": "/common/destiny2_content/icons/d647fd2019707f044ce97b52f802e465.jpg",
-				"d": "You can fire weapons, melee, and throw grenades while gliding.\n\n[Grenade]  : Hold to consume your grenade, gaining Heat Rises and releasing a burst of healing energy that cures nearby allies. The strength of the burst is increased when a Healing Grenade is consumed.\n\nFinal blows while airborne increase the duration of Heat Rises and grant melee energy."
+				"d": "You can fire weapons, melee, and throw grenades while gliding.\n\n[Grenade]  : Hold to consume your grenade, gaining Heat Rises and releasing a burst of healing energy that cures nearby allies. The strength of the burst is increased when a Healing Grenade is consumed.\n\nFinal blows while airborne increase the duration of Heat Rises and grant melee energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"83039195": {
 				"n": "Icarus Dash",
 				"i": "/common/destiny2_content/icons/55a690bbd9cd53777df674a279422865.jpg",
-				"d": "[Air Dodge]  : Dodge quickly while airborne.\n\nWhile Heat Rises is active, you have an additional dodge.\n\nWhile airborne, rapidly defeating targets with your Super or weapons cures you."
+				"d": "[Air Dodge]  : Dodge quickly while airborne.\n\nWhile Heat Rises is active, you have an additional dodge.\n\nWhile airborne, rapidly defeating targets with your Super or weapons cures you.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"84503918": {
 				"n": "Empowered Finish",
@@ -370,6 +441,26 @@
 				"n": "Onslaught",
 				"i": "/common/destiny2_content/icons/7e07db21ba2b35751507256e46230616.png",
 				"d": "Final blows with this weapon increase its rate of fire."
+			},
+			"95544328": {
+				"n": "Triple Jump",
+				"i": "/common/destiny2_content/icons/fb5c90f3df4b9e1d4dede6d807f34ed6.jpg",
+				"d": "While airborne, sustain your air control with a second or third jump."
+			},
+			"95544329": {
+				"n": "Blink",
+				"i": "/common/destiny2_content/icons/df3f7482cf7667181369db14b7115f38.jpg",
+				"d": "Jump while airborne to teleport a short distance."
+			},
+			"95544330": {
+				"n": "High Jump",
+				"i": "/common/destiny2_content/icons/1c99afbdead82ec1defcbed010ce07db.jpg",
+				"d": "While airborne, jump a second time to reach greater heights."
+			},
+			"95544331": {
+				"n": "Strafe Jump",
+				"i": "/common/destiny2_content/icons/43b8b5a84ec3bbdc78fb83427f743962.jpg",
+				"d": "While airborne, jump a second time with strong directional control."
 			},
 			"95934356": {
 				"n": "Strand Loader",
@@ -464,52 +555,136 @@
 			"124726496": {
 				"n": "Facet of Blessing",
 				"i": "/common/destiny2_content/icons/ba3a11d30e571278caf81e1ab4a220de.png",
-				"d": "Melee final blows start health regeneration. While transcendent, melee final blows start health regeneration for you and nearby allies."
+				"d": "Melee final blows start health regeneration. While transcendent, melee final blows start health regeneration for you and nearby allies.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"124726497": {
 				"n": "Facet of Command",
 				"i": "/common/destiny2_content/icons/24e6282bf3ee1c2a53717ed085cec441.png",
-				"d": "Freezing or suppressing a target reloads your equipped weapons and increases weapon stability, aim assist, and airborne effectiveness.\n\nDefeating frozen or suppressed targets creates a Stasis Shard or Void Breach."
+				"d": "Freezing or suppressing a target reloads your equipped weapons and increases weapon stability, aim assist, and airborne effectiveness.\n\nDefeating frozen or suppressed targets creates a Stasis Shard or Void Breach.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"124726498": {
 				"n": "Facet of Purpose",
 				"i": "/common/destiny2_content/icons/7a6b1d98544eb4a8512c6be0b6486456.png",
-				"d": "Picking up an Orb of Power grants either Bolt Charge, Restoration, Frost Armor, Woven Mail, or Overshield based on the damage type of your equipped Super."
+				"d": "Picking up an Orb of Power grants either Bolt Charge, Restoration, Frost Armor, Woven Mail, or Overshield based on the damage type of your equipped Super.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": -10
+					}
+				]
 			},
 			"124726499": {
 				"n": "Facet of Ruin",
 				"i": "/common/destiny2_content/icons/058a2677d6742227811e81d8c4354270.png",
-				"d": "Increases the size and damage of the burst when you shatter a Stasis crystal or frozen target, and increases the area of effect of Solar ignitions."
+				"d": "Increases the size and damage of the burst when you shatter a Stasis crystal or frozen target, and increases the area of effect of Solar ignitions.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 2996146975,
+						"v": 10
+					}
+				]
 			},
 			"124726500": {
 				"n": "Facet of Mending",
 				"i": "/common/destiny2_content/icons/9e769fcade4b6088574826b72c0d28ea.png",
-				"d": "Grenade final blows cure you. Transcendence grenade final blows increase the strength of the effect."
+				"d": "Grenade final blows cure you. Transcendence grenade final blows increase the strength of the effect.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"124726501": {
 				"n": "Facet of Honor",
 				"i": "/common/destiny2_content/icons/0381dcb3720a7eba9d3a24c0101ddfa7.png",
-				"d": "Collecting an Elemental pickup or destroying a Tangle grants Transcendence energy of the same type."
+				"d": "Collecting an Elemental pickup or destroying a Tangle grants Transcendence energy of the same type.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"124726502": {
 				"n": "Facet of Sacrifice",
 				"i": "/common/destiny2_content/icons/b1aec7c22fee7032b6a4898e3c9867ff.png",
-				"d": "While you have an Arc, Solar, or Void buff, ability final blows grant bonus Darkness Transcendence energy."
+				"d": "While you have an Arc, Solar, or Void buff, ability final blows grant bonus Darkness Transcendence energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": 10
+					}
+				]
 			},
 			"124726503": {
 				"n": "Facet of Bravery",
 				"i": "/common/destiny2_content/icons/7bade26040e7b26f4458062b9b3aa465.png",
-				"d": "Defeating targets with grenade final blows grants Volatile Rounds to your [Void] Void weapons. Defeating targets with powered melee final blows grants Unraveling Rounds to your [Strand] Strand weapons."
+				"d": "Defeating targets with grenade final blows grants Volatile Rounds to your [Void] Void weapons. Defeating targets with powered melee final blows grants Unraveling Rounds to your [Strand] Strand weapons.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"124726504": {
 				"n": "Facet of Dominance",
 				"i": "/common/destiny2_content/icons/9a8bc8a614afe98844541df966a2c274.png",
-				"d": "Your Void grenades weaken targets, and your Arc grenades jolt targets."
+				"d": "Your Void grenades weaken targets, and your Arc grenades jolt targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"124726505": {
 				"n": "Facet of Awakening",
 				"i": "/common/destiny2_content/icons/4b95e3952707f0da2be11f0a68de1f3b.png",
-				"d": "Rapidly defeating targets with Light or Darkness damage or Super final blows generates an Elemental pickup of the matching damage type."
+				"d": "Rapidly defeating targets with Light or Darkness damage or Super final blows generates an Elemental pickup of the matching damage type.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"124786972": {
 				"n": "Necrotic Grip",
@@ -703,22 +878,46 @@
 			"187655372": {
 				"n": "Trapper's Ambush",
 				"i": "/common/destiny2_content/icons/e91760df2b81d191da9e2c62cb3fcda7.jpg",
-				"d": "Activate your air move to consume your class ability energy and dive to the ground, damaging targets on impact. Damage is greatly increased if striking while you have any Void status effect.\n\nDamaging opponents with this ability heals you. Defeating combatants with this ability grants Devour.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activate your air move to consume your class ability energy and dive to the ground, damaging targets on impact. Damage is greatly increased if striking while you have any Void status effect.\n\nDamaging opponents with this ability heals you. Defeating combatants with this ability grants Devour.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"187655373": {
 				"n": "Vanishing Step",
 				"i": "/common/destiny2_content/icons/f23323d11f0ad79781f91c70f4c644ac.jpg",
-				"d": "Dodging makes you invisible."
+				"d": "Dodging makes you invisible.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"187655374": {
 				"n": "Stylish Executioner",
 				"i": "/common/destiny2_content/icons/ed7f8c49b77fa46f4eec87a3c167c4b1.jpg",
-				"d": "Defeating a weakened, suppressed, or volatile target grants Invisibility and Truesight.\n\nAfter performing a Stylish Execution, your next melee attack while invisible weakens targets."
+				"d": "Defeating a weakened, suppressed, or volatile target grants Invisibility and Truesight.\n\nAfter performing a Stylish Execution, your next melee attack while invisible weakens targets.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"187655375": {
 				"n": "On the Prowl",
 				"i": "/common/destiny2_content/icons/9afb3b5fb819f4427122736712c5dab6.jpg",
-				"d": "Periodically marks a nearby combatant as a priority target for you and your team. Entering invisibility immediately marks a target.\n\nDefeating priority targets creates a weakening cloud of smoke that makes you and allies invisible when passing through it. \n\nWhen priority targets are defeated, you and nearby allies gain increased weapon reload speed and stability for a short duration and are granted grenade, melee, and class ability energy."
+				"d": "Periodically marks a nearby combatant as a priority target for you and your team. Entering invisibility immediately marks a target.\n\nDefeating priority targets creates a weakening cloud of smoke that makes you and allies invisible when passing through it. \n\nWhen priority targets are defeated, you and nearby allies gain increased weapon reload speed and stability for a short duration and are granted grenade, melee, and class ability energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"187957397": {
 				"n": "Halberdier's Reach",
@@ -971,26 +1170,65 @@
 			"262821312": {
 				"n": "Weavewalk",
 				"i": "/common/destiny2_content/icons/b736858e50cbf0ffcdfe9a2d3d70e839.jpg",
-				"d": "[Air Dodge]  : Dodge while airborne to consume your melee energy and enter the weave, gaining damage resistance from combatants and players. Reactivate your air dodge or cast your Rift to exit the weave, generating Woven Mail for you and nearby allies.\n\nWhile in the weave, your melee energy is drained and you generate perched Threadlings over time. Threadling hits generate ability energy."
+				"d": "[Air Dodge]  : Dodge while airborne to consume your melee energy and enter the weave, gaining damage resistance from combatants and players. Reactivate your air dodge or cast your Rift to exit the weave, generating Woven Mail for you and nearby allies.\n\nWhile in the weave, your melee energy is drained and you generate perched Threadlings over time. Threadling hits generate ability energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"262821317": {
 				"n": "Weaver's Call",
 				"i": "/common/destiny2_content/icons/5d38da97f92b3bdfef333a418ab8caf5.jpg",
-				"d": "Activate your class ability to weave three Threadlings and deploy any Threadlings you have perched.\n\nDealing damage and defeating targets generates perched Threadlings."
+				"d": "Activate your class ability to weave three Threadlings and deploy any Threadlings you have perched.\n\nDealing damage and defeating targets generates perched Threadlings.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"262821318": {
 				"n": "Mindspun Invocation",
 				"i": "/common/destiny2_content/icons/277c475b9d3a3c1d167626b1bf9815ca.jpg",
-				"d": "Your grapple, Shackle Grenade, Threadling Grenade, and Slicewire Grenade have enhanced functionality.\n\nYour grapple melee spawns three Threadlings.\n\n[Grenade]  : Hold to consume your Shackle Grenade and activate Weaver's Trance. Final blows while Weaver's Trance is active create a suspending detonation.\n\n[Grenade]  : Hold to charge your Threadling Grenade, causing it to weave a Threadling Nest at the impact location that repeatedly spawns Threadlings. \n\n[Grenade]  : Hold to charge your Slicewire Grenade. The grenade's final detonation will launch submunitions and leave a Tangle in its wake."
+				"d": "Your grapple, Shackle Grenade, Threadling Grenade, and Slicewire Grenade have enhanced functionality.\n\nYour grapple melee spawns three Threadlings.\n\n[Grenade]  : Hold to consume your Shackle Grenade and activate Weaver's Trance. Final blows while Weaver's Trance is active create a suspending detonation.\n\n[Grenade]  : Hold to charge your Threadling Grenade, causing it to weave a Threadling Nest at the impact location that repeatedly spawns Threadlings. \n\n[Grenade]  : Hold to charge your Slicewire Grenade. The grenade's final detonation will launch submunitions and leave a Tangle in its wake.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"262821319": {
 				"n": "The Wanderer",
 				"i": "/common/destiny2_content/icons/9d7be0c24d6dc7f041289e3b08ecff5e.jpg",
-				"d": "Tangles you throw attach to targets and detonate into a suspending burst. Destroying a Tangle creates a suspending burst after a short delay.\n\nThreadling final blows create Tangles or reduce your current Tangle cooldown."
+				"d": "Tangles you throw attach to targets and detonate into a suspending burst. Destroying a Tangle creates a suspending burst after a short delay.\n\nThreadling final blows create Tangles or reduce your current Tangle cooldown.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"266021826": {
 				"n": "Stoicism",
 				"i": "/common/destiny2_content/icons/9db95c112130c018f823f394668cfb5a.jpg"
+			},
+			"266130437": {
+				"n": "Catapult Lift",
+				"i": "/common/destiny2_content/icons/c09cce402f29548803f4a3f352b03f14.png",
+				"d": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum."
+			},
+			"266130438": {
+				"n": "Strafe Lift",
+				"i": "/common/destiny2_content/icons/157c2ce4c58e099c8d70cfe65815beaf.png",
+				"d": "Jump while airborne to activate Lift and launch into the air with strong directional control."
+			},
+			"266130439": {
+				"n": "High Lift",
+				"i": "/common/destiny2_content/icons/44a4432af0a32959a19049ce5a89dc14.png",
+				"d": "Jump while airborne to activate Lift and launch into the air to greater heights."
 			},
 			"270582335": {
 				"n": "Noble Deeds",
@@ -1194,52 +1432,140 @@
 			"362132288": {
 				"n": "Ember of Torches",
 				"i": "/common/destiny2_content/icons/1ef2e34dad0d52c762ed96e8c932dc38.jpg",
-				"d": "Powered melee attacks against combatants make you and nearby allies radiant."
+				"d": "Powered melee attacks against combatants make you and nearby allies radiant.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"362132289": {
 				"n": "Ember of Combustion",
 				"i": "/common/destiny2_content/icons/45476d85d0e6aeded810f217a0627afb.jpg",
-				"d": "Final blows with a Solar Super causes targets to ignite and creates a Firesprite."
+				"d": "Final blows with a Solar Super causes targets to ignite and creates a Firesprite.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"362132290": {
 				"n": "Ember of Tempering",
 				"i": "/common/destiny2_content/icons/cddc93648f0917dc8bd6663d38d7c379.jpg",
-				"d": "Solar weapon final blows grant you and your allies increased health for a short duration. Stacks 3 times.\n\nWhile Ember of Tempering is active, your weapons have increased airborne effectiveness, and your Solar weapon final blows create a Firesprite."
+				"d": "Solar weapon final blows grant you and your allies increased health for a short duration. Stacks 3 times.\n\nWhile Ember of Tempering is active, your weapons have increased airborne effectiveness, and your Solar weapon final blows create a Firesprite.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": -10
+					}
+				]
 			},
 			"362132291": {
 				"n": "Ember of Char",
 				"i": "/common/destiny2_content/icons/a299dde35bfcd830923458846d7a64f3.jpg",
-				"d": "Your Solar ignitions spread scorch to affected targets."
+				"d": "Your Solar ignitions spread scorch to affected targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": 10
+					}
+				]
 			},
 			"362132292": {
 				"n": "Ember of Benevolence",
 				"i": "/common/destiny2_content/icons/0b5cf537c6ad5d80cbdd3675d0e7134d.jpg",
-				"d": "Applying restoration, cure, or radiant to allies grants increased grenade, melee, and class ability regeneration for a short duration."
+				"d": "Applying restoration, cure, or radiant to allies grants increased grenade, melee, and class ability regeneration for a short duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"362132293": {
 				"n": "Ember of Singeing",
 				"i": "/common/destiny2_content/icons/c9e392abb5417ecab2dccd85fe23c00f.jpg",
-				"d": "Your class ability recharges faster when you scorch targets."
+				"d": "Your class ability recharges faster when you scorch targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"362132294": {
 				"n": "Ember of Empyrean",
 				"i": "/common/destiny2_content/icons/be99d52c12f9359fc948b4563f74e712.jpg",
-				"d": "Solar weapon or ability final blows extend the duration of restoration and radiant effects applied to you."
+				"d": "Solar weapon or ability final blows extend the duration of restoration and radiant effects applied to you.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": -10
+					}
+				]
 			},
 			"362132295": {
 				"n": "Ember of Beams",
 				"i": "/common/destiny2_content/icons/2f12ba3df56de7c0e2790f481cb29a52.jpg",
-				"d": "Your Solar Super projectiles have stronger target acquisition."
+				"d": "Your Solar Super projectiles have stronger target acquisition.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					}
+				]
 			},
 			"362132300": {
 				"n": "Ember of Solace",
 				"i": "/common/destiny2_content/icons/fb46711e0dff2bc2f55c21271e838fe2.jpg",
-				"d": "Radiant and restoration effects applied to you have increased duration."
+				"d": "Radiant and restoration effects applied to you have increased duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"362132301": {
 				"n": "Ember of Blistering",
 				"i": "/common/destiny2_content/icons/52dc6ef9a4b0642e36551542b3a2936e.jpg",
-				"d": "Defeating targets with Solar ignitions grants grenade energy."
+				"d": "Defeating targets with Solar ignitions grants grenade energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"364132014": {
 				"n": "Third Iteration Catalyst",
@@ -1635,6 +1961,21 @@
 				"i": "/common/destiny2_content/icons/0d90d7bd64cfd6da5f19ce2c3478d50a.png",
 				"d": "Faster ready and stow speed for Void weapons."
 			},
+			"469281040": {
+				"n": "High Lift",
+				"i": "/common/destiny2_content/icons/f19a22d03d53694cb927e11e82899dca.png",
+				"d": "Jump while airborne to activate Lift and launch into the air to greater heights."
+			},
+			"469281041": {
+				"n": "Strafe Lift",
+				"i": "/common/destiny2_content/icons/416f132a08d1c15a57adc7c528c17ce5.png",
+				"d": "Jump while airborne to activate Lift and launch into the air with strong directional control."
+			},
+			"469281042": {
+				"n": "Catapult Lift",
+				"i": "/common/destiny2_content/icons/22167767b81dea77781871eeb1e7d3de.png",
+				"d": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum."
+			},
 			"469285294": {
 				"n": "Recombination",
 				"i": "/common/destiny2_content/icons/6f61697efee46bbd14e712deb5f07dc4.png",
@@ -1880,22 +2221,58 @@
 			"537774540": {
 				"n": "Whisper of Chains",
 				"i": "/common/destiny2_content/icons/d764e09a79be71fb5d37e612e610cf18.png",
-				"d": "Defeating targets while you have Frost Armor has a chance to create a [Stasis] Stasis shard."
+				"d": "Defeating targets while you have Frost Armor has a chance to create a [Stasis] Stasis shard.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": 10
+					}
+				]
 			},
 			"537774541": {
 				"n": "Whisper of Torment",
 				"i": "/common/destiny2_content/icons/0f69591331f4def8ab2a4bb27c55b2aa.png",
-				"d": "You gain grenade energy each time you take damage from targets. Having Frost Armor increases the amount of energy gained."
+				"d": "You gain grenade energy each time you take damage from targets. Having Frost Armor increases the amount of energy gained.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"537774542": {
 				"n": "Whisper of Fractures",
 				"i": "/common/destiny2_content/icons/a28274406a8a0e7ec916a33ec830ba6f.png",
-				"d": "Shattering a frozen target with a melee attack grants a stack of Frost Armor."
+				"d": "Shattering a frozen target with a melee attack grants a stack of Frost Armor.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"537774543": {
 				"n": "Whisper of Impetus",
 				"i": "/common/destiny2_content/icons/710c5e3aec26f0e3e468c656a2669e0d.png",
-				"d": "Damaging targets with a [Stasis] Stasis melee reloads your weapons and grants you a temporary boost to weapon ready speed."
+				"d": "Damaging targets with a [Stasis] Stasis melee reloads your weapons and grants you a temporary boost to weapon ready speed.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"539051925": {
 				"n": "Chill Out",
@@ -2263,12 +2640,24 @@
 			"668903196": {
 				"n": "Iceflare Bolts",
 				"i": "/common/destiny2_content/icons/ab67bdd1cdbc7d0f925707c6343d4d54.png",
-				"d": "Shattering a frozen target spawns seekers that track and freeze other nearby targets."
+				"d": "Shattering a frozen target spawns seekers that track and freeze other nearby targets.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"668903197": {
 				"n": "Frostpulse",
 				"i": "/common/destiny2_content/icons/3a8e991dae47b351c45b9c182e9050e4.png",
-				"d": "Casting your Rift generates a shockwave that freezes nearby targets, granting you Frost Armor when it does so.\n\nFreezing combatants generates class ability energy."
+				"d": "Casting your Rift generates a shockwave that freezes nearby targets, granting you Frost Armor when it does so.\n\nFreezing combatants generates class ability energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"671504994": {
 				"n": "Foetracer",
@@ -2615,27 +3004,57 @@
 			"790664810": {
 				"n": "Weaver's Call",
 				"i": "/common/destiny2_content/icons/5d38da97f92b3bdfef333a418ab8caf5.jpg",
-				"d": "Activate your class ability to weave three Threadlings and deploy any Threadlings you have perched.\n\nDealing damage and defeating targets generates perched Threadlings."
+				"d": "Activate your class ability to weave three Threadlings and deploy any Threadlings you have perched.\n\nDealing damage and defeating targets generates perched Threadlings.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"790664812": {
 				"n": "Lightning Surge",
 				"i": "/common/destiny2_content/icons/5730fd352ae02a03290387ea81d39468.jpg",
-				"d": "While sliding, activate your charged melee ability to blink forward, calling down lightning strikes that jolt targets as you rematerialize. This ability also makes you amplified and grants Bolt Charge."
+				"d": "While sliding, activate your charged melee ability to blink forward, calling down lightning strikes that jolt targets as you rematerialize. This ability also makes you amplified and grants Bolt Charge.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"790664813": {
 				"n": "Bleak Watcher",
 				"i": "/common/destiny2_content/icons/51d335e369d83d303203448c75fce439.png",
-				"d": "[Grenade]  : Hold to convert your grenade into a [Stasis] Stasis turret that fires slowing projectiles at nearby targets."
+				"d": "[Grenade]  : Hold to convert your grenade into a [Stasis] Stasis turret that fires slowing projectiles at nearby targets.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"790664814": {
 				"n": "Hellion",
 				"i": "/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
-				"d": "Activate your class ability to summon a [Solar] Solar mortar that lobs flaming projectiles at distant targets. Targets damaged by the mortar are scorched.\n\nHellion damage is scaled by the enhanced benefit of the Grenade stat."
+				"d": "Activate your class ability to summon a [Solar] Solar mortar that lobs flaming projectiles at distant targets. Targets damaged by the mortar are scorched.\n\nHellion damage is scaled by the enhanced benefit of the Grenade stat.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"790664815": {
 				"n": "Feed the Void",
 				"i": "/common/destiny2_content/icons/178bb0e78e55c5b960aa6f42660b9b66.jpg",
-				"d": "Defeat a target with any ability to activate Devour.\n\nYour Devour effects are improved, restoring additional health and grenade energy."
+				"d": "Defeat a target with any ability to activate Devour.\n\nYour Devour effects are improved, restoring additional health and grenade energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"792400107": {
 				"n": "Unflinching Arc Aim",
@@ -2941,6 +3360,21 @@
 			"888791258": {
 				"n": "Rime-coat Raiment",
 				"i": "/common/destiny2_content/icons/16001620c3ec683e805fe68017167b69.jpg"
+			},
+			"890263312": {
+				"n": "Burst Glide",
+				"i": "/common/destiny2_content/icons/63af5e661089e6a1abbbe70186573a50.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed."
+			},
+			"890263313": {
+				"n": "Strafe Glide",
+				"i": "/common/destiny2_content/icons/800f5b922e2215630b83d4a7cdc8cc64.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with strong directional control."
+			},
+			"890263315": {
+				"n": "Balanced Glide",
+				"i": "/common/destiny2_content/icons/e2fe3d4207f35f35ad532e8798897f62.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control."
 			},
 			"890612500": {
 				"n": "Sprint Grip",
@@ -3298,22 +3732,46 @@
 			"988980152": {
 				"n": "Drengr's Lash",
 				"i": "/common/destiny2_content/icons/921a526761ce27c1f419d0bc1aafbf5f.jpg",
-				"d": "Activate your Barricade ability to create a ripple in reality that travels forward along the ground, suspending and damaging the targets it hits.\n\nFinal blows on targets affected by Suspend, Unravel, or Sever grant class ability energy.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activate your Barricade ability to create a ripple in reality that travels forward along the ground, suspending and damaging the targets it hits.\n\nFinal blows on targets affected by Suspend, Unravel, or Sever grant class ability energy.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"988980153": {
 				"n": "Into the Fray",
 				"i": "/common/destiny2_content/icons/1a3b8a7df1d3b68d70c88ca97932ea12.jpg",
-				"d": "Destroying a Tangle or casting your Super grants Woven Mail for nearby allies.\n\nWhile you have Woven Mail, your melee regeneration rate is increased."
+				"d": "Destroying a Tangle or casting your Super grants Woven Mail for nearby allies.\n\nWhile you have Woven Mail, your melee regeneration rate is increased.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"988980154": {
 				"n": "Banner of War",
 				"i": "/common/destiny2_content/icons/fe233d1b109122cec31208633e8e9851.jpg",
-				"d": "Defeat a target with a melee attack, finisher, or Sword to raise a Banner of War that pulses with energy, periodically healing nearby allies and increasing melee and Sword damage. \n\nTargets defeated by you and nearby allies charge the banner, increasing the speed of its pulses."
+				"d": "Defeat a target with a melee attack, finisher, or Sword to raise a Banner of War that pulses with energy, periodically healing nearby allies and increasing melee and Sword damage. \n\nTargets defeated by you and nearby allies charge the banner, increasing the speed of its pulses.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"988980155": {
 				"n": "Flechette Storm",
 				"i": "/common/destiny2_content/icons/106bf863f701bf09ac51fe023f477bb6.jpg",
-				"d": "While sliding, activate your charged melee ability to leap into the air, knocking nearby targets away and dealing damage.\n\nWhile airborne, activate your charged melee again to launch a cluster of damaging, unraveling projectiles. Repeatedly activating melee will chain additional throws."
+				"d": "While sliding, activate your charged melee ability to leap into the air, knocking nearby targets away and dealing damage.\n\nWhile airborne, activate your charged melee again to launch a cluster of damaging, unraveling projectiles. Repeatedly activating melee will chain additional throws.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"993575936": {
 				"n": "Loss",
@@ -3555,22 +4013,58 @@
 			"1051276348": {
 				"n": "Ember of Eruption",
 				"i": "/common/destiny2_content/icons/8734774377b5e73a84ed045a78ce232c.jpg",
-				"d": "Your Solar ignitions have increased area of effect."
+				"d": "Your Solar ignitions have increased area of effect.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"1051276349": {
 				"n": "Ember of Ashes",
 				"i": "/common/destiny2_content/icons/82203cd4545f6dccc3b231d138664ecd.jpg",
-				"d": "You apply more scorch stacks to targets."
+				"d": "You apply more scorch stacks to targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1051276350": {
 				"n": "Ember of Wonder",
 				"i": "/common/destiny2_content/icons/9de7766c9c9b56b75bde1054e3eefb1a.jpg",
-				"d": "Rapidly defeating multiple targets with Solar ignitions generates an Orb of Power."
+				"d": "Rapidly defeating multiple targets with Solar ignitions generates an Orb of Power.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"1051276351": {
 				"n": "Ember of Searing",
 				"i": "/common/destiny2_content/icons/7312346d93dc0e84d46e539a10aebb52.jpg",
-				"d": "Defeating scorched targets grants melee energy and creates a Firesprite."
+				"d": "Defeating scorched targets grants melee energy and creates a Firesprite.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": 10
+					}
+				]
 			},
 			"1052350088": {
 				"n": "Precision Frame",
@@ -3775,6 +4269,21 @@
 				"n": "Unyielding Handle",
 				"i": "/common/destiny2_content/icons/ed978951c1296fb4e6a55e5de2706ed5.png",
 				"d": "Traditional guarding is disabled in favor of offensive capabilities. Gain damage resistance from being in combat for a short duration."
+			},
+			"1128768652": {
+				"n": "Triple Jump",
+				"i": "/common/destiny2_content/icons/e919562f619672aae70ede8fc29e9bad.jpg",
+				"d": "While airborne, sustain your air control with a second or third jump."
+			},
+			"1128768654": {
+				"n": "High Jump",
+				"i": "/common/destiny2_content/icons/dc0fd818a2524460a372e0ecf6799237.jpg",
+				"d": "While airborne, jump a second time to reach greater heights."
+			},
+			"1128768655": {
+				"n": "Strafe Jump",
+				"i": "/common/destiny2_content/icons/66fcf6f378ae895674ea601637166d28.jpg",
+				"d": "While airborne, jump a second time with strong directional control."
 			},
 			"1130820873": {
 				"n": "Super Font",
@@ -4189,6 +4698,26 @@
 				"i": "/common/destiny2_content/icons/e9dd736124e8ef94048901a279a5bb18.png",
 				"d": "Fires a long-range precision energy bolt. This weapon's recoil pattern is more predictably vertical."
 			},
+			"1237488984": {
+				"n": "Blink",
+				"i": "/common/destiny2_content/icons/6930fabff4175da3425bfe9e1c4b2c54.jpg",
+				"d": "Jump while airborne to teleport a short distance."
+			},
+			"1237488985": {
+				"n": "Balanced Glide",
+				"i": "/common/destiny2_content/icons/49cfe74194450ed0a6d78fe12cb5e781.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control."
+			},
+			"1237488986": {
+				"n": "Burst Glide",
+				"i": "/common/destiny2_content/icons/88d1827b19c92ccc9c6aea0e62369f24.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed."
+			},
+			"1237488987": {
+				"n": "Strafe Glide",
+				"i": "/common/destiny2_content/icons/71a15700b61f44a8d96772850d481292.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with strong directional control."
+			},
 			"1241894699": {
 				"n": "Together Forever",
 				"i": "/common/destiny2_content/icons/03e3c6ba0e31dff161f21184212abb90.png",
@@ -4263,27 +4792,57 @@
 			"1262901520": {
 				"n": "Consecration",
 				"i": "/common/destiny2_content/icons/5c71b63e8b653cd63a2ae0d8a8c64979.jpg",
-				"d": "While sliding, activate your charged melee ability to launch a wave of [Solar] Solar energy forward, damaging and scorching targets in front of you as you leap into the air.\n\nWhile airborne, activate your charged melee again to slam to the ground and create a second larger wave of damaging [Solar] Solar energy. If the wave hits a scorched target, they ignite."
+				"d": "While sliding, activate your charged melee ability to launch a wave of [Solar] Solar energy forward, damaging and scorching targets in front of you as you leap into the air.\n\nWhile airborne, activate your charged melee again to slam to the ground and create a second larger wave of damaging [Solar] Solar energy. If the wave hits a scorched target, they ignite.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1262901521": {
 				"n": "Unbreakable",
 				"i": "/common/destiny2_content/icons/717e2702d16fb2175f81b54c2d62b7be.jpg",
-				"d": "[Grenade]  : Hold to summon a [Void] Void shield that draws hostile fire and blocks a portion of incoming damage, gradually draining your grenade energy and granting an Overshield over time.\n\nReleasing the grenade input or running out of energy releases a frontal blast from your shield that disorients combatants and deals increased damage based on how much damage was blocked. Final blows with the frontal blast grant you Devour.\n\nCombatants that come in contact with your shield are temporarily disoriented."
+				"d": "[Grenade]  : Hold to summon a [Void] Void shield that draws hostile fire and blocks a portion of incoming damage, gradually draining your grenade energy and granting an Overshield over time.\n\nReleasing the grenade input or running out of energy releases a frontal blast from your shield that disorients combatants and deals increased damage based on how much damage was blocked. Final blows with the frontal blast grant you Devour.\n\nCombatants that come in contact with your shield are temporarily disoriented.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"1262901522": {
 				"n": "Diamond Lance",
 				"i": "/common/destiny2_content/icons/663ed4baf3983fa13d5daf766ae60bd4.png",
-				"d": "Shatter or defeat targets with abilities or [Stasis] Stasis weapons to create a Stasis lance.\n\n[Shoot]  : Throw the lance to freeze targets on impact.\n\n[Melee]  : Slam the lance to the ground to freeze targets in a small area."
+				"d": "Shatter or defeat targets with abilities or [Stasis] Stasis weapons to create a Stasis lance.\n\n[Shoot]  : Throw the lance to freeze targets on impact.\n\n[Melee]  : Slam the lance to the ground to freeze targets in a small area.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"1262901523": {
 				"n": "Knockout",
 				"i": "/common/destiny2_content/icons/e0fdf5c4c4dc10d6ee63365bf7d70821.jpg",
-				"d": "Critically wounding a target or breaking their shield infuses your melee attacks with Arc energy and increases your melee range against combatants and melee damage against combatants and Guardians for a short time.\n\nDefeating targets with melee attacks makes you amplified and restores a portion of your health. Defeating more powerful combatants increases the amount of health restored."
+				"d": "Critically wounding a target or breaking their shield infuses your melee attacks with Arc energy and increases your melee range against combatants and melee damage against combatants and Guardians for a short time.\n\nDefeating targets with melee attacks makes you amplified and restores a portion of your health. Defeating more powerful combatants increases the amount of health restored.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1262901525": {
 				"n": "Drengr's Lash",
 				"i": "/common/destiny2_content/icons/921a526761ce27c1f419d0bc1aafbf5f.jpg",
-				"d": "Activate your Barricade ability to create a ripple in reality that travels forward along the ground, suspending and damaging the targets it hits.\n\nFinal blows on targets affected by Suspend, Unravel, or Sever grant class ability energy.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activate your Barricade ability to create a ripple in reality that travels forward along the ground, suspending and damaging the targets it hits.\n\nFinal blows on targets affected by Suspend, Unravel, or Sever grant class ability energy.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"1264398905": {
 				"n": "Celerity",
@@ -4388,22 +4947,46 @@
 			"1293395728": {
 				"n": "Ionic Sentry",
 				"i": "/common/destiny2_content/icons/fbf0964f25f9f126e6a47bd6ee53a550.jpg",
-				"d": "Defeat targets with Kinetic or Arc weapons or Arc abilities to charge up an Arc turret that periodically chains lightning between nearby targets, granting a stack of Bolt Charge with each hit.\n\n[Grenade]  : Deploy the Ionic Sentry, blinding nearby targets on initial impact.\n\nIonic Sentry damage is scaled by the enhanced benefit of the Grenade stat."
+				"d": "Defeat targets with Kinetic or Arc weapons or Arc abilities to charge up an Arc turret that periodically chains lightning between nearby targets, granting a stack of Bolt Charge with each hit.\n\n[Grenade]  : Deploy the Ionic Sentry, blinding nearby targets on initial impact.\n\nIonic Sentry damage is scaled by the enhanced benefit of the Grenade stat.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1293395729": {
 				"n": "Electrostatic Mind",
 				"i": "/common/destiny2_content/icons/724434eedd3aeb7cc2799090cd9c3b08.jpg",
-				"d": "Defeating targets with Arc abilities or defeating jolted or blinded targets creates an Ionic Trace.\n\nCollecting an Ionic Trace makes you amplified."
+				"d": "Defeating targets with Arc abilities or defeating jolted or blinded targets creates an Ionic Trace.\n\nCollecting an Ionic Trace makes you amplified.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1293395730": {
 				"n": "Lightning Surge",
 				"i": "/common/destiny2_content/icons/5730fd352ae02a03290387ea81d39468.jpg",
-				"d": "While sliding, activate your charged melee ability to blink forward, calling down lightning strikes that jolt targets as you rematerialize. This ability also makes you amplified and grants Bolt Charge."
+				"d": "While sliding, activate your charged melee ability to blink forward, calling down lightning strikes that jolt targets as you rematerialize. This ability also makes you amplified and grants Bolt Charge.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"1293395731": {
 				"n": "Arc Soul",
 				"i": "/common/destiny2_content/icons/767a0f26b7b3a790a82bb243eb6707b4.jpg",
-				"d": "Cast your Rift to create an Arc Soul that fires at targets in front of you. Allies can pass through your Rift to get an Arc Soul. Your Rift charges faster when allies are near.\n\nWhile amplified, your Arc Souls are supercharged and gain increased fire rate.\n\nArc Soul damage is scaled by the enhanced benefit of the Grenade stat."
+				"d": "Cast your Rift to create an Arc Soul that fires at targets in front of you. Allies can pass through your Rift to get an Arc Soul. Your Rift charges faster when allies are near.\n\nWhile amplified, your Arc Souls are supercharged and gain increased fire rate.\n\nArc Soul damage is scaled by the enhanced benefit of the Grenade stat.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1293710444": {
 				"n": "Harmonic Resistance",
@@ -4746,6 +5329,21 @@
 				"n": "Dream Work",
 				"i": "/common/destiny2_content/icons/31849bc5f040430f9c03416121188286.png",
 				"d": "Once per reload, assists or assisted final blows partially refill the weapon from reserves and increase reload speed for a short duration. Bows receive faster draw time."
+			},
+			"1380268164": {
+				"n": "Catapult Lift",
+				"i": "/common/destiny2_content/icons/b00e7edf76ae296eee2cca55c3a57fa6.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum."
+			},
+			"1380268166": {
+				"n": "High Lift",
+				"i": "/common/destiny2_content/icons/22e574350e9146bd8f5a46772c7db929.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air to greater heights."
+			},
+			"1380268167": {
+				"n": "Strafe Lift",
+				"i": "/common/destiny2_content/icons/212aa3862f79fdc9befc4b2c45df7492.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air with strong directional control."
 			},
 			"1380383475": {
 				"n": "Cerberus+1 Catalyst",
@@ -5375,7 +5973,13 @@
 			"1563930741": {
 				"n": "Howl of the Storm",
 				"i": "/common/destiny2_content/icons/cc2ac1ffdba3d5dc32afdaef4b002505.png",
-				"d": "While sliding, activate your charged melee ability to launch a wave of [Stasis] Stasis energy forward that freezes enemy combatants, slows enemy players, and creates [Stasis] Stasis crystals.\n\nGrants an additional melee charge."
+				"d": "While sliding, activate your charged melee ability to launch a wave of [Stasis] Stasis energy forward that freezes enemy combatants, slows enemy players, and creates [Stasis] Stasis crystals.\n\nGrants an additional melee charge.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1564126489": {
 				"n": "Rapid-Fire Frame",
@@ -5442,6 +6046,26 @@
 				"i": "/common/destiny2_content/icons/4fe8955049eee3e89c4de69dbceb5ab2.png",
 				"d": "Reduces recoil deviation for the weapon."
 			},
+			"1588878496": {
+				"n": "Blink",
+				"i": "/common/destiny2_content/icons/df3f7482cf7667181369db14b7115f38.jpg",
+				"d": "Jump while airborne to teleport a short distance."
+			},
+			"1588878497": {
+				"n": "Triple Jump",
+				"i": "/common/destiny2_content/icons/d928a3ef4498d2a714d69ba81f45ac25.png",
+				"d": "While airborne, sustain your air control with a second or third jump."
+			},
+			"1588878498": {
+				"n": "Strafe Jump",
+				"i": "/common/destiny2_content/icons/2cd8dc264af1af2c293b2b009dc3ed46.png",
+				"d": "While airborne, jump a second time with strong directional control."
+			},
+			"1588878499": {
+				"n": "High Jump",
+				"i": "/common/destiny2_content/icons/4fa48bb6e4ddecc0f19616a67adc5c45.png",
+				"d": "While airborne, jump a second time to reach greater heights."
+			},
 			"1589556860": {
 				"n": "Void Targeting",
 				"i": "/common/destiny2_content/icons/70ceb6ff273dc3364cece9a06e9dad1f.png",
@@ -5492,22 +6116,46 @@
 			"1602994568": {
 				"n": "Controlled Demolition",
 				"i": "/common/destiny2_content/icons/ab2545998f350de7b29549d2b19996e2.jpg",
-				"d": "Hitting a target with a Void ability or Volatile explosion makes them volatile. Further damage to a volatile target causes them to explode. Grants you and nearby allies health when volatile targets explode near you."
+				"d": "Hitting a target with a Void ability or Volatile explosion makes them volatile. Further damage to a volatile target causes them to explode. Grants you and nearby allies health when volatile targets explode near you.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1602994569": {
 				"n": "Bastion",
 				"i": "/common/destiny2_content/icons/5428b311ff07d2bacb073e551ed2bea1.jpg",
-				"d": "Cast your Super to grant Overshield to nearby allies. \n\nCasting your Barricade grants Overshield to yourself and nearby allies and empowers it, enabling it to slowly regenerate the Overshield of allies bunkering behind it and extend their Overshield duration."
+				"d": "Cast your Super to grant Overshield to nearby allies. \n\nCasting your Barricade grants Overshield to yourself and nearby allies and empowers it, enabling it to slowly regenerate the Overshield of allies bunkering behind it and extend their Overshield duration.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"1602994570": {
 				"n": "Offensive Bulwark",
 				"i": "/common/destiny2_content/icons/68683d4544848844a1fe0acdf7417019.jpg",
-				"d": "While you have an Overshield or are inside Ward of Dawn, final blows grant grenade and melee energy, you have increased melee range and damage, and melee final blows restore a small portion of your Overshield and extend its duration.\n\nYou gain an additional Shield Throw while in Sentinel Shield."
+				"d": "While you have an Overshield or are inside Ward of Dawn, final blows grant grenade and melee energy, you have increased melee range and damage, and melee final blows restore a small portion of your Overshield and extend its duration.\n\nYou gain an additional Shield Throw while in Sentinel Shield.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1602994571": {
 				"n": "Unbreakable",
 				"i": "/common/destiny2_content/icons/717e2702d16fb2175f81b54c2d62b7be.jpg",
-				"d": "[Grenade]  : Hold to summon a [Void] Void shield that draws hostile fire and blocks a portion of incoming damage, gradually draining your grenade energy and granting an Overshield over time.\n\nReleasing the grenade input or running out of energy releases a frontal blast from your shield that disorients combatants and deals increased damage based on how much damage was blocked. Final blows with the frontal blast grant you Devour.\n\nCombatants that come in contact with your shield are temporarily disoriented."
+				"d": "[Grenade]  : Hold to summon a [Void] Void shield that draws hostile fire and blocks a portion of incoming damage, gradually draining your grenade energy and granting an Overshield over time.\n\nReleasing the grenade input or running out of energy releases a frontal blast from your shield that disorients combatants and deals increased damage based on how much damage was blocked. Final blows with the frontal blast grant you Devour.\n\nCombatants that come in contact with your shield are temporarily disoriented.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"1604394872": {
 				"n": "Dynamo",
@@ -5639,22 +6287,46 @@
 			"1656549672": {
 				"n": "Touch of Thunder",
 				"i": "/common/destiny2_content/icons/2e639c65526c331f1d97623d51ca3a09.jpg",
-				"d": "Your Flashbang, Pulse, Lightning, and Storm Grenades have enhanced functionality.\n\nFlashbang Grenade: Emits an additional blinding detonation on bounce.\n\nPulse Grenade: Creates Ionic Traces periodically as it damages targets and increases in damage over time.\n\nLightning Grenade: Grants an additional grenade charge, jolts targets hit by the initial blast, and grants Bolt Charge when it causes damage.\n\nStorm Grenade: After detonating, creates a roaming thundercloud that tracks nearby targets and fires bolts of lightning at foes beneath it."
+				"d": "Your Flashbang, Pulse, Lightning, and Storm Grenades have enhanced functionality.\n\nFlashbang Grenade: Emits an additional blinding detonation on bounce.\n\nPulse Grenade: Creates Ionic Traces periodically as it damages targets and increases in damage over time.\n\nLightning Grenade: Grants an additional grenade charge, jolts targets hit by the initial blast, and grants Bolt Charge when it causes damage.\n\nStorm Grenade: After detonating, creates a roaming thundercloud that tracks nearby targets and fires bolts of lightning at foes beneath it.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1656549673": {
 				"n": "Juggernaut",
 				"i": "/common/destiny2_content/icons/046dc9f5d7a897b38d12a05ab837f5c7.jpg",
-				"d": "With full class ability energy and after sprinting for a short time, you gain a frontal shield that blocks incoming damage. When the frontal shield breaks, your class ability energy is depleted. When the frontal shield takes damage, you gain a stack of Bolt Charge.\n\nWhile amplified, the shield blocks significantly more damage before breaking."
+				"d": "With full class ability energy and after sprinting for a short time, you gain a frontal shield that blocks incoming damage. When the frontal shield breaks, your class ability energy is depleted. When the frontal shield takes damage, you gain a stack of Bolt Charge.\n\nWhile amplified, the shield blocks significantly more damage before breaking.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1656549674": {
 				"n": "Knockout",
 				"i": "/common/destiny2_content/icons/e0fdf5c4c4dc10d6ee63365bf7d70821.jpg",
-				"d": "Critically wounding a target or breaking their shield infuses your melee attacks with Arc energy and increases your melee range against combatants and melee damage against combatants and Guardians for a short time.\n\nDefeating targets with melee attacks makes you amplified and restores a portion of your health. Defeating more powerful combatants increases the amount of health restored."
+				"d": "Critically wounding a target or breaking their shield infuses your melee attacks with Arc energy and increases your melee range against combatants and melee damage against combatants and Guardians for a short time.\n\nDefeating targets with melee attacks makes you amplified and restores a portion of your health. Defeating more powerful combatants increases the amount of health restored.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1656549675": {
 				"n": "Storm's Keep",
 				"i": "/common/destiny2_content/icons/58cee87c4df6399921797be06a7aa608.jpg",
-				"d": "Cast your class ability to grant a moderate amount of Bolt Charge stacks to you and nearby allies.\n\nWhile behind your Barricade, you and allies gain stacks of Bolt Charge over time and your weapons can discharge max stacks of Bolt Charge."
+				"d": "Cast your class ability to grant a moderate amount of Bolt Charge stacks to you and nearby allies.\n\nWhile behind your Barricade, you and allies gain stacks of Bolt Charge over time and your weapons can discharge max stacks of Bolt Charge.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1656912113": {
 				"n": "Aeon Swift",
@@ -5819,6 +6491,21 @@
 				"i": "/common/destiny2_content/icons/1f2c8873254a4d9f6e09f243123168ac.png",
 				"d": "Increases slide distance and improves High Jump, Strafe Jump, and Triple Jump. Take less damage from targets when airborne."
 			},
+			"1698387812": {
+				"n": "Catapult Lift",
+				"i": "/common/destiny2_content/icons/32bfe820d982e00fac25c9aab277ebc3.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum."
+			},
+			"1698387814": {
+				"n": "High Lift",
+				"i": "/common/destiny2_content/icons/07116cfce5a59222d658729cffb0f29c.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air to greater heights."
+			},
+			"1698387815": {
+				"n": "Strafe Lift",
+				"i": "/common/destiny2_content/icons/78e14c7fa1b842f2ffc9bdaa24aecc70.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air with strong directional control."
+			},
 			"1699724249": {
 				"n": "Big-Game Hunter",
 				"i": "/common/destiny2_content/icons/a13398c4e9766246686e4f562c15426a.png",
@@ -5897,52 +6584,136 @@
 			"1727069360": {
 				"n": "Spark of Focus",
 				"i": "/common/destiny2_content/icons/cfcdcc8f7d07111f6079ad8f869273c6.jpg",
-				"d": "After sprinting for a short time, your class ability regeneration is increased."
+				"d": "After sprinting for a short time, your class ability regeneration is increased.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": -10
+					},
+					{
+						"h": 2996146975,
+						"v": -10
+					},
+					{
+						"h": 392767087,
+						"v": -10
+					}
+				]
 			},
 			"1727069361": {
 				"n": "Spark of Frequency",
 				"i": "/common/destiny2_content/icons/4979f2f84c3da353c19815106267beb9.jpg",
-				"d": "Melee hits increase your equipped weapon's reload speed and stability for a short duration.\n\nWhile amplified, the effects are increased and you gain increased stacks of Bolt Charge from all sources."
+				"d": "Melee hits increase your equipped weapon's reload speed and stability for a short duration.\n\nWhile amplified, the effects are increased and you gain increased stacks of Bolt Charge from all sources.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1727069362": {
 				"n": "Spark of Discharge",
 				"i": "/common/destiny2_content/icons/c883bf91f42e9c4b9c9ddce1ba2d2de5.jpg",
-				"d": "Arc weapon final blows have a chance to create an Ionic Trace.\n\nCollecting an Ionic Trace grants you a stack of Bolt Charge."
+				"d": "Arc weapon final blows have a chance to create an Ionic Trace.\n\nCollecting an Ionic Trace grants you a stack of Bolt Charge.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": -10
+					}
+				]
 			},
 			"1727069363": {
 				"n": "Spark of Ions",
 				"i": "/common/destiny2_content/icons/2a7f5d325fc745877be70c443427d15b.jpg",
-				"d": "Defeating a jolted target or defeating a target with Bolt Charge creates an Ionic Trace."
+				"d": "Defeating a jolted target or defeating a target with Bolt Charge creates an Ionic Trace.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1727069364": {
 				"n": "Spark of Shock",
 				"i": "/common/destiny2_content/icons/2f49889b1fe7bcf01ef12b2cdc0fb511.jpg",
-				"d": "Your Arc grenades jolt targets."
+				"d": "Your Arc grenades jolt targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"1727069365": {
 				"n": "Spark of Momentum",
 				"i": "/common/destiny2_content/icons/b8cfaccdc40ccdd6a3fb4f544dcb7700.jpg",
-				"d": "Sliding over ammo bricks reloads your equipped weapon and grants you a small amount of Bolt Charge."
+				"d": "Sliding over ammo bricks reloads your equipped weapon and grants you a small amount of Bolt Charge.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1727069366": {
 				"n": "Spark of Resistance",
 				"i": "/common/destiny2_content/icons/d92e1a6770ebbb509ceda1c6ab545e43.jpg",
-				"d": "While surrounded by combatants, you are more resistant to incoming damage."
+				"d": "While surrounded by combatants, you are more resistant to incoming damage.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"1727069367": {
 				"n": "Spark of Beacons",
 				"i": "/common/destiny2_content/icons/8924af183dc3e6200536171a72c9fd77.jpg",
-				"d": "While you are amplified, your Arc Special or Heavy ammo weapon final blows create a blinding explosion."
+				"d": "While you are amplified, your Arc Special or Heavy ammo weapon final blows create a blinding explosion.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1727069374": {
 				"n": "Spark of Magnitude",
 				"i": "/common/destiny2_content/icons/0b39167c8fc628482dea26cf43d78ec9.jpg",
-				"d": "Your lingering Arc grenades (Lightning Grenade, Pulse Grenade, and Storm Grenade) have extended duration."
+				"d": "Your lingering Arc grenades (Lightning Grenade, Pulse Grenade, and Storm Grenade) have extended duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1727069375": {
 				"n": "Spark of Recharge",
 				"i": "/common/destiny2_content/icons/10b793e347263d81cc0404acf91aadc7.jpg",
-				"d": "While critically wounded, your melee and grenade energy regenerates more quickly."
+				"d": "While critically wounded, your melee and grenade energy regenerates more quickly.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"1728568819": {
 				"n": "Hot Swap",
@@ -6601,7 +7372,13 @@
 			"1920417385": {
 				"n": "Grim Harvest",
 				"i": "/common/destiny2_content/icons/aedf0a4a86c5dc63ab810879662b417a.png",
-				"d": "Picking up [Stasis] Stasis shards grants stacks of Frost Armor.\n\nWhile you have Frost Armor, defeating combatants with Stasis or Kinetic weapons may cause them to shatter, damaging nearby foes. The shatter chance increases with your Frost Armor stacks.\n\nTaking damage while you have Frost Armor generates class ability energy."
+				"d": "Picking up [Stasis] Stasis shards grants stacks of Frost Armor.\n\nWhile you have Frost Armor, defeating combatants with Stasis or Kinetic weapons may cause them to shatter, damaging nearby foes. The shatter chance increases with your Frost Armor stacks.\n\nTaking damage while you have Frost Armor generates class ability energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"1924584408": {
 				"n": "Grenade Kickstart",
@@ -6940,12 +7717,24 @@
 			"2031919264": {
 				"n": "Tectonic Harvest",
 				"i": "/common/destiny2_content/icons/590dc7e1ceaf43b5ca55bd6d3aaa2739.png",
-				"d": "Picking up [Stasis] Stasis shards grants stacks of Frost Armor.\n\nWhile you have Frost Armor, defeating combatants with Stasis or Kinetic weapons may cause them to shatter, damaging other nearby combatants. The shatter chance increases with your Frost Armor stacks.\n\nTaking damage while you have Frost Armor generates melee energy."
+				"d": "Picking up [Stasis] Stasis shards grants stacks of Frost Armor.\n\nWhile you have Frost Armor, defeating combatants with Stasis or Kinetic weapons may cause them to shatter, damaging other nearby combatants. The shatter chance increases with your Frost Armor stacks.\n\nTaking damage while you have Frost Armor generates melee energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2031919265": {
 				"n": "Cryoclasm",
 				"i": "/common/destiny2_content/icons/784d860ee0cf74b4afff93f2ffbd4d83.png",
-				"d": "Your slide distance is greatly increased. Sliding releases a wave that shatters [Stasis] Stasis crystals or frozen targets on contact, along with any other frozen targets nearby."
+				"d": "Your slide distance is greatly increased. Sliding releases a wave that shatters [Stasis] Stasis crystals or frozen targets on contact, along with any other frozen targets nearby.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2034764268": {
 				"n": "Forge's Kin",
@@ -7532,6 +8321,21 @@
 				"i": "/common/destiny2_content/icons/651350c3d18f7686aa911745424adce0.png",
 				"d": "Blocking damage with your shield increases projectile damage for a short time."
 			},
+			"2225231092": {
+				"n": "High Lift",
+				"i": "/common/destiny2_content/icons/8c5e43c387cef35435b121f422eaf0c6.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air to greater heights."
+			},
+			"2225231093": {
+				"n": "Strafe Lift",
+				"i": "/common/destiny2_content/icons/056b7f222c704d759b793d9202cad169.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air with strong directional control."
+			},
+			"2225231094": {
+				"n": "Catapult Lift",
+				"i": "/common/destiny2_content/icons/837b14251d5b776849065059c6594a75.jpg",
+				"d": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum."
+			},
 			"2226793914": {
 				"n": "Guidance Ring",
 				"i": "/common/destiny2_content/icons/59743510eecdd1b4727200eac9fbece3.png",
@@ -7663,52 +8467,156 @@
 			"2272984656": {
 				"n": "Echo of Dilation",
 				"i": "/common/destiny2_content/icons/029faa3dc0d82eefef581dec7820d643.jpg",
-				"d": "While crouched, you sneak faster and gain enhanced radar resolution."
+				"d": "While crouched, you sneak faster and gain enhanced radar resolution.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 2996146975,
+						"v": 10
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					}
+				]
 			},
 			"2272984657": {
 				"n": "Echo of Domineering",
 				"i": "/common/destiny2_content/icons/958ff340ae4ce16d7cf71c5268a13919.jpg",
-				"d": "After suppressing a target, you gain increased weapon stat for a short duration, and your equipped weapon is reloaded from reserves.\n\nDefeating suppressed targets creates a Void Breach."
+				"d": "After suppressing a target, you gain increased weapon stat for a short duration, and your equipped weapon is reloaded from reserves.\n\nDefeating suppressed targets creates a Void Breach.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": 10
+					}
+				]
 			},
 			"2272984664": {
 				"n": "Echo of Provision",
 				"i": "/common/destiny2_content/icons/1c16b5205d6a648b9898cce6ac3a01b3.jpg",
-				"d": "Damaging targets with grenades grants melee energy."
+				"d": "Damaging targets with grenades grants melee energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": 10
+					}
+				]
 			},
 			"2272984665": {
 				"n": "Echo of Expulsion",
 				"i": "/common/destiny2_content/icons/d6500235bb175f0fc3752cab0a170fd2.jpg",
-				"d": "Void ability final blows cause targets to explode."
+				"d": "Void ability final blows cause targets to explode.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					}
+				]
 			},
 			"2272984666": {
 				"n": "Echo of Remnants",
 				"i": "/common/destiny2_content/icons/ce12bd0f246e834c8f7e102079814bf9.jpg",
-				"d": "Your lingering grenade effects (Vortex Grenade, Void Wall, Void Spike, and Axion Bolt) have increased duration."
+				"d": "Your lingering grenade effects (Vortex Grenade, Void Wall, Void Spike, and Axion Bolt) have increased duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2272984667": {
 				"n": "Echo of Exchange",
 				"i": "/common/destiny2_content/icons/e5a6ac0f38df212a40dc541bb46f354f.jpg",
-				"d": "Melee final blows grant grenade energy."
+				"d": "Melee final blows grant grenade energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"2272984668": {
 				"n": "Echo of Undermining",
 				"i": "/common/destiny2_content/icons/b114e9d97c42a68b19ab7876a221b354.jpg",
-				"d": "Your Void grenades weaken targets."
+				"d": "Your Void grenades weaken targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"2272984669": {
 				"n": "Echo of Reprisal",
 				"i": "/common/destiny2_content/icons/6a0118280ba432e796048648993d7765.jpg",
-				"d": "Final blows when surrounded by combatants grant Super energy."
+				"d": "Final blows when surrounded by combatants grant Super energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2272984670": {
 				"n": "Echo of Leeching",
 				"i": "/common/destiny2_content/icons/6aa22ca5ba309f264af5231969ec840a.jpg",
-				"d": "Melee final blows start health regeneration for you and nearby allies."
+				"d": "Melee final blows start health regeneration for you and nearby allies.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"2272984671": {
 				"n": "Echo of Persistence",
 				"i": "/common/destiny2_content/icons/914309029085289921f77d8207765150.jpg",
-				"d": "Void buffs applied to you (Invisibility, Overshield, and Devour) have increased duration."
+				"d": "Void buffs applied to you (Invisibility, Overshield, and Devour) have increased duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": -10
+					},
+					{
+						"h": 2996146975,
+						"v": -10
+					},
+					{
+						"h": 392767087,
+						"v": -10
+					}
+				]
 			},
 			"2273643087": {
 				"n": "Solipsism",
@@ -7935,22 +8843,46 @@
 			"2321824284": {
 				"n": "Feed the Void",
 				"i": "/common/destiny2_content/icons/178bb0e78e55c5b960aa6f42660b9b66.jpg",
-				"d": "Defeat a target with a Void ability to activate Devour.\n\nYour Devour effects are improved, restoring additional health and grenade energy."
+				"d": "Defeat a target with a Void ability to activate Devour.\n\nYour Devour effects are improved, restoring additional health and grenade energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2321824285": {
 				"n": "Chaos Accelerant",
 				"i": "/common/destiny2_content/icons/5a8a03d4876d34a89db6aedf6189ab86.jpg",
-				"d": "[Grenade]  : Overcharge your grenade, making it deadlier and more effective.\n\nVortex Grenade: Increases the size, linger duration, and pull of the vortex.\n\nAxion Bolt: Detonates twice and has enhanced seekers.\n\nScatter Grenade: Submunitions track to nearby targets.\n\nMagnetic Grenade, Spike Grenade, Voidwall Grenade, and Suppressor Grenade: Releases a short-range Void blast. Cooldown is reduced.\n\nGrants an additional grenade charge."
+				"d": "[Grenade]  : Overcharge your grenade, making it deadlier and more effective.\n\nVortex Grenade: Increases the size, linger duration, and pull of the vortex.\n\nAxion Bolt: Detonates twice and has enhanced seekers.\n\nScatter Grenade: Submunitions track to nearby targets.\n\nMagnetic Grenade, Spike Grenade, Voidwall Grenade, and Suppressor Grenade: Releases a short-range Void blast. Cooldown is reduced.\n\nGrants an additional grenade charge.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2321824286": {
 				"n": "Soul Siphon",
 				"i": "/common/destiny2_content/icons/36932a691aaeab872af392d4a1d8eba8.jpg",
-				"d": "Ready this aspect by striking a foe with your powered melee ability.\n\nOnce readied, press your melee ability to begin siphoning energy from all combatants in front of you, dealing damage and gathering Overshield and class ability energy from each target.\n\nSoul Siphon's damage is scaled by the enhanced benefit of the Melee stat."
+				"d": "Ready this aspect by striking a foe with your powered melee ability.\n\nOnce readied, press your melee ability to begin siphoning energy from all combatants in front of you, dealing damage and gathering Overshield and class ability energy from each target.\n\nSoul Siphon's damage is scaled by the enhanced benefit of the Melee stat.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2321824287": {
 				"n": "Child of the Old Gods",
 				"i": "/common/destiny2_content/icons/ced6965ddcda23fdc728639aaf0ebd4d.jpg",
-				"d": "Cast your rift to create a Void Soul. When you damage a target with a weapon, your Void Soul flies to them and drains them, doing damage and weakening them. Combatants affected by the Soul are also briefly suppressed.\n\nWhen a target is being drained, you are granted grenade and melee energy (if running Healing Rift) or health (if running Empowering Rift).\n\nDefeating a target who is being drained by your Void Soul grants class ability energy.\n\nThe Void Soul's damage is scaled by the enhanced benefit of the Grenade stat."
+				"d": "Cast your rift to create a Void Soul. When you damage a target with a weapon, your Void Soul flies to them and drains them, doing damage and weakening them. Combatants affected by the Soul are also briefly suppressed.\n\nWhen a target is being drained, you are granted grenade and melee energy (if running Healing Rift) or health (if running Empowering Rift).\n\nDefeating a target who is being drained by your Void Soul grants class ability energy.\n\nThe Void Soul's damage is scaled by the enhanced benefit of the Grenade stat.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2325151798": {
 				"n": "Unflinching Kinetic Aim",
@@ -8101,12 +9033,24 @@
 			"2368990400": {
 				"n": "Whisper of Reversal",
 				"i": "/common/destiny2_content/icons/b49e2d59fa7cf666045c38f01655230d.png",
-				"d": "While you have Frost Armor, melee damage slows your target."
+				"d": "While you have Frost Armor, melee damage slows your target.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2368990401": {
 				"n": "Whisper of Chill",
 				"i": "/common/destiny2_content/icons/eda4be269ee2122f02359e12d2cd7fb7.png",
-				"d": "[Stasis] Stasis weapon final blows have a chance to create a Stasis Shard."
+				"d": "[Stasis] Stasis weapon final blows have a chance to create a Stasis Shard.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2370269384": {
 				"n": "Silkstrike",
@@ -8476,22 +9420,58 @@
 			"2483898428": {
 				"n": "Whisper of Rending",
 				"i": "/common/destiny2_content/icons/a315a6aaba35eba7f021fbea22e5e0ba.png",
-				"d": "Primary ammo weapons do increased damage to [Stasis] Stasis crystals and frozen targets."
+				"d": "Primary ammo weapons do increased damage to [Stasis] Stasis crystals and frozen targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2483898429": {
 				"n": "Whisper of Conduction",
 				"i": "/common/destiny2_content/icons/2d84a595d269762c434718e34d2e7d78.png",
-				"d": "Nearby [Stasis] Stasis shards track to your position."
+				"d": "Nearby [Stasis] Stasis shards track to your position.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"2483898430": {
 				"n": "Whisper of Rime",
 				"i": "/common/destiny2_content/icons/0ec49820a6de05851c099cf7fb5d7554.png",
-				"d": "Your Frost Armor has increased duration and maximum stack count."
+				"d": "Your Frost Armor has increased duration and maximum stack count.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2483898431": {
 				"n": "Whisper of Hunger",
 				"i": "/common/destiny2_content/icons/549368f903ac85dc177a56555ce69ae7.png",
-				"d": "Increases the melee energy gained from picking up [Stasis] Stasis shards."
+				"d": "Increases the melee energy gained from picking up [Stasis] Stasis shards.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": -20
+					}
+				]
 			},
 			"2485411080": {
 				"n": "Psychohack",
@@ -8969,52 +9949,151 @@
 			"2626922114": {
 				"n": "Facet of Balance",
 				"i": "/common/destiny2_content/icons/43fa2cf618e74671d0e652640c1ce4bc.png",
-				"d": "Rapidly defeating targets with Light damage grants melee energy. Rapidly defeating targets with Darkness damage grants grenade energy."
+				"d": "Rapidly defeating targets with Light damage grants melee energy. Rapidly defeating targets with Darkness damage grants grenade energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2626922115": {
 				"n": "Facet of Justice",
 				"i": "/common/destiny2_content/icons/a4ab50f95e50d0eec1303139ab23f3fd.png",
-				"d": "While transcendent, your ability final blows explode."
+				"d": "While transcendent, your ability final blows explode.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					}
+				]
 			},
 			"2626922120": {
 				"n": "Facet of Protection",
 				"i": "/common/destiny2_content/icons/b6d90ee669fc1fef2e22ff95188be313.png",
-				"d": "While surrounded by combatants, you are more resistant to incoming damage. While transcendent, the effect is increased."
+				"d": "While surrounded by combatants, you are more resistant to incoming damage. While transcendent, the effect is increased.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"2626922121": {
 				"n": "Facet of Grace",
 				"i": "/common/destiny2_content/icons/8cd933c465613a7bedb9b208c362cc85.png",
-				"d": "Defeating targets with Kinetic weapons grants you bonus Transcendence energy. Defeating targets with your Super grants you and nearby allies bonus Transcendence energy."
+				"d": "Defeating targets with Kinetic weapons grants you bonus Transcendence energy. Defeating targets with your Super grants you and nearby allies bonus Transcendence energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": -10
+					}
+				]
 			},
 			"2626922122": {
 				"n": "Facet of Hope",
 				"i": "/common/destiny2_content/icons/4be1e24b8d7073827be07dfc066b2517.png",
-				"d": "While you have an elemental buff, your class ability regenerates more quickly."
+				"d": "While you have an elemental buff, your class ability regenerates more quickly.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2626922123": {
 				"n": "Facet of Solitude",
 				"i": "/common/destiny2_content/icons/d19b6a9b12ea095c774567c218d070c6.png",
-				"d": "Landing rapid precision hits emits a severing blast from the target. While transcendent, the severing blast is bigger."
+				"d": "Landing rapid precision hits emits a severing blast from the target. While transcendent, the severing blast is bigger.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2626922124": {
 				"n": "Facet of Courage",
 				"i": "/common/destiny2_content/icons/536765c9ed5e2f53268859591e8e9acf.png",
-				"d": "Your [Arc] Arc, [Solar] Solar, and [Void] Void abilities deal increased damage to targets afflicted with Darkness debuffs."
+				"d": "Your [Arc] Arc, [Solar] Solar, and [Void] Void abilities deal increased damage to targets afflicted with Darkness debuffs.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": 10
+					}
+				]
 			},
 			"2626922125": {
 				"n": "Facet of Devotion",
 				"i": "/common/destiny2_content/icons/923682dba15fcb9685f195d25eff1b95.png",
-				"d": "Defeating targets afflicted with [Stasis] Stasis or [Strand] Strand debuffs grants bonus Light Transcendence energy."
+				"d": "Defeating targets afflicted with [Stasis] Stasis or [Strand] Strand debuffs grants bonus Light Transcendence energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"2626922126": {
 				"n": "Facet of Dawn",
 				"i": "/common/destiny2_content/icons/684547ed1f97efdca37df4f1a5c5e699.png",
-				"d": "Powered melee hits against targets makes you radiant. Powered melee final blows make you and nearby allies radiant."
+				"d": "Powered melee hits against targets makes you radiant. Powered melee final blows make you and nearby allies radiant.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": -10
+					}
+				]
 			},
 			"2626922127": {
 				"n": "Facet of Generosity",
 				"i": "/common/destiny2_content/icons/ea30d94a0fb1055e4ad70fcd8257a103.png",
-				"d": "Defeating targets while transcendent creates Orbs of Power for your allies."
+				"d": "Defeating targets while transcendent creates Orbs of Power for your allies.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
+			},
+			"2628485816": {
+				"n": "Strafe Glide",
+				"i": "/common/destiny2_content/icons/800f5b922e2215630b83d4a7cdc8cc64.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with strong directional control."
+			},
+			"2628485817": {
+				"n": "Burst Glide",
+				"i": "/common/destiny2_content/icons/63af5e661089e6a1abbbe70186573a50.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed."
+			},
+			"2628485818": {
+				"n": "Balanced Glide",
+				"i": "/common/destiny2_content/icons/e2fe3d4207f35f35ad532e8798897f62.png",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control."
 			},
 			"2631069573": {
 				"n": "Refreshing Thirst",
@@ -9049,7 +10128,13 @@
 			"2642597904": {
 				"n": "Bleak Watcher",
 				"i": "/common/destiny2_content/icons/51d335e369d83d303203448c75fce439.png",
-				"d": "[Grenade]  : Hold to convert your grenade into a [Stasis] Stasis turret that fires slowing projectiles at nearby targets."
+				"d": "[Grenade]  : Hold to convert your grenade into a [Stasis] Stasis turret that fires slowing projectiles at nearby targets.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2647299044": {
 				"n": "Moirai",
@@ -9073,7 +10158,13 @@
 			"2651551055": {
 				"n": "Glacial Harvest",
 				"i": "/common/destiny2_content/icons/5fc9529c49b1d81ebeb7ed67779e6170.png",
-				"d": "Picking up [Stasis] Stasis shards grants stacks of Frost Armor.\n\nWhile you have Frost Armor, defeating combatants with Stasis or Kinetic weapons may cause them to shatter, damaging other nearby foes. The shatter chance increases with your Frost Armor stacks.\n\nTaking damage while you have Frost Armor generates grenade energy."
+				"d": "Picking up [Stasis] Stasis shards grants stacks of Frost Armor.\n\nWhile you have Frost Armor, defeating combatants with Stasis or Kinetic weapons may cause them to shatter, damaging other nearby foes. The shatter chance increases with your Frost Armor stacks.\n\nTaking damage while you have Frost Armor generates grenade energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2652708987": {
 				"n": "Successful Warm-Up",
@@ -9178,22 +10269,58 @@
 			"2661180600": {
 				"n": "Echo of Instability",
 				"i": "/common/destiny2_content/icons/0ad46f9c0c14535c4d5776daf48e871e.jpg",
-				"d": "Defeating targets with grenades grants Volatile Rounds to your Void weapons."
+				"d": "Defeating targets with grenades grants Volatile Rounds to your Void weapons.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"2661180601": {
 				"n": "Echo of Harvest",
 				"i": "/common/destiny2_content/icons/6bd23524f7129761043724acbe90c7b5.jpg",
-				"d": "Defeating weakened targets creates an Orb of Power and a Void Breach."
+				"d": "Defeating weakened targets creates an Orb of Power and a Void Breach.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"2661180602": {
 				"n": "Echo of Obscurity",
 				"i": "/common/destiny2_content/icons/7d711ce4bcfb264da29c289ff70b9876.jpg",
-				"d": "Finisher final blows grant Invisibility."
+				"d": "Finisher final blows grant Invisibility.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": 10
+					}
+				]
 			},
 			"2661180603": {
 				"n": "Echo of Starvation",
 				"i": "/common/destiny2_content/icons/19219ecd56fef82e9ead65aed8fea63a.jpg",
-				"d": "Picking up a Void Breach or an Orb of Power grants Devour."
+				"d": "Picking up a Void Breach or an Orb of Power grants Devour.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": -10
+					}
+				]
 			},
 			"2662236651": {
 				"n": "Archer's Gambit",
@@ -9847,27 +10974,57 @@
 			"2835214897": {
 				"n": "Threaded Specter",
 				"i": "/common/destiny2_content/icons/f0311771bc0f771779301102d62c0ae0.jpg",
-				"d": "Activating your class ability leaves behind a decoy woven from [Strand] Strand matter that draws the attention of nearby combatants.\n\nAfter taking significant damage or when combatants approach, the decoy detonates, dealing damage and releasing Threadlings that seek out and attack nearby foes.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activating your class ability leaves behind a decoy woven from [Strand] Strand matter that draws the attention of nearby combatants.\n\nAfter taking significant damage or when combatants approach, the decoy detonates, dealing damage and releasing Threadlings that seek out and attack nearby foes.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2835214900": {
 				"n": "Stylish Executioner",
 				"i": "/common/destiny2_content/icons/ed7f8c49b77fa46f4eec87a3c167c4b1.jpg",
-				"d": "Defeating a target affected by any elemental debuff grants invisibility and Truesight.\n\nAfter performing a Stylish Execution, your next melee attack while invisible weakens targets."
+				"d": "Defeating a target affected by any elemental debuff grants invisibility and Truesight.\n\nAfter performing a Stylish Execution, your next melee attack while invisible weakens targets.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2835214901": {
 				"n": "Ascension",
 				"i": "/common/destiny2_content/icons/3bfe666002e12ec6ea3d0c3661f81f31.jpg",
-				"d": "[Air Move]  While airborne, consume your class ability energy to summon your Arc Staff, propelling yourself upward and creating a burst of energy around you that amplifies allies and jolts targets.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "[Air Move]  While airborne, consume your class ability energy to summon your Arc Staff, propelling yourself upward and creating a burst of energy around you that amplifies allies and jolts targets.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2835214902": {
 				"n": "Winter's Shroud",
 				"i": "/common/destiny2_content/icons/edf787affb7089495610e8f8c770d323.png",
-				"d": "Dodging slows nearby targets.\n\nSlowing targets briefly increases your class ability regeneration."
+				"d": "Dodging slows nearby targets.\n\nSlowing targets briefly increases your class ability regeneration.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2835214903": {
 				"n": "Gunpowder Gamble",
 				"i": "/common/destiny2_content/icons/765402ea0cdaa799f62fe46b57ad8437.jpg",
-				"d": "Defeat targets to charge up an improvised [Solar] Solar explosive.\n\n[Grenade]  : Throw a [Solar] Solar explosive that can be shot in mid-air to cause an ignition."
+				"d": "Defeat targets to charge up an improvised [Solar] Solar explosive.\n\n[Grenade]  : Throw a [Solar] Solar explosive that can be shot in mid-air to cause an ignition.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2835258088": {
 				"n": "Eyes of Tomorrow Catalyst",
@@ -10256,12 +11413,24 @@
 			"2934767476": {
 				"n": "Shatterdive",
 				"i": "/common/destiny2_content/icons/a177413a2eea2ddbefde9c9111ecd04a.png",
-				"d": "Activate while midair to quickly descend and shatter nearby targets on impact. Shattering targets grants you Frost Armor."
+				"d": "Activate while midair to quickly descend and shatter nearby targets on impact. Shattering targets grants you Frost Armor.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2934767477": {
 				"n": "Winter's Shroud",
 				"i": "/common/destiny2_content/icons/edf787affb7089495610e8f8c770d323.png",
-				"d": "Dodging slows nearby targets.\n\nSlowing targets briefly increases your class ability regeneration."
+				"d": "Dodging slows nearby targets.\n\nSlowing targets briefly increases your class ability regeneration.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2938480696": {
 				"n": "Rapid Hit",
@@ -10418,22 +11587,46 @@
 			"2984351204": {
 				"n": "Roaring Flames",
 				"i": "/common/destiny2_content/icons/208e4d0d635832dd78288de5532fe062.jpg",
-				"d": "Final blows with [Solar] Solar abilities or ignitions increase the damage of your Solar abilities. Stacks 3 times."
+				"d": "Final blows with [Solar] Solar abilities or ignitions increase the damage of your Solar abilities. Stacks 3 times.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2984351205": {
 				"n": "Sol Invictus",
 				"i": "/common/destiny2_content/icons/1552df4d776b01d9f8c00d6c910aec97.jpg",
-				"d": "Solar ability final blows, Hammer of Sol impacts, and defeating scorched targets creates Sunspots. Your abilities regenerate faster, and your Super drains more slowly while standing in a Sunspot.\n\nSunspots apply scorch and deal damage to targets inside. Entering a Sunspot applies restoration."
+				"d": "Solar ability final blows, Hammer of Sol impacts, and defeating scorched targets creates Sunspots. Your abilities regenerate faster, and your Super drains more slowly while standing in a Sunspot.\n\nSunspots apply scorch and deal damage to targets inside. Entering a Sunspot applies restoration.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"2984351206": {
 				"n": "Consecration",
 				"i": "/common/destiny2_content/icons/5c71b63e8b653cd63a2ae0d8a8c64979.jpg",
-				"d": "While sliding, activate your charged melee ability to launch a wave of [Solar] Solar energy forward, damaging and scorching targets in front of you as you leap into the air.\n\nWhile airborne, activate your charged melee again to slam to the ground and create a second larger wave of damaging [Solar] Solar energy. If the wave hits a scorched target, they ignite."
+				"d": "While sliding, activate your charged melee ability to launch a wave of [Solar] Solar energy forward, damaging and scorching targets in front of you as you leap into the air.\n\nWhile airborne, activate your charged melee again to slam to the ground and create a second larger wave of damaging [Solar] Solar energy. If the wave hits a scorched target, they ignite.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2984351207": {
 				"n": "Shieldburst",
 				"i": "/common/destiny2_content/icons/7082b2bae0f0c4dfc49b7b070d8ce9e8.jpg",
-				"d": "Enhances your equipped barricade with [Solar] Solar capabilities.\n\nTowering Barricade: Your barricade slides forward across the ground before stopping, allowing you to advance in safety.\n\nRally Barricade: Standing behind your barricade grants scorching rounds to your allies' Solar and Kinetic weapons.\n\nWhile your barricade is deployed, activate your class ability again to remotely detonate it, scorching combatants caught in the detonation. Dealing damage increases the power of the blast.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Enhances your equipped barricade with [Solar] Solar capabilities.\n\nTowering Barricade: Your barricade slides forward across the ground before stopping, allowing you to advance in safety.\n\nRally Barricade: Standing behind your barricade grants scorching rounds to your allies' Solar and Kinetic weapons.\n\nWhile your barricade is deployed, activate your class ability again to remotely detonate it, scorching combatants caught in the detonation. Dealing damage increases the power of the blast.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"2984571381": {
 				"n": "Rapid-Fire Frame",
@@ -10659,22 +11852,46 @@
 			"3066103996": {
 				"n": "Gunpowder Gamble",
 				"i": "/common/destiny2_content/icons/765402ea0cdaa799f62fe46b57ad8437.jpg",
-				"d": "Defeat targets to charge up an improvised Solar explosive.\n\n[Grenade]  : Throw a Solar explosive that can be shot in mid-air to cause an ignition."
+				"d": "Defeat targets to charge up an improvised Solar explosive.\n\n[Grenade]  : Throw a Solar explosive that can be shot in mid-air to cause an ignition.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"3066103997": {
 				"n": "Crackshot",
 				"i": "/common/destiny2_content/icons/c1f8cb8d59fc2d885b607e68020465b6.jpg",
-				"d": "Activate your class ability to fire up to three scorching shots at combatants you've marked. Aim at targets to mark them.\n\nLanding all three shots cures you.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activate your class ability to fire up to three scorching shots at combatants you've marked. Aim at targets to mark them.\n\nLanding all three shots cures you.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"3066103998": {
 				"n": "Knock 'Em Down",
 				"i": "/common/destiny2_content/icons/01a74478066a61232e0eb0d71d56d89c.jpg",
-				"d": "Your Solar Supers are enhanced. Deadshot Golden Gun has damage resistance, Marksman Golden Gun has increased duration, and Blade Barrage launches more projectiles.\n\nWhile radiant, final blows with your equipped Throwing Knife fully refund your melee energy."
+				"d": "Your Solar Supers are enhanced. Deadshot Golden Gun has damage resistance, Marksman Golden Gun has increased duration, and Blade Barrage launches more projectiles.\n\nWhile radiant, final blows with your equipped Throwing Knife fully refund your melee energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"3066103999": {
 				"n": "On Your Mark",
 				"i": "/common/destiny2_content/icons/6b1ce964c0d1dc6beba3083353efc3f6.jpg",
-				"d": "Activating your class ability or landing precision hits grants you and nearby allies increased reload speed and Weapons stat for a short duration. Stacks ten times.\n\nFinal blows while at ten stacks cure you."
+				"d": "Activating your class ability or landing precision hits grants you and nearby allies increased reload speed and Weapons stat for a short duration. Stacks ten times.\n\nFinal blows while at ten stacks cure you.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"3067648983": {
 				"n": "Solar Dexterity",
@@ -11182,22 +12399,54 @@
 			"3192552688": {
 				"n": "Thread of Binding",
 				"i": "/common/destiny2_content/icons/73a3a289acb7b91ee236d9d9a9bdee1b.jpg",
-				"d": "Super final blows emit a suspending burst from the target."
+				"d": "Super final blows emit a suspending burst from the target.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"3192552689": {
 				"n": "Thread of Isolation",
 				"i": "/common/destiny2_content/icons/9c063a2396fe1b631d6aa2cb282df9cd.jpg",
-				"d": "Landing rapid precision hits emits a severing burst from the target."
+				"d": "Landing rapid precision hits emits a severing burst from the target.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3192552690": {
 				"n": "Thread of Continuity",
 				"i": "/common/destiny2_content/icons/384da9161d140e14030e417aae613266.jpg",
-				"d": "Suspend, unravel, and sever effects applied to targets have increased duration."
+				"d": "Suspend, unravel, and sever effects applied to targets have increased duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3192552691": {
 				"n": "Thread of Generation",
 				"i": "/common/destiny2_content/icons/2cf005bea9e145747a62fa27dc2caa0e.jpg",
-				"d": "Dealing damage generates grenade energy."
+				"d": "Dealing damage generates grenade energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1735777505,
+						"v": -10
+					}
+				]
 			},
 			"3194351027": {
 				"n": "Explosive Light",
@@ -11433,22 +12682,58 @@
 			"3277705904": {
 				"n": "Spark of Volts",
 				"i": "/common/destiny2_content/icons/bb6175746eecf3160a591efe343a3fdf.jpg",
-				"d": "Finishers make you amplified and grant you a stack of Bolt Charge."
+				"d": "Finishers make you amplified and grant you a stack of Bolt Charge.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": 10
+					}
+				]
 			},
 			"3277705905": {
 				"n": "Spark of Brilliance",
 				"i": "/common/destiny2_content/icons/d38a4297cfe3ec89427f68ef92b076e5.jpg",
-				"d": "Defeating a blinded target with precision damage creates a blinding explosion."
+				"d": "Defeating a blinded target with precision damage creates a blinding explosion.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					}
+				]
 			},
 			"3277705906": {
 				"n": "Spark of Amplitude",
 				"i": "/common/destiny2_content/icons/4138dfce109db20c49877c08852f13a8.jpg",
-				"d": "Rapidly defeating targets while you are amplified creates an Orb of Power."
+				"d": "Rapidly defeating targets while you are amplified creates an Orb of Power.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3277705907": {
 				"n": "Spark of Feedback",
 				"i": "/common/destiny2_content/icons/58a935c2948d5f20d060bc87a0ad25d2.jpg",
-				"d": "Taking melee damage briefly increases your outgoing melee damage."
+				"d": "Taking melee damage briefly increases your outgoing melee damage.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"3279257734": {
 				"n": "Strand Siphon",
@@ -11625,6 +12910,21 @@
 				"n": "Sympathetic Arsenal",
 				"i": "/common/destiny2_content/icons/b744f4c74f1838c93a8eb63535b22a22.png",
 				"d": "Reloading after a final blow also reloads stowed weapons."
+			},
+			"3350493948": {
+				"n": "Strafe Lift",
+				"i": "/common/destiny2_content/icons/416f132a08d1c15a57adc7c528c17ce5.png",
+				"d": "Jump while airborne to activate Lift and launch into the air with strong directional control."
+			},
+			"3350493949": {
+				"n": "High Lift",
+				"i": "/common/destiny2_content/icons/f19a22d03d53694cb927e11e82899dca.png",
+				"d": "Jump while airborne to activate Lift and launch into the air to greater heights."
+			},
+			"3350493951": {
+				"n": "Catapult Lift",
+				"i": "/common/destiny2_content/icons/22167767b81dea77781871eeb1e7d3de.png",
+				"d": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum."
 			},
 			"3351002503": {
 				"n": "Bottomless Appetite",
@@ -12021,32 +13321,76 @@
 			"3469412968": {
 				"n": "Whisper of Refraction",
 				"i": "/common/destiny2_content/icons/5c9285f7b0320f56a560ce9c0aa65043.png",
-				"d": "Defeating slowed or frozen targets grants you class ability energy."
+				"d": "Defeating slowed or frozen targets grants you class ability energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3469412969": {
 				"n": "Whisper of Durance",
 				"i": "/common/destiny2_content/icons/263713a8639fb73350c13b5b520fefa2.png",
-				"d": "Slow that you apply to targets lasts longer. For those abilities that linger, their duration will also increase."
+				"d": "Slow that you apply to targets lasts longer. For those abilities that linger, their duration will also increase.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"3469412970": {
 				"n": "Whisper of Hedrons",
 				"i": "/common/destiny2_content/icons/70b60b70634c6e539a531d47e58e1b9f.png",
-				"d": "Increases weapon handling and health after freezing a target with [Stasis] Stasis."
+				"d": "Increases weapon handling and health after freezing a target with [Stasis] Stasis.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3469412971": {
 				"n": "Whisper of Fissures",
 				"i": "/common/destiny2_content/icons/9eaa93107ad40372c335ce495273c318.png",
-				"d": "Increases the damage and size of the burst of [Stasis] Stasis when you destroy a [Stasis] Stasis crystal or defeat a frozen target."
+				"d": "Increases the damage and size of the burst of [Stasis] Stasis when you destroy a [Stasis] Stasis crystal or defeat a frozen target.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3469412974": {
 				"n": "Whisper of Bonds",
 				"i": "/common/destiny2_content/icons/12b591b2720cc265d800e870484f6d5b.png",
-				"d": "Defeating frozen targets generates an Orb of Power."
+				"d": "Defeating frozen targets generates an Orb of Power.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": -10
+					}
+				]
 			},
 			"3469412975": {
 				"n": "Whisper of Shards",
 				"i": "/common/destiny2_content/icons/5fa98c6e62d008621119d1b394e9cae9.png",
-				"d": "Shattering a [Stasis] Stasis crystal temporarily boosts your grenade recharge rate. Shattering additional [Stasis] Stasis crystals increases the duration of this benefit."
+				"d": "Shattering a [Stasis] Stasis crystal temporarily boosts your grenade recharge rate. Shattering additional [Stasis] Stasis crystals increases the duration of this benefit.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3470828242": {
 				"n": "Flame Refraction",
@@ -12071,12 +13415,24 @@
 			"3478354816": {
 				"n": "Spark of Instinct",
 				"i": "/common/destiny2_content/icons/eb9c8ec91e56b1410457aecae09ceeed.jpg",
-				"d": "While critically wounded, taking damage emits a burst of damaging Arc energy that jolts targets."
+				"d": "While critically wounded, taking damage emits a burst of damaging Arc energy that jolts targets.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3478354817": {
 				"n": "Spark of Haste",
 				"i": "/common/destiny2_content/icons/e840532ca79e23311804760b3833e6bb.jpg",
-				"d": "While sprinting, you have greatly increased health stat."
+				"d": "While sprinting, you have greatly increased health stat.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3481195123": {
 				"n": "Double Down",
@@ -12212,6 +13568,21 @@
 				"n": "Adaptive Burst",
 				"i": "/common/destiny2_content/icons/967fb4abc6ab98f74639d6c08e5f56ee.png",
 				"d": "Fires a three-round burst."
+			},
+			"3531427692": {
+				"n": "Triple Jump",
+				"i": "/common/destiny2_content/icons/7d5eb73f61509271037f810480a2e804.png",
+				"d": "While airborne, sustain your air control with a second or third jump."
+			},
+			"3531427694": {
+				"n": "High Jump",
+				"i": "/common/destiny2_content/icons/3321f82be875774d96615fb2242079b5.png",
+				"d": "While airborne, jump a second time to reach greater heights."
+			},
+			"3531427695": {
+				"n": "Strafe Jump",
+				"i": "/common/destiny2_content/icons/1eeb42a2f303c00ded47299ca91aa72f.png",
+				"d": "While airborne, jump a second time with strong directional control."
 			},
 			"3534173884": {
 				"n": "Mothkeeper's Wraps",
@@ -12787,6 +14158,21 @@
 				"i": "/common/destiny2_content/icons/ece0654ecd4b16e5011903f03eee8c74.png",
 				"d": "Grants class ability energy when you cause damage with a powered melee attack."
 			},
+			"3686638441": {
+				"n": "Balanced Glide",
+				"i": "/common/destiny2_content/icons/54787094e4be70a56fd1ccabb68f878f.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control."
+			},
+			"3686638442": {
+				"n": "Burst Glide",
+				"i": "/common/destiny2_content/icons/f7b19afecf6554f32225e80cc57d4fac.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed."
+			},
+			"3686638443": {
+				"n": "Strafe Glide",
+				"i": "/common/destiny2_content/icons/4791b9df93b673dd1e67a132032b092e.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with strong directional control."
+			},
 			"3688301727": {
 				"n": "Rapid-Fire Frame",
 				"i": "/common/destiny2_content/icons/801d62d1f9783bee81d5700c54c24fda.png",
@@ -12890,6 +14276,21 @@
 				"n": "Concussive Dampener",
 				"i": "/common/destiny2_content/icons/6df50890b5e91f346630ab461cd78388.png",
 				"d": "Reduces incoming area-of-effect damage from combatants."
+			},
+			"3721022585": {
+				"n": "Triple Jump",
+				"i": "/common/destiny2_content/icons/7d5eb73f61509271037f810480a2e804.png",
+				"d": "While airborne, sustain your air control with a second or third jump."
+			},
+			"3721022586": {
+				"n": "Strafe Jump",
+				"i": "/common/destiny2_content/icons/1eeb42a2f303c00ded47299ca91aa72f.png",
+				"d": "While airborne, jump a second time with strong directional control."
+			},
+			"3721022587": {
+				"n": "High Jump",
+				"i": "/common/destiny2_content/icons/3321f82be875774d96615fb2242079b5.png",
+				"d": "While airborne, jump a second time to reach greater heights."
 			},
 			"3721627275": {
 				"n": "Swap Mag",
@@ -13379,12 +14780,24 @@
 			"3854948620": {
 				"n": "Echo of Cessation",
 				"i": "/common/destiny2_content/icons/d355e5ee66fd28b82d93a0f2dd895b2d.jpg",
-				"d": "Finisher final blows create a burst of Void damage that causes nearby combatants to become volatile.\n\nDefeating volatile targets creates a Void Breach."
+				"d": "Finisher final blows create a burst of Void damage that causes nearby combatants to become volatile.\n\nDefeating volatile targets creates a Void Breach.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3854948621": {
 				"n": "Echo of Vigilance",
 				"i": "/common/destiny2_content/icons/91e0f86be9e41faf06994faf41d818af.jpg",
-				"d": "Defeating a target while your shields are depleted grants you a temporary Void overshield."
+				"d": "Defeating a target while your shields are depleted grants you a temporary Void overshield.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"3856705927": {
 				"n": "Hawkmoon",
@@ -13418,7 +14831,13 @@
 			"3866705246": {
 				"n": "Diamond Lance",
 				"i": "/common/destiny2_content/icons/663ed4baf3983fa13d5daf766ae60bd4.png",
-				"d": "Shatter or defeat targets with [Stasis] Stasis abilities or weapons to create a Stasis lance.\n\n[Shoot]  : Throw the lance to freeze targets on impact.\n\n[Melee]  : Slam the lance to the ground to freeze targets in a small area."
+				"d": "Shatter or defeat targets with [Stasis] Stasis abilities or weapons to create a Stasis lance.\n\n[Shoot]  : Throw the lance to freeze targets on impact.\n\n[Melee]  : Slam the lance to the ground to freeze targets in a small area.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"3871884143": {
 				"n": "Disruption Break",
@@ -14350,6 +15769,21 @@
 				"i": "/common/destiny2_content/icons/a09bd02ced2eaf494fe335858c256154.png",
 				"d": "Massively improves weapon target acquisition at the cost of weapon range."
 			},
+			"4154539168": {
+				"n": "Burst Glide",
+				"i": "/common/destiny2_content/icons/83a6090aa638a9d756d5ef03e48b7843.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed."
+			},
+			"4154539169": {
+				"n": "Strafe Glide",
+				"i": "/common/destiny2_content/icons/c066f355e320df124b360384e86aece6.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with strong directional control."
+			},
+			"4154539171": {
+				"n": "Balanced Glide",
+				"i": "/common/destiny2_content/icons/80478b4a287cee04d75599c7fab4e47e.jpg",
+				"d": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control."
+			},
 			"4154828211": {
 				"n": "Bitterspite",
 				"i": "/common/destiny2_content/icons/f8b7f71e2a9dbb4ad23fe0f31b644f95.png",
@@ -14420,12 +15854,28 @@
 			"4180586736": {
 				"n": "Ember of Resolve",
 				"i": "/common/destiny2_content/icons/24b60501785856e2898417115e3b2afd.jpg",
-				"d": "Solar grenade final blows cure you."
+				"d": "Solar grenade final blows cure you.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"4180586737": {
 				"n": "Ember of Mercy",
 				"i": "/common/destiny2_content/icons/5ca8c8de03f981b9c984a1f2bdea0f61.jpg",
-				"d": "When you revive an ally, you and other nearby allies gain restoration.\n\nPicking up a Firesprite grants restoration."
+				"d": "When you revive an ally, you and other nearby allies gain restoration.\n\nPicking up a Firesprite grants restoration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": 10
+					}
+				]
 			},
 			"4182064480": {
 				"n": "Grenade Kickstart",
@@ -14445,7 +15895,13 @@
 			"4184589900": {
 				"n": "Touch of Winter",
 				"i": "/common/destiny2_content/icons/b8e7bcaa96ec08540ff225a6d113a0d8.png",
-				"d": "Your Glacier, Duskfield, Coldsnap, and Shatter grenades have enhanced functionality.\n\nGlacier Grenade: Adds a [Stasis] Stasis crystal and changes the formation.\n\nDuskfield Grenade: Increases slow-field size and creates a small [Stasis] Stasis crystal on impact.\n\nColdsnap Grenade: Seekers duplicate after freezing a target and create a [Stasis] Stasis crystal on detonation.\n\nShatter Grenade: Creates additional shrapnel projectiles on detonation. Hitting frozen targets with this grenade refunds some grenade energy."
+				"d": "Your Glacier, Duskfield, Coldsnap, and Shatter grenades have enhanced functionality.\n\nGlacier Grenade: Adds a [Stasis] Stasis crystal and changes the formation.\n\nDuskfield Grenade: Increases slow-field size and creates a small [Stasis] Stasis crystal on impact.\n\nColdsnap Grenade: Seekers duplicate after freezing a target and create a [Stasis] Stasis crystal on detonation.\n\nShatter Grenade: Creates additional shrapnel projectiles on detonation. Hitting frozen targets with this grenade refunds some grenade energy.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"4184605701": {
 				"n": "Praxic Vestment",
@@ -14493,22 +15949,46 @@
 			"4194622036": {
 				"n": "Flow State",
 				"i": "/common/destiny2_content/icons/83c6b789cfbe88a92f1d247ebf4ff62f.jpg",
-				"d": "Defeating a jolted target makes you amplified.\n\nWhile you are amplified, your dodge recharges more quickly, you are more resilient while dodging, and your reload speed is greatly increased."
+				"d": "Defeating a jolted target makes you amplified.\n\nWhile you are amplified, your dodge recharges more quickly, you are more resilient while dodging, and your reload speed is greatly increased.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"4194622037": {
 				"n": "Tempest Strike",
 				"i": "/common/destiny2_content/icons/e216e32eaf026208ef4638f2f274e2dc.jpg",
-				"d": "While sliding, activate your charged melee ability to unleash a devastating uppercut attack that travels along the ground in front of you, damaging and jolting targets it hits.\n\nDefeating jolted targets grants a stack of Bolt Charge."
+				"d": "While sliding, activate your charged melee ability to unleash a devastating uppercut attack that travels along the ground in front of you, damaging and jolting targets it hits.\n\nDefeating jolted targets grants a stack of Bolt Charge.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"4194622038": {
 				"n": "Lethal Current",
 				"i": "/common/destiny2_content/icons/aec5d87a0d36729045b0ab0baffb8620.jpg",
-				"d": "After dodging, your next melee attack has increased lunge range, jolts the target, and creates a damaging aftershock.\n\nDamaging any jolted target with melee attacks also blinds them."
+				"d": "After dodging, your next melee attack has increased lunge range, jolts the target, and creates a damaging aftershock.\n\nDamaging any jolted target with melee attacks also blinds them.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"4194622039": {
 				"n": "Ascension",
 				"i": "/common/destiny2_content/icons/3bfe666002e12ec6ea3d0c3661f81f31.jpg",
-				"d": "[Air Move]  While airborne, consume your class ability energy to summon your Arc Staff, propelling yourself upward and creating a burst of energy around you that amplifies allies and jolts targets.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "[Air Move]  While airborne, consume your class ability energy to summon your Arc Staff, propelling yourself upward and creating a burst of energy around you that amplifies allies and jolts targets.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"4196156997": {
 				"n": "Meganeura",
@@ -14590,52 +16070,140 @@
 			"4208512210": {
 				"n": "Thread of Propagation",
 				"i": "/common/destiny2_content/icons/d42d64ff749d858b6c72c5dc4b775797.jpg",
-				"d": "Powered melee final blows grant your [Strand] Strand weapons Unraveling Rounds."
+				"d": "Powered melee final blows grant your [Strand] Strand weapons Unraveling Rounds.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"4208512211": {
 				"n": "Thread of Evolution",
 				"i": "/common/destiny2_content/icons/c86847f148a9e86459dac50ba36da591.jpg",
-				"d": "Threadlings travel farther and deal additional damage."
+				"d": "Threadlings travel farther and deal additional damage.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 144602215,
+						"v": 10
+					}
+				]
 			},
 			"4208512216": {
 				"n": "Thread of Ascent",
 				"i": "/common/destiny2_content/icons/25e7ef19cf989641771175e05bcfb3c2.jpg",
-				"d": "Activating your grenade ability reloads your equipped weapon and grants bonus airborne effectiveness and handling for a short duration."
+				"d": "Activating your grenade ability reloads your equipped weapon and grants bonus airborne effectiveness and handling for a short duration.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 2996146975,
+						"v": 10
+					}
+				]
 			},
 			"4208512217": {
 				"n": "Thread of Finality",
 				"i": "/common/destiny2_content/icons/1e61bee1b4607fea83a6d3d01dfb8bce.jpg",
-				"d": "Finisher final blows create Threadlings."
+				"d": "Finisher final blows create Threadlings.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 1943323491,
+						"v": 10
+					}
+				]
 			},
 			"4208512218": {
 				"n": "Thread of Mind",
 				"i": "/common/destiny2_content/icons/a7a1b83217ee3fe2ee11c477705389b2.jpg",
-				"d": "Defeating suspended targets grants class ability energy."
+				"d": "Defeating suspended targets grants class ability energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"4208512219": {
 				"n": "Thread of Fury",
 				"i": "/common/destiny2_content/icons/0e8b8974d2f17e25c085703bef8a3b53.jpg",
-				"d": "Damaging targets with a Tangle grants melee energy."
+				"d": "Damaging targets with a Tangle grants melee energy.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": -10
+					}
+				]
 			},
 			"4208512220": {
 				"n": "Thread of Rebirth",
 				"i": "/common/destiny2_content/icons/6f8f98e361fb4265c885ae3447b498ef.jpg",
-				"d": "[Strand] Strand weapon final blows have a chance to create a Threadling."
+				"d": "[Strand] Strand weapon final blows have a chance to create a Threadling.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"4208512221": {
 				"n": "Thread of Transmutation",
 				"i": "/common/destiny2_content/icons/d80a220ddab3e3be2641517ad3049915.jpg",
-				"d": "While you have Woven Mail, weapon final blows create a Tangle."
+				"d": "While you have Woven Mail, weapon final blows create a Tangle.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 4244567218,
+						"v": 10
+					}
+				]
 			},
 			"4208512222": {
 				"n": "Thread of Warding",
 				"i": "/common/destiny2_content/icons/9937046794352b7c7ce31340ac7832ba.jpg",
-				"d": "Picking up an Orb of Power grants Woven Mail."
+				"d": "Picking up an Orb of Power grants Woven Mail.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					},
+					{
+						"h": 392767087,
+						"v": -10
+					}
+				]
 			},
 			"4208512223": {
 				"n": "Thread of Wisdom",
 				"i": "/common/destiny2_content/icons/e78cbb486a636c94a46a6e6183978249.jpg",
-				"d": "Defeating suspended targets creates an Orb of Power."
+				"d": "Defeating suspended targets creates an Orb of Power.",
+				"st": [
+					{
+						"h": 119204074,
+						"v": 1
+					}
+				]
 			},
 			"4218954970": {
 				"n": "Symmetry Catalyst",
@@ -14768,22 +16336,46 @@
 			"4249729124": {
 				"n": "Whirling Maelstrom",
 				"i": "/common/destiny2_content/icons/ab8095cdd657b0cd66452ddb44ef01e1.jpg",
-				"d": "Destroying a Tangle will weave a violent, writhing mass of [Strand] Strand fibers. The Strand mass seeks out and damages targets, emitting Unraveling projectiles when it defeats them."
+				"d": "Destroying a Tangle will weave a violent, writhing mass of [Strand] Strand fibers. The Strand mass seeks out and damages targets, emitting Unraveling projectiles when it defeats them.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"4249729125": {
 				"n": "Threaded Specter",
 				"i": "/common/destiny2_content/icons/f0311771bc0f771779301102d62c0ae0.jpg",
-				"d": "Activating your class ability leaves behind a decoy woven from [Strand] Strand matter that draws the attention of nearby combatants.\n\nAfter taking significant damage or when combatants approach, the decoy detonates, dealing damage and releasing Threadlings that seek out and attack nearby foes.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activating your class ability leaves behind a decoy woven from [Strand] Strand matter that draws the attention of nearby combatants.\n\nAfter taking significant damage or when combatants approach, the decoy detonates, dealing damage and releasing Threadlings that seek out and attack nearby foes.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"4249729126": {
 				"n": "Ensnaring Slam",
 				"i": "/common/destiny2_content/icons/5e777fa7e6fe7c1ae0574c91639bee10.jpg",
-				"d": "Activate your air move to consume your class ability energy and dive to the ground, suspending all nearby targets on impact.\n\nSuspending combatants with this ability grants you Woven Mail.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher."
+				"d": "Activate your air move to consume your class ability energy and dive to the ground, suspending all nearby targets on impact.\n\nSuspending combatants with this ability grants you Woven Mail.\n\nThis ability's damage increases with your Class stat when your Class stat is 100 or higher.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 2
+					}
+				]
 			},
 			"4249729127": {
 				"n": "Widow's Silk",
 				"i": "/common/destiny2_content/icons/87de51bca878ac633a107e805426e95c.jpg",
-				"d": "You have an additional grenade charge.\n\nYour Grappling Hook creates a Grapple Tangle at the grapple point."
+				"d": "You have an additional grenade charge.\n\nYour Grappling Hook creates a Grapple Tangle at the grapple point.",
+				"st": [
+					{
+						"h": 2223994109,
+						"v": 3
+					}
+				]
 			},
 			"4249817697": {
 				"n": "Adaptive Frame",
@@ -23174,6 +24766,1145 @@
 						"h": 109046536
 					}
 				]
+			}
+		},
+		"DestinyStatDefinition": {
+			"119204074": {
+				"n": "Fragment Cost",
+				"i": "/common/destiny2_content/icons/435daeef2fc277af6476f2ffb9b18bcb.png",
+				"d": "The energy used by your build to activate fragments."
+			},
+			"144602215": {
+				"n": "Super",
+				"i": "/common/destiny2_content/icons/585ae4ede9c3da96b34086fccccdc8cd.png",
+				"d": "Increases the amount of Super energy from all sources."
+			},
+			"392767087": {
+				"n": "Health",
+				"i": "/common/destiny2_content/icons/717b8b218cc14325a54869bef21d2964.png",
+				"d": "Increases the amount of health you gain each time you pick up an Orb of Power. Reduces flinching from incoming fire while aiming a weapon."
+			},
+			"1735777505": {
+				"n": "Grenade",
+				"i": "/common/destiny2_content/icons/065cdaabef560e5808e821cefaeaa22c.png",
+				"d": "Reduces your grenade ability cooldown. Increases the amount of grenade energy from all sources."
+			},
+			"1943323491": {
+				"n": "Class",
+				"i": "/common/destiny2_content/icons/7eb845acb5b3a4a9b7e0b2f05f5c43f1.png",
+				"d": "Reduces your class ability cooldown. Increases the amount of class ability energy provided by all sources."
+			},
+			"2223994109": {
+				"n": "Aspect Energy Capacity",
+				"i": "/common/destiny2_content/icons/435daeef2fc277af6476f2ffb9b18bcb.png",
+				"d": "The energy used by your build to activate fragments."
+			},
+			"2996146975": {
+				"n": "Weapons",
+				"i": "/common/destiny2_content/icons/bc69675acdae9e6b9a68a02fb4d62e07.png",
+				"d": "Increases weapon reload speed and handling. Increases weapon damage against minor and major combatants."
+			},
+			"4244567218": {
+				"n": "Melee",
+				"i": "/common/destiny2_content/icons/fa534aca76d7f2d7e7b4ba4df4271b42.png",
+				"d": "Reduces your melee cooldown. Increases the amount of melee energy from all sources."
+			}
+		},
+		"Subclasses": {
+			"242419885": {
+				"n": "Berserker",
+				"i": "/common/destiny2_content/icons/41c0024ce809085ac16f4e0777ea0ac4.png",
+				"sh": "/common/destiny2_content/screenshots/242419885.jpg",
+				"ct": 0,
+				"el": "strand",
+				"sl": {
+					"class_abilities": [
+						2087010645,
+						2087010644
+					],
+					"movement": [
+						3350493949,
+						3350493948,
+						3350493951
+					],
+					"supers": [
+						3574662354
+					],
+					"melee": [
+						4094417246
+					],
+					"grenades": [
+						1377143502,
+						2809342386,
+						4228170798,
+						2470512752
+					],
+					"aspects": [
+						988980153,
+						988980152,
+						988980155,
+						988980154
+					],
+					"fragments": [
+						4208512218,
+						4208512219,
+						4208512216,
+						4208512217,
+						4208512222,
+						4208512223,
+						4208512220,
+						4208512221,
+						4208512210,
+						4208512211,
+						3192552689,
+						3192552688,
+						3192552691,
+						3192552690
+					]
+				}
+			},
+			"613647804": {
+				"n": "Behemoth",
+				"i": "/common/destiny2_content/icons/6e441ffa8c8171ce9caf71e51b72fc19.png",
+				"sh": "/common/destiny2_content/screenshots/613647804.jpg",
+				"ct": 0,
+				"el": "stasis",
+				"sl": {
+					"class_abilities": [
+						3260056808,
+						3260056809
+					],
+					"movement": [
+						469281040,
+						469281041,
+						469281042
+					],
+					"supers": [
+						2021620139
+					],
+					"melee": [
+						2028772231
+					],
+					"grenades": [
+						1399217,
+						1399216,
+						1399219,
+						1399218
+					],
+					"aspects": [
+						2031919265,
+						2031919264,
+						1563930741,
+						3866705246
+					],
+					"fragments": [
+						3469412970,
+						3469412971,
+						3469412968,
+						3469412969,
+						3469412974,
+						3469412975,
+						537774540,
+						537774541,
+						537774542,
+						537774543,
+						2483898429,
+						2483898428,
+						2483898431,
+						2483898430,
+						2368990400,
+						2368990401
+					]
+				}
+			},
+			"873720784": {
+				"n": "Revenant",
+				"i": "/common/destiny2_content/icons/6e441ffa8c8171ce9caf71e51b72fc19.png",
+				"sh": "/common/destiny2_content/screenshots/873720784.jpg",
+				"ct": 1,
+				"el": "stasis",
+				"sl": {
+					"class_abilities": [
+						3933525366,
+						3933525367
+					],
+					"movement": [
+						3531427694,
+						3531427695,
+						3531427692
+					],
+					"supers": [
+						2625980631
+					],
+					"melee": [
+						1341767667
+					],
+					"grenades": [
+						1399217,
+						1399216,
+						1399219,
+						1399218
+					],
+					"aspects": [
+						2934767477,
+						2934767476,
+						1920417385,
+						4184589900
+					],
+					"fragments": [
+						3469412970,
+						3469412971,
+						3469412968,
+						3469412969,
+						3469412974,
+						3469412975,
+						537774540,
+						537774541,
+						537774542,
+						537774543,
+						2483898429,
+						2483898428,
+						2483898431,
+						2483898430,
+						2368990400,
+						2368990401
+					]
+				}
+			},
+			"1616346845": {
+				"n": "Prismatic Titan",
+				"i": "/common/destiny2_content/icons/c1740d829e62afc40a9e57af4e3cad4c.png",
+				"sh": "/common/destiny2_content/screenshots/1616346845.jpg",
+				"ct": 0,
+				"el": "prism",
+				"sl": {
+					"class_abilities": [
+						2868073561,
+						2868073560,
+						2868073563
+					],
+					"movement": [
+						266130439,
+						266130438,
+						266130437
+					],
+					"supers": [
+						2529942646,
+						2529942647,
+						2529942644,
+						2529942645,
+						2529942642
+					],
+					"melee": [
+						1980796560,
+						1980796561,
+						1980796562,
+						1980796563,
+						1980796564
+					],
+					"grenades": [
+						934199459,
+						1323461861,
+						2400634603,
+						3923577992,
+						1517917190
+					],
+					"transcendence": [
+						1396318109
+					],
+					"prism_grenade": [
+						275534325
+					],
+					"aspects": [
+						1262901521,
+						1262901520,
+						1262901523,
+						1262901522,
+						1262901525
+					],
+					"fragments": [
+						2626922121,
+						124726502,
+						2626922125,
+						2626922127,
+						2626922115,
+						124726501,
+						2626922122,
+						2626922124,
+						2626922114,
+						124726503,
+						124726505,
+						124726497,
+						2626922126,
+						2626922120,
+						124726496,
+						124726498,
+						124726500,
+						74393640,
+						2626922123,
+						124726499,
+						124726504
+					]
+				}
+			},
+			"2240888816": {
+				"n": "Gunslinger",
+				"i": "/common/destiny2_content/icons/fedcb91b7ab0584c12f0e9fec730702b.png",
+				"sh": "/common/destiny2_content/screenshots/2240888816.jpg",
+				"ct": 1,
+				"el": "solar",
+				"sl": {
+					"class_abilities": [
+						3636300854,
+						3636300855,
+						3636300852
+					],
+					"movement": [
+						1128768654,
+						1128768655,
+						1128768652
+					],
+					"supers": [
+						375052469,
+						375052468,
+						375052471
+					],
+					"melee": [
+						4016776974,
+						4016776975,
+						4016776972,
+						4016776973
+					],
+					"grenades": [
+						2946990961,
+						3969294337,
+						2581086849,
+						2216698406,
+						3199702642,
+						1013086087,
+						2202441959,
+						1841016428
+					],
+					"aspects": [
+						3066103998,
+						3066103999,
+						3066103996,
+						3066103997
+					],
+					"fragments": [
+						4180586737,
+						4180586736,
+						362132293,
+						362132292,
+						362132295,
+						362132294,
+						362132289,
+						362132288,
+						362132291,
+						362132290,
+						362132301,
+						362132300,
+						1051276348,
+						1051276349,
+						1051276350,
+						1051276351
+					]
+				}
+			},
+			"2328211300": {
+				"n": "Arcstrider",
+				"i": "/common/destiny2_content/icons/949af7a61d60a8e6071282daafa9e6e9.png",
+				"sh": "/common/destiny2_content/screenshots/2328211300.jpg",
+				"ct": 1,
+				"el": "arc",
+				"sl": {
+					"class_abilities": [
+						426473316,
+						426473317
+					],
+					"movement": [
+						95544330,
+						95544331,
+						95544328,
+						95544329
+					],
+					"supers": [
+						3769507633,
+						3769507632,
+						3769507635
+					],
+					"melee": [
+						2716335211,
+						2716335210
+					],
+					"grenades": [
+						2994412667,
+						2481624867,
+						2909720723,
+						1713935764,
+						146194908,
+						4198689901,
+						1582574009
+					],
+					"aspects": [
+						4194622036,
+						4194622037,
+						4194622038,
+						4194622039
+					],
+					"fragments": [
+						3478354817,
+						3478354816,
+						1727069367,
+						1727069366,
+						1727069365,
+						1727069364,
+						1727069363,
+						1727069362,
+						1727069361,
+						1727069360,
+						1727069375,
+						1727069374,
+						3277705906,
+						3277705907,
+						3277705904,
+						3277705905
+					]
+				}
+			},
+			"2453351420": {
+				"n": "Nightstalker",
+				"i": "/common/destiny2_content/icons/32b112a9460e6f0e2b9ee15dc53fe1c1.png",
+				"sh": "/common/destiny2_content/screenshots/2453351420.jpg",
+				"ct": 1,
+				"el": "void",
+				"sl": {
+					"class_abilities": [
+						2816982784,
+						2816982785
+					],
+					"movement": [
+						20616658,
+						20616659,
+						20616656
+					],
+					"supers": [
+						2722573683,
+						2722573682,
+						2722573681
+					],
+					"melee": [
+						1139822081,
+						1139822080
+					],
+					"grenades": [
+						1255073825,
+						2809141585,
+						2265076177,
+						1016030582,
+						1514173218,
+						1547656727,
+						3232422679
+					],
+					"aspects": [
+						187655372,
+						187655373,
+						187655374,
+						187655375
+					],
+					"fragments": [
+						3854948621,
+						3854948620,
+						2272984665,
+						2272984664,
+						2272984667,
+						2272984666,
+						2272984669,
+						2272984668,
+						2272984671,
+						2272984670,
+						2272984657,
+						2272984656,
+						2661180600,
+						2661180601,
+						2661180602,
+						2661180603
+					]
+				}
+			},
+			"2550323932": {
+				"n": "Sunbreaker",
+				"i": "/common/destiny2_content/icons/fedcb91b7ab0584c12f0e9fec730702b.png",
+				"sh": "/common/destiny2_content/screenshots/2550323932.jpg",
+				"ct": 0,
+				"el": "solar",
+				"sl": {
+					"class_abilities": [
+						2495523340,
+						2495523341
+					],
+					"movement": [
+						2225231092,
+						2225231093,
+						2225231094
+					],
+					"supers": [
+						2747500761,
+						2747500760
+					],
+					"melee": [
+						852252788,
+						852252789
+					],
+					"grenades": [
+						2946990961,
+						3969294337,
+						2581086849,
+						2216698406,
+						3199702642,
+						1013086087,
+						2202441959,
+						1841016428
+					],
+					"aspects": [
+						2984351204,
+						2984351205,
+						2984351206,
+						2984351207
+					],
+					"fragments": [
+						4180586737,
+						4180586736,
+						362132293,
+						362132292,
+						362132295,
+						362132294,
+						362132289,
+						362132288,
+						362132291,
+						362132290,
+						362132301,
+						362132300,
+						1051276348,
+						1051276349,
+						1051276350,
+						1051276351
+					]
+				}
+			},
+			"2842471112": {
+				"n": "Sentinel",
+				"i": "/common/destiny2_content/icons/32b112a9460e6f0e2b9ee15dc53fe1c1.png",
+				"sh": "/common/destiny2_content/screenshots/2842471112.jpg",
+				"ct": 0,
+				"el": "void",
+				"sl": {
+					"class_abilities": [
+						2722641740,
+						2722641741
+					],
+					"movement": [
+						1380268166,
+						1380268167,
+						1380268164
+					],
+					"supers": [
+						4260353953,
+						4260353952,
+						4260353955
+					],
+					"melee": [
+						4220332375,
+						4220332374
+					],
+					"grenades": [
+						1255073825,
+						2809141585,
+						2265076177,
+						1016030582,
+						1514173218,
+						1547656727,
+						3232422679
+					],
+					"aspects": [
+						1602994568,
+						1602994569,
+						1602994570,
+						1602994571
+					],
+					"fragments": [
+						3854948621,
+						3854948620,
+						2272984665,
+						2272984664,
+						2272984667,
+						2272984666,
+						2272984669,
+						2272984668,
+						2272984671,
+						2272984670,
+						2272984657,
+						2272984656,
+						2661180600,
+						2661180601,
+						2661180602,
+						2661180603
+					]
+				}
+			},
+			"2849050827": {
+				"n": "Voidwalker",
+				"i": "/common/destiny2_content/icons/32b112a9460e6f0e2b9ee15dc53fe1c1.png",
+				"sh": "/common/destiny2_content/screenshots/2849050827.jpg",
+				"ct": 2,
+				"el": "void",
+				"sl": {
+					"class_abilities": [
+						2209081649,
+						2209081648
+					],
+					"movement": [
+						1237488987,
+						1237488986,
+						1237488985,
+						1237488984
+					],
+					"supers": [
+						1656118680,
+						1656118681,
+						1656118682
+					],
+					"melee": [
+						2299867342
+					],
+					"grenades": [
+						1255073825,
+						2809141585,
+						2265076177,
+						1016030582,
+						1514173218,
+						1547656727,
+						3232422679
+					],
+					"aspects": [
+						2321824285,
+						2321824284,
+						2321824287,
+						2321824286
+					],
+					"fragments": [
+						3854948621,
+						3854948620,
+						2272984665,
+						2272984664,
+						2272984667,
+						2272984666,
+						2272984669,
+						2272984668,
+						2272984671,
+						2272984670,
+						2272984657,
+						2272984656,
+						2661180600,
+						2661180601,
+						2661180602,
+						2661180603
+					]
+				}
+			},
+			"2932390016": {
+				"n": "Striker",
+				"i": "/common/destiny2_content/icons/949af7a61d60a8e6071282daafa9e6e9.png",
+				"sh": "/common/destiny2_content/screenshots/2932390016.jpg",
+				"ct": 0,
+				"el": "arc",
+				"sl": {
+					"class_abilities": [
+						489583096,
+						489583097,
+						489583098
+					],
+					"movement": [
+						1698387814,
+						1698387815,
+						1698387812
+					],
+					"supers": [
+						119041299,
+						119041298
+					],
+					"melee": [
+						2708585277,
+						2708585276,
+						2708585279
+					],
+					"grenades": [
+						2994412667,
+						2481624867,
+						2909720723,
+						1713935764,
+						146194908,
+						4198689901,
+						1582574009
+					],
+					"aspects": [
+						1656549672,
+						1656549673,
+						1656549674,
+						1656549675
+					],
+					"fragments": [
+						3478354817,
+						3478354816,
+						1727069367,
+						1727069366,
+						1727069365,
+						1727069364,
+						1727069363,
+						1727069362,
+						1727069361,
+						1727069360,
+						1727069375,
+						1727069374,
+						3277705906,
+						3277705907,
+						3277705904,
+						3277705905
+					]
+				}
+			},
+			"3168997075": {
+				"n": "Stormcaller",
+				"i": "/common/destiny2_content/icons/949af7a61d60a8e6071282daafa9e6e9.png",
+				"sh": "/common/destiny2_content/screenshots/3168997075.jpg",
+				"ct": 2,
+				"el": "arc",
+				"sl": {
+					"class_abilities": [
+						25156515,
+						25156514
+					],
+					"movement": [
+						4154539169,
+						4154539168,
+						4154539171
+					],
+					"supers": [
+						1081893460,
+						1081893461
+					],
+					"melee": [
+						1232050830,
+						1232050831
+					],
+					"grenades": [
+						2994412667,
+						2481624867,
+						2909720723,
+						1713935764,
+						146194908,
+						4198689901,
+						1582574009
+					],
+					"aspects": [
+						1293395731,
+						1293395730,
+						1293395729,
+						1293395728
+					],
+					"fragments": [
+						3478354817,
+						3478354816,
+						1727069367,
+						1727069366,
+						1727069365,
+						1727069364,
+						1727069363,
+						1727069362,
+						1727069361,
+						1727069360,
+						1727069375,
+						1727069374,
+						3277705906,
+						3277705907,
+						3277705904,
+						3277705905
+					]
+				}
+			},
+			"3291545503": {
+				"n": "Shadebinder",
+				"i": "/common/destiny2_content/icons/6e441ffa8c8171ce9caf71e51b72fc19.png",
+				"sh": "/common/destiny2_content/screenshots/3291545503.jpg",
+				"ct": 2,
+				"el": "stasis",
+				"sl": {
+					"class_abilities": [
+						3492047641,
+						3492047640
+					],
+					"movement": [
+						890263313,
+						890263312,
+						890263315
+					],
+					"supers": [
+						3683904166
+					],
+					"melee": [
+						2543177538
+					],
+					"grenades": [
+						1399217,
+						1399216,
+						1399219,
+						1399218
+					],
+					"aspects": [
+						668903196,
+						668903197,
+						2642597904,
+						2651551055
+					],
+					"fragments": [
+						3469412970,
+						3469412971,
+						3469412968,
+						3469412969,
+						3469412974,
+						3469412975,
+						537774540,
+						537774541,
+						537774542,
+						537774543,
+						2483898429,
+						2483898428,
+						2483898431,
+						2483898430,
+						2368990400,
+						2368990401
+					]
+				}
+			},
+			"3785442599": {
+				"n": "Threadrunner",
+				"i": "/common/destiny2_content/icons/41c0024ce809085ac16f4e0777ea0ac4.png",
+				"sh": "/common/destiny2_content/screenshots/3785442599.jpg",
+				"ct": 1,
+				"el": "strand",
+				"sl": {
+					"class_abilities": [
+						1282157891,
+						1282157890
+					],
+					"movement": [
+						3721022587,
+						3721022586,
+						3721022585
+					],
+					"supers": [
+						2463983862
+					],
+					"melee": [
+						1680616210
+					],
+					"grenades": [
+						1377143502,
+						2809342386,
+						4228170798,
+						2470512752
+					],
+					"aspects": [
+						4249729127,
+						4249729126,
+						4249729125,
+						4249729124
+					],
+					"fragments": [
+						4208512218,
+						4208512219,
+						4208512216,
+						4208512217,
+						4208512222,
+						4208512223,
+						4208512220,
+						4208512221,
+						4208512210,
+						4208512211,
+						3192552689,
+						3192552688,
+						3192552691,
+						3192552690
+					]
+				}
+			},
+			"3893112950": {
+				"n": "Prismatic Warlock",
+				"i": "/common/destiny2_content/icons/652406349e99e3db0c3198f78af4eeae.png",
+				"sh": "/common/destiny2_content/screenshots/3893112950.jpg",
+				"ct": 2,
+				"el": "prism",
+				"sl": {
+					"class_abilities": [
+						1444664838,
+						1444664839,
+						1444664836
+					],
+					"movement": [
+						5333292,
+						5333293,
+						5333294,
+						5333295
+					],
+					"supers": [
+						1869939005,
+						1869939004,
+						1869939007,
+						1869939006,
+						1869939001
+					],
+					"melee": [
+						3644045871,
+						3644045870,
+						3644045869,
+						3644045868,
+						3644045867
+					],
+					"grenades": [
+						1048847436,
+						3040080535,
+						4241856103,
+						4265391440,
+						3994381207
+					],
+					"transcendence": [
+						3696633656
+					],
+					"prism_grenade": [
+						1324853482
+					],
+					"aspects": [
+						790664814,
+						790664815,
+						790664812,
+						790664813,
+						790664810
+					],
+					"fragments": [
+						2626922121,
+						124726502,
+						2626922125,
+						2626922127,
+						2626922115,
+						124726501,
+						2626922122,
+						2626922124,
+						2626922114,
+						124726503,
+						124726505,
+						124726497,
+						2626922126,
+						2626922120,
+						124726496,
+						124726498,
+						124726500,
+						74393640,
+						2626922123,
+						124726499,
+						124726504
+					]
+				}
+			},
+			"3941205951": {
+				"n": "Dawnblade",
+				"i": "/common/destiny2_content/icons/fedcb91b7ab0584c12f0e9fec730702b.png",
+				"sh": "/common/destiny2_content/screenshots/3941205951.jpg",
+				"ct": 2,
+				"el": "solar",
+				"sl": {
+					"class_abilities": [
+						2979486803,
+						2979486802,
+						2979486801
+					],
+					"movement": [
+						3686638443,
+						3686638442,
+						3686638441
+					],
+					"supers": [
+						2274196886,
+						2274196887,
+						2274196884
+					],
+					"melee": [
+						1470370539,
+						1470370538
+					],
+					"grenades": [
+						2946990961,
+						3969294337,
+						2581086849,
+						2216698406,
+						3199702642,
+						1013086087,
+						2202441959,
+						1841016428
+					],
+					"aspects": [
+						83039195,
+						83039194,
+						83039193,
+						83039192
+					],
+					"fragments": [
+						4180586737,
+						4180586736,
+						362132293,
+						362132292,
+						362132295,
+						362132294,
+						362132289,
+						362132288,
+						362132291,
+						362132290,
+						362132301,
+						362132300,
+						1051276348,
+						1051276349,
+						1051276350,
+						1051276351
+					]
+				}
+			},
+			"4204413574": {
+				"n": "Broodweaver",
+				"i": "/common/destiny2_content/icons/41c0024ce809085ac16f4e0777ea0ac4.png",
+				"sh": "/common/destiny2_content/screenshots/4204413574.jpg",
+				"ct": 2,
+				"el": "strand",
+				"sl": {
+					"class_abilities": [
+						383852320,
+						383852321
+					],
+					"movement": [
+						2628485816,
+						2628485817,
+						2628485818
+					],
+					"supers": [
+						1885339915
+					],
+					"melee": [
+						2307689415
+					],
+					"grenades": [
+						1377143502,
+						2809342386,
+						4228170798,
+						2470512752
+					],
+					"aspects": [
+						262821317,
+						262821318,
+						262821319,
+						262821312
+					],
+					"fragments": [
+						4208512218,
+						4208512219,
+						4208512216,
+						4208512217,
+						4208512222,
+						4208512223,
+						4208512220,
+						4208512221,
+						4208512210,
+						4208512211,
+						3192552689,
+						3192552688,
+						3192552691,
+						3192552690
+					]
+				}
+			},
+			"4282591831": {
+				"n": "Prismatic Hunter",
+				"i": "/common/destiny2_content/icons/fab506e62fa4f188bfe2fb6d56b39614.png",
+				"sh": "/common/destiny2_content/screenshots/4282591831.jpg",
+				"ct": 1,
+				"el": "prism",
+				"sl": {
+					"class_abilities": [
+						2711519341,
+						2711519340,
+						2711519343
+					],
+					"movement": [
+						1588878499,
+						1588878498,
+						1588878497,
+						1588878496
+					],
+					"supers": [
+						2370269388,
+						2370269389,
+						2370269390,
+						2370269391,
+						2370269384
+					],
+					"melee": [
+						2657901006,
+						2657901007,
+						2657901004,
+						2657901005,
+						2657901002
+					],
+					"grenades": [
+						1225978592,
+						886607940,
+						2842514288,
+						3897682694,
+						4051767608
+					],
+					"transcendence": [
+						1190101211
+					],
+					"prism_grenade": [
+						1005476557
+					],
+					"aspects": [
+						2835214901,
+						2835214900,
+						2835214903,
+						2835214902,
+						2835214897
+					],
+					"fragments": [
+						2626922121,
+						124726502,
+						2626922125,
+						2626922127,
+						2626922115,
+						124726501,
+						2626922122,
+						2626922124,
+						2626922114,
+						124726503,
+						124726505,
+						124726497,
+						2626922126,
+						2626922120,
+						124726496,
+						124726498,
+						124726500,
+						74393640,
+						2626922123,
+						124726499,
+						124726504
+					]
+				}
 			}
 		}
 	}

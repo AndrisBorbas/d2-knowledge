@@ -74,7 +74,10 @@ export function FilterHeader({
 				/>
 
 				<div
-					className="flex min-w-0 [scrollbar-width:none] flex-nowrap gap-2 overflow-x-auto [-ms-overflow-style:none] lg:flex-wrap lg:overflow-x-visible [&::-webkit-scrollbar]:hidden"
+					// `-m-2 p-2` on the scrolling variant: overflow-x-auto clips
+					// vertically as well, and the borderHover frame grows 6px past
+					// each chip.
+					className="-m-2 flex min-w-0 [scrollbar-width:none] flex-nowrap gap-2 overflow-x-auto p-2 [-ms-overflow-style:none] lg:m-0 lg:flex-wrap lg:overflow-x-visible lg:p-0 [&::-webkit-scrollbar]:hidden"
 					role="group"
 					aria-label="Filter entries"
 				>

@@ -1,6 +1,7 @@
 import { STATIC_ICON_PATH_BY_GLYPH } from "@/lib/bungie/glyphs";
 import { buildOfficialDescription } from "@/lib/bungie/officialDescription";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
+import { loadSubclassUnifiedEntries } from "@/lib/bungie/subclass-source";
 import { loadClaritySource } from "@/lib/clarity/source";
 import { loadDdcSource } from "@/lib/ddc/source";
 import { isSameDescription } from "@/lib/utils/text";
@@ -11,15 +12,21 @@ import { Verbs } from "./keywords/data";
 import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
 
 export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
-	const [ddcSource, claritySource] = await Promise.all([
+	const [ddcSource, claritySource, subclassEntries] = await Promise.all([
 		loadDdcSource(),
 		loadClaritySource(),
+		loadSubclassUnifiedEntries(),
 	]);
 
+	// Subclass entries come last on purpose: the merge keeps whichever record
+	// reached a title first when the incoming one ranks lower, so the manifest
+	// can only ever fill a gap, never restate or relocate what the community
+	// sources already say.
 	const mergedUnifiedEntries = foldModFamilies(
 		mergeUnifiedEntries([
 			...ddcSource.unifiedEntries,
 			...claritySource.unifiedEntries,
+			...subclassEntries,
 		]),
 	);
 	const bungieResolver = await loadBungieManifestSnapshotResolver();

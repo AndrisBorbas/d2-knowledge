@@ -7,6 +7,18 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.6.0] - 2026-09-08
+
+### Added
+
+- Abilities page at [/abilities](https://owlsector.net/abilities): every super, ability, aspect and fragment a class can equip, per subclass, laid out the way the game groups them, with each section marked as class specific or shared across all three classes.
+- Aspects show how many fragment slots they grant, and fragments show their stat bonuses and penalties.
+- Movement abilities, so jumps like `Triple Jump` and `Strafe Glide` now appear in the glossary alongside the other abilities.
+
+### Fixed
+
+- Hover frames no longer get clipped inside scrolling areas: the settings dialog, the pinned tooltips drawer and the filter chip strip on narrow screens.
+
 ## [1.5.1] - 2026-09-08
 
 ### Fixed

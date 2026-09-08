@@ -21,3 +21,15 @@ export function isSameDescription(a: string, b: string) {
 			.trim();
 	return normalize(a) === normalize(b);
 }
+
+// The key both sides of a title match agree on: the Bungie manifest's own
+// spelling, the DDC's, and Clarity's differ only in punctuation and case.
+// Trim last - a title that ends in punctuation turns that punctuation into a
+// space, and trimming before the replace would leave it on the key.
+export function normalizeLookupName(value: string) {
+	return value
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, " ")
+		.replace(/\s+/g, " ")
+		.trim();
+}

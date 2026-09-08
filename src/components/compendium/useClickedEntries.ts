@@ -44,6 +44,22 @@ export function useClickedEntries(params: {
 		}
 	};
 
+	// Pinning something that is not a keyword - an ability icon on the subclass
+	// pages. Clicking a pinned one again unpins it.
+	const toggleClickedEntry = (entryId: string) => {
+		const isPinned = clickedEntryIds.includes(entryId);
+
+		setClickedEntryIds((currentIds) =>
+			isPinned
+				? currentIds.filter((currentId) => currentId !== entryId)
+				: [entryId, ...currentIds.filter((currentId) => currentId !== entryId)],
+		);
+
+		if (!isPinned && isMobileViewport()) {
+			setIsMobileDrawerOpen(true);
+		}
+	};
+
 	const handleRemoveClickedEntry = (entryId: string) => {
 		setClickedEntryIds((currentIds) =>
 			currentIds.filter((currentId) => currentId !== entryId),
@@ -56,9 +72,11 @@ export function useClickedEntries(params: {
 
 	return {
 		clickedEntries,
+		clickedEntryIds,
 		isMobileDrawerOpen,
 		setIsMobileDrawerOpen,
 		handleKeywordClick,
+		toggleClickedEntry,
 		handleRemoveClickedEntry,
 		handleClearClickedEntries,
 	};

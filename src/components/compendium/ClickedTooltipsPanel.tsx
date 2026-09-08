@@ -18,6 +18,10 @@ type ClickedTooltipsPanelProps = {
 	onGroupClick: (group: string) => void;
 	onRemove: (entryId: string) => void;
 	onClearAll: () => void;
+	// The subclass pages pin abilities by clicking their icon, not only by
+	// clicking a keyword, so they name the panel after that.
+	title?: string;
+	emptyMessage?: string;
 };
 
 export function ClickedTooltipsPanel({
@@ -30,13 +34,15 @@ export function ClickedTooltipsPanel({
 	onGroupClick,
 	onRemove,
 	onClearAll,
+	title = "Clicked Tooltips",
+	emptyMessage = "Click any highlighted keyword to pin its tooltip here.",
 }: ClickedTooltipsPanelProps) {
 	return (
 		<div className="@container mt-2 flex flex-col">
 			<div className="mx-2 flex items-center justify-between gap-2">
 				<div>
 					<p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
-						Clicked Tooltips
+						{title}
 					</p>
 					<p className="mt-1 text-xs text-white/60">
 						{clickedEntries.length} item
@@ -74,9 +80,7 @@ export function ClickedTooltipsPanel({
 					))}
 				</div>
 			) : (
-				<p className="mt-4 text-sm leading-7 text-white/62">
-					Click any highlighted keyword to pin its tooltip here.
-				</p>
+				<p className="mt-4 text-sm leading-7 text-white/62">{emptyMessage}</p>
 			)}
 		</div>
 	);

@@ -1,12 +1,25 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import { normalizeLookupName } from "@/lib/utils/text";
+
 import { ARMOR_SET_NAME_ALIASES } from "./armor-set-aliases";
 import {
 	BREAKER_TYPE_ENUM_BY_GLYPH,
 	DAMAGE_TYPE_ENUM_BY_GLYPH,
 } from "./glyphs";
 import { PERK_TITLE_ALIASES } from "./perk-title-aliases";
+import {
+	ASPECT_ENERGY_CAPACITY_STAT,
+	CLASS_NAME_BY_TYPE,
+	type CompactStatMod,
+	type CompactSubclassRow,
+	ELEMENT_NAME_BY_TOKEN,
+	FRAGMENT_COST_STAT,
+	SUBCLASS_SLOT_IDS,
+	type SubclassSlotId,
+	toSlug,
+} from "./subclass-schema";
 
 type BungieDisplayProperties = {
 	name?: string;
@@ -22,6 +35,8 @@ type BungieManifestRow = {
 	// grants, written by scripts/fetch-bungie-manifest.mts from the same perk
 	// lookup that supplies the catalyst's description and icon.
 	gp?: string[];
+	// Only subclass aspects and fragments carry this.
+	st?: CompactStatMod[];
 	displayProperties?: BungieDisplayProperties;
 };
 
@@ -42,21 +57,12 @@ type BungieManifestSnapshot = {
 		DestinyDamageTypeDefinition?: Record<string, BungieManifestRow>;
 		DestinyBreakerTypeDefinition?: Record<string, BungieManifestRow>;
 		DestinyEquipableItemSetDefinition?: Record<string, BungieItemSetRow>;
+		DestinyStatDefinition?: Record<string, BungieManifestRow>;
+		Subclasses?: Record<string, CompactSubclassRow>;
 	};
 };
 
 const BUNGIE_CDN_BASE = "https://www.bungie.net";
-
-function normalizeLookupName(value: string) {
-	// Trim last: a title that ends in punctuation ("Hammer of Sol\n(Sol
-	// Invictus Aspect)") turns that punctuation into a space, and trimming
-	// before the replace would leave it on the key.
-	return value
-		.toLowerCase()
-		.replace(/[^a-z0-9]+/g, " ")
-		.replace(/\s+/g, " ")
-		.trim();
-}
 
 function asRecord<T>(value: unknown) {
 	if (!value || typeof value !== "object") return null;
@@ -101,7 +107,45 @@ export type BungieExoticEnrichment = {
 	grantedPerkNames?: string[];
 };
 
+export type BungieStatMod = {
+	name: string;
+	value: number;
+};
+
+export type BungieSubclassOption = {
+	hash: number;
+	name: string;
+	iconPath?: string;
+	description?: string;
+	// Aspects only: how many fragment slots the aspect grants.
+	fragmentSlots?: number;
+	// Fragments only: how much of that budget this fragment spends.
+	cost?: number;
+	// The +/- stat lines the game prints under a fragment.
+	statMods?: BungieStatMod[];
+};
+
+export type BungieSubclassSlot = {
+	id: SubclassSlotId;
+	options: BungieSubclassOption[];
+};
+
+export type BungieSubclass = {
+	hash: number;
+	// "Gunslinger", "Prismatic Titan" - the game's own name for the subclass.
+	name: string;
+	className: string;
+	classSlug: string;
+	element: string;
+	elementSlug: string;
+	iconPath?: string;
+	screenshotPath?: string;
+	slots: BungieSubclassSlot[];
+};
+
 export type BungieManifestSnapshotResolver = {
+	getSubclasses(): BungieSubclass[];
+	getStatName(statHash: number): string | undefined;
 	getExoticEnrichment(params: {
 		itemHash?: number;
 		perkHash?: number;
@@ -137,6 +181,8 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly damageTypeTable: Record<string, BungieManifestRow> | null;
 	private readonly breakerTypeTable: Record<string, BungieManifestRow> | null;
 	private readonly itemSetTable: Record<string, BungieItemSetRow> | null;
+	private readonly statTable: Record<string, BungieManifestRow> | null;
+	private readonly subclassTable: Record<string, CompactSubclassRow> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemSetByName: Map<string, BungieItemSetRow>;
@@ -160,6 +206,12 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		);
 		this.itemSetTable = asRecord<BungieItemSetRow>(
 			snapshot.tables?.DestinyEquipableItemSetDefinition,
+		);
+		this.statTable = asRecord<BungieManifestRow>(
+			snapshot.tables?.DestinyStatDefinition,
+		);
+		this.subclassTable = asRecord<CompactSubclassRow>(
+			snapshot.tables?.Subclasses,
 		);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
@@ -344,6 +396,95 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		const key = params.title ? this.resolveTitleKey(params.title) : "";
 		if (!key) return undefined;
 		return this.descriptionByName.get(key);
+	}
+
+	getStatName(statHash: number) {
+		const row = this.statTable?.[String(statHash)];
+		return row?.n ?? row?.displayProperties?.name;
+	}
+
+	// The in-game subclass screen, as data: one entry per class per element,
+	// each holding the option list the game offers for every socket. Written by
+	// scripts/fetch-bungie-manifest.mts; empty on a snapshot that predates it.
+	getSubclasses(): BungieSubclass[] {
+		if (!this.subclassTable) return [];
+
+		const subclasses: BungieSubclass[] = [];
+
+		for (const [hash, row] of Object.entries(this.subclassTable)) {
+			const className = CLASS_NAME_BY_TYPE[row.ct];
+			const element = ELEMENT_NAME_BY_TOKEN[row.el];
+			if (!className || !element) continue;
+
+			const slots: BungieSubclassSlot[] = [];
+			// Iterating the canonical list rather than the row's own keys keeps
+			// the slots in a fixed order regardless of socket layout.
+			for (const slotId of SUBCLASS_SLOT_IDS) {
+				const optionHashes = row.sl[slotId];
+				if (!optionHashes || optionHashes.length === 0) continue;
+
+				const options: BungieSubclassOption[] = [];
+				for (const optionHash of optionHashes) {
+					const option = this.inventoryTable?.[String(optionHash)];
+					const name = option?.n ?? option?.displayProperties?.name;
+					if (!option || !name) continue;
+
+					const statMods: BungieStatMod[] = [];
+					let fragmentSlots: number | undefined;
+					let cost: number | undefined;
+					for (const stat of option.st ?? []) {
+						// Two of these describe the slot itself - the dots an aspect
+						// adds and the budget a fragment spends - and are not stat
+						// lines the game prints under the name.
+						if (stat.h === ASPECT_ENERGY_CAPACITY_STAT) {
+							fragmentSlots = stat.v;
+							continue;
+						}
+						if (stat.h === FRAGMENT_COST_STAT) {
+							cost = stat.v;
+							continue;
+						}
+						const statName = this.getStatName(stat.h);
+						if (!statName) continue;
+						statMods.push({ name: statName, value: stat.v });
+					}
+
+					options.push({
+						hash: optionHash,
+						name,
+						iconPath: normalizeIconPath(
+							option.i ?? option.displayProperties?.icon,
+						),
+						description: (
+							option.d ??
+							option.displayProperties?.description ??
+							""
+						).trim(),
+						fragmentSlots,
+						cost,
+						statMods: statMods.length > 0 ? statMods : undefined,
+					});
+				}
+
+				if (options.length > 0) {
+					slots.push({ id: slotId, options });
+				}
+			}
+
+			subclasses.push({
+				hash: Number(hash),
+				name: row.n,
+				className,
+				classSlug: toSlug(className),
+				element,
+				elementSlug: toSlug(element),
+				iconPath: normalizeIconPath(row.i),
+				screenshotPath: normalizeIconPath(row.sh),
+				slots,
+			});
+		}
+
+		return subclasses;
 	}
 
 	getGlyphIconPath(className: string) {

@@ -60,6 +60,7 @@ const GROUP_CATEGORIES: readonly GroupCategory[] = [
 			"Grenade Abilities",
 			"Melee Abilities",
 			"Class Abilities",
+			"Movement Abilities",
 			"Aspect",
 			"Fragments",
 		],

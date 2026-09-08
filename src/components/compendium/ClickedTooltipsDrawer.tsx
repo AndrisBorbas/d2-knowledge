@@ -67,7 +67,7 @@ export function ClickedTooltipsDrawer({
 				</div>
 
 				{clickedEntries.length > 0 ? (
-					<div className="mt-4 max-h-[calc(100vh-6rem)] space-y-3 overflow-y-auto pr-1">
+					<div className="-mx-2 mt-4 max-h-[calc(100vh-6rem)] space-y-3 overflow-y-auto px-2">
 						{clickedEntries.map((entry) => (
 							<div key={`drawer-${entry.id}`} className="space-y-2">
 								<div className="flex justify-end">

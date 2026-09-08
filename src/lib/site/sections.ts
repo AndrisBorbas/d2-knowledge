@@ -21,11 +21,11 @@ export const SITE_PAGES: SiteSection[] = [
 	},
 	{
 		slug: "abilities",
-		href: "#",
+		href: "/abilities",
 		title: "Abilities & Subclasses",
 		description:
-			"Supers, aspects, fragments and grenades per subclass - still being designed.",
-		status: "planned",
+			"Every super, ability, aspect and fragment a class can equip, laid out similarly to the in-game screen.",
+		status: "live",
 	},
 	{
 		slug: "glossary",

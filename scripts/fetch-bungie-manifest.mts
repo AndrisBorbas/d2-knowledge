@@ -13,11 +13,19 @@ import {
 } from "../src/lib/bungie/officialDescription";
 import { PERK_TITLE_ALIASES } from "../src/lib/bungie/perk-title-aliases";
 import {
+	type CompactStatMod,
+	type CompactSubclassRow,
+	type SubclassSlotId,
+	toElementToken,
+	toSubclassSlotId,
+} from "../src/lib/bungie/subclass-schema";
+import {
 	ARTIFACT_TAB_NAME,
 	stripReleaseLabel,
 } from "../src/lib/compendium/artifacts";
 import { EXOTIC_CLASS_ITEM_NAMES } from "../src/lib/ddc/exotic-class-items";
 import { loadDdcSource } from "../src/lib/ddc/source";
+import { normalizeLookupName } from "../src/lib/utils/text";
 
 type ClarityRecord = {
 	hash?: number;
@@ -28,6 +36,9 @@ type CompactDefinition = {
 	n?: string;
 	i?: string;
 	d?: string;
+	// Stat modifiers, kept only for subclass aspects (fragment slot capacity)
+	// and fragments (the +/- stat lines the game prints under them).
+	st?: CompactStatMod[];
 	// Names of the perks an exotic catalyst grants (see
 	// resolvePerkFallbackDisplay) - the catalyst item itself is only ever named
 	// after its weapon, so this is the only place the granted perk's name
@@ -46,22 +57,14 @@ type CompactItemSetDefinition = CompactDefinition & {
 
 type CompactManifestTables = {
 	DestinyInventoryItemDefinition: Record<string, CompactDefinition>;
+	DestinyStatDefinition: Record<string, CompactDefinition>;
+	Subclasses: Record<string, CompactSubclassRow>;
 	DestinySandboxPerkDefinition: Record<string, CompactDefinition>;
 	DestinyTraitDefinition: Record<string, CompactDefinition>;
 	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
 	DestinyBreakerTypeDefinition: Record<string, CompactDefinition>;
 	DestinyEquipableItemSetDefinition: Record<string, CompactItemSetDefinition>;
 };
-
-function normalizeLookupName(value: string) {
-	// Trim last, same as src/lib/bungie/snapshot.ts - both sides of the filter
-	// have to agree on the key for a title-matched row to survive.
-	return value
-		.toLowerCase()
-		.replace(/[^a-z0-9]+/g, " ")
-		.replace(/\s+/g, " ")
-		.trim();
-}
 
 function removeFromName(value: string, remove: string) {
 	return value.replace(remove, "").trim();
@@ -379,6 +382,185 @@ function filterItemSetTableToNames(table: unknown, setNameKeys: Set<string>) {
 	return { compact, perkHashes };
 }
 
+type SubclassCollection = {
+	rows: Record<string, CompactSubclassRow>;
+	// Every option item the 18 subclasses reference, so the inventory filter
+	// keeps their name/icon/description rows.
+	optionHashes: Set<number>;
+	// Only the stats those options actually modify.
+	statHashes: Set<number>;
+	statModsByHash: Map<number, CompactStatMod[]>;
+};
+
+// DestinyItemType.Subclass.
+const SUBCLASS_ITEM_TYPE = 16;
+
+// The option list the game shows for a socket. Aspect and fragment sockets
+// share one plug set across every copy of the socket, and Prismatic's
+// Transcendence and Prismatic-grenade sockets have no plug set at all - they
+// carry the single plug directly.
+function resolveSocketPlugHashes(
+	socket: Record<string, unknown>,
+	plugSetTable: Record<string, unknown> | null,
+) {
+	const plugSetHash = socket.reusablePlugSetHash;
+	if (typeof plugSetHash === "number" && plugSetTable) {
+		const plugSet = asRecord<unknown>(plugSetTable[String(plugSetHash)]);
+		const items = Array.isArray(plugSet?.reusablePlugItems)
+			? (plugSet.reusablePlugItems as Array<{ plugItemHash?: number }>)
+			: [];
+		return items
+			.map((item) => item.plugItemHash)
+			.filter((hash): hash is number => typeof hash === "number");
+	}
+
+	const initial = socket.singleInitialItemHash;
+	return typeof initial === "number" && initial !== 0 ? [initial] : [];
+}
+
+function collectStatMods(value: Record<string, unknown>) {
+	const source = Array.isArray(value.investmentStats)
+		? (value.investmentStats as Array<{
+				statTypeHash?: number;
+				value?: number;
+			}>)
+		: [];
+
+	const stats: CompactStatMod[] = [];
+	for (const stat of source) {
+		if (typeof stat.statTypeHash !== "number") continue;
+		if (typeof stat.value !== "number" || stat.value === 0) continue;
+		stats.push({ h: stat.statTypeHash, v: stat.value });
+	}
+	return stats;
+}
+
+// The subclass items (one per class per element) are the only place the game's
+// own slot structure exists: which supers a Prismatic Titan can pick, which
+// fragments the element offers, which jump each class gets. None of that is in
+// the DDC sheet or in Clarity.
+function collectSubclasses(
+	itemTable: unknown,
+	plugSetTable: unknown,
+): SubclassCollection {
+	const items = asRecord<unknown>(itemTable);
+	const plugSets = asRecord<unknown>(plugSetTable);
+	const rows: Record<string, CompactSubclassRow> = {};
+	const optionHashes = new Set<number>();
+	const statHashes = new Set<number>();
+	const statModsByHash = new Map<number, CompactStatMod[]>();
+	// Plug categories a subclass socket offers that no slot claims - a loud
+	// signal that Bungie renamed something (see SLOT_ID_ALIASES).
+	const unknownSlots = new Set<string>();
+
+	if (!items) {
+		return { rows, optionHashes, statHashes, statModsByHash };
+	}
+
+	for (const [key, value] of Object.entries(items)) {
+		const row = asRecord<unknown>(value);
+		if (!row || row.itemType !== SUBCLASS_ITEM_TYPE) continue;
+
+		const displayProperties = asRecord<unknown>(row.displayProperties);
+		const name =
+			typeof displayProperties?.name === "string"
+				? displayProperties.name
+				: undefined;
+		const classType = row.classType;
+		if (!name || typeof classType !== "number") continue;
+
+		const sockets = asRecord<unknown>(row.sockets);
+		const socketEntries = Array.isArray(sockets?.socketEntries)
+			? (sockets.socketEntries as Array<Record<string, unknown>>)
+			: [];
+
+		const slots: Partial<Record<SubclassSlotId, number[]>> = {};
+		let element: string | null = null;
+
+		for (const socket of socketEntries) {
+			for (const plugHash of resolveSocketPlugHashes(socket, plugSets)) {
+				const plugRow = asRecord<unknown>(items[String(plugHash)]);
+				if (!plugRow) continue;
+
+				const plug = asRecord<unknown>(plugRow.plug);
+				const identifier =
+					typeof plug?.plugCategoryIdentifier === "string"
+						? plug.plugCategoryIdentifier
+						: undefined;
+
+				const slotId = toSubclassSlotId(identifier);
+				if (!slotId) {
+					if (identifier) unknownSlots.add(identifier);
+					continue;
+				}
+
+				const plugDisplay = asRecord<unknown>(plugRow.displayProperties);
+				const plugName =
+					typeof plugDisplay?.name === "string" ? plugDisplay.name : "";
+				// "Empty Aspect Socket" / "Empty Fragment Socket" are the
+				// placeholders the game draws in an unfilled slot.
+				if (!plugName || plugName.startsWith("Empty ")) continue;
+
+				element ??= toElementToken(identifier);
+
+				const bucket = (slots[slotId] ??= []);
+				if (!bucket.includes(plugHash)) {
+					bucket.push(plugHash);
+				}
+				optionHashes.add(plugHash);
+
+				if (slotId === "aspects" || slotId === "fragments") {
+					const stats = collectStatMods(plugRow);
+					if (stats.length > 0) {
+						statModsByHash.set(plugHash, stats);
+						for (const stat of stats) {
+							statHashes.add(stat.h);
+						}
+					}
+				}
+			}
+		}
+
+		if (!element || Object.keys(slots).length === 0) continue;
+
+		rows[key] = {
+			n: name,
+			i:
+				typeof displayProperties?.icon === "string"
+					? displayProperties.icon
+					: undefined,
+			sh: typeof row.screenshot === "string" ? row.screenshot : undefined,
+			ct: classType,
+			el: element,
+			sl: slots,
+		};
+	}
+
+	if (unknownSlots.size > 0) {
+		console.warn(
+			`Unmapped subclass plug categories: ${[...unknownSlots].join(", ")}`,
+		);
+	}
+
+	return { rows, optionHashes, statHashes, statModsByHash };
+}
+
+function filterTableToHashes(table: unknown, allowedHashes: Set<number>) {
+	const source = asRecord<unknown>(table);
+	if (!source) {
+		return {} as Record<string, CompactDefinition>;
+	}
+
+	const entries: Array<[string, CompactDefinition]> = [];
+	for (const hash of allowedHashes) {
+		const compact = toCompactDefinition(source[String(hash)]);
+		if (!compact) continue;
+		entries.push([String(hash), compact]);
+	}
+
+	return Object.fromEntries(entries);
+}
+
 // Damage/breaker type tables are small fixed enumerations we always look up
 // by their enumValue (e.g. DamageType.Arc), not by hash, so key the compact
 // table by enumValue instead.
@@ -421,18 +603,36 @@ async function main() {
 		...itemSetResult.perkHashes,
 	]);
 
-	const inventoryHashes = new Set<number>([...itemHashes, ...allPerkHashes]);
+	const subclassResult = collectSubclasses(
+		snapshot.tables.DestinyInventoryItemDefinition,
+		snapshot.tables.DestinyPlugSetDefinition,
+	);
+
+	const inventoryHashes = new Set<number>([
+		...itemHashes,
+		...allPerkHashes,
+		...subclassResult.optionHashes,
+	]);
+	const inventoryTable = filterTableToHashesAndTitles(
+		snapshot.tables.DestinyInventoryItemDefinition,
+		inventoryHashes,
+		ddcTitleKeys,
+		(value) =>
+			toCompactItemDefinition(
+				value,
+				asRecord<unknown>(snapshot.tables.DestinySandboxPerkDefinition),
+			),
+	);
+
+	// Stat mods are only meaningful on the subclass options, so they are stitched
+	// on here rather than widening the compaction every item goes through.
+	for (const [hash, stats] of subclassResult.statModsByHash) {
+		const row = inventoryTable[String(hash)];
+		if (row) row.st = stats;
+	}
+
 	const compactTables: CompactManifestTables = {
-		DestinyInventoryItemDefinition: filterTableToHashesAndTitles(
-			snapshot.tables.DestinyInventoryItemDefinition,
-			inventoryHashes,
-			ddcTitleKeys,
-			(value) =>
-				toCompactItemDefinition(
-					value,
-					asRecord<unknown>(snapshot.tables.DestinySandboxPerkDefinition),
-				),
-		),
+		DestinyInventoryItemDefinition: inventoryTable,
 		DestinySandboxPerkDefinition: filterTableToHashesAndTitles(
 			snapshot.tables.DestinySandboxPerkDefinition,
 			allPerkHashes,
@@ -450,6 +650,11 @@ async function main() {
 			snapshot.tables.DestinyBreakerTypeDefinition,
 		),
 		DestinyEquipableItemSetDefinition: itemSetResult.compact,
+		DestinyStatDefinition: filterTableToHashes(
+			snapshot.tables.DestinyStatDefinition,
+			subclassResult.statHashes,
+		),
+		Subclasses: subclassResult.rows,
 	};
 
 	const outputPath = path.join(outputDir, "bungie-manifest.json");
@@ -470,6 +675,9 @@ async function main() {
 	);
 
 	console.log(`Wrote Bungie manifest snapshot: ${outputPath}`);
+	console.log(
+		`Subclasses: ${String(Object.keys(subclassResult.rows).length)}, options: ${String(subclassResult.optionHashes.size)}`,
+	);
 }
 
 main().catch((error) => {

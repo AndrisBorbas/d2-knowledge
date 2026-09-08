@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-08T13:06:01.929Z",
+	"generatedAt": "2026-09-08T14:00:26.369Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -122937,9 +122937,15 @@
 				{
 					"keywordId": "sheet-color:Arc:125:3:682:682",
 					"start": 682,
-					"end": 693,
-					"text": "Ionic Blink",
+					"end": 688,
+					"text": "Ionic ",
 					"color": "rgb(162, 196, 201)"
+				},
+				{
+					"keywordId": "blink",
+					"start": 688,
+					"end": 693,
+					"text": "Blink"
 				},
 				{
 					"keywordId": "sheet-color:Arc:125:3:705:705",
@@ -142062,10 +142068,42 @@
 							"color": "rgb(234, 153, 153)"
 						},
 						{
-							"keywordId": "sheet-color:Solar:143:3:1050:1050",
+							"keywordId": "balanced-glide",
 							"start": 1050,
+							"end": 1064,
+							"text": "Balanced Glide"
+						},
+						{
+							"keywordId": "sheet-color:Solar:143:3:1050:1064",
+							"start": 1064,
+							"end": 1105,
+							"text": ": Strong Directional and Initial Burst | ",
+							"color": "rgb(249, 203, 156)"
+						},
+						{
+							"keywordId": "burst-glide",
+							"start": 1105,
+							"end": 1116,
+							"text": "Burst Glide"
+						},
+						{
+							"keywordId": "sheet-color:Solar:143:3:1050:1116",
+							"start": 1116,
+							"end": 1147,
+							"text": ": Strong Directional Control | ",
+							"color": "rgb(249, 203, 156)"
+						},
+						{
+							"keywordId": "strafe-glide",
+							"start": 1147,
+							"end": 1159,
+							"text": "Strafe Glide"
+						},
+						{
+							"keywordId": "sheet-color:Solar:143:3:1050:1159",
+							"start": 1159,
 							"end": 1183,
-							"text": "Balanced Glide: Strong Directional and Initial Burst | Burst Glide: Strong Directional Control | Strafe Glide: Strong Initial Burst.\n",
+							"text": ": Strong Initial Burst.\n",
 							"color": "rgb(249, 203, 156)"
 						},
 						{
@@ -144070,11 +144108,10 @@
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Void:6:3:933:933",
+					"keywordId": "blink",
 					"start": 933,
 					"end": 938,
-					"text": "Blink",
-					"color": "rgb(180, 167, 214)"
+					"text": "Blink"
 				},
 				{
 					"keywordId": "sheet-color:Void:6:3:955:955",
@@ -144124,6 +144161,12 @@
 					"end": 1046,
 					"text": "Combatants Track\n",
 					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "blink",
+					"start": 1069,
+					"end": 1074,
+					"text": "Blink"
 				},
 				{
 					"keywordId": "sheet-color:Void:6:3:1075:1075",
@@ -157964,9 +158007,15 @@
 				{
 					"keywordId": "sheet-color:Void:128:3:518:518",
 					"start": 518,
-					"end": 528,
-					"text": "Dark Blink",
+					"end": 523,
+					"text": "Dark ",
 					"color": "rgb(187, 165, 243)"
+				},
+				{
+					"keywordId": "blink",
+					"start": 523,
+					"end": 528,
+					"text": "Blink"
 				},
 				{
 					"keywordId": "sheet-color:Void:128:3:530:530",
@@ -166444,6 +166493,12 @@
 			],
 			"officialAnnotations": [
 				{
+					"keywordId": "silence-and-squall",
+					"start": 25,
+					"end": 43,
+					"text": "Silence and Squall"
+				},
+				{
 					"keywordId": "freeze",
 					"start": 106,
 					"end": 112,
@@ -172594,6 +172649,12 @@
 					"end": 116,
 					"text": " Drain per Second\n",
 					"color": "rgb(255, 217, 102)"
+				},
+				{
+					"keywordId": "strafe-glide",
+					"start": 143,
+					"end": 155,
+					"text": "Strafe Glide"
 				},
 				{
 					"keywordId": "sheet-color:Stasis:98:3:182:182",
@@ -184596,24 +184657,10 @@
 							"color": "rgb(224, 162, 97)"
 						},
 						{
-							"keywordId": "slicewire",
+							"keywordId": "slicewire-grenade",
 							"start": 390,
-							"end": 399,
-							"text": "Slicewire"
-						},
-						{
-							"keywordId": "sheet-color:Strand:102:3:390:399",
-							"start": 399,
-							"end": 400,
-							"text": " ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "pattern:text-energy-grenade",
-							"start": 400,
 							"end": 407,
-							"text": "Grenade",
-							"colorClass": "text-energy-grenade"
+							"text": "Slicewire Grenade"
 						},
 						{
 							"keywordId": "sheet-color:Strand:102:3:413:413",
@@ -184757,17 +184804,10 @@
 					"text": "Suspends"
 				},
 				{
-					"keywordId": "slicewire",
+					"keywordId": "slicewire-grenade",
 					"start": 552,
-					"end": 561,
-					"text": "Slicewire"
-				},
-				{
-					"keywordId": "pattern:text-energy-grenade",
-					"start": 562,
 					"end": 569,
-					"text": "Grenade",
-					"colorClass": "text-energy-grenade"
+					"text": "Slicewire Grenade"
 				},
 				{
 					"keywordId": "pattern:text-energy-grenade",
@@ -184803,17 +184843,10 @@
 					"text": "Threadling Grenade"
 				},
 				{
-					"keywordId": "slicewire",
+					"keywordId": "slicewire-grenade",
 					"start": 55,
-					"end": 64,
-					"text": "Slicewire"
-				},
-				{
-					"keywordId": "pattern:text-energy-grenade",
-					"start": 65,
 					"end": 72,
-					"text": "Grenade",
-					"colorClass": "text-energy-grenade"
+					"text": "Slicewire Grenade"
 				},
 				{
 					"keywordId": "grapple",
@@ -184886,17 +184919,10 @@
 					"colorClass": "text-energy-grenade"
 				},
 				{
-					"keywordId": "slicewire",
+					"keywordId": "slicewire-grenade",
 					"start": 481,
-					"end": 490,
-					"text": "Slicewire"
-				},
-				{
-					"keywordId": "pattern:text-energy-grenade",
-					"start": 491,
 					"end": 498,
-					"text": "Grenade",
-					"colorClass": "text-energy-grenade"
+					"text": "Slicewire Grenade"
 				},
 				{
 					"keywordId": "pattern:text-energy-grenade",
@@ -220807,6 +220833,12 @@
 					"text": "Stormtrance"
 				},
 				{
+					"keywordId": "blink",
+					"start": 403,
+					"end": 408,
+					"text": "Blink"
+				},
+				{
 					"keywordId": "stormtrance",
 					"start": 449,
 					"end": 460,
@@ -228534,7 +228566,26 @@
 			"itemHash": 193869520,
 			"perkHash": 1694242450,
 			"annotations": [],
-			"officialAnnotations": []
+			"officialAnnotations": [
+				{
+					"keywordId": "high-jump",
+					"start": 38,
+					"end": 47,
+					"text": "High Jump"
+				},
+				{
+					"keywordId": "strafe-jump",
+					"start": 49,
+					"end": 60,
+					"text": "Strafe Jump"
+				},
+				{
+					"keywordId": "triple-jump",
+					"start": 66,
+					"end": 77,
+					"text": "Triple Jump"
+				}
+			]
 		},
 		{
 			"id": "clarity:1699724249:big-game-hunter",
@@ -250516,7 +250567,26 @@
 					"iconPath": "/assets/destiny-icons/general/ammo-primary.svg"
 				}
 			],
-			"annotations": [],
+			"annotations": [
+				{
+					"keywordId": "high-lift",
+					"start": 141,
+					"end": 150,
+					"text": "High Lift"
+				},
+				{
+					"keywordId": "strafe-lift",
+					"start": 176,
+					"end": 187,
+					"text": "Strafe Lift"
+				},
+				{
+					"keywordId": "catapult-lift",
+					"start": 213,
+					"end": 226,
+					"text": "Catapult Lift"
+				}
+			],
 			"officialAnnotations": []
 		},
 		{
@@ -251240,6 +251310,24 @@
 			],
 			"annotations": [
 				{
+					"keywordId": "blink",
+					"start": 83,
+					"end": 88,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 114,
+					"end": 119,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 162,
+					"end": 167,
+					"text": "Blink"
+				},
+				{
 					"keywordId": "pattern:text-energy-super",
 					"start": 212,
 					"end": 224,
@@ -251253,10 +251341,34 @@
 					"text": "Nova Warp"
 				},
 				{
+					"keywordId": "blink",
+					"start": 254,
+					"end": 259,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 267,
+					"end": 272,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 310,
+					"end": 315,
+					"text": "Blink"
+				},
+				{
 					"keywordId": "nova-warp",
 					"start": 368,
 					"end": 377,
 					"text": "Nova Warp"
+				},
+				{
+					"keywordId": "blink",
+					"start": 385,
+					"end": 390,
+					"text": "Blink"
 				},
 				{
 					"keywordId": "pattern:text-pve-damage",
@@ -251300,6 +251412,12 @@
 					"colorClass": "text-pvp-damage"
 				},
 				{
+					"keywordId": "blink",
+					"start": 540,
+					"end": 545,
+					"text": "Blink"
+				},
+				{
 					"keywordId": "volatile-rounds",
 					"start": 585,
 					"end": 600,
@@ -251324,14 +251442,50 @@
 					"start": 714,
 					"end": 722,
 					"text": "Volatile"
+				},
+				{
+					"keywordId": "blink",
+					"start": 739,
+					"end": 744,
+					"text": "Blink"
 				}
 			],
 			"officialAnnotations": [
+				{
+					"keywordId": "blink",
+					"start": 5,
+					"end": 10,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 68,
+					"end": 73,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 82,
+					"end": 87,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 96,
+					"end": 101,
+					"text": "Blink"
+				},
 				{
 					"keywordId": "volatile-rounds",
 					"start": 109,
 					"end": 124,
 					"text": "Volatile Rounds"
+				},
+				{
+					"keywordId": "blink",
+					"start": 126,
+					"end": 131,
+					"text": "Blink"
 				},
 				{
 					"keywordId": "volatile",
@@ -251351,6 +251505,12 @@
 					"end": 245,
 					"text": "Super",
 					"colorClass": "text-energy-super"
+				},
+				{
+					"keywordId": "blink",
+					"start": 262,
+					"end": 267,
+					"text": "Blink"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
@@ -254890,6 +255050,18 @@
 			"perkHash": 3642491337,
 			"annotations": [
 				{
+					"keywordId": "blink",
+					"start": 191,
+					"end": 196,
+					"text": "Blink"
+				},
+				{
+					"keywordId": "blink",
+					"start": 275,
+					"end": 280,
+					"text": "Blink"
+				},
+				{
 					"keywordId": "pattern:text-pve-damage",
 					"start": 320,
 					"end": 323,
@@ -254902,6 +255074,12 @@
 					"end": 334,
 					"text": "[PVP: 353]",
 					"colorClass": "text-pvp-damage"
+				},
+				{
+					"keywordId": "blink",
+					"start": 525,
+					"end": 530,
+					"text": "Blink"
 				}
 			],
 			"officialAnnotations": []
@@ -263341,6 +263519,422 @@
 					"colorClass": "text-energy-melee"
 				}
 			]
+		},
+		{
+			"id": "bungie:3350493949:high-lift",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Titan"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 3,
+				"column": 0
+			},
+			"title": "High Lift",
+			"description": "",
+			"officialDescription": "Jump while airborne to activate Lift and launch into the air to greater heights.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "3350493949",
+					"itemHash": 3350493949
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/44a4432af0a32959a19049ce5a89dc14.png",
+			"itemHash": 3350493949,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:3350493948:strafe-lift",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Titan"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 4,
+				"column": 0
+			},
+			"title": "Strafe Lift",
+			"description": "",
+			"officialDescription": "Jump while airborne to activate Lift and launch into the air with strong directional control.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "3350493948",
+					"itemHash": 3350493948
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/157c2ce4c58e099c8d70cfe65815beaf.png",
+			"itemHash": 3350493948,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:3350493951:catapult-lift",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Titan"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 5,
+				"column": 0
+			},
+			"title": "Catapult Lift",
+			"description": "",
+			"officialDescription": "Jump while airborne to activate Lift and launch into the air with a strong initial burst of momentum.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "3350493951",
+					"itemHash": 3350493951
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c09cce402f29548803f4a3f352b03f14.png",
+			"itemHash": 3350493951,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:1377143502:slicewire-grenade",
+			"tab": "Strand",
+			"section": "Grenade Abilities",
+			"groups": [
+				"Strand",
+				"Grenade Abilities",
+				"Abilities",
+				"Titan",
+				"Hunter",
+				"Warlock"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 7,
+				"column": 0
+			},
+			"title": "Slicewire Grenade",
+			"description": "",
+			"officialDescription": "A grenade that bounces and releases multiple whirling threads, severing targets.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "1377143502",
+					"itemHash": 1377143502
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f4e6254963db69408d94ae00f579a82e.jpg",
+			"itemHash": 1377143502,
+			"annotations": [],
+			"officialAnnotations": [
+				{
+					"keywordId": "pattern:text-energy-grenade",
+					"start": 2,
+					"end": 9,
+					"text": "grenade",
+					"colorClass": "text-energy-grenade"
+				},
+				{
+					"keywordId": "unravel",
+					"start": 54,
+					"end": 61,
+					"text": "threads"
+				}
+			]
+		},
+		{
+			"id": "bungie:2625980631:silence-and-squall",
+			"tab": "Stasis",
+			"section": "Super Abilities",
+			"groups": [
+				"Stasis",
+				"Super Abilities",
+				"Abilities",
+				"Hunter"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 55,
+				"column": 0
+			},
+			"title": "Silence and Squall",
+			"description": "",
+			"officialDescription": "Summon two Stasis kamas, Silence and Squall, that you throw one after another.\n\nSilence : Creates a flash-freeze blast that freezes and damages targets.\n\nSquall : Creates a Stasis Storm that slows and damages targets caught inside.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "2625980631",
+					"itemHash": 2625980631
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
+			"itemHash": 2625980631,
+			"annotations": [],
+			"officialAnnotations": [
+				{
+					"keywordId": "silence-and-squall",
+					"start": 25,
+					"end": 43,
+					"text": "Silence and Squall"
+				},
+				{
+					"keywordId": "freeze",
+					"start": 106,
+					"end": 112,
+					"text": "freeze"
+				},
+				{
+					"keywordId": "freeze",
+					"start": 124,
+					"end": 131,
+					"text": "freezes"
+				},
+				{
+					"keywordId": "slow",
+					"start": 191,
+					"end": 196,
+					"text": "slows"
+				}
+			]
+		},
+		{
+			"id": "bungie:3531427694:high-jump",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Hunter"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 58,
+				"column": 0
+			},
+			"title": "High Jump",
+			"description": "",
+			"officialDescription": "While airborne, jump a second time to reach greater heights.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "3531427694",
+					"itemHash": 3531427694
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/27879b83074e70dab436973f45b83cac.jpg",
+			"itemHash": 3531427694,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:3531427695:strafe-jump",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Hunter"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 59,
+				"column": 0
+			},
+			"title": "Strafe Jump",
+			"description": "",
+			"officialDescription": "While airborne, jump a second time with strong directional control.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "3531427695",
+					"itemHash": 3531427695
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1e236c74f7d5193df3472765245ca55c.jpg",
+			"itemHash": 3531427695,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:3531427692:triple-jump",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Hunter"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 60,
+				"column": 0
+			},
+			"title": "Triple Jump",
+			"description": "",
+			"officialDescription": "While airborne, sustain your air control with a second or third jump.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "3531427692",
+					"itemHash": 3531427692
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/733d623b28e7c56d2e1aa4f5d9aae685.jpg",
+			"itemHash": 3531427692,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:95544329:blink",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Hunter",
+				"Warlock"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 105,
+				"column": 0
+			},
+			"title": "Blink",
+			"description": "",
+			"officialDescription": "Jump while airborne to teleport a short distance.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "95544329",
+					"itemHash": 95544329
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6930fabff4175da3425bfe9e1c4b2c54.jpg",
+			"itemHash": 95544329,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:1237488987:strafe-glide",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Warlock"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 189,
+				"column": 0
+			},
+			"title": "Strafe Glide",
+			"description": "",
+			"officialDescription": "Jump while airborne to activate Glide and start an airborne drift with strong directional control.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "1237488987",
+					"itemHash": 1237488987
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/393d6a9a013b5ecef2e6c23119ae751d.png",
+			"itemHash": 1237488987,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:1237488986:burst-glide",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Warlock"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 190,
+				"column": 0
+			},
+			"title": "Burst Glide",
+			"description": "",
+			"officialDescription": "Jump while airborne to activate Glide and start an airborne drift with a strong initial boost of speed.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "1237488986",
+					"itemHash": 1237488986
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/656aa34f9a71bd3621b5719bd779b337.png",
+			"itemHash": 1237488986,
+			"annotations": [],
+			"officialAnnotations": []
+		},
+		{
+			"id": "bungie:1237488985:balanced-glide",
+			"tab": "Movement Abilities",
+			"section": "Movement Abilities",
+			"groups": [
+				"Movement Abilities",
+				"Abilities",
+				"Warlock"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 191,
+				"column": 0
+			},
+			"title": "Balanced Glide",
+			"description": "",
+			"officialDescription": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "1237488985",
+					"itemHash": 1237488985
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cd3d17a16fba2ac5bcee4c1e8052401d.png",
+			"itemHash": 1237488985,
+			"annotations": [],
+			"officialAnnotations": []
 		}
 	],
 	"keywords": [
@@ -264955,6 +265549,18 @@
 			]
 		},
 		{
+			"id": "balanced-glide",
+			"label": "Balanced Glide",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:1237488985:balanced-glide"
+			]
+		},
+		{
 			"id": "balanced-grip",
 			"label": "Balanced Grip",
 			"aliases": [],
@@ -265541,6 +266147,18 @@
 			]
 		},
 		{
+			"id": "blink",
+			"label": "Blink",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:95544329:blink"
+			]
+		},
+		{
 			"id": "blood-magic",
 			"label": "Blood Magic",
 			"aliases": [],
@@ -265966,6 +266584,18 @@
 			]
 		},
 		{
+			"id": "burst-glide",
+			"label": "Burst Glide",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:1237488986:burst-glide"
+			]
+		},
+		{
 			"id": "business-time",
 			"label": "Business Time",
 			"aliases": [],
@@ -266085,6 +266715,18 @@
 			"variant": "default",
 			"references": [
 				"clarity:4273298922:bastion-catalyst"
+			]
+		},
+		{
+			"id": "catapult-lift",
+			"label": "Catapult Lift",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:3350493951:catapult-lift"
 			]
 		},
 		{
@@ -272067,6 +272709,30 @@
 			"variant": "default",
 			"references": [
 				"clarity:2140591236:high-ground"
+			]
+		},
+		{
+			"id": "high-jump",
+			"label": "High Jump",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:3531427694:high-jump"
+			]
+		},
+		{
+			"id": "high-lift",
+			"label": "High Lift",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:3350493949:high-lift"
 			]
 		},
 		{
@@ -278734,6 +279400,18 @@
 			]
 		},
 		{
+			"id": "silence-and-squall",
+			"label": "Silence and Squall",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:2625980631:silence-and-squall"
+			]
+		},
+		{
 			"id": "silent-alarm-witherhoard-catalyst",
 			"label": "Silent Alarm (Witherhoard Catalyst)",
 			"aliases": [
@@ -278915,6 +279593,18 @@
 			"variant": "default",
 			"references": [
 				"ddc:slicewire:38:1"
+			]
+		},
+		{
+			"id": "slicewire-grenade",
+			"label": "Slicewire Grenade",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:1377143502:slicewire-grenade"
 			]
 		},
 		{
@@ -280703,6 +281393,42 @@
 			"variant": "default",
 			"references": [
 				"ddc:stormtrance:125:1"
+			]
+		},
+		{
+			"id": "strafe-glide",
+			"label": "Strafe Glide",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:1237488987:strafe-glide"
+			]
+		},
+		{
+			"id": "strafe-jump",
+			"label": "Strafe Jump",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:3531427695:strafe-jump"
+			]
+		},
+		{
+			"id": "strafe-lift",
+			"label": "Strafe Lift",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:3350493948:strafe-lift"
 			]
 		},
 		{
@@ -283258,6 +283984,18 @@
 			"references": [
 				"clarity:2733244971:trinary-vision",
 				"clarity:4133742354:trinary-vision"
+			]
+		},
+		{
+			"id": "triple-jump",
+			"label": "Triple Jump",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"bungie:3531427692:triple-jump"
 			]
 		},
 		{

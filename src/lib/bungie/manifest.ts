@@ -13,6 +13,10 @@ export const DEFAULT_MANIFEST_TABLES: DestinyManifestComponentName[] = [
 	"DestinyDamageTypeDefinition",
 	"DestinyBreakerTypeDefinition",
 	"DestinyEquipableItemSetDefinition",
+	// Subclass items reference their ability/aspect/fragment option lists through
+	// plug sets, and aspects/fragments carry stat modifiers by stat hash.
+	"DestinyPlugSetDefinition",
+	"DestinyStatDefinition",
 ];
 
 export async function fetchDestinyManifestSummary() {

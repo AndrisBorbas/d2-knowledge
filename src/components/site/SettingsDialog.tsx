@@ -194,7 +194,10 @@ export function SettingsDialog() {
 
 					{/* Scrolls on its own so a short viewport never pushes settings off
 					    screen - the title row above stays put. */}
-					<div className="-mr-2 min-h-0 flex-1 overflow-y-auto pr-2">
+					{/* `overflow-y-auto` clips horizontally too, and the borderHover
+					    frame grows 6px past its element on every side, so the
+					    scroll area is widened by that much on both edges. */}
+					<div className="-mx-2 min-h-0 flex-1 overflow-y-auto px-2">
 						<Dialog.Description className="mt-3 text-xs text-white/50">
 							Entries can carry text from more than one source. Pick which ones
 							show up on a card.
