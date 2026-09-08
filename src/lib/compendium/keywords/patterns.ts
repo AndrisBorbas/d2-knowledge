@@ -25,7 +25,9 @@ export const PATTERN_COLORS = {
 // percent sign ("?", "?%", "100?%", "75%?").
 const NUMBER_LITERAL = String.raw`\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?`;
 const VALUE_SUFFIX = String.raw`(?:\?%|%\?|%|\?)?`;
-const VALUE = String.raw`(?:[~≈]?[+x×]?(?:${NUMBER_LITERAL})|[+x×]?\?)${VALUE_SUFFIX}`;
+// The multiplier mark sits in front of stack counts ("x40") but behind
+// scalars ("0.9x", "1.34x").
+const VALUE = String.raw`(?:[~≈]?[+x×]?(?:${NUMBER_LITERAL})[x×]?|[+x×]?\?[x×]?)${VALUE_SUFFIX}`;
 
 // Values are frequently combined into small equations: "1,440 x 2",
 // "634 + 127 = 761", "x17+4.5", "4.25+?", "15-20%". The repetition is capped so

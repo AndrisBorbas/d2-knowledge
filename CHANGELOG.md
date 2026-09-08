@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.5.1] - 2026-09-08
+
+### Fixed
+
+- PvE and PvP damage number coloring with suffixes like `0.95x`.
+
 ## [1.5.0] - 2026-09-08
 
 ### Added

@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-08T12:54:24.617Z",
+	"generatedAt": "2026-09-08T13:06:01.929Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -168323,6 +168323,13 @@
 					"colorClass": "text-energy-class"
 				},
 				{
+					"keywordId": "pattern:text-pve-damage",
+					"start": 133,
+					"end": 136,
+					"text": "60x",
+					"colorClass": "text-pve-damage"
+				},
+				{
 					"keywordId": "pattern:text-pvp-damage",
 					"start": 137,
 					"end": 147,
@@ -198490,16 +198497,23 @@
 				{
 					"keywordId": "sheet-color:Class Abilities:2:3:188:188",
 					"start": 188,
-					"end": 193,
-					"text": " 0.9x",
+					"end": 189,
+					"text": " ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Class Abilities:2:3:194:194",
+					"keywordId": "pattern:text-pve-damage",
+					"start": 189,
+					"end": 193,
+					"text": "0.9x",
+					"colorClass": "text-pve-damage"
+				},
+				{
+					"keywordId": "pattern:text-pvp-damage",
 					"start": 194,
 					"end": 201,
 					"text": "[0.95x]",
-					"color": "rgb(234, 153, 153)"
+					"colorClass": "text-pvp-damage"
 				},
 				{
 					"keywordId": "sheet-color:Class Abilities:2:3:283:283",
