@@ -1,3 +1,4 @@
+import { toGroupNames } from "@/lib/compendium/groups";
 import { classNames } from "@/lib/compendium/keywords/data";
 import type {
 	DescriptionSegment,
@@ -47,6 +48,10 @@ export type TabNormalizationRule = {
 	statColumn?: number;
 	allowContinuationRows?: boolean;
 	fragmentNameColumn?: number;
+	// element only: the column a class's passive-traits paragraph is written
+	// in, alone on its row with no name beside it. See
+	// buildClassPassiveTraitsEntry.
+	classPassiveTraitsColumn?: number;
 
 	// paired-columns
 	titleColumns?: number[];
@@ -57,6 +62,18 @@ export type TabNormalizationRule = {
 	// Row holding each group's own header, used as that group's starting
 	// section ("Helmet" above the helmet mods).
 	sectionHeaderRow?: number;
+	// Column holding section headers that govern every group rather than one
+	// ("Hunter-exclusive Perks" over both of Exotic Class's lists). Filtered
+	// with dynamicSection, and a row that names one is never an entry.
+	sectionColumn?: number;
+	// The sections say which class an entry belongs to rather than naming a
+	// category of their own, so the class is grouped on and the section is
+	// not. See classGroupsFromSection.
+	sectionNamesClass?: boolean;
+	// Walk the groups inside each row instead of each group to its end, for a
+	// tab whose groups are one list flowing left to right rather than several
+	// independent ones.
+	rowMajor?: boolean;
 
 	// set-bonus-two-rows
 	bonusRowOffset?: number;
@@ -135,15 +152,37 @@ function getFirstNonEmptyFromColumns(
 	return null;
 }
 
-function checkCurrentClass(row: string[]) {
-	for (const cell of row) {
-		const cellText = normalizeForMatch(cell);
-		if (cellText.length > 0) {
-			return classNames.find(
-				(className) => normalizeForMatch(className) === cellText,
-			);
-		}
-	}
+// A class marker names its class before anything else on the row ("Hunter" /
+// "Hunters"), and scopes every section under it to that class. The tabs also
+// open with a navigation row listing all three classes side by side, which
+// scopes nothing - it has to be stepped over without becoming the active
+// class, or the shared grenades listed below it are filed under Hunter.
+type ClassMarker =
+	{ kind: "class"; className: string } | { kind: "navigation" };
+
+function checkCurrentClass(row: string[]): ClassMarker | undefined {
+	const nonEmpty = getNonEmptyCells(row);
+	if (nonEmpty.length === 0) return undefined;
+
+	// Class Abilities heads each block with the class in the plural
+	// ("Titans"), where the element tabs write it singular.
+	const toKey = (text: string) => normalizeForMatch(text).replace(/s$/, "");
+	const toClassName = (text: string) => {
+		const key = toKey(text);
+		return classNames.find((className) => toKey(className) === key);
+	};
+
+	const marker = toClassName(nonEmpty[0].text);
+	if (!marker) return undefined;
+
+	const namesAnother = nonEmpty.some((cell) => {
+		const className = toClassName(cell.text);
+		return className !== undefined && className !== marker;
+	});
+
+	return namesAnother
+		? { kind: "navigation" }
+		: { kind: "class", className: marker };
 }
 
 function isSectionCandidate(row: string[], sections: Section[] | undefined) {
@@ -187,12 +226,75 @@ function buildBaseGroups(
 	activeClassName: string | null = null,
 ) {
 	const groups = [tabName];
-	if (section) groups.push(section);
+	if (section) groups.push(...toGroupNames(section));
 	if (section && CLASS_SCOPED_SECTIONS.includes(section)) {
 		groups.push("Abilities");
-		if (activeClassName) groups.push(activeClassName);
+		// The element tabs list the grenades all three classes share above the
+		// first class marker, so no active class means every class, not none.
+		groups.push(...(activeClassName ? [activeClassName] : classNames));
 	}
-	return groups;
+	// The Class Abilities tab names its only section after itself, so the tab
+	// and the section are one chip, not two.
+	return [...new Set(groups)];
+}
+
+// Exotic Class files its perks by who can equip them ("Class-agnostic Perks",
+// "Hunter-exclusive Perks"), which is a class filter written out longhand.
+// Chip the class itself instead - the sheet's wording makes a wordy filter,
+// and a perk any class can take belongs under all three.
+function classGroupsFromSection(section: string | null) {
+	if (!section) return classNames;
+
+	const sectionKey = normalizeForMatch(section);
+	const named = classNames.filter((className) =>
+		sectionKey.includes(normalizeForMatch(className)),
+	);
+	return named.length > 0 ? named : classNames;
+}
+
+// Class Abilities opens each class's block with a paragraph of the traits that
+// class has over the other two, written in the description column with nothing
+// beside it. It is the only unnamed row on the tab worth keeping, so name it
+// after the class it describes.
+function buildClassPassiveTraitsEntry(
+	tabName: string,
+	rowIndex: number,
+	row: string[],
+	state: NormalizerState,
+	rule: TabNormalizationRule,
+): Entry | null {
+	const column = rule.classPassiveTraitsColumn;
+	if (typeof column !== "number") return null;
+	if (!state.activeClassName) return null;
+
+	const nonEmpty = getNonEmptyCells(row);
+	if (nonEmpty.length !== 1) return null;
+	if (nonEmpty[0].column !== column) return null;
+
+	const description = nonEmpty[0].text;
+	if (description.length < (rule.minDescriptionLength ?? 0)) return null;
+
+	const title = `${state.activeClassName} Passive Traits`;
+	const source: SourceSpan = { tab: tabName, row: rowIndex, column };
+
+	return {
+		id: createEntryId(tabName, state.section, title, source),
+		tab: tabName,
+		section: state.section,
+		// Not the tab's own chip: these are what the class always has, not one
+		// of the class abilities it picks between.
+		groups: ["Abilities", state.activeClassName],
+		title,
+		description,
+		descriptionSegments: [
+			{
+				source: { tab: tabName, row: rowIndex, column },
+				start: 0,
+				length: description.length,
+			},
+		],
+		source,
+	};
 }
 
 function buildEntriesFromPairedColumns(
@@ -285,6 +387,57 @@ function splitTitleCell(value: string) {
 	};
 }
 
+// Exotic Class puts its section headers ("Class-agnostic Perks",
+// "Hunter-exclusive Perks", ...) in one column and expects them to govern
+// every list on the row, where Armor Mods gives each list a header of its
+// own. A header row is one that names nothing in any group's effect column,
+// so it can never be mistaken for a perk, and the dynamicSection bounds
+// reject the tab's prose rows (the intro above the lists and the footnote
+// below them).
+function findSharedSections(
+	rows: (string[] | null)[],
+	rule: TabNormalizationRule,
+) {
+	if (typeof rule.sectionColumn !== "number") return null;
+
+	const sectionColumn = rule.sectionColumn;
+	const descriptionColumns = (rule.columnGroups ?? []).map(
+		(group) => group.descriptionColumn,
+	);
+	const maxLength = rule.dynamicSection?.maxLength ?? 80;
+	const minLength = rule.dynamicSection?.minLength ?? 2;
+	const forbidSentenceEnding = rule.dynamicSection?.forbidSentenceEnding;
+
+	const headerRows = new Set<number>();
+	const sectionForRow: (string | null)[] = [];
+	let section: string | null = null;
+
+	for (let rowIndex = 0; rowIndex < rows.length; rowIndex++) {
+		const row = rows[rowIndex];
+		const isHeader =
+			row !== null &&
+			rowIndex >= (rule.skipStart ?? 0) &&
+			!descriptionColumns.some((column) => getCell(row, column).length > 0);
+
+		if (isHeader) {
+			const text = getCell(row, sectionColumn);
+			const endsWithSentence = /[.!?]$/.test(text);
+			if (
+				text.length >= minLength &&
+				text.length <= maxLength &&
+				!(forbidSentenceEnding && endsWithSentence)
+			) {
+				section = text;
+				headerRows.add(rowIndex);
+			}
+		}
+
+		sectionForRow[rowIndex] = section;
+	}
+
+	return { headerRows, sectionForRow };
+}
+
 // Armor Mods is laid out across the page rather than down it: three columns
 // per list - name, icon, effect - repeated for Helmet, Arms, Chest, Legs and
 // Class Item, then for the activity-specific mods. Each group is an
@@ -295,70 +448,99 @@ function splitTitleCell(value: string) {
 // The activity columns stack several activities in one column, headed by a
 // name with no effect beside it ("Crota's End"), so a title-only row switches
 // that group's section rather than becoming an entry of its own.
+//
+// Exotic Class instead runs one list wrapped into two columns, so it reads
+// each row across the groups (rowMajor) and takes its sections from a column
+// shared by both.
 function buildEntriesFromColumnGroups(
 	tabName: string,
 	rows: (string[] | null)[],
 	rule: TabNormalizationRule,
 ): Entry[] {
 	const entries: Entry[] = [];
+	const groups = rule.columnGroups ?? [];
 	const headerRow =
 		typeof rule.sectionHeaderRow === "number"
 			? (rows[rule.sectionHeaderRow] ?? undefined)
 			: undefined;
 	const startRow = rule.skipStart ?? 0;
+	const shared = findSharedSections(rows, rule);
+	const groupSections = groups.map(
+		(group) => getCell(headerRow, group.titleColumn) || null,
+	);
 
-	for (const group of rule.columnGroups ?? []) {
-		let section: string | null = getCell(headerRow, group.titleColumn) || null;
+	const visit = (groupIndex: number, rowIndex: number) => {
+		if (shared?.headerRows.has(rowIndex)) return;
 
-		for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
-			const row = rows[rowIndex];
-			if (!row) continue;
+		const group = groups[groupIndex];
+		const row = rows[rowIndex];
+		if (!row) return;
 
-			const titleCell = getCell(row, group.titleColumn);
-			if (!titleCell) continue;
+		const titleCell = getCell(row, group.titleColumn);
+		if (!titleCell) return;
 
-			const { title, extraInfo } = splitTitleCell(titleCell);
-			if (!title) continue;
-			if (
-				typeof rule.maxTitleLength === "number" &&
-				title.length > rule.maxTitleLength
-			) {
-				continue;
-			}
+		const { title, extraInfo } = splitTitleCell(titleCell);
+		if (!title) return;
+		if (
+			typeof rule.maxTitleLength === "number" &&
+			title.length > rule.maxTitleLength
+		) {
+			return;
+		}
 
-			const description = getCell(row, group.descriptionColumn);
-			if (!description) {
-				section = title;
-				continue;
-			}
+		const description = getCell(row, group.descriptionColumn);
+		if (!description) {
+			// Only meaningful where each group heads its own sublists - a tab
+			// with a section column has already named every section it has.
+			if (!shared) groupSections[groupIndex] = title;
+			return;
+		}
 
-			const source: SourceSpan = {
-				tab: tabName,
-				row: rowIndex,
-				column: group.titleColumn,
-			};
+		const section = shared
+			? (shared.sectionForRow[rowIndex] ?? null)
+			: groupSections[groupIndex];
+		const source: SourceSpan = {
+			tab: tabName,
+			row: rowIndex,
+			column: group.titleColumn,
+		};
 
-			entries.push({
-				id: createEntryId(tabName, section, title, source),
-				tab: tabName,
-				section,
-				groups: buildBaseGroups(tabName, section),
-				title,
-				description,
-				descriptionSegments: [
-					{
-						source: {
-							tab: tabName,
-							row: rowIndex,
-							column: group.descriptionColumn,
-						},
-						start: 0,
-						length: description.length,
+		entries.push({
+			id: createEntryId(tabName, section, title, source),
+			tab: tabName,
+			section,
+			groups: rule.sectionNamesClass
+				? [tabName, ...classGroupsFromSection(section)]
+				: buildBaseGroups(tabName, section),
+			title,
+			description,
+			descriptionSegments: [
+				{
+					source: {
+						tab: tabName,
+						row: rowIndex,
+						column: group.descriptionColumn,
 					},
-				],
-				source,
-				extraInfo,
-			});
+					start: 0,
+					length: description.length,
+				},
+			],
+			source,
+			extraInfo,
+		});
+	};
+
+	if (rule.rowMajor) {
+		for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
+			for (let groupIndex = 0; groupIndex < groups.length; groupIndex++) {
+				visit(groupIndex, rowIndex);
+			}
+		}
+	} else {
+		for (let groupIndex = 0; groupIndex < groups.length; groupIndex++) {
+			for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
+				visit(groupIndex, rowIndex);
+			}
 		}
 	}
 
@@ -590,13 +772,13 @@ function buildEntriesFromSetBonusRows(
 }
 
 // The sheet keeps a superseded copy of a row right under the current one,
-// marked with a standalone uppercase OLD in the name cell ("Well of Radiance"
-// / "OLD", "Burning Ambition OLD"). Both copies carry the same perk name, so
-// without this the stale one shows up as a second entry beside the live one.
-// Case matters: "Old Martian Diplomacy", "Too Old for This" and "Child of the
-// Old Gods" are real names, and "Legacy" is one too ("Bray Legacy", "Legacy's
-// Oath"), so neither is a marker.
-const LEGACY_TITLE_MARKER = /(^|[^A-Za-z])OLD([^A-Za-z]|$)/;
+// marked with a standalone uppercase OLD or OLDEST in the name cell ("Well of
+// Radiance" / "OLD", "Burning Ambition OLD"). Both copies carry the same perk
+// name, so without this the stale one shows up as a second entry beside the
+// live one. Case matters: "Old Martian Diplomacy", "Too Old for This" and
+// "Child of the Old Gods" are real names, and "Legacy" is one too ("Bray
+// Legacy", "Legacy's Oath"), so neither is a marker.
+const LEGACY_TITLE_MARKER = /(^|[^A-Za-z])OLD(?:EST)?([^A-Za-z]|$)/;
 
 function isLegacyTitle(title: string) {
 	return LEGACY_TITLE_MARKER.test(title);
@@ -734,11 +916,13 @@ export function normalizeTabWithRule(
 		if (getNonEmptyCells(row).length === 0) continue;
 
 		if (rule.type === "element") {
-			const currentClass = checkCurrentClass(row);
-			if (currentClass) {
-				currentState.activeClassName = currentClass;
-				if (rule.sectionAfterClassMarker) {
-					currentState.section = rule.sectionAfterClassMarker;
+			const marker = checkCurrentClass(row);
+			if (marker) {
+				if (marker.kind === "class") {
+					currentState.activeClassName = marker.className;
+					if (rule.sectionAfterClassMarker) {
+						currentState.section = rule.sectionAfterClassMarker;
+					}
 				}
 				continue;
 			}
@@ -774,6 +958,17 @@ export function normalizeTabWithRule(
 		}
 
 		if (rule.type === "element") {
+			const passiveTraits = buildClassPassiveTraitsEntry(
+				tabName,
+				rowIndex,
+				row,
+				currentState,
+				rule,
+			);
+			if (passiveTraits) {
+				entries.push(passiveTraits);
+				continue;
+			}
 			if (getNonEmptyCells(row).length === 1) {
 				continue;
 			}

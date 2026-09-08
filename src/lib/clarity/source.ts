@@ -7,6 +7,8 @@ import {
 	STATIC_ICON_PATH_BY_GLYPH,
 } from "@/lib/bungie/glyphs";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
+import { CLASS_BY_CLASS_ABILITY } from "@/lib/compendium/class-abilities";
+import { toGroupNames } from "@/lib/compendium/groups";
 import type { Entry, IconGlyph } from "@/lib/compendium/model";
 import {
 	classifyUnifiedKind,
@@ -49,11 +51,13 @@ function normalizeTitle(value: string) {
 }
 
 function normalizeLookupName(value: string) {
+	// Trim last, same as src/lib/bungie/snapshot.ts - trailing punctuation
+	// becomes a space, which would otherwise stay on the key.
 	return value
 		.toLowerCase()
-		.trim()
 		.replace(/[^a-z0-9]+/g, " ")
-		.replace(/\s+/g, " ");
+		.replace(/\s+/g, " ")
+		.trim();
 }
 
 // A catalyst item is named after its weapon ("Forerunner Catalyst"), while the
@@ -165,16 +169,36 @@ function mapClarityTypeToTab(type: string | undefined) {
 	return CLARITY_FALLBACK_TAB;
 }
 
-function mapClarityTypeToGroups(type: string | undefined): string[] {
+function mapClarityTypeToGroups(
+	type: string | undefined,
+	name: string | undefined,
+): string[] {
 	const normalized = (type ?? "").toLowerCase();
 	const groups: string[] = [];
 
-	if (normalized.startsWith("armor")) {
+	// Clarity's own name for the class abilities. The sheet files them under a
+	// "Class Abilities" chip, and each one is cast by a single class, which the
+	// Clarity record never says.
+	const isSubclassClass = normalized === "subclass class";
+
+	// Clarity's armor mods are the mods the sheet lists, so the handful that
+	// never matched a DDC row file under the same chip as the ones that did,
+	// rather than sitting apart under Armor Perks - which holds the exotic
+	// armor traits.
+	const isArmorMod = normalized.startsWith("armor mod");
+
+	if (isArmorMod) {
+		groups.push("Armor Mods");
+	} else if (normalized.startsWith("armor")) {
 		groups.push("Armor Perks");
 	} else if (normalized.startsWith("weapon") || normalized.includes("trait")) {
 		groups.push("Weapon Perks");
 	} else if (normalized.includes("artifact")) {
 		groups.push("Artifact Perks");
+	} else if (isSubclassClass) {
+		groups.push("Class Abilities", "Abilities");
+		const className = CLASS_BY_CLASS_ABILITY[name?.trim() ?? ""];
+		if (className) groups.push(className);
 	} else if (normalized.startsWith("subclass")) {
 		groups.push("Abilities");
 	}
@@ -183,11 +207,15 @@ function mapClarityTypeToGroups(type: string | undefined): string[] {
 		groups.push("Exotic");
 	}
 
-	if (type?.trim()) {
-		groups.push(type.trim());
+	// The record type doubles as a filter for everything else, but
+	// "Armor Mod General" and "Subclass Class" are Clarity's own bookkeeping
+	// names - the mods under the first are no more general than the ones beside
+	// them, and the second says nothing the "Class Abilities" chip does not.
+	if (type?.trim() && !isArmorMod && !isSubclassClass) {
+		groups.push(...toGroupNames(type.trim()));
 	}
 
-	return groups.length > 0 ? groups : [CLARITY_FALLBACK_TAB];
+	return groups.length > 0 ? [...new Set(groups)] : [CLARITY_FALLBACK_TAB];
 }
 
 function toEntry(
@@ -211,7 +239,7 @@ function toEntry(
 		id: `clarity:${record.hash}:${normalizeTitle(title)}`,
 		tab: tabName,
 		section,
-		groups: mapClarityTypeToGroups(record.type),
+		groups: mapClarityTypeToGroups(record.type, record.name),
 		source: {
 			tab: "clarity",
 			row: index,

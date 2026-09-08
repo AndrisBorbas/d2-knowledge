@@ -14,6 +14,26 @@ export const CURATED_TOP_GROUPS = [
 
 export type CuratedTopGroup = (typeof CURATED_TOP_GROUPS)[number];
 
+// The same category reaches us under several names: the sheet heads one block
+// of the weapon-mod list "Weapon Mods" and the next "Regular Weapon Mods",
+// while Clarity types its own copies "Weapon Mod". One chip covers them.
+// An alias may name more than one chip, for a category that is a narrower
+// case of another - an exotic origin trait is still an origin trait.
+const GROUP_ALIASES: Record<string, readonly string[]> = {
+	"Regular Weapon Mods": ["Weapon Mods"],
+	"Weapon Mod": ["Weapon Mods"],
+	"Weapon Trait Origin": ["Origin Traits"],
+	"Weapon Trait Origin Exotic": ["Exotic Origin Traits", "Origin Traits"],
+};
+
+/**
+ * The chips a section or record type is filed under, which is the name itself
+ * unless something else already means the same thing.
+ */
+export function toGroupNames(group: string): readonly string[] {
+	return GROUP_ALIASES[group] ?? [group];
+}
+
 type GroupCategory = {
 	id: string;
 	label: string;
@@ -42,7 +62,6 @@ const GROUP_CATEGORIES: readonly GroupCategory[] = [
 			"Class Abilities",
 			"Aspect",
 			"Fragments",
-			"Subclass Class",
 		],
 	},
 	{
@@ -62,8 +81,9 @@ const GROUP_CATEGORIES: readonly GroupCategory[] = [
 			"Weapon Perks",
 			"Weapon Traits",
 			"Origin Traits",
+			"Exotic Origin Traits",
 			"Intrinsic Traits",
-			"Regular Weapon Mods",
+			"Weapon Mods",
 		],
 		matches: (group) =>
 			group.startsWith("Weapon") || group.endsWith("Information"),
@@ -75,12 +95,12 @@ const GROUP_CATEGORIES: readonly GroupCategory[] = [
 			"Armor Perks",
 			"Armor Sets",
 			"Armor Mods",
-			"Armor Mod General",
 			"Helmet",
 			"Arms",
 			"Chest",
 			"Legs",
 			"Class Item",
+			"Exotic Class",
 		],
 		matches: (group) => group.startsWith("Armor"),
 	},

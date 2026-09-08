@@ -2,6 +2,7 @@ import {
 	type BungieManifestSnapshotResolver,
 	loadBungieManifestSnapshotResolver,
 } from "@/lib/bungie/snapshot";
+import { classNames } from "@/lib/compendium/keywords/data";
 import {
 	type Entry,
 	shiftSegmentsForSlice,
@@ -19,6 +20,10 @@ import {
 	COMPENDIUM_SHEET_ID,
 	COMPENDIUM_TAB_NORMALIZATION,
 } from "./config";
+import {
+	EXOTIC_CLASS_ITEM_BY_CLASS,
+	EXOTIC_CLASS_TAB_NAME,
+} from "./exotic-class-items";
 import { normalizeTabs } from "./normalize";
 
 function normalizeTitle(value: string) {
@@ -77,6 +82,17 @@ function parseArmorSetBonusFields(entry: Entry) {
 	};
 }
 
+// Which Exotic Class Item the perk sits on, read back off the class groups
+// the normalizer already worked out from the sheet's section headers. A
+// class-agnostic perk drops on all three, so it names all three and shows no
+// item icon - there is no one item to picture.
+function exoticClassItemNames(groups: string[]) {
+	return groups
+		.filter((group) => classNames.includes(group))
+		.map((className) => EXOTIC_CLASS_ITEM_BY_CLASS[className])
+		.filter((itemName): itemName is string => Boolean(itemName));
+}
+
 export async function loadDdcTabs(): Promise<{
 	tabs: TabData[];
 	colors: SheetColorIndex;
@@ -111,6 +127,11 @@ export function toUnifiedDdcEntries(
 			section: entry.section,
 		});
 
+		// Rarity is a filter of its own, the same way Clarity files the exotic
+		// perks it ships.
+		const groups =
+			kind === "exotic_item_perk" ? [...entry.groups, "Exotic"] : entry.groups;
+
 		if (kind === "armor_set_bonus") {
 			const parsed = parseArmorSetBonusFields(entry);
 			const bonusEnrichment = parsed.requiredSetCount
@@ -140,10 +161,32 @@ export function toUnifiedDdcEntries(
 			};
 		}
 
+		if (entry.tab === EXOTIC_CLASS_TAB_NAME) {
+			const itemNames = exoticClassItemNames(entry.groups);
+			const itemName = itemNames.join(", ");
+			const itemEnrichment =
+				itemNames.length === 1
+					? bungieResolver?.getItemEnrichmentByTitle(itemNames[0])
+					: null;
+
+			return {
+				...entry,
+				id: `ddc:${normalizeTitle(entry.title)}:${entry.source.row}:${entry.source.column}`,
+				kind,
+				groups,
+				sourceId: "ddc",
+				sourceRefs: [sourceRef],
+				secondaryName: itemName || undefined,
+				secondaryIconPath: itemEnrichment?.itemIconPath,
+				extraInfo: itemName ? `Item: ${itemName}` : entry.extraInfo,
+			};
+		}
+
 		return {
 			...entry,
 			id: `ddc:${normalizeTitle(entry.title)}:${entry.source.row}:${entry.source.column}`,
 			kind,
+			groups,
 			sourceId: "ddc",
 			sourceRefs: [sourceRef],
 		};

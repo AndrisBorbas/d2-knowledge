@@ -47,7 +47,7 @@ function SourceToggles() {
 							onClick={() => toggleSource(id)}
 							aria-pressed={isVisible}
 							// The bg carries the state here, so the frame stays off.
-							className="flex items-center justify-between after:-inset-0 after:border-gray-500/0 after:border-t-gray-500"
+							className="flex items-center justify-between after:inset-0 after:border-gray-500/0 after:border-t-gray-500"
 						>
 							<span>{DESCRIPTION_SOURCE_LABELS[id]}</span>
 							<span className="text-masterwork text-[11px] tracking-[0.14em] uppercase">

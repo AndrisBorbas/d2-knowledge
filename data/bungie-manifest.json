@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-04T14:59:50.647Z",
+	"generatedAt": "2026-09-08T12:54:17.331Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -381,6 +381,10 @@
 				"i": "/common/destiny2_content/icons/69167775ffd584f391e4d590ae3b9c78.png",
 				"d": "Improved target acquisition, accuracy, and aim-down-sights speed for Arc weapons."
 			},
+			"102374420": {
+				"n": "Relativism",
+				"i": "/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg"
+			},
 			"102912326": {
 				"n": "Hatchling",
 				"i": "/common/destiny2_content/icons/2f7e898e2231900ac968ffb2080fc02b.png",
@@ -631,6 +635,56 @@
 				"i": "/common/destiny2_content/icons/47bf1334aab994af4ebe63cbc45b7d67.png",
 				"d": "Multiple simultaneous final blows queue up a stacking damage buff. Improved timer starts on next weapon fire; final blows extend this timer."
 			},
+			"183430246": {
+				"n": "Spirit of the Swarm",
+				"i": "/common/destiny2_content/icons/2c51c7358ab1de58c11edc89b5573e84.png",
+				"d": "Destroying a Tangle spawns Threadlings."
+			},
+			"183430247": {
+				"n": "Spirit of the Claw",
+				"i": "/common/destiny2_content/icons/569a1a4cbdd7a014159ebdf304c8a9b5.png",
+				"d": "Gain an additional melee charge."
+			},
+			"183430248": {
+				"n": "Spirit of the Stag",
+				"i": "/common/destiny2_content/icons/c4f95301370c59ab4d7ce34825e83305.png",
+				"d": "Your Rift provides damage reduction to allies standing in it."
+			},
+			"183430249": {
+				"n": "Spirit of Starfire",
+				"i": "/common/destiny2_content/icons/18c3e0503b1c9cd823dde3ded3680f8d.png",
+				"d": "Grenades recharge from empowered weapon damage, with empowered weapon final blows granting more energy."
+			},
+			"183430250": {
+				"n": "Spirit of Apotheosis",
+				"i": "/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
+				"d": "Temporarily gain greatly increased melee and grenade regeneration after your Super ends."
+			},
+			"183430251": {
+				"n": "Spirit of Vesper",
+				"i": "/common/destiny2_content/icons/ff55cfecf4c70924d0894b1d8a442a18.png",
+				"d": "Rifts periodically release Arc shockwaves."
+			},
+			"183430252": {
+				"n": "Spirit of the Necrotic",
+				"i": "/common/destiny2_content/icons/4c1a349c2723d3aa84598da98c7a8805.png",
+				"d": "Damaging a target with a melee inflicts potent corruption. Defeating targets afflicted by corruption spreads the condition."
+			},
+			"183430253": {
+				"n": "Spirit of Osmiomancy",
+				"i": "/common/destiny2_content/icons/81b6412d2d6784891dd7ddad764891cc.png",
+				"d": "Your grenades recharge quicker on hits. The seeker spawned from Coldsnap grenades travels farther."
+			},
+			"183430254": {
+				"n": "Spirit of Harmony",
+				"i": "/common/destiny2_content/icons/675540240cef9fc9e047d9f9d20a0722.png",
+				"d": "Final blows with weapons that have a damage type matching your Super's element grant you Super energy."
+			},
+			"183430255": {
+				"n": "Spirit of the Filaments",
+				"i": "/common/destiny2_content/icons/1d4c0be6150c4ca71bc7add447c5d86c.png",
+				"d": "Casting an Empowering Rift will grant you Devour. Defeating a target while Devour is active grants class ability energy."
+			},
 			"183938251": {
 				"n": "Under-Over",
 				"i": "/common/destiny2_content/icons/22587c092ade23b9ea1a48ba871e8788.png",
@@ -840,6 +894,11 @@
 				"i": "/common/destiny2_content/icons/d1c2cea4a7325962a493283c5615d260.png",
 				"d": "Burst fire Grenade Launcher. Each projectile creates a lingering pool on impact that deals damage over time."
 			},
+			"246396400": {
+				"n": "Solipsism",
+				"i": "/common/destiny2_content/icons/7b57cd041db1987c3f566b96535daf9f.jpg",
+				"d": "This item comes with randomized perks."
+			},
 			"247725512": {
 				"n": "Rapid Hit",
 				"i": "/common/destiny2_content/icons/de22847fa94634a487758041887bcdaa.png",
@@ -928,6 +987,10 @@
 				"n": "The Wanderer",
 				"i": "/common/destiny2_content/icons/9d7be0c24d6dc7f041289e3b08ecff5e.jpg",
 				"d": "Tangles you throw attach to targets and detonate into a suspending burst. Destroying a Tangle creates a suspending burst after a short delay.\n\nThreadling final blows create Tangles or reduce your current Tangle cooldown."
+			},
+			"266021826": {
+				"n": "Stoicism",
+				"i": "/common/destiny2_content/icons/9db95c112130c018f823f394668cfb5a.jpg"
 			},
 			"270582335": {
 				"n": "Noble Deeds",
@@ -2191,11 +2254,6 @@
 					"Incandescent",
 					"Burning Ambition"
 				]
-			},
-			"665983996": {
-				"n": "???????",
-				"i": "/common/destiny2_content/icons/a3c67aced712dbb1070c9f067ba78450.jpg",
-				"d": "An unnaturally dense object exuding a violent energy. Take it to Eris Morn to determine its purpose."
 			},
 			"668357349": {
 				"n": "Precision Frame",
@@ -4674,6 +4732,11 @@
 				"i": "/common/destiny2_content/icons/29137a5b6622734760a1b14700424994.png",
 				"d": "Ionic traces you create move faster and grant you additional ability energy. Nearby allies also gain ability energy when you collect an ionic trace."
 			},
+			"1377143502": {
+				"n": "Slicewire Grenade",
+				"i": "/common/destiny2_content/icons/f4e6254963db69408d94ae00f579a82e.jpg",
+				"d": "A grenade that bounces and releases multiple whirling threads, severing targets."
+			},
 			"1378047685": {
 				"n": "Spinning Up",
 				"i": "/common/destiny2_content/icons/592e50de49d0817f9341f2e6b2460f38.png",
@@ -4936,6 +4999,36 @@
 				"n": "The Sixth Coyote",
 				"i": "/common/destiny2_content/icons/fe62cafbd9124a2ee12d35dbe6fdde3a.jpg"
 			},
+			"1476923952": {
+				"n": "Spirit of the Assassin",
+				"i": "/common/destiny2_content/icons/961559205e83e96cd590b34c28efadb7.png",
+				"d": "Finishers and powered melee final blows grant invisibility."
+			},
+			"1476923953": {
+				"n": "Spirit of Inmost Light",
+				"i": "/common/destiny2_content/icons/51756fc7603bd72a83d1859d8c33f0b9.png",
+				"d": "Using an ability empowers the other two abilities, granting them improved energy regeneration."
+			},
+			"1476923954": {
+				"n": "Spirit of the Ophidian",
+				"i": "/common/destiny2_content/icons/3945ff76d8e7ec70991cb0f6601c6797.png",
+				"d": "Weapons ready very quickly."
+			},
+			"1476923955": {
+				"n": "Spirit of the Star-Eater",
+				"i": "/common/destiny2_content/icons/b29ab6e87ec85bac4563f3d3a432c451.png",
+				"d": "While your Super energy is full, picking up an Orb of Power overcharges your Super, granting it bonus damage."
+			},
+			"1476923956": {
+				"n": "Spirit of Synthoceps",
+				"i": "/common/destiny2_content/icons/640d76fb6ab52e290116455379194b07.png",
+				"d": "Improves melee damage when you're surrounded."
+			},
+			"1476923957": {
+				"n": "Spirit of Verity",
+				"i": "/common/destiny2_content/icons/9732f284c71054229671287ab43444b7.png",
+				"d": "Weapon final blows with a damage type matching your grenade grant a stacking grenade damage bonus and improved grenade regeneration."
+			},
 			"1479082657": {
 				"n": "Deimosuffusion",
 				"i": "/common/destiny2_content/icons/8d4cf66f37462c79069095736a4d7bb0.jpg"
@@ -5165,6 +5258,11 @@
 				"n": "Sympathetic Arsenal",
 				"i": "/common/destiny2_content/icons/b744f4c74f1838c93a8eb63535b22a22.png",
 				"d": "Reloading a short time after a final blow also reloads stowed weapons."
+			},
+			"1540068657": {
+				"n": "Relativism",
+				"i": "/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg",
+				"d": "This item comes with randomized perks."
 			},
 			"1541131350": {
 				"n": "Cerberus+1",
@@ -6677,10 +6775,6 @@
 				"i": "/common/destiny2_content/icons/b311ef00478243e21e2a5eec3a59f9d8.png",
 				"d": "Rounds cause extra damage to combatants' shields and overpenetrate targets. \n  •  Slightly increases range"
 			},
-			"1968995963": {
-				"n": "соняшник",
-				"i": "/common/destiny2_content/icons/538d64b6a6c074f7426f515200dba835.jpg"
-			},
 			"1969105489": {
 				"n": "Hammer of the Gods",
 				"i": "/common/destiny2_content/icons/a4ead8e3316d22dbb9fc48e6c643dde3.png",
@@ -7616,6 +7710,10 @@
 				"i": "/common/destiny2_content/icons/914309029085289921f77d8207765150.jpg",
 				"d": "Void buffs applied to you (Invisibility, Overshield, and Devour) have increased duration."
 			},
+			"2273643087": {
+				"n": "Solipsism",
+				"i": "/common/destiny2_content/icons/7b57cd041db1987c3f566b96535daf9f.jpg"
+			},
 			"2274196884": {
 				"n": "Song of Flame",
 				"i": "/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
@@ -7967,6 +8065,10 @@
 					"Archer's Tempo"
 				]
 			},
+			"2362430352": {
+				"n": "Stoicism",
+				"i": "/common/destiny2_content/icons/9db95c112130c018f823f394668cfb5a.jpg"
+			},
 			"2362471601": {
 				"n": "Rat King",
 				"i": "/common/destiny2_content/icons/b86c24934b3ec9954218ecfa0992aeb2.jpg"
@@ -8025,6 +8127,11 @@
 				"n": "Golden Gun: Marksman",
 				"i": "/common/destiny2_content/icons/52f2eb1fefa20e9c7b064c190855d588.png",
 				"d": "Summon a precision flaming pistol that scorches and disintegrates targets with Solar Light.\n\nYour Golden Gun deals massively increased precision damage, overpenetrates targets, and creates Orbs of Power on precision hits.\n\nBenefits from being radiant."
+			},
+			"2370269391": {
+				"n": "Silence and Squall",
+				"i": "/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
+				"d": "Summon two Stasis kamas, Silence and Squall, that you throw one after another.\n\nSilence : Creates a flash-freeze blast that freezes and damages targets.\n\nSquall : Creates a Stasis Storm that slows and damages targets caught inside."
 			},
 			"2374129871": {
 				"n": "Cenotaph Mask",
@@ -8236,6 +8343,56 @@
 				"n": "Void Holster",
 				"i": "/common/destiny2_content/icons/b4ca19e353ee7a0e137ba7f5e6dacc03.png",
 				"d": "Gradually reloads your stowed Void weapons over time."
+			},
+			"2457264272": {
+				"n": "Spirit of Hoarfrost",
+				"i": "/common/destiny2_content/icons/d3fb9089d8b5e3b87e4dab641cdf4bd3.jpg",
+				"d": "Your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Activating Thruster creates Stasis crystals."
+			},
+			"2457264273": {
+				"n": "Spirit of Severance",
+				"i": "/common/destiny2_content/icons/c71c6d2ae6702f88218d34eea2ee8d25.jpg",
+				"d": "Powered melee or finisher final blows unleash a damaging explosion."
+			},
+			"2457264274": {
+				"n": "Spirit of the Abeyant",
+				"i": "/common/destiny2_content/icons/b3225641b07fb40e18b96e45f7201be9.jpg",
+				"d": "Improves Drengr's Lash. Drengr's Lash projectiles track targets more aggressively and travel farther."
+			},
+			"2457264275": {
+				"n": "Spirit of the Eternal Warrior",
+				"i": "/common/destiny2_content/icons/ac1e2a895a2cacaa0a7479f61a070d2e.jpg",
+				"d": "Gain bonus damage for weapons matching your Super's element when your Super ends."
+			},
+			"2457264276": {
+				"n": "Spirit of Contact",
+				"i": "/common/destiny2_content/icons/5d572f74b290d434e7df38d2922ffd8a.jpg",
+				"d": "Damaging a target with a powered melee causes all nearby targets to suffer lightning strikes and become jolted."
+			},
+			"2457264277": {
+				"n": "Spirit of the Bear",
+				"i": "/common/destiny2_content/icons/5f95a47786ee236c02e021d28ecd56d0.jpg",
+				"d": "Move faster while guarding with the Unbreakable shield. Damage blocked with Unbreakable is converted to grenade energy."
+			},
+			"2457264278": {
+				"n": "Spirit of the Horn",
+				"i": "/common/destiny2_content/icons/e54a2170dfb160ce1e2c7adf6b74d146.jpg",
+				"d": "Your class ability unleashes waves of Solar energy that damage and scorch nearby targets. Combatants damaged and Guardians defeated by these waves are enveloped in a Sunspot."
+			},
+			"2457264279": {
+				"n": "Spirit of Scars",
+				"i": "/common/destiny2_content/icons/5f8b1b9cb9a297ebc5b4c55c8bd882d5.jpg",
+				"d": "Final blows with weapons that have a damage type matching your Super's element create a burst of healing around you that grants allies restoration."
+			},
+			"2457264280": {
+				"n": "Spirit of the Armamentarium",
+				"i": "/common/destiny2_content/icons/312f0baf27192be616902b13660849ac.jpg",
+				"d": "Gain an additional grenade charge."
+			},
+			"2457264281": {
+				"n": "Spirit of Alpha Lupi",
+				"i": "/common/destiny2_content/icons/7e5ff1cdd89a3a9a7444d9ef78c27d15.jpg",
+				"d": "Creates a healing pulse when your class ability is activated. Healing allies provides class ability energy."
 			},
 			"2458213969": {
 				"n": "Multikill Clip",
@@ -8804,6 +8961,11 @@
 				"i": "/common/destiny2_content/icons/922b3354dd900848ecf72bcf9e1ae022.png",
 				"d": "Capable of healing allies and hurting foes. Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and bestows restoration to your allies."
 			},
+			"2625980631": {
+				"n": "Silence and Squall",
+				"i": "/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
+				"d": "Summon two Stasis kamas, Silence and Squall, that you throw one after another.\n\nSilence : Creates a flash-freeze blast that freezes and damages targets.\n\nSquall : Creates a Stasis Storm that slows and damages targets caught inside."
+			},
 			"2626922114": {
 				"n": "Facet of Balance",
 				"i": "/common/destiny2_content/icons/43fa2cf618e74671d0e652640c1ce4bc.png",
@@ -9137,6 +9299,11 @@
 				"i": "/common/destiny2_content/icons/8dbf0e0d09d3e55c76231f853961600a.png",
 				"d": "Sustained damage from this weapon exhausts the target for an improved duration.\n\nExhausted targets deal reduced outgoing damage."
 			},
+			"2705455302": {
+				"n": "Solipsism",
+				"i": "/common/destiny2_content/icons/7b57cd041db1987c3f566b96535daf9f.jpg",
+				"d": "This item comes with randomized perks."
+			},
 			"2707250581": {
 				"n": "Support Frame",
 				"i": "/common/destiny2_content/icons/922b3354dd900848ecf72bcf9e1ae022.png",
@@ -9191,11 +9358,6 @@
 				"n": "Combination Blow",
 				"i": "/common/destiny2_content/icons/a7ff3045c06a03649199c6b8e185d7a3.jpg",
 				"d": "A quick strike that temporarily increases your melee damage when defeating a target, stacking three times.\n\nDefeating targets with this, grants class ability energy and restores a small amount of health. Energy gain is scaled by your Class stat."
-			},
-			"2717389086": {
-				"n": "???",
-				"i": "/common/destiny2_content/icons/9268c74a8d78ab85e9a46cadd5af32fc.jpg",
-				"d": "Cannot Proceed: Insufficient Intel"
 			},
 			"2717805783": {
 				"n": "Moving Target",
@@ -9512,6 +9674,11 @@
 					"Flying Monster"
 				]
 			},
+			"2798788243": {
+				"n": "Relativism",
+				"i": "/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg",
+				"d": "This item comes with randomized perks."
+			},
 			"2799030358": {
 				"n": "Desperate Measures",
 				"i": "/common/destiny2_content/icons/25692d31f4963c07c3a82aba508b52b6.png",
@@ -9574,6 +9741,10 @@
 			"2808445048": {
 				"n": "Geomag Stabilizers",
 				"i": "/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg"
+			},
+			"2809120022": {
+				"n": "Relativism",
+				"i": "/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg"
 			},
 			"2809141585": {
 				"n": "Void Wall",
@@ -10532,6 +10703,11 @@
 				"i": "/common/destiny2_content/icons/301b534fef656d07ee6486b17f1e9ce0.png",
 				"d": "You gain a bonus to your health stat while you have any Armor Charge. Your Armor Charge decays over time."
 			},
+			"3076343411": {
+				"n": "Stoicism",
+				"i": "/common/destiny2_content/icons/9db95c112130c018f823f394668cfb5a.jpg",
+				"d": "This item comes with randomized perks."
+			},
 			"3078487919": {
 				"n": "Bait and Switch",
 				"i": "/common/destiny2_content/icons/bc91e95edfbc9163dd88339a93b66913.png",
@@ -10907,6 +11083,56 @@
 				"n": "Opening Salvo",
 				"i": "/common/destiny2_content/icons/5e1c666e2d95937351a2134a4ebb34f7.png",
 				"d": "This weapon gains bonus range and deals more flinch at the start of combat for a duration. Strong against [Stagger] Unstoppable Champions."
+			},
+			"3181253856": {
+				"n": "Spirit of Apotheosis",
+				"i": "/common/destiny2_content/icons/55caef25f1956ddf72f71d672acdae39.jpg",
+				"d": "Temporarily gain greatly increased melee and grenade regeneration after your Super ends."
+			},
+			"3181253857": {
+				"n": "Spirit of Vesper",
+				"i": "/common/destiny2_content/icons/5c01e57ad9f424770a174303f0019914.jpg",
+				"d": "Rifts periodically release Arc shockwaves."
+			},
+			"3181253858": {
+				"n": "Spirit of the Stag",
+				"i": "/common/destiny2_content/icons/c15d706b959f1b40a26207d3f1cd6e4d.jpg",
+				"d": "Your Rift provides damage reduction to allies standing in it."
+			},
+			"3181253859": {
+				"n": "Spirit of Starfire",
+				"i": "/common/destiny2_content/icons/1c015344d0751164863853b0a0aa30dd.jpg",
+				"d": "Grenades recharge from empowered weapon damage, with empowered weapon final blows granting more energy."
+			},
+			"3181253860": {
+				"n": "Spirit of Harmony",
+				"i": "/common/destiny2_content/icons/33a14f37a766fb822ec860b658e853a0.jpg",
+				"d": "Final blows with weapons that have a damage type matching your Super's element grant you Super energy."
+			},
+			"3181253861": {
+				"n": "Spirit of the Filaments",
+				"i": "/common/destiny2_content/icons/db35c25bdf93fdb15df2b4e7b1d38e2d.jpg",
+				"d": "Casting an Empowering Rift will grant you Devour. Defeating a target while Devour is active grants class ability energy."
+			},
+			"3181253862": {
+				"n": "Spirit of the Necrotic",
+				"i": "/common/destiny2_content/icons/e6e4142d9f157ef2348f66aa9c2d67e8.jpg",
+				"d": "Damaging a target with a melee inflicts potent corruption. Defeating targets afflicted by corruption spreads the condition."
+			},
+			"3181253863": {
+				"n": "Spirit of Osmiomancy",
+				"i": "/common/destiny2_content/icons/b245bb5e082f34d175158b68a1c9b90a.jpg",
+				"d": "Your grenades recharge quicker on hits. The seeker spawned from Coldsnap grenades travels farther."
+			},
+			"3181253868": {
+				"n": "Spirit of the Swarm",
+				"i": "/common/destiny2_content/icons/d8b2612816c8fe27f3781e63788cf5ed.jpg",
+				"d": "Destroying a Tangle spawns Threadlings."
+			},
+			"3181253869": {
+				"n": "Spirit of the Claw",
+				"i": "/common/destiny2_content/icons/1c41835fa4f86c1e80e1319b7d10da4f.jpg",
+				"d": "Gain an additional melee charge."
 			},
 			"3181984586": {
 				"n": "Charged Up",
@@ -11443,6 +11669,36 @@
 				"i": "/common/destiny2_content/icons/bffc545ee9b93f41e2729309cf3a736b.png",
 				"d": "Arrows explode after a short delay."
 			},
+			"3369947362": {
+				"n": "Spirit of Synthoceps",
+				"i": "/common/destiny2_content/icons/8c9b5c53343c0177c8e387829c1691ca.jpg",
+				"d": "Improves melee damage when you're surrounded."
+			},
+			"3369947363": {
+				"n": "Spirit of Verity",
+				"i": "/common/destiny2_content/icons/1853d13b41749609c9d3616a3ac2c236.jpg",
+				"d": "Weapon final blows with a damage type matching your grenade grant a stacking grenade damage bonus and improved grenade regeneration."
+			},
+			"3369947364": {
+				"n": "Spirit of the Ophidian",
+				"i": "/common/destiny2_content/icons/d50ec5f4f99aee5bb64ce527971dd62c.jpg",
+				"d": "Weapons ready very quickly."
+			},
+			"3369947365": {
+				"n": "Spirit of the Star-Eater",
+				"i": "/common/destiny2_content/icons/4e6e90c1e3cc4317d4a7d66799de4793.jpg",
+				"d": "While your Super energy is full, picking up an Orb of Power overcharges your Super, granting it bonus damage."
+			},
+			"3369947366": {
+				"n": "Spirit of the Assassin",
+				"i": "/common/destiny2_content/icons/aa9e98d7f5aaffb28a0aeeec9b436704.jpg",
+				"d": "Finishers and powered melee final blows grant invisibility."
+			},
+			"3369947367": {
+				"n": "Spirit of Inmost Light",
+				"i": "/common/destiny2_content/icons/54ad649c704f5e130fa31e90b3769aaf.jpg",
+				"d": "Using an ability empowers the other two abilities, granting them improved energy regeneration."
+			},
 			"3371017761": {
 				"n": "Conditional Finality",
 				"i": "/common/destiny2_content/icons/c9b4d65adcdfcadde871e5961ce912fb.jpg"
@@ -11970,6 +12226,10 @@
 				"n": "Chromatic Fire",
 				"i": "/common/destiny2_content/icons/68e87c34c22f4e7350a1750bf2d3bc68.jpg"
 			},
+			"3546314515": {
+				"n": "Solipsism",
+				"i": "/common/destiny2_content/icons/7b57cd041db1987c3f566b96535daf9f.jpg"
+			},
 			"3547711346": {
 				"n": "Wished into Being",
 				"i": "/common/destiny2_content/icons/f1fac794534049a58e51b0511bfc2ca5.png",
@@ -12060,6 +12320,56 @@
 				"n": "Kinetic Holster",
 				"i": "/common/destiny2_content/icons/308335670e99778ebf8702e73aa42189.png",
 				"d": "Gradually reloads your stowed Kinetic weapons over time."
+			},
+			"3573490500": {
+				"n": "Spirit of the Armamentarium",
+				"i": "/common/destiny2_content/icons/87ed6eb97c923d6a8d0e14639f4b7791.png",
+				"d": "Gain an additional grenade charge."
+			},
+			"3573490501": {
+				"n": "Spirit of Alpha Lupi",
+				"i": "/common/destiny2_content/icons/a5c5979f3630735a03bee7f2d32e9043.png",
+				"d": "Creates a healing pulse when your class ability is activated. Healing allies provides class ability energy."
+			},
+			"3573490504": {
+				"n": "Spirit of Contact",
+				"i": "/common/destiny2_content/icons/a4ead8e3316d22dbb9fc48e6c643dde3.png",
+				"d": "Damaging a target with a powered melee causes all nearby targets to suffer lightning strikes and become jolted."
+			},
+			"3573490505": {
+				"n": "Spirit of the Bear",
+				"i": "/common/destiny2_content/icons/c792f09ce9d03c03064724af10be0349.png",
+				"d": "Move faster while guarding with the Unbreakable shield. Damage blocked with Unbreakable is converted to grenade energy."
+			},
+			"3573490506": {
+				"n": "Spirit of the Horn",
+				"i": "/common/destiny2_content/icons/784bd1d46cc9bd60e1d510e915aedb04.png",
+				"d": "Your class ability unleashes waves of Solar energy that damage and scorch nearby targets. Combatants damaged and Guardians defeated by these waves are enveloped in a Sunspot."
+			},
+			"3573490507": {
+				"n": "Spirit of Scars",
+				"i": "/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
+				"d": "Final blows with weapons that have a damage type matching your Super's element create a burst of healing around you that grants allies restoration."
+			},
+			"3573490508": {
+				"n": "Spirit of Hoarfrost",
+				"i": "/common/destiny2_content/icons/f093d552bec2248e94fed1a960d62dde.png",
+				"d": "Your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Activating Thruster creates Stasis crystals."
+			},
+			"3573490509": {
+				"n": "Spirit of Severance",
+				"i": "/common/destiny2_content/icons/baed176aaf20399a3abb8b287790747a.png",
+				"d": "Powered melee or finisher final blows unleash a damaging explosion."
+			},
+			"3573490510": {
+				"n": "Spirit of the Abeyant",
+				"i": "/common/destiny2_content/icons/245108de9d46cabc0ca3f16c665321dd.png",
+				"d": "Improves Drengr's Lash. Drengr's Lash projectiles track targets more aggressively and travel farther."
+			},
+			"3573490511": {
+				"n": "Spirit of the Eternal Warrior",
+				"i": "/common/destiny2_content/icons/abaff19620ec578f1f379a359de7134c.png",
+				"d": "Gain bonus damage for weapons matching your Super's element when your Super ends."
 			},
 			"3573764622": {
 				"n": "Precision Frame",
@@ -12649,10 +12959,110 @@
 				"i": "/common/destiny2_content/icons/fd17b30233d244fc7115315633906f6a.png",
 				"d": "Final blows or sustained precision hits with another weapon increase this weapon's rate of fire for a short duration."
 			},
+			"3751917990": {
+				"n": "Spirit of the Coyote",
+				"i": "/common/destiny2_content/icons/aa2934eb8a1990f6a1e76402ba12f26a.png",
+				"d": "Gain an additional class ability charge."
+			},
+			"3751917991": {
+				"n": "Spirit of the Wormhusk",
+				"i": "/common/destiny2_content/icons/16f43c6fbb972bdc24764a59aacc8161.png",
+				"d": "Activating your class ability grants Cure. Rapidly defeating combatants grants Burning Souls that increase the potency of healing when using Dodge and spread the healing to nearby allies."
+			},
+			"3751917992": {
+				"n": "Spirit of the Liar",
+				"i": "/common/destiny2_content/icons/71a75146e38ba257b7379af0efacd61f.png",
+				"d": "Dealing damage with a powered melee or being hit by a melee attack will allow you to follow up with an extremely powerful Arc melee counterpunch."
+			},
+			"3751917993": {
+				"n": "Spirit of the Gyrfalcon",
+				"i": "/common/destiny2_content/icons/bd7a131851dd9dad2da3e9f198f67f6e.png",
+				"d": "Your Void weapons gain volatile rounds after you emerge from being invisible."
+			},
+			"3751917994": {
+				"n": "Spirit of the Cyrtarachne",
+				"i": "/common/destiny2_content/icons/358bc75bc96bdadc33cc25d864848de4.png",
+				"d": "Gain Woven Mail when you use your grenade."
+			},
+			"3751917995": {
+				"n": "Spirit of Renewal",
+				"i": "/common/destiny2_content/icons/47fd782cc9b993709e25ca66035d13b8.png",
+				"d": "Allies inside the Duskfield grenade field gain Frost Armor and targets inside the field deal reduced damage."
+			},
+			"3751917996": {
+				"n": "Spirit of Caliban",
+				"i": "/common/destiny2_content/icons/cd66bbfb633d559d5c42c6c85e1d6873.png",
+				"d": "Powered melee final blows trigger an ignition."
+			},
+			"3751917997": {
+				"n": "Spirit of the Foetracer",
+				"i": "/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
+				"d": "Damaging a powerful combatant or Guardian with an ability grants you a temporary damage bonus for weapons matching that ability's element."
+			},
+			"3751917998": {
+				"n": "Spirit of Galanor",
+				"i": "/common/destiny2_content/icons/467f441de1568bd8c6ad437a76671b5f.png",
+				"d": "Hits and final blows with your Super will return Super energy after it ends."
+			},
+			"3751917999": {
+				"n": "Spirit of the Dragon",
+				"i": "/common/destiny2_content/icons/100cd6b35af5fb3f979807d68ad57380.png",
+				"d": "Your weapons ready quicker and are more stable. Using your class ability temporarily increases this benefit and reloads your equipped weapon from reserves."
+			},
 			"3754350707": {
 				"n": "Psychohack",
 				"i": "/common/destiny2_content/icons/8dbf0e0d09d3e55c76231f853961600a.png",
 				"d": "Sustained damage from this weapon exhausts the target for a short duration.\n\nExhausted targets deal reduced outgoing damage."
+			},
+			"3754741122": {
+				"n": "Spirit of the Coyote",
+				"i": "/common/destiny2_content/icons/2c0bd679b0754d7d1fb9075f0002d66c.jpg",
+				"d": "Gain an additional class ability charge."
+			},
+			"3754741123": {
+				"n": "Spirit of the Wormhusk",
+				"i": "/common/destiny2_content/icons/b7b549adb80ca7f9123515ae74c5d6d4.jpg",
+				"d": "Activating your class ability grants Cure. Rapidly defeating combatants grants Burning Souls that increase the potency of healing when using Dodge and spread the healing to nearby allies."
+			},
+			"3754741128": {
+				"n": "Spirit of Caliban",
+				"i": "/common/destiny2_content/icons/64ef3bad0d3cd281d839501767f0f5b6.jpg",
+				"d": "Powered melee final blows trigger an ignition."
+			},
+			"3754741129": {
+				"n": "Spirit of the Foetracer",
+				"i": "/common/destiny2_content/icons/66d3a29404fb49dcb4002f5d8446804b.jpg",
+				"d": "Damaging a powerful combatant or Guardian with an ability grants you a temporary damage bonus for weapons matching that ability's element."
+			},
+			"3754741130": {
+				"n": "Spirit of Galanor",
+				"i": "/common/destiny2_content/icons/2fa509f618eedaac2d28e90ac8fefa2a.jpg",
+				"d": "Hits and final blows with your Super will return Super energy after it ends."
+			},
+			"3754741131": {
+				"n": "Spirit of the Dragon",
+				"i": "/common/destiny2_content/icons/0ea9c2237d82d4205c49a97d07ee4edd.jpg",
+				"d": "Your weapons ready quicker and are more stable. Using your class ability temporarily increases this benefit and reloads your equipped weapon from reserves."
+			},
+			"3754741132": {
+				"n": "Spirit of the Liar",
+				"i": "/common/destiny2_content/icons/d07f46831663626aaf1f35d9acf93a3f.jpg",
+				"d": "Dealing damage with a powered melee or being hit by a melee attack will allow you to follow up with an extremely powerful Arc melee counterpunch."
+			},
+			"3754741133": {
+				"n": "Spirit of the Gyrfalcon",
+				"i": "/common/destiny2_content/icons/80359649683ced22ec76518d026b7220.jpg",
+				"d": "Your Void weapons gain volatile rounds after you emerge from being invisible."
+			},
+			"3754741134": {
+				"n": "Spirit of the Cyrtarachne",
+				"i": "/common/destiny2_content/icons/5e4b3faa0bd0182f86c7165a0dd21302.jpg",
+				"d": "Gain Woven Mail when you use your grenade."
+			},
+			"3754741135": {
+				"n": "Spirit of Renewal",
+				"i": "/common/destiny2_content/icons/eaf443bc9eb348731b7f01ce74b0d05c.jpg",
+				"d": "Allies inside the Duskfield grenade field gain Frost Armor and targets inside the field deal reduced damage."
 			},
 			"3755070117": {
 				"n": "Payday",
@@ -13924,6 +14334,11 @@
 				"n": "Reaper",
 				"i": "/common/destiny2_content/icons/f1fba3ecacb97239cb2f8422dd8c7a03.png",
 				"d": "Shortly after using your class ability, your next weapon final blow spawns an Orb of Power."
+			},
+			"4149997829": {
+				"n": "Stoicism",
+				"i": "/common/destiny2_content/icons/9db95c112130c018f823f394668cfb5a.jpg",
+				"d": "This item comes with randomized perks."
 			},
 			"4152458172": {
 				"n": "Häkke Light Burst Fire",
@@ -16832,6 +17247,56 @@
 				"i": "/common/destiny2_content/icons/b3153ac6eb5bc0315ef2d4c11c327a84.png",
 				"d": "Increases detonation damage as the projectile travels further before exploding."
 			},
+			"1553686800": {
+				"n": "Spirit of the Necrotic",
+				"i": "/common/destiny2_content/icons/4c1a349c2723d3aa84598da98c7a8805.png",
+				"d": "Melee hits inflict potent corruption."
+			},
+			"1553686801": {
+				"n": "Spirit of Osmiomancy",
+				"i": "/common/destiny2_content/icons/81b6412d2d6784891dd7ddad764891cc.png",
+				"d": "Improves grenades."
+			},
+			"1553686802": {
+				"n": "Spirit of Harmony",
+				"i": "/common/destiny2_content/icons/675540240cef9fc9e047d9f9d20a0722.png",
+				"d": "Weapon final blows grant Super energy."
+			},
+			"1553686803": {
+				"n": "Spirit of the Filaments",
+				"i": "/common/destiny2_content/icons/1d4c0be6150c4ca71bc7add447c5d86c.png",
+				"d": "Empowering Rifts grant you Devour. Defeating a target while Devour is active grants class ability energy."
+			},
+			"1553686804": {
+				"n": "Spirit of the Stag",
+				"i": "/common/destiny2_content/icons/c4f95301370c59ab4d7ce34825e83305.png",
+				"d": "Rifts provides damage reduction."
+			},
+			"1553686805": {
+				"n": "Spirit of Starfire",
+				"i": "/common/destiny2_content/icons/18c3e0503b1c9cd823dde3ded3680f8d.png",
+				"d": "Empowered weapon damage recharges grenades."
+			},
+			"1553686806": {
+				"n": "Spirit of Apotheosis",
+				"i": "/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
+				"d": "Gain melee and grenade regeneration after your Super ends."
+			},
+			"1553686807": {
+				"n": "Spirit of Vesper",
+				"i": "/common/destiny2_content/icons/ff55cfecf4c70924d0894b1d8a442a18.png",
+				"d": "Rifts periodically release Arc shockwaves."
+			},
+			"1553686810": {
+				"n": "Spirit of the Swarm",
+				"i": "/common/destiny2_content/icons/2c51c7358ab1de58c11edc89b5573e84.png",
+				"d": "Tangles spawn Threadlings."
+			},
+			"1553686811": {
+				"n": "Spirit of the Claw",
+				"i": "/common/destiny2_content/icons/569a1a4cbdd7a014159ebdf304c8a9b5.png",
+				"d": "Gain an additional melee charge."
+			},
 			"1554078992": {
 				"n": "Harsh Refraction",
 				"i": "/common/destiny2_content/icons/83d3cd1ea4cfc888ad17c98857092d65.png",
@@ -17877,6 +18342,11 @@
 				"i": "/common/destiny2_content/icons/df9854c7b3c55556c27571195573f812.png",
 				"d": "Collecting an Orb of Power causes nearby allies with at least one Armor Charge to gain an additional one."
 			},
+			"2115357203": {
+				"n": "Silence and Squall",
+				"i": "/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
+				"d": "Summon two Stasis kamas, Silence and Squall, that you throw one after another.\n\nSilence : Creates a flash-freeze blast that freezes and damages targets.\n\nSquall : Creates a Stasis Storm that slows and damages targets caught inside."
+			},
 			"2117593224": {
 				"n": "Storm's Keep",
 				"i": "/common/destiny2_content/icons/6b05f76dc45d25552f3aa0b35f964dbf.png",
@@ -18822,6 +19292,56 @@
 				"i": "/common/destiny2_content/icons/086174f30d9fbf5e68f473dac9eda710.png",
 				"d": "Final blows grant Bolt Charge.\nWhile amplified, final blows grant additional Bolt Charge."
 			},
+			"2644022224": {
+				"n": "Spirit of Caliban",
+				"i": "/common/destiny2_content/icons/cd66bbfb633d559d5c42c6c85e1d6873.png",
+				"d": "Powered melee final blows trigger an ignition."
+			},
+			"2644022225": {
+				"n": "Spirit of the Foetracer",
+				"i": "/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
+				"d": "Abilities grant bonus weapon damage."
+			},
+			"2644022226": {
+				"n": "Spirit of Galanor",
+				"i": "/common/destiny2_content/icons/467f441de1568bd8c6ad437a76671b5f.png",
+				"d": "Super hits return Super energy."
+			},
+			"2644022227": {
+				"n": "Spirit of the Dragon",
+				"i": "/common/destiny2_content/icons/100cd6b35af5fb3f979807d68ad57380.png",
+				"d": "Your weapons ready quicker and are more stable. Class ability increases this benefit."
+			},
+			"2644022228": {
+				"n": "Spirit of the Liar",
+				"i": "/common/destiny2_content/icons/71a75146e38ba257b7379af0efacd61f.png",
+				"d": "Counterpunch deals extra damage."
+			},
+			"2644022229": {
+				"n": "Spirit of the Gyrfalcon",
+				"i": "/common/destiny2_content/icons/bd7a131851dd9dad2da3e9f198f67f6e.png",
+				"d": "Gain volatile rounds after being invisible."
+			},
+			"2644022230": {
+				"n": "Spirit of the Cyrtarachne",
+				"i": "/common/destiny2_content/icons/358bc75bc96bdadc33cc25d864848de4.png",
+				"d": "Grenades grant Woven Mail."
+			},
+			"2644022231": {
+				"n": "Spirit of Renewal",
+				"i": "/common/destiny2_content/icons/47fd782cc9b993709e25ca66035d13b8.png",
+				"d": "Improves Duskfield grenades."
+			},
+			"2644022234": {
+				"n": "Spirit of the Coyote",
+				"i": "/common/destiny2_content/icons/aa2934eb8a1990f6a1e76402ba12f26a.png",
+				"d": "Gain an additional class ability charge."
+			},
+			"2644022235": {
+				"n": "Spirit of the Wormhusk",
+				"i": "/common/destiny2_content/icons/16f43c6fbb972bdc24764a59aacc8161.png",
+				"d": "Dodging heals you."
+			},
 			"2645911689": {
 				"n": "Light Touch",
 				"i": "/common/destiny2_content/icons/46b000a4e8c4ffa73df16c26a63360e0.png",
@@ -19056,6 +19576,56 @@
 				"n": "Tenacity",
 				"i": "/common/destiny2_content/icons/09acc96dd835e83327b14adecf014517.png",
 				"d": "When targets are nearby, final blows grant weapon damage, reload speed, and handling until the wielder's death."
+			},
+			"2810944064": {
+				"n": "Spirit of Hoarfrost",
+				"i": "/common/destiny2_content/icons/f093d552bec2248e94fed1a960d62dde.png",
+				"d": "Replace Barricade with a wall of Stasis crystals."
+			},
+			"2810944065": {
+				"n": "Spirit of Severance",
+				"i": "/common/destiny2_content/icons/baed176aaf20399a3abb8b287790747a.png",
+				"d": "Powered melee final blows and finishers unleash explosions."
+			},
+			"2810944066": {
+				"n": "Spirit of the Abeyant",
+				"i": "/common/destiny2_content/icons/245108de9d46cabc0ca3f16c665321dd.png",
+				"d": "Improves Drengr's Lash."
+			},
+			"2810944067": {
+				"n": "Spirit of the Eternal Warrior",
+				"i": "/common/destiny2_content/icons/abaff19620ec578f1f379a359de7134c.png",
+				"d": "Gain bonus weapon damage when your Super ends."
+			},
+			"2810944068": {
+				"n": "Spirit of Contact",
+				"i": "/common/destiny2_content/icons/a4ead8e3316d22dbb9fc48e6c643dde3.png",
+				"d": "Powered melee damage causes lightning strikes."
+			},
+			"2810944069": {
+				"n": "Spirit of the Bear",
+				"i": "/common/destiny2_content/icons/c792f09ce9d03c03064724af10be0349.png",
+				"d": "Improves Unbreakable."
+			},
+			"2810944070": {
+				"n": "Spirit of the Horn",
+				"i": "/common/destiny2_content/icons/784bd1d46cc9bd60e1d510e915aedb04.png",
+				"d": "Class abilities unleash a Solar blast."
+			},
+			"2810944071": {
+				"n": "Spirit of Scars",
+				"i": "/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
+				"d": "Weapon final blows heal allies."
+			},
+			"2810944072": {
+				"n": "Spirit of the Armamentarium",
+				"i": "/common/destiny2_content/icons/87ed6eb97c923d6a8d0e14639f4b7791.png",
+				"d": "Gain an additional grenade charge."
+			},
+			"2810944073": {
+				"n": "Spirit of Alpha Lupi",
+				"i": "/common/destiny2_content/icons/a5c5979f3630735a03bee7f2d32e9043.png",
+				"d": "Casting your class ability heals you and nearby allies."
 			},
 			"2813589346": {
 				"n": "Rangefinder",
@@ -20166,6 +20736,36 @@
 				"n": "Exhaustive Research",
 				"i": "/common/destiny2_content/icons/5694ef9e290a07ceafae5268e6d154b8.png",
 				"d": "Aiming down sights at a target for a short time loads a homing micro-missile."
+			},
+			"3465434112": {
+				"n": "Spirit of Synthoceps",
+				"i": "/common/destiny2_content/icons/640d76fb6ab52e290116455379194b07.png",
+				"d": "Improves melee damage when you're surrounded."
+			},
+			"3465434113": {
+				"n": "Spirit of Verity",
+				"i": "/common/destiny2_content/icons/9732f284c71054229671287ab43444b7.png",
+				"d": "Weapon final blows grant grenade damage."
+			},
+			"3465434116": {
+				"n": "Spirit of the Assassin",
+				"i": "/common/destiny2_content/icons/961559205e83e96cd590b34c28efadb7.png",
+				"d": "Finishers and powered melee final blows grant invisibility."
+			},
+			"3465434117": {
+				"n": "Spirit of Inmost Light",
+				"i": "/common/destiny2_content/icons/51756fc7603bd72a83d1859d8c33f0b9.png",
+				"d": "Using an ability empowers the other two abilities."
+			},
+			"3465434118": {
+				"n": "Spirit of the Ophidian",
+				"i": "/common/destiny2_content/icons/3945ff76d8e7ec70991cb0f6601c6797.png",
+				"d": "Weapons ready very quickly."
+			},
+			"3465434119": {
+				"n": "Spirit of the Star-Eater",
+				"i": "/common/destiny2_content/icons/b29ab6e87ec85bac4563f3d3a432c451.png",
+				"d": "Orbs of Power overcharge your Super."
 			},
 			"3470022826": {
 				"n": "Facet of Dawn",

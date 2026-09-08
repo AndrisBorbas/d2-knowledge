@@ -96,6 +96,49 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		],
 		maxTitleLength: 56,
 	},
+	"Exotic Class": {
+		strategy: "column-groups",
+		// Row 0 titles the tab, row 1 explains the stat distribution of the
+		// class item itself, which no perk row needs.
+		skipStart: 2,
+		// One list of Exotic Class Item perks wrapped into two columns of
+		// name + effect, read left to right, row by row.
+		rowMajor: true,
+		columnGroups: [
+			{ titleColumn: 0, descriptionColumn: 2 },
+			{ titleColumn: 3, descriptionColumn: 5 },
+		],
+		// "Class-agnostic Perks" and the three "<Class>-exclusive Perks"
+		// headers sit in the left list's name column and cover both lists.
+		sectionColumn: 0,
+		sectionNamesClass: true,
+		// Rejects the closing note about perks only applying on Prismatic,
+		// which is the one other row written in that column alone.
+		dynamicSection: {
+			maxLength: 56,
+			minLength: 2,
+			forbidSentenceEnding: true,
+		},
+		maxTitleLength: 56,
+	},
+	"Class Abilities": {
+		strategy: "same-row",
+		// Each class's abilities sit under a row naming that class, the way the
+		// element tabs scope theirs.
+		type: "element",
+		// Row 0 is the tab's own heading and the donation link.
+		skipStart: 1,
+		// The tab has no section headers - the class marker is the only
+		// structure, and everything under one is that class's class ability.
+		sectionAfterClassMarker: "Class Abilities",
+		// The class's intrinsic advantages over the other two, written alone in
+		// the effect column under the class marker.
+		classPassiveTraitsColumn: 3,
+		// Rejects the cooldown-scaling tables printed under each class's
+		// abilities, whose rows read as an ability name beside a "#DIV/0!" or a
+		// "Tier 3" cell rather than an effect.
+		minDescriptionLength: 40,
+	},
 	"Artifact Perks": {
 		strategy: "paired-columns",
 		skipStart: 3,

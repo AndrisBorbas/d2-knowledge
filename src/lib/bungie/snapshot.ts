@@ -6,6 +6,7 @@ import {
 	BREAKER_TYPE_ENUM_BY_GLYPH,
 	DAMAGE_TYPE_ENUM_BY_GLYPH,
 } from "./glyphs";
+import { PERK_TITLE_ALIASES } from "./perk-title-aliases";
 
 type BungieDisplayProperties = {
 	name?: string;
@@ -47,11 +48,14 @@ type BungieManifestSnapshot = {
 const BUNGIE_CDN_BASE = "https://www.bungie.net";
 
 function normalizeLookupName(value: string) {
+	// Trim last: a title that ends in punctuation ("Hammer of Sol\n(Sol
+	// Invictus Aspect)") turns that punctuation into a space, and trimming
+	// before the replace would leave it on the key.
 	return value
 		.toLowerCase()
-		.trim()
 		.replace(/[^a-z0-9]+/g, " ")
-		.replace(/\s+/g, " ");
+		.replace(/\s+/g, " ")
+		.trim();
 }
 
 function asRecord<T>(value: unknown) {
@@ -185,6 +189,12 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		}
 	}
 
+	private resolveTitleKey(title: string) {
+		const key = normalizeLookupName(title);
+		const alias = PERK_TITLE_ALIASES[key];
+		return alias ? normalizeLookupName(alias) : key;
+	}
+
 	private resolveArmorSetNameKey(setName: string) {
 		const key = normalizeLookupName(setName);
 		const alias = ARMOR_SET_NAME_ALIASES[key];
@@ -261,7 +271,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	}
 
 	getPerkEnrichmentByTitle(title: string) {
-		const key = normalizeLookupName(title);
+		const key = this.resolveTitleKey(title);
 		if (!key) return null;
 		const display = this.displayByName.get(key);
 		if (!display) return null;
@@ -273,7 +283,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	}
 
 	getItemEnrichmentByTitle(title: string) {
-		const key = normalizeLookupName(title);
+		const key = this.resolveTitleKey(title);
 		if (!key) return null;
 		const display = this.itemDisplayByName.get(key);
 		if (!display) return null;
@@ -331,7 +341,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			if (description) return description;
 		}
 
-		const key = params.title ? normalizeLookupName(params.title) : "";
+		const key = params.title ? this.resolveTitleKey(params.title) : "";
 		if (!key) return undefined;
 		return this.descriptionByName.get(key);
 	}

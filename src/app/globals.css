@@ -46,8 +46,8 @@ html {
 
 	--color-masterwork: #fdc700;
 
-	--color-pve-damage: var(--color-green-400);
-	--color-pvp-damage: var(--color-red-400);
+	--color-pve-damage: var(--color-blue-300);
+	--color-pvp-damage: var(--color-red-300);
 	--color-tier-minor: var(--color-gray-400);
 	--color-tier-elite: var(--color-orange-400);
 	--color-tier-miniboss: var(--color-yellow-300);

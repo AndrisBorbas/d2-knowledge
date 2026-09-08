@@ -11,10 +11,12 @@ import {
 	ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES,
 	CATALYST_MASTERWORK_BOILERPLATE_PREFIXES,
 } from "../src/lib/bungie/officialDescription";
+import { PERK_TITLE_ALIASES } from "../src/lib/bungie/perk-title-aliases";
 import {
 	ARTIFACT_TAB_NAME,
 	stripReleaseLabel,
 } from "../src/lib/compendium/artifacts";
+import { EXOTIC_CLASS_ITEM_NAMES } from "../src/lib/ddc/exotic-class-items";
 import { loadDdcSource } from "../src/lib/ddc/source";
 
 type ClarityRecord = {
@@ -52,11 +54,13 @@ type CompactManifestTables = {
 };
 
 function normalizeLookupName(value: string) {
+	// Trim last, same as src/lib/bungie/snapshot.ts - both sides of the filter
+	// have to agree on the key for a title-matched row to survive.
 	return value
 		.toLowerCase()
-		.trim()
 		.replace(/[^a-z0-9]+/g, " ")
-		.replace(/\s+/g, " ");
+		.replace(/\s+/g, " ")
+		.trim();
 }
 
 function removeFromName(value: string, remove: string) {
@@ -110,13 +114,22 @@ async function collectDdcLookupTitles() {
 				const key = normalizeLookupName(candidate);
 				if (!key) continue;
 				titleKeys.add(key);
+				// The row the resolver will actually look up for an aliased
+				// title, which is filed under the manifest's own spelling.
+				const alias = PERK_TITLE_ALIASES[key];
+				if (alias) titleKeys.add(normalizeLookupName(alias));
 			}
 		}
 
 		// Perks whose clarity record has no itemHash (see
 		// exotic-perk-item-aliases.ts) resolve their item by title instead, so
-		// that item needs to survive the manifest filter too.
-		for (const itemName of Object.values(EXOTIC_PERK_ITEM_NAME_ALIASES)) {
+		// that item needs to survive the manifest filter too. The Exotic Class
+		// Items are the same case: the sheet never names them, so no entry
+		// title would keep them.
+		for (const itemName of [
+			...Object.values(EXOTIC_PERK_ITEM_NAME_ALIASES),
+			...EXOTIC_CLASS_ITEM_NAMES,
+		]) {
 			const key = normalizeLookupName(itemName);
 			if (!key) continue;
 			titleKeys.add(key);
