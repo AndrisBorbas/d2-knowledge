@@ -31,8 +31,23 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 	);
 	const bungieResolver = await loadBungieManifestSnapshotResolver();
 	const enrichedUnifiedEntries = mergedUnifiedEntries.map((entry) => {
-		if (entry.iconPath) return entry;
 		if (!bungieResolver) return entry;
+
+		// Ahead of the icon check below on purpose: an artifact perk's icon is
+		// the one on its own inventory item, never the sandbox perk's, so this
+		// replaces whatever a source already resolved.
+		if (entry.kind === "artifact_perk") {
+			const artifactEnrichment =
+				bungieResolver.getArtifactPerkEnrichmentByTitle(entry.title);
+			if (artifactEnrichment?.perkIconPath) {
+				return {
+					...entry,
+					iconPath: artifactEnrichment.perkIconPath,
+				};
+			}
+		}
+
+		if (entry.iconPath) return entry;
 
 		if (entry.section === "Aspect") {
 			const itemEnrichment = bungieResolver.getItemEnrichmentByTitle(

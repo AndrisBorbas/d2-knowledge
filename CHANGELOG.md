@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.6.1] - 2026-09-10
+
+### Fixed
+
+- Artifact perks show the correct icon.
+
 ## [1.6.0] - 2026-09-08
 
 ### Added

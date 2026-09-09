@@ -44,6 +44,11 @@ type CompactDefinition = {
 	// after its weapon, so this is the only place the granted perk's name
 	// ("The Rock" on Forerunner Catalyst) survives the compaction.
 	gp?: string[];
+	// Inventory items only: the row is a seasonal artifact perk plug. Artifact
+	// perks are looked up by name, and plenty of their names are also carried
+	// by an emblem, an ornament or a sandbox perk with a different icon, so the
+	// resolver needs to be able to search these rows alone.
+	ap?: true;
 };
 
 type CompactItemSetPerk = {
@@ -245,12 +250,24 @@ function resolvePerkFallbackDisplay(
 	return { ...display, names };
 }
 
+const ARTIFACT_PERK_PLUG_CATEGORY = "artifact_perks";
+
+function isArtifactPerkItem(value: unknown) {
+	const row = asRecord<unknown>(value);
+	const plug = asRecord<unknown>(row?.plug);
+	return plug?.plugCategoryIdentifier === ARTIFACT_PERK_PLUG_CATEGORY;
+}
+
 function toCompactItemDefinition(
 	value: unknown,
 	sandboxPerkTable: Record<string, unknown> | null,
 ) {
-	const compact = toCompactDefinition(value);
-	if (!compact) return null;
+	const base = toCompactDefinition(value);
+	if (!base) return null;
+
+	const compact = isArtifactPerkItem(value)
+		? { ...base, ap: true as const }
+		: base;
 
 	const isCatalystBoilerplate = CATALYST_MASTERWORK_BOILERPLATE_PREFIXES.some(
 		(prefix) => compact.d?.startsWith(prefix),

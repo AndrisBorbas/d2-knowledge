@@ -37,6 +37,8 @@ type BungieManifestRow = {
 	gp?: string[];
 	// Only subclass aspects and fragments carry this.
 	st?: CompactStatMod[];
+	// Only inventory items that are seasonal artifact perk plugs carry this.
+	ap?: true;
 	displayProperties?: BungieDisplayProperties;
 };
 
@@ -158,6 +160,10 @@ export type BungieManifestSnapshotResolver = {
 		itemName?: string;
 		itemIconPath?: string;
 	} | null;
+	getArtifactPerkEnrichmentByTitle(title: string): {
+		perkName?: string;
+		perkIconPath?: string;
+	} | null;
 	getArmorSetBonusPerkEnrichment(params: {
 		setName: string;
 		requiredSetCount: number;
@@ -185,6 +191,10 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly subclassTable: Record<string, CompactSubclassRow> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
+	private readonly artifactPerkDisplayByName: Map<
+		string,
+		BungieDisplayProperties
+	>;
 	private readonly itemSetByName: Map<string, BungieItemSetRow>;
 	private readonly descriptionByName: Map<string, string>;
 
@@ -215,6 +225,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
+		this.artifactPerkDisplayByName = new Map<string, BungieDisplayProperties>();
 		this.itemSetByName = new Map<string, BungieItemSetRow>();
 		this.descriptionByName = new Map<string, string>();
 
@@ -222,6 +233,11 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		this.addDisplayNames(this.perkTable, this.displayByName);
 		this.addDisplayNames(this.inventoryTable, this.displayByName);
 		this.addDisplayNames(this.inventoryTable, this.itemDisplayByName);
+		this.addDisplayNames(
+			this.inventoryTable,
+			this.artifactPerkDisplayByName,
+			(row) => row.ap === true,
+		);
 
 		// Separate walk from addDisplayNames: that one only keeps rows that have
 		// *both* a name and an icon, and plenty of perk rows carry description
@@ -256,10 +272,12 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private addDisplayNames(
 		table: Record<string, BungieManifestRow> | null,
 		target: Map<string, BungieDisplayProperties>,
+		accept?: (row: BungieManifestRow) => boolean,
 	) {
 		if (!table) return;
 
 		for (const row of Object.values(table)) {
+			if (accept && !accept(row)) continue;
 			const name = row.n ?? row.displayProperties?.name;
 			const icon = row.i ?? row.displayProperties?.icon;
 			if (!name || !icon) continue;
@@ -343,6 +361,23 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		return {
 			itemName: display.name,
 			itemIconPath: normalizeIconPath(display.icon),
+		};
+	}
+
+	// Artifact perks are DDC-only rows with no hashes, so the name is all there
+	// is to go on - and the sandbox perk row that shares that name often carries
+	// a different, older icon than the plug the game actually shows. Searching
+	// the artifact plugs alone keeps both that row and same-named emblems and
+	// ornaments out of the answer.
+	getArtifactPerkEnrichmentByTitle(title: string) {
+		const key = this.resolveTitleKey(title);
+		if (!key) return null;
+		const display = this.artifactPerkDisplayByName.get(key);
+		if (!display) return null;
+
+		return {
+			perkName: display.name,
+			perkIconPath: normalizeIconPath(display.icon),
 		};
 	}
 
