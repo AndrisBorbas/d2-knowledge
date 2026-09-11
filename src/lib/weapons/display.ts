@@ -60,6 +60,29 @@ export function formatSeason(season: number | null) {
 	return season === null ? "-" : `S${String(season)}`;
 }
 
+const TIER_ORDER: string[] = ["S", "A", "B", "C", "D", "E", "F"];
+
+// The sheet's `#` rank only means anything inside its own tab, so a list
+// spanning several tabs orders by tier and lets the rank break ties. Shared by
+// the tier list and by the seed the page prerenders, so the rows on screen do
+// not reshuffle when the full dataset arrives.
+type SortableRow = {
+	tier: TierRank | null;
+	rank: number | null;
+	// Absent on exotics, which come from a single tab and so need no tiebreak.
+	categoryLabel?: string;
+};
+
+export function compareTierRows(left: SortableRow, right: SortableRow) {
+	return (
+		TIER_ORDER.indexOf(left.tier ?? "F") -
+			TIER_ORDER.indexOf(right.tier ?? "F") ||
+		(left.rank ?? Number.MAX_SAFE_INTEGER) -
+			(right.rank ?? Number.MAX_SAFE_INTEGER) ||
+		(left.categoryLabel ?? "").localeCompare(right.categoryLabel ?? "")
+	);
+}
+
 // Tab names as the Status sheet writes them, so a view can say when what it is
 // showing was last looked at.
 export function statusForTab(

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { WeaponsExplorer } from "@/components/weapons/WeaponsExplorer";
+import { compareTierRows } from "@/lib/weapons/display";
 import { loadWeaponsDataset } from "@/lib/weapons/load";
 import type { WeaponsDataset } from "@/lib/weapons/model";
 
@@ -9,6 +10,9 @@ import type { WeaponsDataset } from "@/lib/weapons/model";
 // cost: `loadWeaponsDataset` reads the dataset off disk, and runtimes like
 // Cloudflare Workers have no filesystem at request time.
 export const dynamic = "force-static";
+
+// Enough to fill the tallest first screen of the default, unfiltered list.
+const SEED_ROW_COUNT = 50;
 
 export const metadata: Metadata = {
 	title: "Weapons",
@@ -44,16 +48,17 @@ export default async function WeaponsPage() {
 		);
 	}
 
-	// Only the first category's rows are prerendered, then the browser fetches
-	// the rest. A tier list is ranked, so the seed has to be a complete tab: a
-	// sample spread across all 20 would render a visibly wrong order until the
-	// full dataset landed.
-	const firstCategory = dataset.categories[0];
+	// Enough of the top of the default list to fill the first screen, then the
+	// browser fetches the rest. Sorted with the same comparator the tier list
+	// uses, so these rows keep their positions when the full dataset arrives
+	// rather than reshuffling under the reader.
 	const seed: WeaponsDataset = {
 		...dataset,
-		tierRows: dataset.tierRows.filter(
-			(row) => row.categorySlug === firstCategory.slug,
-		),
+		tierRows: [...dataset.tierRows]
+			.sort(compareTierRows)
+			.slice(0, SEED_ROW_COUNT),
+		// The exotic table sits below the legendary one, so it is off the first
+		// screen by definition and its prose is not worth prerendering.
 		exotics: [],
 		// Only the default view's data is prerendered. The archetype table alone
 		// is ~250 KB of numbers, which every prefetch of this route would have

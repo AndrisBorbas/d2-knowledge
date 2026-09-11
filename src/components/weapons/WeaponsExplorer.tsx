@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import {
 	parseAsArrayOf,
 	parseAsString,
@@ -8,6 +9,8 @@ import {
 } from "nuqs";
 import { useEffect, useState } from "react";
 
+import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
+import { useHoverPreview } from "@/components/compendium/useHoverPreview";
 import { Button } from "@/components/ui/Button";
 import { ENERGY_TYPES, TIER_RANKS } from "@/lib/aegis/config";
 import { cn } from "@/lib/utils/utils";
@@ -18,6 +21,7 @@ import { ArchetypesView } from "./ArchetypesView";
 import { type DamageTab, DamageView } from "./DamageView";
 import { SheetHeader } from "./SheetHeader";
 import { EXOTICS_SLUG, TierListView } from "./TierListView";
+import { useWeaponPerks } from "./useWeaponPerks";
 import { useWeaponsDataset } from "./useWeaponsDataset";
 
 const VIEWS = [
@@ -44,6 +48,25 @@ type WeaponsExplorerProps = {
 
 export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 	const { dataset, isComplete } = useWeaponsDataset(seed);
+	const router = useRouter();
+
+	const {
+		load: loadPerks,
+		entryMap,
+		keywordMap,
+		entryIdForPerk,
+	} = useWeaponPerks();
+
+	const {
+		hoverPreview,
+		hoverCardRef,
+		resolvedHoverTop,
+		hoverCardStyle,
+		hoveredEntry,
+		showEntryPreview,
+		handleKeywordHover,
+		handleKeywordLeave,
+	} = useHoverPreview({ keywordMap, entryMap });
 
 	const [view, setView] = useQueryState(
 		"v",
@@ -51,11 +74,11 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 			.withDefault("tiers")
 			.withOptions(URL_OPTIONS),
 	);
-	const [category, setCategory] = useQueryState(
+	// Empty is every category, so the list opens on everything and narrowing is
+	// something you opt into.
+	const [categories, setCategories] = useQueryState(
 		"c",
-		parseAsString
-			.withDefault(seed.categories[0]?.slug ?? EXOTICS_SLUG)
-			.withOptions(URL_OPTIONS),
+		parseAsArrayOf(parseAsString).withDefault([]).withOptions(URL_OPTIONS),
 	);
 	const [damageTab, setDamageTab] = useQueryState(
 		"d",
@@ -103,20 +126,28 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 	};
 
 	const hasFilters =
-		searchInput.length > 0 || tiers.length > 0 || energies.length > 0;
+		searchInput.length > 0 ||
+		tiers.length > 0 ||
+		energies.length > 0 ||
+		categories.length > 0;
 
 	const clearFilters = () => {
 		setSearchInput("");
 		void setQuery(null);
 		void setTiers(null);
 		void setEnergies(null);
+		void setCategories(null);
 	};
 
 	// Only the tier lists are filtered by element, and only they and the exotics
 	// are ranked, so the chip strip follows the view rather than always showing
 	// controls that do nothing.
 	const showTierChips = view === "tiers";
-	const showEnergyChips = view === "tiers" && category !== EXOTICS_SLUG;
+	// Exotics carry no element, so the element chips only earn their place while
+	// at least one legendary category is in view.
+	const showEnergyChips =
+		view === "tiers" &&
+		!(categories.length === 1 && categories[0] === EXOTICS_SLUG);
 
 	return (
 		<div className="mx-auto flex w-full max-w-[100rem] flex-col gap-6 px-4 py-8 md:px-6">
@@ -207,17 +238,24 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 			{view === "tiers" ? (
 				<TierListView
 					dataset={dataset}
-					category={category}
-					onCategoryChange={(slug) => {
-						void setCategory(slug === seed.categories[0]?.slug ? null : slug);
-						void setExpandedId(null);
+					categories={categories}
+					onToggleCategory={(slug) => {
+						toggleFrom(categories, slug, setCategories);
 					}}
 					query={query}
 					tiers={tiers}
 					energies={energies}
 					expandedId={expandedId}
 					onToggleRow={(id) => {
+						// Perk names only become visible on expand, which is the first
+						// moment their glossary entries are worth fetching.
+						loadPerks();
 						void setExpandedId(expandedId === id ? null : id);
+					}}
+					perks={{
+						entryIdForPerk,
+						onPerkHover: showEntryPreview,
+						onPerkLeave: handleKeywordLeave,
 					}}
 				/>
 			) : null}
@@ -236,6 +274,35 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 					}}
 				/>
 			) : null}
+
+			{/* The same card the glossary and the abilities page show, so a perk
+			    reads identically wherever it is met. This page has no pinned
+			    panel of its own, so a click inside it hands off to the glossary. */}
+			<HoverPreviewCard
+				hoveredEntry={hoveredEntry}
+				hoverPreview={hoverPreview}
+				hoverCardStyle={hoverCardStyle}
+				resolvedHoverTop={resolvedHoverTop}
+				hoverCardRef={hoverCardRef}
+				entryMap={entryMap}
+				keywordMap={keywordMap}
+				onKeywordHover={handleKeywordHover}
+				onKeywordLeave={handleKeywordLeave}
+				onKeywordClick={({ keywordId, entryId }) => {
+					// Resolve the keyword to the entry it points at, the way the
+					// artifacts page does before pinning, and search the glossary for
+					// that entry's own title.
+					const referencedId = keywordMap
+						.get(keywordId)
+						?.references.find((candidate) => entryMap.has(candidate));
+					const entry = entryMap.get(referencedId ?? entryId);
+					if (!entry) return;
+					router.push(`/glossary?q=${encodeURIComponent(entry.title)}`);
+				}}
+				onGroupClick={(group) => {
+					router.push(`/glossary?g=${encodeURIComponent(group)}`);
+				}}
+			/>
 		</div>
 	);
 }

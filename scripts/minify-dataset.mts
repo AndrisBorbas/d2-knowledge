@@ -17,6 +17,11 @@ const DATASETS = [
 		source: ["data", "weapons.json"],
 		output: ["public", "assets", "data", "weapons.min.json"],
 	},
+	{
+		label: "weapon perk",
+		source: ["data", "weapon-perks.json"],
+		output: ["public", "assets", "data", "weapon-perks.min.json"],
+	},
 ];
 
 async function main() {

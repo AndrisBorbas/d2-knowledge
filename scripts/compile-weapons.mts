@@ -1,7 +1,9 @@
 import { writeFile } from "node:fs/promises";
 import path from "node:path";
 
+import { loadCompendiumDataset } from "../src/lib/compendium/load";
 import { buildWeaponsDataset } from "../src/lib/weapons/build";
+import { buildWeaponPerkBundle } from "../src/lib/weapons/perks";
 
 async function main() {
 	const dataset = await buildWeaponsDataset();
@@ -10,6 +12,23 @@ async function main() {
 	await writeFile(outputPath, JSON.stringify(dataset, null, "\t"), "utf8");
 
 	console.log(`Wrote compiled weapons dataset: ${outputPath}`);
+
+	// Runs after the compendium snapshot in `data:compile`, so the glossary
+	// entries the perks point at are already on disk.
+	const compendium = await loadCompendiumDataset();
+	const { bundle, misses } = buildWeaponPerkBundle(dataset, compendium);
+
+	const perksPath = path.join(process.cwd(), "data", "weapon-perks.json");
+	await writeFile(perksPath, JSON.stringify(bundle, null, "\t"), "utf8");
+
+	console.log(
+		`Wrote weapon perk entries: ${perksPath} (${bundle.entries.length} perks, ${bundle.relatedEntries.length} related, ${bundle.keywords.length} keywords)`,
+	);
+	if (misses.length > 0) {
+		console.log(
+			`No glossary entry for ${misses.length} roll options, which is expected for stat rolls: ${misses.slice(0, 10).join(", ")}`,
+		);
+	}
 	console.log(
 		[
 			`${dataset.tierRows.length} rated weapons across ${dataset.categories.length} categories`,
