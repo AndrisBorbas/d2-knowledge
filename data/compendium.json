@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-09T22:09:02.276Z",
+	"generatedAt": "2026-09-11T12:48:11.592Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -75724,7 +75724,7 @@
 				"column": 0
 			},
 			"title": "Wrecker",
-			"description": "Passively grants increased Kinetic Damage towards Combatant Shields, Overshields, Vehicles, and Constructs.\n200% increased Kinetic Damage towards Combatant Shields and Combatant Overshields. Damage shows up as Yellow Numbers.\n15% increased Kinetic Damage towards Constructs. Koregos is not a Construct lol\nIt's ALL Kinetic Damage, including Poison, Praxic Blade, and Unpowered/Glaive Melee!",
+			"description": "Passively grants increased Kinetic Damage towards Combatant Shields, Overshields, Vehicles, and Constructs.\n200% increased Kinetic Damage towards Combatant Shields and Combatant Overshields. Damage shows up as Yellow Numbers.\n15% increased Kinetic Damage towards Constructs. Koregos is not a Construct lol\nIt's ALL Kinetic Damage, including Corruption, Praxic Blade, and Unpowered/Glaive Melee!",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -75733,7 +75733,7 @@
 						"column": 2
 					},
 					"start": 0,
-					"length": 390
+					"length": 394
 				}
 			],
 			"officialDescription": "You deal significantly increased Kinetic damage to combatant shields, overshields, vehicles, and constructs. Constructs include barricades, turrets, Stasis crystals, and other objects created in the field.",
@@ -75831,21 +75831,56 @@
 				{
 					"keywordId": "sheet-color:Armor Perks:92:2:325:306",
 					"start": 306,
-					"end": 384,
-					"text": "It's ALL Kinetic Damage, including Poison, Praxic Blade, and Unpowered/Glaive ",
+					"end": 341,
+					"text": "It's ALL Kinetic Damage, including ",
 					"color": "rgb(153, 153, 153)"
 				},
 				{
+					"keywordId": "sheet-color:Armor Perks:92:2:360:341",
+					"start": 341,
+					"end": 351,
+					"text": "Corruption",
+					"color": "rgb(147, 196, 125)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:92:2:370:351",
+					"start": 351,
+					"end": 353,
+					"text": ", ",
+					"color": "rgb(153, 153, 153)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:92:2:372:353",
+					"start": 353,
+					"end": 365,
+					"text": "Praxic Blade",
+					"color": "rgb(255, 217, 102)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:92:2:384:365",
+					"start": 365,
+					"end": 371,
+					"text": ", and ",
+					"color": "rgb(153, 153, 153)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:92:2:390:371",
+					"start": 371,
+					"end": 388,
+					"text": "Unpowered/Glaive ",
+					"color": "rgb(137, 205, 209)"
+				},
+				{
 					"keywordId": "pattern:text-energy-melee",
-					"start": 384,
-					"end": 389,
+					"start": 388,
+					"end": 393,
 					"text": "Melee",
 					"colorClass": "text-energy-melee"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:92:2:325:389",
-					"start": 389,
-					"end": 390,
+					"keywordId": "sheet-color:Armor Perks:92:2:412:393",
+					"start": 393,
+					"end": 394,
 					"text": "!",
 					"color": "rgb(153, 153, 153)"
 				}

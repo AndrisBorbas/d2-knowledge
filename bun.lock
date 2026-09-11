@@ -22,6 +22,7 @@
         "swetrix": "^4.6.1",
         "tailwind-merge": "^3.6.0",
         "tailwindcss": "^4",
+        "zod": "^4.4.3",
         "zustand": "^5.0.15",
       },
       "devDependencies": {

@@ -14,17 +14,14 @@ import {
 	type UnifiedSourceRef,
 } from "@/lib/compendium/unified";
 
-import { fetchSheetTabsWithColors, type SheetColorIndex } from "./api";
-import {
-	COMPENDIUM_ACTIVE_TAB_NAMES,
-	COMPENDIUM_SHEET_ID,
-	COMPENDIUM_TAB_NORMALIZATION,
-} from "./config";
+import type { SheetColorIndex } from "../sheets/api";
+import { COMPENDIUM_TAB_NORMALIZATION } from "./config";
 import {
 	EXOTIC_CLASS_ITEM_BY_CLASS,
 	EXOTIC_CLASS_TAB_NAME,
 } from "./exotic-class-items";
 import { normalizeTabs } from "./normalize";
+import { readDdcSheetSnapshot } from "./snapshot";
 
 function normalizeTitle(value: string) {
 	return value
@@ -97,14 +94,7 @@ export async function loadDdcTabs(): Promise<{
 	tabs: TabData[];
 	colors: SheetColorIndex;
 }> {
-	const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
-	if (!apiKey) throw new Error("GOOGLE_SHEETS_API_KEY is not set");
-
-	const { grid, colors } = await fetchSheetTabsWithColors(
-		COMPENDIUM_SHEET_ID,
-		COMPENDIUM_ACTIVE_TAB_NAMES,
-		apiKey,
-	);
+	const { grid, colors } = await readDdcSheetSnapshot();
 	return { tabs: normalizeTabs(grid, COMPENDIUM_TAB_NORMALIZATION), colors };
 }
 
@@ -205,11 +195,23 @@ export type DdcSourceResult = {
 	colors: SheetColorIndex;
 };
 
-export async function loadDdcSource(): Promise<DdcSourceResult> {
+async function buildDdcSource(): Promise<DdcSourceResult> {
 	const [{ tabs, colors }, bungieResolver] = await Promise.all([
 		loadDdcTabs(),
 		loadBungieManifestSnapshotResolver(),
 	]);
 	const { entries, unifiedEntries } = toUnifiedDdcEntries(tabs, bungieResolver);
 	return { tabs, entries, unifiedEntries, colors };
+}
+
+// Normalizing the whole sheet is not cheap and the manifest script asks for it
+// twice in one process. One promise per process, as elsewhere.
+let cachedSource: Promise<DdcSourceResult> | null = null;
+
+export function loadDdcSource() {
+	cachedSource ??= buildDdcSource().catch((error: unknown) => {
+		cachedSource = null;
+		throw error;
+	});
+	return cachedSource;
 }

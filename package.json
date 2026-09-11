@@ -14,7 +14,10 @@
 		"data:compendium:snapshot": "bun run scripts/compile-compendium.mts",
 		"data:bungie:snapshot": "bun run scripts/fetch-bungie-manifest.mts",
 		"data:clarity:snapshot": "bun run scripts/fetch-clarity.mts",
-		"data:compile": "bun run data:clarity:snapshot && bun run data:bungie:snapshot && bun run data:compendium:snapshot"
+		"data:ddc:snapshot": "bun run scripts/fetch-ddc-sheet.mts",
+		"data:aegis:snapshot": "bun run scripts/fetch-aegis-sheets.mts",
+		"data:weapons:snapshot": "bun run scripts/compile-weapons.mts",
+		"data:compile": "bun run data:clarity:snapshot && bun run data:ddc:snapshot && bun run data:aegis:snapshot && bun run data:bungie:snapshot && bun run data:compendium:snapshot && bun run data:weapons:snapshot"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.1.23",
@@ -34,6 +37,7 @@
 		"swetrix": "^4.6.1",
 		"tailwind-merge": "^3.6.0",
 		"tailwindcss": "^4",
+		"zod": "^4.4.3",
 		"zustand": "^5.0.15"
 	},
 	"devDependencies": {

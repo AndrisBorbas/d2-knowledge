@@ -60,6 +60,16 @@ html {
 	--color-energy-class: var(--color-violet-400);
 	--color-energy-ability: var(--color-blue-400);
 
+	/* Tier-list ranks, S down to F. Distinct from --color-tier-*, which names
+	   a combatant's tier (minor, elite, boss) and means something else. */
+	--color-rank-s: var(--color-amber-300);
+	--color-rank-a: var(--color-emerald-300);
+	--color-rank-b: var(--color-teal-300);
+	--color-rank-c: var(--color-sky-300);
+	--color-rank-d: var(--color-indigo-300);
+	--color-rank-e: var(--color-violet-300);
+	--color-rank-f: var(--color-rose-400);
+
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--font-display: "NeueHaasGroteskDisp", var(--font-geist-sans);

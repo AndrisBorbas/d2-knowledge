@@ -52,16 +52,24 @@ function buildRuns(cell: SheetsApiCellData | undefined): SheetColorRun[] {
 	});
 }
 
+export type SheetFetchResult = {
+	grid: Record<string, string[][]>;
+	colors: SheetColorIndex;
+	// Tab title -> gid. Recorded so a snapshot can assert it still points at the
+	// tab it was written against: a renamed tab silently returns nothing.
+	tabIds: Record<string, number>;
+};
+
 export async function fetchSheetTabsWithColors(
 	sheetId: string,
 	tabs: string[],
 	apiKey: string,
-): Promise<{ grid: Record<string, string[][]>; colors: SheetColorIndex }> {
+): Promise<SheetFetchResult> {
 	const params = new URLSearchParams();
 	for (const tab of tabs) params.append("ranges", tab);
 	params.set(
 		"fields",
-		"sheets(properties.title,data.rowData.values(formattedValue,textFormatRuns))",
+		"sheets(properties(title,sheetId),data.rowData.values(formattedValue,textFormatRuns))",
 	);
 	params.set("key", apiKey);
 
@@ -73,17 +81,21 @@ export async function fetchSheetTabsWithColors(
 
 	const json = (await res.json()) as {
 		sheets?: {
-			properties?: { title?: string };
+			properties?: { title?: string; sheetId?: number };
 			data?: { rowData?: { values?: SheetsApiCellData[] }[] }[];
 		}[];
 	};
 
 	const grid: Record<string, string[][]> = {};
 	const colors: SheetColorIndex = new Map();
+	const tabIds: Record<string, number> = {};
 
 	for (const sheet of json.sheets ?? []) {
 		const tabName = sheet.properties?.title;
 		if (!tabName) continue;
+		if (typeof sheet.properties?.sheetId === "number") {
+			tabIds[tabName] = sheet.properties.sheetId;
+		}
 
 		const rowData = sheet.data?.[0]?.rowData ?? [];
 		const rows: string[][] = [];
@@ -109,5 +121,5 @@ export async function fetchSheetTabsWithColors(
 		grid[tabName] = rows;
 	}
 
-	return { grid, colors };
+	return { grid, colors, tabIds };
 }

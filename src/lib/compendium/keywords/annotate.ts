@@ -1,4 +1,4 @@
-import { type SheetColorIndex, sheetColorKey } from "@/lib/ddc/api";
+import { type SheetColorIndex, sheetColorKey } from "@/lib/sheets/api";
 
 import type {
 	AnnotatedAlternateDescription,

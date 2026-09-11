@@ -71,3 +71,77 @@ export function fuzzyFilterCompendiumEntries(
 				(scores.get(right.id) ?? Number.MAX_SAFE_INTEGER),
 		);
 }
+
+// Weapons are their own shape: a name, the roll the sheet recommends, and the
+// note explaining the rating. Same Fuse settings as the compendium search
+// above, different keys, because `fuzzyFilterCompendiumEntries` is bound to
+// `AnnotatedEntry`.
+export type SearchableWeapon = {
+	id: string;
+	name: string;
+	nameNote?: string;
+	frame?: string;
+	source?: string;
+	notes?: string;
+	usage?: string;
+	description?: string;
+	categoryLabel?: string;
+	perks1?: string[];
+	perks2?: string[];
+	originTraits?: string[];
+	tags?: string[];
+};
+
+export function fuzzyFilterWeapons<T extends SearchableWeapon>(
+	rows: T[],
+	rawQuery: string,
+): T[] {
+	const query = rawQuery.trim();
+	if (query.length === 0) return rows;
+
+	const indexed = rows.map((row) => ({
+		row,
+		name: row.name,
+		nameNote: row.nameNote ?? "",
+		frame: row.frame ?? "",
+		source: row.source ?? "",
+		category: row.categoryLabel ?? "",
+		perks: [
+			...(row.perks1 ?? []),
+			...(row.perks2 ?? []),
+			...(row.originTraits ?? []),
+			...(row.tags ?? []),
+		].join(", "),
+		prose: [row.notes, row.usage, row.description].filter(Boolean).join(" "),
+	}));
+
+	const fuse = new Fuse(indexed, {
+		includeScore: true,
+		ignoreLocation: true,
+		threshold: SEARCH_THRESHOLD,
+		minMatchCharLength: 2,
+		useExtendedSearch: true,
+		keys: [
+			{ name: "name", weight: 0.6 },
+			{ name: "frame", weight: 0.54 },
+			{ name: "category", weight: 0.52 },
+			{ name: "perks", weight: 0.5 },
+			{ name: "source", weight: 0.48 },
+			{ name: "nameNote", weight: 0.45 },
+			{ name: "prose", weight: 0.4 },
+		],
+	});
+
+	const scores = new Map<string, number>();
+	for (const result of fuse.search(query)) {
+		scores.set(result.item.row.id, result.score ?? Number.MAX_SAFE_INTEGER);
+	}
+
+	return rows
+		.filter((row) => scores.has(row.id))
+		.sort(
+			(left, right) =>
+				(scores.get(left.id) ?? Number.MAX_SAFE_INTEGER) -
+				(scores.get(right.id) ?? Number.MAX_SAFE_INTEGER),
+		);
+}

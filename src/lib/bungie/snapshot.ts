@@ -20,6 +20,7 @@ import {
 	type SubclassSlotId,
 	toSlug,
 } from "./subclass-schema";
+import type { CompactWeaponRow } from "./weapon-schema";
 
 type BungieDisplayProperties = {
 	name?: string;
@@ -61,6 +62,7 @@ type BungieManifestSnapshot = {
 		DestinyEquipableItemSetDefinition?: Record<string, BungieItemSetRow>;
 		DestinyStatDefinition?: Record<string, BungieManifestRow>;
 		Subclasses?: Record<string, CompactSubclassRow>;
+		Weapons?: Record<string, CompactWeaponRow>;
 	};
 };
 
@@ -145,6 +147,15 @@ export type BungieSubclass = {
 	slots: BungieSubclassSlot[];
 };
 
+export type BungieWeaponEnrichment = {
+	name: string;
+	iconPath?: string;
+	watermarkPath?: string;
+	tierType?: number;
+	damageType?: number;
+	ammoType?: number;
+};
+
 export type BungieManifestSnapshotResolver = {
 	getSubclasses(): BungieSubclass[];
 	getStatName(statHash: number): string | undefined;
@@ -164,6 +175,7 @@ export type BungieManifestSnapshotResolver = {
 		perkName?: string;
 		perkIconPath?: string;
 	} | null;
+	getWeaponEnrichmentByName(name: string): BungieWeaponEnrichment | null;
 	getArmorSetBonusPerkEnrichment(params: {
 		setName: string;
 		requiredSetCount: number;
@@ -189,6 +201,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly itemSetTable: Record<string, BungieItemSetRow> | null;
 	private readonly statTable: Record<string, BungieManifestRow> | null;
 	private readonly subclassTable: Record<string, CompactSubclassRow> | null;
+	private readonly weaponTable: Record<string, CompactWeaponRow> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
 	private readonly artifactPerkDisplayByName: Map<
@@ -223,6 +236,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		this.subclassTable = asRecord<CompactSubclassRow>(
 			snapshot.tables?.Subclasses,
 		);
+		this.weaponTable = asRecord<CompactWeaponRow>(snapshot.tables?.Weapons);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
 		this.artifactPerkDisplayByName = new Map<string, BungieDisplayProperties>();
@@ -349,6 +363,24 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		return {
 			perkName: display.name,
 			perkIconPath: normalizeIconPath(display.icon),
+		};
+	}
+
+	// Weapons live in their own name-keyed table: the Aegis sheets name them
+	// but cannot carry their icons, and a weapon name matches several
+	// inventory rows. Returns null on a snapshot taken before that table
+	// existed, the way the other lookups do.
+	getWeaponEnrichmentByName(name: string): BungieWeaponEnrichment | null {
+		const row = this.weaponTable?.[normalizeLookupName(name)];
+		if (!row) return null;
+
+		return {
+			name: row.n,
+			iconPath: normalizeIconPath(row.i),
+			watermarkPath: normalizeIconPath(row.w),
+			tierType: row.tt,
+			damageType: row.dt,
+			ammoType: row.at,
 		};
 	}
 

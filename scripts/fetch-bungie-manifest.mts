@@ -1,6 +1,9 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
+import { EXOTICS_TAB,WEAPON_TIER_TABS } from "../src/lib/aegis/config";
+import { readAegisSheetSnapshot } from "../src/lib/aegis/snapshot";
+import { cellFirstLine, readTable } from "../src/lib/aegis/table";
 import { ARMOR_SET_NAME_ALIASES } from "../src/lib/bungie/armor-set-aliases";
 import { EXOTIC_PERK_ITEM_NAME_ALIASES } from "../src/lib/bungie/exotic-perk-item-aliases";
 import {
@@ -19,6 +22,12 @@ import {
 	toElementToken,
 	toSubclassSlotId,
 } from "../src/lib/bungie/subclass-schema";
+import {
+	type CompactWeaponRow,
+	DUMMY_ITEM_CATEGORY_HASH,
+	WEAPON_ITEM_TYPE,
+	type WeaponTable,
+} from "../src/lib/bungie/weapon-schema";
 import {
 	ARTIFACT_TAB_NAME,
 	stripReleaseLabel,
@@ -64,6 +73,7 @@ type CompactManifestTables = {
 	DestinyInventoryItemDefinition: Record<string, CompactDefinition>;
 	DestinyStatDefinition: Record<string, CompactDefinition>;
 	Subclasses: Record<string, CompactSubclassRow>;
+	Weapons: WeaponTable;
 	DestinySandboxPerkDefinition: Record<string, CompactDefinition>;
 	DestinyTraitDefinition: Record<string, CompactDefinition>;
 	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
@@ -168,6 +178,102 @@ async function collectArmorSetNames() {
 		console.warn("Unable to collect armor set names:", error);
 		return new Set<string>();
 	}
+}
+
+// The Aegis tier tabs name every rated weapon; the manifest is where their
+// icons live. Read straight from the raw snapshot rather than the compiled
+// weapons dataset, which is built after this script and would be a cycle.
+async function collectAegisWeaponNames() {
+	const snapshot = await readAegisSheetSnapshot("endgame");
+	const nameKeys = new Set<string>();
+
+	for (const layout of [...WEAPON_TIER_TABS, EXOTICS_TAB]) {
+		const grid = snapshot.grid[layout.tab];
+		if (!grid) {
+			throw new Error(
+				`The Aegis endgame snapshot has no "${layout.tab}" tab. Re-run the aegis snapshot script.`,
+			);
+		}
+		for (const row of readTable(grid, layout).rows) {
+			const key = normalizeLookupName(cellFirstLine(row.get("Name")));
+			if (key) nameKeys.add(key);
+		}
+	}
+
+	return nameKeys;
+}
+
+function asNumber(value: unknown) {
+	return typeof value === "number" ? value : undefined;
+}
+
+// A weapon name matches several manifest rows: the current copy, sunset
+// reissues, adept variants, vendor previews. Keep exactly one per name, biased
+// towards the row a player would recognise.
+function scoreWeaponRow(
+	row: Record<string, unknown>,
+	compact: CompactWeaponRow,
+) {
+	let score = compact.tt ?? 0;
+	if (compact.w) score += 4;
+	if (typeof row.screenshot === "string" && row.screenshot.length > 0) {
+		score += 2;
+	}
+	return score;
+}
+
+function collectWeaponRows(table: unknown, wantedNameKeys: Set<string>) {
+	const source = asRecord<unknown>(table);
+	const rows: WeaponTable = {};
+	if (!source) return rows;
+
+	const scores = new Map<string, number>();
+
+	for (const value of Object.values(source)) {
+		const row = asRecord<unknown>(value);
+		if (!row || row.redacted === true) continue;
+		if (asNumber(row.itemType) !== WEAPON_ITEM_TYPE) continue;
+
+		const categories = Array.isArray(row.itemCategoryHashes)
+			? (row.itemCategoryHashes as number[])
+			: [];
+		if (categories.includes(DUMMY_ITEM_CATEGORY_HASH)) continue;
+
+		const displayProperties = asRecord<unknown>(row.displayProperties);
+		const name =
+			typeof displayProperties?.name === "string"
+				? displayProperties.name
+				: undefined;
+		const icon =
+			typeof displayProperties?.icon === "string"
+				? displayProperties.icon
+				: undefined;
+		if (!name || !icon) continue;
+
+		const key = normalizeLookupName(name);
+		if (!wantedNameKeys.has(key)) continue;
+
+		const equippingBlock = asRecord<unknown>(row.equippingBlock);
+		const watermark =
+			typeof row.iconWatermark === "string" && row.iconWatermark.length > 0
+				? row.iconWatermark
+				: undefined;
+		const compact: CompactWeaponRow = {
+			n: name,
+			i: icon,
+			w: watermark,
+			tt: asNumber(row.itemTierType),
+			dt: asNumber(row.defaultDamageType),
+			at: asNumber(equippingBlock?.ammoType),
+		};
+
+		const score = scoreWeaponRow(row, compact);
+		if (rows[key] && (scores.get(key) ?? -1) >= score) continue;
+		rows[key] = compact;
+		scores.set(key, score);
+	}
+
+	return rows;
 }
 
 function toCompactDefinition(value: unknown) {
@@ -609,6 +715,7 @@ async function main() {
 	const { perkHashes, itemHashes } = await collectClarityManifestHashes();
 	const ddcTitleKeys = await collectDdcLookupTitles();
 	const armorSetNameKeys = await collectArmorSetNames();
+	const aegisWeaponNameKeys = await collectAegisWeaponNames();
 	const snapshot = await fetchDestinyManifestTables(DEFAULT_MANIFEST_TABLES);
 
 	const itemSetResult = filterItemSetTableToNames(
@@ -648,6 +755,11 @@ async function main() {
 		if (row) row.st = stats;
 	}
 
+	const weaponRows = collectWeaponRows(
+		snapshot.tables.DestinyInventoryItemDefinition,
+		aegisWeaponNameKeys,
+	);
+
 	const compactTables: CompactManifestTables = {
 		DestinyInventoryItemDefinition: inventoryTable,
 		DestinySandboxPerkDefinition: filterTableToHashesAndTitles(
@@ -672,6 +784,7 @@ async function main() {
 			subclassResult.statHashes,
 		),
 		Subclasses: subclassResult.rows,
+		Weapons: weaponRows,
 	};
 
 	const outputPath = path.join(outputDir, "bungie-manifest.json");
@@ -692,6 +805,9 @@ async function main() {
 	);
 
 	console.log(`Wrote Bungie manifest snapshot: ${outputPath}`);
+	console.log(
+		`Weapons: ${String(Object.keys(weaponRows).length)} of ${String(aegisWeaponNameKeys.size)} sheet names matched`,
+	);
 	console.log(
 		`Subclasses: ${String(Object.keys(subclassResult.rows).length)}, options: ${String(subclassResult.optionHashes.size)}`,
 	);
