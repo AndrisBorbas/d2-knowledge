@@ -4,6 +4,7 @@ import {
 	ENDGAME_SHEET_NAME,
 	ENDGAME_SHEET_URL,
 	SHEET_AUTHOR,
+	SHEET_AUTHOR_URL,
 } from "@/lib/aegis/config";
 import type { WeaponsDataset } from "@/lib/weapons/model";
 
@@ -31,28 +32,21 @@ export function SheetHeader({ dataset, isComplete }: SheetHeaderProps) {
 				Weapons
 			</h1>
 			<p className="max-w-3xl text-sm leading-7 text-white/72">
-				Every legendary and exotic weapon rated for endgame PvE, the damage math
-				behind each archetype, and the measured boss damage the ratings rest on.
-				This is a reading of two community spreadsheets, both researched and
-				maintained by {SHEET_AUTHOR}:{" "}
-				<a
-					href={ENDGAME_SHEET_URL}
-					target="_blank"
-					rel="noreferrer"
-					className={LINK_CLASS}
-				>
+				Every legendary and exotic weapon rated for endgame PvE. This is a
+				compilation of two community spreadsheets, both researched and
+				maintained by{" "}
+				<a href={SHEET_AUTHOR_URL} target="_blank" className={LINK_CLASS}>
+					{SHEET_AUTHOR}
+				</a>
+				:{" "}
+				<a href={ENDGAME_SHEET_URL} target="_blank" className={LINK_CLASS}>
 					{ENDGAME_SHEET_NAME}
 				</a>{" "}
 				and the{" "}
-				<a
-					href={DPS_SHEET_URL}
-					target="_blank"
-					rel="noreferrer"
-					className={LINK_CLASS}
-				>
+				<a href={DPS_SHEET_URL} target="_blank" className={LINK_CLASS}>
 					{DPS_SHEET_NAME}
 				</a>
-				. Every view links back to the tab it came from.
+				.
 			</p>
 			<p className="text-xs tracking-[0.12em] text-white/45 uppercase">
 				{isComplete

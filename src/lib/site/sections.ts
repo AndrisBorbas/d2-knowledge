@@ -31,8 +31,7 @@ export const SITE_PAGES: SiteSection[] = [
 		slug: "weapons",
 		href: "/weapons",
 		title: "Weapons",
-		description:
-			"Every legendary and exotic weapon rated for endgame PvE, with the archetype math and the measured boss damage behind the ratings.",
+		description: "Every legendary and exotic weapon rated for endgame PvE.",
 		status: "live",
 	},
 	{

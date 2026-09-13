@@ -113,7 +113,6 @@ function SourceAttribution({
 			<a
 				href={source.href}
 				target="_blank"
-				rel="noopener noreferrer"
 				className="decoration-masterwork/80 text-masterwork/80 underline-offset-0 transition-all hover:text-white/90 hover:underline hover:underline-offset-2"
 			>
 				{source.label}

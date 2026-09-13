@@ -7,8 +7,15 @@ import {
 	ARCHETYPES_TAB,
 	ENDGAME_SHEET_URL,
 	sheetTabUrl,
+	TierRank,
 } from "@/lib/aegis/config";
-import { cellSortValue, formatCell, statusForTab } from "@/lib/weapons/display";
+import {
+	cellSortValue,
+	compareTierRows,
+	formatCell,
+	statusForTab,
+	TIER_ORDER,
+} from "@/lib/weapons/display";
 import type { ArchetypeRow, WeaponsDataset } from "@/lib/weapons/model";
 
 import { SheetCredit } from "./SheetCredit";
@@ -88,7 +95,7 @@ export function ArchetypesView({ dataset, query }: ArchetypesViewProps) {
 			{
 				key: "tier",
 				label: "Tier",
-				sortValue: (row) => row.tier ?? "Z",
+				sortValue: (row) => TIER_ORDER.indexOf(row.tier as TierRank),
 				render: (row) => (
 					<TierBadge tier={row.tier} legend={dataset.tierLegend} />
 				),

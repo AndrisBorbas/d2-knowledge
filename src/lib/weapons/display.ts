@@ -60,7 +60,7 @@ export function formatSeason(season: number | null) {
 	return season === null ? "-" : `S${String(season)}`;
 }
 
-const TIER_ORDER: string[] = ["S", "A", "B", "C", "D", "E", "F"];
+export const TIER_ORDER: string[] = ["S", "A", "B", "C", "D", "E", "F"];
 
 // The sheet's `#` rank only means anything inside its own tab, so a list
 // spanning several tabs orders by tier and lets the rank break ties. Shared by

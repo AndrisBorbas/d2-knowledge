@@ -2,6 +2,11 @@
 
 import { useMemo } from "react";
 
+import { AnnotatedText } from "@/components/tooltip/AnnotatedText";
+import type {
+	KeywordClickPayload,
+	KeywordHoverPayload,
+} from "@/components/tooltip/types";
 import { Button } from "@/components/ui/Button";
 import {
 	BOSSES_TAB,
@@ -10,6 +15,11 @@ import {
 	sheetTabUrl,
 	SUSTAINED_TAB,
 } from "@/lib/aegis/config";
+import type {
+	AnnotatedEntry,
+	Annotation,
+	Keyword,
+} from "@/lib/compendium/model";
 import { cellSortValue, formatCell } from "@/lib/weapons/display";
 import type {
 	BossRow,
@@ -29,17 +39,30 @@ export const DAMAGE_TABS = [
 
 export type DamageTab = (typeof DAMAGE_TABS)[number][0];
 
+// The glossary matcher already ran over the sheet's own prose at build time, so
+// the view only has to hand the offsets and the entries to the renderer. Empty
+// until the perk bundle arrives, which prints the same sentence unlinked.
+export type DamageGlossary = {
+	entryMap: Map<string, AnnotatedEntry>;
+	keywordById: Map<string, Keyword>;
+	annotationsFor: (rowId: string, field: string) => Annotation[];
+	onKeywordHover: (payload: KeywordHoverPayload) => void;
+	onKeywordLeave: () => void;
+	onKeywordClick: (payload: KeywordClickPayload) => void;
+};
+
 type DamageViewProps = {
 	dataset: WeaponsDataset;
 	query: string;
 	tab: DamageTab;
 	onTabChange: (tab: DamageTab) => void;
+	glossary: DamageGlossary;
 };
 
 const SHOT_GRID =
-	"grid min-w-[52rem] grid-cols-[8rem_minmax(0,1fr)_5rem_5rem_7rem_minmax(0,1fr)_6rem] items-center gap-3";
+	"grid min-w-[44rem] grid-cols-[9rem_minmax(0,1fr)_6rem_6rem_7rem_5rem] items-center gap-3";
 const SUSTAINED_GRID =
-	"grid min-w-[56rem] grid-cols-[minmax(0,1.4fr)_5rem_6rem_5rem_5rem_6rem_6rem] items-center gap-3";
+	"grid min-w-[52rem] grid-cols-[minmax(0,1fr)_5rem_6rem_5rem_6rem_6rem_6rem] items-center gap-3";
 const BOSS_GRID =
 	"grid min-w-[56rem] grid-cols-[minmax(0,1fr)_minmax(0,1fr)_7rem_7rem_6rem_6rem_minmax(0,1fr)] items-center gap-3";
 
@@ -49,11 +72,52 @@ function matches(query: string, ...fields: (string | undefined)[]) {
 	return fields.filter(Boolean).join(" ").toLowerCase().includes(needle);
 }
 
+// The conditions behind a damage number run to a line and a half, and every
+// perk in them is a link, so they get a full width strip under the row rather
+// than a column that would truncate half of them out of reach.
+function SetupLine({
+	rowId,
+	blocks,
+	glossary,
+}: {
+	rowId: string;
+	// Field name on the row and the text it holds, in reading order. The field
+	// is what the build step keyed its offsets by.
+	blocks: { field: string; text: string | undefined }[];
+	glossary: DamageGlossary;
+}) {
+	const present = blocks.filter(
+		(block) => block.text !== undefined && block.text.length > 0,
+	);
+	if (present.length === 0) return null;
+
+	return (
+		<p className="text-xs leading-5 text-white/55">
+			{present.map((block, index) => (
+				<span key={block.field}>
+					{index > 0 ? <span className="text-white/25"> - </span> : null}
+					<AnnotatedText
+						text={block.text ?? ""}
+						annotations={glossary.annotationsFor(rowId, block.field)}
+						entryMap={glossary.entryMap}
+						keywordById={glossary.keywordById}
+						onKeywordHover={glossary.onKeywordHover}
+						onKeywordLeave={glossary.onKeywordLeave}
+						onKeywordClick={glossary.onKeywordClick}
+						linkClassName="text-xs"
+					/>
+				</span>
+			))}
+		</p>
+	);
+}
+
 export function DamageView({
 	dataset,
 	query,
 	tab,
 	onTabChange,
+	glossary,
 }: DamageViewProps) {
 	const shotRows = useMemo(
 		() =>
@@ -124,13 +188,6 @@ export function DamageView({
 				),
 		},
 		{
-			key: "modifiers",
-			label: "Conditions",
-			secondary: true,
-			render: (row) =>
-				[row.modifiers, row.otherTicks].filter(Boolean).join(" - ") || "-",
-		},
-		{
 			key: "patch",
 			label: "Patch",
 			secondary: true,
@@ -145,14 +202,7 @@ export function DamageView({
 			key: "name",
 			label: "Setup",
 			sortValue: (row) => row.name,
-			render: (row) => (
-				<span title={row.loadout}>
-					<span className="text-white">{row.name}</span>
-					{row.loadout ? (
-						<span className="text-white/45"> {row.loadout}</span>
-					) : null}
-				</span>
-			),
+			render: (row) => <span className="text-white">{row.name}</span>,
 		},
 		{
 			key: "slot",
@@ -302,11 +352,27 @@ export function DamageView({
 						rowKey={(row) => row.id}
 						gridClass={SHOT_GRID}
 						initialSort={{ key: "normalized", direction: "desc" }}
+						// Null rather than an empty strip, so a row the sheet said
+						// nothing about keeps a table row's height.
+						renderDetail={(row) =>
+							(row.modifiers ?? row.otherTicks) ? (
+								<SetupLine
+									rowId={row.id}
+									blocks={[
+										{ field: "modifiers", text: row.modifiers },
+										{ field: "otherTicks", text: row.otherTicks },
+									]}
+									glossary={glossary}
+								/>
+							) : null
+						}
 					/>
 					<p className="text-xs leading-6 text-white/45">
 						Crit and body are the raw numbers a shot prints on a boss in the
 						sheet&apos;s test conditions. Normalized scales those to one
-						benchmark so two weapons can be compared directly.
+						benchmark so two weapons can be compared directly. The conditions
+						under each row name what was equipped and how the shot was measured;
+						anything the glossary knows about links to its entry.
 					</p>
 				</>
 			) : null}
@@ -319,10 +385,24 @@ export function DamageView({
 						rowKey={(row) => row.id}
 						gridClass={SUSTAINED_GRID}
 						initialSort={{ key: "dps", direction: "desc" }}
+						renderDetail={(row) =>
+							(row.loadout ?? row.notes) ? (
+								<SetupLine
+									rowId={row.id}
+									blocks={[
+										{ field: "loadout", text: row.loadout },
+										{ field: "notes", text: row.notes },
+									]}
+									glossary={glossary}
+								/>
+							) : null
+						}
 					/>
 					<p className="text-xs leading-6 text-white/45">
 						Each row is one simulated damage rotation with the perks, surges and
-						debuffs the sheet names. TtE is time to empty in seconds.
+						debuffs the sheet names. TtE is time to empty in seconds. The setup
+						under each row is the sheet&apos;s own wording, with every perk,
+						fragment and buff the glossary knows linked to its entry.
 					</p>
 				</>
 			) : null}

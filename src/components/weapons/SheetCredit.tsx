@@ -4,6 +4,7 @@ import {
 	ENDGAME_SHEET_NAME,
 	ENDGAME_SHEET_URL,
 	SHEET_AUTHOR,
+	SHEET_AUTHOR_URL,
 } from "@/lib/aegis/config";
 import type { TabStatus } from "@/lib/weapons/model";
 
@@ -33,25 +34,18 @@ export function SheetCredit({
 	return (
 		<p className="text-xs leading-6 text-white/60">
 			Ratings and numbers from{" "}
-			<a
-				href={sheetUrl}
-				target="_blank"
-				rel="noreferrer"
-				className={LINK_CLASS}
-			>
+			<a href={sheetUrl} target="_blank" className={LINK_CLASS}>
 				{sheetName}
 			</a>{" "}
-			by {SHEET_AUTHOR}.
-			{status ? ` ${status.tab} last updated ${status.updated}.` : null}
+			by{" "}
+			<a href={SHEET_AUTHOR_URL} target="_blank" className={LINK_CLASS}>
+				{SHEET_AUTHOR}
+			</a>
+			.{status ? ` ${status.tab} last updated ${status.updated}.` : null}
 			{tabUrl && tabLabel ? (
 				<>
 					{" "}
-					<a
-						href={tabUrl}
-						target="_blank"
-						rel="noreferrer"
-						className={LINK_CLASS}
-					>
+					<a href={tabUrl} target="_blank" className={LINK_CLASS}>
 						Open the {tabLabel} tab
 					</a>
 					.

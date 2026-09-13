@@ -3,12 +3,14 @@
 // the measured damage numbers. Neither is ours, so the site credits both.
 export const ENDGAME_SHEET_ID = "1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY";
 export const ENDGAME_SHEET_NAME = "Destiny 2: Endgame Analysis";
-export const ENDGAME_SHEET_URL = `https://docs.google.com/spreadsheets/d/${ENDGAME_SHEET_ID}/edit`;
+export const ENDGAME_SHEET_URL = `https://docs.google.com/spreadsheets/d/${ENDGAME_SHEET_ID}/edit?utm_source=owlsector`;
 
 export const DPS_SHEET_ID = "1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4";
 export const DPS_SHEET_NAME = "Boss DPS Spreadsheet";
-export const DPS_SHEET_URL = `https://docs.google.com/spreadsheets/d/${DPS_SHEET_ID}/edit`;
+export const DPS_SHEET_URL = `https://docs.google.com/spreadsheets/d/${DPS_SHEET_ID}/edit?utm_source=owlsector`;
 
+export const SHEET_AUTHOR_URL =
+	"https://linktr.ee/TheAegisRelic?utm_source=owlsector";
 export const SHEET_AUTHOR = "@theaegisrelic";
 
 export function sheetTabUrl(sheetUrl: string, gid: number) {

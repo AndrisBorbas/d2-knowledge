@@ -3,9 +3,12 @@
 import { useCallback, useMemo, useRef, useState } from "react";
 
 import { buildBundleMaps } from "@/lib/compendium/bundle";
+import type { Annotation } from "@/lib/compendium/model";
 import { normalizeLookupName } from "@/lib/utils/text";
 import { WEAPON_PERKS_ASSET_URL } from "@/lib/weapons/asset";
-import type { WeaponPerkBundle } from "@/lib/weapons/perks";
+import { type WeaponPerkBundle, weaponTextKey } from "@/lib/weapons/perks";
+
+const NO_ANNOTATIONS: Annotation[] = [];
 
 const EMPTY_MAPS = buildBundleMaps({
 	entries: [],
@@ -53,5 +56,14 @@ export function useWeaponPerks() {
 		[bundle],
 	);
 
-	return { load, entryMap, keywordMap, entryIdForPerk };
+	// Where the glossary matcher found something inside one of the damage tabs'
+	// prose cells. A stable empty array, so a cell with no matches does not
+	// re-render every time the bundle reference changes.
+	const annotationsFor = useCallback(
+		(rowId: string, field: string) =>
+			bundle?.textAnnotations[weaponTextKey(rowId, field)] ?? NO_ANNOTATIONS,
+		[bundle],
+	);
+
+	return { load, entryMap, keywordMap, entryIdForPerk, annotationsFor };
 }

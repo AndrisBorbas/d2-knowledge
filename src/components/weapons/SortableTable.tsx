@@ -27,6 +27,10 @@ type SortableTableProps<T> = {
 	gridClass: string;
 	initialSort?: { key: string; direction: SortDirection };
 	emptyMessage?: string;
+	// A full width strip under the row, for prose the grid has no honest width
+	// for: the conditions behind a damage number run to a line and a half and
+	// would otherwise be truncated into uselessness.
+	renderDetail?: (row: T) => React.ReactNode;
 };
 
 const HEADER_CLASS =
@@ -50,6 +54,7 @@ export function SortableTable<T>({
 	gridClass,
 	initialSort,
 	emptyMessage = "Nothing matches those filters.",
+	renderDetail,
 }: SortableTableProps<T>) {
 	const [sort, setSort] = useState<{ key: string; direction: SortDirection }>(
 		initialSort ?? { key: columns[0].key, direction: "asc" },
@@ -128,29 +133,39 @@ export function SortableTable<T>({
 						{emptyMessage}
 					</p>
 				) : (
-					sorted.map((row) => (
-						<div
-							key={rowKey(row)}
-							className={cn(
-								gridClass,
-								"border-b border-blue-500/15 px-3 py-2 transition last:border-b-0 hover:bg-blue-500/10",
-							)}
-						>
-							{columns.map((column) => (
-								<span
-									key={column.key}
+					sorted.map((row) => {
+						const detail = renderDetail?.(row);
+
+						return (
+							<div
+								key={rowKey(row)}
+								className="border-b border-blue-500/15 transition last:border-b-0 hover:bg-blue-500/10"
+							>
+								<div
 									className={cn(
-										"min-w-0 truncate text-sm text-white/80",
-										column.align === "right" && "text-right tabular-nums",
-										column.secondary && "hidden md:block",
-										column.className,
+										gridClass,
+										"px-3 pt-2",
+										detail ? "pb-1" : "pb-2",
 									)}
 								>
-									{column.render(row)}
-								</span>
-							))}
-						</div>
-					))
+									{columns.map((column) => (
+										<span
+											key={column.key}
+											className={cn(
+												"min-w-0 truncate text-sm text-white/80",
+												column.align === "right" && "text-right tabular-nums",
+												column.secondary && "hidden md:block",
+												column.className,
+											)}
+										>
+											{column.render(row)}
+										</span>
+									))}
+								</div>
+								{detail ? <div className="px-3 pb-2">{detail}</div> : null}
+							</div>
+						);
+					})
 				)}
 			</div>
 		</div>

@@ -55,6 +55,7 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 		entryMap,
 		keywordMap,
 		entryIdForPerk,
+		annotationsFor,
 	} = useWeaponPerks();
 
 	const {
@@ -103,6 +104,14 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 		parseAsString.withOptions(URL_OPTIONS),
 	);
 
+	// A shared link can arrive with a row already expanded, so the fetch the
+	// click handler would have started has to happen here too. The damage view
+	// needs the same entries the moment it is on screen, since its conditions
+	// are annotated rather than waiting on a click.
+	useEffect(() => {
+		if (expandedId || view === "damage") loadPerks();
+	}, [expandedId, view, loadPerks]);
+
 	// The input stays instant while the URL catches up on a debounce, the same
 	// split `useEntryFiltering` uses.
 	const [searchInput, setSearchInput] = useState(query);
@@ -113,6 +122,23 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 		}, SEARCH_DEBOUNCE_MS);
 		return () => clearTimeout(timer);
 	}, [searchInput, query, setQuery]);
+
+	// Resolve the keyword to the entry it points at, the way the artifacts page
+	// does before pinning, and search the glossary for that entry's own title.
+	const openKeywordInGlossary = ({
+		keywordId,
+		entryId,
+	}: {
+		keywordId: string;
+		entryId?: string;
+	}) => {
+		const referencedId = keywordMap
+			.get(keywordId)
+			?.references.find((candidate) => entryMap.has(candidate));
+		const entry = entryMap.get(referencedId ?? entryId ?? "");
+		if (!entry) return;
+		router.push(`/glossary?q=${encodeURIComponent(entry.title)}`);
+	};
 
 	const toggleFrom = (
 		current: string[],
@@ -247,9 +273,6 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 					energies={energies}
 					expandedId={expandedId}
 					onToggleRow={(id) => {
-						// Perk names only become visible on expand, which is the first
-						// moment their glossary entries are worth fetching.
-						loadPerks();
 						void setExpandedId(expandedId === id ? null : id);
 					}}
 					perks={{
@@ -272,6 +295,22 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 					onTabChange={(next: DamageTab) => {
 						void setDamageTab(next === "sustained" ? null : next);
 					}}
+					glossary={{
+						entryMap,
+						keywordById: keywordMap,
+						annotationsFor,
+						// The sheet's prose belongs to no entry, so there is no host
+						// entry to fall back to and the keyword has to resolve itself.
+						onKeywordHover: ({ keywordId, anchorRect }) => {
+							handleKeywordHover({
+								keywordId,
+								entryId: "",
+								entryRect: anchorRect,
+							});
+						},
+						onKeywordLeave: handleKeywordLeave,
+						onKeywordClick: openKeywordInGlossary,
+					}}
 				/>
 			) : null}
 
@@ -288,17 +327,7 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 				keywordMap={keywordMap}
 				onKeywordHover={handleKeywordHover}
 				onKeywordLeave={handleKeywordLeave}
-				onKeywordClick={({ keywordId, entryId }) => {
-					// Resolve the keyword to the entry it points at, the way the
-					// artifacts page does before pinning, and search the glossary for
-					// that entry's own title.
-					const referencedId = keywordMap
-						.get(keywordId)
-						?.references.find((candidate) => entryMap.has(candidate));
-					const entry = entryMap.get(referencedId ?? entryId);
-					if (!entry) return;
-					router.push(`/glossary?q=${encodeURIComponent(entry.title)}`);
-				}}
+				onKeywordClick={openKeywordInGlossary}
 				onGroupClick={(group) => {
 					router.push(`/glossary?g=${encodeURIComponent(group)}`);
 				}}

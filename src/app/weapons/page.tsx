@@ -17,7 +17,7 @@ const SEED_ROW_COUNT = 50;
 export const metadata: Metadata = {
 	title: "Weapons",
 	description:
-		"Every Destiny 2 legendary and exotic weapon rated for endgame PvE, with archetype damage math and measured boss DPS.",
+		"Every Destiny 2 legendary and exotic weapon rated for endgame PvE.",
 	alternates: { canonical: "/weapons" },
 };
 

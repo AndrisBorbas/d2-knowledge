@@ -35,7 +35,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					<a
 						href={DATA_COMPENDIUM_SHEET_URL}
 						target="_blank"
-						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
 					>
 						Data Compendium
@@ -44,7 +43,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					<a
 						href={DATA_COMPENDIUM_PATREON_URL}
 						target="_blank"
-						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
 					>
 						Patreon
@@ -56,7 +54,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					<a
 						href={CLARITY_URL}
 						target="_blank"
-						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
 					>
 						Clarity
@@ -65,7 +62,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					<a
 						href={CLARITY_DISCORD_URL}
 						target="_blank"
-						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
 					>
 						Discord
@@ -74,7 +70,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					<a
 						href={CLARITY_KOFI_URL}
 						target="_blank"
-						rel="noopener noreferrer"
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
 					>
 						Ko-fi
@@ -87,7 +82,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 				<a
 					href="https://www.github.com/AndrisBorbas/d2-knowledge"
 					target="_blank"
-					rel="noopener noreferrer"
 					className="underline hover:text-white"
 				>
 					<div className="text-masterwork size-8">
@@ -105,7 +99,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 				<a
 					href="https://ko-fi.com/andrisborbas?utm_source=owlsector"
 					target="_blank"
-					rel="noopener noreferrer"
 					className="underline hover:text-white"
 				>
 					<div className="text-masterwork size-8">
@@ -131,7 +124,6 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					<a
 						href="https://www.github.com/AndrisBorbas/d2-knowledge"
 						target="_blank"
-						rel="noopener noreferrer"
 						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/80 hover:underline hover:underline-offset-2"
 					>
 						Data last refreshed on{" "}
