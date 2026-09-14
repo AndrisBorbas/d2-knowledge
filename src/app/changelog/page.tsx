@@ -4,17 +4,18 @@ import manifest from "@/../package.json";
 import { InlineMarkdown } from "@/components/changelog/InlineMarkdown";
 import { loadChangelog } from "@/lib/changelog/load";
 import type { ChangelogSection } from "@/lib/changelog/parse";
+import { buildPageMetadata } from "@/lib/site/meta";
 
 // The changelog is a file on disk, so it is baked in at build time like every
 // other route here.
 export const dynamic = "force-static";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
 	title: "Changelog",
 	description:
 		"What changed in each release of Owl Sector, newest first: new pages, new data, fixes and removals.",
-	alternates: { canonical: "/changelog" },
-};
+	path: "/changelog",
+});
 
 // One accent per Keep a Changelog section, so a release can be skimmed by
 // colour instead of read top to bottom.

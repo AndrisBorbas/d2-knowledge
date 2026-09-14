@@ -10,18 +10,19 @@ import {
 } from "@/lib/compendium/artifacts";
 import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
+import { buildPageMetadata } from "@/lib/site/meta";
 
 // Prerendered at build time. This is load-bearing for portability, not just
 // cost: `loadCompendiumDataset` reads the dataset off disk, and runtimes like
 // Cloudflare Workers have no filesystem at request time.
 export const dynamic = "force-static";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
 	title: "Artifacts",
 	description:
 		"Every Destiny 2 artifact perk laid out the way the game shows it, with the community's hidden numbers on hover.",
-	alternates: { canonical: "/artifacts" },
-};
+	path: "/artifacts",
+});
 
 export default async function ArtifactsPage() {
 	let dataset: Awaited<ReturnType<typeof loadCompendiumDataset>> | null = null;

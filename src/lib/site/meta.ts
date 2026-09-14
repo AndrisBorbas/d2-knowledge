@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 export const SITE_URL = "https://owlsector.net";
 export const SITE_NAME = "Owl Sector";
 export const SITE_DESCRIPTION =
@@ -13,3 +15,44 @@ export const CLARITY_DISCORD_URL =
 	"https://d2clarity.com/discord?utm_source=owlsector";
 export const CLARITY_KOFI_URL =
 	"https://url.d2clarity.com/ko-fi?utm_source=owlsector";
+
+type PageMetadataInput = {
+	title: string;
+	description: string;
+	/** Route path, leading slash included: "/glossary". */
+	path: string;
+};
+
+/**
+ * Metadata is merged shallowly between segments, so a page that sets only
+ * `title` and `description` keeps the root layout's whole `openGraph` block -
+ * which is why every link to a subpage used to preview as the home page.
+ * Images are deliberately left out: the segment's own `opengraph-image` file
+ * fills both the Open Graph and the Twitter card.
+ */
+export function buildPageMetadata({
+	title,
+	description,
+	path,
+}: PageMetadataInput): Metadata {
+	const socialTitle = `${title} | ${SITE_NAME}`;
+
+	return {
+		title,
+		description,
+		alternates: { canonical: path },
+		openGraph: {
+			type: "website",
+			url: path,
+			siteName: SITE_NAME,
+			title: socialTitle,
+			description,
+			locale: "en_US",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: socialTitle,
+			description,
+		},
+	};
+}

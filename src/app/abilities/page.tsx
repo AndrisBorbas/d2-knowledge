@@ -8,18 +8,19 @@ import {
 	ELEMENT_SLUGS,
 	findSubclass,
 } from "@/lib/compendium/subclasses";
+import { buildPageMetadata } from "@/lib/site/meta";
 
 // Prerendered at build time, same as every other page here: the manifest
 // snapshot is read off disk, which no request-time runtime can be relied on to
 // have.
 export const dynamic = "force-static";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
 	title: "Abilities & Subclasses",
 	description:
 		"Every super, ability, aspect and fragment for all three classes and all six subclasses, grouped the way the game groups them.",
-	alternates: { canonical: "/abilities" },
-};
+	path: "/abilities",
+});
 
 export default async function AbilitiesPage() {
 	const resolver = await loadBungieManifestSnapshotResolver();

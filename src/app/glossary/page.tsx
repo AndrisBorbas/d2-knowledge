@@ -5,6 +5,7 @@ import { CompendiumPreview } from "@/components/compendium/CompendiumPreview";
 import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 import type { CompendiumDataset } from "@/lib/compendium/model";
+import { buildPageMetadata } from "@/lib/site/meta";
 import { pickEvenlySpaced } from "@/lib/utils/sample";
 
 // Prerendered at build time. This is load-bearing for portability, not just
@@ -18,12 +19,12 @@ export const dynamic = "force-static";
 // every visit would open on 60 armor perks.
 const SEED_ENTRY_COUNT = 60;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
 	title: "Glossary",
 	description:
 		"Search every Destiny 2 perk, verb, mod and set bonus, with the community's hidden numbers spliced into the in-game text.",
-	alternates: { canonical: "/glossary" },
-};
+	path: "/glossary",
+});
 
 export default async function GlossaryPage() {
 	let dataset: Awaited<ReturnType<typeof loadCompendiumDataset>> | null = null;

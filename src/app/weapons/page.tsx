@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { WeaponsExplorer } from "@/components/weapons/WeaponsExplorer";
+import { buildPageMetadata } from "@/lib/site/meta";
 import { compareTierRows } from "@/lib/weapons/display";
 import { loadWeaponsDataset } from "@/lib/weapons/load";
 import type { WeaponsDataset } from "@/lib/weapons/model";
@@ -14,12 +15,12 @@ export const dynamic = "force-static";
 // Enough to fill the tallest first screen of the default, unfiltered list.
 const SEED_ROW_COUNT = 50;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
 	title: "Weapons",
 	description:
 		"Every Destiny 2 legendary and exotic weapon rated for endgame PvE.",
-	alternates: { canonical: "/weapons" },
-};
+	path: "/weapons",
+});
 
 export default async function WeaponsPage() {
 	let dataset: WeaponsDataset | null = null;

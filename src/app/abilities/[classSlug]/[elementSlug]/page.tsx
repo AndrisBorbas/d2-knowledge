@@ -10,6 +10,7 @@ import {
 	getSubclassEntries,
 	type Subclass,
 } from "@/lib/compendium/subclasses";
+import { buildPageMetadata } from "@/lib/site/meta";
 
 // Prerendered at build time. This is load-bearing for portability, not just
 // cost: `loadCompendiumDataset` reads the dataset off disk, and runtimes like
@@ -48,11 +49,11 @@ export async function generateMetadata({
 		return { title: "Abilities" };
 	}
 
-	return {
+	return buildPageMetadata({
 		title: `${subclass.element} ${subclass.className}`,
 		description: `Every super, ability, aspect and fragment a ${subclass.element} ${subclass.className} can equip, with the community's hidden numbers.`,
-		alternates: { canonical: `/abilities/${classSlug}/${elementSlug}` },
-	};
+		path: `/abilities/${classSlug}/${elementSlug}`,
+	});
 }
 
 export default async function SubclassPage({ params }: SubclassPageProps) {
