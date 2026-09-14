@@ -130,7 +130,9 @@ export function WeaponRow({
 			: null,
 		row.charge != null ? { label: "Charge", value: String(row.charge) } : null,
 		row.impact != null ? { label: "Impact", value: String(row.impact) } : null,
-		row.shield != null ? { label: "Shield", value: String(row.shield) } : null,
+		row.shield != null
+			? { label: "Shield Duration", value: String(row.shield) }
+			: null,
 		row.enhanceable !== null
 			? { label: "Enhanceable", value: row.enhanceable ? "Yes" : "No" }
 			: null,
