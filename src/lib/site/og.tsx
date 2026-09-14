@@ -3,12 +3,12 @@ import { join } from "node:path";
 
 import { ImageResponse } from "next/og";
 
-import { SITE_NAME, SITE_URL } from "@/lib/site/meta";
+import { SITE_HOST, SITE_NAME } from "@/lib/site/meta";
 
 // The size every crawler expects for a large summary card, and what Discord
-// renders the link preview at.
+// renders the link preview at. `buildPageMetadata` repeats it in og:image:width
+// and og:image:height, so the two have to stay in step.
 export const OG_SIZE = { width: 1200, height: 630 };
-export const OG_CONTENT_TYPE = "image/png";
 
 const ASSETS_DIR = join(process.cwd(), "public", "assets");
 
@@ -101,8 +101,6 @@ export function renderOgImage({
 	stats = [],
 	icon = null,
 }: OgImageInput) {
-	const host = SITE_URL.replace(/^https?:\/\//u, "");
-
 	return new ImageResponse(
 		<div
 			style={{
@@ -287,7 +285,7 @@ export function renderOgImage({
 							color: "rgba(255,255,255,0.6)",
 						}}
 					>
-						{`${host}${path === "/" ? "" : path}`}
+						{`${SITE_HOST}${path === "/" ? "" : path}`}
 					</span>
 				</div>
 			</div>
