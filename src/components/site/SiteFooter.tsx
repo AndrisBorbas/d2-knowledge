@@ -3,6 +3,14 @@ import Link from "next/link";
 
 import manifest from "@/../package.json";
 import {
+	DPS_SHEET_NAME,
+	DPS_SHEET_URL,
+	ENDGAME_SHEET_NAME,
+	ENDGAME_SHEET_URL,
+	SHEET_AUTHOR,
+	SHEET_AUTHOR_URL,
+} from "@/lib/aegis/config";
+import {
 	CLARITY_DISCORD_URL,
 	CLARITY_KOFI_URL,
 	CLARITY_URL,
@@ -73,6 +81,33 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
 					>
 						Ko-fi
+					</a>
+					.
+				</p>
+				<p>
+					Weapon and damage data from{" "}
+					<a
+						href={ENDGAME_SHEET_URL}
+						target="_blank"
+						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
+					>
+						{ENDGAME_SHEET_NAME}
+					</a>{" "}
+					and the{" "}
+					<a
+						href={DPS_SHEET_URL}
+						target="_blank"
+						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
+					>
+						{DPS_SHEET_NAME}
+					</a>
+					. Support the author{" "}
+					<a
+						href={SHEET_AUTHOR_URL}
+						target="_blank"
+						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
+					>
+						{SHEET_AUTHOR}
 					</a>
 					.
 				</p>
