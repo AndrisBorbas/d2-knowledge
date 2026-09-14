@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils/utils";
 import { ENERGY_TEXT_CLASS, formatSeason } from "@/lib/weapons/display";
 import type { LegendEntry, WeaponTierRow } from "@/lib/weapons/model";
 
+import { BreakerGlyph } from "./BreakerGlyph";
 import { TierBadge } from "./TierBadge";
 import { WeaponIcon } from "./WeaponIcon";
 
@@ -119,6 +120,7 @@ export function WeaponRow({
 
 	const stats = [
 		row.ammoSlot ? { label: "Ammo", value: row.ammoSlot } : null,
+		row.breaker ? { label: "Breaks", value: `${row.breaker} Champions` } : null,
 		row.reserves !== null
 			? { label: "Reserves", value: String(row.reserves) }
 			: null,
@@ -152,8 +154,14 @@ export function WeaponRow({
 					{row.rank ?? "-"}
 				</span>
 				<span className="min-w-0">
-					<span className="block truncate text-sm font-semibold text-white">
-						{row.name}
+					<span className="flex items-center gap-1.5">
+						<span className="truncate text-sm font-semibold text-white">
+							{row.name}
+						</span>
+						<BreakerGlyph
+							breaker={row.breaker}
+							iconPath={row.breakerIconPath}
+						/>
 					</span>
 					{/* The type has a column of its own on desktop; on a phone that
 					    column is hidden, so it rides under the name instead. */}

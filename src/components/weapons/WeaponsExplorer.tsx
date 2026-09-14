@@ -31,7 +31,7 @@ const VIEWS = [
 ] as const;
 
 const VIEW_KEYS = VIEWS.map(([key]) => key);
-const DAMAGE_TAB_KEYS = ["shots", "sustained", "bosses"] as const;
+const DAMAGE_TAB_KEYS = ["shots", "sustained", "swap", "bosses"] as const;
 
 // Same throttle the compendium search uses, so typing does not push a history
 // entry per keystroke.

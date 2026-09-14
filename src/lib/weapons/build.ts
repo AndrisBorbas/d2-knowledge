@@ -7,6 +7,7 @@ import {
 	PERKS_TAB,
 	STATUS_TAB,
 	SUSTAINED_TAB,
+	SWAP_TAB,
 	WEAPON_TIER_TABS,
 } from "@/lib/aegis/config";
 import {
@@ -17,6 +18,7 @@ import {
 	parseExoticTab,
 	parseStatusTab,
 	parseSustainedTab,
+	parseSwapTab,
 	parseSymbolLegend,
 	parseTierLegend,
 	parseTierTab,
@@ -30,6 +32,8 @@ import {
 import {
 	type ArchetypeRow,
 	type ExoticWeaponRow,
+	type SwapRow,
+	type WeaponBreaker,
 	type WeaponCategory,
 	type WeaponsDataset,
 	weaponsDatasetSchema,
@@ -105,7 +109,15 @@ function joinArchetypes(
 	};
 }
 
-function resolveIcons<T extends { name: string }>(
+// DestinyBreakerType, named after the champion the weapon breaks rather than
+// after the effect the manifest names it after.
+const BREAKER_BY_ENUM: Record<number, WeaponBreaker> = {
+	1: "Barrier",
+	2: "Overload",
+	3: "Unstoppable",
+};
+
+function resolveIcons<T extends { name: string; frame?: string }>(
 	rows: T[],
 	resolver: BungieManifestSnapshotResolver | null,
 	misses: Set<string>,
@@ -113,15 +125,26 @@ function resolveIcons<T extends { name: string }>(
 	if (!resolver) return rows;
 
 	return rows.map((row) => {
-		const enrichment = resolver.getWeaponEnrichmentByName(row.name);
+		// The frame only matters for the handful of names two different weapons
+		// share, and the resolver falls back to the name for everything else.
+		const enrichment = resolver.getWeaponEnrichmentByName(row.name, row.frame);
 		if (!enrichment?.iconPath) {
 			misses.add(row.name);
 			return row;
 		}
+		// The champion this weapon's frame counters. A property of the frame
+		// rather than of the weapon, so two weapons on the same frame always
+		// agree, and an artifact perk can only add to it.
+		const breaker = BREAKER_BY_ENUM[enrichment.breakerType ?? 0];
+
 		return {
 			...row,
 			iconPath: enrichment.iconPath,
 			watermarkPath: enrichment.watermarkPath,
+			breaker,
+			breakerIconPath: breaker
+				? resolver.getGlyphIconPath(breaker.toLowerCase())
+				: undefined,
 		};
 	});
 }
@@ -153,6 +176,15 @@ export async function buildWeaponsDataset(): Promise<WeaponsDataset> {
 		iconMisses,
 	);
 
+	// The swap tab times supers, grenades and melees beside weapons, so a name
+	// the weapon manifest does not know is expected here and is not worth a
+	// build warning. Those rows fall back to a lettered square.
+	const swaps = resolveIcons<SwapRow>(
+		parseSwapTab(requireTab(damage.grid, SWAP_TAB.tab, script)),
+		resolver,
+		new Set<string>(),
+	);
+
 	const countBySlug = new Map<string, number>();
 	for (const row of tierRows) {
 		countBySlug.set(
@@ -182,6 +214,7 @@ export async function buildWeaponsDataset(): Promise<WeaponsDataset> {
 		sustained: parseSustainedTab(
 			requireTab(damage.grid, SUSTAINED_TAB.tab, script),
 		),
+		swaps,
 		bosses: parseBossTab(requireTab(damage.grid, BOSSES_TAB.tab, script)),
 		status: parseStatusTab(requireTab(endgame.grid, STATUS_TAB.tab, script)),
 		tierLegend: parseTierLegend(

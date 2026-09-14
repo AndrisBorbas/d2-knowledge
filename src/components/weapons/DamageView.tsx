@@ -14,26 +14,35 @@ import {
 	DPS_SHEET_URL,
 	sheetTabUrl,
 	SUSTAINED_TAB,
+	SWAP_TAB,
 } from "@/lib/aegis/config";
 import type {
 	AnnotatedEntry,
 	Annotation,
 	Keyword,
 } from "@/lib/compendium/model";
-import { cellSortValue, formatCell } from "@/lib/weapons/display";
+import {
+	cellSortValue,
+	formatCell,
+	isPerShotRow,
+	measuredCell,
+} from "@/lib/weapons/display";
 import type {
 	BossRow,
 	DamageShotRow,
 	SustainedRow,
+	SwapRow,
 	WeaponsDataset,
 } from "@/lib/weapons/model";
 
 import { SheetCredit } from "./SheetCredit";
 import { SortableTable, type TableColumn } from "./SortableTable";
+import { WeaponIcon } from "./WeaponIcon";
 
 export const DAMAGE_TABS = [
 	["shots", "Per shot"],
 	["sustained", "Sustained DPS"],
+	["swap", "Swap DPS"],
 	["bosses", "Boss health"],
 ] as const;
 
@@ -60,11 +69,21 @@ type DamageViewProps = {
 };
 
 const SHOT_GRID =
-	"grid min-w-[44rem] grid-cols-[9rem_minmax(0,1fr)_6rem_6rem_7rem_5rem] items-center gap-3";
+	"grid min-w-[60rem] grid-cols-[9rem_minmax(0,1fr)_6rem_6rem_5rem_7rem_7rem_4rem_5rem] items-center gap-3";
 const SUSTAINED_GRID =
 	"grid min-w-[52rem] grid-cols-[minmax(0,1fr)_5rem_6rem_5rem_6rem_6rem_6rem] items-center gap-3";
+const SWAP_GRID =
+	"grid min-w-[58rem] grid-cols-[2rem_minmax(0,1fr)_5rem_5rem_4rem_6rem_5rem_5rem_6rem_6rem] items-center gap-3";
 const BOSS_GRID =
-	"grid min-w-[56rem] grid-cols-[minmax(0,1fr)_minmax(0,1fr)_7rem_7rem_6rem_6rem_minmax(0,1fr)] items-center gap-3";
+	"grid min-w-[68rem] grid-cols-[minmax(0,3fr)_minmax(0,2fr)_7rem_7rem_5rem_6rem_6rem_minmax(0,3fr)_minmax(0,4fr)] items-center gap-3";
+
+// `Phase` is seconds on most rows but the sheet also writes "Variable", "N/A"
+// and "?" where it never timed one, so the column sorts on the number when
+// there is one and sinks the rest the way every numeric cell here does.
+function phaseSortValue(phase: string | undefined) {
+	const parsed = Number.parseFloat(phase ?? "");
+	return Number.isFinite(parsed) ? parsed : Number.NEGATIVE_INFINITY;
+}
 
 function matches(query: string, ...fields: (string | undefined)[]) {
 	const needle = query.trim().toLowerCase();
@@ -92,10 +111,10 @@ function SetupLine({
 	if (present.length === 0) return null;
 
 	return (
-		<p className="text-xs leading-5 text-white/55">
+		<p className="text-xs leading-5 text-white/60">
 			{present.map((block, index) => (
 				<span key={block.field}>
-					{index > 0 ? <span className="text-white/25"> - </span> : null}
+					{index > 0 ? <span className="text-white/45"> - </span> : null}
 					<AnnotatedText
 						text={block.text ?? ""}
 						annotations={glossary.annotationsFor(rowId, block.field)}
@@ -104,7 +123,7 @@ function SetupLine({
 						onKeywordHover={glossary.onKeywordHover}
 						onKeywordLeave={glossary.onKeywordLeave}
 						onKeywordClick={glossary.onKeywordClick}
-						linkClassName="text-xs"
+						linkClassName="text-xs align-middle text-white/85"
 					/>
 				</span>
 			))}
@@ -135,10 +154,25 @@ export function DamageView({
 		[dataset.sustained, query],
 	);
 
+	const swapRows = useMemo(
+		() =>
+			dataset.swaps.filter((row) =>
+				matches(query, row.name, row.loadout, row.attackType),
+			),
+		[dataset.swaps, query],
+	);
+
 	const bossRows = useMemo(
 		() =>
 			dataset.bosses.filter((row) =>
-				matches(query, row.boss, row.activity, row.species, row.mechanics),
+				matches(
+					query,
+					row.boss,
+					row.activity,
+					row.species,
+					row.mechanics,
+					...row.mods,
+				),
 			),
 		[dataset.bosses, query],
 	);
@@ -171,21 +205,49 @@ export function DamageView({
 			render: (row) => formatCell(row.bodyShot),
 		},
 		{
-			key: "normalized",
-			label: "Normalized",
+			// The sheet derives this from the two columns to its left, so it is
+			// printed rather than recomputed: a frame whose crit and body shots
+			// were measured on different bosses would not divide out to it.
+			key: "critRatio",
+			label: "Crit x",
+			align: "right",
+			sortValue: (row) => cellSortValue(row.critRatio),
+			render: (row) => formatCell(row.critRatio),
+		},
+		{
+			// Split in two rather than printed as one column, because the sheet
+			// puts both in the same one and they are not the same quantity: only
+			// the left one can be read across rows.
+			key: "perShot",
+			label: "Per shot",
 			align: "right",
 			sortValue: (row) =>
-				cellSortValue(
-					row.healthbarValue.value === null
-						? row.visualValue
-						: row.healthbarValue,
-				),
+				isPerShotRow(row)
+					? cellSortValue(measuredCell(row))
+					: Number.NEGATIVE_INFINITY,
 			render: (row) =>
-				formatCell(
-					row.healthbarValue.value === null
-						? row.visualValue
-						: row.healthbarValue,
-				),
+				isPerShotRow(row) ? formatCell(measuredCell(row)) : "-",
+		},
+		{
+			key: "testTotal",
+			label: "Test total",
+			align: "right",
+			sortValue: (row) =>
+				isPerShotRow(row)
+					? Number.NEGATIVE_INFINITY
+					: cellSortValue(measuredCell(row)),
+			render: (row) =>
+				isPerShotRow(row) ? "-" : formatCell(measuredCell(row)),
+		},
+		{
+			// The sheet's own count of what it averaged over, so a reader can see
+			// whether a number is one reading or the mean of ninety.
+			key: "shots",
+			label: "Shots",
+			align: "right",
+			secondary: true,
+			sortValue: (row) => cellSortValue(row.shots),
+			render: (row) => formatCell(row.shots),
 		},
 		{
 			key: "patch",
@@ -254,6 +316,96 @@ export function DamageView({
 		},
 	];
 
+	const swapColumns: TableColumn<SwapRow>[] = [
+		{
+			// The sheet draws an icon here that no export carries, so it is matched
+			// out of the manifest by name. A super or a grenade is not a weapon and
+			// gets the lettered square instead.
+			key: "icon",
+			label: "",
+			render: (row) => (
+				<WeaponIcon
+					name={row.name}
+					iconPath={row.iconPath}
+					watermarkPath={row.watermarkPath}
+					className="size-6"
+				/>
+			),
+		},
+		{
+			key: "name",
+			label: "Source",
+			sortValue: (row) => row.name,
+			render: (row) => <span className="text-white">{row.name}</span>,
+		},
+		{
+			// The sheet's `Type`, which is the shape of the attack rather than the
+			// slot it comes from: the tab times supers and abilities too.
+			key: "attackType",
+			label: "Type",
+			secondary: true,
+			sortValue: (row) => row.attackType ?? "",
+			render: (row) => row.attackType ?? "-",
+		},
+		{
+			key: "base",
+			label: "Base",
+			align: "right",
+			secondary: true,
+			sortValue: (row) => cellSortValue(row.base),
+			render: (row) => formatCell(row.base),
+		},
+		{
+			key: "shots",
+			label: "Shots",
+			align: "right",
+			secondary: true,
+			sortValue: (row) => cellSortValue(row.shots),
+			render: (row) => formatCell(row.shots),
+		},
+		{
+			key: "total",
+			label: "Total",
+			align: "right",
+			sortValue: (row) => cellSortValue(row.total),
+			render: (row) => formatCell(row.total),
+		},
+		{
+			key: "swapTime",
+			label: "Swap s",
+			align: "right",
+			secondary: true,
+			sortValue: (row) => cellSortValue(row.swapTime),
+			render: (row) => formatCell(row.swapTime),
+		},
+		{
+			key: "totalTime",
+			label: "Total s",
+			align: "right",
+			secondary: true,
+			sortValue: (row) => cellSortValue(row.totalTime),
+			render: (row) => formatCell(row.totalTime),
+		},
+		{
+			key: "swapDps",
+			label: "Swap DPS",
+			align: "right",
+			sortValue: (row) => cellSortValue(row.swapDps),
+			render: (row) => (
+				<span className="font-semibold text-sky-200">
+					{formatCell(row.swapDps)}
+				</span>
+			),
+		},
+		{
+			key: "trueDps",
+			label: "True DPS",
+			align: "right",
+			sortValue: (row) => cellSortValue(row.trueDps),
+			render: (row) => formatCell(row.trueDps),
+		},
+	];
+
 	const bossColumns: TableColumn<BossRow>[] = [
 		{
 			key: "activity",
@@ -282,6 +434,13 @@ export function DamageView({
 			render: (row) => formatCell(row.effectiveHealth),
 		},
 		{
+			key: "phase",
+			label: "Phase",
+			align: "right",
+			sortValue: (row) => phaseSortValue(row.phase),
+			render: (row) => row.phase ?? "-",
+		},
+		{
 			key: "clearable",
 			label: "Clear DPS",
 			align: "right",
@@ -298,26 +457,37 @@ export function DamageView({
 			render: (row) => formatCell(row.onePhaseDps),
 		},
 		{
+			// "No" is the sheet's own wording for an activity that has no raid
+			// mods, so it is printed as written rather than blanked.
+			key: "mods",
+			label: "Mods",
+			secondary: true,
+			sortValue: (row) => row.mods.join(", "),
+			render: (row) => (
+				<span title={row.mods.join(", ")}>{row.mods.join(", ") || "-"}</span>
+			),
+		},
+		{
 			key: "notes",
 			label: "Notes",
 			secondary: true,
-			render: (row) =>
-				[row.onePhaseDescription, row.notes].filter(Boolean).join(" - ") || "-",
+			render: (row) => {
+				const text =
+					[row.onePhaseDescription, row.notes].filter(Boolean).join(" - ") ||
+					"-";
+				return <span title={text === "-" ? undefined : text}>{text}</span>;
+			},
 		},
 	];
 
-	const gid =
+	const layout =
 		tab === "shots"
-			? DAMAGE_TAB.gid
+			? DAMAGE_TAB
 			: tab === "sustained"
-				? SUSTAINED_TAB.gid
-				: BOSSES_TAB.gid;
-	const tabName =
-		tab === "shots"
-			? DAMAGE_TAB.tab
-			: tab === "sustained"
-				? SUSTAINED_TAB.tab
-				: BOSSES_TAB.tab;
+				? SUSTAINED_TAB
+				: tab === "swap"
+					? SWAP_TAB
+					: BOSSES_TAB;
 
 	return (
 		<div className="space-y-4">
@@ -340,18 +510,26 @@ export function DamageView({
 
 			<SheetCredit
 				sheet="dps"
-				tabUrl={sheetTabUrl(DPS_SHEET_URL, gid)}
-				tabLabel={tabName}
+				tabUrl={sheetTabUrl(DPS_SHEET_URL, layout.gid)}
+				tabLabel={layout.tab}
 			/>
 
 			{tab === "shots" ? (
 				<>
+					<p className="text-xs leading-6 text-white/45">
+						Crit and body are the raw numbers a shot prints on a boss in the
+						sheet&apos;s test conditions, and Crit x is the ratio between them.
+						<br />
+						Damage is the damage of the full rotation if shots is one, or the
+						per shot damage if shots is more than one. It is only meant to be
+						compared with similar weapons. not across weapon types or frames.
+					</p>
 					<SortableTable
 						rows={shotRows}
 						columns={shotColumns}
 						rowKey={(row) => row.id}
 						gridClass={SHOT_GRID}
-						initialSort={{ key: "normalized", direction: "desc" }}
+						initialSort={{ key: "perShot", direction: "desc" }}
 						// Null rather than an empty strip, so a row the sheet said
 						// nothing about keeps a table row's height.
 						renderDetail={(row) =>
@@ -367,18 +545,17 @@ export function DamageView({
 							) : null
 						}
 					/>
-					<p className="text-xs leading-6 text-white/45">
-						Crit and body are the raw numbers a shot prints on a boss in the
-						sheet&apos;s test conditions. Normalized scales those to one
-						benchmark so two weapons can be compared directly. The conditions
-						under each row name what was equipped and how the shot was measured;
-						anything the glossary knows about links to its entry.
-					</p>
 				</>
 			) : null}
 
 			{tab === "sustained" ? (
 				<>
+					<p className="text-xs leading-6 text-white/45">
+						Each row is one simulated damage rotation with the perks, surges and
+						debuffs the sheet names.
+						<br />
+						TtE is time to empty in seconds.
+					</p>
 					<SortableTable
 						rows={sustainedRows}
 						columns={sustainedColumns}
@@ -398,17 +575,48 @@ export function DamageView({
 							) : null
 						}
 					/>
+				</>
+			) : null}
+
+			{tab === "swap" ? (
+				<>
 					<p className="text-xs leading-6 text-white/45">
-						Each row is one simulated damage rotation with the perks, surges and
-						debuffs the sheet names. TtE is time to empty in seconds. The setup
-						under each row is the sheet&apos;s own wording, with every perk,
-						fragment and buff the glossary knows linked to its entry.
+						Each row is one burst timed end to end, so it covers swapping the
+						weapon out as well as firing it.
+						<br />
+						Swap s is the window itself and Total s adds whatever the rotation
+						waits out afterwards, which is why a super or a lingering rocket
+						drops between Swap DPS and True DPS.
 					</p>
+					<SortableTable
+						rows={swapRows}
+						columns={swapColumns}
+						rowKey={(row) => row.id}
+						gridClass={SWAP_GRID}
+						initialSort={{ key: "swapDps", direction: "desc" }}
+						renderDetail={(row) =>
+							row.loadout ? (
+								<SetupLine
+									rowId={row.id}
+									blocks={[{ field: "loadout", text: row.loadout }]}
+									glossary={glossary}
+								/>
+							) : null
+						}
+					/>
 				</>
 			) : null}
 
 			{tab === "bosses" ? (
 				<>
+					<p className="text-xs leading-6 text-white/45">
+						Effective health accounts for the damage multipliers a boss applies
+						to its own hitboxes, so it is the number a rotation has to beat.
+						<br />
+						Phase is how many seconds of damage one window gives you, and Mods
+						names the raid mods the activity offers that can affect damage, or
+						&quot;No&quot; where it offers none.
+					</p>
 					<SortableTable
 						rows={bossRows}
 						columns={bossColumns}
@@ -416,10 +624,6 @@ export function DamageView({
 						gridClass={BOSS_GRID}
 						initialSort={{ key: "effective", direction: "desc" }}
 					/>
-					<p className="text-xs leading-6 text-white/45">
-						Effective health accounts for the damage multipliers a boss applies
-						to its own hitboxes, so it is the number a rotation has to beat.
-					</p>
 				</>
 			) : null}
 		</div>

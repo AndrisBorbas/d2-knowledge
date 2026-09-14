@@ -282,6 +282,17 @@ export const SUSTAINED_TAB: TabLayout = {
 	minRows: 180,
 };
 
+// The sheet's own swap-damage tab, where a whole burst is timed end to end
+// rather than measured a shot at a time. It carries supers, grenades and melees
+// beside the weapons, which is why its `Type` column is an attack kind.
+export const SWAP_TAB: TabLayout = {
+	tab: "Swap",
+	gid: 544204052,
+	headerRow: 0,
+	dataStartRow: 1,
+	minRows: 150,
+};
+
 export const BOSSES_TAB: TabLayout = {
 	tab: "Bosses",
 	gid: 1346678363,
@@ -299,7 +310,12 @@ export const ENDGAME_TABS: TabLayout[] = [
 	...WEAPON_TIER_TABS,
 ];
 
-export const DPS_TABS: TabLayout[] = [DAMAGE_TAB, SUSTAINED_TAB, BOSSES_TAB];
+export const DPS_TABS: TabLayout[] = [
+	DAMAGE_TAB,
+	SUSTAINED_TAB,
+	SWAP_TAB,
+	BOSSES_TAB,
+];
 
 export const TIER_RANKS = ["S", "A", "B", "C", "D", "E", "F"] as const;
 export type TierRank = (typeof TIER_RANKS)[number];

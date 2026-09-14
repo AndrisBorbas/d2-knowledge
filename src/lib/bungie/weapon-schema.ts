@@ -1,3 +1,6 @@
+import { ARCHETYPE_FRAME_ALIASES } from "@/lib/aegis/config";
+import { normalizeLookupName } from "@/lib/utils/text";
+
 // The wire format of the name-keyed weapon table in
 // `data/bungie-manifest.json`, shared between the writer
 // (`scripts/fetch-bungie-manifest.mts`) and the reader
@@ -21,7 +24,29 @@ export type CompactWeaponRow = {
 	dt?: number;
 	// DestinyAmmunitionType: 1 primary, 2 special, 3 heavy.
 	at?: number;
+	// DestinyBreakerType: 1 barrier, 2 overload, 3 unstoppable. Read off the
+	// champion tag on the weapon's frame rather than out of its `breakerType`
+	// field, which the manifest does not keep up to date. Set on all but one
+	// weapon the sheets rate, since every frame counters a champion.
+	bt?: number;
 };
+
+// Two different weapons can share a name: "High Albedo" is both a sidearm and
+// a rocket sidearm, and the manifest has a row for each. Where the sheets rate
+// both, the table carries an extra entry under this key so a row can ask for the
+// one on its own frame; everything else is looked up by name alone.
+//
+// The sheets write "Lightweight" and "Rapid", the manifest "Lightweight Frame"
+// and "Rapid-Fire Frame", so both spellings normalize to the same key.
+export function weaponFrameKey(frame: string) {
+	const named = ARCHETYPE_FRAME_ALIASES[frame.trim()] ?? frame;
+	return normalizeLookupName(named.replace(/\s+frame$/i, ""));
+}
+
+export function weaponVariantKey(nameKey: string, frame: string) {
+	const key = weaponFrameKey(frame);
+	return key ? `${nameKey}::${key}` : nameKey;
+}
 
 export const WEAPON_ITEM_TYPE = 3;
 // DestinyItemCategoryDefinition for "Dummies", the copies the manifest keeps

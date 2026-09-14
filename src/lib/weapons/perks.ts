@@ -56,7 +56,7 @@ export function weaponTextKey(rowId: string, field: string) {
 	return `${rowId}:${field}`;
 }
 
-// Every prose cell on the two damage tabs. The tier tabs are not here: their
+// Every prose cell on the damage tabs. The tier tabs are not here: their
 // perks are already whole names looked up through `entryIdByName`.
 function collectWeaponTexts(weapons: WeaponsDataset) {
 	const texts: { key: string; text: string }[] = [];
@@ -74,6 +74,9 @@ function collectWeaponTexts(weapons: WeaponsDataset) {
 	for (const row of weapons.sustained) {
 		add(row.id, "loadout", row.loadout);
 		add(row.id, "notes", row.notes);
+	}
+	for (const row of weapons.swaps) {
+		add(row.id, "loadout", row.loadout);
 	}
 
 	return texts;

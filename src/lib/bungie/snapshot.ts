@@ -20,7 +20,7 @@ import {
 	type SubclassSlotId,
 	toSlug,
 } from "./subclass-schema";
-import type { CompactWeaponRow } from "./weapon-schema";
+import { type CompactWeaponRow, weaponVariantKey } from "./weapon-schema";
 
 type BungieDisplayProperties = {
 	name?: string;
@@ -154,6 +154,7 @@ export type BungieWeaponEnrichment = {
 	tierType?: number;
 	damageType?: number;
 	ammoType?: number;
+	breakerType?: number;
 };
 
 export type BungieManifestSnapshotResolver = {
@@ -175,7 +176,10 @@ export type BungieManifestSnapshotResolver = {
 		perkName?: string;
 		perkIconPath?: string;
 	} | null;
-	getWeaponEnrichmentByName(name: string): BungieWeaponEnrichment | null;
+	getWeaponEnrichmentByName(
+		name: string,
+		frame?: string,
+	): BungieWeaponEnrichment | null;
 	getArmorSetBonusPerkEnrichment(params: {
 		setName: string;
 		requiredSetCount: number;
@@ -370,8 +374,17 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	// but cannot carry their icons, and a weapon name matches several
 	// inventory rows. Returns null on a snapshot taken before that table
 	// existed, the way the other lookups do.
-	getWeaponEnrichmentByName(name: string): BungieWeaponEnrichment | null {
-		const row = this.weaponTable?.[normalizeLookupName(name)];
+	//
+	// The frame narrows a name two different weapons share, and is only carried
+	// for those; every other name resolves the same with it or without it.
+	getWeaponEnrichmentByName(
+		name: string,
+		frame?: string,
+	): BungieWeaponEnrichment | null {
+		const key = normalizeLookupName(name);
+		const row =
+			(frame ? this.weaponTable?.[weaponVariantKey(key, frame)] : undefined) ??
+			this.weaponTable?.[key];
 		if (!row) return null;
 
 		return {
@@ -381,6 +394,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			tierType: row.tt,
 			damageType: row.dt,
 			ammoType: row.at,
+			breakerType: row.bt,
 		};
 	}
 

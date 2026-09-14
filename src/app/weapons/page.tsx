@@ -66,6 +66,7 @@ export default async function WeaponsPage() {
 		archetypes: [],
 		damageShots: [],
 		sustained: [],
+		swaps: [],
 		bosses: [],
 	};
 

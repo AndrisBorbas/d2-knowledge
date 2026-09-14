@@ -21,6 +21,15 @@ export const energyTypeSchema = z.enum([
 	"Strand",
 ]);
 
+// The champion a weapon breaks without help from an artifact perk or a
+// subclass verb. The manifest names these after the effect - "Shield Piercing",
+// "Disruption", "Stagger" - but the champion is what a reader is looking for.
+export const weaponBreakerSchema = z.enum([
+	"Barrier",
+	"Overload",
+	"Unstoppable",
+]);
+
 export const symbolRatingSchema = z.enum([
 	"yes",
 	"partial",
@@ -68,6 +77,8 @@ export const weaponTierRowSchema = z.object({
 	archetypeId: z.string().optional(),
 	iconPath: z.string().optional(),
 	watermarkPath: z.string().optional(),
+	breaker: weaponBreakerSchema.optional(),
+	breakerIconPath: z.string().optional(),
 	ref: sourceRefSchema,
 });
 
@@ -90,6 +101,8 @@ export const exoticWeaponRowSchema = z.object({
 	usage: z.string().optional(),
 	iconPath: z.string().optional(),
 	watermarkPath: z.string().optional(),
+	breaker: weaponBreakerSchema.optional(),
+	breakerIconPath: z.string().optional(),
 	ref: sourceRefSchema,
 });
 
@@ -124,6 +137,13 @@ export const damageShotRowSchema = z.object({
 	modifiers: z.string().optional(),
 	visualValue: numericCellSchema,
 	healthbarValue: numericCellSchema,
+	// The sheet's own `#` and `Full Modifiers`: how many of the measured thing
+	// the wipe total covered, and the stacked buff multiplier that was divided
+	// back out of it. Carried because they are the only way to tell a value that
+	// is one bullet from one that is a whole magazine, which the sheet prints in
+	// the same column.
+	shots: numericCellSchema,
+	fullModifiers: numericCellSchema,
 	critRatio: numericCellSchema,
 	patch: z.string().optional(),
 	ref: sourceRefSchema,
@@ -147,6 +167,33 @@ export const sustainedRowSchema = z.object({
 	debuff: numericCellSchema,
 	total: numericCellSchema,
 	dps: numericCellSchema,
+	ref: sourceRefSchema,
+});
+
+export const swapRowSchema = z.object({
+	id: z.string(),
+	name: z.string(),
+	// The `Name` cell is the source of the damage followed by what the test
+	// assumed, the way the Sustained tab writes it.
+	loadout: z.string().optional(),
+	// "burst", "super", "grenade", "melee", "sword", "swap" or "LP": what kind of
+	// attack was timed, not which slot a weapon sits in. The tab measures abilities
+	// beside weapons because a swap rotation mixes them.
+	attackType: z.string().optional(),
+	base: numericCellSchema,
+	// How many of the attack the timed window covered.
+	shots: numericCellSchema,
+	total: numericCellSchema,
+	// Seconds. `swapTime` is the window itself, from the first frame of the swap
+	// to the last shot landing. `totalTime` adds whatever the rotation has to
+	// wait out afterwards, which is where a super or a lingering rocket differs.
+	swapTime: numericCellSchema,
+	totalTime: numericCellSchema,
+	swapDps: numericCellSchema,
+	// The sheet's `true DPS`: the same damage over `totalTime`.
+	trueDps: numericCellSchema,
+	iconPath: z.string().optional(),
+	watermarkPath: z.string().optional(),
 	ref: sourceRefSchema,
 });
 
@@ -201,6 +248,7 @@ export const weaponsDatasetSchema = z.object({
 	archetypes: z.array(archetypeRowSchema),
 	damageShots: z.array(damageShotRowSchema),
 	sustained: z.array(sustainedRowSchema),
+	swaps: z.array(swapRowSchema),
 	bosses: z.array(bossRowSchema),
 	status: z.array(tabStatusSchema),
 	// The sheets' own wording for what the ranks and symbols mean, rather than
@@ -220,11 +268,13 @@ export type NumericCell = z.infer<typeof numericCellSchema>;
 export type TierRank = z.infer<typeof tierRankSchema>;
 export type EnergyType = z.infer<typeof energyTypeSchema>;
 export type SymbolRating = z.infer<typeof symbolRatingSchema>;
+export type WeaponBreaker = z.infer<typeof weaponBreakerSchema>;
 export type WeaponTierRow = z.infer<typeof weaponTierRowSchema>;
 export type ExoticWeaponRow = z.infer<typeof exoticWeaponRowSchema>;
 export type ArchetypeRow = z.infer<typeof archetypeRowSchema>;
 export type DamageShotRow = z.infer<typeof damageShotRowSchema>;
 export type SustainedRow = z.infer<typeof sustainedRowSchema>;
+export type SwapRow = z.infer<typeof swapRowSchema>;
 export type BossRow = z.infer<typeof bossRowSchema>;
 export type TabStatus = z.infer<typeof tabStatusSchema>;
 export type LegendEntry = z.infer<typeof legendEntrySchema>;

@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { EXOTICS_TAB,WEAPON_TIER_TABS } from "../src/lib/aegis/config";
+import { EXOTICS_TAB, WEAPON_TIER_TABS } from "../src/lib/aegis/config";
 import { readAegisSheetSnapshot } from "../src/lib/aegis/snapshot";
 import { cellFirstLine, readTable } from "../src/lib/aegis/table";
 import { ARMOR_SET_NAME_ALIASES } from "../src/lib/bungie/armor-set-aliases";
@@ -26,7 +26,9 @@ import {
 	type CompactWeaponRow,
 	DUMMY_ITEM_CATEGORY_HASH,
 	WEAPON_ITEM_TYPE,
+	weaponFrameKey,
 	type WeaponTable,
+	weaponVariantKey,
 } from "../src/lib/bungie/weapon-schema";
 import {
 	ARTIFACT_TAB_NAME,
@@ -186,6 +188,10 @@ async function collectArmorSetNames() {
 async function collectAegisWeaponNames() {
 	const snapshot = await readAegisSheetSnapshot("endgame");
 	const nameKeys = new Set<string>();
+	// Two different weapons can share a name - the Dreaming City's Waking Vigil
+	// and its reissue are not the same gun - and the frame beside the name is
+	// what tells them apart.
+	const framesByName = new Map<string, Set<string>>();
 
 	for (const layout of [...WEAPON_TIER_TABS, EXOTICS_TAB]) {
 		const grid = snapshot.grid[layout.tab];
@@ -196,36 +202,141 @@ async function collectAegisWeaponNames() {
 		}
 		for (const row of readTable(grid, layout).rows) {
 			const key = normalizeLookupName(cellFirstLine(row.get("Name")));
-			if (key) nameKeys.add(key);
+			if (!key) continue;
+			nameKeys.add(key);
+
+			const frame = weaponFrameKey(row.get("Frame"));
+			if (!frame) continue;
+			const frames = framesByName.get(key) ?? new Set<string>();
+			frames.add(frame);
+			framesByName.set(key, frames);
 		}
 	}
 
-	return nameKeys;
+	return { nameKeys, framesByName };
 }
 
 function asNumber(value: unknown) {
 	return typeof value === "number" ? value : undefined;
 }
 
+// The name of the frame a weapon is actually built with.
+function intrinsicFrameName(
+	row: Record<string, unknown>,
+	items: Record<string, unknown>,
+) {
+	const sockets = asRecord<unknown>(row.sockets);
+	const entries = Array.isArray(sockets?.socketEntries)
+		? sockets.socketEntries
+		: [];
+
+	const initial = asNumber(
+		asRecord<unknown>(entries[0])?.singleInitialItemHash,
+	);
+	const plug = asRecord<unknown>(items[String(initial ?? "")]);
+	const display = asRecord<unknown>(plug?.displayProperties);
+	return typeof display?.name === "string" ? display.name : "";
+}
+
 // A weapon name matches several manifest rows: the current copy, sunset
-// reissues, adept variants, vendor previews. Keep exactly one per name, biased
+// reissues, adept variants, vendor previews, and now and then a different
+// weapon that happens to share the name. Keep exactly one per name, biased
 // towards the row a player would recognise.
 function scoreWeaponRow(
 	row: Record<string, unknown>,
 	compact: CompactWeaponRow,
+	matchesSheetFrame: boolean,
 ) {
 	let score = compact.tt ?? 0;
 	if (compact.w) score += 4;
 	if (typeof row.screenshot === "string" && row.screenshot.length > 0) {
 		score += 2;
 	}
+	// Outweighs the rest: a row on a different frame is a different weapon, not
+	// a worse picture of this one.
+	if (matchesSheetFrame) score += 16;
 	return score;
 }
 
-function collectWeaponRows(table: unknown, wantedNameKeys: Set<string>) {
+// DestinyBreakerType, keyed by the glyph the game stamps on a weapon frame.
+//
+// The tag is a sandbox perk hanging off the frame's intrinsic plug, named for
+// the glyph alone: "[Disruption] Overload". Matching the glyph rather than the
+// champion word is what keeps "Toxic Overload", "Taken Barrier" and the
+// artifact's own "Overload Bow" out, none of which is the weapon's own tag.
+const BREAKER_BY_GLYPH: [RegExp, number][] = [
+	[/\[Shield-Piercing\]/i, 1],
+	[/\[Disruption\]/i, 2],
+	[/\[Stagger\]/i, 3],
+];
+
+function breakerFromPerks(
+	plug: Record<string, unknown> | null,
+	sandboxPerkTable: Record<string, unknown>,
+) {
+	const perks = Array.isArray(plug?.perks) ? plug.perks : [];
+
+	for (const value of perks) {
+		const hash = asNumber(asRecord<unknown>(value)?.perkHash);
+		if (!hash) continue;
+
+		const perk = asRecord<unknown>(sandboxPerkTable[String(hash)]);
+		const display = asRecord<unknown>(perk?.displayProperties);
+		const name = typeof display?.name === "string" ? display.name : "";
+		if (!name) continue;
+
+		const glyph = BREAKER_BY_GLYPH.find(([pattern]) => pattern.test(name));
+		if (glyph) return glyph[1];
+	}
+
+	return undefined;
+}
+
+// Which champion a weapon counters on its own.
+//
+// Not the weapon's `breakerType` field, which is stale: it is unset on all but
+// seventeen weapons, and calls Salvation's Grip an Overload counter where the
+// weapon itself says Unstoppable. Since the archetype rework every frame
+// counters a champion, and the frame's intrinsic plug is where that is written.
+//
+// Only the plug a socket is actually built with is read. The options a socket
+// could otherwise hold are the same frame at a different power or an unrelated
+// perk, and neither is what the weapon in hand does.
+function resolveWeaponBreaker(
+	row: Record<string, unknown>,
+	items: Record<string, unknown>,
+	sandboxPerkTable: Record<string, unknown>,
+) {
+	const sockets = asRecord<unknown>(row.sockets);
+	const entries = Array.isArray(sockets?.socketEntries)
+		? sockets.socketEntries
+		: [];
+
+	for (const value of entries) {
+		const entry = asRecord<unknown>(value);
+		const initial = asNumber(entry?.singleInitialItemHash);
+		if (!initial) continue;
+
+		const breaker = breakerFromPerks(
+			asRecord<unknown>(items[String(initial)]),
+			sandboxPerkTable,
+		);
+		if (breaker) return breaker;
+	}
+
+	return undefined;
+}
+
+function collectWeaponRows(
+	table: unknown,
+	sandboxPerkTable: unknown,
+	wantedNameKeys: Set<string>,
+	framesByName: Map<string, Set<string>>,
+) {
 	const source = asRecord<unknown>(table);
 	const rows: WeaponTable = {};
 	if (!source) return rows;
+	const sandboxPerks = asRecord<unknown>(sandboxPerkTable) ?? {};
 
 	const scores = new Map<string, number>();
 
@@ -265,9 +376,27 @@ function collectWeaponRows(table: unknown, wantedNameKeys: Set<string>) {
 			tt: asNumber(row.itemTierType),
 			dt: asNumber(row.defaultDamageType),
 			at: asNumber(equippingBlock?.ammoType),
+			bt: resolveWeaponBreaker(row, source, sandboxPerks),
 		};
 
-		const score = scoreWeaponRow(row, compact);
+		const frame = weaponFrameKey(intrinsicFrameName(row, source));
+		const wantedFrames = framesByName.get(key);
+		const score = scoreWeaponRow(
+			row,
+			compact,
+			wantedFrames?.has(frame) ?? false,
+		);
+
+		// A name the sheets rate on two frames needs both rows kept, since one of
+		// them is a different weapon rather than a worse copy of this one.
+		if ((wantedFrames?.size ?? 0) > 1 && wantedFrames?.has(frame)) {
+			const variant = weaponVariantKey(key, frame);
+			if (!rows[variant] || (scores.get(variant) ?? -1) < score) {
+				rows[variant] = compact;
+				scores.set(variant, score);
+			}
+		}
+
 		if (rows[key] && (scores.get(key) ?? -1) >= score) continue;
 		rows[key] = compact;
 		scores.set(key, score);
@@ -715,7 +844,8 @@ async function main() {
 	const { perkHashes, itemHashes } = await collectClarityManifestHashes();
 	const ddcTitleKeys = await collectDdcLookupTitles();
 	const armorSetNameKeys = await collectArmorSetNames();
-	const aegisWeaponNameKeys = await collectAegisWeaponNames();
+	const { nameKeys: aegisWeaponNameKeys, framesByName } =
+		await collectAegisWeaponNames();
 	const snapshot = await fetchDestinyManifestTables(DEFAULT_MANIFEST_TABLES);
 
 	const itemSetResult = filterItemSetTableToNames(
@@ -757,7 +887,9 @@ async function main() {
 
 	const weaponRows = collectWeaponRows(
 		snapshot.tables.DestinyInventoryItemDefinition,
+		snapshot.tables.DestinySandboxPerkDefinition,
 		aegisWeaponNameKeys,
+		framesByName,
 	);
 
 	const compactTables: CompactManifestTables = {
@@ -804,9 +936,16 @@ async function main() {
 		"utf8",
 	);
 
+	// The frame-qualified entries are extra copies, not extra weapons.
+	const named = Object.entries(weaponRows).filter(
+		([key]) => !key.includes("::"),
+	);
+	const matchedNames = named.length;
+	const taggedNames = named.filter(([, weapon]) => weapon.bt).length;
+
 	console.log(`Wrote Bungie manifest snapshot: ${outputPath}`);
 	console.log(
-		`Weapons: ${String(Object.keys(weaponRows).length)} of ${String(aegisWeaponNameKeys.size)} sheet names matched`,
+		`Weapons: ${String(matchedNames)} of ${String(aegisWeaponNameKeys.size)} sheet names matched, ${String(taggedNames)} with a champion tag, ${String(Object.keys(weaponRows).length - matchedNames)} kept twice for a shared name`,
 	);
 	console.log(
 		`Subclasses: ${String(Object.keys(subclassResult.rows).length)}, options: ${String(subclassResult.optionHashes.size)}`,

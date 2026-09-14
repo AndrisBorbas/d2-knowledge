@@ -10,6 +10,7 @@ import type {
 	SymbolRating,
 } from "@/lib/weapons/model";
 
+import { BreakerGlyph } from "./BreakerGlyph";
 import { TierBadge } from "./TierBadge";
 import { WeaponIcon } from "./WeaponIcon";
 
@@ -90,8 +91,14 @@ export function ExoticRow({
 					watermarkPath={row.watermarkPath}
 				/>
 				<span className="min-w-0">
-					<span className="block truncate text-sm font-semibold text-white">
-						{row.name}
+					<span className="flex items-center gap-1.5">
+						<span className="truncate text-sm font-semibold text-white">
+							{row.name}
+						</span>
+						<BreakerGlyph
+							breaker={row.breaker}
+							iconPath={row.breakerIconPath}
+						/>
 					</span>
 					<span className="block truncate text-xs text-white/50 md:hidden">
 						{row.tags.join(", ")}
@@ -138,6 +145,7 @@ export function ExoticRow({
 					) : null}
 					<div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/70">
 						{row.season !== null ? <span>Season {row.season}</span> : null}
+						{row.breaker ? <span>Breaks {row.breaker} Champions</span> : null}
 						{row.reserves !== null ? (
 							<span>Reserves {row.reserves}</span>
 						) : null}

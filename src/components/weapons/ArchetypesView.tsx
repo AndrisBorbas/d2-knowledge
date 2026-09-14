@@ -11,7 +11,6 @@ import {
 } from "@/lib/aegis/config";
 import {
 	cellSortValue,
-	compareTierRows,
 	formatCell,
 	statusForTab,
 	TIER_ORDER,
@@ -30,6 +29,10 @@ type ArchetypesViewProps = {
 // The sheet computes far more per frame than fits on a screen, so the columns
 // come in two named sets: what was measured, and what was derived from it.
 // Names are the sheet's own, so a reader can cross-check against the tab.
+// Which of the sheet's banners a column sits under is not the same question:
+// `ADS falloff Range` is a measured distance that the sheet files under
+// CALCULATIONS, so the cell is looked up in both records rather than in the
+// one the set is named after.
 const VALUE_COLUMNS = [
 	"base Damage",
 	"crit Multi",
@@ -52,6 +55,12 @@ const CALCULATION_COLUMNS = [
 	"boss Total",
 ];
 
+// The sheet moves a column between its banners now and then, and a reader
+// looking for `ADS falloff Range` does not care which one it ended up under.
+function cellFor(row: ArchetypeRow, name: string) {
+	return row.values[name] ?? row.calculations[name];
+}
+
 const GRID_CLASS =
 	"grid min-w-[64rem] grid-cols-[9rem_9rem_2rem_5rem_repeat(8,minmax(4.5rem,1fr))] items-center gap-3";
 
@@ -72,8 +81,6 @@ export function ArchetypesView({ dataset, query }: ArchetypesViewProps) {
 	}, [dataset.archetypes, query]);
 
 	const columns = useMemo<TableColumn<ArchetypeRow>[]>(() => {
-		const group = showCalculations ? "calculations" : "values";
-
 		return [
 			{
 				key: "weapon",
@@ -110,11 +117,11 @@ export function ArchetypesView({ dataset, query }: ArchetypesViewProps) {
 				key: name,
 				label: name,
 				align: "right",
-				sortValue: (row) => cellSortValue(row[group][name]),
-				render: (row) => formatCell(row[group][name]),
+				sortValue: (row) => cellSortValue(cellFor(row, name)),
+				render: (row) => formatCell(cellFor(row, name)),
 			})),
 		];
-	}, [dataset.tierLegend, numericColumns, showCalculations]);
+	}, [dataset.tierLegend, numericColumns]);
 
 	return (
 		<div className="space-y-4">
@@ -150,6 +157,11 @@ export function ArchetypesView({ dataset, query }: ArchetypesViewProps) {
 				tabLabel={ARCHETYPES_TAB.tab}
 			/>
 
+			<p className="text-xs leading-6 text-white/45">
+				A frame marked * assumes a particular roll, which the sheet names in the
+				frame cell. MDPS is minor DPS, BDPS is boss DPS.
+			</p>
+
 			<SortableTable
 				rows={rows}
 				columns={columns}
@@ -157,11 +169,6 @@ export function ArchetypesView({ dataset, query }: ArchetypesViewProps) {
 				gridClass={GRID_CLASS}
 				initialSort={{ key: "weapon", direction: "asc" }}
 			/>
-
-			<p className="text-xs leading-6 text-white/45">
-				A frame marked * assumes a particular roll, which the sheet names in the
-				frame cell. MDPS is minor DPS, BDPS is boss DPS.
-			</p>
 		</div>
 	);
 }

@@ -149,7 +149,7 @@ export function SortableTable<T>({
 									)}
 								>
 									{columns.map((column) => (
-										<span
+										<div
 											key={column.key}
 											className={cn(
 												"min-w-0 truncate text-sm text-white/80",
@@ -159,7 +159,7 @@ export function SortableTable<T>({
 											)}
 										>
 											{column.render(row)}
-										</span>
+										</div>
 									))}
 								</div>
 								{detail ? <div className="px-3 pb-2">{detail}</div> : null}

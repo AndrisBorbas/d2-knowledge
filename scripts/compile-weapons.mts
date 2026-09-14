@@ -36,6 +36,7 @@ async function main() {
 			`${dataset.archetypes.length} archetypes`,
 			`${dataset.damageShots.length} damage rows`,
 			`${dataset.sustained.length} sustained runs`,
+			`${dataset.swaps.length} swap rotations`,
 			`${dataset.bosses.length} bosses`,
 		].join(", "),
 	);

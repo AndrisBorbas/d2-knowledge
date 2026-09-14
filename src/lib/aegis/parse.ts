@@ -6,6 +6,7 @@ import type {
 	ExoticWeaponRow,
 	LegendEntry,
 	SustainedRow,
+	SwapRow,
 	TabStatus,
 	TierRank,
 	WeaponTierRow,
@@ -20,6 +21,7 @@ import {
 	PERKS_TAB,
 	STATUS_TAB,
 	SUSTAINED_TAB,
+	SWAP_TAB,
 	type TabLayout,
 	TIER_RANKS,
 	type WeaponTierTab,
@@ -261,6 +263,8 @@ export function parseDamageTab(grid: string[][]): DamageShotRow[] {
 		"body Shot",
 		"visual Value",
 		"healthbar Value",
+		"VISUAL / #",
+		"VISUAL / Full Modifiers",
 		"Patch",
 	]);
 
@@ -280,6 +284,14 @@ export function parseDamageTab(grid: string[][]): DamageShotRow[] {
 			modifiers: cellOptional(row.get("Modifiers")),
 			visualValue: cellNumeric(row.get("visual Value")),
 			healthbarValue: cellNumeric(row.get("healthbar Value")),
+			// The HEALTHBAR block repeats both of these and writes the same number
+			// in every row that carries the pair, so one copy is enough.
+			shots: cellNumeric(row.get("VISUAL / #")),
+			fullModifiers: cellNumeric(row.get("VISUAL / Full Modifiers")),
+			// The sheet's `Crit` column, which is the crit-to-body ratio it
+			// derives from the two shots either side of it. Deliberately not the
+			// `Ratio` and `Deviation` beside it: those are the sheet's own
+			// verification scratch and read N/A on all but a handful of rows.
 			critRatio: cellNumeric(row.get("Crit")),
 			patch: cellOptional(row.get("Patch")),
 			ref: ref(DAMAGE_TAB, row),
@@ -317,6 +329,47 @@ export function parseSustainedTab(grid: string[][]): SustainedRow[] {
 			total: cellNumeric(row.get("Total")),
 			dps: cellNumeric(row.get("DPS")),
 			ref: ref(SUSTAINED_TAB, row),
+		});
+	}
+
+	return rows;
+}
+
+export function parseSwapTab(grid: string[][]): SwapRow[] {
+	const table = readTable(grid, SWAP_TAB);
+	// The tab writes these four across two lines, which the header reader folds
+	// into a single space.
+	assertHeaders(table, [
+		"Name",
+		"Type",
+		"Base",
+		"#",
+		"Total",
+		"swap Time",
+		"total Time",
+		"swap DPS",
+		"true DPS",
+	]);
+
+	const rows: SwapRow[] = [];
+	for (const row of table.rows) {
+		const lines = cellLines(row.get("Name"));
+		const name = lines[0] ?? "";
+		if (!name) continue;
+
+		rows.push({
+			id: `swap:${row.index}`,
+			name,
+			loadout: lines.length > 1 ? lines.slice(1).join(" ") : undefined,
+			attackType: cellOptional(row.get("Type")),
+			base: cellNumeric(row.get("Base")),
+			shots: cellNumeric(row.get("#")),
+			total: cellNumeric(row.get("Total")),
+			swapTime: cellNumeric(row.get("swap Time")),
+			totalTime: cellNumeric(row.get("total Time")),
+			swapDps: cellNumeric(row.get("swap DPS")),
+			trueDps: cellNumeric(row.get("true DPS")),
+			ref: ref(SWAP_TAB, row),
 		});
 	}
 
