@@ -25,6 +25,7 @@ import {
 	cellSortValue,
 	formatCell,
 	isPerShotRow,
+	measuredBoss,
 	measuredCell,
 } from "@/lib/weapons/display";
 import type {
@@ -39,7 +40,7 @@ import { SheetCredit } from "./SheetCredit";
 import { SortableTable, type TableColumn } from "./SortableTable";
 import { WeaponIcon } from "./WeaponIcon";
 
-export const DAMAGE_TABS = [
+const DAMAGE_TABS = [
 	["shots", "Per shot"],
 	["sustained", "Sustained DPS"],
 	["swap", "Swap DPS"],
@@ -47,6 +48,21 @@ export const DAMAGE_TABS = [
 ] as const;
 
 export type DamageTab = (typeof DAMAGE_TABS)[number][0];
+
+// Per shot is parked rather than deleted. Its rows are measured against two
+// different bosses under conditions that run from a single bullet to a whole
+// magazine, so no ordering of that column is a ranking, and nothing short of
+// splitting it per target and per rotation would make one. The tab still
+// renders, so re-listing it here is all it takes to bring it back.
+const HIDDEN_DAMAGE_TABS = new Set<DamageTab>(["shots"]);
+
+const VISIBLE_DAMAGE_TABS = DAMAGE_TABS.filter(
+	([key]) => !HIDDEN_DAMAGE_TABS.has(key),
+);
+
+// The keys the URL is allowed to name, so `?d=shots` falls back to the default
+// tab instead of reaching a tab with no button.
+export const VISIBLE_DAMAGE_TAB_KEYS = VISIBLE_DAMAGE_TABS.map(([key]) => key);
 
 // The glossary matcher already ran over the sheet's own prose at build time, so
 // the view only has to hand the offsets and the entries to the renderer. Empty
@@ -69,7 +85,7 @@ type DamageViewProps = {
 };
 
 const SHOT_GRID =
-	"grid min-w-[60rem] grid-cols-[9rem_minmax(0,1fr)_6rem_6rem_5rem_7rem_7rem_4rem_5rem] items-center gap-3";
+	"grid min-w-[66rem] grid-cols-[9rem_minmax(0,1fr)_6rem_6rem_5rem_6rem_7rem_7rem_4rem_5rem] items-center gap-3";
 const SUSTAINED_GRID =
 	"grid min-w-[52rem] grid-cols-[minmax(0,1fr)_5rem_6rem_5rem_6rem_6rem_6rem] items-center gap-3";
 const SWAP_GRID =
@@ -213,6 +229,16 @@ export function DamageView({
 			align: "right",
 			sortValue: (row) => cellSortValue(row.critRatio),
 			render: (row) => formatCell(row.critRatio),
+		},
+		{
+			// Which target the measured value was fired at, because Carl and
+			// Savathun take damage differently enough that two rows tested on
+			// different ones cannot be put beside each other.
+			key: "boss",
+			label: "Boss",
+			secondary: true,
+			sortValue: (row) => measuredBoss(row) ?? "",
+			render: (row) => measuredBoss(row) ?? "-",
 		},
 		{
 			// Split in two rather than printed as one column, because the sheet
@@ -492,7 +518,7 @@ export function DamageView({
 	return (
 		<div className="space-y-4">
 			<div className="flex flex-wrap gap-2">
-				{DAMAGE_TABS.map(([key, label]) => (
+				{VISIBLE_DAMAGE_TABS.map(([key, label]) => (
 					<Button
 						key={key}
 						variant="subtle"
@@ -523,6 +549,10 @@ export function DamageView({
 						Damage is the damage of the full rotation if shots is one, or the
 						per shot damage if shots is more than one. It is only meant to be
 						compared with similar weapons. not across weapon types or frames.
+						<br />
+						Boss is the target the value was measured against, and the two are
+						not interchangeable: Carl tests stack Full Throttle x100 while
+						Savathun tests use surges.
 					</p>
 					<SortableTable
 						rows={shotRows}

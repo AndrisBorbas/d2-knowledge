@@ -1,6 +1,7 @@
 import type {
 	ArchetypeRow,
 	BossRow,
+	BossTarget,
 	DamageShotRow,
 	EnergyType,
 	ExoticWeaponRow,
@@ -57,6 +58,15 @@ function toEnergy(value: string): EnergyType | null {
 	return (ENERGY_TYPES as readonly string[]).includes(text)
 		? (text as EnergyType)
 		: null;
+}
+
+// The damage tab abbreviates its two test targets to a letter, and writes "/"
+// in the pair of columns it did not measure.
+function toBossTarget(value: string): BossTarget | undefined {
+	const text = cellText(value).toUpperCase();
+	if (text === "C") return "Carl";
+	if (text === "S") return "Savathun";
+	return undefined;
 }
 
 // "Reckless Oracle / Pantheon version" is one weapon with a qualifier under it,
@@ -263,6 +273,8 @@ export function parseDamageTab(grid: string[][]): DamageShotRow[] {
 		"body Shot",
 		"visual Value",
 		"healthbar Value",
+		"VISUAL / Boss",
+		"HEALTHBAR / Boss",
 		"VISUAL / #",
 		"VISUAL / Full Modifiers",
 		"Patch",
@@ -284,6 +296,8 @@ export function parseDamageTab(grid: string[][]): DamageShotRow[] {
 			modifiers: cellOptional(row.get("Modifiers")),
 			visualValue: cellNumeric(row.get("visual Value")),
 			healthbarValue: cellNumeric(row.get("healthbar Value")),
+			visualBoss: toBossTarget(row.get("VISUAL / Boss")),
+			healthbarBoss: toBossTarget(row.get("HEALTHBAR / Boss")),
 			// The HEALTHBAR block repeats both of these and writes the same number
 			// in every row that carries the pair, so one copy is enough.
 			shots: cellNumeric(row.get("VISUAL / #")),

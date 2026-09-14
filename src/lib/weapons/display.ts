@@ -104,6 +104,13 @@ export function measuredCell(row: DamageShotRow) {
 		: row.healthbarValue;
 }
 
+// The target the number `measuredCell` returns was fired at. Carl takes Full
+// Throttle x100 and Savathun takes surges, so a Carl row and a Savathun row are
+// two different measurements and not two entries in one ranking.
+export function measuredBoss(row: DamageShotRow) {
+	return row.healthbarValue.value === null ? row.visualBoss : row.healthbarBoss;
+}
+
 export function formatSeason(season: number | null) {
 	return season === null ? "-" : `S${String(season)}`;
 }

@@ -18,7 +18,11 @@ import { RANK_TEXT_CLASS } from "@/lib/weapons/display";
 import type { WeaponsDataset } from "@/lib/weapons/model";
 
 import { ArchetypesView } from "./ArchetypesView";
-import { type DamageTab, DamageView } from "./DamageView";
+import {
+	type DamageTab,
+	DamageView,
+	VISIBLE_DAMAGE_TAB_KEYS,
+} from "./DamageView";
 import { SheetHeader } from "./SheetHeader";
 import { EXOTICS_SLUG, TierListView } from "./TierListView";
 import { useWeaponPerks } from "./useWeaponPerks";
@@ -31,8 +35,6 @@ const VIEWS = [
 ] as const;
 
 const VIEW_KEYS = VIEWS.map(([key]) => key);
-const DAMAGE_TAB_KEYS = ["shots", "sustained", "swap", "bosses"] as const;
-
 // Same throttle the compendium search uses, so typing does not push a history
 // entry per keystroke.
 const URL_OPTIONS = {
@@ -83,7 +85,7 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 	);
 	const [damageTab, setDamageTab] = useQueryState(
 		"d",
-		parseAsStringLiteral(DAMAGE_TAB_KEYS)
+		parseAsStringLiteral(VISIBLE_DAMAGE_TAB_KEYS)
 			.withDefault("sustained")
 			.withOptions(URL_OPTIONS),
 	);

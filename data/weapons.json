@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-14T02:14:29.461Z",
+	"generatedAt": "2026-09-14T12:19:16.464Z",
 	"endgameGeneratedAt": "2026-09-14T01:29:32.610Z",
 	"damageGeneratedAt": "2026-09-14T01:29:33.587Z",
 	"categories": [
@@ -53931,6 +53931,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -53970,6 +53971,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54009,6 +54011,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54050,6 +54053,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54090,6 +54094,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54131,6 +54136,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "20",
 				"value": 20
@@ -54172,6 +54178,8 @@
 				"raw": "692.013",
 				"value": 692.013
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "90",
 				"value": 90
@@ -54212,6 +54220,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54251,6 +54260,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54292,6 +54302,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "7",
 				"value": 7
@@ -54331,6 +54342,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54371,6 +54383,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54410,6 +54423,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54451,6 +54465,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54492,6 +54507,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "14",
 				"value": 14
@@ -54531,6 +54547,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54570,6 +54587,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54611,6 +54629,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "36",
 				"value": 36
@@ -54652,6 +54671,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "36",
 				"value": 36
@@ -54693,6 +54713,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "150",
 				"value": 150
@@ -54734,6 +54755,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "100",
 				"value": 100
@@ -54775,6 +54797,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -54816,6 +54839,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "5",
 				"value": 5
@@ -54857,6 +54881,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "3",
 				"value": 3
@@ -54898,6 +54923,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "2",
 				"value": 2
@@ -54939,6 +54965,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "9",
 				"value": 9
@@ -54980,6 +55007,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -55021,6 +55049,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55061,6 +55090,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55101,6 +55131,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55142,6 +55173,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55183,6 +55215,8 @@
 				"raw": "2020.722",
 				"value": 2020.722
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "10",
 				"value": 10
@@ -55223,6 +55257,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55264,6 +55299,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -55304,6 +55340,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -55344,6 +55381,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55384,6 +55422,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55425,6 +55464,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -55465,6 +55505,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55505,6 +55546,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55545,6 +55587,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55586,6 +55629,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55626,6 +55670,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55666,6 +55711,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55706,6 +55752,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -55745,6 +55792,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -55786,6 +55834,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -55827,6 +55876,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55867,6 +55917,8 @@
 				"raw": "447.422",
 				"value": 447.422
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "18",
 				"value": 18
@@ -55907,6 +55959,8 @@
 				"raw": "357.938",
 				"value": 357.938
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "18",
 				"value": 18
@@ -55947,6 +56001,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -55988,6 +56043,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "10",
 				"value": 10
@@ -56029,6 +56085,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56069,6 +56126,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56110,6 +56168,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -56151,6 +56210,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -56192,6 +56252,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -56233,6 +56294,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -56274,6 +56336,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -56315,6 +56378,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -56355,6 +56419,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56395,6 +56460,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56435,6 +56501,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "7",
 				"value": 7
@@ -56476,6 +56543,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56517,6 +56585,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56556,6 +56625,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56596,6 +56666,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56636,6 +56707,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56676,6 +56748,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56716,6 +56789,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56756,6 +56830,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56797,6 +56872,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56838,6 +56914,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56878,6 +56955,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56918,6 +56996,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56958,6 +57037,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -56999,6 +57079,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "18",
 				"value": 18
@@ -57039,6 +57120,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57079,6 +57161,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57119,6 +57202,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57158,6 +57242,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57198,6 +57283,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57239,6 +57325,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -57280,6 +57367,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "2",
 				"value": 2
@@ -57319,6 +57407,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57359,6 +57448,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57399,6 +57489,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57439,6 +57530,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57479,6 +57571,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57520,6 +57613,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "30",
 				"value": 30
@@ -57561,6 +57655,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "20",
 				"value": 20
@@ -57601,6 +57696,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57641,6 +57737,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57681,6 +57778,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57721,6 +57819,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57761,6 +57860,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57800,6 +57900,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57840,6 +57941,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57880,6 +57982,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -57921,6 +58024,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -57962,6 +58066,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -58003,6 +58108,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58044,6 +58150,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "18",
 				"value": 18
@@ -58084,6 +58191,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58125,6 +58233,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58166,6 +58275,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58206,6 +58316,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58245,6 +58356,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58284,6 +58396,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58324,6 +58437,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58363,6 +58477,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58402,6 +58517,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58442,6 +58558,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58483,6 +58600,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58524,6 +58642,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58565,6 +58684,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58605,6 +58725,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58646,6 +58767,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58686,6 +58808,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58727,6 +58850,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "24",
 				"value": 24
@@ -58767,6 +58891,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58807,6 +58932,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58848,6 +58974,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58888,6 +59015,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58928,6 +59056,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -58968,6 +59097,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59007,6 +59137,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59048,6 +59179,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "5",
 				"value": 5
@@ -59088,6 +59220,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59128,6 +59261,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59167,6 +59301,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59207,6 +59342,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59247,6 +59383,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59286,6 +59423,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59326,6 +59464,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59366,6 +59505,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59406,6 +59546,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59446,6 +59587,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59487,6 +59629,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59527,6 +59670,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59567,6 +59711,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59608,6 +59753,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "9",
 				"value": 9
@@ -59649,6 +59795,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59690,6 +59837,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -59731,6 +59879,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59771,6 +59920,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59810,6 +59960,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59851,6 +60002,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59891,6 +60043,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59931,6 +60084,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -59972,6 +60126,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60011,6 +60166,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60051,6 +60207,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60090,6 +60247,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60130,6 +60288,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60170,6 +60329,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60209,6 +60369,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60248,6 +60409,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60287,6 +60449,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60328,6 +60491,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "48",
 				"value": 48
@@ -60369,6 +60533,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "48",
 				"value": 48
@@ -60410,6 +60575,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "20",
 				"value": 20
@@ -60449,6 +60615,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60488,6 +60655,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60527,6 +60695,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60566,6 +60735,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60605,6 +60775,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60645,6 +60816,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "127",
 				"value": 127
@@ -60685,6 +60857,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60725,6 +60898,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60765,6 +60939,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60806,6 +60981,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60846,6 +61022,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60886,6 +61063,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60926,6 +61104,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -60966,6 +61145,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61006,6 +61186,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61046,6 +61227,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61086,6 +61268,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61127,6 +61310,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61168,6 +61352,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "3",
 				"value": 3
@@ -61209,6 +61394,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61250,6 +61436,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "26",
 				"value": 26
@@ -61291,6 +61478,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "26",
 				"value": 26
@@ -61331,6 +61519,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61372,6 +61561,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61413,6 +61603,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61453,6 +61644,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61493,6 +61685,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61533,6 +61726,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61572,6 +61766,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61612,6 +61807,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61653,6 +61849,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "18",
 				"value": 18
@@ -61694,6 +61891,8 @@
 				"raw": "2557.086",
 				"value": 2557.086
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "9",
 				"value": 9
@@ -61734,6 +61933,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61775,6 +61975,8 @@
 				"raw": "3929.181",
 				"value": 3929.181
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -61816,6 +62018,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61856,6 +62059,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -61896,6 +62100,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61935,6 +62140,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -61976,6 +62182,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "22",
 				"value": 22
@@ -62017,6 +62224,8 @@
 				"raw": "2398.331",
 				"value": 2398.331
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "11",
 				"value": 11
@@ -62056,6 +62265,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62096,6 +62306,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62137,6 +62348,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "22",
 				"value": 22
@@ -62178,6 +62390,8 @@
 				"raw": "2296.275",
 				"value": 2296.275
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "11",
 				"value": 11
@@ -62219,6 +62433,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62258,6 +62473,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62299,6 +62515,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "9",
 				"value": 9
@@ -62340,6 +62557,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -62381,6 +62599,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "2",
 				"value": 2
@@ -62421,6 +62640,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62462,6 +62682,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62503,6 +62724,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62544,6 +62766,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62583,6 +62806,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62622,6 +62846,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62663,6 +62888,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62702,6 +62928,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62741,6 +62968,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62781,6 +63009,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62822,6 +63051,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "10",
 				"value": 10
@@ -62863,6 +63093,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -62902,6 +63133,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62941,6 +63173,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -62982,6 +63215,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63023,6 +63257,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "10",
 				"value": 10
@@ -63064,6 +63299,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "5",
 				"value": 5
@@ -63105,6 +63341,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63145,6 +63382,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63184,6 +63422,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63224,6 +63463,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63265,6 +63505,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63306,6 +63547,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63347,6 +63589,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63387,6 +63630,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63428,6 +63672,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63469,6 +63714,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "60",
 				"value": 60
@@ -63509,6 +63755,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63550,6 +63797,8 @@
 				"raw": "1476.493",
 				"value": 1476.493
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -63590,6 +63839,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63631,6 +63881,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63671,6 +63922,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63712,6 +63964,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63751,6 +64004,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63792,6 +64046,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "120",
 				"value": 120
@@ -63833,6 +64088,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "90",
 				"value": 90
@@ -63872,6 +64128,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63912,6 +64169,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63952,6 +64210,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -63991,6 +64250,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64032,6 +64292,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "9",
 				"value": 9
@@ -64072,6 +64333,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64113,6 +64375,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64153,6 +64416,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -64193,6 +64457,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64232,6 +64497,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64271,6 +64537,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64310,6 +64577,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64349,6 +64617,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64390,6 +64659,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64431,6 +64701,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64470,6 +64741,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64510,6 +64782,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64550,6 +64823,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64591,6 +64865,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64630,6 +64905,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64670,6 +64946,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64709,6 +64986,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64749,6 +65027,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64788,6 +65067,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64827,6 +65107,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64866,6 +65147,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64905,6 +65187,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64945,6 +65228,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -64984,6 +65268,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65024,6 +65309,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "93",
 				"value": 93
@@ -65064,6 +65350,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "47",
 				"value": 47
@@ -65104,6 +65391,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65144,6 +65432,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "64",
 				"value": 64
@@ -65183,6 +65472,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65223,6 +65513,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "39",
 				"value": 39
@@ -65263,6 +65554,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "70",
 				"value": 70
@@ -65302,6 +65594,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65342,6 +65635,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "85",
 				"value": 85
@@ -65382,6 +65676,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "39",
 				"value": 39
@@ -65423,6 +65718,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "39",
 				"value": 39
@@ -65462,6 +65758,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65502,6 +65799,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "47",
 				"value": 47
@@ -65543,6 +65841,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "136",
 				"value": 136
@@ -65584,6 +65883,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "136",
 				"value": 136
@@ -65623,6 +65923,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65663,6 +65964,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "510",
 				"value": 510
@@ -65702,6 +66004,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65743,6 +66046,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65783,6 +66087,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "82",
 				"value": 82
@@ -65822,6 +66127,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65862,6 +66168,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -65902,6 +66209,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "105",
 				"value": 105
@@ -65943,6 +66251,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "70",
 				"value": 70
@@ -65983,6 +66292,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "35",
 				"value": 35
@@ -66023,6 +66333,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "104",
 				"value": 104
@@ -66063,6 +66374,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "104",
 				"value": 104
@@ -66103,6 +66415,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66143,6 +66456,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66183,6 +66497,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66224,6 +66539,8 @@
 				"raw": "730.168",
 				"value": 730.168
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "36",
 				"value": 36
@@ -66265,6 +66582,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "35",
 				"value": 35
@@ -66306,6 +66624,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "21",
 				"value": 21
@@ -66345,6 +66664,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66384,6 +66704,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66423,6 +66744,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66464,6 +66786,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66503,6 +66826,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66542,6 +66866,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66583,6 +66908,8 @@
 				"raw": "3722.553",
 				"value": 3722.553
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -66624,6 +66951,8 @@
 				"raw": "1154.349",
 				"value": 1154.349
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "20",
 				"value": 20
@@ -66664,6 +66993,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66705,6 +67035,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66745,6 +67076,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66784,6 +67116,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66825,6 +67158,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66866,6 +67200,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66906,6 +67241,8 @@
 				"raw": "1496.831",
 				"value": 1496.831
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -66946,6 +67283,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -66986,6 +67324,8 @@
 				"raw": "1571.672",
 				"value": 1571.672
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -67026,6 +67366,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67066,6 +67407,8 @@
 				"raw": "1483.466",
 				"value": 1483.466
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "14",
 				"value": 14
@@ -67106,6 +67449,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67146,6 +67490,8 @@
 				"raw": "1421.989",
 				"value": 1421.989
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "15",
 				"value": 15
@@ -67186,6 +67532,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67226,6 +67573,8 @@
 				"raw": "1643.841",
 				"value": 1643.841
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "14",
 				"value": 14
@@ -67266,6 +67615,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67306,6 +67656,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67346,6 +67697,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67386,6 +67738,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67426,6 +67779,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67466,6 +67820,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67506,6 +67861,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67546,6 +67902,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67586,6 +67943,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67626,6 +67984,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67666,6 +68025,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67706,6 +68066,8 @@
 				"raw": "1554.401",
 				"value": 1554.401
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "13",
 				"value": 13
@@ -67746,6 +68108,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67786,6 +68149,8 @@
 				"raw": "1597.579",
 				"value": 1597.579
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "13",
 				"value": 13
@@ -67826,6 +68191,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67866,6 +68232,8 @@
 				"raw": "1511.224",
 				"value": 1511.224
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "13",
 				"value": 13
@@ -67906,6 +68274,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -67946,6 +68315,8 @@
 				"raw": "1424.868",
 				"value": 1424.868
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "13",
 				"value": 13
@@ -67987,6 +68358,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68027,6 +68399,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68068,6 +68441,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "3",
 				"value": 3
@@ -68109,6 +68483,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "3",
 				"value": 3
@@ -68149,6 +68524,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -68189,6 +68565,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "3",
 				"value": 3
@@ -68229,6 +68606,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -68269,6 +68647,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68310,6 +68689,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68350,6 +68730,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68390,6 +68771,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68430,6 +68812,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68471,6 +68854,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68511,6 +68895,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68551,6 +68936,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68591,6 +68977,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68631,6 +69018,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68671,6 +69059,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68711,6 +69100,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68751,6 +69141,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68791,6 +69182,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68832,6 +69224,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -68873,6 +69266,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "7",
 				"value": 7
@@ -68914,6 +69308,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "7",
 				"value": 7
@@ -68955,6 +69350,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -68996,6 +69392,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69037,6 +69434,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69078,6 +69476,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -69119,6 +69518,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "6",
 				"value": 6
@@ -69160,6 +69560,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69201,6 +69602,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69242,6 +69644,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69283,6 +69686,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69324,6 +69728,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69365,6 +69770,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69406,6 +69812,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "4",
 				"value": 4
@@ -69446,6 +69853,8 @@
 				"raw": "1590.383",
 				"value": 1590.383
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -69486,6 +69895,8 @@
 				"raw": "1637.159",
 				"value": 1637.159
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -69526,6 +69937,8 @@
 				"raw": "1543.607",
 				"value": 1543.607
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -69566,6 +69979,8 @@
 				"raw": "1496.831",
 				"value": 1496.831
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -69606,6 +70021,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "14",
 				"value": 14
@@ -69646,6 +70062,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -69686,6 +70103,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69726,6 +70144,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69767,6 +70186,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69808,6 +70228,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69849,6 +70270,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "12",
 				"value": 12
@@ -69890,6 +70312,8 @@
 				"raw": "3157.378",
 				"value": 3157.378
 			},
+			"visualBoss": "Carl",
+			"healthbarBoss": "Carl",
 			"shots": {
 				"raw": "8",
 				"value": 8
@@ -69929,6 +70353,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -69968,6 +70393,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70008,6 +70434,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "194",
 				"value": 194
@@ -70048,6 +70475,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "194",
 				"value": 194
@@ -70089,6 +70517,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "202",
 				"value": 202
@@ -70130,6 +70559,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "194",
 				"value": 194
@@ -70171,6 +70601,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70211,6 +70642,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70251,6 +70683,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70292,6 +70725,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "67",
 				"value": 67
@@ -70333,6 +70767,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "95",
 				"value": 95
@@ -70372,6 +70807,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70412,6 +70848,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70452,6 +70889,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Savathun",
 			"shots": {
 				"raw": "1",
 				"value": 1
@@ -70493,6 +70931,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "100",
 				"value": 100
@@ -70534,6 +70973,7 @@
 				"raw": "/",
 				"value": null
 			},
+			"visualBoss": "Carl",
 			"shots": {
 				"raw": "175",
 				"value": 175

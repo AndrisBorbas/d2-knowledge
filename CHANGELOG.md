@@ -7,12 +7,6 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
-## [Unreleased]
-
-### Added
-
-- Every page now shares with its own link preview: the glossary, weapons, artifacts, abilities and changelog pages each get a card with their own title, description and counts, and a subclass page shows that subclass's own icon and element colour.
-
 ## [1.7.0] - 2026-09-14
 
 ### Added

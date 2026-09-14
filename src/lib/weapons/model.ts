@@ -127,6 +127,11 @@ export const archetypeRowSchema = z.object({
 	ref: sourceRefSchema,
 });
 
+// The two targets the damage tab tests against, written as `C` and `S` in the
+// sheet's own `Boss` columns. They take wildly different damage, so which one a
+// row was measured on is part of reading its number.
+export const bossTargetSchema = z.enum(["Carl", "Savathun"]);
+
 export const damageShotRowSchema = z.object({
 	id: z.string(),
 	weaponType: z.string(),
@@ -137,6 +142,11 @@ export const damageShotRowSchema = z.object({
 	modifiers: z.string().optional(),
 	visualValue: numericCellSchema,
 	healthbarValue: numericCellSchema,
+	// One per measurement, because the sheet is free to time the healthbar on a
+	// different target than the floating numbers. Absent wherever the value
+	// beside it is, which the sheet writes as "/".
+	visualBoss: bossTargetSchema.optional(),
+	healthbarBoss: bossTargetSchema.optional(),
 	// The sheet's own `#` and `Full Modifiers`: how many of the measured thing
 	// the wipe total covered, and the stacked buff multiplier that was divided
 	// back out of it. Carried because they are the only way to tell a value that
@@ -272,6 +282,7 @@ export type WeaponBreaker = z.infer<typeof weaponBreakerSchema>;
 export type WeaponTierRow = z.infer<typeof weaponTierRowSchema>;
 export type ExoticWeaponRow = z.infer<typeof exoticWeaponRowSchema>;
 export type ArchetypeRow = z.infer<typeof archetypeRowSchema>;
+export type BossTarget = z.infer<typeof bossTargetSchema>;
 export type DamageShotRow = z.infer<typeof damageShotRowSchema>;
 export type SustainedRow = z.infer<typeof sustainedRowSchema>;
 export type SwapRow = z.infer<typeof swapRowSchema>;
