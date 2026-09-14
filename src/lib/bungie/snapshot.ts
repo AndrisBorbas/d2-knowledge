@@ -188,6 +188,7 @@ export type BungieManifestSnapshotResolver = {
 		perkIconPath?: string;
 	} | null;
 	getArmorSetIconPath(setName: string): string | undefined;
+	getSubclassAbilityIconPath(name: string): string | undefined;
 	getGlyphIconPath(className: string): string | undefined;
 	getOfficialDescription(params: {
 		perkHash?: number;
@@ -214,6 +215,9 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	>;
 	private readonly itemSetByName: Map<string, BungieItemSetRow>;
 	private readonly descriptionByName: Map<string, string>;
+	// Built on first use rather than in the constructor: walking every subclass
+	// costs more than the handful of callers that want an ability icon.
+	private subclassAbilityIcons: Map<string, string> | null = null;
 
 	constructor(snapshot: BungieManifestSnapshot) {
 		this.inventoryTable = asRecord<BungieManifestRow>(
@@ -566,6 +570,35 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 		}
 
 		return subclasses;
+	}
+
+	// Every option the subclass screen offers, indexed by name: supers,
+	// grenades, melees, class abilities, movement and aspects. Deliberately not
+	// the inventory table at large, where an emblem or an ornament of the same
+	// name would answer first with an icon of something else entirely.
+	private getSubclassAbilityIcons() {
+		if (this.subclassAbilityIcons) return this.subclassAbilityIcons;
+
+		const icons = new Map<string, string>();
+		for (const subclass of this.getSubclasses()) {
+			for (const slot of subclass.slots) {
+				for (const option of slot.options) {
+					const key = normalizeLookupName(option.name);
+					// The same ability is offered by several subclasses, always
+					// under the same icon, so the first one to claim a name is as
+					// good as any.
+					if (!key || !option.iconPath || icons.has(key)) continue;
+					icons.set(key, option.iconPath);
+				}
+			}
+		}
+
+		this.subclassAbilityIcons = icons;
+		return icons;
+	}
+
+	getSubclassAbilityIconPath(name: string) {
+		return this.getSubclassAbilityIcons().get(normalizeLookupName(name));
 	}
 
 	getGlyphIconPath(className: string) {

@@ -177,6 +177,11 @@ export const sustainedRowSchema = z.object({
 	debuff: numericCellSchema,
 	total: numericCellSchema,
 	dps: numericCellSchema,
+	// Matched out of the manifest the way the tier rows are, by the weapon the
+	// run was named after or, where that is a frame or an ability, by what the
+	// conditions name in brackets.
+	iconPath: z.string().optional(),
+	watermarkPath: z.string().optional(),
 	ref: sourceRefSchema,
 });
 

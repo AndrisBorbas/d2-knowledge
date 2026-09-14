@@ -87,9 +87,9 @@ type DamageViewProps = {
 const SHOT_GRID =
 	"grid min-w-[66rem] grid-cols-[9rem_minmax(0,1fr)_6rem_6rem_5rem_6rem_7rem_7rem_4rem_5rem] items-center gap-3";
 const SUSTAINED_GRID =
-	"grid min-w-[52rem] grid-cols-[minmax(0,1fr)_5rem_6rem_5rem_6rem_6rem_6rem] items-center gap-3";
+	"grid min-w-[55rem] grid-cols-[2.75rem_minmax(0,1fr)_5rem_6rem_5rem_6rem_6rem_6rem] items-center gap-3";
 const SWAP_GRID =
-	"grid min-w-[58rem] grid-cols-[2rem_minmax(0,1fr)_5rem_5rem_4rem_6rem_5rem_5rem_6rem_6rem] items-center gap-3";
+	"grid min-w-[59rem] grid-cols-[2.75rem_minmax(0,1fr)_5rem_5rem_4rem_6rem_5rem_5rem_6rem_6rem] items-center gap-3";
 const BOSS_GRID =
 	"grid min-w-[68rem] grid-cols-[minmax(0,3fr)_minmax(0,2fr)_7rem_7rem_5rem_6rem_6rem_minmax(0,3fr)_minmax(0,4fr)] items-center gap-3";
 
@@ -287,6 +287,22 @@ export function DamageView({
 
 	const sustainedColumns: TableColumn<SustainedRow>[] = [
 		{
+			// Same match as the swap tab: the weapon the row is named after, or
+			// the ability, or whatever the conditions name in brackets where the
+			// row is named after a frame.
+			key: "icon",
+			label: "",
+			leading: true,
+			render: (row) => (
+				<WeaponIcon
+					name={row.name}
+					iconPath={row.iconPath}
+					watermarkPath={row.watermarkPath}
+					className="size-11"
+				/>
+			),
+		},
+		{
 			key: "name",
 			label: "Setup",
 			sortValue: (row) => row.name,
@@ -349,12 +365,13 @@ export function DamageView({
 			// gets the lettered square instead.
 			key: "icon",
 			label: "",
+			leading: true,
 			render: (row) => (
 				<WeaponIcon
 					name={row.name}
 					iconPath={row.iconPath}
 					watermarkPath={row.watermarkPath}
-					className="size-6"
+					className="size-11"
 				/>
 			),
 		},

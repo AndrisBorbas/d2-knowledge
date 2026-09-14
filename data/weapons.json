@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-14T13:01:27.943Z",
+	"generatedAt": "2026-09-14T13:27:01.759Z",
 	"endgameGeneratedAt": "2026-09-14T01:29:32.610Z",
 	"damageGeneratedAt": "2026-09-14T01:29:33.587Z",
 	"categories": [
@@ -71038,6 +71038,8 @@
 				"raw": "17,960",
 				"value": 17960
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 1,
@@ -71087,6 +71089,8 @@
 				"raw": "16,231",
 				"value": 16231
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d93a12a1f2250f0869a4173c022bd46d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 2,
@@ -71136,6 +71140,8 @@
 				"raw": "13,514",
 				"value": 13514
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 3,
@@ -71185,6 +71191,8 @@
 				"raw": "12,904",
 				"value": 12904
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fd892bb713040300ad944590892b0e50.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b212b58a961f150708bca95095e0ecb.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 4,
@@ -71234,6 +71242,8 @@
 				"raw": "12,059",
 				"value": 12059
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/084c8f65d56ce5d74718d49b17874315.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 5,
@@ -71283,6 +71293,8 @@
 				"raw": "11,384",
 				"value": 11384
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 6,
@@ -71332,6 +71344,8 @@
 				"raw": "11,196",
 				"value": 11196
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 7,
@@ -71381,6 +71395,8 @@
 				"raw": "10,964",
 				"value": 10964
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8c32410000243e6024130f755b23fbe6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 8,
@@ -71430,6 +71446,8 @@
 				"raw": "10,263",
 				"value": 10263
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 9,
@@ -71479,6 +71497,8 @@
 				"raw": "9,909",
 				"value": 9909
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/02949959641cfd982ce7181cb73cc600.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6f17d323d81dd683086d88a9268f8106.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 10,
@@ -71528,6 +71548,7 @@
 				"raw": "9,853",
 				"value": 9853
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 11,
@@ -71578,6 +71599,8 @@
 				"raw": "8,973",
 				"value": 8973
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b5021df721b66b6ab71e73b23e7b5392.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/58d3ec8338cc9746a2e0cf901fbcec0e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 12,
@@ -71628,6 +71651,8 @@
 				"raw": "8,687",
 				"value": 8687
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f90dc61b94829ab0851244e9402c6096.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 13,
@@ -71678,6 +71703,8 @@
 				"raw": "8,226",
 				"value": 8226
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 14,
@@ -71727,6 +71754,8 @@
 				"raw": "7,888",
 				"value": 7888
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 15,
@@ -71776,6 +71805,7 @@
 				"raw": "7,812",
 				"value": 7812
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1d7e8eb7c2c5884cb658a1877a084548.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 16,
@@ -71826,6 +71856,8 @@
 				"raw": "7,567",
 				"value": 7567
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b995885ef6216361e63a093896f75735.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 17,
@@ -71875,6 +71907,8 @@
 				"raw": "7,558",
 				"value": 7558
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d63292c9248c5e3ae823605307140199.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 18,
@@ -71924,6 +71958,7 @@
 				"raw": "7,498",
 				"value": 7498
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 19,
@@ -71973,6 +72008,8 @@
 				"raw": "7,492",
 				"value": 7492
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8c32410000243e6024130f755b23fbe6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 20,
@@ -72022,6 +72059,8 @@
 				"raw": "7,364",
 				"value": 7364
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/80c62abddb96917b1959192725c00ba9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 21,
@@ -72072,6 +72111,8 @@
 				"raw": "7,358",
 				"value": 7358
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b995885ef6216361e63a093896f75735.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 22,
@@ -72122,6 +72163,8 @@
 				"raw": "7,309",
 				"value": 7309
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f90dc61b94829ab0851244e9402c6096.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 23,
@@ -72171,6 +72214,8 @@
 				"raw": "7,233",
 				"value": 7233
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11c64dd593413b7489406f06f90099ad.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 24,
@@ -72221,6 +72266,8 @@
 				"raw": "7,112",
 				"value": 7112
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/39a94c98eba4b9e007a76bbc067752f7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 25,
@@ -72270,6 +72317,8 @@
 				"raw": "6,691",
 				"value": 6691
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0c30a57365acedf3d2b116c96edd0cfd.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 26,
@@ -72319,6 +72368,8 @@
 				"raw": "6,686",
 				"value": 6686
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6acdff9af5ae274c70055f816aab2389.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 27,
@@ -72368,6 +72419,8 @@
 				"raw": "6,623",
 				"value": 6623
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8763caf9bfb147a41f3e34ec7eaf876b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 28,
@@ -72418,6 +72471,8 @@
 				"raw": "6,580",
 				"value": 6580
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 29,
@@ -72468,6 +72523,8 @@
 				"raw": "6,520",
 				"value": 6520
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1b886d6a6bc3b028fe4d6e3deab434c7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 30,
@@ -72517,6 +72574,8 @@
 				"raw": "6,503",
 				"value": 6503
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c0b504a8a098196ec5c54c510547d048.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 31,
@@ -72566,6 +72625,8 @@
 				"raw": "6,482",
 				"value": 6482
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c7fef3b2cd1832d11841b7f7e0b04604.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 32,
@@ -72616,6 +72677,8 @@
 				"raw": "6,417",
 				"value": 6417
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5170b2f63a5513ccca64e08283e55581.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 33,
@@ -72666,6 +72729,8 @@
 				"raw": "6,409",
 				"value": 6409
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b5021df721b66b6ab71e73b23e7b5392.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/58d3ec8338cc9746a2e0cf901fbcec0e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 34,
@@ -72715,6 +72780,8 @@
 				"raw": "6,398",
 				"value": 6398
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 35,
@@ -72765,6 +72832,8 @@
 				"raw": "6,363",
 				"value": 6363
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6de5f786f39bf827de8490e97b672ddb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 36,
@@ -72815,6 +72884,8 @@
 				"raw": "6,331",
 				"value": 6331
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed519f6031aedd209acd61bbd52bb9b9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 37,
@@ -72865,6 +72936,8 @@
 				"raw": "6,309",
 				"value": 6309
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f7f663c090053f11ba9b061838bee946.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 38,
@@ -72914,6 +72987,8 @@
 				"raw": "6,190",
 				"value": 6190
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6acdff9af5ae274c70055f816aab2389.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 39,
@@ -72963,6 +73038,7 @@
 				"raw": "6,168",
 				"value": 6168
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/37a4f29aa2ef6ffcdee1a8eb6b5bfade.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 40,
@@ -73013,6 +73089,8 @@
 				"raw": "6,140",
 				"value": 6140
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b995885ef6216361e63a093896f75735.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 41,
@@ -73063,6 +73141,8 @@
 				"raw": "6,013",
 				"value": 6013
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f3714197408d2c8935a2ce7be69a210c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 42,
@@ -73113,6 +73193,8 @@
 				"raw": "5,971",
 				"value": 5971
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c51dd26c9db21b789afa7d24d96e39fa.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 43,
@@ -73162,6 +73244,8 @@
 				"raw": "5,936",
 				"value": 5936
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b9d74ec577bb924d152bec94f4bd592.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 44,
@@ -73211,6 +73295,7 @@
 				"raw": "5,918",
 				"value": 5918
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 45,
@@ -73260,6 +73345,8 @@
 				"raw": "5,730",
 				"value": 5730
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c0b504a8a098196ec5c54c510547d048.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 46,
@@ -73310,6 +73397,8 @@
 				"raw": "5,692",
 				"value": 5692
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c51dd26c9db21b789afa7d24d96e39fa.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 47,
@@ -73359,6 +73448,8 @@
 				"raw": "5,651",
 				"value": 5651
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b9d74ec577bb924d152bec94f4bd592.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 48,
@@ -73408,6 +73499,8 @@
 				"raw": "5,636",
 				"value": 5636
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c7fef3b2cd1832d11841b7f7e0b04604.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 49,
@@ -73457,6 +73550,7 @@
 				"raw": "5,019",
 				"value": 5019
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 50,
@@ -73507,6 +73601,8 @@
 				"raw": "5,474",
 				"value": 5474
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f7f663c090053f11ba9b061838bee946.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 51,
@@ -73557,6 +73653,8 @@
 				"raw": "5,419",
 				"value": 5419
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 52,
@@ -73607,6 +73705,8 @@
 				"raw": "5,398",
 				"value": 5398
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1037e708755c7086c1ac467364ca4340.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 53,
@@ -73656,6 +73756,8 @@
 				"raw": "5,385",
 				"value": 5385
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fdc14f2b28c77f9627f0629fdb540b76.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 54,
@@ -73706,6 +73808,8 @@
 				"raw": "5,372",
 				"value": 5372
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/39a94c98eba4b9e007a76bbc067752f7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 55,
@@ -73756,6 +73860,8 @@
 				"raw": "5,372",
 				"value": 5372
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1ffa0c9fba4b3cd1d64315760fe6978d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 56,
@@ -73805,6 +73911,8 @@
 				"raw": "5,362",
 				"value": 5362
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6acdff9af5ae274c70055f816aab2389.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 57,
@@ -73854,6 +73962,7 @@
 				"raw": "5,361",
 				"value": 5361
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 58,
@@ -73904,6 +74013,8 @@
 				"raw": "5,321",
 				"value": 5321
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 59,
@@ -73954,6 +74065,8 @@
 				"raw": "5,281",
 				"value": 5281
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1a67ee55aa0ff9a19f74c5bd25cb750d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 60,
@@ -74004,6 +74117,8 @@
 				"raw": "5,244",
 				"value": 5244
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/48671e8480c158ada396970fed801565.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 61,
@@ -74054,6 +74169,8 @@
 				"raw": "5,200",
 				"value": 5200
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 62,
@@ -74104,6 +74221,8 @@
 				"raw": "5,154",
 				"value": 5154
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2e37778d6c3cdcbd3d32819f735522c2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 63,
@@ -74153,6 +74272,8 @@
 				"raw": "5,147",
 				"value": 5147
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/39a94c98eba4b9e007a76bbc067752f7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 64,
@@ -74202,6 +74323,8 @@
 				"raw": "5,145",
 				"value": 5145
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/39a94c98eba4b9e007a76bbc067752f7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 65,
@@ -74251,6 +74374,8 @@
 				"raw": "5,115",
 				"value": 5115
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6ea7f467abf481ad45895f698cde4b30.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6eeb62a30439cecc7699c22f3e1fb3cf.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 66,
@@ -74301,6 +74426,8 @@
 				"raw": "5,078",
 				"value": 5078
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2085dd8a821e08044d9a7c7b62c3bfd8.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6f17d323d81dd683086d88a9268f8106.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 67,
@@ -74350,6 +74477,8 @@
 				"raw": "5,052",
 				"value": 5052
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5cb4c8ec3cabaaa6a29ac7513ee30ca0.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a15754752f40aaf7b1b00aadb70a8f35.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 68,
@@ -74400,6 +74529,8 @@
 				"raw": "5,028",
 				"value": 5028
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/82752643e54291368409d8feca32de79.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 69,
@@ -74449,6 +74580,8 @@
 				"raw": "4,997",
 				"value": 4997
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1d387ba81462f8f5abb63b4492b10dbe.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 70,
@@ -74498,6 +74631,8 @@
 				"raw": "4,978",
 				"value": 4978
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/74e1434dd585c5c305f4d331d05895c6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/247715dd42abef457b52ef37280c0e42.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 71,
@@ -74548,6 +74683,8 @@
 				"raw": "4,944",
 				"value": 4944
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 72,
@@ -74598,6 +74735,8 @@
 				"raw": "4,892",
 				"value": 4892
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/084c8f65d56ce5d74718d49b17874315.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 73,
@@ -74647,6 +74786,8 @@
 				"raw": "4,867",
 				"value": 4867
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/80c62abddb96917b1959192725c00ba9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 74,
@@ -74697,6 +74838,8 @@
 				"raw": "4,842",
 				"value": 4842
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/39a94c98eba4b9e007a76bbc067752f7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 75,
@@ -74746,6 +74889,8 @@
 				"raw": "4,835",
 				"value": 4835
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d5ddb8609283e93406921caa6e80ac75.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 76,
@@ -74796,6 +74941,8 @@
 				"raw": "4,835",
 				"value": 4835
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1ffa0c9fba4b3cd1d64315760fe6978d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 77,
@@ -74846,6 +74993,8 @@
 				"raw": "4,833",
 				"value": 4833
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/707179026e7dd661d3e46615a4c4de06.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 78,
@@ -74895,6 +75044,8 @@
 				"raw": "4,800",
 				"value": 4800
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6acdff9af5ae274c70055f816aab2389.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 79,
@@ -74944,6 +75095,8 @@
 				"raw": "4,776",
 				"value": 4776
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c065e1c0d03d9648fcad7762031eede9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 80,
@@ -74993,6 +75146,8 @@
 				"raw": "4,769",
 				"value": 4769
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/47c2eb10dd01f64b4993988956c5c24c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/36418dde751148bd3b95a023d491ea73.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 81,
@@ -75043,6 +75198,8 @@
 				"raw": "4,766",
 				"value": 4766
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 82,
@@ -75093,6 +75250,8 @@
 				"raw": "4,736",
 				"value": 4736
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/09e0e23b932b8b713549ce8d8f4c5f4d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 83,
@@ -75142,6 +75301,8 @@
 				"raw": "4,718",
 				"value": 4718
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8229c9cf8c182284da8a9461f69680be.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 84,
@@ -75191,6 +75352,8 @@
 				"raw": "4,654",
 				"value": 4654
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/63741982bf430abc11bbf6561963c7f9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 85,
@@ -75240,6 +75403,7 @@
 				"raw": "4,653",
 				"value": 4653
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 86,
@@ -75290,6 +75454,8 @@
 				"raw": "4,646",
 				"value": 4646
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 87,
@@ -75339,6 +75505,8 @@
 				"raw": "4,544",
 				"value": 4544
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e47c31826843f6fd0aa863eac6fd093e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 88,
@@ -75389,6 +75557,8 @@
 				"raw": "4,540",
 				"value": 4540
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6c1d34f6dcca37c6b4b8dde37f4c94ba.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 89,
@@ -75438,6 +75608,8 @@
 				"raw": "4,531",
 				"value": 4531
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f5e02c6c8aafd7d9dc9aa1fb65918142.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6eeb62a30439cecc7699c22f3e1fb3cf.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 90,
@@ -75488,6 +75660,8 @@
 				"raw": "4,528",
 				"value": 4528
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fe16110003f0cc75145eed012458a667.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 91,
@@ -75537,6 +75711,8 @@
 				"raw": "4,492",
 				"value": 4492
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8229c9cf8c182284da8a9461f69680be.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 92,
@@ -75587,6 +75763,8 @@
 				"raw": "4,487",
 				"value": 4487
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/320ea9ac0e54173a0aa4f120dedd79c3.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 93,
@@ -75637,6 +75815,8 @@
 				"raw": "4,446",
 				"value": 4446
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f5548ad1862120aa9f9c96da4d444689.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 94,
@@ -75687,6 +75867,8 @@
 				"raw": "4,414",
 				"value": 4414
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 95,
@@ -75737,6 +75919,8 @@
 				"raw": "4,409",
 				"value": 4409
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 96,
@@ -75786,6 +75970,8 @@
 				"raw": "4,385",
 				"value": 4385
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8c32410000243e6024130f755b23fbe6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 97,
@@ -75835,6 +76021,8 @@
 				"raw": "4,372",
 				"value": 4372
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ab5a4d92675023c3f565d4e8fa3db3a1.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 98,
@@ -75884,6 +76072,8 @@
 				"raw": "4,344",
 				"value": 4344
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e47c31826843f6fd0aa863eac6fd093e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 99,
@@ -75933,6 +76123,8 @@
 				"raw": "4,341",
 				"value": 4341
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f3714197408d2c8935a2ce7be69a210c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 100,
@@ -75983,6 +76175,8 @@
 				"raw": "4,322",
 				"value": 4322
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/48671e8480c158ada396970fed801565.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 101,
@@ -76033,6 +76227,8 @@
 				"raw": "4,320",
 				"value": 4320
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/80cc90861aa83c63de2273457a6c9345.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 102,
@@ -76083,6 +76279,8 @@
 				"raw": "4,314",
 				"value": 4314
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ba50baf6a02c5923c8f825ce4594c053.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 103,
@@ -76133,6 +76331,8 @@
 				"raw": "4,246",
 				"value": 4246
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1ffa0c9fba4b3cd1d64315760fe6978d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 104,
@@ -76182,6 +76382,8 @@
 				"raw": "4,238",
 				"value": 4238
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6bd65ae8981e4cac3c00825abedd3fbb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 105,
@@ -76232,6 +76434,8 @@
 				"raw": "4,217",
 				"value": 4217
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5dbd83b694c315c8693aa5c9ddcf2df7.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 106,
@@ -76281,6 +76485,8 @@
 				"raw": "4,129",
 				"value": 4129
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fd892bb713040300ad944590892b0e50.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b212b58a961f150708bca95095e0ecb.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 107,
@@ -76330,6 +76536,7 @@
 				"raw": "4,094",
 				"value": 4094
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 108,
@@ -76380,6 +76587,8 @@
 				"raw": "4,088",
 				"value": 4088
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fe16110003f0cc75145eed012458a667.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 109,
@@ -76430,6 +76639,8 @@
 				"raw": "4,078",
 				"value": 4078
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 110,
@@ -76480,6 +76691,8 @@
 				"raw": "4,063",
 				"value": 4063
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 111,
@@ -76529,6 +76742,8 @@
 				"raw": "4,062",
 				"value": 4062
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d63292c9248c5e3ae823605307140199.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 112,
@@ -76579,6 +76794,8 @@
 				"raw": "4,027",
 				"value": 4027
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/26b41e620ad2359ba805e2c405233474.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 113,
@@ -76628,6 +76845,8 @@
 				"raw": "4,018",
 				"value": 4018
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d4f9351b75ec209ab6cc368b996dd6bc.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 114,
@@ -76678,6 +76897,8 @@
 				"raw": "4,008",
 				"value": 4008
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/805009e0c67a2dcf4f4f7bffb2dba493.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/ede19a0e1a54564243b0e5e8a18bde84.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 115,
@@ -76727,6 +76948,8 @@
 				"raw": "3,986",
 				"value": 3986
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6ea7f467abf481ad45895f698cde4b30.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6eeb62a30439cecc7699c22f3e1fb3cf.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 116,
@@ -76777,6 +77000,8 @@
 				"raw": "3,977",
 				"value": 3977
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e2b14324d9a08cfe45d8f07b0f23e8c6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 117,
@@ -76827,6 +77052,8 @@
 				"raw": "3,964",
 				"value": 3964
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f6844ca3eb572c546e97a340c24531d5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 118,
@@ -76876,6 +77103,8 @@
 				"raw": "3,953",
 				"value": 3953
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ab5a4d92675023c3f565d4e8fa3db3a1.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 119,
@@ -76925,6 +77154,8 @@
 				"raw": "3,907",
 				"value": 3907
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c065e1c0d03d9648fcad7762031eede9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 120,
@@ -76974,6 +77205,8 @@
 				"raw": "3,900",
 				"value": 3900
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/af232d6f94c12a4cf1080e659264294f.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 121,
@@ -77023,6 +77256,7 @@
 				"raw": "3,895",
 				"value": 3895
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 122,
@@ -77073,6 +77307,8 @@
 				"raw": "3,883",
 				"value": 3883
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0a71a14d8614d619a40649f09b28b466.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b441021fbc328e6d0e2abc895f5c96e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 123,
@@ -77122,6 +77358,8 @@
 				"raw": "3,841",
 				"value": 3841
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/252db75c7ea885016f17895e2a154503.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/914322d11262322c839a5388db2a4943.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 124,
@@ -77171,6 +77409,8 @@
 				"raw": "3,761",
 				"value": 3761
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/7becc8d1b4112abe1cb3b3b26d0682f4.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/ae5c7f708a36f754c2f68c65c88ab9aa.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 125,
@@ -77220,6 +77460,8 @@
 				"raw": "3,730",
 				"value": 3730
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/39ef1673136f2f463879a83a44f11b0d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b48b09fbb50634680168d5880b16bc9.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 126,
@@ -77270,6 +77512,8 @@
 				"raw": "3,706",
 				"value": 3706
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/26b41e620ad2359ba805e2c405233474.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 127,
@@ -77320,6 +77564,8 @@
 				"raw": "3,704",
 				"value": 3704
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cc919daae4f005e9da7f2065fe8e29c4.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 128,
@@ -77370,6 +77616,8 @@
 				"raw": "3,690",
 				"value": 3690
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b995885ef6216361e63a093896f75735.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 129,
@@ -77419,6 +77667,8 @@
 				"raw": "3,591",
 				"value": 3591
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b91b241c65b5743e4ac89ba77fda551b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 130,
@@ -77469,6 +77719,8 @@
 				"raw": "3,566",
 				"value": 3566
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/eec16138c9fe69ff0b5d6c213e5cabb6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 131,
@@ -77519,6 +77771,8 @@
 				"raw": "3,562",
 				"value": 3562
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ab5a4d92675023c3f565d4e8fa3db3a1.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 132,
@@ -77569,6 +77823,8 @@
 				"raw": "3,552",
 				"value": 3552
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8fc373a11adc417aab9a3ef4bab3bbe3.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 133,
@@ -77619,6 +77875,8 @@
 				"raw": "3,524",
 				"value": 3524
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/45ba5d9ee8e425e1f9d50cb561fe4982.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 134,
@@ -77669,6 +77927,8 @@
 				"raw": "3,490",
 				"value": 3490
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/22f0588bf5ce837fc5f4f89e86693c1f.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 135,
@@ -77719,6 +77979,8 @@
 				"raw": "3,475",
 				"value": 3475
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 136,
@@ -77769,6 +78031,8 @@
 				"raw": "3,458",
 				"value": 3458
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ce45921edb8e35a249f2c6f5b3abaab5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 137,
@@ -77818,6 +78082,8 @@
 				"raw": "3,433",
 				"value": 3433
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/94c6933727fa885fb2002a8c7aee5e42.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/75adde12e4e9c9fb237e492d8258eb73.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 138,
@@ -77867,6 +78133,8 @@
 				"raw": "3,422",
 				"value": 3422
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/840764c42e649e88b96e0e7ca4ccf1c6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 139,
@@ -77916,6 +78184,8 @@
 				"raw": "3,361",
 				"value": 3361
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d63292c9248c5e3ae823605307140199.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 140,
@@ -77966,6 +78236,8 @@
 				"raw": "3,328",
 				"value": 3328
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cae4dbf2b458a0f0f85f61baa6a5ee36.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 141,
@@ -78015,6 +78287,8 @@
 				"raw": "3,316",
 				"value": 3316
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cae4dbf2b458a0f0f85f61baa6a5ee36.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 142,
@@ -78065,6 +78339,8 @@
 				"raw": "3,268",
 				"value": 3268
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b62083eed6a4708e581fc9a061bcc8e9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bcc26708e314306fb2fc8cb98fcbf47e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 143,
@@ -78115,6 +78391,8 @@
 				"raw": "3,256",
 				"value": 3256
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5f614eefb2a924a6af3da9375d938d28.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 144,
@@ -78165,6 +78443,8 @@
 				"raw": "3,241",
 				"value": 3241
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ba50baf6a02c5923c8f825ce4594c053.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 145,
@@ -78214,6 +78494,8 @@
 				"raw": "3,221",
 				"value": 3221
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3ae064e4a93ea26a394ff35171193eed.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7ba9d804508dd083ec20fcdb8ba0869d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 146,
@@ -78263,6 +78545,8 @@
 				"raw": "3,217",
 				"value": 3217
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0c30a57365acedf3d2b116c96edd0cfd.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 147,
@@ -78313,6 +78597,8 @@
 				"raw": "3,175",
 				"value": 3175
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c67895888f053506b4af18272d01aa85.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 148,
@@ -78363,6 +78649,8 @@
 				"raw": "3,175",
 				"value": 3175
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b40fd2d06867196af70a4bce290f15fc.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 149,
@@ -78413,6 +78701,8 @@
 				"raw": "3,127",
 				"value": 3127
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/238e6c3afdc31870d15231656f2d6bcb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 150,
@@ -78462,6 +78752,8 @@
 				"raw": "3,122",
 				"value": 3122
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5f3f44c8ec720f4ece9a8903ae29df60.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 151,
@@ -78511,6 +78803,8 @@
 				"raw": "3,081",
 				"value": 3081
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c9b4d65adcdfcadde871e5961ce912fb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 152,
@@ -78561,6 +78855,8 @@
 				"raw": "3,056",
 				"value": 3056
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cc919daae4f005e9da7f2065fe8e29c4.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 153,
@@ -78611,6 +78907,8 @@
 				"raw": "3,008",
 				"value": 3008
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0824b34bb37e0bb7c32b91adf6dcb79e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b41678824a620d4f295984862702179.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 154,
@@ -78660,6 +78958,8 @@
 				"raw": "3,006",
 				"value": 3006
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/49197babe16ed546cec94b26b44f3447.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6f17d323d81dd683086d88a9268f8106.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 155,
@@ -78709,6 +79009,8 @@
 				"raw": "3,002",
 				"value": 3002
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/55f9629f4674c351e3a2efd9ab9ca6e9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/ede19a0e1a54564243b0e5e8a18bde84.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 156,
@@ -78758,6 +79060,8 @@
 				"raw": "2,997",
 				"value": 2997
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8c32410000243e6024130f755b23fbe6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 157,
@@ -78808,6 +79112,8 @@
 				"raw": "2,989",
 				"value": 2989
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b04f13546e4d0434f0f19f02bf984097.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 158,
@@ -78858,6 +79164,8 @@
 				"raw": "2,987",
 				"value": 2987
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/216fb88fbc64390d606b8c7524a6df86.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b48b09fbb50634680168d5880b16bc9.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 159,
@@ -78908,6 +79216,8 @@
 				"raw": "2,979",
 				"value": 2979
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a08c12dc21b61d4cde66cba81e9de52d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 160,
@@ -78958,6 +79268,8 @@
 				"raw": "2,979",
 				"value": 2979
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/4a08027f7b5752f84d183ecc61682c3e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/53dc0b02306726ff1517af33ac908cef.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 161,
@@ -79008,6 +79320,8 @@
 				"raw": "2,946",
 				"value": 2946
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/bc76e54c9cd266c09d8e08036ebcfd42.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b41678824a620d4f295984862702179.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 162,
@@ -79057,6 +79371,8 @@
 				"raw": "2,898",
 				"value": 2898
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ef057175e5f1f7055d71f90b794f0777.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 163,
@@ -79107,6 +79423,8 @@
 				"raw": "2,894",
 				"value": 2894
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a959334247a165ec5615de7de4fbe6e1.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/53dc0b02306726ff1517af33ac908cef.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 164,
@@ -79156,6 +79474,8 @@
 				"raw": "2,862",
 				"value": 2862
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/de34570a93281dc201690cfd146e6d24.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a15754752f40aaf7b1b00aadb70a8f35.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 165,
@@ -79205,6 +79525,8 @@
 				"raw": "2,852",
 				"value": 2852
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fb27afcf6cb34ca3ef2540af6b87c034.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 166,
@@ -79254,6 +79576,8 @@
 				"raw": "2,813",
 				"value": 2813
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/95e57b924511a206cee9fb6b8bab8ce2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 167,
@@ -79303,6 +79627,8 @@
 				"raw": "2,803",
 				"value": 2803
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/106a8a40a6e55b5ec5088a26d1ed979d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7d815c943977fe71bbf00caf1bd9c514.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 168,
@@ -79353,6 +79679,8 @@
 				"raw": "2,799",
 				"value": 2799
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c2e80432236c0313c546c1323056d962.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 169,
@@ -79402,6 +79730,8 @@
 				"raw": "2,796",
 				"value": 2796
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a89d50bc5df2f7da55acd9129e61c858.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/58d3ec8338cc9746a2e0cf901fbcec0e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 170,
@@ -79451,6 +79781,8 @@
 				"raw": "2,775",
 				"value": 2775
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/95e57b924511a206cee9fb6b8bab8ce2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 171,
@@ -79500,6 +79832,8 @@
 				"raw": "2,728",
 				"value": 2728
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ba5b1654cbc06d0ce057f5d99b315b7e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 172,
@@ -79550,6 +79884,8 @@
 				"raw": "2,727",
 				"value": 2727
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ac81009ad910052ac23cb86c8ed0ed4e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 173,
@@ -79600,6 +79936,8 @@
 				"raw": "2,720",
 				"value": 2720
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/df34c800c0d48f08c1ac6bd4db1e25c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 174,
@@ -79649,6 +79987,8 @@
 				"raw": "2,710",
 				"value": 2710
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8bf07148479f8894c483db879ed46c4a.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 175,
@@ -79698,6 +80038,8 @@
 				"raw": "2,671",
 				"value": 2671
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b91ed8db52e1a3c52e0f9bd69b290b9f.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 176,
@@ -79747,6 +80089,8 @@
 				"raw": "2,648",
 				"value": 2648
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/95e57b924511a206cee9fb6b8bab8ce2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 177,
@@ -79797,6 +80141,8 @@
 				"raw": "2,611",
 				"value": 2611
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/04b1031280c2bf3d75fe4c7343095eea.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0d6c3365022ed3b059eac467b076978f.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 178,
@@ -79847,6 +80193,8 @@
 				"raw": "2,576",
 				"value": 2576
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/ae5c7f708a36f754c2f68c65c88ab9aa.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 179,
@@ -79897,6 +80245,8 @@
 				"raw": "2,533",
 				"value": 2533
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6259b7dba1d1c0897da675e58f456ec3.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 180,
@@ -79946,6 +80296,8 @@
 				"raw": "2,530",
 				"value": 2530
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/95e57b924511a206cee9fb6b8bab8ce2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 181,
@@ -79996,6 +80348,8 @@
 				"raw": "2,451",
 				"value": 2451
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fdc14f2b28c77f9627f0629fdb540b76.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 182,
@@ -80046,6 +80400,8 @@
 				"raw": "2,424",
 				"value": 2424
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f7a37e909fe6f923501f2175dc3784b6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 183,
@@ -80096,6 +80452,8 @@
 				"raw": "2,398",
 				"value": 2398
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e8030d75835eaf1c9014f2d63338d518.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 184,
@@ -80145,6 +80503,8 @@
 				"raw": "2,389",
 				"value": 2389
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c95ea75fe09d9f090a88d5322923d07a.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2c022e452f395db7b1daec1cb44631fc.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 185,
@@ -80194,6 +80554,8 @@
 				"raw": "2,387",
 				"value": 2387
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/06d12929d1866159aca5cdb60282f908.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 186,
@@ -80244,6 +80606,8 @@
 				"raw": "2,373",
 				"value": 2373
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d4f9351b75ec209ab6cc368b996dd6bc.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 187,
@@ -80294,6 +80658,8 @@
 				"raw": "2,361",
 				"value": 2361
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f7a37e909fe6f923501f2175dc3784b6.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 188,
@@ -80344,6 +80710,8 @@
 				"raw": "2,358",
 				"value": 2358
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/77a78edd73b7f6bfcf7d1c9a93a27979.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 189,
@@ -80393,6 +80761,8 @@
 				"raw": "2,258",
 				"value": 2258
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/255be304412b4f0f3d880cb7e46ca256.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 190,
@@ -80443,6 +80813,8 @@
 				"raw": "2,256",
 				"value": 2256
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c6aa03536fd68b5fca5ad6b83ea0cf1e.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a15754752f40aaf7b1b00aadb70a8f35.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 191,
@@ -80492,6 +80864,8 @@
 				"raw": "2,242",
 				"value": 2242
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fc7d4da29a642c1117897e6a4b8db543.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 192,
@@ -80541,6 +80915,8 @@
 				"raw": "2,221",
 				"value": 2221
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/938bc6eb5c5c772e2f3d066380179d36.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 193,
@@ -80590,6 +80966,8 @@
 				"raw": "2,206",
 				"value": 2206
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a1b6a5f3e52878610397249986300b23.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2c022e452f395db7b1daec1cb44631fc.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 194,
@@ -80640,6 +81018,8 @@
 				"raw": "2,201",
 				"value": 2201
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/80cc90861aa83c63de2273457a6c9345.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 195,
@@ -80690,6 +81070,8 @@
 				"raw": "2,181",
 				"value": 2181
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1c2e9282803d516be01561423a0ea282.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 196,
@@ -80739,6 +81121,8 @@
 				"raw": "2,176",
 				"value": 2176
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/49197babe16ed546cec94b26b44f3447.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6f17d323d81dd683086d88a9268f8106.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 197,
@@ -80789,6 +81173,8 @@
 				"raw": "2,143",
 				"value": 2143
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/099fb7df69bb8b9086d2fe6fdddea1cb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 198,
@@ -80838,6 +81224,8 @@
 				"raw": "2,076",
 				"value": 2076
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/807bf642994adf50cefc461518a537c1.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 199,
@@ -80887,6 +81275,8 @@
 				"raw": "2,072",
 				"value": 2072
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/50d67833eda8bb60a81803de7d901457.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bcc26708e314306fb2fc8cb98fcbf47e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 200,
@@ -80937,6 +81327,8 @@
 				"raw": "2,017",
 				"value": 2017
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/14537cf28a79273dc67b77befdf72a88.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 201,
@@ -80986,6 +81378,8 @@
 				"raw": "2,007",
 				"value": 2007
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/040a104defcc7011b570886e3ec3c73f.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 202,
@@ -81036,6 +81430,8 @@
 				"raw": "1,960",
 				"value": 1960
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f5d6ca2ffb1ce722190138b42ec953bf.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 203,
@@ -81086,6 +81482,8 @@
 				"raw": "1,959",
 				"value": 1959
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3d716eb7631167ec9ae7d2c642c5f0ae.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 204,
@@ -81135,6 +81533,8 @@
 				"raw": "1,956",
 				"value": 1956
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ec202c839348294926428ecb5a7423eb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 205,
@@ -81184,6 +81584,8 @@
 				"raw": "1,922",
 				"value": 1922
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/106a8a40a6e55b5ec5088a26d1ed979d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7d815c943977fe71bbf00caf1bd9c514.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 206,
@@ -81234,6 +81636,8 @@
 				"raw": "1,913",
 				"value": 1913
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/735baec8c23ff1416ae6a8c72c729432.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a0556509f8825756b6b89f59f90528ec.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 207,
@@ -81283,6 +81687,8 @@
 				"raw": "1,912",
 				"value": 1912
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/44cffedea1b6bc9800da018f2bd431dd.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7ba9d804508dd083ec20fcdb8ba0869d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 208,
@@ -81332,6 +81738,8 @@
 				"raw": "1,900",
 				"value": 1900
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/040a104defcc7011b570886e3ec3c73f.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 209,
@@ -81381,6 +81789,8 @@
 				"raw": "1,840",
 				"value": 1840
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/111a10b59029fc6a9ca5e821267e6f6c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/36418dde751148bd3b95a023d491ea73.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 210,
@@ -81430,6 +81840,8 @@
 				"raw": "1,774",
 				"value": 1774
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6301bf4e6d9d9728aaf5f9bea06c6a1a.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b441021fbc328e6d0e2abc895f5c96e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 211,
@@ -81479,6 +81891,8 @@
 				"raw": "1,771",
 				"value": 1771
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/38b89e4fd05f348f448eaca1320a807c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 212,
@@ -81529,6 +81943,8 @@
 				"raw": "1,736",
 				"value": 1736
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8aeced509e6d7bc990fe7ff67ad27d52.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 213,
@@ -81579,6 +81995,8 @@
 				"raw": "1,704",
 				"value": 1704
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d657cc9dae47ecaec19038f18f335c18.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 214,
@@ -81627,6 +82045,8 @@
 				"raw": "1,686",
 				"value": 1686
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e7d4497fbdd8339eaf9da4b9151c9559.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 215,
@@ -81676,6 +82096,8 @@
 				"raw": "1,676",
 				"value": 1676
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/352833d18ac3305cae2b0e026de06554.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 216,
@@ -81725,6 +82147,8 @@
 				"raw": "1,642",
 				"value": 1642
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a1b6a5f3e52878610397249986300b23.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2c022e452f395db7b1daec1cb44631fc.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 217,
@@ -81774,6 +82198,8 @@
 				"raw": "1,611",
 				"value": 1611
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a22adf5ee0096e1cb9a6e212ee591b70.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 218,
@@ -81823,6 +82249,8 @@
 				"raw": "1,564",
 				"value": 1564
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6afd31f787ff68d32e1f574686494606.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 219,
@@ -81872,6 +82300,8 @@
 				"raw": "1,538",
 				"value": 1538
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/273379dd44efda777c53b3902a3a1eee.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/247715dd42abef457b52ef37280c0e42.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 220,
@@ -81921,6 +82351,8 @@
 				"raw": "1,495",
 				"value": 1495
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/88ea7e35e14f29c4cda6588cb258333b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/58d3ec8338cc9746a2e0cf901fbcec0e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 221,
@@ -81969,6 +82401,8 @@
 				"raw": "1,417",
 				"value": 1417
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/09da11cd4fc285affeb6922f09b431ee.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 222,
@@ -82018,6 +82452,8 @@
 				"raw": "1,388",
 				"value": 1388
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cef1290d58a2d94d1437e1e569fa7996.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 223,
@@ -82067,6 +82503,8 @@
 				"raw": "1,355",
 				"value": 1355
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/251630147cd942ade9414781e96237ec.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/247715dd42abef457b52ef37280c0e42.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 224,
@@ -82116,6 +82554,8 @@
 				"raw": "1,325",
 				"value": 1325
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f24e3336a1142847d6bf47b56b492eea.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 225,
@@ -82165,6 +82605,8 @@
 				"raw": "1,255",
 				"value": 1255
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b86c24934b3ec9954218ecfa0992aeb2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 226,
@@ -82215,6 +82657,8 @@
 				"raw": "1,246",
 				"value": 1246
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/63d7990202fd58a56f8ecf3a128db03a.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 227,
@@ -82264,6 +82708,8 @@
 				"raw": "1,230",
 				"value": 1230
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/22f0588bf5ce837fc5f4f89e86693c1f.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 228,
@@ -82312,6 +82758,8 @@
 				"raw": "1,204",
 				"value": 1204
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2752ee2761149f004df20e78749c1bab.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b441021fbc328e6d0e2abc895f5c96e.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 229,
@@ -82361,6 +82809,8 @@
 				"raw": "1,175",
 				"value": 1175
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a22adf5ee0096e1cb9a6e212ee591b70.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 230,
@@ -82410,6 +82860,8 @@
 				"raw": "1,154",
 				"value": 1154
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ac56ad66eb1ebb8a371f9d3d3c768c5a.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 231,
@@ -82459,6 +82911,8 @@
 				"raw": "1,146",
 				"value": 1146
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/161a3f06196563345afeacb46e9df88d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 232,
@@ -82508,6 +82962,8 @@
 				"raw": "1,127",
 				"value": 1127
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8d3b7dcc3635e3526efa32cb119b3adf.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 233,
@@ -82557,6 +83013,8 @@
 				"raw": "1,100",
 				"value": 1100
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b7fa10956ee9f16899ce1838c3c0e31.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 234,
@@ -82606,6 +83064,8 @@
 				"raw": "1,050",
 				"value": 1050
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8d3b7dcc3635e3526efa32cb119b3adf.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 235,
@@ -82654,6 +83114,8 @@
 				"raw": "1,045",
 				"value": 1045
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a22adf5ee0096e1cb9a6e212ee591b70.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 236,
@@ -82703,6 +83165,8 @@
 				"raw": "1,030",
 				"value": 1030
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fc7d4da29a642c1117897e6a4b8db543.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 237,
@@ -82751,6 +83215,8 @@
 				"raw": "994",
 				"value": 994
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/836a2f75cfa67de87a8a73f3c61f7f78.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 238,
@@ -82801,6 +83267,8 @@
 				"raw": "989",
 				"value": 989
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/63d7990202fd58a56f8ecf3a128db03a.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 239,
@@ -82849,6 +83317,8 @@
 				"raw": "952",
 				"value": 952
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c674b162b08bb96e7f549ceb45060b6d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 240,
@@ -82898,6 +83368,8 @@
 				"raw": "918",
 				"value": 918
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5564a17ddf52e36f56e7256ad9946a17.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 241,
@@ -82947,6 +83419,7 @@
 				"raw": "905",
 				"value": 905
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/58cee87c4df6399921797be06a7aa608.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 242,
@@ -82996,6 +83469,7 @@
 				"raw": "873",
 				"value": 873
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 243,
@@ -83045,6 +83519,8 @@
 				"raw": "868",
 				"value": 868
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/06ec3d22c69944f6755bf75f07cd83bd.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7d815c943977fe71bbf00caf1bd9c514.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 244,
@@ -83094,6 +83570,8 @@
 				"raw": "825",
 				"value": 825
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a10719f1f2180e473ea9a0957e3b9fe4.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 245,
@@ -83143,6 +83621,7 @@
 				"raw": "677",
 				"value": 677
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d38da97f92b3bdfef333a418ab8caf5.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 246,
@@ -83193,6 +83672,8 @@
 				"raw": "673",
 				"value": 673
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/eb279fe06dcd9199fccda5120e244a63.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 247,
@@ -83242,6 +83723,8 @@
 				"raw": "630",
 				"value": 630
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f622a8bd175353ed6166eac44db3d465.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/50c3ebe414c6946429934d79504922fa.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 248,
@@ -83291,6 +83774,7 @@
 				"raw": "604",
 				"value": 604
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/58cee87c4df6399921797be06a7aa608.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 249,
@@ -83340,6 +83824,7 @@
 				"raw": "592",
 				"value": 592
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 250,
@@ -83389,6 +83874,8 @@
 				"raw": "546",
 				"value": 546
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3e4fc5bcc1dea42508124e11572367d2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/d105aa342f2d0c53a90a28477552f61f.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 251,
@@ -83438,6 +83925,8 @@
 				"raw": "515",
 				"value": 515
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3e4fc5bcc1dea42508124e11572367d2.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/d105aa342f2d0c53a90a28477552f61f.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 252,
@@ -83487,6 +83976,7 @@
 				"raw": "475",
 				"value": 475
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/767a0f26b7b3a790a82bb243eb6707b4.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 253,
@@ -83536,6 +84026,7 @@
 				"raw": "389",
 				"value": 389
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fbf0964f25f9f126e6a47bd6ee53a550.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 254,
@@ -83634,6 +84125,7 @@
 				"raw": "210",
 				"value": 210
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/767a0f26b7b3a790a82bb243eb6707b4.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 256,
@@ -83862,6 +84354,7 @@
 				"raw": "46,566",
 				"value": 46566
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/52f2eb1fefa20e9c7b064c190855d588.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 2,
@@ -84065,6 +84558,8 @@
 				"raw": "26,447",
 				"value": 26447
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 7,
@@ -84104,6 +84599,7 @@
 				"raw": "7,782",
 				"value": 7782
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/adb140aba83a6c14345852531d4ee2e0.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 8,
@@ -84143,6 +84639,7 @@
 				"raw": "11,361",
 				"value": 11361
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b01a6ddceb7b0e2e86ebcb7a6a83eaa.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 9,
@@ -84264,6 +84761,7 @@
 				"raw": "21,742",
 				"value": 21742
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b01a6ddceb7b0e2e86ebcb7a6a83eaa.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 12,
@@ -84303,6 +84801,7 @@
 				"raw": "862",
 				"value": 862
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 13,
@@ -84342,6 +84841,7 @@
 				"raw": "19,688",
 				"value": 19688
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/52f2eb1fefa20e9c7b064c190855d588.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 14,
@@ -84463,6 +84963,7 @@
 				"raw": "14,178",
 				"value": 14178
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2e486aef07bd3551c35807f416ba0b6c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 17,
@@ -84502,6 +85003,7 @@
 				"raw": "14,018",
 				"value": 14018
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b1efa0eaa710653d85e2fcf5321047fb.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 18,
@@ -84580,6 +85082,8 @@
 				"raw": "16,487",
 				"value": 16487
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 20,
@@ -84619,6 +85123,7 @@
 				"raw": "12,253",
 				"value": 12253
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2e486aef07bd3551c35807f416ba0b6c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 21,
@@ -84658,6 +85163,8 @@
 				"raw": "15,955",
 				"value": 15955
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/07619f9f7115a2295c080f08179deb98.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 22,
@@ -84738,6 +85245,7 @@
 				"raw": "4,989",
 				"value": 4989
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/adb140aba83a6c14345852531d4ee2e0.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 24,
@@ -84818,6 +85326,7 @@
 				"raw": "14,075",
 				"value": 14075
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 26,
@@ -84857,6 +85366,7 @@
 				"raw": "2,297",
 				"value": 2297
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/edf23f2e6951efcab4c4b10630b6f7c4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 27,
@@ -84896,6 +85406,7 @@
 				"raw": "585",
 				"value": 585
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 28,
@@ -84935,6 +85446,7 @@
 				"raw": "1,123",
 				"value": 1123
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ab8095cdd657b0cd66452ddb44ef01e1.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 29,
@@ -84974,6 +85486,7 @@
 				"raw": "10,217",
 				"value": 10217
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2e486aef07bd3551c35807f416ba0b6c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 30,
@@ -85013,6 +85526,7 @@
 				"raw": "1,426",
 				"value": 1426
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 31,
@@ -85093,6 +85607,7 @@
 				"raw": "12,307",
 				"value": 12307
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 33,
@@ -85132,6 +85647,7 @@
 				"raw": "1,815",
 				"value": 1815
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e9dc1cc0179cda4d2445845cf8992a7e.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 34,
@@ -85171,6 +85687,7 @@
 				"raw": "12,884",
 				"value": 12884
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b01a6ddceb7b0e2e86ebcb7a6a83eaa.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 35,
@@ -85210,6 +85727,8 @@
 				"raw": "6,679",
 				"value": 6679
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 36,
@@ -85290,6 +85809,7 @@
 				"raw": "9,345",
 				"value": 9345
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b1efa0eaa710653d85e2fcf5321047fb.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 38,
@@ -85370,6 +85890,7 @@
 				"raw": "12,312",
 				"value": 12312
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c522f849a7d4d86d5224d7d5d5671a4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 40,
@@ -85450,6 +85971,7 @@
 				"raw": "2,787",
 				"value": 2787
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b1efa0eaa710653d85e2fcf5321047fb.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 42,
@@ -85489,6 +86011,7 @@
 				"raw": "11,927",
 				"value": 11927
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/52f2eb1fefa20e9c7b064c190855d588.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 43,
@@ -85569,6 +86092,8 @@
 				"raw": "11,837",
 				"value": 11837
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c4d62b5c4dee5da48c978a343199911.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 45,
@@ -85608,6 +86133,7 @@
 				"raw": "3,403",
 				"value": 3403
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 46,
@@ -85647,6 +86173,7 @@
 				"raw": "1,534",
 				"value": 1534
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 47,
@@ -85686,6 +86213,8 @@
 				"raw": "8,541",
 				"value": 8541
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 48,
@@ -85725,6 +86254,8 @@
 				"raw": "7,126",
 				"value": 7126
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d93a12a1f2250f0869a4173c022bd46d.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 49,
@@ -85764,6 +86295,8 @@
 				"raw": "10,610",
 				"value": 10610
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/07619f9f7115a2295c080f08179deb98.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 50,
@@ -85844,6 +86377,7 @@
 				"raw": "10,109",
 				"value": 10109
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c522f849a7d4d86d5224d7d5d5671a4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 52,
@@ -85883,6 +86417,7 @@
 				"raw": "1,052",
 				"value": 1052
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 53,
@@ -85963,6 +86498,8 @@
 				"raw": "9,922",
 				"value": 9922
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1037e708755c7086c1ac467364ca4340.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 55,
@@ -86002,6 +86539,7 @@
 				"raw": "9,853",
 				"value": 9853
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 56,
@@ -86041,6 +86579,8 @@
 				"raw": "9,747",
 				"value": 9747
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f5548ad1862120aa9f9c96da4d444689.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 57,
@@ -86080,6 +86620,7 @@
 				"raw": "5,564",
 				"value": 5564
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1d7e8eb7c2c5884cb658a1877a084548.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 58,
@@ -86119,6 +86660,7 @@
 				"raw": "8,881",
 				"value": 8881
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 59,
@@ -86158,6 +86700,8 @@
 				"raw": "9,421",
 				"value": 9421
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ea7f15145c9e21ca9352deca0d5233c9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 60,
@@ -86320,6 +86864,8 @@
 				"raw": "8,866",
 				"value": 8866
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6c1d34f6dcca37c6b4b8dde37f4c94ba.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 64,
@@ -86359,6 +86905,8 @@
 				"raw": "8,703",
 				"value": 8703
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6c1d34f6dcca37c6b4b8dde37f4c94ba.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 65,
@@ -86398,6 +86946,7 @@
 				"raw": "8,669",
 				"value": 8669
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 66,
@@ -86437,6 +86986,8 @@
 				"raw": "3,336",
 				"value": 3336
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/47c2eb10dd01f64b4993988956c5c24c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/36418dde751148bd3b95a023d491ea73.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 67,
@@ -86476,6 +87027,7 @@
 				"raw": "7,755",
 				"value": 7755
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9d1fd669f61cce4abd35dbefd22ba90c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 68,
@@ -86556,6 +87108,8 @@
 				"raw": "630",
 				"value": 630
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f622a8bd175353ed6166eac44db3d465.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/50c3ebe414c6946429934d79504922fa.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 70,
@@ -86636,6 +87190,7 @@
 				"raw": "1,296",
 				"value": 1296
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/edf23f2e6951efcab4c4b10630b6f7c4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 72,
@@ -86675,6 +87230,7 @@
 				"raw": "1,666",
 				"value": 1666
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e4aa73bf21f3da3e22f9e07475e2e614.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 73,
@@ -86714,6 +87270,7 @@
 				"raw": "1,064",
 				"value": 1064
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 74,
@@ -86753,6 +87310,8 @@
 				"raw": "8,021",
 				"value": 8021
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6c1d34f6dcca37c6b4b8dde37f4c94ba.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 75,
@@ -86833,6 +87392,7 @@
 				"raw": "7,916",
 				"value": 7916
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 77,
@@ -86872,6 +87432,7 @@
 				"raw": "5,618",
 				"value": 5618
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/515dafc7f95e310e26bf3189f640231c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 78,
@@ -86911,6 +87472,8 @@
 				"raw": "7,716",
 				"value": 7716
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/07619f9f7115a2295c080f08179deb98.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 79,
@@ -87031,6 +87594,7 @@
 				"raw": "3,557",
 				"value": 3557
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/37a4f29aa2ef6ffcdee1a8eb6b5bfade.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 82,
@@ -87070,6 +87634,8 @@
 				"raw": "7,460",
 				"value": 7460
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c41b9fe80c157e104c32cfbfbb90a7b5.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 83,
@@ -87109,6 +87675,8 @@
 				"raw": "7,333",
 				"value": 7333
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/80c62abddb96917b1959192725c00ba9.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 84,
@@ -87148,6 +87716,7 @@
 				"raw": "1,288",
 				"value": 1288
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 85,
@@ -87187,6 +87756,8 @@
 				"raw": "7,207",
 				"value": 7207
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/62dc4f833ce159027d32498e0794106c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 86,
@@ -87267,6 +87838,7 @@
 				"raw": "5,360",
 				"value": 5360
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/515dafc7f95e310e26bf3189f640231c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 88,
@@ -87347,6 +87919,8 @@
 				"raw": "7,087",
 				"value": 7087
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d5ddb8609283e93406921caa6e80ac75.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 90,
@@ -87427,6 +88001,7 @@
 				"raw": "7,048",
 				"value": 7048
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 92,
@@ -87548,6 +88123,7 @@
 				"raw": "6,822",
 				"value": 6822
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b54195b2d82a31ae970ca85fb7fb0be7.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 95,
@@ -87587,6 +88163,8 @@
 				"raw": "6,819",
 				"value": 6819
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0c9b678fd92974726f166d42cda1774c.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 96,
@@ -87667,6 +88245,7 @@
 				"raw": "6,638",
 				"value": 6638
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 98,
@@ -87706,6 +88285,7 @@
 				"raw": "6,617",
 				"value": 6617
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 99,
@@ -87745,6 +88325,7 @@
 				"raw": "4,805",
 				"value": 4805
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 100,
@@ -87784,6 +88365,7 @@
 				"raw": "5,905",
 				"value": 5905
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9d1fd669f61cce4abd35dbefd22ba90c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 101,
@@ -87823,6 +88405,7 @@
 				"raw": "6,294",
 				"value": 6294
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b54195b2d82a31ae970ca85fb7fb0be7.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 102,
@@ -87862,6 +88445,8 @@
 				"raw": "6,233",
 				"value": 6233
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c7fef3b2cd1832d11841b7f7e0b04604.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 103,
@@ -87901,6 +88486,7 @@
 				"raw": "5,813",
 				"value": 5813
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 104,
@@ -87981,6 +88567,7 @@
 				"raw": "3,605",
 				"value": 3605
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/4017951cb20f7e81158b062f74af1cd2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 106,
@@ -88020,6 +88607,8 @@
 				"raw": "5,658",
 				"value": 5658
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2f4c271a310232896cf1100a078b2bae.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 107,
@@ -88100,6 +88689,8 @@
 				"raw": "5,576",
 				"value": 5576
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2f4c271a310232896cf1100a078b2bae.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 109,
@@ -88139,6 +88730,7 @@
 				"raw": "3,107",
 				"value": 3107
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 110,
@@ -88258,6 +88850,8 @@
 				"raw": "5,865",
 				"value": 5865
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/8ad4bf8073f313cddec7e02b6b3c72ed.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 113,
@@ -88297,6 +88891,8 @@
 				"raw": "5,844",
 				"value": 5844
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f5548ad1862120aa9f9c96da4d444689.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 114,
@@ -88417,6 +89013,7 @@
 				"raw": "2,497",
 				"value": 2497
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9d1fd669f61cce4abd35dbefd22ba90c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 117,
@@ -88456,6 +89053,7 @@
 				"raw": "5,528",
 				"value": 5528
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 118,
@@ -88495,6 +89093,7 @@
 				"raw": "5,487",
 				"value": 5487
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a929ea604d638e5e99125e48f76989e2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 119,
@@ -88534,6 +89133,8 @@
 				"raw": "5,392",
 				"value": 5392
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6c1d34f6dcca37c6b4b8dde37f4c94ba.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 120,
@@ -88573,6 +89174,7 @@
 				"raw": "956",
 				"value": 956
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a905c46ea9edc45f2773b30b719bd6dc.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 121,
@@ -88653,6 +89255,8 @@
 				"raw": "5,305",
 				"value": 5305
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/07619f9f7115a2295c080f08179deb98.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 123,
@@ -88692,6 +89296,7 @@
 				"raw": "5,295",
 				"value": 5295
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/31a0445d352fd44b62c9a8dd2752ccdf.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 124,
@@ -88772,6 +89377,8 @@
 				"raw": "5,236",
 				"value": 5236
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3d716eb7631167ec9ae7d2c642c5f0ae.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 126,
@@ -88811,6 +89418,7 @@
 				"raw": "5,233",
 				"value": 5233
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/106bf863f701bf09ac51fe023f477bb6.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 127,
@@ -88850,6 +89458,7 @@
 				"raw": "5,146",
 				"value": 5146
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3da7e8684b09600e90ea5c16f1edebe0.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 128,
@@ -88889,6 +89498,8 @@
 				"raw": "5,134",
 				"value": 5134
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f5548ad1862120aa9f9c96da4d444689.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 129,
@@ -88928,6 +89539,7 @@
 				"raw": "5,128",
 				"value": 5128
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5bc4f4029b38fd41d0232460b4295600.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 130,
@@ -88967,6 +89579,7 @@
 				"raw": "5,081",
 				"value": 5081
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 131,
@@ -89047,6 +89660,7 @@
 				"raw": "5,010",
 				"value": 5010
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/435489f514e2bf88d25c452a96f2dff9.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 133,
@@ -89086,6 +89700,7 @@
 				"raw": "1,055",
 				"value": 1055
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 134,
@@ -89166,6 +89781,7 @@
 				"raw": "2,782",
 				"value": 2782
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1d7e8eb7c2c5884cb658a1877a084548.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 136,
@@ -89205,6 +89821,8 @@
 				"raw": "4,603",
 				"value": 4603
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/807bf642994adf50cefc461518a537c1.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 137,
@@ -89326,6 +89944,7 @@
 				"raw": "4,463",
 				"value": 4463
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1fbfacd5dfe847c5cd0262c5616653ff.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 140,
@@ -89365,6 +89984,7 @@
 				"raw": "4,412",
 				"value": 4412
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 141,
@@ -89404,6 +90024,7 @@
 				"raw": "4,371",
 				"value": 4371
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 142,
@@ -89443,6 +90064,7 @@
 				"raw": "4,309",
 				"value": 4309
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/228496331415f6854ef589f33c2a2622.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 143,
@@ -89482,6 +90104,8 @@
 				"raw": "4,277",
 				"value": 4277
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/cd8e522e2aebb8d64c832c817b719131.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 144,
@@ -89521,6 +90145,7 @@
 				"raw": "4,229",
 				"value": 4229
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/228496331415f6854ef589f33c2a2622.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 145,
@@ -89560,6 +90185,7 @@
 				"raw": "3,106",
 				"value": 3106
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 146,
@@ -89599,6 +90225,8 @@
 				"raw": "4,158",
 				"value": 4158
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/d5ddb8609283e93406921caa6e80ac75.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 147,
@@ -89679,6 +90307,7 @@
 				"raw": "555",
 				"value": 555
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 149,
@@ -89759,6 +90388,7 @@
 				"raw": "4,018",
 				"value": 4018
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/31a0445d352fd44b62c9a8dd2752ccdf.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 151,
@@ -89798,6 +90428,7 @@
 				"raw": "4,017",
 				"value": 4017
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/89b89220e92c5b363d3e105c25a21640.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 152,
@@ -89837,6 +90468,7 @@
 				"raw": "3,845",
 				"value": 3845
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/228496331415f6854ef589f33c2a2622.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 153,
@@ -89876,6 +90508,7 @@
 				"raw": "3,820",
 				"value": 3820
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 154,
@@ -89915,6 +90548,7 @@
 				"raw": "1,779",
 				"value": 1779
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/37a4f29aa2ef6ffcdee1a8eb6b5bfade.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 155,
@@ -89995,6 +90629,7 @@
 				"raw": "3,686",
 				"value": 3686
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a929ea604d638e5e99125e48f76989e2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 157,
@@ -90156,6 +90791,8 @@
 				"raw": "3,507",
 				"value": 3507
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c67895888f053506b4af18272d01aa85.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 161,
@@ -90195,6 +90832,7 @@
 				"raw": "879",
 				"value": 879
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e4aa73bf21f3da3e22f9e07475e2e614.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 162,
@@ -90234,6 +90872,7 @@
 				"raw": "3,493",
 				"value": 3493
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/72966b5c97e45d8668483f2263138613.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 163,
@@ -90273,6 +90912,7 @@
 				"raw": "3,454",
 				"value": 3454
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5730fd352ae02a03290387ea81d39468.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 164,
@@ -90312,6 +90952,7 @@
 				"raw": "457",
 				"value": 457
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c5212d88869db30df6236cfd5e59a19.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 165,
@@ -90392,6 +91033,7 @@
 				"raw": "3,332",
 				"value": 3332
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 167,
@@ -90472,6 +91114,8 @@
 				"raw": "3,152",
 				"value": 3152
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/82752643e54291368409d8feca32de79.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 169,
@@ -90552,6 +91196,7 @@
 				"raw": "2,967",
 				"value": 2967
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c9f25c8f6d5e647366ffc4f71a825961.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 171,
@@ -90591,6 +91236,8 @@
 				"raw": "2,876",
 				"value": 2876
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2fa6f8078f2dd6afa358a6f90791f948.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 172,
@@ -90630,6 +91277,7 @@
 				"raw": "2,604",
 				"value": 2604
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 173,
@@ -90669,6 +91317,7 @@
 				"raw": "2,749",
 				"value": 2749
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 174,
@@ -90749,6 +91398,7 @@
 				"raw": "2,669",
 				"value": 2669
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 176,
@@ -90788,6 +91438,7 @@
 				"raw": "2,660",
 				"value": 2660
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 177,
@@ -90827,6 +91478,7 @@
 				"raw": "767",
 				"value": 767
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 178,
@@ -90948,6 +91600,7 @@
 				"raw": "2,550",
 				"value": 2550
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5bc4f4029b38fd41d0232460b4295600.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 181,
@@ -90987,6 +91640,8 @@
 				"raw": "2,507",
 				"value": 2507
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/216fb88fbc64390d606b8c7524a6df86.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b48b09fbb50634680168d5880b16bc9.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 182,
@@ -91026,6 +91681,7 @@
 				"raw": "2,248",
 				"value": 2248
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 183,
@@ -91146,6 +91802,7 @@
 				"raw": "2,384",
 				"value": 2384
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/562f1b6ca7ecda82248f4b02e833d211.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 186,
@@ -91185,6 +91842,7 @@
 				"raw": "2,327",
 				"value": 2327
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c9f25c8f6d5e647366ffc4f71a825961.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 187,
@@ -91224,6 +91882,7 @@
 				"raw": "2,321",
 				"value": 2321
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 188,
@@ -91263,6 +91922,8 @@
 				"raw": "2,197",
 				"value": 2197
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c4727da7488d80e8f7d428f5a23d1a11.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 189,
@@ -91302,6 +91963,7 @@
 				"raw": "2,092",
 				"value": 2092
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/05609c418be3a985a640632ccaca796b.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 190,
@@ -91341,6 +92003,7 @@
 				"raw": "562",
 				"value": 562
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 191,
@@ -91380,6 +92043,7 @@
 				"raw": "1,566",
 				"value": 1566
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9aba9869bd8266696a1fdad190a65b4c.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 192,
@@ -91419,6 +92083,7 @@
 				"raw": "648",
 				"value": 648
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/12997544665705bbbd94742268ce7091.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 193,
@@ -91458,6 +92123,7 @@
 				"raw": "1,452",
 				"value": 1452
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/18a14aeac121b2a5c8699556b63e38fd.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 194,
@@ -91497,6 +92163,7 @@
 				"raw": "372",
 				"value": 372
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6d0151b4c04668eb6272dc58ecacc3aa.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 195,
@@ -91536,6 +92203,7 @@
 				"raw": "1,824",
 				"value": 1824
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 196,
@@ -91575,6 +92243,7 @@
 				"raw": "292",
 				"value": 292
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 197,
@@ -91614,6 +92283,7 @@
 				"raw": "1,634",
 				"value": 1634
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e9dee44a01ea409afe80a939b6341843.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 198,
@@ -91652,6 +92322,7 @@
 				"raw": "1,091",
 				"value": 1091
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/18a14aeac121b2a5c8699556b63e38fd.jpg",
 			"ref": {
 				"tab": "Swap",
 				"row": 199,
@@ -91691,6 +92362,7 @@
 				"raw": "1,260",
 				"value": 1260
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 200,
@@ -91729,6 +92401,7 @@
 				"raw": "718",
 				"value": 718
 			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e996524beb9d4371b1adc1212a6accdf.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 201,

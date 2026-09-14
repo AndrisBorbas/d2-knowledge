@@ -32,6 +32,7 @@ import {
 import {
 	type ArchetypeRow,
 	type ExoticWeaponRow,
+	type SustainedRow,
 	type SwapRow,
 	type WeaponBreaker,
 	type WeaponCategory,
@@ -149,6 +150,69 @@ function resolveIcons<T extends { name: string; frame?: string }>(
 	});
 }
 
+// The sheet's own wording for an ability the subclass screen files under
+// another name.
+const ABILITY_NAME_ALIASES: Record<string, string> = {
+	// The sheet times the melee thrown out of a grapple, which the game only
+	// knows as the grenade that threw it.
+	"Grapple melee": "Grapple",
+};
+
+// "Envious Arsenal + High Ground (A Good Shout)" - the sheet lists the perks a
+// run assumed and then names, in brackets, the weapon it rolled them on. Only
+// a bracket that turns out to be a weapon is used, so the "(no buff)" and
+// "(~9m)" asides beside it cost nothing.
+function bracketedNames(text: string | undefined) {
+	return [...(text ?? "").matchAll(/\(([^)]+)\)/g)].map((match) =>
+		match[1].trim(),
+	);
+}
+
+// Where a row's own name is not a weapon the manifest knows. The Sustained and
+// Swap tabs name a row after the frame they timed - "High-impact bow" - or
+// after an ability, and both leave the weapon itself in the conditions.
+function resolveSetupIcon(
+	row: { name: string; loadout?: string },
+	resolver: BungieManifestSnapshotResolver,
+) {
+	const abilityIconPath = resolver.getSubclassAbilityIconPath(
+		ABILITY_NAME_ALIASES[row.name] ?? row.name,
+	);
+	if (abilityIconPath) return { iconPath: abilityIconPath };
+
+	for (const candidate of bracketedNames(row.loadout)) {
+		const weapon = resolver.getWeaponEnrichmentByName(candidate);
+		if (weapon?.iconPath) {
+			return {
+				iconPath: weapon.iconPath,
+				watermarkPath: weapon.watermarkPath,
+			};
+		}
+	}
+
+	return null;
+}
+
+// The second pass over a timed tab, for the rows the weapon pass left bare.
+// What is still missing after it is the handful of rows named after a damage
+// over time effect, which nothing in the game is named after.
+function resolveSetupIcons<
+	T extends {
+		name: string;
+		loadout?: string;
+		iconPath?: string;
+		watermarkPath?: string;
+	},
+>(rows: T[], resolver: BungieManifestSnapshotResolver | null): T[] {
+	if (!resolver) return rows;
+
+	return rows.map((row) => {
+		if (row.iconPath) return row;
+		const icon = resolveSetupIcon(row, resolver);
+		return icon ? { ...row, ...icon } : row;
+	});
+}
+
 export async function buildWeaponsDataset(): Promise<WeaponsDataset> {
 	const [endgame, damage, resolver] = await Promise.all([
 		readAegisSheetSnapshot("endgame"),
@@ -176,13 +240,26 @@ export async function buildWeaponsDataset(): Promise<WeaponsDataset> {
 		iconMisses,
 	);
 
-	// The swap tab times supers, grenades and melees beside weapons, so a name
-	// the weapon manifest does not know is expected here and is not worth a
-	// build warning. Those rows fall back to a lettered square.
-	const swaps = resolveIcons<SwapRow>(
-		parseSwapTab(requireTab(damage.grid, SWAP_TAB.tab, script)),
+	// Both timed tabs name plenty of rows after a frame or an ability rather
+	// than after a weapon, so a name the weapon manifest does not know is
+	// expected here and is not worth a build warning. The setup pass picks
+	// those up from the subclass screen and from the conditions.
+	const swaps = resolveSetupIcons<SwapRow>(
+		resolveIcons<SwapRow>(
+			parseSwapTab(requireTab(damage.grid, SWAP_TAB.tab, script)),
+			resolver,
+			new Set<string>(),
+		),
 		resolver,
-		new Set<string>(),
+	);
+
+	const sustained = resolveSetupIcons<SustainedRow>(
+		resolveIcons<SustainedRow>(
+			parseSustainedTab(requireTab(damage.grid, SUSTAINED_TAB.tab, script)),
+			resolver,
+			new Set<string>(),
+		),
+		resolver,
 	);
 
 	const countBySlug = new Map<string, number>();
@@ -211,9 +288,7 @@ export async function buildWeaponsDataset(): Promise<WeaponsDataset> {
 		damageShots: parseDamageTab(
 			requireTab(damage.grid, DAMAGE_TAB.tab, script),
 		),
-		sustained: parseSustainedTab(
-			requireTab(damage.grid, SUSTAINED_TAB.tab, script),
-		),
+		sustained,
 		swaps,
 		bosses: parseBossTab(requireTab(damage.grid, BOSSES_TAB.tab, script)),
 		status: parseStatusTab(requireTab(endgame.grid, STATUS_TAB.tab, script)),

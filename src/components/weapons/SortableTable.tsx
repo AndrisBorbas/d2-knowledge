@@ -18,6 +18,11 @@ export type TableColumn<T> = {
 	align?: "left" | "right";
 	// Hidden below md, for columns a phone has no room for.
 	secondary?: boolean;
+	// The cell runs down the detail strip as well, so an icon stands beside
+	// both the row and the prose under it rather than only the row. Only the
+	// first column can claim it, since that is the only side the strip can
+	// start after.
+	leading?: boolean;
 };
 
 type SortableTableProps<T> = {
@@ -135,6 +140,10 @@ export function SortableTable<T>({
 				) : (
 					sorted.map((row) => {
 						const detail = renderDetail?.(row);
+						// The strip only moves inside the grid when there is a cell to
+						// its left to clear; otherwise it stays the full width band it
+						// is on every other tab.
+						const inset = Boolean(detail) && columns[0].leading === true;
 
 						return (
 							<div
@@ -146,6 +155,9 @@ export function SortableTable<T>({
 										gridClass,
 										"px-3 pt-2",
 										detail ? "pb-1" : "pb-2",
+										// The two rows of one record read as one line and a
+										// note under it, which the column gap is too wide for.
+										inset && "gap-y-1 pb-2",
 									)}
 								>
 									{columns.map((column) => (
@@ -155,14 +167,22 @@ export function SortableTable<T>({
 												"min-w-0 truncate text-sm text-white/80",
 												column.align === "right" && "text-right tabular-nums",
 												column.secondary && "hidden md:block",
+												column.leading && inset && "row-span-2",
 												column.className,
 											)}
 										>
 											{column.render(row)}
 										</div>
 									))}
+									{inset ? (
+										<div className="col-start-2 col-end-[-1] min-w-0">
+											{detail}
+										</div>
+									) : null}
 								</div>
-								{detail ? <div className="px-3 pb-2">{detail}</div> : null}
+								{detail && !inset ? (
+									<div className="px-3 pb-2">{detail}</div>
+								) : null}
 							</div>
 						);
 					})

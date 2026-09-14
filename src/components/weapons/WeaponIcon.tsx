@@ -32,16 +32,24 @@ export function WeaponIcon({
 		);
 	}
 
+	// The images size themselves off the box rather than off the 32px they are
+	// requested at, so a caller that asks for a smaller icon gets one.
 	return (
 		<div className={cn("relative size-8 shrink-0", className)}>
-			<Image src={iconPath} alt="" width={32} height={32} className="size-8" />
+			<Image
+				src={iconPath}
+				alt=""
+				width={32}
+				height={32}
+				className="size-full"
+			/>
 			{watermarkPath ? (
 				<Image
 					src={watermarkPath}
 					alt=""
 					width={32}
 					height={32}
-					className="absolute inset-0 size-8"
+					className="absolute inset-0 size-full"
 				/>
 			) : null}
 		</div>

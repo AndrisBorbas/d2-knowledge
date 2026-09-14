@@ -7,11 +7,17 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.7.2] - 2026-09-14
+
+### Changed
+
+- Added Icons to dps setups and made them larger. [/weapons?v=damage](https://owlsector.net/weapons?v=damage)
+
 ## [1.7.1] - 2026-09-14
 
 ### Fixed
 
-- Hide damage sheet errors.
+- Hide damage sheet errors. [/weapons?v=damage&d=bosses](https://owlsector.net/weapons?v=damage&d=bosses)
 
 ## [1.7.0] - 2026-09-14
 
@@ -19,7 +25,7 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 
 - Weapons page at [/weapons](https://owlsector.net/weapons): every legendary and exotic weapon rated S to F for endgame PvE, with the recommended barrel, magazine, masterwork, perks and origin trait behind each row.
 - Archetype view showing the damage numbers behind every weapon frame: base damage, crit multiplier, true RPM, magazine, reload and ADS falloff range, plus the sheet's calculated add and boss DPS.
-- Damage view with measured per shot damage and crit ratio for every frame and exotic, simulated sustained and swap DPS for full rotations, and the health, damage phase length and raid mods of 61 raid and dungeon bosses.
+- Damage view with simulated sustained and swap DPS for full rotations, and the health, damage phase length and raid mods of 61 raid and dungeon bosses.
 - Weapon ratings, archetype math and boss damage all credit and link back to the two community spreadsheets by @theaegisrelic they come from, down to the individual tab.
 - Every perk, fragment, buff and status the glossary knows about is linked inside those conditions: hovering one opens the same entry card the glossary shows, and clicking it opens that entry.
 
