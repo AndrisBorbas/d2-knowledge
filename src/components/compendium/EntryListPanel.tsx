@@ -43,7 +43,7 @@ export function EntryListPanel({
 }: EntryListPanelProps) {
 	if (entries.length === 0 && isLoading) {
 		return (
-			<div className="rounded-3xl border border-white/12 bg-black/45 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">
+			<div className="m-4 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">
 				<p className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
 					Loading entries
 				</p>
@@ -53,7 +53,7 @@ export function EntryListPanel({
 
 	if (entries.length === 0) {
 		return (
-			<div className="rounded-3xl border border-white/12 bg-black/45 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">
+			<div className="m-4 p-8 text-center shadow-2xl shadow-black/20 backdrop-blur-md">
 				<p className="text-xs font-semibold tracking-[0.2em] text-white/55 uppercase">
 					No matching entries
 				</p>

@@ -16,8 +16,6 @@ export type TableColumn<T> = {
 	render: (row: T) => React.ReactNode;
 	className?: string;
 	align?: "left" | "right";
-	// Hidden below md, for columns a phone has no room for.
-	secondary?: boolean;
 	// The cell runs down the detail strip as well, so an icon stands beside
 	// both the row and the prose under it rather than only the row. Only the
 	// first column can claim it, since that is the only side the strip can
@@ -87,9 +85,14 @@ export function SortableTable<T>({
 		);
 	};
 
+	// Every column is on screen at every width and the table scrolls sideways to
+	// reach them, rather than a phone being given a different set of columns
+	// than a desktop. `w-max` is what makes the rows themselves as wide as the
+	// widest of them, so a row's border and hover reach the far end of that
+	// scroll instead of stopping at the edge of the screen.
 	return (
 		<div className="overflow-x-auto border border-blue-500/40 bg-black/45 backdrop-blur-md">
-			<div className="min-w-full">
+			<div className="w-max min-w-full">
 				<div className={cn(gridClass, "border-b border-blue-500/40 px-3 py-2")}>
 					{columns.map((column) => {
 						const isActive = sort.key === column.key;
@@ -102,7 +105,6 @@ export function SortableTable<T>({
 									className={cn(
 										HEADER_CLASS,
 										column.align === "right" && "text-right",
-										column.secondary && "hidden md:block",
 									)}
 								>
 									{column.label}
@@ -122,7 +124,6 @@ export function SortableTable<T>({
 									HEADER_CLASS,
 									"flex cursor-pointer items-center gap-1 transition hover:text-white",
 									column.align === "right" && "justify-end",
-									column.secondary && "hidden md:flex",
 									isActive && "text-sky-200",
 								)}
 							>
@@ -166,7 +167,6 @@ export function SortableTable<T>({
 											className={cn(
 												"min-w-0 truncate text-sm text-white/80",
 												column.align === "right" && "text-right tabular-nums",
-												column.secondary && "hidden md:block",
 												column.leading && inset && "row-span-2",
 												column.className,
 											)}

@@ -15,9 +15,10 @@ import { TierBadge } from "./TierBadge";
 import { WeaponIcon } from "./WeaponIcon";
 
 // The exotic tab rates four separate uses rather than listing a roll, so it
-// gets its own columns.
+// gets its own columns. One shape at every width, the way the legendary table
+// is: the table scrolls sideways on a phone rather than dropping columns.
 export const EXOTIC_GRID_CLASS =
-	"grid grid-cols-[2rem_minmax(0,1fr)_1.5rem] items-center gap-3 md:grid-cols-[2rem_minmax(0,1fr)_2rem_5rem_10rem_2rem_2rem_2rem_2rem_1.5rem]";
+	"grid min-w-[50rem] grid-cols-[2rem_minmax(0,1fr)_2rem_5rem_10rem_2rem_2rem_2rem_2rem_1.5rem] items-center gap-3";
 
 export const EXOTIC_USE_LABELS = [
 	["roam", "Roam"],
@@ -44,7 +45,7 @@ function UseCell({
 	symbolLegend: LegendEntry[];
 }) {
 	if (!rating) {
-		return <span className="hidden text-white/25 md:block">-</span>;
+		return <span className="text-center text-white/25">-</span>;
 	}
 
 	const glyph = SYMBOL_GLYPH[rating];
@@ -53,10 +54,7 @@ function UseCell({
 	return (
 		<span
 			title={meaning ? `${label}: ${meaning}` : label}
-			className={cn(
-				"hidden text-center text-sm md:block",
-				SYMBOL_CLASS[rating],
-			)}
+			className={cn("text-center text-sm", SYMBOL_CLASS[rating])}
 		>
 			{glyph}
 		</span>
@@ -100,15 +98,12 @@ export function ExoticRow({
 							iconPath={row.breakerIconPath}
 						/>
 					</span>
-					<span className="block truncate text-xs text-white/50 md:hidden">
-						{row.tags.join(", ")}
-					</span>
 				</span>
 				<TierBadge tier={row.tier} legend={tierLegend} />
-				<span className="hidden text-sm text-white/70 capitalize md:block">
+				<span className="text-sm text-white/70 capitalize">
 					{row.slot ?? "-"}
 				</span>
-				<span className="hidden truncate text-sm text-white/60 md:block">
+				<span className="truncate text-sm text-white/60">
 					{row.tags.join(", ") || "-"}
 				</span>
 				{EXOTIC_USE_LABELS.map(([key, label]) => (

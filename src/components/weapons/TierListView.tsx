@@ -161,79 +161,80 @@ export function TierListView({
 			    selection gets a table each rather than one table of half-empty
 			    cells. */}
 			{weaponRows.length > 0 ? (
-				<div className="border border-blue-500/40 bg-black/45 backdrop-blur-md">
-					<div
-						className={cn(
-							weaponGridClass(showType),
-							"border-b border-blue-500/40 px-3 py-2",
-						)}
-					>
-						<span aria-hidden />
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>#</span>
-						<span className={HEADER_CLASS}>Weapon</span>
-						<span className={HEADER_CLASS}>Tier</span>
-						{showType ? (
-							<span className={cn(HEADER_CLASS, "hidden md:block")}>Type</span>
-						) : null}
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>Energy</span>
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>Frame</span>
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>Source</span>
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>Season</span>
-						<span aria-hidden />
-					</div>
+				// `w-max` so a row's border and hover reach the far end of the
+				// sideways scroll rather than stopping at the edge of the screen.
+				<div className="overflow-x-auto border border-blue-500/40 bg-black/45 backdrop-blur-md">
+					<div className="w-max min-w-full">
+						<div
+							className={cn(
+								weaponGridClass(showType),
+								"border-b border-blue-500/40 px-3 py-2",
+							)}
+						>
+							<span aria-hidden />
+							<span className={HEADER_CLASS}>#</span>
+							<span className={HEADER_CLASS}>Weapon</span>
+							<span className={HEADER_CLASS}>Tier</span>
+							{showType ? <span className={HEADER_CLASS}>Type</span> : null}
+							<span className={HEADER_CLASS}>Energy</span>
+							<span className={HEADER_CLASS}>Frame</span>
+							<span className={HEADER_CLASS}>Source</span>
+							<span className={HEADER_CLASS}>Season</span>
+							<span aria-hidden />
+						</div>
 
-					{weaponRows.map((row) => (
-						<WeaponRow
-							key={row.id}
-							row={row}
-							expanded={expandedId === row.id}
-							onToggle={() => {
-								onToggleRow(row.id);
-							}}
-							tierLegend={dataset.tierLegend}
-							showType={showType}
-							perks={perks}
-						/>
-					))}
+						{weaponRows.map((row) => (
+							<WeaponRow
+								key={row.id}
+								row={row}
+								expanded={expandedId === row.id}
+								onToggle={() => {
+									onToggleRow(row.id);
+								}}
+								tierLegend={dataset.tierLegend}
+								showType={showType}
+								perks={perks}
+							/>
+						))}
+					</div>
 				</div>
 			) : null}
 
 			{exoticRows.length > 0 ? (
-				<div className="border border-blue-500/40 bg-black/45 backdrop-blur-md">
-					<div
-						className={cn(
-							EXOTIC_GRID_CLASS,
-							"border-b border-blue-500/40 px-3 py-2",
-						)}
-					>
-						<span aria-hidden />
-						<span className={HEADER_CLASS}>Exotic</span>
-						<span className={HEADER_CLASS}>Tier</span>
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>Slot</span>
-						<span className={cn(HEADER_CLASS, "hidden md:block")}>Tags</span>
-						{EXOTIC_USE_LABELS.map(([key, label]) => (
-							<span
-								key={key}
-								className={cn(HEADER_CLASS, "hidden text-center md:block")}
-							>
-								{label}
-							</span>
-						))}
-						<span aria-hidden />
-					</div>
+				<div className="overflow-x-auto border border-blue-500/40 bg-black/45 backdrop-blur-md">
+					<div className="w-max min-w-full">
+						<div
+							className={cn(
+								EXOTIC_GRID_CLASS,
+								"border-b border-blue-500/40 px-3 py-2",
+							)}
+						>
+							<span aria-hidden />
+							<span className={HEADER_CLASS}>Exotic</span>
+							<span className={HEADER_CLASS}>Tier</span>
+							<span className={HEADER_CLASS}>Slot</span>
+							<span className={HEADER_CLASS}>Tags</span>
+							{EXOTIC_USE_LABELS.map(([key, label]) => (
+								<span key={key} className={cn(HEADER_CLASS, "text-center")}>
+									{label}
+								</span>
+							))}
+							<span aria-hidden />
+						</div>
 
-					{exoticRows.map((row) => (
-						<ExoticRow
-							key={row.id}
-							row={row}
-							expanded={expandedId === row.id}
-							onToggle={() => {
-								onToggleRow(row.id);
-							}}
-							tierLegend={dataset.tierLegend}
-							symbolLegend={dataset.symbolLegend}
-						/>
-					))}
+						{exoticRows.map((row) => (
+							<ExoticRow
+								key={row.id}
+								row={row}
+								expanded={expandedId === row.id}
+								onToggle={() => {
+									onToggleRow(row.id);
+								}}
+								tierLegend={dataset.tierLegend}
+								symbolLegend={dataset.symbolLegend}
+							/>
+						))}
+					</div>
 				</div>
 			) : null}
 

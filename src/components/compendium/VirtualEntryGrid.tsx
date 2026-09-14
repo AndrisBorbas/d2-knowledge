@@ -249,6 +249,15 @@ function ElementScrollGrid({
 	);
 }
 
+// React Compiler bails out of `useVirtualizer` on its own, but it doesn't know
+// `useWindowVirtualizer` has the same shape: every value here comes off one
+// mutable instance that never changes identity, so the compiler caches the
+// first answer it gets and keeps it. `getTotalSize()` is the one that hurts -
+// cached at the zero it returns before the grid has been measured, the box the
+// rows are drawn in has no height and the footer lands on top of them.
+//
+// The directive has to be the first statement in the body and unparenthesised,
+// or it is an ordinary expression and the compiler never sees it.
 function WindowScrollGrid({
 	items,
 	entryMap,
@@ -259,11 +268,7 @@ function WindowScrollGrid({
 	onGroupClick,
 	className,
 }: GridProps) {
-	// React Compiler bails out of `useVirtualizer` on its own, but it doesn't
-	// know `useWindowVirtualizer` has the same mutable-getter shape - memoizing
-	// this component freezes the list at its first paint.
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	("use no memo");
+	"use no memo";
 
 	const containerRef = useRef<HTMLDivElement>(null);
 	const { columnCount, isVisible } = useGridMetrics(containerRef);
@@ -271,6 +276,9 @@ function WindowScrollGrid({
 
 	// The grid starts partway down the document, so the window virtualizer needs
 	// that document-relative offset to line up with the page scroll position.
+	// An offset that no longer matches leaves it drawing the rows for a scroll
+	// position other than the one on screen, which reads as a blank stretch of
+	// page with the footer sitting in it.
 	const [scrollMargin, setScrollMargin] = useState(0);
 
 	useLayoutEffect(() => {
@@ -279,7 +287,32 @@ function WindowScrollGrid({
 			return;
 		}
 
-		setScrollMargin(element.getBoundingClientRect().top + window.scrollY);
+		const measure = () => {
+			const next = element.getBoundingClientRect().top + window.scrollY;
+			// Sub-pixel drift is not worth a render, and bailing out on it is what
+			// keeps the observers below from feeding themselves.
+			setScrollMargin((current) =>
+				Math.abs(next - current) < 1 ? current : next,
+			);
+		};
+
+		measure();
+
+		// What sits above the grid can change height without this component
+		// rendering at all - the mobile nav menu opening inside the sticky
+		// header is the loud one, at up to 30rem of it, and it animates for
+		// 300ms on top of that - so a render of the grid is not a signal that
+		// the grid moved. `body` is what grows with the page; `html` is pinned
+		// to the viewport and would never report it.
+		const observer = new ResizeObserver(measure);
+		observer.observe(element);
+		observer.observe(document.body);
+		window.addEventListener("resize", measure);
+
+		return () => {
+			observer.disconnect();
+			window.removeEventListener("resize", measure);
+		};
 	}, [columnCount, isVisible, items]);
 
 	const rowVirtualizer = useWindowVirtualizer({

@@ -91,7 +91,7 @@ const SUSTAINED_GRID =
 const SWAP_GRID =
 	"grid min-w-[59rem] grid-cols-[2.75rem_minmax(0,1fr)_5rem_5rem_4rem_6rem_5rem_5rem_6rem_6rem] items-center gap-3";
 const BOSS_GRID =
-	"grid min-w-[68rem] grid-cols-[minmax(0,3fr)_minmax(0,2fr)_7rem_7rem_5rem_6rem_6rem_minmax(0,3fr)_minmax(0,4fr)] items-center gap-3";
+	"grid min-w-[68rem] grid-cols-[minmax(0,0.2fr)_minmax(0,0.16fr)_7rem_7rem_5rem_6rem_6rem_minmax(0,0.3fr)_minmax(0,0.4fr)] items-center gap-3";
 
 // `Phase` is seconds on most rows but the sheet also writes "Variable", "N/A"
 // and "?" where it never timed one, so the column sorts on the number when
@@ -236,7 +236,6 @@ export function DamageView({
 			// different ones cannot be put beside each other.
 			key: "boss",
 			label: "Boss",
-			secondary: true,
 			sortValue: (row) => measuredBoss(row) ?? "",
 			render: (row) => measuredBoss(row) ?? "-",
 		},
@@ -271,14 +270,12 @@ export function DamageView({
 			key: "shots",
 			label: "Shots",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.shots),
 			render: (row) => formatCell(row.shots),
 		},
 		{
 			key: "patch",
 			label: "Patch",
-			secondary: true,
 			align: "right",
 			sortValue: (row) => row.patch ?? "",
 			render: (row) => row.patch ?? "-",
@@ -311,14 +308,12 @@ export function DamageView({
 		{
 			key: "slot",
 			label: "Slot",
-			secondary: true,
 			sortValue: (row) => row.slot ?? "",
 			render: (row) => row.slot ?? "-",
 		},
 		{
 			key: "family",
 			label: "Family",
-			secondary: true,
 			sortValue: (row) => row.family ?? "",
 			render: (row) => row.family ?? "-",
 		},
@@ -326,7 +321,6 @@ export function DamageView({
 			key: "tte",
 			label: "TtE",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.timeToEmpty),
 			render: (row) => formatCell(row.timeToEmpty),
 		},
@@ -334,7 +328,6 @@ export function DamageView({
 			key: "base",
 			label: "Base",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.base),
 			render: (row) => formatCell(row.base),
 		},
@@ -386,7 +379,6 @@ export function DamageView({
 			// slot it comes from: the tab times supers and abilities too.
 			key: "attackType",
 			label: "Type",
-			secondary: true,
 			sortValue: (row) => row.attackType ?? "",
 			render: (row) => row.attackType ?? "-",
 		},
@@ -394,7 +386,6 @@ export function DamageView({
 			key: "base",
 			label: "Base",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.base),
 			render: (row) => formatCell(row.base),
 		},
@@ -402,7 +393,6 @@ export function DamageView({
 			key: "shots",
 			label: "Shots",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.shots),
 			render: (row) => formatCell(row.shots),
 		},
@@ -417,7 +407,6 @@ export function DamageView({
 			key: "swapTime",
 			label: "Swap s",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.swapTime),
 			render: (row) => formatCell(row.swapTime),
 		},
@@ -425,7 +414,6 @@ export function DamageView({
 			key: "totalTime",
 			label: "Total s",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.totalTime),
 			render: (row) => formatCell(row.totalTime),
 		},
@@ -492,7 +480,6 @@ export function DamageView({
 			key: "clearable",
 			label: "Clear DPS",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.clearableDps),
 			render: (row) => formatCell(row.clearableDps),
 		},
@@ -500,7 +487,6 @@ export function DamageView({
 			key: "onePhase",
 			label: "1 phase",
 			align: "right",
-			secondary: true,
 			sortValue: (row) => cellSortValue(row.onePhaseDps),
 			render: (row) => formatCell(row.onePhaseDps),
 		},
@@ -509,7 +495,6 @@ export function DamageView({
 			// mods, so it is printed as written rather than blanked.
 			key: "mods",
 			label: "Mods",
-			secondary: true,
 			sortValue: (row) => row.mods.join(", "),
 			render: (row) => (
 				<span title={row.mods.join(", ")}>{row.mods.join(", ") || "-"}</span>
@@ -518,7 +503,6 @@ export function DamageView({
 		{
 			key: "notes",
 			label: "Notes",
-			secondary: true,
 			render: (row) => {
 				const text =
 					[row.onePhaseDescription, row.notes].filter(Boolean).join(" - ") ||

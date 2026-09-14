@@ -7,6 +7,13 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.7.3] - 2026-09-14
+
+### Fixed
+
+- Weapons tabs tables on mobile view.
+- Glossary list on mobile being under footer.
+
 ## [1.7.2] - 2026-09-14
 
 ### Changed

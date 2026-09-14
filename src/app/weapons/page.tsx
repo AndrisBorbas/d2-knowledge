@@ -36,7 +36,7 @@ export default async function WeaponsPage() {
 	if (!dataset) {
 		return (
 			<main className="mx-auto flex min-h-screen w-full max-w-3xl items-center px-6 py-12">
-				<div className="w-full rounded-3xl border border-red-400/25 bg-black/45 p-8 shadow-2xl shadow-black/20 backdrop-blur-md">
+				<div className="w-full border border-red-400/25 bg-black/45 p-8 shadow-2xl shadow-black/20 backdrop-blur-md">
 					<p className="text-xs font-semibold tracking-[0.3em] text-red-300/80 uppercase">
 						Weapons unavailable
 					</p>

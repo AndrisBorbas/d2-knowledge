@@ -14,13 +14,17 @@ import { WeaponIcon } from "./WeaponIcon";
 // One definition per shape, used by the row and by the header above it, so the
 // two can never drift apart. Spelled out rather than composed because Tailwind
 // only ships the class strings it can see.
+//
+// One shape at every width: the table scrolls sideways on a phone rather than
+// dropping the columns a phone has no room for, so the same row is on offer
+// whatever it is read on.
 const WEAPON_GRID =
-	"grid grid-cols-[2rem_2rem_minmax(0,1fr)_1.5rem] items-center gap-3 md:grid-cols-[2rem_2.5rem_minmax(0,1fr)_2rem_5rem_8rem_10rem_3.5rem_1.5rem]";
+	"grid min-w-[56rem] grid-cols-[2rem_2.5rem_minmax(0,1fr)_2rem_5rem_8rem_10rem_3.5rem_1.5rem] items-center gap-3";
 
 // With more than one weapon type in the list, the type has to be on the row:
 // an Adaptive auto and an Adaptive pulse are otherwise indistinguishable.
 const WEAPON_GRID_WITH_TYPE =
-	"grid grid-cols-[2rem_2rem_minmax(0,1fr)_1.5rem] items-center gap-3 md:grid-cols-[2rem_2.5rem_minmax(0,1fr)_2rem_7rem_5rem_7rem_9rem_3.5rem_1.5rem]";
+	"grid min-w-[62rem] grid-cols-[2rem_2.5rem_minmax(0,1fr)_2rem_7rem_5rem_7rem_9rem_3.5rem_1.5rem] items-center gap-3";
 
 export function weaponGridClass(showType: boolean) {
 	return showType ? WEAPON_GRID_WITH_TYPE : WEAPON_GRID;
@@ -150,7 +154,7 @@ export function WeaponRow({
 					iconPath={row.iconPath}
 					watermarkPath={row.watermarkPath}
 				/>
-				<span className="hidden text-sm text-white/45 tabular-nums md:block">
+				<span className="text-sm text-white/45 tabular-nums">
 					{row.rank ?? "-"}
 				</span>
 				<span className="min-w-0">
@@ -163,13 +167,6 @@ export function WeaponRow({
 							iconPath={row.breakerIconPath}
 						/>
 					</span>
-					{/* The type has a column of its own on desktop; on a phone that
-					    column is hidden, so it rides under the name instead. */}
-					{showType ? (
-						<span className="block truncate text-xs text-white/50 md:hidden">
-							{row.categoryLabel}
-						</span>
-					) : null}
 					{row.nameNote ? (
 						<span className="block truncate text-xs text-white/50">
 							{row.nameNote}
@@ -178,25 +175,22 @@ export function WeaponRow({
 				</span>
 				<TierBadge tier={row.tier} legend={tierLegend} />
 				{showType ? (
-					<span className="hidden truncate text-sm text-white/70 md:block">
+					<span className="truncate text-sm text-white/70">
 						{row.categoryLabel}
 					</span>
 				) : null}
 				<span
-					className={cn(
-						"hidden text-sm md:block",
-						ENERGY_TEXT_CLASS[row.energy ?? "Kinetic"],
-					)}
+					className={cn("text-sm", ENERGY_TEXT_CLASS[row.energy ?? "Kinetic"])}
 				>
 					{row.energy ?? "-"}
 				</span>
-				<span className="hidden truncate text-sm text-white/70 md:block">
+				<span className="truncate text-sm text-white/70">
 					{row.frame ?? "-"}
 				</span>
-				<span className="hidden truncate text-sm text-white/60 md:block">
+				<span className="truncate text-sm text-white/60">
 					{row.source ?? "-"}
 				</span>
-				<span className="hidden text-sm text-white/50 tabular-nums md:block">
+				<span className="text-sm text-white/50 tabular-nums">
 					{formatSeason(row.season)}
 				</span>
 				<ChevronDown

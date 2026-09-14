@@ -48,7 +48,7 @@ export function SiteHeader() {
 					<IconActionButton
 						icon={Menu}
 						iconSize={20}
-						className="block h-full cursor-pointer rounded border border-solid border-transparent bg-transparent px-2 py-2 text-xl leading-none outline-none focus:outline-none lg:hidden"
+						className="block h-full cursor-pointer border border-solid border-transparent bg-transparent px-2 py-2 text-xl leading-none outline-none focus:outline-none lg:hidden"
 						onClick={setNavbarOpen.bind(null, (prev) => !prev)}
 						label="Navbar toggler"
 					/>
