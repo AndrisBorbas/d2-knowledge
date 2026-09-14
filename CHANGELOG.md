@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.7.4] - 2026-09-14
+
+### Fixed
+
+- Rename mislabelled Reserves to Ammo generation.
+
 ## [1.7.3] - 2026-09-14
 
 ### Fixed

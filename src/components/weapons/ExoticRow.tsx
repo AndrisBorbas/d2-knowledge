@@ -142,7 +142,7 @@ export function ExoticRow({
 						{row.season !== null ? <span>Season {row.season}</span> : null}
 						{row.breaker ? <span>Breaks {row.breaker} Champions</span> : null}
 						{row.reserves !== null ? (
-							<span>Reserves {row.reserves}</span>
+							<span>Ammo generation {row.reserves}</span>
 						) : null}
 						{EXOTIC_USE_LABELS.map(([key, label]) => {
 							const rating = row[key];

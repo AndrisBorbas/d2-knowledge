@@ -126,7 +126,7 @@ export function WeaponRow({
 		row.ammoSlot ? { label: "Ammo", value: row.ammoSlot } : null,
 		row.breaker ? { label: "Breaks", value: `${row.breaker} Champions` } : null,
 		row.reserves !== null
-			? { label: "Reserves", value: String(row.reserves) }
+			? { label: "Ammo generation", value: String(row.reserves) }
 			: null,
 		row.charge != null ? { label: "Charge", value: String(row.charge) } : null,
 		row.impact != null ? { label: "Impact", value: String(row.impact) } : null,
