@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-14T12:19:16.464Z",
+	"generatedAt": "2026-09-14T13:01:27.943Z",
 	"endgameGeneratedAt": "2026-09-14T01:29:32.610Z",
 	"damageGeneratedAt": "2026-09-14T01:29:33.587Z",
 	"categories": [
@@ -92764,7 +92764,7 @@
 			"range": "Close to far",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -92800,7 +92800,7 @@
 			"range": "Medium",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -92836,7 +92836,7 @@
 			"range": "Close",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -92872,7 +92872,7 @@
 			"range": "Close",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -92908,7 +92908,7 @@
 			"range": "Medium to far",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -92944,7 +92944,7 @@
 			"range": "Medium",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -92980,7 +92980,7 @@
 			"range": "Medium",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -93016,7 +93016,7 @@
 			"range": "Medium to far",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -93052,7 +93052,7 @@
 			"range": "Medium",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -93088,7 +93088,7 @@
 			"range": "Close to medium",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {
@@ -93124,7 +93124,7 @@
 			"range": "Medium to far",
 			"phase": "?",
 			"clearableDps": {
-				"raw": "#VALUE!",
+				"raw": "",
 				"value": null
 			},
 			"onePhaseDps": {

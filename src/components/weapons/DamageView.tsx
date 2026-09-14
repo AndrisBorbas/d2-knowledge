@@ -464,7 +464,12 @@ export function DamageView({
 			label: "Phase",
 			align: "right",
 			sortValue: (row) => phaseSortValue(row.phase),
-			render: (row) => row.phase ?? "-",
+			render: (row) =>
+				row.phase
+					? isNaN(parseFloat(row.phase))
+						? row.phase
+						: `${row.phase} s`
+					: "N/A",
 		},
 		{
 			key: "clearable",
@@ -646,6 +651,8 @@ export function DamageView({
 						Phase is how many seconds of damage one window gives you, and Mods
 						names the raid mods the activity offers that can affect damage, or
 						&quot;No&quot; where it offers none.
+						<br />1 phase DPS is the avarage DPS required per player to kill the
+						boss in one phase, assuming full fireteam for that activity.
 					</p>
 					<SortableTable
 						rows={bossRows}

@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.7.1] - 2026-09-14
+
+### Fixed
+
+- Hide damage sheet errors.
+
 ## [1.7.0] - 2026-09-14
 
 ### Added

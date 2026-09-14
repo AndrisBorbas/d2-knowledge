@@ -53,7 +53,7 @@ export const SYMBOL_CLASS: Record<SymbolRating, string> = {
 // The sheets already formatted every number the way they want it read, commas
 // and "INF" included, so print that and keep the parsed value for sorting.
 export function formatCell(cell: NumericCell | undefined) {
-	if (!cell || cell.raw.length === 0) return "-";
+	if (!cell || cell.raw.length === 0) return "N/A";
 	return cell.raw;
 }
 

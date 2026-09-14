@@ -146,8 +146,17 @@ export function cellInteger(value: string): number | null {
 // should print exactly as written while still sorting numerically.
 export type NumericCell = { raw: string; value: number | null };
 
+// Sheets writes a broken formula into the cell itself, as "#VALUE!" or one of
+// its siblings. That is the spreadsheet talking to its author rather than a
+// number anyone should read, so it comes through as an empty cell and prints
+// the way every other blank does. The sheet's own written "N/A" is a different
+// thing - a deliberate "there is none" - and is kept as written.
+const SHEET_ERROR = /^#(VALUE|DIV\/0|REF|NAME|NUM|NULL|ERROR|N\/A)[!?]?$/i;
+
 export function cellNumeric(value: string): NumericCell {
-	return { raw: cellText(value), value: cellNumber(value) };
+	const raw = cellText(value);
+	if (SHEET_ERROR.test(raw)) return { raw: "", value: null };
+	return { raw, value: cellNumber(raw) };
 }
 
 export function cellBoolean(value: string): boolean | null {
