@@ -7,6 +7,14 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.7.5] - 2026-09-16
+
+### Added
+
+- Exotic armor perks now carry the Destiny Data Compendium's notes beside Clarity's description.
+- Exotic armor perks can be filtered by the class that wears the piece.
+- Ammo icons.
+
 ## [1.7.4] - 2026-09-14
 
 ### Fixed

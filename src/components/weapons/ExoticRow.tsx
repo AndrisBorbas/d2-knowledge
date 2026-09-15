@@ -1,7 +1,9 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
+import { STATIC_ICON_PATH_BY_GLYPH } from "@/lib/bungie/glyphs";
 import { cn } from "@/lib/utils/utils";
 import { SYMBOL_CLASS, SYMBOL_GLYPH } from "@/lib/weapons/display";
 import type {
@@ -101,7 +103,20 @@ export function ExoticRow({
 				</span>
 				<TierBadge tier={row.tier} legend={tierLegend} />
 				<span className="text-sm text-white/70 capitalize">
-					{row.slot ?? "-"}
+					{row.slot ? (
+						<div>
+							<Image
+								src={STATIC_ICON_PATH_BY_GLYPH[row.slot.toLowerCase()]}
+								className="mr-2 inline align-text-top"
+								alt={row.slot}
+								width={20}
+								height={20}
+							/>
+							{row.slot}
+						</div>
+					) : (
+						"-"
+					)}
 				</span>
 				<span className="truncate text-sm text-white/60">
 					{row.tags.join(", ") || "-"}

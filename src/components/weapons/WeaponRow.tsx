@@ -1,8 +1,10 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 import { HoverPrefetchLink } from "@/components/site/HoverPrefetchLink";
+import { STATIC_ICON_PATH_BY_GLYPH } from "@/lib/bungie/glyphs";
 import { cn } from "@/lib/utils/utils";
 import { ENERGY_TEXT_CLASS, formatSeason } from "@/lib/weapons/display";
 import type { LegendEntry, WeaponTierRow } from "@/lib/weapons/model";
@@ -101,7 +103,13 @@ function PerkColumn({
 	);
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({
+	label,
+	value,
+}: {
+	label: string;
+	value: string | React.JSX.Element;
+}) {
 	return (
 		<div>
 			<span className="text-[11px] font-semibold tracking-[0.16em] text-white/45 uppercase">
@@ -123,7 +131,23 @@ export function WeaponRow({
 	const detailsId = `${row.id}-details`;
 
 	const stats = [
-		row.ammoSlot ? { label: "Ammo", value: row.ammoSlot } : null,
+		row.ammoSlot
+			? {
+					label: "Ammo",
+					value: (
+						<span>
+							<Image
+								src={STATIC_ICON_PATH_BY_GLYPH[row.ammoSlot.toLowerCase()]}
+								className="mr-1 inline align-text-top"
+								alt={row.ammoSlot}
+								width={20}
+								height={20}
+							/>
+							{row.ammoSlot}
+						</span>
+					),
+				}
+			: null,
 		row.breaker ? { label: "Breaks", value: `${row.breaker} Champions` } : null,
 		row.reserves !== null
 			? { label: "Ammo generation", value: String(row.reserves) }

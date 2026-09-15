@@ -36,6 +36,7 @@ export const STATIC_ICON_PATH_BY_GLYPH: Record<string, string> = {
 	primary: `${DESTINY_ICONS_BASE}/general/ammo-primary.svg`,
 	special: `${DESTINY_ICONS_BASE}/general/ammo-special.svg`,
 	heavy: `${DESTINY_ICONS_BASE}/general/ammo-heavy.svg`,
+	power: `${DESTINY_ICONS_BASE}/general/ammo-heavy.svg`,
 	hunter: `${DESTINY_ICONS_BASE}/general/class_hunter_outline.svg`,
 	titan: `${DESTINY_ICONS_BASE}/general/class_titan_outline.svg`,
 	warlock: `${DESTINY_ICONS_BASE}/general/class_warlock_outline.svg`,

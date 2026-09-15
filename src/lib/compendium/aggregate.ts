@@ -1,4 +1,5 @@
 import { CLARITY_FALLBACK_TAB } from "@/lib/clarity/source";
+import { classNames } from "@/lib/compendium/keywords/data";
 import type { AlternateDescription, Entry } from "@/lib/compendium/model";
 import { isSameDescription } from "@/lib/utils/text";
 
@@ -134,6 +135,30 @@ function resolvePlacement(winner: UnifiedEntry, resolved: UnifiedEntry) {
 	};
 }
 
+// Which class wears an exotic piece is a fact about the entry, not about where
+// it is filed: only the DDC says it, by laying the Exotic Armors tab out in a
+// column per class, and Clarity's record for the same perk never does. So that
+// chip outlives its source losing the merge, where the rest of that source's
+// placement does not.
+//
+// Exotics alone, because every other kind already carries its class from
+// whichever source won - and an ability the DDC lists under one class and
+// Clarity files as everyone's would collect both rather than settle.
+function resolveGroups(
+	placedGroups: string[] | undefined,
+	winner: UnifiedEntry,
+	loser: UnifiedEntry,
+) {
+	const groups = placedGroups ?? winner.groups;
+	if (winner.kind !== "exotic_item_perk") return groups;
+
+	const carried = classNames.filter(
+		(className) =>
+			loser.groups.includes(className) && !groups.includes(className),
+	);
+	return carried.length > 0 ? [...groups, ...carried] : groups;
+}
+
 // The line above the description: where an origin trait drops, what a set
 // bonus needs, an ability's cooldown. Only DDC writes those, so a Clarity
 // record winning the merge would drop the line rather than replace it.
@@ -165,9 +190,11 @@ export function mergeUnifiedEntries(
 		const candidatePriority = getPriorityIndex(candidate.sourceId, priority);
 		const existingPriority = getPriorityIndex(existing.sourceId, priority);
 		if (candidatePriority < existingPriority) {
+			const placement = resolvePlacement(candidate, existing);
 			byKey.set(key, {
 				...candidate,
-				...resolvePlacement(candidate, existing),
+				...placement,
+				groups: resolveGroups(placement.groups, candidate, existing),
 				extraInfo: resolveExtraInfo(candidate, existing),
 				sourceRefs: [...candidate.sourceRefs, ...existing.sourceRefs],
 				alternateDescriptions: collectAlternates(candidate, existing),
@@ -186,11 +213,13 @@ export function mergeUnifiedEntries(
 			const loser = swapForEnhanced ? existing : candidate;
 			const isEnhancedPair = candidateEnhanced !== existingEnhanced;
 
+			const placement = resolvePlacement(winner, existing);
 			byKey.set(key, {
 				...winner,
 				// `existing` is what has been resolved so far, whichever of the two
 				// records ends up carrying the description.
-				...resolvePlacement(winner, existing),
+				...placement,
+				groups: resolveGroups(placement.groups, winner, loser),
 				extraInfo: resolveExtraInfo(winner, existing),
 				sourceRefs: [...winner.sourceRefs, ...loser.sourceRefs],
 				alternateDescriptions: collectAlternates(winner, loser, {
@@ -256,9 +285,11 @@ export function foldModFamilies(entries: UnifiedEntry[]) {
 		if (!family) return entry;
 
 		folded.add(family);
+		const placement = resolvePlacement(entry, family);
 		return {
 			...entry,
-			...resolvePlacement(entry, family),
+			...placement,
+			groups: resolveGroups(placement.groups, entry, family),
 			extraInfo: resolveExtraInfo(entry, family),
 			sourceRefs: [...entry.sourceRefs, ...family.sourceRefs],
 			alternateDescriptions: collectAlternates(entry, family),

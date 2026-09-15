@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-11T12:22:27.748Z",
+	"generatedAt": "2026-09-15T23:56:44.932Z",
 	"sheetId": "1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4",
 	"tabIds": {
 		"Weapon Perks": 1662574278,
@@ -316,7 +316,7 @@
 			[
 				"Danger Zone",
 				"",
-				"While within 15 metres of 3 enemies:\n?% Increased Blast Radius and decreased self damage.\nBuff lingers for 3.5 seconds once criteria isn't met.\n\nGrenade Launchers: 40% Decreased Self Damage.\nRocket Launchers: 99.99% Decreased Self Damage, and allows Rocket Jumping.\n\n↑Passively grants +5 Blast Radius."
+				"While within 15 metres of 3 enemies:\n?% Increased Blast Radius and decreased self damage.\nBuff lingers for 3.5 seconds once criteria isn't met.\n\nGrenade Launchers: 40% Decreased Self Damage.\nRocket Launchers and Rocket Sidearms: 99.99% Decreased Self Damage, and allows Rocket Jumping.\n\n↑Passively grants +5 Blast Radius."
 			],
 			[
 				"Deconstruct",
@@ -2617,7 +2617,7 @@
 			[
 				"Spacewalk\n\nVesper's Host\nDungeon",
 				"",
-				"2 Piece | Augmented Armaments\n\nPrimary Ammo Weapons deal 15% increased damage against Disoriented Combatants.\nDoes NOT work with Arc Blind."
+				"2 Piece | Augmented Armaments\n\nPrimary Ammo Weapons deal 15% increased damage against Disoriented Combatants.\nDisorient Duration is shorter than the animation, generally lasting for ~2.7 seconds.\nDoes NOT work with Arc Blind."
 			],
 			[
 				"",
@@ -10825,7 +10825,7 @@
 				"On Powered Arc Melee Kill:\nGrants 100% Melee Ability Energy and begins Health Regeneration.\n\nMelee Hits grant Arc Melee Ability Energy, up to once per melee.\n50% Melee Ability Energy on Powered Melee Hit.\n15% Melee Ability Energy on Non-Glaive Melee Hit while Knockout is active.\n5% Melee Ability Energy on Basic/Glaive Melee Hit.",
 				"Boots of the Assembler",
 				"",
-				"Passively grants +30 Airborne Effectiveness to Lumina. Noble Seekers grant Noble Rounds to Lumina.\n\nWhile standing in a Rift or Well of Radiance:\nSpawns Noble Seekers at an average rate of 1 per Fireteam-member every 8 seconds.\n\nNoble Seekers:\nTrack allies within 40 metres and bestow a buff on close proximity.\nPrioritize allies who have not been healed in the last 8s and won't target an ally more than once every 4s.\n \nHealing Rift | Seekers restore 70 Health, 60 Shield, and begin Health Regeneration.\nEmpowering Rift | Seekers grant 35% [15%] increased damage and +100 Class for 5 seconds.\n\nGrants Fireteam-Based Class Ability Energy upon buffing an ally with a Seeker.\n2 Allies = ?% Class Ability Energy | 3 = 25?% | 4 = ?% | 5 = ?%"
+				"Passively grants +30 Airborne Effectiveness to Lumina. Noble Seekers grant Noble Rounds to Lumina.\n\nWhile standing in a Rift or Well of Radiance:\nSpawns Noble Seekers at an average rate of 1 per Fireteam-member every 8 seconds.\n\nNoble Seekers:\nTrack allies within 40 metres and bestow a buff on close proximity.\nPrioritize allies who have not been healed in the last 8s and won't target an ally more than once every 4s.\n \nHealing Rift | Seekers restore 70 Health, 60 Shield, and begin Health Regeneration.\nEmpowering Rift | Seekers grant 35% [15%] increased damage and +100 Class for 5 seconds.\nWell of Radiance Seekers grant both effects.\n\nGrants Fireteam-Based Class Ability Energy upon buffing an ally with a Seeker.\n2 Allies = ?% Class Ability Energy | 3 = 25?% | 4 = ?% | 5 = ?%"
 			],
 			[],
 			[
@@ -11386,7 +11386,7 @@
 			[
 				"Orpheus Rig",
 				"",
-				"Deadfall returns Ability Energy per Enemy Tethered. \nX% Super Energy. Max of 50% Super Energy.\n10% Grenade\n10% Melee\n10% Class Ability Energy.\n\nMoebius Quiver can fire an additional volley per Super Activation and lasts 4 seconds longer.",
+				"For each enemy that gets tethered to a Deadfall anchor:\nGrants 10% Grenade, Melee, and Class Ability Energy. \nRefunds X% Super Energy, up to a maximum of 50% Super Energy.\n\nMoebius Quiver can fire an additional volley per Super Activation and lasts 4 seconds longer.",
 				"The Path of Burning Steps",
 				"",
 				"Roaring Flame stacks grant increased Solar Weapon and Ignition Damage.\nRoaring Flame x1 | 6% Increased Weapon Damage and 15% Increased Ignition Damage.\nRoaring Flame x2 | 9.2% Increased Weapon Damage and 20% Increased Ignition Damage.\nRoaring Flame x3 | 12.4% Increased Weapon Damage and 24.9% Increased Ignition Damage.\n\nHalves Slow Stacks received (rounded up) and they last half as long. \nFreeze, and Suspend debuffs last half as long.\nStasis Breakout deals no self-damage.\nBreaking out of Freeze or Suspend triggers a Solar Blast that deals up to 105 Solar Damage in a 9 metre radius ",
@@ -20574,7 +20574,7 @@
 		[
 			"Weapon Perks:59:2",
 			{
-				"text": "While within 15 metres of 3 enemies:\n?% Increased Blast Radius and decreased self damage.\nBuff lingers for 3.5 seconds once criteria isn't met.\n\nGrenade Launchers: 40% Decreased Self Damage.\nRocket Launchers: 99.99% Decreased Self Damage, and allows Rocket Jumping.\n\n↑Passively grants +5 Blast Radius.",
+				"text": "While within 15 metres of 3 enemies:\n?% Increased Blast Radius and decreased self damage.\nBuff lingers for 3.5 seconds once criteria isn't met.\n\nGrenade Launchers: 40% Decreased Self Damage.\nRocket Launchers and Rocket Sidearms: 99.99% Decreased Self Damage, and allows Rocket Jumping.\n\n↑Passively grants +5 Blast Radius.",
 				"runs": [
 					{
 						"start": 0,
@@ -20610,20 +20610,38 @@
 					},
 					{
 						"start": 144,
-						"end": 250
+						"end": 191
 					},
 					{
-						"start": 250,
-						"end": 264,
+						"start": 191,
+						"end": 207,
+						"color": "rgb(164, 129, 225)"
+					},
+					{
+						"start": 207,
+						"end": 212
+					},
+					{
+						"start": 212,
+						"end": 227,
+						"color": "rgb(99, 210, 117)"
+					},
+					{
+						"start": 227,
+						"end": 270
+					},
+					{
+						"start": 270,
+						"end": 284,
 						"color": "rgb(246, 178, 107)"
 					},
 					{
-						"start": 264,
-						"end": 267
+						"start": 284,
+						"end": 287
 					},
 					{
-						"start": 267,
-						"end": 301,
+						"start": 287,
+						"end": 321,
 						"color": "rgb(255, 217, 102)"
 					}
 				]
@@ -59609,7 +59627,7 @@
 		[
 			"Armor Perks:84:2",
 			{
-				"text": "2 Piece | Augmented Armaments\n\nPrimary Ammo Weapons deal 15% increased damage against Disoriented Combatants.\nDoes NOT work with Arc Blind.",
+				"text": "2 Piece | Augmented Armaments\n\nPrimary Ammo Weapons deal 15% increased damage against Disoriented Combatants.\nDisorient Duration is shorter than the animation, generally lasting for ~2.7 seconds.\nDoes NOT work with Arc Blind.",
 				"runs": [
 					{
 						"start": 0,
@@ -59651,17 +59669,32 @@
 					},
 					{
 						"start": 110,
-						"end": 115,
+						"end": 128,
+						"color": "rgb(183, 183, 183)"
+					},
+					{
+						"start": 128,
+						"end": 195,
+						"color": "rgb(204, 204, 204)"
+					},
+					{
+						"start": 195,
+						"end": 196,
+						"color": "rgb(204, 204, 204)"
+					},
+					{
+						"start": 196,
+						"end": 201,
 						"color": "rgb(224, 102, 102)"
 					},
 					{
-						"start": 115,
-						"end": 119,
+						"start": 201,
+						"end": 205,
 						"color": "rgb(224, 102, 102)"
 					},
 					{
-						"start": 119,
-						"end": 139,
+						"start": 205,
+						"end": 225,
 						"color": "rgb(224, 102, 102)"
 					}
 				]
@@ -136709,7 +136742,7 @@
 		[
 			"Exotic Armors:12:8",
 			{
-				"text": "Passively grants +30 Airborne Effectiveness to Lumina. Noble Seekers grant Noble Rounds to Lumina.\n\nWhile standing in a Rift or Well of Radiance:\nSpawns Noble Seekers at an average rate of 1 per Fireteam-member every 8 seconds.\n\nNoble Seekers:\nTrack allies within 40 metres and bestow a buff on close proximity.\nPrioritize allies who have not been healed in the last 8s and won't target an ally more than once every 4s.\n \nHealing Rift | Seekers restore 70 Health, 60 Shield, and begin Health Regeneration.\nEmpowering Rift | Seekers grant 35% [15%] increased damage and +100 Class for 5 seconds.\n\nGrants Fireteam-Based Class Ability Energy upon buffing an ally with a Seeker.\n2 Allies = ?% Class Ability Energy | 3 = 25?% | 4 = ?% | 5 = ?%",
+				"text": "Passively grants +30 Airborne Effectiveness to Lumina. Noble Seekers grant Noble Rounds to Lumina.\n\nWhile standing in a Rift or Well of Radiance:\nSpawns Noble Seekers at an average rate of 1 per Fireteam-member every 8 seconds.\n\nNoble Seekers:\nTrack allies within 40 metres and bestow a buff on close proximity.\nPrioritize allies who have not been healed in the last 8s and won't target an ally more than once every 4s.\n \nHealing Rift | Seekers restore 70 Health, 60 Shield, and begin Health Regeneration.\nEmpowering Rift | Seekers grant 35% [15%] increased damage and +100 Class for 5 seconds.\nWell of Radiance Seekers grant both effects.\n\nGrants Fireteam-Based Class Ability Energy upon buffing an ally with a Seeker.\n2 Allies = ?% Class Ability Energy | 3 = 25?% | 4 = ?% | 5 = ?%",
 				"runs": [
 					{
 						"start": 0,
@@ -136942,110 +136975,119 @@
 					},
 					{
 						"start": 579,
-						"end": 603
+						"end": 595
 					},
 					{
-						"start": 603,
-						"end": 617,
-						"color": "rgb(164, 194, 244)"
-					},
-					{
-						"start": 617,
-						"end": 618
-					},
-					{
-						"start": 618,
-						"end": 638,
-						"color": "rgb(180, 167, 214)"
-					},
-					{
-						"start": 638,
-						"end": 655
-					},
-					{
-						"start": 655,
-						"end": 660,
-						"color": "rgb(164, 194, 244)"
-					},
-					{
-						"start": 660,
-						"end": 667
-					},
-					{
-						"start": 667,
-						"end": 673,
+						"start": 595,
+						"end": 640,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 673,
-						"end": 675
+						"start": 640,
+						"end": 648
 					},
 					{
-						"start": 675,
-						"end": 683,
+						"start": 648,
+						"end": 662,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 683,
-						"end": 686
+						"start": 662,
+						"end": 663
 					},
 					{
-						"start": 686,
-						"end": 709,
+						"start": 663,
+						"end": 683,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 709,
+						"start": 683,
+						"end": 700
+					},
+					{
+						"start": 700,
+						"end": 705,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 705,
 						"end": 712
 					},
 					{
 						"start": 712,
-						"end": 713,
-						"color": "rgb(164, 194, 244)"
+						"end": 718,
+						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 713,
-						"end": 716
-					},
-					{
-						"start": 716,
-						"end": 720,
-						"color": "rgb(180, 167, 214)"
+						"start": 718,
+						"end": 720
 					},
 					{
 						"start": 720,
-						"end": 723
-					},
-					{
-						"start": 723,
-						"end": 724,
+						"end": 728,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 724,
-						"end": 727
+						"start": 728,
+						"end": 731
 					},
 					{
-						"start": 727,
-						"end": 729,
+						"start": 731,
+						"end": 754,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 729,
-						"end": 732
+						"start": 754,
+						"end": 757
 					},
 					{
-						"start": 732,
-						"end": 733,
+						"start": 757,
+						"end": 758,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 733,
-						"end": 736
+						"start": 758,
+						"end": 761
 					},
 					{
-						"start": 736,
-						"end": 738,
+						"start": 761,
+						"end": 765,
+						"color": "rgb(180, 167, 214)"
+					},
+					{
+						"start": 765,
+						"end": 768
+					},
+					{
+						"start": 768,
+						"end": 769,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 769,
+						"end": 772
+					},
+					{
+						"start": 772,
+						"end": 774,
+						"color": "rgb(180, 167, 214)"
+					},
+					{
+						"start": 774,
+						"end": 777
+					},
+					{
+						"start": 777,
+						"end": 778,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 778,
+						"end": 781
+					},
+					{
+						"start": 781,
+						"end": 783,
 						"color": "rgb(180, 167, 214)"
 					}
 				]
@@ -151268,77 +151310,97 @@
 		[
 			"Exotic Armors:93:2",
 			{
-				"text": "Deadfall returns Ability Energy per Enemy Tethered. \nX% Super Energy. Max of 50% Super Energy.\n10% Grenade\n10% Melee\n10% Class Ability Energy.\n\nMoebius Quiver can fire an additional volley per Super Activation and lasts 4 seconds longer.",
+				"text": "For each enemy that gets tethered to a Deadfall anchor:\nGrants 10% Grenade, Melee, and Class Ability Energy. \nRefunds X% Super Energy, up to a maximum of 50% Super Energy.\n\nMoebius Quiver can fire an additional volley per Super Activation and lasts 4 seconds longer.",
 				"runs": [
 					{
 						"start": 0,
-						"end": 8,
-						"color": "rgb(253, 210, 77)"
+						"end": 9
 					},
 					{
-						"start": 8,
-						"end": 42
+						"start": 9,
+						"end": 34,
+						"color": "rgb(187, 165, 243)"
 					},
 					{
-						"start": 42,
-						"end": 50,
-						"color": "rgb(180, 167, 214)"
+						"start": 34,
+						"end": 39
 					},
 					{
-						"start": 50,
-						"end": 52
+						"start": 39,
+						"end": 54,
+						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 52,
-						"end": 70,
-						"color": "rgb(253, 210, 77)"
+						"start": 54,
+						"end": 56
 					},
 					{
-						"start": 70,
-						"end": 95,
-						"color": "rgb(253, 210, 77)"
+						"start": 56,
+						"end": 63
 					},
 					{
-						"start": 95,
-						"end": 107,
+						"start": 63,
+						"end": 66,
+						"color": "rgb(213, 166, 189)"
+					},
+					{
+						"start": 66,
+						"end": 74,
 						"color": "rgb(224, 162, 97)"
 					},
 					{
-						"start": 107,
-						"end": 117,
-						"color": "rgb(162, 196, 201)"
+						"start": 74,
+						"end": 76
 					},
 					{
-						"start": 117,
-						"end": 142,
+						"start": 76,
+						"end": 81,
+						"color": "rgb(137, 205, 209)"
+					},
+					{
+						"start": 81,
+						"end": 87
+					},
+					{
+						"start": 87,
+						"end": 93,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 142,
-						"end": 143,
+						"start": 93,
+						"end": 109
+					},
+					{
+						"start": 109,
+						"end": 171,
 						"color": "rgb(253, 210, 77)"
 					},
 					{
-						"start": 143,
-						"end": 144
-					},
-					{
-						"start": 144,
-						"end": 159,
+						"start": 171,
+						"end": 172,
 						"color": "rgb(253, 210, 77)"
 					},
 					{
-						"start": 159,
-						"end": 192
+						"start": 172,
+						"end": 173
 					},
 					{
-						"start": 192,
-						"end": 193,
+						"start": 173,
+						"end": 188,
+						"color": "rgb(253, 210, 77)"
+					},
+					{
+						"start": 188,
+						"end": 221
+					},
+					{
+						"start": 221,
+						"end": 222,
 						"color": "rgb(243, 243, 243)"
 					},
 					{
-						"start": 193,
-						"end": 237,
+						"start": 222,
+						"end": 266,
 						"color": "rgb(253, 210, 77)"
 					}
 				]

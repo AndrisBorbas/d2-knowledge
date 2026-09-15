@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 
 import { Button } from "@/components/ui/Button";
@@ -9,6 +10,7 @@ import {
 	sheetTabUrl,
 	TierRank,
 } from "@/lib/aegis/config";
+import { STATIC_ICON_PATH_BY_GLYPH } from "@/lib/bungie/glyphs";
 import {
 	cellSortValue,
 	formatCell,
@@ -111,7 +113,21 @@ export function ArchetypesView({ dataset, query }: ArchetypesViewProps) {
 				key: "ammo",
 				label: "Ammo",
 				sortValue: (row) => row.ammoSlot ?? "",
-				render: (row) => row.ammoSlot ?? "-",
+				render: (row) =>
+					row.ammoSlot ? (
+						<div>
+							<Image
+								src={STATIC_ICON_PATH_BY_GLYPH[row.ammoSlot.toLowerCase()]}
+								className="mr-2 inline align-text-top"
+								alt={row.ammoSlot}
+								width={20}
+								height={20}
+							/>
+							{row.ammoSlot}
+						</div>
+					) : (
+						"-"
+					),
 			},
 			...numericColumns.map((name): TableColumn<ArchetypeRow> => ({
 				key: name,

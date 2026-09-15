@@ -212,7 +212,7 @@ export function TierListView({
 							<span aria-hidden />
 							<span className={HEADER_CLASS}>Exotic</span>
 							<span className={HEADER_CLASS}>Tier</span>
-							<span className={HEADER_CLASS}>Slot</span>
+							<span className={HEADER_CLASS}>Ammo</span>
 							<span className={HEADER_CLASS}>Tags</span>
 							{EXOTIC_USE_LABELS.map(([key, label]) => (
 								<span key={key} className={cn(HEADER_CLASS, "text-center")}>

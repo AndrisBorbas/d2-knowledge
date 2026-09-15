@@ -121,6 +121,32 @@ export const COMPENDIUM_TAB_NORMALIZATION: TabNormalizationConfigMap = {
 		},
 		maxTitleLength: 56,
 	},
+	"Exotic Armors": {
+		strategy: "exotic-armor-two-rows",
+		// Row 0 titles the tab, row 1 names the class over each list, row 2
+		// heads that list's columns.
+		skipStart: 3,
+		classHeaderRow: 1,
+		// name, icon, notes per class. The icon column is a floating image the
+		// API does not return; the manifest supplies it by name instead.
+		columnGroups: [
+			{ titleColumn: 0, descriptionColumn: 2 },
+			{ titleColumn: 3, descriptionColumn: 5 },
+			{ titleColumn: 6, descriptionColumn: 8 },
+		],
+		// A blank spacer row sits between a piece and the name of its perk.
+		perkRowOffset: 2,
+		// The longest name on the tab is "Ballidorse Wrathweavers" at 23.
+		maxTitleLength: 56,
+		minDescriptionLength: 16,
+		// "Aeon Sects", the tab's one header, written alone under the last
+		// piece of each list.
+		dynamicSection: {
+			maxLength: 56,
+			minLength: 2,
+			forbidSentenceEnding: true,
+		},
+	},
 	"Class Abilities": {
 		strategy: "same-row",
 		// Each class's abilities sit under a row naming that class, the way the

@@ -111,6 +111,18 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					</a>
 					.
 				</p>
+				<p>
+					If you want to discover more useful sites like this, check out my
+					other project{" "}
+					<a
+						href={"https://destinylauncher.net/?utm_source=owlsector"}
+						target="_blank"
+						className="decoration-masterwork/90 hover:text-masterwork text-white underline underline-offset-2 transition-all hover:underline-offset-4"
+					>
+						Destiny Launcher
+					</a>{" "}
+					.
+				</p>
 			</div>
 
 			<div className="mt-8 flex items-center justify-center gap-16 text-xs text-white/60">

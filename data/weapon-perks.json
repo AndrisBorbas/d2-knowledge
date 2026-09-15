@@ -39861,7 +39861,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "While within 15 metres of 3 enemies:\n?% Increased Blast Radius and decreased self damage.\nBuff lingers for 3.5 seconds once criteria isn't met.\n\nGrenade Launchers: 40% Decreased Self Damage.\nRocket Launchers: 99.99% Decreased Self Damage, and allows Rocket Jumping.\n\n↑Passively grants +5 Blast Radius.",
+					"text": "While within 15 metres of 3 enemies:\n?% Increased Blast Radius and decreased self damage.\nBuff lingers for 3.5 seconds once criteria isn't met.\n\nGrenade Launchers: 40% Decreased Self Damage.\nRocket Launchers and Rocket Sidearms: 99.99% Decreased Self Damage, and allows Rocket Jumping.\n\n↑Passively grants +5 Blast Radius.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -39870,7 +39870,7 @@
 								"column": 2
 							},
 							"start": 0,
-							"length": 301
+							"length": 321
 						}
 					],
 					"annotations": [
@@ -39881,29 +39881,43 @@
 							"text": "Blast Radius"
 						},
 						{
-							"keywordId": "sheet-color:Weapon Perks:59:2:250:250",
-							"start": 250,
-							"end": 264,
+							"keywordId": "sheet-color:Weapon Perks:59:2:191:191",
+							"start": 191,
+							"end": 207,
+							"text": "Rocket Launchers",
+							"color": "rgb(164, 129, 225)"
+						},
+						{
+							"keywordId": "sheet-color:Weapon Perks:59:2:212:212",
+							"start": 212,
+							"end": 227,
+							"text": "Rocket Sidearms",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "sheet-color:Weapon Perks:59:2:270:270",
+							"start": 270,
+							"end": 284,
 							"text": "Rocket Jumping",
 							"color": "rgb(246, 178, 107)"
 						},
 						{
-							"keywordId": "sheet-color:Weapon Perks:59:2:267:267",
-							"start": 267,
-							"end": 288,
+							"keywordId": "sheet-color:Weapon Perks:59:2:287:287",
+							"start": 287,
+							"end": 308,
 							"text": "↑Passively grants +5 ",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
 							"keywordId": "blast-radius",
-							"start": 288,
-							"end": 300,
+							"start": 308,
+							"end": 320,
 							"text": "Blast Radius"
 						},
 						{
-							"keywordId": "sheet-color:Weapon Perks:59:2:267:300",
-							"start": 300,
-							"end": 301,
+							"keywordId": "sheet-color:Weapon Perks:59:2:287:320",
+							"start": 320,
+							"end": 321,
 							"text": ".",
 							"color": "rgb(255, 217, 102)"
 						}
@@ -58610,7 +58624,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Hunter"
 			],
 			"source": {
 				"tab": "clarity",
@@ -58632,6 +58647,13 @@
 					"itemName": "Lucky Pants",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1783935545841
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:63:0",
+					"tab": "Exotic Armors",
+					"row": 63,
+					"column": 0
 				}
 			],
 			"secondaryName": "Lucky Pants",
@@ -58639,6 +58661,234 @@
 			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/fa501bf3740c6b0cdc91f2cafd0547a3.jpg",
 			"itemHash": 193869522,
 			"perkHash": 1694242448,
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "While a Hand Cannon is readied:\n +20 Airborne Effectiveness, and increases Slide Distance from 6.5m to 8.5m.\n\nUpon readying a Hand Cannon:\nGrants Illegally Modded Holster for 6 seconds.\nDirect Hits against Combatants grant stacks of Illegally Modded Holster, up to a maximum of 10 stacks.\nIllegally Modded Holster is removed upon readying a non-Hand Cannon.\n\nIllegally Modded Holster:\n+100 Ready Speed Handling, 0.6x Ready Duration Multiplier, and -30% Accuracy Cone Size.\n45% increased Direct Impact damage against Combatants per stack, up to 450% at 10 stacks.\nUncivil Discourse receives 30% increased Direct Impact Damage per stack.\nSturm's Overcharged Rounds, Hawkmoon's Paracausal Shot, and all other non-direct damage is not increased.\nBosses take 33% decreased damage from Lucky Pants buffed shots.\n\nAfter Illegally Modded Holster expires, or upon stowing, if Illegally Modded Holster stacks were at x7 or higher:\nApplies Out of Luck for 10 seconds, preventing Illegally Modded Holster from being activated.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 63,
+								"column": 2
+							},
+							"start": 0,
+							"length": 1014
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 146,
+							"end": 170,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:186:186",
+							"start": 186,
+							"end": 216,
+							"text": "Direct Hits against Combatants",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:223:223",
+							"start": 223,
+							"end": 229,
+							"text": "stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 233,
+							"end": 257,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:278:278",
+							"start": 278,
+							"end": 287,
+							"text": "10 stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 289,
+							"end": 313,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:289:313",
+							"start": 313,
+							"end": 314,
+							"text": " ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 359,
+							"end": 383,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:473:473",
+							"start": 473,
+							"end": 476,
+							"text": "45%",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:477:477",
+							"start": 477,
+							"end": 527,
+							"text": "increased Direct Impact damage against Combatants ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:531:531",
+							"start": 531,
+							"end": 536,
+							"text": "stack",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:544:544",
+							"start": 544,
+							"end": 548,
+							"text": "450%",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:552:552",
+							"start": 552,
+							"end": 561,
+							"text": "10 stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:563:563",
+							"start": 563,
+							"end": 580,
+							"text": "Uncivil Discourse",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:580:580",
+							"start": 580,
+							"end": 581,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:590:590",
+							"start": 590,
+							"end": 625,
+							"text": "30% increased Direct Impact Damage ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:629:629",
+							"start": 629,
+							"end": 634,
+							"text": "stack",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:636:636",
+							"start": 636,
+							"end": 662,
+							"text": "Sturm's Overcharged Rounds",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:664:664",
+							"start": 664,
+							"end": 675,
+							"text": "Hawkmoon's ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "paracausal-shot",
+							"start": 675,
+							"end": 690,
+							"text": "Paracausal Shot"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:706:706",
+							"start": 706,
+							"end": 740,
+							"text": "non-direct damage is not increased",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "pattern:text-tier-boss",
+							"start": 742,
+							"end": 748,
+							"text": "Bosses",
+							"colorClass": "text-tier-boss"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:742:748",
+							"start": 748,
+							"end": 807,
+							"text": " take 33% decreased damage from Lucky Pants buffed shots.\n\n",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 813,
+							"end": 837,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 867,
+							"end": 891,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:867:891",
+							"start": 891,
+							"end": 898,
+							"text": " stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:907:907",
+							"start": 907,
+							"end": 910,
+							"text": "x7 ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:929:929",
+							"start": 929,
+							"end": 940,
+							"text": "Out of Luck",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:957:957",
+							"start": 957,
+							"end": 968,
+							"text": "preventing ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "illegally-modded-holster",
+							"start": 968,
+							"end": 992,
+							"text": "Illegally Modded Holster"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:2:957:992",
+							"start": 992,
+							"end": 1013,
+							"text": " from being activated",
+							"color": "rgb(224, 102, 102)"
+						}
+					]
+				}
+			],
 			"annotations": [
 				{
 					"keywordId": "illegally-modded-holster",
@@ -62843,7 +63093,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Titan"
 			],
 			"source": {
 				"tab": "clarity",
@@ -62865,6 +63116,13 @@
 					"itemName": "One-Eyed Mask",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1696718862343
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:90:3",
+					"tab": "Exotic Armors",
+					"row": 90,
+					"column": 3
 				}
 			],
 			"secondaryName": "One-Eyed Mask",
@@ -62872,6 +63130,85 @@
 			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/dd639fc06ad17e69915bf47295426ac0.jpg",
 			"itemHash": 2578771006,
 			"perkHash": 699693452,
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "Upon receiving damage:\nHighlights the first enemy that dealt damage for 8 seconds.\nOnly one enemy can be highlight at once.\n\nKilling the highlighted enemy grants Vengeance, which is a 95 HP Overshield, for 6 seconds.\nEnemies cannot be highlighted while Vengeance is active.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 90,
+								"column": 5
+							},
+							"start": 0,
+							"length": 273
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "sheet-color:Exotic Armors:90:5:23:23",
+							"start": 23,
+							"end": 34,
+							"text": "Highlights ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:90:5:105:105",
+							"start": 105,
+							"end": 115,
+							"text": "highlight ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:90:5:137:137",
+							"start": 137,
+							"end": 149,
+							"text": "highlighted ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "vengeance",
+							"start": 162,
+							"end": 171,
+							"text": "Vengeance"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:90:5:184:184",
+							"start": 184,
+							"end": 190,
+							"text": "95 HP ",
+							"color": "rgb(124, 173, 255)"
+						},
+						{
+							"keywordId": "overshield",
+							"start": 190,
+							"end": 200,
+							"text": "Overshield"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:90:5:217:217",
+							"start": 217,
+							"end": 253,
+							"text": "Enemies cannot be highlighted while ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "vengeance",
+							"start": 253,
+							"end": 262,
+							"text": "Vengeance"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:90:5:217:262",
+							"start": 262,
+							"end": 273,
+							"text": " is active.",
+							"color": "rgb(224, 102, 102)"
+						}
+					]
+				}
+			],
 			"annotations": [
 				{
 					"keywordId": "vengeance",
@@ -63139,7 +63476,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Titan"
 			],
 			"source": {
 				"tab": "clarity",
@@ -63161,6 +63499,13 @@
 					"itemName": "Synthoceps",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1766530840776
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:126:3",
+					"tab": "Exotic Armors",
+					"row": 126,
+					"column": 3
 				}
 			],
 			"secondaryName": "Synthoceps",
@@ -63168,6 +63513,128 @@
 			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/9f51bbad83aeb142eb56d9faf7440662.jpg",
 			"itemHash": 241462142,
 			"perkHash": 1155472384,
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "While within 15 metres of 3 enemies: \nGrants Biotic Enhancements.\nBuff lingers for 5 seconds.\n\nBiotic Enhancements:\n50% Increased Super Damage.\n165% [100%] Increased Melee Damage.\n+35? Handling and +35 Reload Speed.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 126,
+								"column": 5
+							},
+							"start": 0,
+							"length": 215
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:27:27",
+							"start": 27,
+							"end": 28,
+							"text": " ",
+							"color": "rgb(228, 114, 114)"
+						},
+						{
+							"keywordId": "biotic-enhancements",
+							"start": 45,
+							"end": 64,
+							"text": "Biotic Enhancements"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:94:94",
+							"start": 94,
+							"end": 95,
+							"text": "\n",
+							"color": "rgb(182, 215, 168)"
+						},
+						{
+							"keywordId": "biotic-enhancements",
+							"start": 95,
+							"end": 114,
+							"text": "Biotic Enhancements"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:95:114",
+							"start": 114,
+							"end": 115,
+							"text": ":",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:116:116",
+							"start": 116,
+							"end": 130,
+							"text": "50% Increased ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 130,
+							"end": 135,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:116:135",
+							"start": 135,
+							"end": 144,
+							"text": " Damage.\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 144,
+							"end": 148,
+							"text": "165%",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:144:148",
+							"start": 148,
+							"end": 149,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 149,
+							"end": 155,
+							"text": "[100%]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:155:155",
+							"start": 155,
+							"end": 156,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:156:156",
+							"start": 156,
+							"end": 166,
+							"text": "Increased ",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 166,
+							"end": 171,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:126:5:156:171",
+							"start": 171,
+							"end": 180,
+							"text": " Damage.\n",
+							"color": "rgb(121, 190, 195)"
+						}
+					]
+				}
+			],
 			"annotations": [
 				{
 					"keywordId": "biotic-enhancements",
@@ -69830,7 +70297,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Warlock"
 			],
 			"source": {
 				"tab": "clarity",
@@ -69852,6 +70320,13 @@
 					"itemName": "Eunoia",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1766530840776
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:39:6",
+					"tab": "Exotic Armors",
+					"row": 39,
+					"column": 6
 				}
 			],
 			"secondaryName": "Eunoia",
@@ -69875,6 +70350,120 @@
 				{
 					"label": "Solar",
 					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "Hellion Projectiles deal 20% increased damage after travelling 17 meters.\n\nHellion Projectiles that have been in the air for 1 second release 4 pieces of Shrapnel.\nShrapnel deals 18 [?] Solar Damage and inflicts x5+0 Scorch.\nShrapnel projectiles have tracking.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 39,
+								"column": 8
+							},
+							"start": 0,
+							"length": 260
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "hellion",
+							"start": 0,
+							"end": 7,
+							"text": "Hellion"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:0:7",
+							"start": 7,
+							"end": 19,
+							"text": " Projectiles",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "hellion",
+							"start": 75,
+							"end": 82,
+							"text": "Hellion"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:75:82",
+							"start": 82,
+							"end": 94,
+							"text": " Projectiles",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:142:142",
+							"start": 142,
+							"end": 162,
+							"text": "4 pieces of Shrapnel",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:164:164",
+							"start": 164,
+							"end": 173,
+							"text": "Shrapnel ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 179,
+							"end": 181,
+							"text": "18",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 182,
+							"end": 185,
+							"text": "[?]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:186:186",
+							"start": 186,
+							"end": 199,
+							"text": "Solar Damage ",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:212:212",
+							"start": 212,
+							"end": 214,
+							"text": "x5",
+							"color": "rgb(246, 178, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:214:214",
+							"start": 214,
+							"end": 216,
+							"text": "+0",
+							"color": "rgb(246, 178, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:216:216",
+							"start": 216,
+							"end": 217,
+							"text": " ",
+							"color": "rgb(246, 178, 107)"
+						},
+						{
+							"keywordId": "scorch",
+							"start": 217,
+							"end": 223,
+							"text": "Scorch"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:39:8:225:225",
+							"start": 225,
+							"end": 245,
+							"text": "Shrapnel projectiles",
+							"color": "rgb(255, 217, 102)"
+						}
+					]
 				}
 			],
 			"annotations": [
@@ -71129,7 +71718,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Hunter"
 			],
 			"source": {
 				"tab": "clarity",
@@ -71151,6 +71741,13 @@
 					"itemName": "Star-Eater Scales",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1739032704660
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:123:0",
+					"tab": "Exotic Armors",
+					"row": 123,
+					"column": 0
 				}
 			],
 			"secondaryName": "Star-Eater Scales",
@@ -71162,6 +71759,287 @@
 				{
 					"label": "Solar",
 					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "Orbs of Power grant an additional 2% Super Energy.\nAdditional Super Energy is decreased to 0.5% while 3-Shot Golden Gun  is the selected Super ability.\n\nPicking up an Orb of Power while Super is charged grants a stack of Feast of Light. \n\nOn Super Cast:\nConsumes all Feast of Light stacks, restoring HP and increasing Super Damage for 14 seconds.\n18.2% | 36.4% | 54.6% | 59.7% | 64.8% | 70% increased Super Damage.\nRestores ? | ? | ? | ? | ? | 200 HP.\n\nOn Super Cast while at x6 Feast of Light Stacks:\n 100HP Overshield for 16 seconds.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 123,
+								"column": 2
+							},
+							"start": 0,
+							"length": 535
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:0:0",
+							"start": 0,
+							"end": 37,
+							"text": "Orbs of Power grant an additional 2% ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 37,
+							"end": 49,
+							"text": "Super Energy",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:0:49",
+							"start": 49,
+							"end": 51,
+							"text": ".\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:51:51",
+							"start": 51,
+							"end": 62,
+							"text": "Additional ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 62,
+							"end": 74,
+							"text": "Super Energy",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:51:74",
+							"start": 74,
+							"end": 75,
+							"text": " ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:78:78",
+							"start": 78,
+							"end": 88,
+							"text": "decreased ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:91:91",
+							"start": 91,
+							"end": 95,
+							"text": "0.5%",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:102:102",
+							"start": 102,
+							"end": 120,
+							"text": "3-Shot Golden Gun ",
+							"color": "rgb(246, 178, 107)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 137,
+							"end": 150,
+							"text": "Super ability",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:167:167",
+							"start": 167,
+							"end": 179,
+							"text": "Orb of Power",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 186,
+							"end": 191,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:212:212",
+							"start": 212,
+							"end": 217,
+							"text": "stack",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:220:220",
+							"start": 220,
+							"end": 221,
+							"text": " ",
+							"color": "rgb(213, 166, 189)"
+						},
+						{
+							"keywordId": "feast-of-light",
+							"start": 221,
+							"end": 235,
+							"text": "Feast of Light"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:236:236",
+							"start": 236,
+							"end": 238,
+							"text": " \n",
+							"color": "rgb(213, 166, 189)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:238:238",
+							"start": 238,
+							"end": 239,
+							"text": "\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 242,
+							"end": 247,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:242:247",
+							"start": 247,
+							"end": 253,
+							"text": " Cast:",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:253:253",
+							"start": 253,
+							"end": 254,
+							"text": "\n",
+							"color": "rgb(213, 166, 189)"
+						},
+						{
+							"keywordId": "feast-of-light",
+							"start": 267,
+							"end": 281,
+							"text": "Feast of Light"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:267:281",
+							"start": 281,
+							"end": 288,
+							"text": " stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:290:290",
+							"start": 290,
+							"end": 303,
+							"text": "restoring HP ",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:307:307",
+							"start": 307,
+							"end": 318,
+							"text": "increasing ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 318,
+							"end": 323,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:307:323",
+							"start": 323,
+							"end": 330,
+							"text": " Damage",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:347:347",
+							"start": 347,
+							"end": 401,
+							"text": "18.2% | 36.4% | 54.6% | 59.7% | 64.8% | 70% increased ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 401,
+							"end": 406,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:347:406",
+							"start": 406,
+							"end": 415,
+							"text": " Damage.\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:415:415",
+							"start": 415,
+							"end": 452,
+							"text": "Restores ? | ? | ? | ? | ? | 200 HP.\n",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:452:452",
+							"start": 452,
+							"end": 453,
+							"text": "\n",
+							"color": "rgb(213, 166, 189)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 456,
+							"end": 461,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:456:461",
+							"start": 461,
+							"end": 466,
+							"text": " Cast",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:476:476",
+							"start": 476,
+							"end": 479,
+							"text": "x6 ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "feast-of-light",
+							"start": 479,
+							"end": 493,
+							"text": "Feast of Light"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:476:493",
+							"start": 493,
+							"end": 500,
+							"text": " Stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:123:2:503:503",
+							"start": 503,
+							"end": 509,
+							"text": "100HP ",
+							"color": "rgb(124, 173, 255)"
+						},
+						{
+							"keywordId": "overshield",
+							"start": 509,
+							"end": 519,
+							"text": "Overshield"
+						}
+					]
 				}
 			],
 			"annotations": [
@@ -71257,7 +72135,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Warlock"
 			],
 			"source": {
 				"tab": "clarity",
@@ -71279,6 +72158,13 @@
 					"itemName": "Mataiodoxía",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1771691917050
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:63:6",
+					"tab": "Exotic Armors",
+					"row": 63,
+					"column": 6
 				}
 			],
 			"secondaryName": "Mataiodoxía",
@@ -71338,6 +72224,510 @@
 				{
 					"label": "Barrier",
 					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyBreakerTypeDefinition_07b9ba0194e85e46b258b04783e93d5d.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "Arcane Needles become Shield-Piercing. \nScoring an Arcane Needle hit on an enemy applies a ♢mark for 10 seconds.\n\nGrants Melee Ability Energy upon scoring an Arcane Needle Kill or Suspended Enemy Kill.\nT1 Combatant = 15% | T2 = 22.2% | T3 = 33% | T4 = 100% | Guardian = 33%\n\nOn Marked Enemy Death:\nTarget triggers a Suspending Burst.\nDeals 269 [40] Strand Melee Ability Damage and inflicts Suspension to enemies within 6 meters.\n\nUpon scoring 2 Arcane Needle hits on a Marked Enemy:\nTarget triggers a stronger Suspending Explosion. \nDeals 538 [?] Strand Melee Ability Damage and inflicts Suspension to enemies within 10 meters.\n\nUpon scoring 5 Needlestorm Hits against a single enemy:\nTarget triggers a larger and more damaging Suspending Explosion.\nDeals 5,040 [?] Strand Super Ability Damage and inflicts Suspension to enemies within 10 meters.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 63,
+								"column": 8
+							},
+							"start": 0,
+							"length": 846
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "arcane-needle",
+							"start": 0,
+							"end": 14,
+							"text": "Arcane Needles"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:22:22",
+							"start": 22,
+							"end": 37,
+							"text": "Shield-Piercing",
+							"color": "rgb(249, 203, 156)"
+						},
+						{
+							"keywordId": "arcane-needle",
+							"start": 51,
+							"end": 64,
+							"text": "Arcane Needle"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:51:64",
+							"start": 64,
+							"end": 65,
+							"text": " ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:91:91",
+							"start": 91,
+							"end": 97,
+							"text": "♢mark ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:120:120",
+							"start": 120,
+							"end": 121,
+							"text": " ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 121,
+							"end": 141,
+							"text": "Melee Ability Energy",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "arcane-needle",
+							"start": 158,
+							"end": 171,
+							"text": "Arcane Needle"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:158:171",
+							"start": 171,
+							"end": 177,
+							"text": " Kill ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 180,
+							"end": 189,
+							"text": "Suspended"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:180:189",
+							"start": 189,
+							"end": 195,
+							"text": " Enemy",
+							"color": "rgb(106, 168, 79)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:202:202",
+							"start": 202,
+							"end": 215,
+							"text": "T1 Combatant ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:216:216",
+							"start": 216,
+							"end": 217,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:217:217",
+							"start": 217,
+							"end": 220,
+							"text": "15%",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:220:220",
+							"start": 220,
+							"end": 226,
+							"text": " | T2 ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:227:227",
+							"start": 227,
+							"end": 228,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:228:228",
+							"start": 228,
+							"end": 233,
+							"text": "22.2%",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:233:233",
+							"start": 233,
+							"end": 239,
+							"text": " | T3 ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:240:240",
+							"start": 240,
+							"end": 241,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:241:241",
+							"start": 241,
+							"end": 244,
+							"text": "33%",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:244:244",
+							"start": 244,
+							"end": 250,
+							"text": " | T4 ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:251:251",
+							"start": 251,
+							"end": 252,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:252:252",
+							"start": 252,
+							"end": 256,
+							"text": "100%",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "pattern:text-tier-guardian",
+							"start": 259,
+							"end": 267,
+							"text": "Guardian",
+							"colorClass": "text-tier-guardian"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:259:267",
+							"start": 267,
+							"end": 268,
+							"text": " ",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:269:269",
+							"start": 269,
+							"end": 270,
+							"text": " ",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:270:270",
+							"start": 270,
+							"end": 274,
+							"text": "33%\n",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:278:278",
+							"start": 278,
+							"end": 297,
+							"text": "Marked Enemy Death:",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:297:297",
+							"start": 297,
+							"end": 298,
+							"text": "\n",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 316,
+							"end": 326,
+							"text": "Suspending"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:316:326",
+							"start": 326,
+							"end": 332,
+							"text": " Burst",
+							"color": "rgb(106, 168, 79)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 340,
+							"end": 343,
+							"text": "269",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:340:343",
+							"start": 343,
+							"end": 344,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 344,
+							"end": 348,
+							"text": "[40]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:349:349",
+							"start": 349,
+							"end": 356,
+							"text": "Strand ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 356,
+							"end": 369,
+							"text": "Melee Ability",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:356:369",
+							"start": 369,
+							"end": 376,
+							"text": " Damage",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:376:376",
+							"start": 376,
+							"end": 377,
+							"text": " ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 390,
+							"end": 400,
+							"text": "Suspension"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:390:400",
+							"start": 400,
+							"end": 401,
+							"text": " ",
+							"color": "rgb(106, 168, 79)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:429:429",
+							"start": 429,
+							"end": 430,
+							"text": "\n",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:443:443",
+							"start": 443,
+							"end": 445,
+							"text": "2 ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "arcane-needle",
+							"start": 445,
+							"end": 458,
+							"text": "Arcane Needle"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:443:458",
+							"start": 458,
+							"end": 459,
+							"text": " ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:469:469",
+							"start": 469,
+							"end": 481,
+							"text": "Marked Enemy",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:501:501",
+							"start": 501,
+							"end": 510,
+							"text": "stronger ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 510,
+							"end": 520,
+							"text": "Suspending"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:501:520",
+							"start": 520,
+							"end": 530,
+							"text": " Explosion",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 539,
+							"end": 542,
+							"text": "538",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:539:542",
+							"start": 542,
+							"end": 543,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 543,
+							"end": 546,
+							"text": "[?]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:547:547",
+							"start": 547,
+							"end": 554,
+							"text": "Strand ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 554,
+							"end": 567,
+							"text": "Melee Ability",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:554:567",
+							"start": 567,
+							"end": 574,
+							"text": " Damage",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:574:574",
+							"start": 574,
+							"end": 575,
+							"text": " ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 588,
+							"end": 598,
+							"text": "Suspension"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:588:598",
+							"start": 598,
+							"end": 599,
+							"text": " ",
+							"color": "rgb(106, 168, 79)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:642:642",
+							"start": 642,
+							"end": 644,
+							"text": "5 ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "needlestorm",
+							"start": 644,
+							"end": 655,
+							"text": "Needlestorm"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:642:655",
+							"start": 655,
+							"end": 660,
+							"text": " Hits",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:703:703",
+							"start": 703,
+							"end": 728,
+							"text": "larger and more damaging ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 728,
+							"end": 738,
+							"text": "Suspending"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:703:738",
+							"start": 738,
+							"end": 748,
+							"text": " Explosion",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 756,
+							"end": 761,
+							"text": "5,040",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:756:761",
+							"start": 761,
+							"end": 762,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 762,
+							"end": 765,
+							"text": "[?]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:766:766",
+							"start": 766,
+							"end": 773,
+							"text": "Strand ",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 773,
+							"end": 786,
+							"text": "Super Ability",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:773:786",
+							"start": 786,
+							"end": 793,
+							"text": " Damage",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "suspend",
+							"start": 807,
+							"end": 817,
+							"text": "Suspension"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:63:8:807:817",
+							"start": 817,
+							"end": 818,
+							"text": " ",
+							"color": "rgb(106, 168, 79)"
+						}
+					]
 				}
 			],
 			"annotations": [
@@ -71712,6 +73102,215 @@
 			"perkHash": 489583098,
 			"annotations": [],
 			"officialAnnotations": []
+		},
+		{
+			"id": "ddc:untold-greed:112:0",
+			"tab": "Armor Perks",
+			"section": null,
+			"groups": [
+				"Armor Sets"
+			],
+			"source": {
+				"tab": "Armor Perks",
+				"row": 112,
+				"column": 0
+			},
+			"title": "Untold Greed",
+			"description": "Upon picking up an Ammo Brick, an Orb of Power, on Elemental Pickup, or destroying a Tangle:\nGrants a stack of Untold Greed, up to a maximum of 100 stacks.\n\nUpon reaching Critical Health:\nRemoves 10 stacks.\n\nUntold Greed:\nUp to +? Reload Speed and 15% Damage Resist at x25 stacks.\nx5 = 6% DR | x10 = 9% DR | x15 = 11% DR | x20 = 13% DR | x25+ = 15% DR",
+			"descriptionSegments": [
+				{
+					"source": {
+						"tab": "Armor Perks",
+						"row": 112,
+						"column": 2
+					},
+					"start": 0,
+					"length": 351
+				}
+			],
+			"officialDescription": "Picking up ammo, Orbs of Power, Elemental pickups, or destroying a Strand Tangle grants stacks of Untold Greed, slightly reducing damage taken and providing reload speed to equipped weapons. When your shields are broken, some stacks are lost.",
+			"extraInfo": "2 Piece | Yearning Echo",
+			"kind": "armor_set_bonus",
+			"sourceId": "ddc",
+			"sourceRefs": [
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Armor Perks:112:0",
+					"tab": "Armor Perks",
+					"row": 112,
+					"column": 0
+				}
+			],
+			"secondaryName": "Yearning Echo",
+			"secondaryDetail": "Grasp of Avarice - Dungeon",
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e5e74b200fa0ca8c0a9edc63e62a4559.png",
+			"annotations": [
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:43:19",
+					"start": 19,
+					"end": 24,
+					"text": "Ammo ",
+					"color": "rgb(99, 210, 117)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:48:24",
+					"start": 24,
+					"end": 29,
+					"text": "Brick",
+					"color": "rgb(164, 129, 225)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:58:34",
+					"start": 34,
+					"end": 46,
+					"text": "Orb of Power",
+					"color": "rgb(255, 217, 102)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:75:51",
+					"start": 51,
+					"end": 67,
+					"text": "Elemental Pickup",
+					"color": "rgb(213, 166, 189)"
+				},
+				{
+					"keywordId": "tangle",
+					"start": 85,
+					"end": 91,
+					"text": "Tangle"
+				},
+				{
+					"keywordId": "untold-greed",
+					"start": 111,
+					"end": 123,
+					"text": "Untold Greed"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:167:143",
+					"start": 143,
+					"end": 154,
+					"text": " 100 stacks",
+					"color": "rgb(241, 194, 50)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:195:171",
+					"start": 171,
+					"end": 186,
+					"text": "Critical Health",
+					"color": "rgb(221, 126, 107)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:212:188",
+					"start": 188,
+					"end": 205,
+					"text": "Removes 10 stacks",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "untold-greed",
+					"start": 208,
+					"end": 220,
+					"text": "Untold Greed"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:232:220",
+					"start": 220,
+					"end": 222,
+					"text": ":\n",
+					"color": "rgb(191, 144, 0)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:292:268",
+					"start": 268,
+					"end": 279,
+					"text": " x25 stacks",
+					"color": "rgb(191, 144, 0)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:305:281",
+					"start": 281,
+					"end": 284,
+					"text": "x5 ",
+					"color": "rgb(241, 194, 50)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:310:286",
+					"start": 286,
+					"end": 291,
+					"text": "6% DR",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:318:294",
+					"start": 294,
+					"end": 298,
+					"text": "x10 ",
+					"color": "rgb(241, 194, 50)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:324:300",
+					"start": 300,
+					"end": 305,
+					"text": "9% DR",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:332:308",
+					"start": 308,
+					"end": 312,
+					"text": "x15 ",
+					"color": "rgb(241, 194, 50)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:338:314",
+					"start": 314,
+					"end": 320,
+					"text": "11% DR",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:347:323",
+					"start": 323,
+					"end": 327,
+					"text": "x20 ",
+					"color": "rgb(241, 194, 50)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:353:329",
+					"start": 329,
+					"end": 335,
+					"text": "13% DR",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:362:338",
+					"start": 338,
+					"end": 343,
+					"text": "x25+ ",
+					"color": "rgb(241, 194, 50)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:112:2:369:345",
+					"start": 345,
+					"end": 351,
+					"text": "15% DR",
+					"color": "rgb(164, 194, 244)"
+				}
+			],
+			"officialAnnotations": [
+				{
+					"keywordId": "tangle",
+					"start": 74,
+					"end": 80,
+					"text": "Tangle"
+				},
+				{
+					"keywordId": "untold-greed",
+					"start": 98,
+					"end": 110,
+					"text": "Untold Greed"
+				}
+			]
 		},
 		{
 			"id": "ddc:celestial-fire:128:1",
@@ -72641,215 +74240,6 @@
 			]
 		},
 		{
-			"id": "ddc:untold-greed:112:0",
-			"tab": "Armor Perks",
-			"section": null,
-			"groups": [
-				"Armor Sets"
-			],
-			"source": {
-				"tab": "Armor Perks",
-				"row": 112,
-				"column": 0
-			},
-			"title": "Untold Greed",
-			"description": "Upon picking up an Ammo Brick, an Orb of Power, on Elemental Pickup, or destroying a Tangle:\nGrants a stack of Untold Greed, up to a maximum of 100 stacks.\n\nUpon reaching Critical Health:\nRemoves 10 stacks.\n\nUntold Greed:\nUp to +? Reload Speed and 15% Damage Resist at x25 stacks.\nx5 = 6% DR | x10 = 9% DR | x15 = 11% DR | x20 = 13% DR | x25+ = 15% DR",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Armor Perks",
-						"row": 112,
-						"column": 2
-					},
-					"start": 0,
-					"length": 351
-				}
-			],
-			"officialDescription": "Picking up ammo, Orbs of Power, Elemental pickups, or destroying a Strand Tangle grants stacks of Untold Greed, slightly reducing damage taken and providing reload speed to equipped weapons. When your shields are broken, some stacks are lost.",
-			"extraInfo": "2 Piece | Yearning Echo",
-			"kind": "armor_set_bonus",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Armor Perks:112:0",
-					"tab": "Armor Perks",
-					"row": 112,
-					"column": 0
-				}
-			],
-			"secondaryName": "Yearning Echo",
-			"secondaryDetail": "Grasp of Avarice - Dungeon",
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e5e74b200fa0ca8c0a9edc63e62a4559.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:43:19",
-					"start": 19,
-					"end": 24,
-					"text": "Ammo ",
-					"color": "rgb(99, 210, 117)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:48:24",
-					"start": 24,
-					"end": 29,
-					"text": "Brick",
-					"color": "rgb(164, 129, 225)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:58:34",
-					"start": 34,
-					"end": 46,
-					"text": "Orb of Power",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:75:51",
-					"start": 51,
-					"end": 67,
-					"text": "Elemental Pickup",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "tangle",
-					"start": 85,
-					"end": 91,
-					"text": "Tangle"
-				},
-				{
-					"keywordId": "untold-greed",
-					"start": 111,
-					"end": 123,
-					"text": "Untold Greed"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:167:143",
-					"start": 143,
-					"end": 154,
-					"text": " 100 stacks",
-					"color": "rgb(241, 194, 50)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:195:171",
-					"start": 171,
-					"end": 186,
-					"text": "Critical Health",
-					"color": "rgb(221, 126, 107)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:212:188",
-					"start": 188,
-					"end": 205,
-					"text": "Removes 10 stacks",
-					"color": "rgb(224, 102, 102)"
-				},
-				{
-					"keywordId": "untold-greed",
-					"start": 208,
-					"end": 220,
-					"text": "Untold Greed"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:232:220",
-					"start": 220,
-					"end": 222,
-					"text": ":\n",
-					"color": "rgb(191, 144, 0)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:292:268",
-					"start": 268,
-					"end": 279,
-					"text": " x25 stacks",
-					"color": "rgb(191, 144, 0)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:305:281",
-					"start": 281,
-					"end": 284,
-					"text": "x5 ",
-					"color": "rgb(241, 194, 50)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:310:286",
-					"start": 286,
-					"end": 291,
-					"text": "6% DR",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:318:294",
-					"start": 294,
-					"end": 298,
-					"text": "x10 ",
-					"color": "rgb(241, 194, 50)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:324:300",
-					"start": 300,
-					"end": 305,
-					"text": "9% DR",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:332:308",
-					"start": 308,
-					"end": 312,
-					"text": "x15 ",
-					"color": "rgb(241, 194, 50)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:338:314",
-					"start": 314,
-					"end": 320,
-					"text": "11% DR",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:347:323",
-					"start": 323,
-					"end": 327,
-					"text": "x20 ",
-					"color": "rgb(241, 194, 50)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:353:329",
-					"start": 329,
-					"end": 335,
-					"text": "13% DR",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:362:338",
-					"start": 338,
-					"end": 343,
-					"text": "x25+ ",
-					"color": "rgb(241, 194, 50)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:112:2:369:345",
-					"start": 345,
-					"end": 351,
-					"text": "15% DR",
-					"color": "rgb(164, 194, 244)"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "tangle",
-					"start": 74,
-					"end": 80,
-					"text": "Tangle"
-				},
-				{
-					"keywordId": "untold-greed",
-					"start": 98,
-					"end": 110,
-					"text": "Untold Greed"
-				}
-			]
-		},
-		{
 			"id": "clarity:3469412971:whisper-of-fissures",
 			"tab": "Stasis",
 			"section": "Fragments",
@@ -73759,89 +75149,6 @@
 			]
 		},
 		{
-			"id": "clarity:1186480754:saint-s-fists",
-			"tab": "Clarity",
-			"section": "Weapon Frame Exotic",
-			"groups": [
-				"Weapon Perks",
-				"Exotic",
-				"Weapon Frame Exotic"
-			],
-			"source": {
-				"tab": "clarity",
-				"row": 492,
-				"column": 0
-			},
-			"title": "Saint's Fists",
-			"description": "Hitting a target with 18 pellets in a burst grants your next Melee attack within 3 seconds 300% Additional Base Melee Damage.\n\nDealing Melee Damage grants 'Saint's Fury' for 8.5 seconds, providing the folllowing:\n• 35% increased weapon damage\n• 15% decreased Charge Time\n• ? Increased Reload Speed\n\nSaint's Fury can be refreshed by melee damage and is removed on stow.",
-			"officialDescription": "Rapidly fires 3 spreads of pure force.\n\nAfter a successful melee hit, this weapon gains increased damage, reduced charge time, and improved reload speed for a short duration. Hitting a target with most of the pellets in a burst increases melee damage for a short duration.",
-			"extraInfo": "Item: Bastion",
-			"kind": "exotic_item_perk",
-			"sourceId": "clarity",
-			"sourceRefs": [
-				{
-					"sourceId": "clarity",
-					"sourceKey": "1186480754",
-					"hash": 1186480754,
-					"itemHash": 2415517654,
-					"itemName": "Bastion",
-					"type": "Weapon Frame Exotic",
-					"updatedAt": 1784331766324
-				}
-			],
-			"secondaryName": "Bastion",
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/07b8acd24d669b05a3c24321d36983f6.png",
-			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/805009e0c67a2dcf4f4f7bffb2dba493.jpg",
-			"itemHash": 2415517654,
-			"perkHash": 1186480754,
-			"annotations": [
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 61,
-					"end": 66,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 112,
-					"end": 117,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 135,
-					"end": 140,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 332,
-					"end": 337,
-					"text": "melee",
-					"colorClass": "text-energy-melee"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 59,
-					"end": 64,
-					"text": "melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 238,
-					"end": 243,
-					"text": "melee",
-					"colorClass": "text-energy-melee"
-				}
-			]
-		},
-		{
 			"id": "clarity:3276278122:kinetic-holster",
 			"tab": "Armor Mods",
 			"section": "Legs",
@@ -73929,13 +75236,97 @@
 			"officialAnnotations": []
 		},
 		{
+			"id": "clarity:1186480754:saint-s-fists",
+			"tab": "Clarity",
+			"section": "Weapon Frame Exotic",
+			"groups": [
+				"Weapon Perks",
+				"Exotic",
+				"Weapon Frame Exotic"
+			],
+			"source": {
+				"tab": "clarity",
+				"row": 492,
+				"column": 0
+			},
+			"title": "Saint's Fists",
+			"description": "Hitting a target with 18 pellets in a burst grants your next Melee attack within 3 seconds 300% Additional Base Melee Damage.\n\nDealing Melee Damage grants 'Saint's Fury' for 8.5 seconds, providing the folllowing:\n• 35% increased weapon damage\n• 15% decreased Charge Time\n• ? Increased Reload Speed\n\nSaint's Fury can be refreshed by melee damage and is removed on stow.",
+			"officialDescription": "Rapidly fires 3 spreads of pure force.\n\nAfter a successful melee hit, this weapon gains increased damage, reduced charge time, and improved reload speed for a short duration. Hitting a target with most of the pellets in a burst increases melee damage for a short duration.",
+			"extraInfo": "Item: Bastion",
+			"kind": "exotic_item_perk",
+			"sourceId": "clarity",
+			"sourceRefs": [
+				{
+					"sourceId": "clarity",
+					"sourceKey": "1186480754",
+					"hash": 1186480754,
+					"itemHash": 2415517654,
+					"itemName": "Bastion",
+					"type": "Weapon Frame Exotic",
+					"updatedAt": 1784331766324
+				}
+			],
+			"secondaryName": "Bastion",
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/07b8acd24d669b05a3c24321d36983f6.png",
+			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/805009e0c67a2dcf4f4f7bffb2dba493.jpg",
+			"itemHash": 2415517654,
+			"perkHash": 1186480754,
+			"annotations": [
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 61,
+					"end": 66,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 112,
+					"end": 117,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 135,
+					"end": 140,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 332,
+					"end": 337,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				}
+			],
+			"officialAnnotations": [
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 59,
+					"end": 64,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 238,
+					"end": 243,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				}
+			]
+		},
+		{
 			"id": "clarity:1667892708:sunfire-furnace",
 			"tab": "Exotic Perks",
 			"section": "Armor Trait Exotic",
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Titan"
 			],
 			"source": {
 				"tab": "clarity",
@@ -73957,6 +75348,13 @@
 					"itemName": "Hallowfire Heart",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1784590302999
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:51:3",
+					"tab": "Exotic Armors",
+					"row": 51,
+					"column": 3
 				}
 			],
 			"secondaryName": "Hallowfire Heart",
@@ -73980,6 +75378,416 @@
 				{
 					"label": "Solar",
 					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "While a Solar Super Ability is equipped and charged:\nAbility Kills grant x2 Cure and grant stacks of Sunfire Furnace, up to 10 stacks for 20 seconds.\nRank-and-File = 1 Stack | Elite = 2 | \nUnpowered Melee Kills also grant Cure and stacks. Glaive Melees do not.\n\nSunfire Furnace:\nGrenade and Shieldburst Barricade Kills trigger ignitions. Grenade Element doesn't matter.\nUp to 250% Additional Base Grenade and Class Ability Regeneration Rate.\n6.5% | 13.6% | 22% | 32% | 43% | 57% | 73% | 93% | 118% | 150% Increased Super Damage.\n?% | ?% | ?% | ?% | ?% | ?% | ?% | ?% | ?% | 250% Additional Base Grenade/Class Regeneration Rate.\n\nOn Super Cast | Sunfire Furnace stacks are frozen. Cannot gain nor lose stacks.\nOn Super End | Consumes all Sunfire stacks to refunds Super Energy based on the stack amount.\nx1 = 8% | x2 = 20% | x3 = 26% | x4 = 33% | x5 = 45%.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 51,
+								"column": 5
+							},
+							"start": 0,
+							"length": 855
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:8:8",
+							"start": 8,
+							"end": 14,
+							"text": "Solar ",
+							"color": "rgb(246, 178, 107)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 14,
+							"end": 27,
+							"text": "Super Ability",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:44:44",
+							"start": 44,
+							"end": 51,
+							"text": "charged",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:53:53",
+							"start": 53,
+							"end": 66,
+							"text": "Ability Kills",
+							"color": "rgb(213, 166, 189)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:72:72",
+							"start": 72,
+							"end": 76,
+							"text": " x2 ",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "cure",
+							"start": 76,
+							"end": 80,
+							"text": "Cure"
+						},
+						{
+							"keywordId": "sunfire-furnace",
+							"start": 101,
+							"end": 116,
+							"text": "Sunfire Furnace"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:124:124",
+							"start": 124,
+							"end": 133,
+							"text": "10 stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-tier-minor",
+							"start": 150,
+							"end": 163,
+							"text": "Rank-and-File",
+							"colorClass": "text-tier-minor"
+						},
+						{
+							"keywordId": "pattern:text-tier-elite",
+							"start": 176,
+							"end": 181,
+							"text": "Elite",
+							"colorClass": "text-tier-elite"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:189:189",
+							"start": 189,
+							"end": 199,
+							"text": "Unpowered ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 199,
+							"end": 204,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:189:204",
+							"start": 204,
+							"end": 210,
+							"text": " Kills",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "cure",
+							"start": 222,
+							"end": 226,
+							"text": "Cure"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:222:226",
+							"start": 226,
+							"end": 227,
+							"text": " ",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:231:231",
+							"start": 231,
+							"end": 237,
+							"text": "stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:239:239",
+							"start": 239,
+							"end": 259,
+							"text": "Glaive Melees do not",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sunfire-furnace",
+							"start": 262,
+							"end": 277,
+							"text": "Sunfire Furnace"
+						},
+						{
+							"keywordId": "pattern:text-energy-grenade",
+							"start": 279,
+							"end": 286,
+							"text": "Grenade",
+							"colorClass": "text-energy-grenade"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:279:286",
+							"start": 286,
+							"end": 287,
+							"text": " ",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "shieldburst",
+							"start": 291,
+							"end": 302,
+							"text": "Shieldburst"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:291:302",
+							"start": 302,
+							"end": 312,
+							"text": " Barricade",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "ignition",
+							"start": 327,
+							"end": 336,
+							"text": "ignitions"
+						},
+						{
+							"keywordId": "pattern:text-energy-grenade",
+							"start": 338,
+							"end": 345,
+							"text": "Grenade",
+							"colorClass": "text-energy-grenade"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:338:345",
+							"start": 345,
+							"end": 368,
+							"text": " Element doesn't matter",
+							"color": "rgb(251, 189, 236)"
+						},
+						{
+							"keywordId": "pattern:text-energy-grenade",
+							"start": 397,
+							"end": 404,
+							"text": "Grenade",
+							"colorClass": "text-energy-grenade"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:397:404",
+							"start": 404,
+							"end": 405,
+							"text": " ",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "pattern:text-energy-class",
+							"start": 409,
+							"end": 422,
+							"text": "Class Ability",
+							"colorClass": "text-energy-class"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:442:442",
+							"start": 442,
+							"end": 515,
+							"text": "6.5% | 13.6% | 22% | 32% | 43% | 57% | 73% | 93% | 118% | 150% Increased ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 515,
+							"end": 520,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:442:520",
+							"start": 520,
+							"end": 529,
+							"text": " Damage.\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-grenade",
+							"start": 595,
+							"end": 602,
+							"text": "Grenade",
+							"colorClass": "text-energy-grenade"
+						},
+						{
+							"keywordId": "pattern:text-energy-class",
+							"start": 603,
+							"end": 608,
+							"text": "Class",
+							"colorClass": "text-energy-class"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 632,
+							"end": 637,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:632:637",
+							"start": 637,
+							"end": 642,
+							"text": " Cast",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sunfire-furnace",
+							"start": 645,
+							"end": 660,
+							"text": "Sunfire Furnace"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:645:660",
+							"start": 660,
+							"end": 667,
+							"text": " stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "freeze",
+							"start": 672,
+							"end": 678,
+							"text": "frozen"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:680:680",
+							"start": 680,
+							"end": 708,
+							"text": "Cannot gain nor lose stacks.",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:708:708",
+							"start": 708,
+							"end": 709,
+							"text": "\n",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:711:711",
+							"start": 711,
+							"end": 712,
+							"text": " ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 712,
+							"end": 717,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:711:717",
+							"start": 717,
+							"end": 721,
+							"text": " End",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:737:737",
+							"start": 737,
+							"end": 751,
+							"text": "Sunfire stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:762:762",
+							"start": 762,
+							"end": 763,
+							"text": " ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 763,
+							"end": 775,
+							"text": "Super Energy",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:762:775",
+							"start": 775,
+							"end": 801,
+							"text": " based on the stack amount",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:803:803",
+							"start": 803,
+							"end": 806,
+							"text": "x1 ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:808:808",
+							"start": 808,
+							"end": 810,
+							"text": "8%",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:813:813",
+							"start": 813,
+							"end": 816,
+							"text": "x2 ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:818:818",
+							"start": 818,
+							"end": 821,
+							"text": "20%",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:824:824",
+							"start": 824,
+							"end": 826,
+							"text": "x3",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:829:829",
+							"start": 829,
+							"end": 832,
+							"text": "26%",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:835:835",
+							"start": 835,
+							"end": 837,
+							"text": "x4",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:840:840",
+							"start": 840,
+							"end": 843,
+							"text": "33%",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:846:846",
+							"start": 846,
+							"end": 848,
+							"text": "x5",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:5:851:851",
+							"start": 851,
+							"end": 854,
+							"text": "45%",
+							"color": "rgb(255, 217, 102)"
+						}
+					]
 				}
 			],
 			"annotations": [
@@ -74839,7 +76647,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Warlock"
 			],
 			"source": {
 				"tab": "clarity",
@@ -74861,6 +76670,13 @@
 					"itemName": "Stormdancer's Brace",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1771797410523
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:114:6",
+					"tab": "Exotic Armors",
+					"row": 114,
+					"column": 6
 				}
 			],
 			"secondaryName": "Stormdancer's Brace",
@@ -74900,6 +76716,267 @@
 				{
 					"label": "Arc",
 					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_092d066688b879c807c3b460afdd61e6.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "On Super Cast:\nGrants Amplified for 15 seconds.\n\nWhile Stormtrance Super Ability is equipped:\nStormtrance Hits and Kills grant a stack of Ascending Amplitude, up to 30 stacks.\nDecreases the Super Cost of Stormtrance's Ionic Blink by 50%, to 3.125%.\n\nAscending Amplitude:\n 6.7?% Increased Stormtrance Damage per stack, up to 200% at 30 Stacks.\n\nRefunds up to 30% Stormdancer Super Energy based on the amount of Enemy Kills.\n\nWhile Amplified:\nArc Ability Hits grant x1 Bolt Charge up to once every 0.6 seconds.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 114,
+								"column": 8
+							},
+							"start": 0,
+							"length": 508
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 3,
+							"end": 8,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:3:8",
+							"start": 8,
+							"end": 13,
+							"text": " Cast",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "amplified",
+							"start": 22,
+							"end": 31,
+							"text": "Amplified"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:22:31",
+							"start": 31,
+							"end": 32,
+							"text": " ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "stormtrance",
+							"start": 55,
+							"end": 66,
+							"text": "Stormtrance"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:55:66",
+							"start": 66,
+							"end": 67,
+							"text": " ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 67,
+							"end": 80,
+							"text": "Super Ability",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:80:80",
+							"start": 80,
+							"end": 81,
+							"text": " ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "stormtrance",
+							"start": 94,
+							"end": 105,
+							"text": "Stormtrance"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:94:105",
+							"start": 105,
+							"end": 120,
+							"text": " Hits and Kills",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "ascending-amplitude",
+							"start": 138,
+							"end": 157,
+							"text": "Ascending Amplitude"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 190,
+							"end": 195,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:190:195",
+							"start": 195,
+							"end": 200,
+							"text": " Cost",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "stormtrance",
+							"start": 204,
+							"end": 215,
+							"text": "Stormtrance"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:204:215",
+							"start": 215,
+							"end": 217,
+							"text": "'s",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:218:218",
+							"start": 218,
+							"end": 224,
+							"text": "Ionic ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "blink",
+							"start": 224,
+							"end": 229,
+							"text": "Blink"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:218:229",
+							"start": 229,
+							"end": 230,
+							"text": " ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:241:241",
+							"start": 241,
+							"end": 247,
+							"text": "3.125%",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:249:249",
+							"start": 249,
+							"end": 250,
+							"text": "\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "ascending-amplitude",
+							"start": 250,
+							"end": 269,
+							"text": "Ascending Amplitude"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:249:269",
+							"start": 269,
+							"end": 271,
+							"text": ":\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:271:271",
+							"start": 271,
+							"end": 272,
+							"text": " ",
+							"color": "rgb(159, 197, 232)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:272:272",
+							"start": 272,
+							"end": 288,
+							"text": "6.7?% Increased ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "stormtrance",
+							"start": 288,
+							"end": 299,
+							"text": "Stormtrance"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:272:299",
+							"start": 299,
+							"end": 307,
+							"text": " Damage ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:311:311",
+							"start": 311,
+							"end": 316,
+							"text": "stack",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:324:324",
+							"start": 324,
+							"end": 341,
+							"text": "200% at 30 Stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:344:344",
+							"start": 344,
+							"end": 374,
+							"text": "Refunds up to 30% Stormdancer ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 374,
+							"end": 386,
+							"text": "Super Energy",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:344:386",
+							"start": 386,
+							"end": 424,
+							"text": " based on the amount of Enemy Kills.\n\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "amplified",
+							"start": 430,
+							"end": 439,
+							"text": "Amplified"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:441:441",
+							"start": 441,
+							"end": 457,
+							"text": "Arc Ability Hits",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:464:464",
+							"start": 464,
+							"end": 467,
+							"text": "x1 ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "bolt-charge",
+							"start": 467,
+							"end": 478,
+							"text": "Bolt Charge"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:114:8:485:485",
+							"start": 485,
+							"end": 507,
+							"text": "once every 0.6 seconds",
+							"color": "rgb(224, 102, 102)"
+						}
+					]
 				}
 			],
 			"annotations": [
@@ -75033,7 +77110,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Titan"
 			],
 			"source": {
 				"tab": "clarity",
@@ -75055,6 +77133,13 @@
 					"itemName": "Wishful Ignorance",
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1766530840776
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:132:3",
+					"tab": "Exotic Armors",
+					"row": 132,
+					"column": 3
 				}
 			],
 			"secondaryName": "Wishful Ignorance",
@@ -75090,6 +77175,177 @@
 				{
 					"label": "Strand",
 					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_b2fe51a94f3533f97079dfa0d27a4096.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "Grants an additional Frenzied Blade Melee Ability Charge.\n\nUpon scoring a Frenzied Blade or Flechette Storm hit:\nGrants a stack of Wish-Dragon's Talons for 2.75 seconds, up to 3 stacks.\nCan only grant 1 stack per Ability Usage.\n\nWish-Dragon's Talons:\n25% | 60% | 120% Increased Flechette Storm and Frenzied Blade damage.\n\nBanner of War's Pulses grant 5% Frenzied Blade Melee Ability Energy per ally within 10 meters.\nWearer counts as an ally.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 132,
+								"column": 5
+							},
+							"start": 0,
+							"length": 442
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "frenzied-blade",
+							"start": 21,
+							"end": 35,
+							"text": "Frenzied Blade"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 36,
+							"end": 49,
+							"text": "Melee Ability",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:36:49",
+							"start": 49,
+							"end": 56,
+							"text": " Charge",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "frenzied-blade",
+							"start": 74,
+							"end": 88,
+							"text": "Frenzied Blade"
+						},
+						{
+							"keywordId": "flechette-storm",
+							"start": 92,
+							"end": 107,
+							"text": "Flechette Storm"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:122:122",
+							"start": 122,
+							"end": 128,
+							"text": "stack ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "wish-dragon-s-talons",
+							"start": 131,
+							"end": 151,
+							"text": "Wish-Dragon's Talons"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:176:176",
+							"start": 176,
+							"end": 184,
+							"text": "3 stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:186:186",
+							"start": 186,
+							"end": 228,
+							"text": "Can only grant 1 stack per Ability Usage.\n",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "wish-dragon-s-talons",
+							"start": 229,
+							"end": 249,
+							"text": "Wish-Dragon's Talons"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:229:249",
+							"start": 249,
+							"end": 251,
+							"text": ":\n",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:251:251",
+							"start": 251,
+							"end": 268,
+							"text": "25% | 60% | 120% ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "flechette-storm",
+							"start": 278,
+							"end": 293,
+							"text": "Flechette Storm"
+						},
+						{
+							"keywordId": "frenzied-blade",
+							"start": 298,
+							"end": 312,
+							"text": "Frenzied Blade"
+						},
+						{
+							"keywordId": "banner-of-war",
+							"start": 322,
+							"end": 335,
+							"text": "Banner of War"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:322:335",
+							"start": 335,
+							"end": 344,
+							"text": "'s Pulses",
+							"color": "rgb(99, 210, 117)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:351:351",
+							"start": 351,
+							"end": 354,
+							"text": "5% ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "frenzied-blade",
+							"start": 354,
+							"end": 368,
+							"text": "Frenzied Blade"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:368:368",
+							"start": 368,
+							"end": 369,
+							"text": " ",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 369,
+							"end": 389,
+							"text": "Melee Ability Energy",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:394:394",
+							"start": 394,
+							"end": 399,
+							"text": "ally ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:417:417",
+							"start": 417,
+							"end": 424,
+							"text": "Wearer ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:132:5:437:437",
+							"start": 437,
+							"end": 441,
+							"text": "ally",
+							"color": "rgb(164, 194, 244)"
+						}
+					]
 				}
 			],
 			"annotations": [
@@ -75203,7 +77459,8 @@
 			"groups": [
 				"Armor Perks",
 				"Exotic",
-				"Armor Trait Exotic"
+				"Armor Trait Exotic",
+				"Warlock"
 			],
 			"source": {
 				"tab": "clarity",
@@ -75223,12 +77480,129 @@
 					"hash": 4174493725,
 					"type": "Armor Trait Exotic",
 					"updatedAt": 1755986339031
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:3:6",
+					"tab": "Exotic Armors",
+					"row": 3,
+					"column": 6
 				}
 			],
 			"secondaryName": "Apotheosis Veil",
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
 			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg",
 			"perkHash": 4174493725,
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "On Super Cast, for the Caster and Allies within ? meters.\nFully restores Health, Grenade, Melee, and Class Ability Energy.\n\nOn Super End:\nGrants 66% Fixed Bonus Grenade and Melee Ability Energy per second for 8 seconds.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 3,
+								"column": 8
+							},
+							"start": 0,
+							"length": 219
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 3,
+							"end": 8,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:3:8:3:8",
+							"start": 8,
+							"end": 13,
+							"text": " Cast",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:3:8:23:23",
+							"start": 23,
+							"end": 30,
+							"text": "Caster ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:3:8:34:34",
+							"start": 34,
+							"end": 41,
+							"text": "Allies ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:3:8:73:73",
+							"start": 73,
+							"end": 79,
+							"text": "Health",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "pattern:text-energy-grenade",
+							"start": 81,
+							"end": 88,
+							"text": "Grenade",
+							"colorClass": "text-energy-grenade"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 90,
+							"end": 95,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "pattern:text-energy-class",
+							"start": 101,
+							"end": 121,
+							"text": "Class Ability Energy",
+							"colorClass": "text-energy-class"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 127,
+							"end": 132,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:3:8:127:132",
+							"start": 132,
+							"end": 136,
+							"text": " End",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "pattern:text-energy-grenade",
+							"start": 161,
+							"end": 168,
+							"text": "Grenade",
+							"colorClass": "text-energy-grenade"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:3:8:161:168",
+							"start": 168,
+							"end": 169,
+							"text": " ",
+							"color": "rgb(224, 162, 97)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 173,
+							"end": 193,
+							"text": "Melee Ability Energy",
+							"colorClass": "text-energy-melee"
+						}
+					]
+				}
+			],
 			"annotations": [
 				{
 					"keywordId": "pattern:text-energy-super",
@@ -79471,6 +81845,18 @@
 			]
 		},
 		{
+			"id": "untold-greed",
+			"label": "Untold Greed",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"ddc:untold-greed:112:0"
+			]
+		},
+		{
 			"id": "celestial-fire",
 			"label": "Celestial Fire",
 			"aliases": [],
@@ -79493,18 +81879,6 @@
 			"references": [
 				"ddc:shieldcrush:36:8",
 				"ddc:shieldcrush:114:8"
-			]
-		},
-		{
-			"id": "untold-greed",
-			"label": "Untold Greed",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:untold-greed:112:0"
 			]
 		},
 		{
@@ -79544,18 +81918,6 @@
 			]
 		},
 		{
-			"id": "saint-s-fists",
-			"label": "Saint's Fists",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"clarity:1186480754:saint-s-fists"
-			]
-		},
-		{
 			"id": "kinetic-holster",
 			"label": "Kinetic Holster",
 			"aliases": [],
@@ -79565,6 +81927,18 @@
 			"variant": "default",
 			"references": [
 				"clarity:3276278122:kinetic-holster"
+			]
+		},
+		{
+			"id": "saint-s-fists",
+			"label": "Saint's Fists",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"clarity:1186480754:saint-s-fists"
 			]
 		},
 		{
@@ -86931,6 +89305,36 @@
 		],
 		"swap:26:loadout": [
 			{
+				"keywordId": "feast-of-light",
+				"start": 0,
+				"end": 14,
+				"text": "Feast of Light"
+			},
+			{
+				"keywordId": "limit-break",
+				"start": 19,
+				"end": 30,
+				"text": "Limit Break"
+			}
+		],
+		"swap:27:loadout": [
+			{
+				"keywordId": "ember-of-ashes",
+				"start": 0,
+				"end": 14,
+				"text": "Ember of Ashes"
+			}
+		],
+		"swap:28:loadout": [
+			{
+				"keywordId": "untold-greed",
+				"start": 0,
+				"end": 12,
+				"text": "Untold Greed"
+			}
+		],
+		"swap:29:loadout": [
+			{
 				"keywordId": "one-two-punch",
 				"start": 16,
 				"end": 29,
@@ -86953,36 +89357,6 @@
 				"start": 68,
 				"end": 79,
 				"text": "Shieldcrush"
-			}
-		],
-		"swap:27:loadout": [
-			{
-				"keywordId": "feast-of-light",
-				"start": 0,
-				"end": 14,
-				"text": "Feast of Light"
-			},
-			{
-				"keywordId": "limit-break",
-				"start": 19,
-				"end": 30,
-				"text": "Limit Break"
-			}
-		],
-		"swap:28:loadout": [
-			{
-				"keywordId": "ember-of-ashes",
-				"start": 0,
-				"end": 14,
-				"text": "Ember of Ashes"
-			}
-		],
-		"swap:29:loadout": [
-			{
-				"keywordId": "untold-greed",
-				"start": 0,
-				"end": 12,
-				"text": "Untold Greed"
 			}
 		],
 		"swap:30:loadout": [
@@ -87035,33 +89409,13 @@
 		],
 		"swap:33:loadout": [
 			{
-				"keywordId": "celestial-fire",
-				"start": 16,
-				"end": 30,
-				"text": "Celestial Fire"
-			},
-			{
-				"keywordId": "ember-of-ashes",
-				"start": 37,
-				"end": 51,
-				"text": "Ember of Ashes"
-			},
-			{
-				"keywordId": "shieldcrush",
-				"start": 53,
-				"end": 64,
-				"text": "Shieldcrush"
-			}
-		],
-		"swap:34:loadout": [
-			{
 				"keywordId": "limit-break",
 				"start": 0,
 				"end": 11,
 				"text": "Limit Break"
 			}
 		],
-		"swap:35:loadout": [
+		"swap:34:loadout": [
 			{
 				"keywordId": "knock-em-down",
 				"start": 0,
@@ -87075,7 +89429,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:36:loadout": [
+		"swap:35:loadout": [
 			{
 				"keywordId": "cluster-bomb",
 				"start": 3,
@@ -87113,7 +89467,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"swap:38:loadout": [
+		"swap:37:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -87127,7 +89481,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:39:loadout": [
+		"swap:38:loadout": [
 			{
 				"keywordId": "arc-compounding",
 				"start": 6,
@@ -87135,7 +89489,7 @@
 				"text": "Arc Compounding"
 			}
 		],
-		"swap:40:loadout": [
+		"swap:39:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 15,
@@ -87147,6 +89501,26 @@
 				"start": 34,
 				"end": 48,
 				"text": "Hail the Storm"
+			}
+		],
+		"swap:40:loadout": [
+			{
+				"keywordId": "celestial-fire",
+				"start": 16,
+				"end": 30,
+				"text": "Celestial Fire"
+			},
+			{
+				"keywordId": "ember-of-ashes",
+				"start": 37,
+				"end": 51,
+				"text": "Ember of Ashes"
+			},
+			{
+				"keywordId": "shieldcrush",
+				"start": 53,
+				"end": 64,
+				"text": "Shieldcrush"
 			}
 		],
 		"swap:41:loadout": [
@@ -87343,6 +89717,14 @@
 		],
 		"swap:50:loadout": [
 			{
+				"keywordId": "suspend",
+				"start": 37,
+				"end": 44,
+				"text": "suspend"
+			}
+		],
+		"swap:51:loadout": [
+			{
 				"keywordId": "redirection",
 				"start": 0,
 				"end": 11,
@@ -87355,7 +89737,7 @@
 				"text": "Aggregate Charge"
 			}
 		],
-		"swap:51:loadout": [
+		"swap:52:loadout": [
 			{
 				"keywordId": "cayde-s-retribution",
 				"start": 0,
@@ -87369,7 +89751,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"swap:52:loadout": [
+		"swap:53:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 15,
@@ -87383,7 +89765,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:53:loadout": [
+		"swap:54:loadout": [
 			{
 				"keywordId": "whisper-of-fissures",
 				"start": 0,
@@ -87403,7 +89785,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:54:loadout": [
+		"swap:55:loadout": [
 			{
 				"keywordId": "argent-ordnance",
 				"start": 8,
@@ -87411,7 +89793,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"swap:55:loadout": [
+		"swap:56:loadout": [
 			{
 				"keywordId": "aggregate-charge",
 				"start": 6,
@@ -87425,7 +89807,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:56:loadout": [
+		"swap:57:loadout": [
 			{
 				"keywordId": "one-two-punch",
 				"start": 0,
@@ -87463,7 +89845,7 @@
 				"text": "Conductive Cosmic Crystal"
 			}
 		],
-		"swap:57:loadout": [
+		"swap:58:loadout": [
 			{
 				"keywordId": "sticky-grenades",
 				"start": 0,
@@ -87483,7 +89865,27 @@
 				"text": "Explosive Light"
 			}
 		],
-		"swap:58:loadout": [
+		"swap:59:loadout": [
+			{
+				"keywordId": "feast-of-light",
+				"start": 0,
+				"end": 14,
+				"text": "Feast of Light"
+			},
+			{
+				"keywordId": "facet-of-courage",
+				"start": 19,
+				"end": 35,
+				"text": "Facet of Courage"
+			},
+			{
+				"keywordId": "limit-break",
+				"start": 37,
+				"end": 48,
+				"text": "Limit Break"
+			}
+		],
+		"swap:60:loadout": [
 			{
 				"keywordId": "sticker-shock",
 				"start": 17,
@@ -87491,7 +89893,41 @@
 				"text": "Sticker Shock"
 			}
 		],
-		"swap:59:loadout": [
+		"swap:61:loadout": [
+			{
+				"keywordId": "heavy-bolts",
+				"start": 0,
+				"end": 11,
+				"text": "Heavy Bolts"
+			},
+			{
+				"keywordId": "high-ground",
+				"start": 13,
+				"end": 24,
+				"text": "High Ground"
+			}
+		],
+		"swap:63:loadout": [
+			{
+				"keywordId": "the-master",
+				"start": 0,
+				"end": 10,
+				"text": "The Master"
+			},
+			{
+				"keywordId": "kinetic-holster",
+				"start": 16,
+				"end": 31,
+				"text": "Kinetic Holster"
+			},
+			{
+				"keywordId": "sniper-s-meditation",
+				"start": 33,
+				"end": 52,
+				"text": "Sniper's Meditation"
+			}
+		],
+		"swap:65:loadout": [
 			{
 				"keywordId": "saint-s-fists",
 				"start": 16,
@@ -87517,41 +89953,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:60:loadout": [
-			{
-				"keywordId": "heavy-bolts",
-				"start": 0,
-				"end": 11,
-				"text": "Heavy Bolts"
-			},
-			{
-				"keywordId": "high-ground",
-				"start": 13,
-				"end": 24,
-				"text": "High Ground"
-			}
-		],
-		"swap:62:loadout": [
-			{
-				"keywordId": "the-master",
-				"start": 0,
-				"end": 10,
-				"text": "The Master"
-			},
-			{
-				"keywordId": "kinetic-holster",
-				"start": 16,
-				"end": 31,
-				"text": "Kinetic Holster"
-			},
-			{
-				"keywordId": "sniper-s-meditation",
-				"start": 33,
-				"end": 52,
-				"text": "Sniper's Meditation"
-			}
-		],
-		"swap:64:loadout": [
+		"swap:66:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87565,7 +89967,7 @@
 				"text": "Cascade Point"
 			}
 		],
-		"swap:65:loadout": [
+		"swap:67:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87585,7 +89987,7 @@
 				"text": "Explosive Light"
 			}
 		],
-		"swap:66:loadout": [
+		"swap:68:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 0,
@@ -87599,7 +90001,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:67:loadout": [
+		"swap:69:loadout": [
 			{
 				"keywordId": "kinetic-tremors",
 				"start": 3,
@@ -87619,7 +90021,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"swap:68:loadout": [
+		"swap:70:loadout": [
 			{
 				"keywordId": "roaring-flames",
 				"start": 0,
@@ -87645,7 +90047,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:69:loadout": [
+		"swap:71:loadout": [
 			{
 				"keywordId": "arc-compounding",
 				"start": 16,
@@ -87653,7 +90055,7 @@
 				"text": "Arc Compounding"
 			}
 		],
-		"swap:70:loadout": [
+		"swap:72:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 0,
@@ -87661,7 +90063,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:71:loadout": [
+		"swap:73:loadout": [
 			{
 				"keywordId": "cayde-s-retribution",
 				"start": 0,
@@ -87669,7 +90071,7 @@
 				"text": "Cayde's Retribution"
 			}
 		],
-		"swap:72:loadout": [
+		"swap:74:loadout": [
 			{
 				"keywordId": "limit-break",
 				"start": 0,
@@ -87677,7 +90079,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:73:loadout": [
+		"swap:75:loadout": [
 			{
 				"keywordId": "roaring-flames",
 				"start": 0,
@@ -87691,7 +90093,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"swap:74:loadout": [
+		"swap:76:loadout": [
 			{
 				"keywordId": "facet-of-ruin",
 				"start": 0,
@@ -87705,7 +90107,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:75:loadout": [
+		"swap:77:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87725,7 +90127,7 @@
 				"text": "Aggregate Charge"
 			}
 		],
-		"swap:76:loadout": [
+		"swap:78:loadout": [
 			{
 				"keywordId": "impetus",
 				"start": 13,
@@ -87733,7 +90135,7 @@
 				"text": "Impetus"
 			}
 		],
-		"swap:77:loadout": [
+		"swap:79:loadout": [
 			{
 				"keywordId": "roaring-flames",
 				"start": 15,
@@ -87765,27 +90167,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:78:loadout": [
-			{
-				"keywordId": "feast-of-light",
-				"start": 6,
-				"end": 20,
-				"text": "Feast of Light"
-			},
-			{
-				"keywordId": "facet-of-courage",
-				"start": 25,
-				"end": 41,
-				"text": "Facet of Courage"
-			},
-			{
-				"keywordId": "thunderous-retort",
-				"start": 60,
-				"end": 77,
-				"text": "Thunderous Retort"
-			}
-		],
-		"swap:79:loadout": [
+		"swap:80:loadout": [
 			{
 				"keywordId": "redirection",
 				"start": 16,
@@ -87799,7 +90181,7 @@
 				"text": "Cascade Point"
 			}
 		],
-		"swap:80:loadout": [
+		"swap:81:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -87825,7 +90207,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"swap:82:loadout": [
+		"swap:83:loadout": [
 			{
 				"keywordId": "touch-of-flame",
 				"start": 17,
@@ -87845,7 +90227,7 @@
 				"text": "Sticker Shock"
 			}
 		],
-		"swap:83:loadout": [
+		"swap:84:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 6,
@@ -87853,7 +90235,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:84:loadout": [
+		"swap:85:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 0,
@@ -87867,7 +90249,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"swap:85:loadout": [
+		"swap:86:loadout": [
 			{
 				"keywordId": "touch-of-thunder",
 				"start": 0,
@@ -87881,7 +90263,7 @@
 				"text": "Spark of Magnitude"
 			}
 		],
-		"swap:86:loadout": [
+		"swap:87:loadout": [
 			{
 				"keywordId": "cascade-point",
 				"start": 22,
@@ -87893,26 +90275,6 @@
 				"start": 41,
 				"end": 56,
 				"text": "Bait and Switch"
-			}
-		],
-		"swap:88:loadout": [
-			{
-				"keywordId": "feast-of-light",
-				"start": 6,
-				"end": 20,
-				"text": "Feast of Light"
-			},
-			{
-				"keywordId": "facet-of-courage",
-				"start": 25,
-				"end": 41,
-				"text": "Facet of Courage"
-			},
-			{
-				"keywordId": "thunderous-retort",
-				"start": 53,
-				"end": 70,
-				"text": "Thunderous Retort"
 			}
 		],
 		"swap:89:loadout": [
@@ -88055,26 +90417,6 @@
 		],
 		"swap:99:loadout": [
 			{
-				"keywordId": "feast-of-light",
-				"start": 0,
-				"end": 14,
-				"text": "Feast of Light"
-			},
-			{
-				"keywordId": "facet-of-courage",
-				"start": 19,
-				"end": 35,
-				"text": "Facet of Courage"
-			},
-			{
-				"keywordId": "limit-break",
-				"start": 37,
-				"end": 48,
-				"text": "Limit Break"
-			}
-		],
-		"swap:100:loadout": [
-			{
 				"keywordId": "roaring-flames",
 				"start": 15,
 				"end": 29,
@@ -88105,7 +90447,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:101:loadout": [
+		"swap:100:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 0,
@@ -88122,6 +90464,20 @@
 				"keywordId": "limit-break",
 				"start": 51,
 				"end": 62,
+				"text": "Limit Break"
+			}
+		],
+		"swap:101:loadout": [
+			{
+				"keywordId": "facet-of-courage",
+				"start": 0,
+				"end": 16,
+				"text": "Facet of Courage"
+			},
+			{
+				"keywordId": "limit-break",
+				"start": 18,
+				"end": 29,
 				"text": "Limit Break"
 			}
 		],
@@ -88161,6 +90517,134 @@
 		],
 		"swap:104:loadout": [
 			{
+				"keywordId": "property-irreducible",
+				"start": 0,
+				"end": 21,
+				"text": "Property: Irreducible"
+			},
+			{
+				"keywordId": "transcendence",
+				"start": 46,
+				"end": 58,
+				"text": "Transcendent"
+			}
+		],
+		"swap:105:loadout": [
+			{
+				"keywordId": "touch-of-winter",
+				"start": 0,
+				"end": 15,
+				"text": "Touch of Winter"
+			},
+			{
+				"keywordId": "whisper-of-fissures",
+				"start": 17,
+				"end": 36,
+				"text": "Whisper of Fissures"
+			}
+		],
+		"swap:106:loadout": [
+			{
+				"keywordId": "precision-instrument",
+				"start": 18,
+				"end": 38,
+				"text": "Precision Instrument"
+			},
+			{
+				"keywordId": "illegally-modded-holster",
+				"start": 60,
+				"end": 84,
+				"text": "Illegally Modded Holster"
+			}
+		],
+		"swap:107:loadout": [
+			{
+				"keywordId": "anticipation",
+				"start": 4,
+				"end": 16,
+				"text": "Anticipation"
+			},
+			{
+				"keywordId": "argent-ordnance",
+				"start": 18,
+				"end": 33,
+				"text": "Argent Ordnance"
+			}
+		],
+		"swap:108:loadout": [
+			{
+				"keywordId": "precision-instrument",
+				"start": 48,
+				"end": 68,
+				"text": "Precision Instrument"
+			},
+			{
+				"keywordId": "accelerated-assault",
+				"start": 90,
+				"end": 109,
+				"text": "Accelerated Assault"
+			},
+			{
+				"keywordId": "illegally-modded-holster",
+				"start": 111,
+				"end": 135,
+				"text": "Illegally Modded Holster"
+			}
+		],
+		"swap:109:loadout": [
+			{
+				"keywordId": "touch-of-flame",
+				"start": 48,
+				"end": 62,
+				"text": "Touch of Flame"
+			},
+			{
+				"keywordId": "ember-of-ashes",
+				"start": 64,
+				"end": 78,
+				"text": "Ember of Ashes"
+			}
+		],
+		"swap:110:loadout": [
+			{
+				"keywordId": "cascade-point",
+				"start": 23,
+				"end": 36,
+				"text": "Cascade Point"
+			}
+		],
+		"swap:111:loadout": [
+			{
+				"keywordId": "thruster",
+				"start": 12,
+				"end": 20,
+				"text": "Thruster"
+			}
+		],
+		"swap:112:loadout": [
+			{
+				"keywordId": "all-star",
+				"start": 6,
+				"end": 14,
+				"text": "All-Star"
+			}
+		],
+		"swap:113:loadout": [
+			{
+				"keywordId": "spike-grenades",
+				"start": 0,
+				"end": 14,
+				"text": "Spike Grenades"
+			},
+			{
+				"keywordId": "cascade-point",
+				"start": 16,
+				"end": 29,
+				"text": "Cascade Point"
+			}
+		],
+		"swap:115:loadout": [
+			{
 				"keywordId": "saint-s-fists",
 				"start": 13,
 				"end": 26,
@@ -88183,134 +90667,6 @@
 				"start": 65,
 				"end": 76,
 				"text": "Shieldcrush"
-			}
-		],
-		"swap:105:loadout": [
-			{
-				"keywordId": "property-irreducible",
-				"start": 0,
-				"end": 21,
-				"text": "Property: Irreducible"
-			},
-			{
-				"keywordId": "transcendence",
-				"start": 46,
-				"end": 58,
-				"text": "Transcendent"
-			}
-		],
-		"swap:106:loadout": [
-			{
-				"keywordId": "touch-of-winter",
-				"start": 0,
-				"end": 15,
-				"text": "Touch of Winter"
-			},
-			{
-				"keywordId": "whisper-of-fissures",
-				"start": 17,
-				"end": 36,
-				"text": "Whisper of Fissures"
-			}
-		],
-		"swap:107:loadout": [
-			{
-				"keywordId": "precision-instrument",
-				"start": 18,
-				"end": 38,
-				"text": "Precision Instrument"
-			},
-			{
-				"keywordId": "illegally-modded-holster",
-				"start": 60,
-				"end": 84,
-				"text": "Illegally Modded Holster"
-			}
-		],
-		"swap:108:loadout": [
-			{
-				"keywordId": "anticipation",
-				"start": 4,
-				"end": 16,
-				"text": "Anticipation"
-			},
-			{
-				"keywordId": "argent-ordnance",
-				"start": 18,
-				"end": 33,
-				"text": "Argent Ordnance"
-			}
-		],
-		"swap:109:loadout": [
-			{
-				"keywordId": "precision-instrument",
-				"start": 48,
-				"end": 68,
-				"text": "Precision Instrument"
-			},
-			{
-				"keywordId": "accelerated-assault",
-				"start": 90,
-				"end": 109,
-				"text": "Accelerated Assault"
-			},
-			{
-				"keywordId": "illegally-modded-holster",
-				"start": 111,
-				"end": 135,
-				"text": "Illegally Modded Holster"
-			}
-		],
-		"swap:110:loadout": [
-			{
-				"keywordId": "touch-of-flame",
-				"start": 48,
-				"end": 62,
-				"text": "Touch of Flame"
-			},
-			{
-				"keywordId": "ember-of-ashes",
-				"start": 64,
-				"end": 78,
-				"text": "Ember of Ashes"
-			}
-		],
-		"swap:111:loadout": [
-			{
-				"keywordId": "cascade-point",
-				"start": 23,
-				"end": 36,
-				"text": "Cascade Point"
-			}
-		],
-		"swap:112:loadout": [
-			{
-				"keywordId": "thruster",
-				"start": 12,
-				"end": 20,
-				"text": "Thruster"
-			}
-		],
-		"swap:113:loadout": [
-			{
-				"keywordId": "all-star",
-				"start": 6,
-				"end": 14,
-				"text": "All-Star"
-			}
-		],
-		"swap:114:loadout": [
-			{
-				"keywordId": "spike-grenades",
-				"start": 0,
-				"end": 14,
-				"text": "Spike Grenades"
-			},
-			{
-				"keywordId": "cascade-point",
-				"start": 16,
-				"end": 29,
-				"text": "Cascade Point"
 			}
 		],
 		"swap:116:loadout": [
@@ -88355,13 +90711,33 @@
 		],
 		"swap:118:loadout": [
 			{
+				"keywordId": "feast-of-light",
+				"start": 6,
+				"end": 20,
+				"text": "Feast of Light"
+			},
+			{
+				"keywordId": "facet-of-courage",
+				"start": 25,
+				"end": 41,
+				"text": "Facet of Courage"
+			},
+			{
+				"keywordId": "thunderous-retort",
+				"start": 60,
+				"end": 77,
+				"text": "Thunderous Retort"
+			}
+		],
+		"swap:119:loadout": [
+			{
 				"keywordId": "limit-break",
 				"start": 70,
 				"end": 81,
 				"text": "Limit Break"
 			}
 		],
-		"swap:119:loadout": [
+		"swap:120:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 0,
@@ -88375,7 +90751,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:120:loadout": [
+		"swap:121:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -88389,7 +90765,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:121:loadout": [
+		"swap:122:loadout": [
 			{
 				"keywordId": "echo-of-remnants",
 				"start": 0,
@@ -88397,7 +90773,27 @@
 				"text": "Echo of Remnants"
 			}
 		],
-		"swap:122:loadout": [
+		"swap:123:loadout": [
+			{
+				"keywordId": "feast-of-light",
+				"start": 6,
+				"end": 20,
+				"text": "Feast of Light"
+			},
+			{
+				"keywordId": "facet-of-courage",
+				"start": 25,
+				"end": 41,
+				"text": "Facet of Courage"
+			},
+			{
+				"keywordId": "thunderous-retort",
+				"start": 53,
+				"end": 70,
+				"text": "Thunderous Retort"
+			}
+		],
+		"swap:124:loadout": [
 			{
 				"keywordId": "heavy-burst",
 				"start": 14,
@@ -88411,7 +90807,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:123:loadout": [
+		"swap:125:loadout": [
 			{
 				"keywordId": "aggregate-charge",
 				"start": 0,
@@ -88419,7 +90815,7 @@
 				"text": "Aggregate Charge"
 			}
 		],
-		"swap:124:loadout": [
+		"swap:126:loadout": [
 			{
 				"keywordId": "ascending-amplitude",
 				"start": 0,
@@ -88439,7 +90835,7 @@
 				"text": "Thunderous Retort"
 			}
 		],
-		"swap:126:loadout": [
+		"swap:128:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -88453,7 +90849,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:127:loadout": [
+		"swap:129:loadout": [
 			{
 				"keywordId": "banner-of-war",
 				"start": 12,
@@ -88473,7 +90869,7 @@
 				"text": "Insatiable"
 			}
 		],
-		"swap:128:loadout": [
+		"swap:130:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 19,
@@ -88487,7 +90883,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:129:loadout": [
+		"swap:131:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -88501,7 +90897,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:130:loadout": [
+		"swap:132:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 15,
@@ -88515,7 +90911,7 @@
 				"text": "Thunderous Retort"
 			}
 		],
-		"swap:131:loadout": [
+		"swap:133:loadout": [
 			{
 				"keywordId": "banner-of-war",
 				"start": 0,
@@ -88535,7 +90931,7 @@
 				"text": "One-Two Punch"
 			}
 		],
-		"swap:133:loadout": [
+		"swap:135:loadout": [
 			{
 				"keywordId": "shieldcrush",
 				"start": 13,
@@ -88543,7 +90939,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:134:loadout": [
+		"swap:136:loadout": [
 			{
 				"keywordId": "touch-of-thunder",
 				"start": 0,
@@ -88557,7 +90953,7 @@
 				"text": "Spark of Magnitude"
 			}
 		],
-		"swap:135:loadout": [
+		"swap:137:loadout": [
 			{
 				"keywordId": "envious-assassin",
 				"start": 9,
@@ -88571,7 +90967,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:136:loadout": [
+		"swap:138:loadout": [
 			{
 				"keywordId": "sticker-shock",
 				"start": 0,
@@ -88579,7 +90975,7 @@
 				"text": "Sticker Shock"
 			}
 		],
-		"swap:137:loadout": [
+		"swap:139:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -88593,7 +90989,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:138:loadout": [
+		"swap:140:loadout": [
 			{
 				"keywordId": "cayde-s-retribution",
 				"start": 0,
@@ -88607,7 +91003,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"swap:140:loadout": [
+		"swap:142:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 19,
@@ -88621,21 +91017,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:141:loadout": [
-			{
-				"keywordId": "facet-of-courage",
-				"start": 0,
-				"end": 16,
-				"text": "Facet of Courage"
-			},
-			{
-				"keywordId": "limit-break",
-				"start": 18,
-				"end": 29,
-				"text": "Limit Break"
-			}
-		],
-		"swap:142:loadout": [
+		"swap:143:loadout": [
 			{
 				"keywordId": "limit-break",
 				"start": 53,
@@ -88643,7 +91025,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:143:loadout": [
+		"swap:144:loadout": [
 			{
 				"keywordId": "banner-of-war",
 				"start": 16,
@@ -88669,7 +91051,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:144:loadout": [
+		"swap:145:loadout": [
 			{
 				"keywordId": "cascade-point",
 				"start": 3,
@@ -88689,7 +91071,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:145:loadout": [
+		"swap:146:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 17,
@@ -88703,7 +91085,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:146:loadout": [
+		"swap:147:loadout": [
 			{
 				"keywordId": "roaring-flames",
 				"start": 15,
@@ -88735,7 +91117,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:147:loadout": [
+		"swap:148:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 6,
@@ -88743,7 +91125,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"swap:148:loadout": [
+		"swap:149:loadout": [
 			{
 				"keywordId": "illegally-modded-holster",
 				"start": 7,
@@ -88751,7 +91133,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:149:loadout": [
+		"swap:150:loadout": [
 			{
 				"keywordId": "touch-of-flame",
 				"start": 0,
@@ -88765,7 +91147,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"swap:150:loadout": [
+		"swap:151:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 27,
@@ -88779,7 +91161,7 @@
 				"text": "Pack Hunter"
 			}
 		],
-		"swap:151:loadout": [
+		"swap:152:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 0,
@@ -88799,7 +91181,7 @@
 				"text": "Thunderous Retort"
 			}
 		],
-		"swap:152:loadout": [
+		"swap:153:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 13,
@@ -88813,7 +91195,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:153:loadout": [
+		"swap:154:loadout": [
 			{
 				"keywordId": "banner-of-war",
 				"start": 8,
@@ -88839,7 +91221,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:154:loadout": [
+		"swap:155:loadout": [
 			{
 				"keywordId": "shieldcrush",
 				"start": 24,
@@ -88847,7 +91229,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:155:loadout": [
+		"swap:156:loadout": [
 			{
 				"keywordId": "touch-of-flame",
 				"start": 0,
@@ -88867,7 +91249,7 @@
 				"text": "Sticker Shock"
 			}
 		],
-		"swap:156:loadout": [
+		"swap:157:loadout": [
 			{
 				"keywordId": "heavy-burst",
 				"start": 14,
@@ -88887,7 +91269,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:157:loadout": [
+		"swap:158:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 0,
@@ -88901,7 +91283,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:160:loadout": [
+		"swap:161:loadout": [
 			{
 				"keywordId": "the-perfect-fifth",
 				"start": 28,
@@ -88921,7 +91303,7 @@
 				"text": "Pack Hunter"
 			}
 		],
-		"swap:161:loadout": [
+		"swap:162:loadout": [
 			{
 				"keywordId": "precision-instrument",
 				"start": 3,
@@ -88929,7 +91311,7 @@
 				"text": "Precision Instrument"
 			}
 		],
-		"swap:162:loadout": [
+		"swap:163:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -88937,7 +91319,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"swap:163:loadout": [
+		"swap:164:loadout": [
 			{
 				"keywordId": "chaos-accelerant",
 				"start": 0,
@@ -88945,7 +91327,7 @@
 				"text": "Chaos Accelerant"
 			}
 		],
-		"swap:164:loadout": [
+		"swap:165:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 0,
@@ -88959,7 +91341,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"swap:165:loadout": [
+		"swap:166:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -88973,7 +91355,7 @@
 				"text": "Facet of Ruin"
 			}
 		],
-		"swap:167:loadout": [
+		"swap:168:loadout": [
 			{
 				"keywordId": "limit-break",
 				"start": 56,
@@ -88981,7 +91363,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:168:loadout": [
+		"swap:169:loadout": [
 			{
 				"keywordId": "illegally-modded-holster",
 				"start": 25,
@@ -88989,7 +91371,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:169:loadout": [
+		"swap:170:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 27,
@@ -89003,7 +91385,7 @@
 				"text": "Pack Hunter"
 			}
 		],
-		"swap:170:loadout": [
+		"swap:171:loadout": [
 			{
 				"keywordId": "paracausal-shot",
 				"start": 9,
@@ -89017,7 +91399,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:171:loadout": [
+		"swap:172:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 0,
@@ -89037,7 +91419,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:172:loadout": [
+		"swap:173:loadout": [
 			{
 				"keywordId": "precision-instrument",
 				"start": 3,
@@ -89049,26 +91431,6 @@
 				"start": 44,
 				"end": 68,
 				"text": "Illegally Modded Holster"
-			}
-		],
-		"swap:173:loadout": [
-			{
-				"keywordId": "feast-of-light",
-				"start": 0,
-				"end": 14,
-				"text": "Feast of Light"
-			},
-			{
-				"keywordId": "facet-of-courage",
-				"start": 54,
-				"end": 70,
-				"text": "Facet of Courage"
-			},
-			{
-				"keywordId": "shieldcrush",
-				"start": 72,
-				"end": 83,
-				"text": "Shieldcrush"
 			}
 		],
 		"swap:174:loadout": [
@@ -89151,6 +91513,26 @@
 		],
 		"swap:180:loadout": [
 			{
+				"keywordId": "feast-of-light",
+				"start": 0,
+				"end": 14,
+				"text": "Feast of Light"
+			},
+			{
+				"keywordId": "facet-of-courage",
+				"start": 54,
+				"end": 70,
+				"text": "Facet of Courage"
+			},
+			{
+				"keywordId": "shieldcrush",
+				"start": 72,
+				"end": 83,
+				"text": "Shieldcrush"
+			}
+		],
+		"swap:181:loadout": [
+			{
 				"keywordId": "property-irreducible",
 				"start": 0,
 				"end": 21,
@@ -89163,7 +91545,7 @@
 				"text": "Transcendent"
 			}
 		],
-		"swap:181:loadout": [
+		"swap:182:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 15,
@@ -89177,7 +91559,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:182:loadout": [
+		"swap:183:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 11,
@@ -89189,20 +91571,6 @@
 				"start": 30,
 				"end": 46,
 				"text": "Aggregate Charge"
-			}
-		],
-		"swap:183:loadout": [
-			{
-				"keywordId": "facet-of-courage",
-				"start": 46,
-				"end": 62,
-				"text": "Facet of Courage"
-			},
-			{
-				"keywordId": "shieldcrush",
-				"start": 64,
-				"end": 75,
-				"text": "Shieldcrush"
 			}
 		],
 		"swap:184:loadout": [
@@ -89245,6 +91613,20 @@
 		],
 		"swap:189:loadout": [
 			{
+				"keywordId": "facet-of-courage",
+				"start": 46,
+				"end": 62,
+				"text": "Facet of Courage"
+			},
+			{
+				"keywordId": "shieldcrush",
+				"start": 64,
+				"end": 75,
+				"text": "Shieldcrush"
+			}
+		],
+		"swap:190:loadout": [
+			{
 				"keywordId": "precision-instrument",
 				"start": 18,
 				"end": 38,
@@ -89257,7 +91639,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:190:loadout": [
+		"swap:191:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 24,
@@ -89265,20 +91647,12 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"swap:191:loadout": [
+		"swap:192:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
 				"end": 14,
 				"text": "Ember of Ashes"
-			}
-		],
-		"swap:192:loadout": [
-			{
-				"keywordId": "facet-of-courage",
-				"start": 0,
-				"end": 16,
-				"text": "Facet of Courage"
 			}
 		],
 		"swap:193:loadout": [
@@ -89291,13 +91665,21 @@
 		],
 		"swap:194:loadout": [
 			{
+				"keywordId": "facet-of-courage",
+				"start": 0,
+				"end": 16,
+				"text": "Facet of Courage"
+			}
+		],
+		"swap:195:loadout": [
+			{
 				"keywordId": "thread-of-evolution",
 				"start": 0,
 				"end": 19,
 				"text": "Thread of Evolution"
 			}
 		],
-		"swap:195:loadout": [
+		"swap:196:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -89311,7 +91693,7 @@
 				"text": "Facet of Ruin"
 			}
 		],
-		"swap:197:loadout": [
+		"swap:198:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -89319,7 +91701,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"swap:198:loadout": [
+		"swap:199:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,

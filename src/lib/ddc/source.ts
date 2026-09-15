@@ -17,6 +17,11 @@ import {
 import type { SheetColorIndex } from "../sheets/api";
 import { COMPENDIUM_TAB_NORMALIZATION } from "./config";
 import {
+	AEON_SECT_ITEM_BY_PERK,
+	EXOTIC_ARMOR_NAME_ALIASES,
+	EXOTIC_ARMORS_TAB_NAME,
+} from "./exotic-armors";
+import {
 	EXOTIC_CLASS_ITEM_BY_CLASS,
 	EXOTIC_CLASS_TAB_NAME,
 } from "./exotic-class-items";
@@ -148,6 +153,40 @@ export function toUnifiedDdcEntries(
 				extraInfo: parsed.extraInfo,
 				iconPath: bonusEnrichment?.perkIconPath,
 				secondaryIconPath: setIconPath,
+			};
+		}
+
+		if (entry.tab === EXOTIC_ARMORS_TAB_NAME) {
+			// The piece the normalizer read off the row, or - for an Aeon sect,
+			// which the sheet writes without one - the one Clarity files that
+			// sect against, so the two records meet.
+			const pieceName =
+				entry.secondaryName ?? AEON_SECT_ITEM_BY_PERK[entry.title];
+			const itemName = pieceName
+				? (EXOTIC_ARMOR_NAME_ALIASES[pieceName] ?? pieceName)
+				: undefined;
+			const itemEnrichment = itemName
+				? bungieResolver?.getItemEnrichmentByTitle(itemName)
+				: null;
+			// An Aeon row names the chant the sect grants where other rows have
+			// nothing to add, and that keeps its place beside the piece.
+			const extraInfo = [
+				itemName ? `Item: ${itemName}` : undefined,
+				entry.extraInfo,
+			]
+				.filter(Boolean)
+				.join(" | ");
+
+			return {
+				...entry,
+				id: `ddc:${normalizeTitle(entry.title)}:${entry.source.row}:${entry.source.column}`,
+				kind,
+				groups,
+				sourceId: "ddc",
+				sourceRefs: [sourceRef],
+				secondaryName: itemName,
+				secondaryIconPath: itemEnrichment?.itemIconPath,
+				extraInfo: extraInfo || undefined,
 			};
 		}
 

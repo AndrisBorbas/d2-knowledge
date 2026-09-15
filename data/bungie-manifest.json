@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-14T02:14:29.279Z",
+	"generatedAt": "2026-09-15T23:56:48.451Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -3022,6 +3022,10 @@
 				"i": "/common/destiny2_content/icons/013a56db7dc9c3f89012a381f601a4ff.png",
 				"d": "Hitting a target with nearly every pellet in a shot increases melee damage for a short duration."
 			},
+			"790411442": {
+				"n": "Swarmers",
+				"i": "/common/destiny2_content/icons/6913d8a2546e53f6bbcba482e487477b.jpg"
+			},
 			"790664810": {
 				"n": "Weaver's Call",
 				"i": "/common/destiny2_content/icons/5d38da97f92b3bdfef333a418ab8caf5.jpg",
@@ -3125,6 +3129,10 @@
 				"n": "Precision Frame",
 				"i": "/common/destiny2_content/icons/e9dd736124e8ef94048901a279a5bb18.png",
 				"d": "This weapon's recoil pattern is more predictably vertical."
+			},
+			"813239853": {
+				"n": "Blastwave Striders",
+				"i": "/common/destiny2_content/icons/2867edb179061ac96f92d4eed1ceffdb.jpg"
 			},
 			"814876684": {
 				"n": "Wish-Ender",
@@ -6565,6 +6573,11 @@
 				"i": "/common/destiny2_content/icons/ea99a5550787bc2196c717e98baff076.png",
 				"d": "Final blows with this weapon grant class ability energy."
 			},
+			"1706185766": {
+				"n": "Vengeance",
+				"i": "/common/destiny2_content/icons/870591d83a4abd6c00ba6374236944eb.jpg",
+				"d": "Hunt and defeat Tirksnii, Corsairsbane."
+			},
 			"1707990417": {
 				"n": "Rapid-Fire Frame",
 				"i": "/common/destiny2_content/icons/801d62d1f9783bee81d5700c54c24fda.png",
@@ -7151,6 +7164,10 @@
 			"1849149215": {
 				"n": "Fallen Sunstar",
 				"i": "/common/destiny2_content/icons/54d230429642573df3c8030ba90fec0e.jpg"
+			},
+			"1849901681": {
+				"n": "Blastwave Striders",
+				"i": "/common/destiny2_content/icons/2867edb179061ac96f92d4eed1ceffdb.jpg"
 			},
 			"1852863732": {
 				"n": "Wavesplitter",
@@ -7960,6 +7977,10 @@
 				"n": "Aggressive Frame",
 				"i": "/common/destiny2_content/icons/64209c4fd20513b33109c374179d0958.png",
 				"d": "High damage, high recoil."
+			},
+			"2100136540": {
+				"n": "Swarmers",
+				"i": "/common/destiny2_content/icons/6913d8a2546e53f6bbcba482e487477b.jpg"
 			},
 			"2101490074": {
 				"n": "Aggressive Frame",
@@ -16753,10 +16774,35 @@
 				"i": "/common/destiny2_content/icons/8b9a4582016210723532907414759e69.png",
 				"d": "This weapon gains bonus stability, handling, and reload speed while the wielder is in motion."
 			},
+			"43648511": {
+				"n": "Mobius Conduit",
+				"i": "/common/destiny2_content/icons/6db788a7e92c10f7f7ee3daddce16cba.png",
+				"d": "Activating Gathering Storm calls down lightning."
+			},
 			"43713866": {
 				"n": "Snapshot Sights",
 				"i": "/common/destiny2_content/icons/ce16c9e2cbd73bb548af3e15bdfc7177.png",
 				"d": "Faster time to aim down sights. Stability is increased."
+			},
+			"43825996": {
+				"n": "Fury Conductors",
+				"i": "/common/destiny2_content/icons/e6d3adfc397494ea66a79df3f42547c8.png",
+				"d": "Melee hits grant Armor Charge and store explosive Arc energy."
+			},
+			"43825997": {
+				"n": "Horns of Doom",
+				"i": "/common/destiny2_content/icons/2711427d59a7abae9059a7b80ff27562.png",
+				"d": "Defeating targets with Void damage grants a bonus to Void weapons, and defeating targets with Void melee grants Super energy. Improves Sentinel Shield."
+			},
+			"43825998": {
+				"n": "Biotic Enhancements",
+				"i": "/common/destiny2_content/icons/640d76fb6ab52e290116455379194b07.png",
+				"d": "Being surrounded buffs damage and weapon handling."
+			},
+			"43992595": {
+				"n": "Bleak Domain",
+				"i": "/common/destiny2_content/icons/6d8ffb8297587bdbbead0418d344b2e9.png",
+				"d": "Bleak Watcher turrets are enhanced and grant icicle projectiles to weapons."
 			},
 			"48746833": {
 				"n": "Iron Grip",
@@ -16913,6 +16959,16 @@
 				"i": "/common/destiny2_content/icons/faa8e06f2943031a948f0bb55971ce6d.png",
 				"d": "Grants slightly increased vent speed and handling."
 			},
+			"152088390": {
+				"n": "Forge Master",
+				"i": "/common/destiny2_content/icons/28ba5d00f7cfa0026beedc74ae62adbf.png",
+				"d": "Summon your Throwing Hammer back to you."
+			},
+			"167880884": {
+				"n": "Beyond The Veil",
+				"i": "/common/destiny2_content/icons/ae998d23b15b04136f563bcf18990d5a.png",
+				"d": "Guardians you make invisible gain damage resistance."
+			},
 			"181665053": {
 				"n": "Touch of Winter",
 				"i": "/common/destiny2_content/icons/b8e7bcaa96ec08540ff225a6d113a0d8.png",
@@ -17007,6 +17063,11 @@
 				"n": "Under-Over",
 				"i": "/common/destiny2_content/icons/22587c092ade23b9ea1a48ba871e8788.png",
 				"d": "Deals bonus damage to targets with overshields. Deals a small amount of bonus damage to combatant shields."
+			},
+			"226499337": {
+				"n": "Halberdier's Reach",
+				"i": "/common/destiny2_content/icons/4f6f7f7ed33e3c274165705bba5aebc5.png",
+				"d": "Improves Glaive melee. Glaive projectile final blows cause detonations."
 			},
 			"233365944": {
 				"n": "Expanding Abyss",
@@ -17273,6 +17334,11 @@
 				"i": "/common/destiny2_content/icons/a44d26eb6a493b916840a8f023f3d91c.png",
 				"d": "Cast your Super to grant Overshield to nearby allies. \n\nCasting your Barricade grants Overshield to yourself and nearby allies and empowers it, enabling it to slowly regenerate the Overshield of allies bunkering behind it and extend their Overshield duration."
 			},
+			"362033873": {
+				"n": "Blood Magic",
+				"i": "/common/destiny2_content/icons/ef3b48bcd760b23563516e9b667ace5a.png",
+				"d": "Weapon kills while in a rift extend the rift's duration."
+			},
 			"364798618": {
 				"n": "Radiant Heat",
 				"i": "/common/destiny2_content/icons/05a6ad724fc38ddaf0bdde33bb6464ae.png",
@@ -17302,6 +17368,11 @@
 				"n": "Air-Cooled Core",
 				"i": "/common/destiny2_content/icons/ef9bcdbfc8d8308d73464e129377eb67.png",
 				"d": "Sprinting increases vent or reload speed for a short time. While at low heat or full magazine, gain increased handling and movement speed when aiming down sights."
+			},
+			"376352727": {
+				"n": "Grasp of the Devourer",
+				"i": "/common/destiny2_content/icons/4c1a349c2723d3aa84598da98c7a8805.png",
+				"d": "Melee hits inflict potent corruption that deals increasing damage over time."
 			},
 			"381243875": {
 				"n": "Whirling Maelstrom",
@@ -17378,6 +17449,11 @@
 				"i": "/common/destiny2_content/icons/27f988cc5d7e9f8e48479b0519f831a0.png",
 				"d": "Final blows increase ammo meter progress from all sources for a slightly increased duration."
 			},
+			"432942453": {
+				"n": "Warlord's End",
+				"i": "/common/destiny2_content/icons/97685a8e1ddb61ae32a82aef55b77e24.png",
+				"d": "Powered melee kills create a burst of energy that weakens nearby enemies."
+			},
 			"436945595": {
 				"n": "Imperial Allegiance",
 				"i": "/common/destiny2_content/icons/c0b62717cdf4e9d6268106164cb878cd.png",
@@ -17422,6 +17498,11 @@
 				"n": "Reversal of Fortune",
 				"i": "/common/destiny2_content/icons/3621d640b7e9574264f960cbd9aef5bf.png",
 				"d": "Missing 2 shots returns a bullet to the magazine after a short duration."
+			},
+			"473669675": {
+				"n": "Kintsugi",
+				"i": "/common/destiny2_content/icons/55d8963104a2ef728e6474796c6bab5b.png",
+				"d": "Revive provides an overshield to you and nearby allies."
 			},
 			"481819342": {
 				"n": "Slickdraw",
@@ -17468,6 +17549,11 @@
 				"i": "/common/destiny2_content/icons/922b3354dd900848ecf72bcf9e1ae022.png",
 				"d": "Capable of healing allies and hurting foes. Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and bestows restoration to your allies."
 			},
+			"514499714": {
+				"n": "Voltaic Mirror",
+				"i": "/common/destiny2_content/icons/011ceced7088a20d9c6d217694d3971a.png",
+				"d": "Attacks you redirect with your Arc Staff deal massively increased damage."
+			},
 			"527769018": {
 				"n": "Demoralize",
 				"i": "/common/destiny2_content/icons/8cabe60ab649baa54f0f50a59034155d.png",
@@ -17492,6 +17578,11 @@
 				"n": "Bottomless Grief",
 				"i": "/common/destiny2_content/icons/088930f7cf51b028acc8b7cb477fff9c.png",
 				"d": "Substantially increases magazine size. While you are the last living member of your fireteam, each final blow refills your magazine."
+			},
+			"537180118": {
+				"n": "The Fourth Magic",
+				"i": "/common/destiny2_content/icons/9732f284c71054229671287ab43444b7.png",
+				"d": "Weapon final blows boost grenade damage."
 			},
 			"545970982": {
 				"n": "Power Preservation",
@@ -17543,6 +17634,11 @@
 				"i": "/common/destiny2_content/icons/17820685693b8338ba983e6002e2af11.png",
 				"d": "Rockets attach on impact and detonate after a delay. Increases blast radius and damage."
 			},
+			"581485979": {
+				"n": "Consul's Pitch",
+				"i": "/common/destiny2_content/icons/ae8c3388b411cf880f9dd76de7e79072.png",
+				"d": "Improves Hellion."
+			},
 			"584450563": {
 				"n": "Desperado",
 				"i": "/common/destiny2_content/icons/1c95bff6fa57919ab0f5547d1f107fad.png",
@@ -17587,6 +17683,21 @@
 				"n": "Envious Assassin",
 				"i": "/common/destiny2_content/icons/bf7fccf6de8ee6d2e9e6285c004a4758.png",
 				"d": "Defeating targets with other weapons before drawing this one transfers additional ammo to the magazine from reserves. This effect can overflow the magazine based on the number of targets defeated."
+			},
+			"618667540": {
+				"n": "Survival Well",
+				"i": "/common/destiny2_content/icons/a5c5979f3630735a03bee7f2d32e9043.png",
+				"d": "More Orbs from Supers. Casting Barricade heals."
+			},
+			"618667541": {
+				"n": "Auto-Loading Link",
+				"i": "/common/destiny2_content/icons/da340d0b0754087bb15d64a8897f5e3b.png",
+				"d": "Steadily reloads your equipped Auto Rifle's or Machine Gun's mag."
+			},
+			"618667542": {
+				"n": "Sunfire Furnace",
+				"i": "/common/destiny2_content/icons/7066c741806a4c30d4987a63f5b3b2d9.png",
+				"d": "Enhanced abilities with a charged Solar Super."
 			},
 			"619868206": {
 				"n": "Jolting Feedback",
@@ -17643,10 +17754,25 @@
 				"i": "/common/destiny2_content/icons/eddb478261ab53ec941b1a654e284c9d.png",
 				"d": "Gain increased Sword lunge distance immediately after switching to this weapon."
 			},
+			"641688726": {
+				"n": "Parting Gift",
+				"i": "/common/destiny2_content/icons/97c352f8ad87a9c7ea68b2a643d821ed.png",
+				"d": "Dodging leaves behind an explosive that detonates after a short delay, damaging targets around it."
+			},
 			"647468839": {
 				"n": "Right Hook",
 				"i": "/common/destiny2_content/icons/067828985c3d34507def4eb53b12cf4e.png",
 				"d": "Dealing melee damage gives this weapon greatly improved target acquisition and range for a short period of time.\nDealing melee damage again extends the effect."
+			},
+			"649172688": {
+				"n": "Crystalline Transistor",
+				"i": "/common/destiny2_content/icons/d9d5643bc00f65638387f71709534c2b.png",
+				"d": "Final blows from Kinetic weapons create an explosion in the element of your equipped Super."
+			},
+			"649172689": {
+				"n": "Battle-Hearth",
+				"i": "/common/destiny2_content/icons/6985c5f8dbe4d38b0702df7f55d50172.png",
+				"d": "Gain Super energy for kills and assists inside Well of Radiance."
 			},
 			"656021262": {
 				"n": "Lightweight Frame",
@@ -17728,6 +17854,21 @@
 				"i": "/common/destiny2_content/icons/64209c4fd20513b33109c374179d0958.png",
 				"d": "Increases rate of fire after kill."
 			},
+			"689661428": {
+				"n": "Linear Actuators",
+				"i": "/common/destiny2_content/icons/10eb32a307eaadd26eb0fe4550bcdbfb.png",
+				"d": "Faster sprinting and chain melee damage."
+			},
+			"689661430": {
+				"n": "Jump Jets",
+				"i": "/common/destiny2_content/icons/7b334c8fca87e908ccea8fbe4c6af68f.png",
+				"d": "Buffs maneuverability, hip firing, and firing in Lift."
+			},
+			"689661431": {
+				"n": "Mecha Holster",
+				"i": "/common/destiny2_content/icons/fc5f93fd49cdea67bf72d139c5a2c227.png",
+				"d": "Reloads stowed SMGs and allows instant ready."
+			},
 			"691888276": {
 				"n": "Enhanced Blast Radius",
 				"i": "/common/destiny2_content/icons/7491efe7090564c64cbf0558a86a4388.png",
@@ -17758,6 +17899,21 @@
 				"i": "/common/destiny2_content/icons/f49ca4f83e2c2f9bc8b8fb331ccf58d7.png",
 				"d": "Defeating a powerful combatant generates Stable Resonance, which grants damage resistance and increased weapon damage for the duration."
 			},
+			"707113248": {
+				"n": "Synapse Junctions",
+				"i": "/common/destiny2_content/icons/3a7f6104736bbfa9305e49063beb1ec2.png",
+				"d": "Chained Arc Staff hits buff damage and duration."
+			},
+			"707113249": {
+				"n": "Probability Matrix",
+				"i": "/common/destiny2_content/icons/4bedcf0eb0d6fd52d82d3e5f9ff11e4b.png",
+				"d": "Improves Arcbolt Grenades."
+			},
+			"707113250": {
+				"n": "Wraithmetal Mail",
+				"i": "/common/destiny2_content/icons/100cd6b35af5fb3f979807d68ad57380.png",
+				"d": "Your weapons ready quicker and are more stable. Dodging increases this benefit."
+			},
 			"710732869": {
 				"n": "Mulligan",
 				"i": "/common/destiny2_content/icons/8ca9b9caef4c4c5c0c19d3be25be3755.png",
@@ -17782,6 +17938,11 @@
 				"n": "Under Pressure",
 				"i": "/common/destiny2_content/icons/ac8ec81cd8139434a4b19e459bd9b8ff.png",
 				"d": "Greatly improved stability and accuracy as the magazine gets lower."
+			},
+			"721076873": {
+				"n": "The Lost Voice",
+				"i": "/common/destiny2_content/icons/de5fe717db761b124bed152675a3bfc7.png",
+				"d": "Healing grenades spawn a Restorative Turret."
 			},
 			"726366789": {
 				"n": "The Wanderer",
@@ -17942,6 +18103,16 @@
 				"n": "Aggressive Burst",
 				"i": "/common/destiny2_content/icons/64209c4fd20513b33109c374179d0958.png",
 				"d": "Hard-hitting four-burst fire."
+			},
+			"814176267": {
+				"n": "Roast 'Em",
+				"i": "/common/destiny2_content/icons/cd66bbfb633d559d5c42c6c85e1d6873.png",
+				"d": "Improves Proximity Knife effectiveness and regeneration speed."
+			},
+			"815011565": {
+				"n": "Rapid Cooldown",
+				"i": "/common/destiny2_content/icons/9b2105255a34673a2b9607f9df1ff2e5.png",
+				"d": "Sprinting gives energy."
 			},
 			"826795859": {
 				"n": "Killing Wind",
@@ -18183,6 +18354,11 @@
 				"i": "/common/destiny2_content/icons/263713a8639fb73350c13b5b520fefa2.png",
 				"d": "Slow that you apply to targets lasts longer. For those abilities that linger, their duration will also increase."
 			},
+			"995682592": {
+				"n": "Winged Eclipse",
+				"i": "/common/destiny2_content/icons/5c414274c55de2e49517bd6203912aba.png",
+				"d": "Loyal moths damage targets and aid your allies."
+			},
 			"998839662": {
 				"n": "Proximity Ward",
 				"i": "/common/destiny2_content/icons/5b49f23b04016f6429247feed47944d8.png",
@@ -18252,6 +18428,11 @@
 				"n": "Gift of Sight",
 				"i": "/common/destiny2_content/icons/d45b0c7e60cb34ef703d20c85e3737a5.png",
 				"d": "Final blows with Primary ammo weapons grant you briefly increased radar resolution."
+			},
+			"1026760645": {
+				"n": "Lancer's Vigil",
+				"i": "/common/destiny2_content/icons/c23300e63ac0eedfaba2fd398b0901dd.png",
+				"d": "Improves Diamond Lances."
 			},
 			"1034987567": {
 				"n": "Abundant Ammo",
@@ -18337,6 +18518,11 @@
 				"n": "Emergency Electromagnet",
 				"i": "/common/destiny2_content/icons/8b11633d8026079a0841ca92c211a713.png",
 				"d": "When your shields become broken, collect all nearby Orbs of Power and ammo bricks."
+			},
+			"1088159205": {
+				"n": "Assault Barricade",
+				"i": "/common/destiny2_content/icons/6abd58ac928344895a54a11d6e06dff9.png",
+				"d": "You and your allies can shoot through your Towering Barricade."
 			},
 			"1090536201": {
 				"n": "Pulse Monitor",
@@ -18442,6 +18628,16 @@
 				"n": "Offensive Bulwark",
 				"i": "/common/destiny2_content/icons/a44d26eb6a493b916840a8f023f3d91c.png",
 				"d": "While you have an Overshield or are inside Ward of Dawn, final blows grant grenade and melee energy, you have increased melee range and damage, and melee final blows restore a small portion of your Overshield and extend its duration.\n\nYou gain an additional Shield Throw while in Sentinel Shield."
+			},
+			"1156939740": {
+				"n": "Dreaded Visage",
+				"i": "/common/destiny2_content/icons/3b5d1aeb79dbe70f6e1896028d5399bc.png",
+				"d": "Gain ability energy when you are damaged. While you have a Void Super equipped, final blows grant Devour."
+			},
+			"1156939741": {
+				"n": "Transfusion Matrix",
+				"i": "/common/destiny2_content/icons/319afd66efbe058013f6cf040c183587.png",
+				"d": "Arc melee kills grant health and melee energy."
 			},
 			"1162525369": {
 				"n": "Celerity",
@@ -18603,6 +18799,11 @@
 				"i": "/common/destiny2_content/icons/9565cff650175f7f2c083af28db2dc60.png",
 				"d": "Rapid elemental final blows and final blows on targets affected by elemental debuffs periodically prepare a homing micro-missile, which is launched from your target after this weapon's next final blow. More missiles can be prepared."
 			},
+			"1266509953": {
+				"n": "Peregrine Strike",
+				"i": "/common/destiny2_content/icons/7713596356b90eec06db4b7c50523685.png",
+				"d": "Bonus damage on airborne shoulder charge"
+			},
 			"1267155257": {
 				"n": "Well of Radiance",
 				"i": "/common/destiny2_content/icons/a4647b0aac6c44819a83165fcff9e675.png",
@@ -18653,6 +18854,21 @@
 				"i": "/common/destiny2_content/icons/94133689fdafe43c92af39875e4b35cf.png",
 				"d": "Performing a finisher on a combatant, or landing successive powered melee final blows, generates an Elemental pickup based on your Light subclass."
 			},
+			"1304344811": {
+				"n": "Danger Close",
+				"i": "/common/destiny2_content/icons/cf3d66f5677305674017bf55a2d6ad96.png",
+				"d": "Proximity evaluation systems enable handling and stability when enemies are close."
+			},
+			"1307898536": {
+				"n": "Wish-Dragon Teeth",
+				"i": "/common/destiny2_content/icons/28aa0f30e0e57d914bf5f12345c631f0.png",
+				"d": "Enhanced Tripmines."
+			},
+			"1307898537": {
+				"n": "Spring-Loaded Mounting",
+				"i": "/common/destiny2_content/icons/cbea782469054e260fd336b5222adc23.png",
+				"d": "Boosts Sidearms, especially when you're wounded."
+			},
 			"1310941740": {
 				"n": "Lightning Surge",
 				"i": "/common/destiny2_content/icons/98c755ee197dc9aa3c53067f5e477302.png",
@@ -18678,15 +18894,30 @@
 				"i": "/common/destiny2_content/icons/db45b9d8b807d52fab288e8c04733065.png",
 				"d": "Compound. Optimized for damage."
 			},
+			"1321977942": {
+				"n": "Dynamic Duo",
+				"i": "/common/destiny2_content/icons/21f908e327196879aaa3f22a42229dc2.png",
+				"d": "Consuming your Arc grenade grants an Arc Soul and amplifies you."
+			},
 			"1322999607": {
 				"n": "Land Tank",
 				"i": "/common/destiny2_content/icons/9fe0aad515097193ec6371c25fb5b81d.png",
 				"d": "Final blows with this weapon grant increased health and additional damage resistance from combatants."
 			},
+			"1324352273": {
+				"n": "Force Multiplier",
+				"i": "/common/destiny2_content/icons/1008decd8282aaf6c9e20461722e4a92.png",
+				"d": "Shotgun and melee final blows start health regeneration and extend defensive buffs."
+			},
 			"1325324426": {
 				"n": "Touch of Flame",
 				"i": "/common/destiny2_content/icons/2bba1d19a50f50d9cca71e45440e0761.png",
 				"d": "Your Healing, Solar, Firebolt, and Fusion Grenades have enhanced functionality.\n\nHealing Grenade: Improves the strength of cure and restoration effects applied. Consuming a Healing Grenade with Heat Rises also applies restoration to nearby allies.\n\nSolar Grenade: Increases linger duration. Periodically emits blobs of lava around its perimeter.\n\nFirebolt Grenade: Increases target search radius and maximum target count.\n\nFusion Grenade: Explodes twice."
+			},
+			"1325360087": {
+				"n": "Clenched Fist",
+				"i": "/common/destiny2_content/icons/c10f29eba7f5e4eda1be088c46a4dc14.png",
+				"d": "Bonuses to guarding with Swords."
 			},
 			"1327164912": {
 				"n": "Nova Bomb: Vortex",
@@ -18762,6 +18993,11 @@
 				"n": "Trickle Charge",
 				"i": "/common/destiny2_content/icons/17b696e766f345273ddfdda22c8a06f6.png",
 				"d": "Receiving or discharging Bolt Charge partially loads an improved quantity of the magazine from reserves."
+			},
+			"1362392838": {
+				"n": "Rites of Ember",
+				"i": "/common/destiny2_content/icons/a45747238d01714bd3b9633b7f8e120f.png",
+				"d": "Improves Scorch, Ignitions, and Daybreak projectiles."
 			},
 			"1364422432": {
 				"n": "Utility Finisher",
@@ -18843,6 +19079,11 @@
 				"i": "/common/destiny2_content/icons/b4f287bb2bea2ae61431cfc3a35f6fa5.png",
 				"d": "Your powered melee final blows create Orbs of Power."
 			},
+			"1423692705": {
+				"n": "Light Shift",
+				"i": "/common/destiny2_content/icons/201a9a1773ef1b4babff1e92b8447c69.png",
+				"d": "Shift instead of dodge."
+			},
 			"1427569696": {
 				"n": "Torch",
 				"i": "/common/destiny2_content/icons/e438774c2bfe24507bb789adc8855ee1.png",
@@ -18872,6 +19113,11 @@
 				"n": "Whisper of Bonds",
 				"i": "/common/destiny2_content/icons/12b591b2720cc265d800e870484f6d5b.png",
 				"d": "Defeating frozen targets generates an Orb of Power."
+			},
+			"1446499335": {
+				"n": "The Dance",
+				"i": "/common/destiny2_content/icons/d1bc9350b3c6a8333936a1fd3ce8922b.png",
+				"d": "Improved Primary weapon performance; final blows refund dodges."
 			},
 			"1458185467": {
 				"n": "Impulse Amplifier",
@@ -18952,6 +19198,11 @@
 				"n": "Semi-Auto Striker",
 				"i": "/common/destiny2_content/icons/b65af53611708b2ed9d6a6d9b079fb5b.png",
 				"d": "If you have fewer than 2 stacks of Armor Charge, rapid precision shots with Bows, Snipers, and Scout Rifles generate an Armor Charge."
+			},
+			"1532899272": {
+				"n": "Stylostixis",
+				"i": "/common/destiny2_content/icons/6c7821c2b549c37d16c4af2d81b46a29.png",
+				"d": "Arcane Needle causes suspending detonations."
 			},
 			"1537859289": {
 				"n": "Benevolent Overflow",
@@ -19103,6 +19354,26 @@
 				"i": "/common/destiny2_content/icons/1dc3afeac630ae4bcce29b39ffb33ce7.png",
 				"d": "Your grenades recharge quicker and deal more damage when you are not under the effects of Pervading Darkness."
 			},
+			"1577484736": {
+				"n": "Actual Grandeur",
+				"i": "/common/destiny2_content/icons/02a31f96b28aaf6950dcd041aeb67251.png",
+				"d": "Casting Nova Bomb grants a free cast of a Nova Bomb: Lance."
+			},
+			"1577484737": {
+				"n": "Conduction Tines",
+				"i": "/common/destiny2_content/icons/00d4bd4093297b236bcb4d3e866f15b0.png",
+				"d": "Arc ability or Jolt final blows restore ability energy."
+			},
+			"1577484738": {
+				"n": "Cerebral Uplink",
+				"i": "/common/destiny2_content/icons/3e642a717efb7bdb36f0f5dcb4cb9d71.png",
+				"d": "Marks priority targets and buffs ability regen."
+			},
+			"1577484739": {
+				"n": "Abyssal Extractors",
+				"i": "/common/destiny2_content/icons/9bddb418ae0a1292b3766d3d6583d059.png",
+				"d": "Void kills increase ability regen."
+			},
 			"1578839828": {
 				"n": "Stacks on Stacks",
 				"i": "/common/destiny2_content/icons/780fe3859af46613015a5d2670907612.png",
@@ -19117,6 +19388,11 @@
 				"n": "Focusing Strike",
 				"i": "/common/destiny2_content/icons/ece0654ecd4b16e5011903f03eee8c74.png",
 				"d": "Grants class ability energy when you cause damage with a powered melee attack."
+			},
+			"1599633576": {
+				"n": "Webcatcher",
+				"i": "/common/destiny2_content/icons/b1421fef77fe63ec01cdce658911e8ca.png",
+				"d": "Threaded Spike detonates Tangles and pulls them toward you."
 			},
 			"1602529400": {
 				"n": "Timelost Magazine",
@@ -19162,6 +19438,11 @@
 				"n": "Stunning Recovery",
 				"i": "/common/destiny2_content/icons/0deaae9c67009f285a400ab5dd407138.png",
 				"d": "Stunning a Champion refills your magazine, triggers health regeneration, and improves recovery for a short duration."
+			},
+			"1612558791": {
+				"n": "Move to Survive",
+				"i": "/common/destiny2_content/icons/3e0c0449da436384126e4cf4d3410086.png",
+				"d": "Grants airborne movement and improves Blink."
 			},
 			"1613006503": {
 				"n": "Dynamic Sway Reduction",
@@ -19338,6 +19619,16 @@
 				"i": "/common/destiny2_content/icons/95ce4c229b55899798df7cf991968033.png",
 				"d": "Grants slightly increased ammo generation and magazine size."
 			},
+			"1687010500": {
+				"n": "The Whispers",
+				"i": "/common/destiny2_content/icons/569a1a4cbdd7a014159ebdf304c8a9b5.png",
+				"d": "Gain an additional melee charge."
+			},
+			"1691043314": {
+				"n": "Close Enough",
+				"i": "/common/destiny2_content/icons/66fcc068afb7cda7082e338debf3c454.png",
+				"d": "Extended and more frequent Chaos Reach ."
+			},
 			"1692967798": {
 				"n": "Fists of Havoc",
 				"i": "/common/destiny2_content/icons/5bc4f4029b38fd41d0232460b4295600.png",
@@ -19347,6 +19638,11 @@
 				"n": "Thundercrash",
 				"i": "/common/destiny2_content/icons/adb140aba83a6c14345852531d4ee2e0.png",
 				"d": "Hurtle through the air like a missile and crash into targets to inflict meteoric damage."
+			},
+			"1695763035": {
+				"n": "Kintsugi",
+				"i": "/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
+				"d": "Revives grant overshields."
 			},
 			"1697350647": {
 				"n": "Veist Stinger",
@@ -19428,6 +19724,11 @@
 				"i": "/common/destiny2_content/icons/3c522f849a7d4d86d5224d7d5d5671a4.png",
 				"d": "Summon a [Stasis] Stasis gauntlet. While your Super is active:\n\n[Heavy Attack]  : Slam your gauntlet down to create a shockwave that freezes targets and sends out [Stasis] Stasis crystals to freeze additional ones.\n\n[Light Attack]  : Supercharge your Shiver Strike for bonus damage. Sprint through [Stasis] Stasis crystals or frozen targets to shatter them instantly."
 			},
+			"1726331049": {
+				"n": "Embers of Light",
+				"i": "/common/destiny2_content/icons/c47e43df7db6047a5a8b0d9963e5043a.png",
+				"d": "Create combination Healing/Empowering Rifts."
+			},
 			"1727533409": {
 				"n": "Kinetic Tremors",
 				"i": "/common/destiny2_content/icons/300c343e6c33651a74d8a3fe81536146.png",
@@ -19452,6 +19753,11 @@
 				"n": "Firmly Planted",
 				"i": "/common/destiny2_content/icons/379796d2e74676d3790f0bd485ea03a9.png",
 				"d": "Increased accuracy, stability, and handling when firing while crouched."
+			},
+			"1759358543": {
+				"n": "Overflowing Light",
+				"i": "/common/destiny2_content/icons/51756fc7603bd72a83d1859d8c33f0b9.png",
+				"d": "Use one ability to briefly improve your other abilities."
 			},
 			"1761780089": {
 				"n": "Nadir Focus",
@@ -19482,6 +19788,11 @@
 				"n": "Loose Change",
 				"i": "/common/destiny2_content/icons/27411cde4538bb1fdc2d70088233eb2c.png",
 				"d": "Applying an elemental debuff to a target increases this weapon's reload speed, aim assist, and movement while aiming down sights for an improved duration."
+			},
+			"1774898397": {
+				"n": "Praxic Lift",
+				"i": "/common/destiny2_content/icons/3bd76d816e615328d7c5d64e30bf2f1e.png",
+				"d": "Gain a tactical air move."
 			},
 			"1777582815": {
 				"n": "Killing Tally",
@@ -19538,6 +19849,11 @@
 				"i": "/common/destiny2_content/icons/0e8f9374f41cca37c52fce1695184e18.png",
 				"d": "Final blows while near multiple combatants or near Nightmares restores an improved amount of health."
 			},
+			"1808048542": {
+				"n": "Fervid Coldsnap",
+				"i": "/common/destiny2_content/icons/81b6412d2d6784891dd7ddad764891cc.png",
+				"d": "Your Coldsnap grenades have an additional charge and recharge faster on hits. Seekers travel farther."
+			},
 			"1811197552": {
 				"n": "Aggressive Frame",
 				"i": "/common/destiny2_content/icons/64209c4fd20513b33109c374179d0958.png",
@@ -19567,6 +19883,16 @@
 				"n": "Stagnant Glyphkeeper",
 				"i": "/common/destiny2_content/icons/569daa973ca4813a81028a093886c5f3.png",
 				"d": "Damaging a Glyphkeeper with a grenade causes your equipped Bows, Fusion Rifles, Swords, and Trace Rifles to deal additional damage."
+			},
+			"1831946178": {
+				"n": "Roving Assassin",
+				"i": "/common/destiny2_content/icons/16e8d034dc489095e8ab84a9540835aa.png",
+				"d": "Vanish after Spectral Blades kills for more Super energy."
+			},
+			"1831946179": {
+				"n": "Double Dodge",
+				"i": "/common/destiny2_content/icons/aa2934eb8a1990f6a1e76402ba12f26a.png",
+				"d": "Gain a second dodge charge."
 			},
 			"1836377054": {
 				"n": "Tunnel Vision",
@@ -19613,10 +19939,20 @@
 				"i": "/common/destiny2_content/icons/8b9d5337822da200425e0422b7376c24.png",
 				"d": "Using your class ability changes this weapon's damage type to match your equipped Super until you stow the weapon."
 			},
+			"1853052031": {
+				"n": "Acrobat's Focus",
+				"i": "/common/destiny2_content/icons/358bc75bc96bdadc33cc25d864848de4.png",
+				"d": "Gain Woven Mail when activating Grapple. Increased flinch resistance and health while Woven Mail is active."
+			},
 			"1856708211": {
 				"n": "Blunt Execution Rounds",
 				"i": "/common/destiny2_content/icons/bf4f14c413c7dd2d84e028c5a39f0902.png",
 				"d": "Damaging nearby combatants with melee abilities dramatically increases handling and damage. Expires after an improved short duration or the next shot."
+			},
+			"1859448039": {
+				"n": "The Dance",
+				"i": "/common/destiny2_content/icons/d1bc9350b3c6a8333936a1fd3ce8922b.png",
+				"d": "Improved Primary weapon performance; final blows refund dodges."
 			},
 			"1868337392": {
 				"n": "Enhanced Reload",
@@ -19667,6 +20003,11 @@
 				"n": "Gunpowder Gamble",
 				"i": "/common/destiny2_content/icons/1795080d4132e92dbb1405e9689a3ce9.png",
 				"d": "Defeat targets to charge up an improvised Solar explosive.\n\n[Grenade]  : Throw a Solar explosive that can be shot in mid-air to cause an ignition."
+			},
+			"1890198747": {
+				"n": "Barri-nade",
+				"i": "/common/destiny2_content/icons/bdf3b0602482e65c1a59c77d5f29a8a2.png",
+				"d": "Using your class ability grants a Barricade grenade."
 			},
 			"1897580659": {
 				"n": "Winterized Gear",
@@ -19748,6 +20089,21 @@
 				"i": "/common/destiny2_content/icons/7d41765e3db3a77da5cce27888c52d87.png",
 				"d": "Sliding partially reloads this weapon's magazine and temporarily boosts range and stability greatly."
 			},
+			"1943306752": {
+				"n": "Hydraulic Boosters",
+				"i": "/common/destiny2_content/icons/1f2c8873254a4d9f6e09f243123168ac.png",
+				"d": "Buffs slide and jumping."
+			},
+			"1943306754": {
+				"n": "Illegally Modded Holster",
+				"i": "/common/destiny2_content/icons/efbc5e963de684734f9761785b51a375.png",
+				"d": "Hand Cannons ready faster and gain increased accuracy and bonus damage."
+			},
+			"1943306755": {
+				"n": "Uncanny Arrows",
+				"i": "/common/destiny2_content/icons/392cc994318808b9f3b2bcbec7f285c3.png",
+				"d": "Grants Deadfall and Moebius Quiver energy."
+			},
 			"1944199207": {
 				"n": "Cursed Thrall",
 				"i": "/common/destiny2_content/icons/29a2c76672a101aff2aad79906b3fc01.png",
@@ -19802,6 +20158,11 @@
 				"n": "Cooling Baubles",
 				"i": "/common/destiny2_content/icons/295dc04060640b2da62789daa321d113.png",
 				"d": "Collecting an Elemental pickup, collecting an Orb of Power, or destroying a Tangle reduces slightly more heat.\n\nElemental pickups include [Solar]Firesprites, [Void]Void Breaches, [Arc]Ionic Traces, [Stasis]Stasis Shards, and [Strand]Strand Tangles."
+			},
+			"1955723517": {
+				"n": "Touch of Venom",
+				"i": "/common/destiny2_content/icons/896118bfa352e5f2d4990c1ea822140a.png",
+				"d": "Spread weakening effects with smoke."
 			},
 			"1955866646": {
 				"n": "Vanguard's Vindication",
@@ -19953,10 +20314,20 @@
 				"i": "/common/destiny2_content/icons/5c4c7b8c580a97ede3981eceefb63540.png",
 				"d": "Fires a hard-hitting, two-round burst. Slightly reduces flinching from incoming fire while aiming."
 			},
+			"2024615265": {
+				"n": "Wish-Dragon's Talons",
+				"i": "/common/destiny2_content/icons/5a233a91d9d5ee5b1ca6851bb8dbedf8.png",
+				"d": "Gain an additional Frenzied Blade charge. Banner of War grants melee energy."
+			},
 			"2029562020": {
 				"n": "Disaster Plan",
 				"i": "/common/destiny2_content/icons/32fd1da58165d07b35d320e2bd6f0de5.png",
 				"d": "Picking up ammunition increases this weapon's flinch resistance and range, which lasts until it is fired again.\n\nSwords gain a large increase to charge rate instead."
+			},
+			"2037969167": {
+				"n": "Vanishing Shadow",
+				"i": "/common/destiny2_content/icons/d32d006e7f77b1e5bc4d192232b95d42.png",
+				"d": "Improved invisibility."
 			},
 			"2039655992": {
 				"n": "Pugilist",
@@ -19987,6 +20358,16 @@
 				"n": "Strategist",
 				"i": "/common/destiny2_content/icons/dc9057be28071222ed303d6baab3eb4f.png",
 				"d": "Final blows with this weapon generate improved class ability energy. Activating your class ability briefly improves this weapon's stability."
+			},
+			"2049097276": {
+				"n": "Adamantine Brace",
+				"i": "/common/destiny2_content/icons/23bd5476f6002f913fd511bc62d37826.png",
+				"d": "Bow perfect draw can be held indefinitely for increased damage."
+			},
+			"2049097277": {
+				"n": "Sharp Edges",
+				"i": "/common/destiny2_content/icons/467f441de1568bd8c6ad437a76671b5f.png",
+				"d": "Get Super energy for Blade Barrage hits and kills."
 			},
 			"2049249623": {
 				"n": "Flight",
@@ -20087,6 +20468,11 @@
 				"n": "Storm's Keep",
 				"i": "/common/destiny2_content/icons/6b05f76dc45d25552f3aa0b35f964dbf.png",
 				"d": "Cast your class ability to grant a moderate amount of Bolt Charge stacks to you and nearby allies.\n\nWhile behind your Barricade, you and allies gain stacks of Bolt Charge over time and your weapons can discharge max stacks of Bolt Charge."
+			},
+			"2120108299": {
+				"n": "The Gift of Certainty",
+				"i": "/common/destiny2_content/icons/445018df2003ca15a56cb62f07824577.png",
+				"d": "Improves Ascension and Tempest Strike."
 			},
 			"2120462471": {
 				"n": "Explosive Pact",
@@ -20263,6 +20649,11 @@
 				"i": "/common/destiny2_content/icons/234bcd9dc9f5e3ec850a8eac748afbde.png",
 				"d": "Dealing damage with both other weapons before readying this weapon refills it from reserves. Increases ammo generation."
 			},
+			"2212203174": {
+				"n": "Firewalker",
+				"i": "/common/destiny2_content/icons/85c73f064a7e60038b25eecacd71a147.png",
+				"d": "Roaring Flames improves weapon and ignition damage. You are harder to suspend, slow, and freeze."
+			},
 			"2212600338": {
 				"n": "Field Prep",
 				"i": "/common/destiny2_content/icons/4ee1ecaead6fe2de1a2cab07f8b7be3f.png",
@@ -20293,6 +20684,11 @@
 				"i": "/common/destiny2_content/icons/4c244b847778a484726543e5c35935ef.png",
 				"d": "Slightly improves aim assist, aim down sights speed, and airborne effectiveness. Increases these effects when there are no nearby allies."
 			},
+			"2220035512": {
+				"n": "Skittering Stinger",
+				"i": "/common/destiny2_content/icons/2773ee80deb86b097323b0827b3db6e5.png",
+				"d": "Weighted Knife bounces twice and deals bonus damage."
+			},
 			"2222164818": {
 				"n": "Onslaught",
 				"i": "/common/destiny2_content/icons/7e07db21ba2b35751507256e46230616.png",
@@ -20307,6 +20703,11 @@
 				"n": "Riven's Curse",
 				"i": "/common/destiny2_content/icons/f315bf201b832c06032392ba742a0f54.png",
 				"d": "While in the Dreaming City, you deal more damage, but also take more damage from all sources."
+			},
+			"2227431032": {
+				"n": "Devouring Rift",
+				"i": "/common/destiny2_content/icons/1d4c0be6150c4ca71bc7add447c5d86c.png",
+				"d": "Empowering Rift grants Devour. Damage from inside it [Disruption] disrupts combatants."
 			},
 			"2227868561": {
 				"n": "Counterattack",
@@ -20342,6 +20743,11 @@
 				"n": "Bipod",
 				"i": "/common/destiny2_content/icons/19c5d3e535cb27fbd4f037b024c165d7.png",
 				"d": "Increases ammo and reserves but reduces damage. Blast radius and reload speed are slightly reduced."
+			},
+			"2253303044": {
+				"n": "Planetary Torrent",
+				"i": "/common/destiny2_content/icons/ff55cfecf4c70924d0894b1d8a442a18.png",
+				"d": "Rift periodically releases an Arc shockwave."
 			},
 			"2254038076": {
 				"n": "Desperate Measures",
@@ -20398,6 +20804,11 @@
 				"i": "/common/destiny2_content/icons/b1bce269c3cd21393131b4f5cffae692.png",
 				"d": "Hitting three separate targets increases damage for an improved duration."
 			},
+			"2297597519": {
+				"n": "Cobra Totemic",
+				"i": "/common/destiny2_content/icons/3945ff76d8e7ec70991cb0f6601c6797.png",
+				"d": "Improved weapon ready speed, reload, and melee range."
+			},
 			"2302255078": {
 				"n": "Compulsive Reloader",
 				"i": "/common/destiny2_content/icons/ef5843dfe8134c7385945216ece2bb06.png",
@@ -20453,6 +20864,11 @@
 				"i": "/common/destiny2_content/icons/f0a2eb584d440e878d7fe9e9c7884e3b.png",
 				"d": "Sustained damage on minibosses, Champions, and bosses increases weapon damage versus base and powerful combatants. Weapon final blows consume one stack each."
 			},
+			"2326472624": {
+				"n": "Scatter Charge",
+				"i": "/common/destiny2_content/icons/80234e3068ab261bc277791427723a11.png",
+				"d": "Enhanced Scatter Grenades."
+			},
 			"2330458000": {
 				"n": "Gunpowder Gamble",
 				"i": "/common/destiny2_content/icons/1795080d4132e92dbb1405e9689a3ce9.png",
@@ -20482,6 +20898,11 @@
 				"n": "Thermal Atomization",
 				"i": "/common/destiny2_content/icons/38c52b8d37f9c7eb6927cfd20a3995d2.png",
 				"d": "While at high heat, this weapon deals increased damage and causes targets to explode when defeated."
+			},
+			"2364971387": {
+				"n": "Nightmare Fuel",
+				"i": "/common/destiny2_content/icons/eabdd8dd9c1abcdbcaf4b0cbe8e97248.png",
+				"d": "Melee and finisher final blows reload and enhance holstered weapons."
 			},
 			"2365850089": {
 				"n": "Area Denial Frame",
@@ -20558,6 +20979,16 @@
 				"i": "/common/destiny2_content/icons/ff3a789b729978880907dc5dc08b3793.png",
 				"d": "Aiming this weapon for a short period of time without firing grants the ability to weaken the next target. Timer resets after firing or when you stop aiming down sights."
 			},
+			"2441420358": {
+				"n": "Tome of Dawn",
+				"i": "/common/destiny2_content/icons/bca803e50002410309460be0966fabe9.png",
+				"d": "Aiming in midair holds you in place while you have a Solar super equipped."
+			},
+			"2441420359": {
+				"n": "Fusion Harness",
+				"i": "/common/destiny2_content/icons/18c3e0503b1c9cd823dde3ded3680f8d.png",
+				"d": "Extra Fusion Grenade. Grenade kills charge Rift."
+			},
 			"2444676506": {
 				"n": "Silkstrike",
 				"i": "/common/destiny2_content/icons/3da7e8684b09600e90ea5c16f1edebe0.png",
@@ -20588,6 +21019,11 @@
 				"i": "/common/destiny2_content/icons/1d53281172f2568e4c840409f4151771.png",
 				"d": "Projectiles attached to targets explode after a short delay. Increases stability."
 			},
+			"2455681852": {
+				"n": "Seriously, Watch Out",
+				"i": "/common/destiny2_content/icons/cb83f0a06e3144bfa424dc886ccf8f6d.png",
+				"d": "Improves Juggernaut. Allies who follow closely gain speed boost."
+			},
 			"2458026953": {
 				"n": "Aggregate Charge",
 				"i": "/common/destiny2_content/icons/35b9761aa61c2180059b9ba349c04dcf.png",
@@ -20608,6 +21044,11 @@
 				"i": "/common/destiny2_content/icons/e6708f795ead53b51bcafb23777bdf6f.png",
 				"d": "This weapon is granted an improved amount of aim down sights speed and movement speed while aiming down sights when no allies are near."
 			},
+			"2461310886": {
+				"n": "Spheromatik Trigger",
+				"i": "/common/destiny2_content/icons/baed176aaf20399a3abb8b287790747a.png",
+				"d": "Powered melee kills and finishers unleash explosions."
+			},
 			"2461744634": {
 				"n": "Keep Away",
 				"i": "/common/destiny2_content/icons/597cd0f1c5fe1f7681a1c129f8b958dd.png",
@@ -20627,6 +21068,11 @@
 				"n": "Encore",
 				"i": "/common/destiny2_content/icons/857b00161b9794fdd62261adf02c6a5e.png",
 				"d": "Final blows grant a stacking stability, range, and accuracy bonus to this weapon. Precision final blows grant more stacks.\nEffect duration is improved."
+			},
+			"2465949303": {
+				"n": "Double Down",
+				"i": "/common/destiny2_content/icons/36a16b32c69487cd4fa8b507bb84a67a.png",
+				"d": "Improves Threaded Specter."
 			},
 			"2467455218": {
 				"n": "Nano-Munitions",
@@ -20667,6 +21113,11 @@
 				"n": "Unto the Breach",
 				"i": "/common/destiny2_content/icons/7e8236bfa362af6e9d6bad1c44c22085.png",
 				"d": "Defeating a Void debuffed target creates a Void Breach while your Void or Prismatic subclass is equipped."
+			},
+			"2484881265": {
+				"n": "Kismet",
+				"i": "/common/destiny2_content/icons/28e26c9a7e6bca0ac431baae14f9fa16.png",
+				"d": "Allows shields to slowly recharge into an overshield."
 			},
 			"2485667143": {
 				"n": "Noble Deeds",
@@ -20712,6 +21163,11 @@
 				"n": "Beacon Rounds",
 				"i": "/common/destiny2_content/icons/53b269a1760611b75170abde8ff1032c.png",
 				"d": "Final blows with this weapon grant your projectiles tracking and increase reload speed for an improved duration. Dealing further damage extends the duration."
+			},
+			"2504630208": {
+				"n": "Scissor Fingers",
+				"i": "/common/destiny2_content/icons/ab27032269b5faa817000b9d22ee751e.png",
+				"d": "Grants two knives per charge."
 			},
 			"2504971051": {
 				"n": "Shield Break Charge",
@@ -20988,6 +21444,11 @@
 				"i": "/common/destiny2_content/icons/af8e021d1ddb9c64ae548f84360beb7e.png",
 				"d": "Recovering a bolt from a living target deals damage.\n[###DestinyNamedSubstitutions.ui_player_action_interact_button###][###DestinyNamedSubstitutions.ui_player_action_interact_verb###] with the bolt to retrieve it."
 			},
+			"2616301830": {
+				"n": "Percussive Flames",
+				"i": "/common/destiny2_content/icons/fee237f7f5a0d5aaa5a8442a73ae6cbe.png",
+				"d": "Burning Maul and Consecration create flame cyclones."
+			},
 			"2623897641": {
 				"n": "Problem Solver",
 				"i": "/common/destiny2_content/icons/4ffd402a283074e0b635f7b1d963b331.png",
@@ -21007,6 +21468,11 @@
 				"n": "Heal Clip",
 				"i": "/common/destiny2_content/icons/3d0f2eb4c1e4f66f2bd897ec4d5ce4f1.png",
 				"d": "Reloading shortly after dealing a final blow grants Cure to you and your nearby allies."
+			},
+			"2628316339": {
+				"n": "And Another Thing",
+				"i": "/common/destiny2_content/icons/87ed6eb97c923d6a8d0e14639f4b7791.png",
+				"d": "Gain an additional grenade charge."
 			},
 			"2630438643": {
 				"n": "One Quiet Moment",
@@ -21098,6 +21564,16 @@
 				"i": "/common/destiny2_content/icons/f9d64a247c90884cce173b29d28cff19.png",
 				"d": "Void grenades disrupt combatants, stunning them, delaying ability energy regeneration and lowering combatant damage output. Strong against [Disruption] Overload Champions."
 			},
+			"2649770192": {
+				"n": "Hawkeye Hack",
+				"i": "/common/destiny2_content/icons/22e4a1934ecb6b95295ebcc2d5139ff4.png",
+				"d": "Golden Gun fires one high-damage shot."
+			},
+			"2649770193": {
+				"n": "Upgraded Sensor Pack",
+				"i": "/common/destiny2_content/icons/6fd9aecd4c810d6dafd2517ebd50cbe0.png",
+				"d": "Provides radar while you're aiming and marks targets, increasing damage to low-health marked targets."
+			},
 			"2652852405": {
 				"n": "Slideways",
 				"i": "/common/destiny2_content/icons/531db7656c3f2ed054898e141d85b801.png",
@@ -21153,6 +21629,11 @@
 				"i": "/common/destiny2_content/icons/7d73190e2ef8968b5411543006ea889c.png",
 				"d": "Finishers reload all your weapons. \n\nConsumes 1 stack of Armor Charge."
 			},
+			"2681082551": {
+				"n": "Danger Close",
+				"i": "/common/destiny2_content/icons/6aac128fffa4deabc593e373299c4a9c.png",
+				"d": "Precision weapon hits load micro-missiles. Activating a class ability fires them."
+			},
 			"2690268647": {
 				"n": "Tangled Up",
 				"i": "/common/destiny2_content/icons/86ff534cbdf8a289d665e316f0ad88f9.png",
@@ -21197,6 +21678,11 @@
 				"n": "Desperado",
 				"i": "/common/destiny2_content/icons/1c95bff6fa57919ab0f5547d1f107fad.png",
 				"d": "Reloading after a precision final blow or after rapidly defeating targets increases your rate of fire."
+			},
+			"2718875662": {
+				"n": "Puppeteer's Control",
+				"i": "/common/destiny2_content/icons/245108de9d46cabc0ca3f16c665321dd.png",
+				"d": "Improved Drengr's Lash. Gain Woven Mail when suspending targets."
 			},
 			"2724637007": {
 				"n": "Accelerated Assault",
@@ -21257,6 +21743,11 @@
 				"n": "Facet of Honor",
 				"i": "/common/destiny2_content/icons/90726ac4d93f62c039ab24835267de02.png",
 				"d": "Collecting an Elemental pickup or destroying a Tangle grants Transcendence energy of the same type."
+			},
+			"2784828165": {
+				"n": "Hammer of the Gods",
+				"i": "/common/destiny2_content/icons/a4ead8e3316d22dbb9fc48e6c643dde3.png",
+				"d": "Gain melee energy and create lightning strikes with Thunderclap."
 			},
 			"2786325477": {
 				"n": "Closing Time",
@@ -21403,6 +21894,16 @@
 				"i": "/common/destiny2_content/icons/93c69df9a8c648602b10844524e8a0e6.png",
 				"d": "Final blows with a Rocket Launcher, Grenade Launcher, or micro-missile temporarily decrease incoming area-of-effect damage."
 			},
+			"2845217634": {
+				"n": "Alchemical Etchings",
+				"i": "/common/destiny2_content/icons/c6e1c87f613c0eaabd4420dfc93de88a.png",
+				"d": "Rifts increase weapon reload speed. Empowering Rift increases range."
+			},
+			"2845217635": {
+				"n": "Strange Protractor",
+				"i": "/common/destiny2_content/icons/381a293f45eb74cdd7d4444a3c7ce7ed.png",
+				"d": "Buffs sprint. Sprinting reloads current weapon."
+			},
 			"2847573064": {
 				"n": "Tectonic Harvest",
 				"i": "/common/destiny2_content/icons/590dc7e1ceaf43b5ca55bd6d3aaa2739.png",
@@ -21423,6 +21924,11 @@
 				"i": "/common/destiny2_content/icons/5f01856c47ff0b1fcea5d8f2627f1fc5.png",
 				"d": "+10 Handling"
 			},
+			"2855060267": {
+				"n": "Malevolent Grasp",
+				"i": "/common/destiny2_content/icons/be3d10c223512e51c824f808554b2eb8.png",
+				"d": "Improves suspend, causing damage over time. Using your Rift also suspends nearby targets."
+			},
 			"2864161832": {
 				"n": "Full Auto Trigger System",
 				"i": "/common/destiny2_content/icons/85059dae97dea2121091a0f787e20985.png",
@@ -21442,6 +21948,11 @@
 				"n": "Collective Demolition",
 				"i": "/common/destiny2_content/icons/47894c30f18dabf52f84aa514b63b5ea.png",
 				"d": "Collecting an Elemental pickup or destroying a Tangle grants this weapon a stacking period of improved grenade energy generation on hit. Throwing a Tangle provides additional time.\n\nElemental pickups include [Solar]Firesprites, [Void]Void Breaches, [Arc]Ionic Traces, [Stasis]Stasis Shards, and [Strand]Strand Tangles."
+			},
+			"2876952819": {
+				"n": "Starless Night",
+				"i": "/common/destiny2_content/icons/d4a23b232372815d738f5009e8da29d4.png",
+				"d": "Weapons of Light is improved; capable of extending Ward of Dawn's duration."
 			},
 			"2879205504": {
 				"n": "Explosive Light",
@@ -21563,6 +22074,11 @@
 				"i": "/common/destiny2_content/icons/3084651d1a6c6d206994af7f92856dfe.png",
 				"d": "Sword final blows boost movement speed and damage for an improved duration."
 			},
+			"2990141176": {
+				"n": "Vengeance",
+				"i": "/common/destiny2_content/icons/c3c7f55e9cfc9f8fa19adc2096575665.png",
+				"d": "Highlight and defeat those that harm you for an overshield."
+			},
 			"2993140311": {
 				"n": "Mindspun Invocation",
 				"i": "/common/destiny2_content/icons/5505d58e64843bf398306b9a023b0395.png",
@@ -21603,6 +22119,16 @@
 				"i": "/common/destiny2_content/icons/ce12bd0f246e834c8f7e102079814bf9.jpg",
 				"d": "Your lingering grenade effects (Vortex Grenade, Void Wall, Void Spike, and Axion Bolt) have increased duration."
 			},
+			"3011167349": {
+				"n": "Insatiable",
+				"i": "/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
+				"d": "Ability energy for you and allies on Super cast."
+			},
+			"3012274134": {
+				"n": "Absorption Cells",
+				"i": "/common/destiny2_content/icons/675540240cef9fc9e047d9f9d20a0722.png",
+				"d": "Gain Super energy on elemental weapon takedowns."
+			},
 			"3013157001": {
 				"n": "Bricks from Beyond",
 				"i": "/common/destiny2_content/icons/d5eb9b63bbb4672a9adfec452c1c3d5d.png",
@@ -21642,6 +22168,11 @@
 				"n": "Facet of Protection",
 				"i": "/common/destiny2_content/icons/90726ac4d93f62c039ab24835267de02.png",
 				"d": "While surrounded by combatants, you are more resistant to incoming damage. While transcendent, the effect is increased."
+			},
+			"3027624734": {
+				"n": "Dearly Departed",
+				"i": "/common/destiny2_content/icons/c4f95301370c59ab4d7ce34825e83305.png",
+				"d": "Rift grants damage reduction. Grants Rift energy when critically wounded; creates healing rift on death."
 			},
 			"3032060927": {
 				"n": "Withering Gaze",
@@ -21767,6 +22298,11 @@
 				"n": "Extrovert",
 				"i": "/common/destiny2_content/icons/0e8f9374f41cca37c52fce1695184e18.png",
 				"d": "Final blows while near multiple combatants or near Nightmares restores health."
+			},
+			"3093682209": {
+				"n": "Hearts of Ice",
+				"i": "/common/destiny2_content/icons/c9914b643a1a99b9115d092fc42f1ac3.png",
+				"d": "Winter's Wrath gives targets increased Shatter damage and buffs allies."
 			},
 			"3094960816": {
 				"n": "Echo of Provision",
@@ -21953,6 +22489,11 @@
 				"i": "/common/destiny2_content/icons/4927d0afdf8acc2e92e65506a2a25e6e.png",
 				"d": "Activate your class ability to weave three Threadlings and deploy any Threadlings you have perched.\n\nDealing damage and defeating targets generates perched Threadlings."
 			},
+			"3196518154": {
+				"n": "Glacial Guard",
+				"i": "/common/destiny2_content/icons/29603482ccb0d4d2be723213df4054a9.png",
+				"d": "Stasis final blows and your class ability grant Frost Armor."
+			},
 			"3199354179": {
 				"n": "Dream Work",
 				"i": "/common/destiny2_content/icons/31849bc5f040430f9c03416121188286.png",
@@ -22002,6 +22543,11 @@
 				"n": "Psychohack",
 				"i": "/common/destiny2_content/icons/8dbf0e0d09d3e55c76231f853961600a.png",
 				"d": "Sustained damage from this weapon exhausts the target for a short duration.\n\nExhausted targets deal reduced outgoing damage."
+			},
+			"3223461414": {
+				"n": "Vanishing Execution",
+				"i": "/common/destiny2_content/icons/961559205e83e96cd590b34c28efadb7.png",
+				"d": "Powered melee kills and finishers grant invisibility and healing."
 			},
 			"3225452675": {
 				"n": "Unsated Hunger",
@@ -22058,6 +22604,11 @@
 				"i": "/common/destiny2_content/icons/cfdc5ad5e24a94fdbf3fd7b4eeecac9d.png",
 				"d": "Picking up an Orb of Power causes your next final blow with this weapon to grant bonus Special ammo meter progress."
 			},
+			"3250718083": {
+				"n": "Misdirection",
+				"i": "/common/destiny2_content/icons/ec0f49f1d1ac107ff075d74f710153f9.png",
+				"d": "Dodging disorients and removes enemy radars."
+			},
 			"3255519215": {
 				"n": "Cryoclasm",
 				"i": "/common/destiny2_content/icons/784d860ee0cf74b4afff93f2ffbd4d83.png",
@@ -22103,6 +22654,11 @@
 				"i": "/common/destiny2_content/icons/80eb44e8ea45a374db9fffe497d8b345.png",
 				"d": "Glaive projectile final blows improve Glaive melee damage for an improved duration. Glaive projectile or melee damage extends the duration."
 			},
+			"3288402325": {
+				"n": "Ionic Conductor",
+				"i": "/common/destiny2_content/icons/29137a5b6622734760a1b14700424994.png",
+				"d": "Improved ionic traces"
+			},
 			"3290011915": {
 				"n": "Skulking Wolf",
 				"i": "/common/destiny2_content/icons/451e0f091bd3e7245a82e4efc01ad8c3.png",
@@ -22127,6 +22683,11 @@
 				"n": "Perfect Float",
 				"i": "/common/destiny2_content/icons/4b84679efdbd9bf21d23c5e8e6516e5f.png",
 				"d": "Being in combat for a moderate time increases airborne accuracy and reduces flinch until you are out of combat for an extended duration."
+			},
+			"3301593162": {
+				"n": "Blastwave Striders",
+				"i": "/common/destiny2_content/icons/d0aa8bc9a7050aca98702cbc7499ea33.png",
+				"d": "Blast your boots to spray your targets with shrapnel."
 			},
 			"3301986928": {
 				"n": "Crystalline Corpsebloom",
@@ -22157,6 +22718,11 @@
 				"n": "Thread of Transmutation",
 				"i": "/common/destiny2_content/icons/65e455b255b916c017fda8deeb329ed3.png",
 				"d": "While you have Woven Mail, weapon final blows create a Tangle."
+			},
+			"3324408131": {
+				"n": "Swarmers",
+				"i": "/common/destiny2_content/icons/2c51c7358ab1de58c11edc89b5573e84.png",
+				"d": "Threadlings spawn from Tangles and unravel targets."
 			},
 			"3326771373": {
 				"n": "Thundercrash",
@@ -22197,6 +22763,11 @@
 				"n": "Blunt Execution Rounds",
 				"i": "/common/destiny2_content/icons/bf4f14c413c7dd2d84e028c5a39f0902.png",
 				"d": "Damaging nearby combatants with melee abilities dramatically increases handling and damage. Expires after a short duration or the next shot."
+			},
+			"3355584826": {
+				"n": "Relentless Tracker",
+				"i": "/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
+				"d": "Improves weapon damage after damaging a target with an ability."
 			},
 			"3355956757": {
 				"n": "Tension",
@@ -22383,6 +22954,21 @@
 				"i": "/common/destiny2_content/icons/fb749a0428f9b1a7296d3671425264f9.png",
 				"d": "Blocking damage after raising your guard emits a short-range blast that disorients targets."
 			},
+			"3438525328": {
+				"n": "Vampire's Caress",
+				"i": "/common/destiny2_content/icons/26ae0fb1750196126118d19464c63bf0.png",
+				"d": "Melee kills restore health for a short duration."
+			},
+			"3438525329": {
+				"n": "Helium Spirals",
+				"i": "/common/destiny2_content/icons/ce7588c614700f1e6d204a52368d9bd9.png",
+				"d": "Solar grenades burn longer. Melee kills restore them."
+			},
+			"3438525331": {
+				"n": "Warlord's Sigil",
+				"i": "/common/destiny2_content/icons/afb8bae64742a8633975b1bc85c98923.png",
+				"d": "Melee and finisher final blows increase melee damage."
+			},
 			"3438846199": {
 				"n": "Chaos Accelerant",
 				"i": "/common/destiny2_content/icons/a44d26eb6a493b916840a8f023f3d91c.png",
@@ -22433,6 +23019,11 @@
 				"i": "/common/destiny2_content/icons/bc5130b227ee577f2678ec2d2c97bf4a.png",
 				"d": "Increased damage against bosses, vehicles, and Guardians with their Super active. Stability is improved. Swords have improved guard resistance."
 			},
+			"3453944649": {
+				"n": "Ursine Guard",
+				"i": "/common/destiny2_content/icons/c792f09ce9d03c03064724af10be0349.png",
+				"d": "Improves Sentinel Shield and Unbreakable."
+			},
 			"3454774631": {
 				"n": "Chill Clip",
 				"i": "/common/destiny2_content/icons/ee011569c060e6aef51ad201cafdfd32.png",
@@ -22442,6 +23033,11 @@
 				"n": "Redirection",
 				"i": "/common/destiny2_content/icons/062243c2875d9bbdc29aa115e1e299c5.png",
 				"d": "Damaging rank-and-file combatants increases damage against more powerful ones. Powerful shots consume fewer stacks."
+			},
+			"3458383069": {
+				"n": "Beacons of Empowerment",
+				"i": "/common/destiny2_content/icons/4a17f2216c0951713c49ea4f08928742.png",
+				"d": "Improves Sol Invictus and Sunspots."
 			},
 			"3458792659": {
 				"n": "Whisper of Hedrons",
@@ -22523,6 +23119,11 @@
 				"i": "/common/destiny2_content/icons/986aeac26e30b3d5509e83f10a953da7.png",
 				"d": "The number of precision final blows before reloading affects the total rounds granted with increased range and damage. Precision final blows with Magnificent Howl active extend the effect for additional rounds. Improves reload."
 			},
+			"3490826985": {
+				"n": "Glacial Fortification",
+				"i": "/common/destiny2_content/icons/f093d552bec2248e94fed1a960d62dde.png",
+				"d": "Replaces Barricade with a wall of Stasis crystals."
+			},
 			"3498667665": {
 				"n": "Thread of Generation",
 				"i": "/common/destiny2_content/icons/65e455b255b916c017fda8deeb329ed3.png",
@@ -22543,6 +23144,11 @@
 				"i": "/common/destiny2_content/icons/801d62d1f9783bee81d5700c54c24fda.png",
 				"d": "Fires full auto with deeper ammo reserves. Faster reload when weapon is empty."
 			},
+			"3511207275": {
+				"n": "Blessing of Order",
+				"i": "/common/destiny2_content/icons/dcda11796b3ea21561068b723e5bbc93.png",
+				"d": "Rifts create beneficial seeker projectiles."
+			},
 			"3513155566": {
 				"n": "Threat Detector",
 				"i": "/common/destiny2_content/icons/9611bdbc48aff898193fd5f705c7cf30.png",
@@ -22557,6 +23163,11 @@
 				"n": "Cascade Point",
 				"i": "/common/destiny2_content/icons/fd17b30233d244fc7115315633906f6a.png",
 				"d": "Final blows or sustained precision hits with another weapon increase this weapon's rate of fire for a short duration."
+			},
+			"3525375944": {
+				"n": "Glorious Charge",
+				"i": "/common/destiny2_content/icons/bd423a4890e05228b89c0835f8b47633.png",
+				"d": "Increases Thundercrash damage."
 			},
 			"3526300239": {
 				"n": "Dark Ether Reaper",
@@ -22582,6 +23193,11 @@
 				"n": "Explosive Bolts",
 				"i": "/common/destiny2_content/icons/9ff9d795b4b7cf0edf66624c7ba11ba2.png",
 				"d": "Bolts explode shortly after hitting the environment or a target, but deal less damage on impact.\n[###DestinyNamedSubstitutions.ui_player_action_interact_button###][###DestinyNamedSubstitutions.ui_player_action_interact_verb###] with the bolt to retrieve it."
+			},
+			"3535992166": {
+				"n": "Ascending Amplitude",
+				"i": "/common/destiny2_content/icons/37ed1658b106c79b87bdc7476c2b3666.png",
+				"d": "Enhanced Stormtrance and amplified abilities."
 			},
 			"3543261302": {
 				"n": "Violent Pour",
@@ -22786,6 +23402,16 @@
 				"i": "/common/destiny2_content/icons/e438774c2bfe24507bb789adc8855ee1.png",
 				"d": "While radiant, deal increased weapon damage to combatants affected by Strand and Stasis debuffs."
 			},
+			"3630929311": {
+				"n": "See Me, Feel Me",
+				"i": "/common/destiny2_content/icons/bd7a131851dd9dad2da3e9f198f67f6e.png",
+				"d": "After being invisible, your Void weapons gain Volatile Rounds. Finishers while invisible grant bonus damage for all weapons and a reserve overshield for allies."
+			},
+			"3635298819": {
+				"n": "Cross Counter",
+				"i": "/common/destiny2_content/icons/71a75146e38ba257b7379af0efacd61f.png",
+				"d": "Cross Counter regenerates health and deals extra damage."
+			},
 			"3636302772": {
 				"n": "Thread of Propagation",
 				"i": "/common/destiny2_content/icons/65e455b255b916c017fda8deeb329ed3.png",
@@ -22850,6 +23476,11 @@
 				"n": "Repulsor Brace",
 				"i": "/common/destiny2_content/icons/cfcbde3872d34c5258fd8227640a020e.png",
 				"d": "Defeating a Void-debuffed target grants an overshield."
+			},
+			"3655775672": {
+				"n": "Chaotic Exchanger",
+				"i": "/common/destiny2_content/icons/565c5f4a70339697ddd4d554f47ea101.png",
+				"d": "Improved charging for Void grenades."
 			},
 			"3657900810": {
 				"n": "Taken Armaments",
@@ -23011,6 +23642,11 @@
 				"i": "/common/destiny2_content/icons/8dbf0e0d09d3e55c76231f853961600a.png",
 				"d": "Sustained damage from this weapon exhausts the target for a short duration.\n\nExhausted targets deal reduced outgoing damage."
 			},
+			"3745886491": {
+				"n": "Reflective Vents",
+				"i": "/common/destiny2_content/icons/dfe3093d5854f9d2e956592604e8338b.png",
+				"d": "Sliding reflects projectiles."
+			},
 			"3749309929": {
 				"n": "Disorienting Grenades",
 				"i": "/common/destiny2_content/icons/f31c68952868e70325b992a4783db908.png",
@@ -23165,6 +23801,11 @@
 				"n": "Refreshing Thirst",
 				"i": "/common/destiny2_content/icons/75b154226e5fb3f7f7883b630d79b16d.png",
 				"d": "Becoming Drained of Light grants you an armor charge. Multiple copies of this mod stack to increase this benefit."
+			},
+			"3859153040": {
+				"n": "Tight Fit",
+				"i": "/common/destiny2_content/icons/c1afa2683c4762598af01b9b21a9ff7a.png",
+				"d": "Dodging grants reload and handling for you and nearby allies. Dodge to increase gains, damage to get dodges."
 			},
 			"3867466132": {
 				"n": "Tracking Module",
@@ -23356,6 +23997,11 @@
 				"i": "/common/destiny2_content/icons/9570c12a7c71062dd668f519c977fc22.png",
 				"d": "This weapon gains bonus damage while in combat for an extended time, activating faster. Remaining in combat for a slightly reduced duration rewards a larger damage bonus and periodically heals the wielder."
 			},
+			"3956055316": {
+				"n": "Feast of Light",
+				"i": "/common/destiny2_content/icons/b29ab6e87ec85bac4563f3d3a432c451.png",
+				"d": "Pick up Orbs of Power to overcharge your Super."
+			},
 			"3957135601": {
 				"n": "Immovable Object",
 				"i": "/common/destiny2_content/icons/9de1b9b8ef6587649e18482d1d1ca6ea.png",
@@ -23526,6 +24172,11 @@
 				"i": "/common/destiny2_content/icons/a304f92290458d486ab19fcd1ef6f6ff.png",
 				"d": "Rapidly defeating combatants with Void energy spawns a Void breach."
 			},
+			"4085593937": {
+				"n": "High Priority",
+				"i": "/common/destiny2_content/icons/25a8b65797c75c363e15f51ff138fd2f.png",
+				"d": "Improves Trace Rifles."
+			},
 			"4096845220": {
 				"n": "Master of Arms",
 				"i": "/common/destiny2_content/icons/fce1ea2064814689d7ca08a2acdb1d23.png",
@@ -23571,6 +24222,16 @@
 				"i": "/common/destiny2_content/icons/819e91753bf9cbd48b557ba193d342cd.png",
 				"d": "Draw time substantially decreases after every precision hit for a longer duration."
 			},
+			"4113855450": {
+				"n": "Bring the Heat",
+				"i": "/common/destiny2_content/icons/e62825791887bff24c2d044a250169eb.png",
+				"d": "Improved Fusion Grenades."
+			},
+			"4113855451": {
+				"n": "Burning Fists",
+				"i": "/common/destiny2_content/icons/89777d9b91d348fc8d24e24edca139ae.png",
+				"d": "Melee kills increase melee damage."
+			},
 			"4114436845": {
 				"n": "Explosive Finisher",
 				"i": "/common/destiny2_content/icons/b346406844cb2ec7df028056b47e27b2.png",
@@ -23590,6 +24251,11 @@
 				"n": "Tap the Trigger",
 				"i": "/common/destiny2_content/icons/a7840da2970b4137a333fb187477dfe0.png",
 				"d": "Grants an improved short period of greatly increased stability and accuracy on initial trigger pull."
+			},
+			"4118062772": {
+				"n": "Solar Rampart",
+				"i": "/common/destiny2_content/icons/784bd1d46cc9bd60e1d510e915aedb04.png",
+				"d": "Solar kills recharge a Solar blast Barricade."
 			},
 			"4120345915": {
 				"n": "Demolitionist",
@@ -23631,6 +24297,11 @@
 				"i": "/common/destiny2_content/icons/a5edd4e751e1aa34bf8328a63b121e71.png",
 				"d": "Rapidly landing precision hits will return two rounds to the magazine."
 			},
+			"4136734555": {
+				"n": "One with the Void",
+				"i": "/common/destiny2_content/icons/b9e7de604ce74e4dc26e1af3ed8f0549.png",
+				"d": "Improves duration, damage, and durability of Void Souls."
+			},
 			"4139073897": {
 				"n": "Horde Shuttle",
 				"i": "/common/destiny2_content/icons/4103dc1f1c55ef037015b67b360fb184.png",
@@ -23666,6 +24337,16 @@
 				"i": "/common/destiny2_content/icons/a7a04f158999fbd75e1486628139e9bf.png",
 				"d": "This weapon deals bonus damage to combatant shields and targets with overshields. Breaking a combatant's shield disorients them; breaking an energy-matched shield also disorients nearby combatants."
 			},
+			"4149008363": {
+				"n": "Depths of Duskfield",
+				"i": "/common/destiny2_content/icons/47fd782cc9b993709e25ca66035d13b8.png",
+				"d": "Duskfield grenades have a larger effect and reduce the damage that allies take."
+			},
+			"4149148681": {
+				"n": "Myrmidon's Reach",
+				"i": "/common/destiny2_content/icons/d1d0a66bbefc83e8240648d399041a96.png",
+				"d": "Improves your Shield Throw melee."
+			},
 			"4155401192": {
 				"n": "Calm Amidst Chaos",
 				"i": "/common/destiny2_content/icons/b5a76904ce213ddada1ffca7bf339d90.png",
@@ -23695,6 +24376,16 @@
 				"n": "Vanguard Determination",
 				"i": "/common/destiny2_content/icons/0eac4566f9f8eb2179d2734e886f958e.png",
 				"d": "After using your class ability, final blows with this weapon grant you bonus damage resistance."
+			},
+			"4171590257": {
+				"n": "Burning Souls",
+				"i": "/common/destiny2_content/icons/16f43c6fbb972bdc24764a59aacc8161.png",
+				"d": "[Solar]Solar final blows grant Burning Souls. Dodge applies Cure."
+			},
+			"4174120030": {
+				"n": "Cauterizing Flame",
+				"i": "/common/destiny2_content/icons/112420b294bf86cb9911ed30c4d0669e.png",
+				"d": "Create a Sunspot when critically wounded or on Barricade cast."
 			},
 			"4175156998": {
 				"n": "Temporal Loader",
@@ -23741,6 +24432,11 @@
 				"i": "/common/destiny2_content/icons/802a490f2b11e346091926e4b0a1ebb7.png",
 				"d": "Targets affected by Strand debuffs take increased damage from Arc and Void abilities."
 			},
+			"4187775722": {
+				"n": "Soaring Fusilier",
+				"i": "/common/destiny2_content/icons/1018b32e9bed692b4766d1a870457eed.png",
+				"d": "Air dodge reloads weapons. Fusion Rifle and Linear Fusion Rifle final blows make you radiant."
+			},
 			"4189511863": {
 				"n": "Heal Clip",
 				"i": "/common/destiny2_content/icons/3d0f2eb4c1e4f66f2bd897ec4d5ce4f1.png",
@@ -23781,6 +24477,11 @@
 				"i": "/common/destiny2_content/icons/7228bff6dcfbd5dbcc9e8da4675ef5c8.png",
 				"d": "Solar Sniper Rifle precision hits scorch targets."
 			},
+			"4193101206": {
+				"n": "New Tricks",
+				"i": "/common/destiny2_content/icons/5e71bde3f74560840a67842e5c46a8cc.png",
+				"d": "Improved Skip Grenade."
+			},
 			"4194652632": {
 				"n": "Momentum Transfer",
 				"i": "/common/destiny2_content/icons/a365e31b95c9f8c81bad7ff13bd8fdb9.png",
@@ -23795,6 +24496,11 @@
 				"n": "Ensemble",
 				"i": "/common/destiny2_content/icons/421d6325598857bc63c1df0f25607cde.png",
 				"d": "Improved handling and reload speed when allies are nearby."
+			},
+			"4197395956": {
+				"n": "Resolute",
+				"i": "/common/destiny2_content/icons/abaff19620ec578f1f379a359de7134c.png",
+				"d": "Improved Fist of Havoc. Arc final blows grant a weapon damage bonus."
 			},
 			"4197780507": {
 				"n": "Gear Shift",
@@ -23965,6 +24671,11 @@
 				"n": "Time Dilation",
 				"i": "/common/destiny2_content/icons/7b1acb2fa35c4eb1e752ba46538f0175.png",
 				"d": "Your decaying Armor Charge has a longer duration."
+			},
+			"4293090307": {
+				"n": "Null Factor",
+				"i": "/common/destiny2_content/icons/72fb65f48503b80d6d29515718c0668f.png",
+				"d": "Withering Blade creates Stasis crystals."
 			},
 			"4293990863": {
 				"n": "Shot Swap",

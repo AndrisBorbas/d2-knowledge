@@ -1,7 +1,7 @@
 {
-	"generatedAt": "2026-09-14T13:27:01.759Z",
-	"endgameGeneratedAt": "2026-09-14T01:29:32.610Z",
-	"damageGeneratedAt": "2026-09-14T01:29:33.587Z",
+	"generatedAt": "2026-09-15T23:56:54.477Z",
+	"endgameGeneratedAt": "2026-09-15T23:56:46.224Z",
+	"damageGeneratedAt": "2026-09-15T23:56:47.433Z",
 	"categories": [
 		{
 			"slug": "auto-rifles",
@@ -85295,46 +85295,6 @@
 		},
 		{
 			"id": "swap:26",
-			"name": "Song of Flame",
-			"loadout": "Warlord's Fury, One-Two Punch, Celestial Fire spam, Ember of Ashes, Shieldcrush",
-			"attackType": "super",
-			"base": {
-				"raw": "90,741",
-				"value": 90741
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "184,388",
-				"value": 184388
-			},
-			"swapTime": {
-				"raw": "13.100",
-				"value": 13.1
-			},
-			"totalTime": {
-				"raw": "13.100",
-				"value": 13.1
-			},
-			"swapDps": {
-				"raw": "14,075",
-				"value": 14075
-			},
-			"trueDps": {
-				"raw": "14,075",
-				"value": 14075
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 26,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:27",
 			"name": "Gathering Storm",
 			"loadout": "Feast of Light x6, Limit Break",
 			"attackType": "super",
@@ -85369,12 +85329,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/edf23f2e6951efcab4c4b10630b6f7c4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 27,
+				"row": 26,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:28",
+			"id": "swap:27",
 			"name": "Hellion",
 			"loadout": "Ember of Ashes",
 			"attackType": "grenade",
@@ -85409,12 +85369,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3514bec04e2464b2f48e1bd025afc668.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 28,
+				"row": 27,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:29",
+			"id": "swap:28",
 			"name": "Whirling Maelstrom",
 			"loadout": "Untold Greed x5",
 			"attackType": "burst",
@@ -85447,6 +85407,46 @@
 				"value": 1123
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ab8095cdd657b0cd66452ddb44ef01e1.jpg",
+			"ref": {
+				"tab": "Swap",
+				"row": 28,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:29",
+			"name": "Song of Flame",
+			"loadout": "Warlord's Fury, One-Two Punch, Celestial Fire spam, Ember of Ashes, Shieldcrush",
+			"attackType": "super",
+			"base": {
+				"raw": "90,741",
+				"value": 90741
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "184,388",
+				"value": 184388
+			},
+			"swapTime": {
+				"raw": "13.100",
+				"value": 13.1
+			},
+			"totalTime": {
+				"raw": "13.100",
+				"value": 13.1
+			},
+			"swapDps": {
+				"raw": "14,075",
+				"value": 14075
+			},
+			"trueDps": {
+				"raw": "14,075",
+				"value": 14075
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 29,
@@ -85576,46 +85576,6 @@
 		},
 		{
 			"id": "swap:33",
-			"name": "Song of Flame",
-			"loadout": "Warlord's Fury, Celestial Fire spam, Ember of Ashes, Shieldcrush",
-			"attackType": "super",
-			"base": {
-				"raw": "78,129",
-				"value": 78129
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "158,760",
-				"value": 158760
-			},
-			"swapTime": {
-				"raw": "12.900",
-				"value": 12.9
-			},
-			"totalTime": {
-				"raw": "12.900",
-				"value": 12.9
-			},
-			"swapDps": {
-				"raw": "12,307",
-				"value": 12307
-			},
-			"trueDps": {
-				"raw": "12,307",
-				"value": 12307
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 33,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:34",
 			"name": "Nova Bomb - Vortex",
 			"loadout": "Limit Break",
 			"attackType": "super",
@@ -85650,12 +85610,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e9dc1cc0179cda4d2445845cf8992a7e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 34,
+				"row": 33,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:35",
+			"id": "swap:34",
 			"name": "Blade Barrage",
 			"loadout": "Knock 'Em Down, Limit Break",
 			"attackType": "super",
@@ -85690,12 +85650,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0b01a6ddceb7b0e2e86ebcb7a6a83eaa.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 35,
+				"row": 34,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:36",
+			"id": "swap:35",
 			"name": "Aggressive rocket launcher",
 			"loadout": "e. Cluster Bomb + e. Elemental Honing x5 + Timelost Magazine (Hezen Vengeance), Pack Hunter, 2 shots, Argent Ordnance",
 			"attackType": "burst",
@@ -85731,12 +85691,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 36,
+				"row": 35,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:37",
+			"id": "swap:36",
 			"name": "Grand Overture",
 			"loadout": "Missiles Loaded x20",
 			"attackType": "burst",
@@ -85772,12 +85732,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b41678824a620d4f295984862702179.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 37,
+				"row": 36,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:38",
+			"id": "swap:37",
 			"name": "Nova Bomb - Cataclysm",
 			"loadout": "Facet of Courage, Limit Break",
 			"attackType": "super",
@@ -85812,12 +85772,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/b1efa0eaa710653d85e2fcf5321047fb.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 38,
+				"row": 37,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:39",
+			"id": "swap:38",
 			"name": "Legend of Acrius",
 			"loadout": "body, Arc Compounding",
 			"attackType": "swap",
@@ -85853,12 +85813,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 39,
+				"row": 38,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:40",
+			"id": "swap:39",
 			"name": "Glacial Quake",
 			"loadout": "heavy attacks, Feast of Light x6, Hail the Storm",
 			"attackType": "super",
@@ -85891,6 +85851,46 @@
 				"value": 12312
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c522f849a7d4d86d5224d7d5d5671a4.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 39,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:40",
+			"name": "Song of Flame",
+			"loadout": "Warlord's Fury, Celestial Fire spam, Ember of Ashes, Shieldcrush",
+			"attackType": "super",
+			"base": {
+				"raw": "78,129",
+				"value": 78129
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "158,760",
+				"value": 158760
+			},
+			"swapTime": {
+				"raw": "12.900",
+				"value": 12.9
+			},
+			"totalTime": {
+				"raw": "12.900",
+				"value": 12.9
+			},
+			"swapDps": {
+				"raw": "12,307",
+				"value": 12307
+			},
+			"trueDps": {
+				"raw": "12,307",
+				"value": 12307
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 40,
@@ -86264,6 +86264,47 @@
 		},
 		{
 			"id": "swap:50",
+			"name": "New Malpais",
+			"loadout": "6 bursts, only explosive damage, one suspend burst, pre-readied",
+			"attackType": "swap",
+			"base": {
+				"raw": "3,693",
+				"value": 3693
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "9,094",
+				"value": 9094
+			},
+			"swapTime": {
+				"raw": "0.833",
+				"value": 0.833
+			},
+			"totalTime": {
+				"raw": "0.833",
+				"value": 0.833
+			},
+			"swapDps": {
+				"raw": "10,917",
+				"value": 10917
+			},
+			"trueDps": {
+				"raw": "10,917",
+				"value": 10917
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/238e6c3afdc31870d15231656f2d6bcb.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 50,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:51",
 			"name": "Pinpoint slug shotgun",
 			"loadout": "Redirection + Aggregate Charge x3 (Heritage), 1 shot",
 			"attackType": "swap",
@@ -86299,12 +86340,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 50,
+				"row": 51,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:51",
+			"id": "swap:52",
 			"name": "Still Hunt",
 			"loadout": "Cayde's Retribution, Celestial Nighthawk, Sniper's Meditation x5",
 			"attackType": "swap",
@@ -86340,12 +86381,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 51,
+				"row": 52,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:52",
+			"id": "swap:53",
 			"name": "Glacial Quake",
 			"loadout": "heavy attacks, Biotic Enhancements, Limit Break",
 			"attackType": "super",
@@ -86380,12 +86421,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c522f849a7d4d86d5224d7d5d5671a4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 52,
+				"row": 53,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:53",
+			"id": "swap:54",
 			"name": "Silence and Squall",
 			"loadout": "Whisper of Fissures, Whisper of Durance, Limit Break",
 			"attackType": "super",
@@ -86420,12 +86461,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 53,
+				"row": 54,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:54",
+			"id": "swap:55",
 			"name": "Gjallarhorn",
 			"loadout": "1 shot, Argent Ordnance",
 			"attackType": "swap",
@@ -86461,12 +86502,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bcc26708e314306fb2fc8cb98fcbf47e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 54,
+				"row": 55,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:55",
+			"id": "swap:56",
 			"name": "Aggressive shotgun",
 			"loadout": "body, Aggregate Charge x3 + Elemental Honing x5 (Found Verdict), 1 shot",
 			"attackType": "swap",
@@ -86502,12 +86543,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 55,
+				"row": 56,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:56",
+			"id": "swap:57",
 			"name": "Grapple melee",
 			"loadout": "One-Two Punch, Biotic Enhancements, Combination Blow x3, Facet of Courage, Arc Compounding, Conductive Cosmic Crystal",
 			"attackType": "melee",
@@ -86542,12 +86583,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 56,
+				"row": 57,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:57",
+			"id": "swap:58",
 			"name": "Adaptive grenade launcher",
 			"loadout": "Sticky Grenades, e. Cascade Point + e. Explosive Light (Edge Transit), 7 shots",
 			"attackType": "burst",
@@ -86583,12 +86624,52 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 57,
+				"row": 58,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:58",
+			"id": "swap:59",
+			"name": "Twilight Arsenal",
+			"loadout": "Feast of Light x6, Facet of Courage, Limit Break",
+			"attackType": "super",
+			"base": {
+				"raw": "14,606",
+				"value": 14606
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "34,828",
+				"value": 34828
+			},
+			"swapTime": {
+				"raw": "3.630",
+				"value": 3.63
+			},
+			"totalTime": {
+				"raw": "3.630",
+				"value": 3.63
+			},
+			"swapDps": {
+				"raw": "9,595",
+				"value": 9595
+			},
+			"trueDps": {
+				"raw": "9,595",
+				"value": 9595
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 59,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:60",
 			"name": "Flux grenade",
 			"loadout": "Death Throes x5, Sticker Shock",
 			"attackType": "grenade",
@@ -86623,52 +86704,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1d7e8eb7c2c5884cb658a1877a084548.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 58,
+				"row": 60,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:59",
-			"name": "Song of Flame",
-			"loadout": "Warlord's Fury, Saint's Fists, Celestial Fire spam, Ember of Ashes, Shieldcrush",
-			"attackType": "super",
-			"base": {
-				"raw": "79,902",
-				"value": 79902
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "162,363",
-				"value": 162363
-			},
-			"swapTime": {
-				"raw": "18.283",
-				"value": 18.283
-			},
-			"totalTime": {
-				"raw": "18.283",
-				"value": 18.283
-			},
-			"swapDps": {
-				"raw": "8,881",
-				"value": 8881
-			},
-			"trueDps": {
-				"raw": "8,881",
-				"value": 8881
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 59,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:60",
+			"id": "swap:61",
 			"name": "High-impact bow",
 			"loadout": "Heavy Bolts, High Ground x3 (A Good Shout)",
 			"attackType": "swap",
@@ -86704,12 +86745,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 60,
+				"row": 61,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:61",
+			"id": "swap:62",
 			"name": "Heirloom",
 			"loadout": "uncharged, Moebius Quiver",
 			"attackType": "swap",
@@ -86745,12 +86786,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 61,
+				"row": 62,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:62",
+			"id": "swap:63",
 			"name": "New Land Beyond",
 			"loadout": "The Master x20, Kinetic Holster, Sniper's Meditation x5, no catalyst",
 			"attackType": "swap",
@@ -86786,12 +86827,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 62,
+				"row": 63,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:63",
+			"id": "swap:64",
 			"name": "Witherhoard",
 			"loadout": "direct impact",
 			"attackType": "swap",
@@ -86827,12 +86868,52 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/d105aa342f2d0c53a90a28477552f61f.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 63,
+				"row": 64,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:64",
+			"id": "swap:65",
+			"name": "Song of Flame",
+			"loadout": "Warlord's Fury, Saint's Fists, Celestial Fire spam, Ember of Ashes, Shieldcrush",
+			"attackType": "super",
+			"base": {
+				"raw": "79,902",
+				"value": 79902
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "162,363",
+				"value": 162363
+			},
+			"swapTime": {
+				"raw": "18.283",
+				"value": 18.283
+			},
+			"totalTime": {
+				"raw": "18.283",
+				"value": 18.283
+			},
+			"swapDps": {
+				"raw": "8,881",
+				"value": 8881
+			},
+			"trueDps": {
+				"raw": "8,881",
+				"value": 8881
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 65,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:66",
 			"name": "Rapid-fire grenade launcher",
 			"loadout": "Spike Grenades, e. Cascade Point + e. Surrounded (VS Chill Inhibitor), 8 shots",
 			"attackType": "burst",
@@ -86868,12 +86949,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 64,
+				"row": 66,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:65",
+			"id": "swap:67",
 			"name": "Rapid-fire grenade launcher",
 			"loadout": "Spike Grenades, e. Cascade Point + e. Explosive Light (VS Chill Inhibitor), 8 shots",
 			"attackType": "burst",
@@ -86909,12 +86990,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 65,
+				"row": 67,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:66",
+			"id": "swap:68",
 			"name": "Shadowshot: Moebius Quiver",
 			"loadout": "Feast of Light x6, full bow charge, both volleys, assumes no other debuff, Limit Break",
 			"attackType": "super",
@@ -86949,12 +87030,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 66,
+				"row": 68,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:67",
+			"id": "swap:69",
 			"name": "Rapid-fire sniper",
 			"loadout": "e. Kinetic Tremors + Elemental Honing x5 (Praedyth's Revenge), 2 shots, Sniper's Meditation x5",
 			"attackType": "swap",
@@ -86990,12 +87071,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/36418dde751148bd3b95a023d491ea73.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 67,
+				"row": 69,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:68",
+			"id": "swap:70",
 			"name": "Hammer of Sol",
 			"loadout": "Roaring Flames x3, Sunfire Furnace x10, Ember of Ashes, max distance, Limit Break",
 			"attackType": "super",
@@ -87030,12 +87111,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9d1fd669f61cce4abd35dbefd22ba90c.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 68,
+				"row": 70,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:69",
+			"id": "swap:71",
 			"name": "The Fourth Horseman",
 			"loadout": "full mag, body, Arc Compounding",
 			"attackType": "burst",
@@ -87071,12 +87152,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/247715dd42abef457b52ef37280c0e42.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 69,
+				"row": 71,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:70",
+			"id": "swap:72",
 			"name": "Area denial grenade launcher",
 			"loadout": "Elemental Honing x5 (Festival Flight), 1 shot",
 			"attackType": "swap",
@@ -87112,12 +87193,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/50c3ebe414c6946429934d79504922fa.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 70,
+				"row": 72,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:71",
+			"id": "swap:73",
 			"name": "Still Hunt",
 			"loadout": "Cayde's Retribution, pre-popped",
 			"attackType": "burst",
@@ -87153,12 +87234,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 71,
+				"row": 73,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:72",
+			"id": "swap:74",
 			"name": "Gathering Storm",
 			"loadout": "Limit Break",
 			"attackType": "super",
@@ -87193,12 +87274,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/edf23f2e6951efcab4c4b10630b6f7c4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 72,
+				"row": 74,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:73",
+			"id": "swap:75",
 			"name": "Thermite grenade",
 			"loadout": "Roaring Flames x3, Empowered Grenade x2, Ember of Ashes",
 			"attackType": "grenade",
@@ -87233,12 +87314,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e4aa73bf21f3da3e22f9e07475e2e614.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 73,
+				"row": 75,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:74",
+			"id": "swap:76",
 			"name": "Silence and Squall",
 			"loadout": "Facet of Ruin, Limit Break",
 			"attackType": "super",
@@ -87273,12 +87354,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a8bbee32ce8f259e7b9e112c0c8a401a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 74,
+				"row": 76,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:75",
+			"id": "swap:77",
 			"name": "Rapid-fire grenade launcher",
 			"loadout": "Spike Grenades, e. Cascade Point + e. Aggregate Charge x3 (VS Chill Inhibitor), 8 shots",
 			"attackType": "burst",
@@ -87314,12 +87395,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 75,
+				"row": 77,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:76",
+			"id": "swap:78",
 			"name": "Merciless",
 			"loadout": "pre-stacked, Impetus, full mag",
 			"attackType": "burst",
@@ -87355,12 +87436,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 76,
+				"row": 78,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:77",
+			"id": "swap:79",
 			"name": "Burning Maul",
 			"loadout": "light attacks, Roaring Flames x3, Sol Invictus, Ember of Ashes, Sunfire Furnace x10, Limit Break",
 			"attackType": "super",
@@ -87395,52 +87476,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 77,
+				"row": 79,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:78",
-			"name": "Storm's Edge",
-			"loadout": "body, Feast of Light x6, Facet of Courage, all three casts, Thunderous Retort",
-			"attackType": "super",
-			"base": {
-				"raw": "16,006",
-				"value": 16006
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "43,145",
-				"value": 43145
-			},
-			"swapTime": {
-				"raw": "7.680",
-				"value": 7.68
-			},
-			"totalTime": {
-				"raw": "7.680",
-				"value": 7.68
-			},
-			"swapDps": {
-				"raw": "5,618",
-				"value": 5618
-			},
-			"trueDps": {
-				"raw": "5,618",
-				"value": 5618
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/515dafc7f95e310e26bf3189f640231c.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 78,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:79",
+			"id": "swap:80",
 			"name": "Pinpoint slug shotgun",
 			"loadout": "Assault Mag, e. Redirection x30 + e. Cascade Point (Heritage), 8 shots",
 			"attackType": "burst",
@@ -87476,12 +87517,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 79,
+				"row": 80,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:80",
+			"id": "swap:81",
 			"name": "Wolfsbane",
 			"loadout": "pre-activated, HLLHLLHLLHLLH, Honed Edge + Jagged Edge, Burning Ambition, Argent Blade, Solar Fulmination, Dawn Chorus",
 			"attackType": "burst",
@@ -87517,12 +87558,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 80,
+				"row": 81,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:81",
+			"id": "swap:82",
 			"name": "Parasite",
 			"attackType": "swap",
 			"base": {
@@ -87557,12 +87598,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b441021fbc328e6d0e2abc895f5c96e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 81,
+				"row": 82,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:82",
+			"id": "swap:83",
 			"name": "Fusion grenade",
 			"loadout": "Death Throes x5, Touch of Flame, Ember of Ashes, Sticker Shock",
 			"attackType": "grenade",
@@ -87597,12 +87638,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/37a4f29aa2ef6ffcdee1a8eb6b5bfade.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 82,
+				"row": 83,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:83",
+			"id": "swap:84",
 			"name": "Aggressive shotgun",
 			"loadout": "body, Elemental Honing x5 (A Sudden Death), 1 shot",
 			"attackType": "swap",
@@ -87638,12 +87679,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 83,
+				"row": 84,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:84",
+			"id": "swap:85",
 			"name": "Aggressive sniper rifle",
 			"loadout": "Elemental Honing x5 (Something Something), Sniper's Meditation x5",
 			"attackType": "swap",
@@ -87679,12 +87720,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 84,
+				"row": 85,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:85",
+			"id": "swap:86",
 			"name": "Storm grenade",
 			"loadout": "Touch of Thunder, Spark of Magnitude, Empowered Grenade x2",
 			"attackType": "grenade",
@@ -87719,12 +87760,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 85,
+				"row": 86,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:86",
+			"id": "swap:87",
 			"name": "Aggressive shotgun",
 			"loadout": "body, Assault Mag, e. Cascade Point + e. Bait and Switch (Felwinter's Lie), 6 shots",
 			"attackType": "burst",
@@ -87760,12 +87801,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 86,
+				"row": 87,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:87",
+			"id": "swap:88",
 			"name": "Duality",
 			"loadout": "precision",
 			"attackType": "swap",
@@ -87799,46 +87840,6 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/084c8f65d56ce5d74718d49b17874315.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 87,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:88",
-			"name": "Storm's Edge",
-			"loadout": "body, Feast of Light x6, Facet of Courage, per cast, Thunderous Retort",
-			"attackType": "super",
-			"base": {
-				"raw": "5,335",
-				"value": 5335
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "14,382",
-				"value": 14382
-			},
-			"swapTime": {
-				"raw": "2.683",
-				"value": 2.683
-			},
-			"totalTime": {
-				"raw": "2.683",
-				"value": 2.683
-			},
-			"swapDps": {
-				"raw": "5,360",
-				"value": 5360
-			},
-			"trueDps": {
-				"raw": "5,360",
-				"value": 5360
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/515dafc7f95e310e26bf3189f640231c.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 88,
@@ -88254,46 +88255,6 @@
 		},
 		{
 			"id": "swap:99",
-			"name": "Twilight Arsenal",
-			"loadout": "Feast of Light x6, Facet of Courage, Limit Break",
-			"attackType": "super",
-			"base": {
-				"raw": "10,073",
-				"value": 10073
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "24,019",
-				"value": 24019
-			},
-			"swapTime": {
-				"raw": "3.630",
-				"value": 3.63
-			},
-			"totalTime": {
-				"raw": "3.630",
-				"value": 3.63
-			},
-			"swapDps": {
-				"raw": "6,617",
-				"value": 6617
-			},
-			"trueDps": {
-				"raw": "6,617",
-				"value": 6617
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 99,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:100",
 			"name": "Burning Maul",
 			"loadout": "heavy attacks, Roaring Flames x3, Sol Invictus, Ember of Ashes, Sunfire Furnace x10, Limit Break",
 			"attackType": "super",
@@ -88328,12 +88289,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 100,
+				"row": 99,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:101",
+			"id": "swap:100",
 			"name": "Hammer of Sol",
 			"loadout": "Feast of Light x6, Facet of Courage, max distance, Limit Break",
 			"attackType": "super",
@@ -88366,6 +88327,46 @@
 				"value": 5905
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9d1fd669f61cce4abd35dbefd22ba90c.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 100,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:101",
+			"name": "Twilight Arsenal",
+			"loadout": "Facet of Courage, Limit Break",
+			"attackType": "super",
+			"base": {
+				"raw": "9,737",
+				"value": 9737
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "23,219",
+				"value": 23219
+			},
+			"swapTime": {
+				"raw": "3.630",
+				"value": 3.63
+			},
+			"totalTime": {
+				"raw": "3.630",
+				"value": 3.63
+			},
+			"swapDps": {
+				"raw": "6,396",
+				"value": 6396
+			},
+			"trueDps": {
+				"raw": "6,396",
+				"value": 6396
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 101,
@@ -88455,46 +88456,6 @@
 		},
 		{
 			"id": "swap:104",
-			"name": "Song of Flame",
-			"loadout": "Dawn Chorus, Saint's Fists, Celestial Fire spam, Ember of Ashes, Shieldcrush",
-			"attackType": "super",
-			"base": {
-				"raw": "52,826",
-				"value": 52826
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "107,344",
-				"value": 107344
-			},
-			"swapTime": {
-				"raw": "18.467",
-				"value": 18.467
-			},
-			"totalTime": {
-				"raw": "18.467",
-				"value": 18.467
-			},
-			"swapDps": {
-				"raw": "5,813",
-				"value": 5813
-			},
-			"trueDps": {
-				"raw": "5,813",
-				"value": 5813
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 104,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:105",
 			"name": "Tessellation",
 			"loadout": "Property: Irreducible, excludes re-proc time, Transcendent but excludes 5%",
 			"attackType": "burst",
@@ -88530,12 +88491,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 105,
+				"row": 104,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:106",
+			"id": "swap:105",
 			"name": "Shatter grenade",
 			"loadout": "Touch of Winter, Whisper of Fissures",
 			"attackType": "grenade",
@@ -88570,12 +88531,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/4017951cb20f7e81158b062f74af1cd2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 106,
+				"row": 105,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:107",
+			"id": "swap:106",
 			"name": "Dynamic hand cannon - 180RPM special",
 			"loadout": "18 shot burst, e. Precision Instrument (Uncivil Discourse), Illegally Modded Holster",
 			"attackType": "LP",
@@ -88611,12 +88572,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 107,
+				"row": 106,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:108",
+			"id": "swap:107",
 			"name": "Whirling Ovation",
 			"loadout": "max Anticipation, Argent Ordnance",
 			"attackType": "swap",
@@ -88652,12 +88613,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 108,
+				"row": 107,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:109",
+			"id": "swap:108",
 			"name": "Dynamic hand cannon - 180RPM special",
 			"loadout": "primed with 2 Crimson bursts, 15 shot burst, e. Precision Instrument (Uncivil Discourse), Accelerated Assault, Illegally Modded Holster",
 			"attackType": "LP",
@@ -88693,12 +88654,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 109,
+				"row": 108,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:110",
+			"id": "swap:109",
 			"name": "Solar grenade",
 			"loadout": "four grenades, melee kill included, Sunbracers, Touch of Flame, Ember of Ashes",
 			"attackType": "grenade",
@@ -88733,12 +88694,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 110,
+				"row": 109,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:111",
+			"id": "swap:110",
 			"name": "Slayer's Fang",
 			"loadout": "includes submunitions, Cascade Point, 6 shots",
 			"attackType": "burst",
@@ -88774,12 +88735,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 111,
+				"row": 110,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:112",
+			"id": "swap:111",
 			"name": "Exodus Rockets",
 			"loadout": "one volley, Thruster",
 			"attackType": "swap",
@@ -88813,12 +88774,12 @@
 			},
 			"ref": {
 				"tab": "Swap",
-				"row": 112,
+				"row": 111,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:113",
+			"id": "swap:112",
 			"name": "Lightweight shotgun",
 			"loadout": "body, All-Star (Reckless Endangerment), 1 shot",
 			"attackType": "swap",
@@ -88854,12 +88815,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 113,
+				"row": 112,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:114",
+			"id": "swap:113",
 			"name": "Adaptive grenade launcher",
 			"loadout": "Spike Grenades, Cascade Point (Edge Transit), 8 shots",
 			"attackType": "burst",
@@ -88895,12 +88856,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 114,
+				"row": 113,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:115",
+			"id": "swap:114",
 			"name": "Ice Breaker",
 			"attackType": "swap",
 			"base": {
@@ -88933,6 +88894,46 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5f3f44c8ec720f4ece9a8903ae29df60.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 114,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:115",
+			"name": "Song of Flame",
+			"loadout": "Dawn Chorus, Saint's Fists, Celestial Fire spam, Ember of Ashes, Shieldcrush",
+			"attackType": "super",
+			"base": {
+				"raw": "52,826",
+				"value": 52826
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "107,344",
+				"value": 107344
+			},
+			"swapTime": {
+				"raw": "18.467",
+				"value": 18.467
+			},
+			"totalTime": {
+				"raw": "18.467",
+				"value": 18.467
+			},
+			"swapDps": {
+				"raw": "5,813",
+				"value": 5813
+			},
+			"trueDps": {
+				"raw": "5,813",
+				"value": 5813
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 115,
@@ -89022,6 +89023,46 @@
 		},
 		{
 			"id": "swap:118",
+			"name": "Storm's Edge",
+			"loadout": "body, Feast of Light x6, Facet of Courage, all three casts, Thunderous Retort",
+			"attackType": "super",
+			"base": {
+				"raw": "16,006",
+				"value": 16006
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "43,145",
+				"value": 43145
+			},
+			"swapTime": {
+				"raw": "7.680",
+				"value": 7.68
+			},
+			"totalTime": {
+				"raw": "7.680",
+				"value": 7.68
+			},
+			"swapDps": {
+				"raw": "5,618",
+				"value": 5618
+			},
+			"trueDps": {
+				"raw": "5,618",
+				"value": 5618
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/515dafc7f95e310e26bf3189f640231c.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 118,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:119",
 			"name": "Shadowshot: Moebius Quiver",
 			"loadout": "Orpheus Rig, full bow charge, all 3 volleys, assumes no other debuff, Limit Break",
 			"attackType": "super",
@@ -89056,12 +89097,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 118,
+				"row": 119,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:119",
+			"id": "swap:120",
 			"name": "Sentinel Shield",
 			"loadout": "Biotic Enhancements, aerial lights, Shieldcrush",
 			"attackType": "super",
@@ -89096,12 +89137,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a929ea604d638e5e99125e48f76989e2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 119,
+				"row": 120,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:120",
+			"id": "swap:121",
 			"name": "Rapid-fire grenade launcher",
 			"loadout": "Spike Grenades, Elemental Honing x5 (VS Chill Inhibitor), 8 shots",
 			"attackType": "swap",
@@ -89137,12 +89178,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 120,
+				"row": 121,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:121",
+			"id": "swap:122",
 			"name": "Void wall",
 			"loadout": "Echo of Remnants",
 			"attackType": "grenade",
@@ -89177,12 +89218,52 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a905c46ea9edc45f2773b30b719bd6dc.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 121,
+				"row": 122,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:122",
+			"id": "swap:123",
+			"name": "Storm's Edge",
+			"loadout": "body, Feast of Light x6, Facet of Courage, per cast, Thunderous Retort",
+			"attackType": "super",
+			"base": {
+				"raw": "5,335",
+				"value": 5335
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "14,382",
+				"value": 14382
+			},
+			"swapTime": {
+				"raw": "2.683",
+				"value": 2.683
+			},
+			"totalTime": {
+				"raw": "2.683",
+				"value": 2.683
+			},
+			"swapDps": {
+				"raw": "5,360",
+				"value": 5360
+			},
+			"trueDps": {
+				"raw": "5,360",
+				"value": 5360
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/515dafc7f95e310e26bf3189f640231c.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 123,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:124",
 			"name": "Eriana's Vow",
 			"loadout": "primed with 3 heavy burst HC bursts, 7 shots, Illegally Modded Holster",
 			"attackType": "LP",
@@ -89218,12 +89299,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b212b58a961f150708bca95095e0ecb.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 122,
+				"row": 124,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:123",
+			"id": "swap:125",
 			"name": "Pinpoint slug shotgun",
 			"loadout": "Aggregate Charge x3 (Heritage), 1 shot",
 			"attackType": "swap",
@@ -89259,12 +89340,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 123,
+				"row": 125,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:124",
+			"id": "swap:126",
 			"name": "Stormtrance",
 			"loadout": "Ascending Amplitude, Facet of Courage, Thunderous Retort",
 			"attackType": "super",
@@ -89299,12 +89380,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/31a0445d352fd44b62c9a8dd2752ccdf.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 124,
+				"row": 126,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:125",
+			"id": "swap:127",
 			"name": "Heirloom",
 			"loadout": "uncharged",
 			"attackType": "swap",
@@ -89340,12 +89421,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 125,
+				"row": 127,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:126",
+			"id": "swap:128",
 			"name": "Double fire grenade launcher",
 			"loadout": "Spike Grenades, Elemental Honing x5 (Wilderflight), 1 shot",
 			"attackType": "swap",
@@ -89381,12 +89462,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 126,
+				"row": 128,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:127",
+			"id": "swap:129",
 			"name": "Flechette Storm",
 			"loadout": "11 volleys, Banner of War, Wish-Dragon's Talons, Insatiable",
 			"attackType": "melee",
@@ -89421,12 +89502,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/106bf863f701bf09ac51fe023f477bb6.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 127,
+				"row": 129,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:128",
+			"id": "swap:130",
 			"name": "Silkstrike",
 			"loadout": "light attack spam, Feast of Light x6, Shieldcrush",
 			"attackType": "super",
@@ -89461,12 +89542,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3da7e8684b09600e90ea5c16f1edebe0.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 128,
+				"row": 130,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:129",
+			"id": "swap:131",
 			"name": "Adaptive grenade launcher",
 			"loadout": "Spike Grenades, Elemental Honing x5 (Edge Transit), 8 shots",
 			"attackType": "swap",
@@ -89502,12 +89583,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 129,
+				"row": 131,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:130",
+			"id": "swap:132",
 			"name": "Fists of Havoc",
 			"loadout": "heavy attacks, Biotic Enhancements, Thunderous Retort",
 			"attackType": "super",
@@ -89542,12 +89623,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5bc4f4029b38fd41d0232460b4295600.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 130,
+				"row": 132,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:131",
+			"id": "swap:133",
 			"name": "Grapple melee",
 			"loadout": "Banner of War, Biotic Enhancements, One-Two Punch",
 			"attackType": "melee",
@@ -89582,12 +89663,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 131,
+				"row": 133,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:132",
+			"id": "swap:134",
 			"name": "Choir of One",
 			"loadout": "projectile mode, spaced, one mag, no reload",
 			"attackType": "swap",
@@ -89623,12 +89704,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 132,
+				"row": 134,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:133",
+			"id": "swap:135",
 			"name": "Arc Staff",
 			"loadout": "Raiden Flux, Shieldcrush",
 			"attackType": "super",
@@ -89663,12 +89744,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/435489f514e2bf88d25c452a96f2dff9.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 133,
+				"row": 135,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:134",
+			"id": "swap:136",
 			"name": "Pulse grenade",
 			"loadout": "Touch of Thunder, Spark of Magnitude, Empowered Grenade x2",
 			"attackType": "grenade",
@@ -89703,12 +89784,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 134,
+				"row": 136,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:135",
+			"id": "swap:137",
 			"name": "The Last Word",
 			"loadout": "hipfire, Envious Assassin, 23 shots, Illegally Modded Holster",
 			"attackType": "LP",
@@ -89744,12 +89825,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 135,
+				"row": 137,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:136",
+			"id": "swap:138",
 			"name": "Flux grenade",
 			"loadout": "Sticker Shock",
 			"attackType": "grenade",
@@ -89784,12 +89865,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1d7e8eb7c2c5884cb658a1877a084548.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 136,
+				"row": 138,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:137",
+			"id": "swap:139",
 			"name": "Micro-missile grenade launcher",
 			"loadout": "Spike Grenades, Elemental Honing x5 (Theodolite), 1 shot",
 			"attackType": "swap",
@@ -89825,12 +89906,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 137,
+				"row": 139,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:138",
+			"id": "swap:140",
 			"name": "Still Hunt",
 			"loadout": "Cayde's Retribution, Sniper's Meditation x5",
 			"attackType": "swap",
@@ -89866,12 +89947,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 138,
+				"row": 140,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:139",
+			"id": "swap:141",
 			"name": "Witherhoard",
 			"loadout": "ground",
 			"attackType": "swap",
@@ -89907,12 +89988,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/d105aa342f2d0c53a90a28477552f61f.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 139,
+				"row": 141,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:140",
+			"id": "swap:142",
 			"name": "Spectral Blades",
 			"loadout": "light attack spam, Feast of Light x6, Shieldcrush",
 			"attackType": "super",
@@ -89947,52 +90028,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1fbfacd5dfe847c5cd0262c5616653ff.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 140,
+				"row": 142,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:141",
-			"name": "Twilight Arsenal",
-			"loadout": "Facet of Courage, Limit Break",
-			"attackType": "super",
-			"base": {
-				"raw": "6,716",
-				"value": 6716
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "16,015",
-				"value": 16015
-			},
-			"swapTime": {
-				"raw": "3.630",
-				"value": 3.63
-			},
-			"totalTime": {
-				"raw": "3.630",
-				"value": 3.63
-			},
-			"swapDps": {
-				"raw": "4,412",
-				"value": 4412
-			},
-			"trueDps": {
-				"raw": "4,412",
-				"value": 4412
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 141,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:142",
+			"id": "swap:143",
 			"name": "Shadowshot: Moebius Quiver",
 			"loadout": "Orpheus Rig, all 3 volleys, assumes no other debuff, Limit Break",
 			"attackType": "super",
@@ -90027,12 +90068,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 142,
+				"row": 143,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:143",
+			"id": "swap:144",
 			"name": "Bladefury",
 			"loadout": "HLLLHLLLLHLLLH, Banner of War, Biotic Enhancements, Thread of Continuity, Limit Break",
 			"attackType": "super",
@@ -90067,12 +90108,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/228496331415f6854ef589f33c2a2622.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 143,
+				"row": 144,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:144",
+			"id": "swap:145",
 			"name": "Spread shot hand cannon",
 			"loadout": "e. Cascade Point + Vorpal Weapon (Aureus Neutralizer), 14 shot burst, Illegally Modded Holster",
 			"attackType": "LP",
@@ -90108,12 +90149,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 144,
+				"row": 145,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:145",
+			"id": "swap:146",
 			"name": "Bladefury",
 			"loadout": "HLLLHLLLLHLLLLH, Feast of Light x6, Limit Break",
 			"attackType": "super",
@@ -90148,12 +90189,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/228496331415f6854ef589f33c2a2622.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 145,
+				"row": 146,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:146",
+			"id": "swap:147",
 			"name": "Burning Maul",
 			"loadout": "heavy attacks, Roaring Flames x3, Sol Invictus, Ember of Ashes, Biotic Enhancements, Limit Break",
 			"attackType": "super",
@@ -90188,12 +90229,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 146,
+				"row": 147,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:147",
+			"id": "swap:148",
 			"name": "Rapid-fire shotgun",
 			"loadout": "body, Elemental Honing x5 (Threat Level), 8 shots",
 			"attackType": "swap",
@@ -90229,12 +90270,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 147,
+				"row": 148,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:148",
+			"id": "swap:149",
 			"name": "Eriana's Vow",
 			"loadout": "1 mag, Illegally Modded Holster",
 			"attackType": "LP",
@@ -90270,12 +90311,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b212b58a961f150708bca95095e0ecb.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 148,
+				"row": 149,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:149",
+			"id": "swap:150",
 			"name": "Solar grenade",
 			"loadout": "Touch of Flame, Ember of Ashes",
 			"attackType": "grenade",
@@ -90310,12 +90351,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 149,
+				"row": 150,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:150",
+			"id": "swap:151",
 			"name": "Bequest",
 			"loadout": "heavy attack, Jagged Edge, Elemental Honing x5 (Bequest), Pack Hunter",
 			"attackType": "sword",
@@ -90351,12 +90392,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 150,
+				"row": 151,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:151",
+			"id": "swap:152",
 			"name": "Stormtrance",
 			"loadout": "Feast of Light x6, Facet of Courage, Thunderous Retort",
 			"attackType": "super",
@@ -90391,12 +90432,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/31a0445d352fd44b62c9a8dd2752ccdf.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 151,
+				"row": 152,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:152",
+			"id": "swap:153",
 			"name": "Daybreak",
 			"loadout": "Dawn Chorus, Ember of Ashes, grounded, Limit Break",
 			"attackType": "super",
@@ -90431,12 +90472,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/89b89220e92c5b363d3e105c25a21640.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 152,
+				"row": 153,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:153",
+			"id": "swap:154",
 			"name": "Bladefury",
 			"loadout": "HLLLLL, Banner of War, Biotic Enhancements, Thread of Continuity, Limit Break",
 			"attackType": "super",
@@ -90471,12 +90512,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/228496331415f6854ef589f33c2a2622.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 153,
+				"row": 154,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:154",
+			"id": "swap:155",
 			"name": "Song of Flame",
 			"loadout": "snap spam, Dawn Chorus, Shieldcrush",
 			"attackType": "super",
@@ -90511,12 +90552,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 154,
+				"row": 155,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:155",
+			"id": "swap:156",
 			"name": "Fusion grenade",
 			"loadout": "Touch of Flame, Ember of Ashes, Sticker Shock",
 			"attackType": "grenade",
@@ -90551,12 +90592,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/37a4f29aa2ef6ffcdee1a8eb6b5bfade.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 155,
+				"row": 156,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:156",
+			"id": "swap:157",
 			"name": "Hawkmoon",
 			"loadout": "primed with 3 heavy burst HC bursts, 9 shots, Paracausal Shot, Illegally Modded Holster",
 			"attackType": "LP",
@@ -90592,12 +90633,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 156,
+				"row": 157,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:157",
+			"id": "swap:158",
 			"name": "Sentinel Shield",
 			"loadout": "Biotic Enhancements, grounded spam, Shieldcrush",
 			"attackType": "super",
@@ -90632,12 +90673,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a929ea604d638e5e99125e48f76989e2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 157,
+				"row": 158,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:158",
+			"id": "swap:159",
 			"name": "Ex Diris",
 			"attackType": "swap",
 			"base": {
@@ -90672,12 +90713,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 158,
+				"row": 159,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:159",
+			"id": "swap:160",
 			"name": "Cloudstrike",
 			"loadout": "3 shots",
 			"attackType": "swap",
@@ -90713,12 +90754,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 159,
+				"row": 160,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:160",
+			"id": "swap:161",
 			"name": "Ergo Sum",
 			"loadout": "caster frame, heavy attack, The Perfect Fifth, Ember of Ashes, Pack Hunter",
 			"attackType": "swap",
@@ -90754,12 +90795,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 160,
+				"row": 161,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:161",
+			"id": "swap:162",
 			"name": "Rapid-fire slug shotgun",
 			"loadout": "e. Precision Instrument (Trachinus), 8 shots",
 			"attackType": "swap",
@@ -90795,12 +90836,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 161,
+				"row": 162,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:162",
+			"id": "swap:163",
 			"name": "Thermite grenade",
 			"loadout": "Ember of Ashes",
 			"attackType": "grenade",
@@ -90835,12 +90876,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e4aa73bf21f3da3e22f9e07475e2e614.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 162,
+				"row": 163,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:163",
+			"id": "swap:164",
 			"name": "Magnetic grenade",
 			"loadout": "Chaos Accelerant",
 			"attackType": "grenade",
@@ -90875,12 +90916,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/72966b5c97e45d8668483f2263138613.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 163,
+				"row": 164,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:164",
+			"id": "swap:165",
 			"name": "Lightning Surge",
 			"loadout": "Biotic Enhancements, Facet of Courage",
 			"attackType": "melee",
@@ -90915,12 +90956,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5730fd352ae02a03290387ea81d39468.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 164,
+				"row": 165,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:165",
+			"id": "swap:166",
 			"name": "Hailfire Spike",
 			"loadout": "Facet of Courage, Facet of Ruin",
 			"attackType": "grenade",
@@ -90955,12 +90996,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3c5212d88869db30df6236cfd5e59a19.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 165,
+				"row": 166,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:166",
+			"id": "swap:167",
 			"name": "Choir of One",
 			"loadout": "projectile mode, spaced, one mag, reload",
 			"attackType": "swap",
@@ -90996,12 +91037,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 166,
+				"row": 167,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:167",
+			"id": "swap:168",
 			"name": "Shadowshot: Moebius Quiver",
 			"loadout": "full bow charge, both volleys, assumes no other debuff, Limit Break",
 			"attackType": "super",
@@ -91036,12 +91077,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 167,
+				"row": 168,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:168",
+			"id": "swap:169",
 			"name": "Malfeasance",
 			"loadout": "17 shot burst, blighted, Illegally Modded Holster",
 			"attackType": "LP",
@@ -91077,12 +91118,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 168,
+				"row": 169,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:169",
+			"id": "swap:170",
 			"name": "Caster sword",
 			"loadout": "heavy attack, Jagged Edge, Elemental Honing x5 (Night Terror), Pack Hunter",
 			"attackType": "sword",
@@ -91118,12 +91159,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 169,
+				"row": 170,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:170",
+			"id": "swap:171",
 			"name": "Hawkmoon",
 			"loadout": "9 shots, Paracausal Shot, Illegally Modded Holster",
 			"attackType": "LP",
@@ -91159,12 +91200,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 170,
+				"row": 171,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:171",
+			"id": "swap:172",
 			"name": "Winter's Wrath",
 			"loadout": "Feast of Light x6, light-heavy cycle, Facet of Ruin, Limit Break",
 			"attackType": "super",
@@ -91199,12 +91240,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c9f25c8f6d5e647366ffc4f71a825961.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 171,
+				"row": 172,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:172",
+			"id": "swap:173",
 			"name": "Heavy burst hand cannon",
 			"loadout": "e. Precision Instrument (Agape), 13 bursts, Illegally Modded Holster",
 			"attackType": "LP",
@@ -91238,46 +91279,6 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2fa6f8078f2dd6afa358a6f90791f948.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 172,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:173",
-			"name": "Song of Flame",
-			"loadout": "Feast of Light x6 + Necrotic Grip, wisp/snap cycling, Facet of Courage, Shieldcrush",
-			"attackType": "super",
-			"base": {
-				"raw": "20,403",
-				"value": 20403
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "41,460",
-				"value": 41460
-			},
-			"swapTime": {
-				"raw": "15.920",
-				"value": 15.92
-			},
-			"totalTime": {
-				"raw": "15.920",
-				"value": 15.92
-			},
-			"swapDps": {
-				"raw": "2,604",
-				"value": 2604
-			},
-			"trueDps": {
-				"raw": "2,604",
-				"value": 2604
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 173,
@@ -91528,6 +91529,46 @@
 		},
 		{
 			"id": "swap:180",
+			"name": "Song of Flame",
+			"loadout": "Feast of Light x6 + Necrotic Grip, wisp/snap cycling, Facet of Courage, Shieldcrush",
+			"attackType": "super",
+			"base": {
+				"raw": "20,403",
+				"value": 20403
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "41,460",
+				"value": 41460
+			},
+			"swapTime": {
+				"raw": "15.920",
+				"value": 15.92
+			},
+			"totalTime": {
+				"raw": "15.920",
+				"value": 15.92
+			},
+			"swapDps": {
+				"raw": "2,604",
+				"value": 2604
+			},
+			"trueDps": {
+				"raw": "2,604",
+				"value": 2604
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 180,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:181",
 			"name": "Tessellation",
 			"loadout": "Property: Irreducible, includes re-proc time, Transcendent but excludes 5%",
 			"attackType": "burst",
@@ -91563,12 +91604,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 180,
+				"row": 181,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:181",
+			"id": "swap:182",
 			"name": "Fists of Havoc",
 			"loadout": "light attacks, Biotic Enhancements, Shieldcrush",
 			"attackType": "super",
@@ -91603,12 +91644,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5bc4f4029b38fd41d0232460b4295600.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 181,
+				"row": 182,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:182",
+			"id": "swap:183",
 			"name": "Rapid-fire fusion rifle",
 			"loadout": "Charge MW, Accelerated Coils, Aggregate Charge x3 (Cartesian Coordinate), 1 shot",
 			"attackType": "swap",
@@ -91642,46 +91683,6 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/216fb88fbc64390d606b8c7524a6df86.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b48b09fbb50634680168d5880b16bc9.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 182,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:183",
-			"name": "Song of Flame",
-			"loadout": "Claws of Ahamkara + Necrotic Grip, snap spam, Facet of Courage, Shieldcrush",
-			"attackType": "super",
-			"base": {
-				"raw": "20,925",
-				"value": 20925
-			},
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"total": {
-				"raw": "42,520",
-				"value": 42520
-			},
-			"swapTime": {
-				"raw": "18.917",
-				"value": 18.917
-			},
-			"totalTime": {
-				"raw": "18.917",
-				"value": 18.917
-			},
-			"swapDps": {
-				"raw": "2,248",
-				"value": 2248
-			},
-			"trueDps": {
-				"raw": "2,248",
-				"value": 2248
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 183,
@@ -91891,6 +91892,46 @@
 		},
 		{
 			"id": "swap:189",
+			"name": "Song of Flame",
+			"loadout": "Claws of Ahamkara + Necrotic Grip, snap spam, Facet of Courage, Shieldcrush",
+			"attackType": "super",
+			"base": {
+				"raw": "20,925",
+				"value": 20925
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "42,520",
+				"value": 42520
+			},
+			"swapTime": {
+				"raw": "18.917",
+				"value": 18.917
+			},
+			"totalTime": {
+				"raw": "18.917",
+				"value": 18.917
+			},
+			"swapDps": {
+				"raw": "2,248",
+				"value": 2248
+			},
+			"trueDps": {
+				"raw": "2,248",
+				"value": 2248
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 189,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:190",
 			"name": "Precision hand cannon",
 			"loadout": "17 shot burst, e. Precision Instrument (Sightline Survey), Illegally Modded Holster",
 			"attackType": "LP",
@@ -91926,12 +91967,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 189,
+				"row": 190,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:190",
+			"id": "swap:191",
 			"name": "Tripmine grenade",
 			"loadout": "Young Ahamkara's Spine, Ember of Ashes",
 			"attackType": "grenade",
@@ -91966,12 +92007,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/05609c418be3a985a640632ccaca796b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 190,
+				"row": 191,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:191",
+			"id": "swap:192",
 			"name": "Solar grenade",
 			"loadout": "Ember of Ashes",
 			"attackType": "grenade",
@@ -92006,12 +92047,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 191,
+				"row": 192,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:192",
+			"id": "swap:193",
 			"name": "Electrified Snare",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -92046,12 +92087,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9aba9869bd8266696a1fdad190a65b4c.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 192,
+				"row": 193,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:193",
+			"id": "swap:194",
 			"name": "Vortex grenade",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -92086,12 +92127,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/12997544665705bbbd94742268ce7091.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 193,
+				"row": 194,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:194",
+			"id": "swap:195",
 			"name": "Threadling grenade",
 			"loadout": "Thread of Evolution",
 			"attackType": "grenade",
@@ -92126,12 +92167,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/18a14aeac121b2a5c8699556b63e38fd.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 194,
+				"row": 195,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:195",
+			"id": "swap:196",
 			"name": "Freezing Singularity",
 			"loadout": "Facet of Courage, Facet of Ruin",
 			"attackType": "grenade",
@@ -92166,12 +92207,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6d0151b4c04668eb6272dc58ecacc3aa.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 195,
+				"row": 196,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:196",
+			"id": "swap:197",
 			"name": "Twilight Arsenal",
 			"loadout": "axe heavy attack",
 			"attackType": "super",
@@ -92206,12 +92247,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 196,
+				"row": 197,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:197",
+			"id": "swap:198",
 			"name": "Storm grenade",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -92246,12 +92287,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 197,
+				"row": 198,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:198",
+			"id": "swap:199",
 			"name": "Incinerator Snap",
 			"loadout": "Ember of Ashes",
 			"attackType": "melee",
@@ -92286,12 +92327,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e9dee44a01ea409afe80a939b6341843.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 198,
+				"row": 199,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:199",
+			"id": "swap:200",
 			"name": "Threadling grenade",
 			"attackType": "grenade",
 			"base": {
@@ -92325,12 +92366,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/18a14aeac121b2a5c8699556b63e38fd.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 199,
+				"row": 200,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:200",
+			"id": "swap:201",
 			"name": "Twilight Arsenal",
 			"loadout": "axe light attack spam",
 			"attackType": "super",
@@ -92365,12 +92406,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 200,
+				"row": 201,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:201",
+			"id": "swap:202",
 			"name": "Arcane Needle",
 			"attackType": "melee",
 			"base": {
@@ -92404,7 +92445,7 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e996524beb9d4371b1adc1212a6accdf.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 201,
+				"row": 202,
 				"gid": 544204052
 			}
 		}

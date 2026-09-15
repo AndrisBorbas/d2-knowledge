@@ -20,7 +20,8 @@ export type TabNormalizationRule = {
 		| "set-bonus-two-rows"
 		| "skip"
 		| "paired-columns"
-		| "column-groups";
+		| "column-groups"
+		| "exotic-armor-two-rows";
 	type?: "element";
 	fragmentTitlePrefix?: string;
 	skipStart?: number;
@@ -78,6 +79,14 @@ export type TabNormalizationRule = {
 	// set-bonus-two-rows
 	bonusRowOffset?: number;
 	descriptionColumns?: number[];
+
+	// exotic-armor-two-rows
+	// How far below a piece its perk name is written, spacer row included.
+	perkRowOffset?: number;
+	// Row naming the class each column group lists ("Hunters", "Titans",
+	// "Warlocks"), read singular so it lands on the same chip as everything
+	// else a class owns.
+	classHeaderRow?: number;
 
 	// shared sizing/filtering
 	maxTitleLength?: number;
@@ -152,11 +161,17 @@ function getFirstNonEmptyFromColumns(
 	return null;
 }
 
-// A class marker names its class before anything else on the row ("Hunter" /
-// "Hunters"), and scopes every section under it to that class. The tabs also
-// open with a navigation row listing all three classes side by side, which
-// scopes nothing - it has to be stepped over without becoming the active
-// class, or the shared grenades listed below it are filed under Hunter.
+// A class marker is a row that names a class and nothing else ("Hunter" /
+// "Hunters"), and scopes every section under it to that class. It is written
+// twice, once at each end of the row, and the sheet pads the gap between with
+// dashes - Void's Titan marker leaves a dash where the other markers repeat
+// the name, so the name is looked for across the row rather than only at its
+// head. Everything beside it has to be a dash or the class again: a row with
+// prose on it is a perk that happens to mention a class, not a marker.
+//
+// The tabs also open with a navigation row listing all three classes side by
+// side, which scopes nothing - it has to be stepped over without becoming the
+// active class, or the shared grenades listed below it are filed under Hunter.
 type ClassMarker =
 	{ kind: "class"; className: string } | { kind: "navigation" };
 
@@ -172,7 +187,16 @@ function checkCurrentClass(row: string[]): ClassMarker | undefined {
 		return classNames.find((className) => toKey(className) === key);
 	};
 
-	const marker = toClassName(nonEmpty[0].text);
+	const isPadding = (text: string) => /^[-–—]+$/.test(text);
+	if (
+		nonEmpty.some((cell) => !toClassName(cell.text) && !isPadding(cell.text))
+	) {
+		return undefined;
+	}
+
+	const marker = nonEmpty
+		.map((cell) => toClassName(cell.text))
+		.find((className) => className !== undefined);
 	if (!marker) return undefined;
 
 	const namesAnother = nonEmpty.some((cell) => {
@@ -547,6 +571,144 @@ function buildEntriesFromColumnGroups(
 	return entries;
 }
 
+// An exotic armor trait is an armor perk, filed under the chip Clarity files
+// its own copy of the trait under - the tab's name would only split the two
+// apart. Which class wears the piece is worth a chip of its own, and a piece
+// that belongs to no one column goes to all three.
+function exoticArmorGroups(className: string | null) {
+	return ["Armor Perks", ...(className ? [className] : classNames)];
+}
+
+function classForColumn(headerRow: string[] | undefined, column: number) {
+	const header = normalizeForMatch(getCell(headerRow, column));
+	if (!header) return null;
+	return (
+		classNames.find((className) => normalizeForMatch(className) === header) ??
+		null
+	);
+}
+
+// Exotic Armors runs three lists side by side, one per class, each a name /
+// icon / notes triple the way Armor Mods does. What it does not do is write
+// the perk's name beside the piece: that sits alone in the name column two
+// rows below, under a blank spacer. The entry is titled after the perk, so it
+// meets Clarity's record for the same perk, and keeps the piece beside it.
+//
+// The Aeon sects at the foot of the tab have no such row - the sheet writes
+// the sect and the chant it grants in one cell - so there the name cell is the
+// perk itself, and the piece it belongs to is settled downstream.
+function buildEntriesFromExoticArmorRows(
+	tabName: string,
+	rows: (string[] | null)[],
+	rule: TabNormalizationRule,
+): Entry[] {
+	const entries: Entry[] = [];
+	const columnGroups = rule.columnGroups ?? [];
+	const perkRowOffset = rule.perkRowOffset ?? 2;
+	const startRow = rule.skipStart ?? 0;
+	const maxTitleLength = rule.maxTitleLength ?? 56;
+	const minDescriptionLength = rule.minDescriptionLength ?? 16;
+	const classHeaderRow =
+		typeof rule.classHeaderRow === "number"
+			? (rows[rule.classHeaderRow] ?? undefined)
+			: undefined;
+
+	let section: string | null = null;
+
+	for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
+		const row = rows[rowIndex];
+		if (!row) continue;
+
+		const nonEmptyCells = getNonEmptyCells(row);
+		if (nonEmptyCells.length === 0) continue;
+
+		// A row holding one name and nothing else is either a perk name, which
+		// the piece two rows above has already read, or a header naming the
+		// block below it ("Aeon Sects").
+		const isPerkNameRow = columnGroups.some(
+			(group) =>
+				getCell(row, group.titleColumn).length > 0 &&
+				getCell(
+					rows[rowIndex - perkRowOffset] ?? undefined,
+					group.descriptionColumn,
+				).length > 0,
+		);
+
+		if (nonEmptyCells.length === 1) {
+			if (!isPerkNameRow && rule.dynamicSection) {
+				const header = nonEmptyCells[0].text;
+				const minLength = rule.dynamicSection.minLength ?? 2;
+				const maxLength = rule.dynamicSection.maxLength ?? 80;
+				const endsWithSentence = /[.!?]$/.test(header);
+				if (
+					header.length >= minLength &&
+					header.length <= maxLength &&
+					!(rule.dynamicSection.forbidSentenceEnding && endsWithSentence)
+				) {
+					section = header;
+				}
+			}
+			continue;
+		}
+
+		for (const group of columnGroups) {
+			const pieceCell = getCell(row, group.titleColumn);
+			if (!pieceCell) continue;
+
+			const description = getCell(row, group.descriptionColumn);
+			if (description.length < minDescriptionLength) continue;
+
+			const perkRow = rows[rowIndex + perkRowOffset] ?? undefined;
+			const perkName = getCell(perkRow, group.titleColumn);
+			// A name in that column with notes beside it is the next piece, not
+			// this one's perk.
+			const hasPerkRow =
+				perkName.length > 0 &&
+				getCell(perkRow, group.descriptionColumn).length === 0;
+
+			const piece = splitTitleCell(pieceCell);
+			const title = hasPerkRow ? perkName : piece.title;
+			if (!title || title.length > maxTitleLength) continue;
+
+			const source: SourceSpan = {
+				tab: tabName,
+				row: rowIndex,
+				column: group.titleColumn,
+			};
+
+			entries.push({
+				id: createEntryId(tabName, section, title, source),
+				tab: tabName,
+				section,
+				// A piece written without a perk row of its own is not one of
+				// the three lists: it is an Aeon sect, parked in a column for
+				// room, and any class can socket one.
+				groups: exoticArmorGroups(
+					hasPerkRow ? classForColumn(classHeaderRow, group.titleColumn) : null,
+				),
+				title,
+				description,
+				descriptionSegments: [
+					{
+						source: {
+							tab: tabName,
+							row: rowIndex,
+							column: group.descriptionColumn,
+						},
+						start: 0,
+						length: description.length,
+					},
+				],
+				source,
+				secondaryName: hasPerkRow ? piece.title : undefined,
+				extraInfo: piece.extraInfo,
+			});
+		}
+	}
+
+	return entries;
+}
+
 function buildEntryFromSameRow(
 	tabName: string,
 	rowIndex: number,
@@ -895,6 +1057,16 @@ export function normalizeTabWithRule(
 		return toTabData(
 			tabName,
 			buildEntriesFromColumnGroups(tabName, rows, rule),
+			rule,
+		);
+	}
+
+	// Reads two rows at a time across the three class columns, so the row walk
+	// below has nothing to do for it either.
+	if (rule.strategy === "exotic-armor-two-rows") {
+		return toTabData(
+			tabName,
+			buildEntriesFromExoticArmorRows(tabName, rows, rule),
 			rule,
 		);
 	}
