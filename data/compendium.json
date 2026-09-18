@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-15T23:56:54.352Z",
+	"generatedAt": "2026-09-18T00:57:25.801Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -82143,7 +82143,7 @@
 				"column": 8
 			},
 			"title": "Shieldcrush",
-			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.",
+			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -82152,7 +82152,7 @@
 						"column": 7
 					},
 					"start": 0,
-					"length": 403
+					"length": 477
 				}
 			],
 			"officialDescription": "While you have Woven Mail, Frost Armor, or a Void Overshield, your melee recharges faster and deals increased damage.\n\nWhile you are amplified or radiant, your grenade recharges faster and deals increased damage.",
@@ -82466,9 +82466,62 @@
 				{
 					"keywordId": "sheet-color:Artifact Perks:37:7:325:338",
 					"start": 338,
-					"end": 403,
-					"text": " instead receives 12% Increased Damage for each half of the perk.",
+					"end": 404,
+					"text": " instead receives 12% Increased Damage for each half of the perk.\n",
 					"color": "rgb(99, 210, 117)"
+				},
+				{
+					"keywordId": "shieldcrush",
+					"start": 404,
+					"end": 415,
+					"text": "Shieldcrush"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:415",
+					"start": 415,
+					"end": 430,
+					"text": " will not buff ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "grapple",
+					"start": 430,
+					"end": 437,
+					"text": "Grapple"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:437",
+					"start": 437,
+					"end": 438,
+					"text": " ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 438,
+					"end": 443,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:443",
+					"start": 443,
+					"end": 450,
+					"text": " while ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "combination-blow",
+					"start": 450,
+					"end": 466,
+					"text": "Combination Blow"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:466",
+					"start": 466,
+					"end": 477,
+					"text": " is active.",
+					"color": "rgb(224, 102, 102)"
 				}
 			],
 			"officialAnnotations": [
@@ -91991,7 +92044,7 @@
 				"column": 8
 			},
 			"title": "Shieldcrush",
-			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.",
+			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -92000,7 +92053,7 @@
 						"column": 7
 					},
 					"start": 0,
-					"length": 403
+					"length": 477
 				}
 			],
 			"officialDescription": "While you have Woven Mail, Frost Armor, or a Void Overshield, your melee recharges faster and deals increased damage.\n\nWhile you are amplified or radiant, your grenade recharges faster and deals increased damage.",
@@ -92314,9 +92367,62 @@
 				{
 					"keywordId": "sheet-color:Artifact Perks:115:7:325:338",
 					"start": 338,
-					"end": 403,
-					"text": " instead receives 12% Increased Damage for each half of the perk.",
+					"end": 404,
+					"text": " instead receives 12% Increased Damage for each half of the perk.\n",
 					"color": "rgb(99, 210, 117)"
+				},
+				{
+					"keywordId": "shieldcrush",
+					"start": 404,
+					"end": 415,
+					"text": "Shieldcrush"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:415",
+					"start": 415,
+					"end": 430,
+					"text": " will not buff ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "grapple",
+					"start": 430,
+					"end": 437,
+					"text": "Grapple"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:437",
+					"start": 437,
+					"end": 438,
+					"text": " ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 438,
+					"end": 443,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:443",
+					"start": 443,
+					"end": 450,
+					"text": " while ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "combination-blow",
+					"start": 450,
+					"end": 466,
+					"text": "Combination Blow"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:466",
+					"start": 466,
+					"end": 477,
+					"text": " is active.",
+					"color": "rgb(224, 102, 102)"
 				}
 			],
 			"officialAnnotations": [
@@ -177268,7 +177374,7 @@
 				"column": 0
 			},
 			"title": "Thread of Generation",
-			"description": "Dealing damage grants Grenade Ability Energy for each damage instance.\n\nGrenade Ability Energy Gains vary depending on the source and the amount of damage dealt. Generally, more damage means more energy.\n\nAbility energy gained may be significantly decreased based on your selected ability's Chunk Energy Scalar. Learn more about this mechanic in our explainer blog post on the Clarity website.",
+			"description": "Dealing damage grants Grenade Ability Energy for each damage instance. Provides no benefit to 0 Slicewire grenades.\n\nGrenade Ability Energy Gains vary depending on the source and the amount of damage dealt. Generally, more damage means more energy.\n\nAbility energy gained may be significantly decreased based on your selected ability's Chunk Energy Scalar. Learn more about this mechanic in our explainer blog post on the Clarity website.",
 			"officialDescription": "Dealing damage generates grenade energy.",
 			"extraInfo": "-10 Grenade",
 			"kind": "general",
@@ -177279,7 +177385,7 @@
 					"sourceKey": "3192552691",
 					"hash": 3192552691,
 					"type": "Subclass Fragment",
-					"updatedAt": 1735009175023
+					"updatedAt": 1789591610007
 				},
 				{
 					"sourceId": "ddc",
@@ -177291,10 +177397,16 @@
 			],
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2cf005bea9e145747a62fa27dc2caa0e.jpg",
 			"perkHash": 3192552691,
+			"iconGlyphs": [
+				{
+					"label": "Strand",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_b2fe51a94f3533f97079dfa0d27a4096.png"
+				}
+			],
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "Upon dealing damage:\nGrants a variable amount of Grenade Ability Energy.\n\nGrenade Ability Energy Gains vary depending on the source, as well as the amount of damage.\nGenerally, the more damage something deals, the more Ability Energy it will grant.",
+					"text": "Upon dealing damage:\nGrants a variable amount of Grenade Ability Energy.\nDoes not grant Slicewire Grenade Energy.\n\nGrenade Ability Energy Gains vary depending on the source, as well as the amount of damage.\nGenerally, the more damage something deals, the more Ability Energy it will grant.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -177303,7 +177415,7 @@
 								"column": 3
 							},
 							"start": 0,
-							"length": 248
+							"length": 289
 						}
 					],
 					"annotations": [
@@ -177322,23 +177434,50 @@
 							"colorClass": "text-energy-grenade"
 						},
 						{
+							"keywordId": "sheet-color:Strand:21:3:73:73",
+							"start": 73,
+							"end": 88,
+							"text": "Does not grant ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "slicewire-grenade",
+							"start": 88,
+							"end": 105,
+							"text": "Slicewire Grenade"
+						},
+						{
+							"keywordId": "sheet-color:Strand:21:3:73:105",
+							"start": 105,
+							"end": 113,
+							"text": " Energy.",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:21:3:113:113",
+							"start": 113,
+							"end": 114,
+							"text": "\n",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
 							"keywordId": "pattern:text-energy-grenade",
-							"start": 74,
-							"end": 96,
+							"start": 115,
+							"end": 137,
 							"text": "Grenade Ability Energy",
 							"colorClass": "text-energy-grenade"
 						},
 						{
-							"keywordId": "sheet-color:Strand:21:3:74:96",
-							"start": 96,
-							"end": 166,
+							"keywordId": "sheet-color:Strand:21:3:115:137",
+							"start": 137,
+							"end": 207,
 							"text": " Gains vary depending on the source, as well as the amount of damage.\n",
 							"color": "rgb(224, 162, 97)"
 						},
 						{
 							"keywordId": "pattern:text-energy-ability",
-							"start": 219,
-							"end": 233,
+							"start": 260,
+							"end": 274,
 							"text": "Ability Energy",
 							"colorClass": "text-energy-ability"
 						}
@@ -177354,16 +177493,22 @@
 					"colorClass": "text-energy-grenade"
 				},
 				{
+					"keywordId": "slicewire-grenade",
+					"start": 98,
+					"end": 116,
+					"text": "Slicewire grenades"
+				},
+				{
 					"keywordId": "pattern:text-energy-grenade",
-					"start": 72,
-					"end": 94,
+					"start": 119,
+					"end": 141,
 					"text": "Grenade Ability Energy",
 					"colorClass": "text-energy-grenade"
 				},
 				{
 					"keywordId": "pattern:text-energy-ability",
-					"start": 205,
-					"end": 219,
+					"start": 252,
+					"end": 266,
 					"text": "Ability energy",
 					"colorClass": "text-energy-ability"
 				}

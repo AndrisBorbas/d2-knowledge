@@ -1,7 +1,7 @@
 {
-	"generatedAt": "2026-09-15T23:56:54.477Z",
-	"endgameGeneratedAt": "2026-09-15T23:56:46.224Z",
-	"damageGeneratedAt": "2026-09-15T23:56:47.433Z",
+	"generatedAt": "2026-09-18T00:57:25.935Z",
+	"endgameGeneratedAt": "2026-09-18T00:57:17.628Z",
+	"damageGeneratedAt": "2026-09-18T00:57:18.731Z",
 	"categories": [
 		{
 			"slug": "auto-rifles",
@@ -73509,56 +73509,6 @@
 		},
 		{
 			"id": "sustained:50",
-			"name": "Throwing Hammer",
-			"loadout": "Biotic Enhancements, Roaring Flames x3, max range",
-			"slot": "melee",
-			"family": "melee",
-			"distribution": "N/A",
-			"peakRate": {
-				"raw": "0.883",
-				"value": 0.883
-			},
-			"timeToEmpty": {
-				"raw": "N/A",
-				"value": null
-			},
-			"base": {
-				"raw": "564",
-				"value": 564
-			},
-			"perk": {
-				"raw": "",
-				"value": null
-			},
-			"surge": {
-				"raw": "",
-				"value": null
-			},
-			"buff": {
-				"raw": "4.650",
-				"value": 4.65
-			},
-			"debuff": {
-				"raw": "1.300",
-				"value": 1.3
-			},
-			"total": {
-				"raw": "INF",
-				"value": null
-			},
-			"dps": {
-				"raw": "5,019",
-				"value": 5019
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
-			"ref": {
-				"tab": "Sustained",
-				"row": 50,
-				"gid": 1455724279
-			}
-		},
-		{
-			"id": "sustained:51",
 			"name": "Lightweight sword",
 			"loadout": "1H2L combo, Jagged Edge + e. Impact, e. Burning Ambition + Chaos Reshaped x2 (Terciopelo-4bl), Pack Hunter, Argent Blade, Solar Fulmination",
 			"slot": "power",
@@ -73605,12 +73555,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 51,
+				"row": 50,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:52",
+			"id": "sustained:51",
 			"name": "The Lament",
 			"loadout": "2L1H combo, Lucent Blades x3, Burning Ambition, Argent Blade, Dawn Chorus, Solar Fulmination",
 			"slot": "power",
@@ -73657,14 +73607,14 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 52,
+				"row": 51,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:53",
+			"id": "sustained:52",
 			"name": "Aggressive shotgun",
-			"loadout": "body, Assault Mag, Timelost Magazine, e. Aggregate Charge + Trench Barrel (Found Verdict), melee damage excluded, Arc Compounding",
+			"loadout": "body, Assault Mag, Timelost Magazine, e. Aggregate Charge x3 + Trench Barrel (Found Verdict), melee damage excluded, Arc Compounding",
 			"slot": "special",
 			"family": "shotgun",
 			"notes": "1183ms s-m-s",
@@ -73709,12 +73659,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 53,
+				"row": 52,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:54",
+			"id": "sustained:53",
 			"name": "Winterbite",
 			"loadout": "melee, 2L1H cancel combo, Combination Blow x3, Triton Vice, excludes shatter damage, No Bell, simulated",
 			"slot": "melee",
@@ -73760,12 +73710,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 54,
+				"row": 53,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:55",
+			"id": "sustained:54",
 			"name": "Ergo Sum",
 			"loadout": "caster frame, The Perfect Fifth, Jagged Edge, 1H2L combo, Lucent Blades x3, Pack Hunter, Transcendent, excludes Transcendence 5% bonus, Argent Blade, Solar Fulmination",
 			"slot": "special",
@@ -73812,12 +73762,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 55,
+				"row": 54,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:56",
+			"id": "sustained:55",
 			"name": "Precision linear fusion rifle",
 			"loadout": "Enhanced Battery, Charge MW, e. Mega Kill Clip + Sword Logic x4 + Heretical Behavior (Eyes Unveiled)",
 			"slot": "power",
@@ -73864,12 +73814,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 56,
+				"row": 55,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:57",
+			"id": "sustained:56",
 			"name": "Wolfsbane",
 			"loadout": "swapping after HLLHLLHLLHLLH, Honed Edge + Jagged Edge, Burning Ambition, 10 lights to regenerate, Argent Blade, Solar Fulmination",
 			"slot": "power",
@@ -73915,12 +73865,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 57,
+				"row": 56,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:58",
+			"id": "sustained:57",
 			"name": "Solar grenade",
 			"loadout": "Sunbracers, Touch of Flame, Ember of Ashes, repeated activations",
 			"slot": "grenade",
@@ -73965,12 +73915,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Sustained",
-				"row": 58,
+				"row": 57,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:59",
+			"id": "sustained:58",
 			"name": "One Thousand Voices",
 			"loadout": "Ember of Ashes, catalyst, Particle Reconstruction",
 			"slot": "power",
@@ -74017,12 +73967,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 59,
+				"row": 58,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:60",
+			"id": "sustained:59",
 			"name": "Caster sword",
 			"loadout": "1H2L combo, Jagged Edge + e. Impact, Relentless Strikes + e. Surrounded (Ill Omen), Lucent Blades x3, Pack Hunter, Argent Blade",
 			"slot": "power",
@@ -74069,12 +74019,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 60,
+				"row": 59,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:61",
+			"id": "sustained:60",
 			"name": "Compressed wave grenade launcher",
 			"loadout": "Envious Arsenal + Elemental Honing x5 (Love and Death), impact included, Kinetic Impacts",
 			"slot": "power",
@@ -74121,12 +74071,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 61,
+				"row": 60,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:62",
+			"id": "sustained:61",
 			"name": "The Lament",
 			"loadout": "3L1H1R combo, Lucent Blades x3, Burning Ambition, Combination Argent Blade, Sword Storm Combo, Dawn Chorus, simulated",
 			"slot": "power",
@@ -74173,12 +74123,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 62,
+				"row": 61,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:63",
+			"id": "sustained:62",
 			"name": "Lightweight sword",
 			"loadout": "1H2L combo, Jagged Edge + e. Impact, Vorpal Weapon + Whirlwind Blade (Sullen Claw), Pack Hunter, Argent Blade",
 			"slot": "power",
@@ -74225,12 +74175,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 63,
+				"row": 62,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:64",
+			"id": "sustained:63",
 			"name": "Ergo Sum",
 			"loadout": "vortex frame, Unplanned Reprieve, Tempered Edge, heavy spam, Lucent Blades x3, Pack Hunter, Transcendent, excludes Transcendence 5% bonus, Argent Blade",
 			"slot": "special",
@@ -74276,12 +74226,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 64,
+				"row": 63,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:65",
+			"id": "sustained:64",
 			"name": "Ergo Sum",
 			"loadout": "wave frame, Unplanned Reprieve, Jagged Edge, heavy spam, Lucent Blades x3, Pack Hunter, Transcendent, excludes Transcendence 5% bonus, Argent Blade, boss against wall",
 			"slot": "special",
@@ -74327,12 +74277,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 65,
+				"row": 64,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:66",
+			"id": "sustained:65",
 			"name": "High-impact bow",
 			"loadout": "Heavy Bolts, e. Aggregate Charge x3 (Submersion), Guidance Ring x3, Argent Quiver",
 			"slot": "power",
@@ -74376,6 +74326,56 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6ea7f467abf481ad45895f698cde4b30.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6eeb62a30439cecc7699c22f3e1fb3cf.png",
+			"ref": {
+				"tab": "Sustained",
+				"row": 65,
+				"gid": 1455724279
+			}
+		},
+		{
+			"id": "sustained:66",
+			"name": "Grapple melee",
+			"loadout": "One-Two Punch, Banner of War, Biotic Enhancements",
+			"slot": "melee",
+			"family": "melee",
+			"distribution": "N/A",
+			"peakRate": {
+				"raw": "1.150",
+				"value": 1.15
+			},
+			"timeToEmpty": {
+				"raw": "N/A",
+				"value": null
+			},
+			"base": {
+				"raw": "778",
+				"value": 778
+			},
+			"perk": {
+				"raw": "",
+				"value": null
+			},
+			"surge": {
+				"raw": "",
+				"value": null
+			},
+			"buff": {
+				"raw": "5.775",
+				"value": 5.775
+			},
+			"debuff": {
+				"raw": "1.300",
+				"value": 1.3
+			},
+			"total": {
+				"raw": "INF",
+				"value": null
+			},
+			"dps": {
+				"raw": "5,081",
+				"value": 5081
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 66,
@@ -74539,6 +74539,56 @@
 		},
 		{
 			"id": "sustained:70",
+			"name": "Throwing Hammer",
+			"loadout": "Biotic Enhancements, Roaring Flames x3, max range",
+			"slot": "melee",
+			"family": "melee",
+			"distribution": "N/A",
+			"peakRate": {
+				"raw": "0.883",
+				"value": 0.883
+			},
+			"timeToEmpty": {
+				"raw": "N/A",
+				"value": null
+			},
+			"base": {
+				"raw": "564",
+				"value": 564
+			},
+			"perk": {
+				"raw": "",
+				"value": null
+			},
+			"surge": {
+				"raw": "",
+				"value": null
+			},
+			"buff": {
+				"raw": "4.650",
+				"value": 4.65
+			},
+			"debuff": {
+				"raw": "1.300",
+				"value": 1.3
+			},
+			"total": {
+				"raw": "INF",
+				"value": null
+			},
+			"dps": {
+				"raw": "5,019",
+				"value": 5019
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
+			"ref": {
+				"tab": "Sustained",
+				"row": 70,
+				"gid": 1455724279
+			}
+		},
+		{
+			"id": "sustained:71",
 			"name": "The Chaperone",
 			"loadout": "The Roadborn, Triple Tap, Kinetic Synthesis",
 			"slot": "special",
@@ -74584,12 +74634,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 70,
+				"row": 71,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:71",
+			"id": "sustained:72",
 			"name": "The Fourth Horseman",
 			"loadout": "body, Arc Compounding",
 			"slot": "special",
@@ -74635,12 +74685,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/247715dd42abef457b52ef37280c0e42.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 71,
+				"row": 72,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:72",
+			"id": "sustained:73",
 			"name": "The Lament",
 			"loadout": "2L1H combo, Lucent Blades x3, Burning Ambition, Argent Blade, Solar Fulmination",
 			"slot": "power",
@@ -74687,12 +74737,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 72,
+				"row": 73,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:73",
+			"id": "sustained:74",
 			"name": "Duality",
 			"loadout": "3 body pellet shots into On Black Wings x3 slugs",
 			"slot": "special",
@@ -74739,12 +74789,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 73,
+				"row": 74,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:74",
+			"id": "sustained:75",
 			"name": "Aggressive sniper",
 			"loadout": "Extended Mag, Triple Tap + Elemental Honing x5 + e. Accelerated Assault (Something Something), Networked Targeting x5, Sniper's Meditation, Kinetic Synthesis reloads",
 			"slot": "special",
@@ -74790,12 +74840,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4376a7d734583ae347acf9732aa3bb43.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 74,
+				"row": 75,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:75",
+			"id": "sustained:76",
 			"name": "Ergo Sum",
 			"loadout": "lightweight frame, Unplanned Reprieve, Jagged Edge, 1H2L combo, Lucent Blades x3, Pack Hunter, Transcendent, excludes Transcendence 5% bonus, Argent Blade",
 			"slot": "special",
@@ -74842,12 +74892,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 75,
+				"row": 76,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:76",
+			"id": "sustained:77",
 			"name": "Rapid-fire shotgun",
 			"loadout": "body, Elemental Honing x5 + Forge's Kin x3 (Threat Level), Kinetic Synthesis reloads",
 			"slot": "special",
@@ -74893,12 +74943,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 76,
+				"row": 77,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:77",
+			"id": "sustained:78",
 			"name": "Precision linear fusion rifle",
 			"loadout": "Enhanced Battery, Charge MW, e. Mega Kill Clip + Elemental Honing x5 + Heretical Behavior (Eyes Unveiled)",
 			"slot": "power",
@@ -74945,12 +74995,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 77,
+				"row": 78,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:78",
+			"id": "sustained:79",
 			"name": "Adaptive grenade launcher",
 			"loadout": "Spike Grenades, Envious Arsenal + e. Bait and Switch (Bitter/Sweet), Arc Compounding, Kinetic Impacts",
 			"slot": "power",
@@ -74997,12 +75047,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 78,
+				"row": 79,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:79",
+			"id": "sustained:80",
 			"name": "Wolfsbane",
 			"loadout": "swapping after HLLHLLHLLHLLH, Honed Edge + Jagged Edge, 10 lights to regenerate, Argent Blade",
 			"slot": "power",
@@ -75048,12 +75098,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 79,
+				"row": 80,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:80",
+			"id": "sustained:81",
 			"name": "Two-Tailed Fox",
 			"loadout": "Ember of Ashes, Dawn Chorus, Argent Ordnance",
 			"slot": "power",
@@ -75099,12 +75149,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 80,
+				"row": 81,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:81",
+			"id": "sustained:82",
 			"name": "Rapid-fire sniper",
 			"loadout": "Tactical Mag, Timelost Magazine, e. Fourth Time's the Charm + Elemental Honing x5 (Praedyth's Revenge), Networked Targeting x5, Sniper's Meditation, Kinetic Synthesis reloads",
 			"slot": "special",
@@ -75150,12 +75200,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/36418dde751148bd3b95a023d491ea73.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 81,
+				"row": 82,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:82",
+			"id": "sustained:83",
 			"name": "One Thousand Voices",
 			"loadout": "catalyst, Particle Reconstruction",
 			"slot": "power",
@@ -75202,12 +75252,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 82,
+				"row": 83,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:83",
+			"id": "sustained:84",
 			"name": "The Prospector",
 			"loadout": "typical boss model, Arc Compounding, Kinetic Impacts",
 			"slot": "power",
@@ -75254,12 +75304,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 83,
+				"row": 84,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:84",
+			"id": "sustained:85",
 			"name": "Vortex sword",
 			"loadout": "heavy spam, Jagged Edge + e. Impact, Frenzy + e. Surrounded (Falling Guillotine), Lucent Blades x3, Pack Hunter, Argent Blade",
 			"slot": "power",
@@ -75305,12 +75355,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 84,
+				"row": 85,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:85",
+			"id": "sustained:86",
 			"name": "Adaptive sniper",
 			"loadout": "Appended Mag, e. Rewind Rounds + Elemental Honing x5 (Tranquility), Networked Targeting x5, Sniper's Meditation, Kinetic Synthesis reloads",
 			"slot": "special",
@@ -75356,12 +75406,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 85,
+				"row": 86,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:86",
+			"id": "sustained:87",
 			"name": "Throwing Hammer",
 			"loadout": "One-Two Punch, Forgemaster, Perfect Recall, Roaring Flames x3, close range recall, includes <101 Weapons rapid-fire shotgun",
 			"slot": "melee",
@@ -75406,12 +75456,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2db60293ac428ae066a5bb2fed04f6e7.jpg",
 			"ref": {
 				"tab": "Sustained",
-				"row": 86,
+				"row": 87,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:87",
+			"id": "sustained:88",
 			"name": "The Lament",
 			"loadout": "3L1H1R combo, Lucent Blades x3, Burning Ambition, Combination Argent Blade, Sword Storm Combo",
 			"slot": "power",
@@ -75458,12 +75508,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 87,
+				"row": 88,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:88",
+			"id": "sustained:89",
 			"name": "Whisper of the Worm",
 			"loadout": "Whispered Breathing, Sniper's Meditation, Incendiary Rifle Rounds, Solar Fulmination",
 			"slot": "power",
@@ -75509,12 +75559,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 88,
+				"row": 89,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:89",
+			"id": "sustained:90",
 			"name": "Rapid-fire grenade launcher",
 			"loadout": "Spike Grenades, Envious Arsenal + Elemental Honing x5 (VS Chill Inhibitor), Kinetic Impacts",
 			"slot": "power",
@@ -75561,12 +75611,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 89,
+				"row": 90,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:90",
+			"id": "sustained:91",
 			"name": "Micro-missile grenade launcher",
 			"loadout": "Spike Grenades, Slideshot + Elemental Honing x5 (Gizmo Weft), Energy Acceleration, simulated",
 			"slot": "special",
@@ -75612,12 +75662,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6eeb62a30439cecc7699c22f3e1fb3cf.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 90,
+				"row": 91,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:91",
+			"id": "sustained:92",
 			"name": "Euphony",
 			"loadout": "starts at 0 stacks, Thread of Evolution, includes Threadlings, Pack Tactics (simplified underestimate of 3 stack start)",
 			"slot": "special",
@@ -75664,12 +75714,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 91,
+				"row": 92,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:92",
+			"id": "sustained:93",
 			"name": "Vortex sword",
 			"loadout": "heavy spam, Jagged Edge + e. Impact, Frenzy + Elemental Honing x5 (Falling Guillotine), Lucent Blades x3, Pack Hunter, Argent Blade",
 			"slot": "power",
@@ -75715,12 +75765,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/60d34bc853c51063b79592233c3661d4.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 92,
+				"row": 93,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:93",
+			"id": "sustained:94",
 			"name": "Adaptive sniper",
 			"loadout": "Appended Mag, e. Fourth Time's the Charm + Elemental Honing x5 + e. Accelerated Assault (Adored), Networked Targeting x5, Sniper's Meditation",
 			"slot": "special",
@@ -75767,12 +75817,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 93,
+				"row": 94,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:94",
+			"id": "sustained:95",
 			"name": "Adaptive grenade launcher",
 			"loadout": "Spike Grenades, Envious Arsenal + Elemental Honing x5 (Edge Transit), Kinetic Impacts",
 			"slot": "power",
@@ -75819,12 +75869,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 94,
+				"row": 95,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:95",
+			"id": "sustained:96",
 			"name": "The Lament",
 			"loadout": "2L1H1R combo, Lucent Blades x3, Burning Ambition, Argent Blade",
 			"slot": "power",
@@ -75871,12 +75921,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 95,
+				"row": 96,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:96",
+			"id": "sustained:97",
 			"name": "The Lament",
 			"loadout": "4L1H1R combo, Lucent Blades x3, Burning Ambition, Combination Argent Blade, Sword Storm Combo",
 			"slot": "power",
@@ -75923,14 +75973,14 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 96,
+				"row": 97,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:97",
+			"id": "sustained:98",
 			"name": "Hierarchy of Needs",
-			"loadout": "Guidance Ring x3, Argent Quiver, fireteam scaling",
+			"loadout": "Guidance Ring x2, Argent Quiver, fireteam scaling",
 			"slot": "primary",
 			"family": "bow",
 			"distribution": "N/A",
@@ -75974,12 +76024,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/41d05b7cb5cc0a384af07ee9b7d36dd2.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 97,
+				"row": 98,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:98",
+			"id": "sustained:99",
 			"name": "New Land Beyond",
 			"loadout": "starts at The Master x20, sprint cancelling, Kinetic Synthesis, Sniper's Meditation",
 			"slot": "special",
@@ -76025,12 +76075,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 98,
+				"row": 99,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:99",
+			"id": "sustained:100",
 			"name": "Whisper of the Worm",
 			"loadout": "Whispered Breathing, Sniper's Meditation",
 			"slot": "power",
@@ -76076,12 +76126,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 99,
+				"row": 100,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:100",
+			"id": "sustained:101",
 			"name": "Merciless",
 			"slot": "special",
 			"family": "fusion",
@@ -76127,12 +76177,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 100,
+				"row": 101,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:101",
+			"id": "sustained:102",
 			"name": "Compressed wave grenade launcher",
 			"loadout": "Envious Arsenal + Elemental Honing x5 (Love and Death), Kinetic Impacts",
 			"slot": "power",
@@ -76179,12 +76229,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 101,
+				"row": 102,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:102",
+			"id": "sustained:103",
 			"name": "Choir of One",
 			"loadout": "projectile mode, spaced*",
 			"slot": "special",
@@ -76231,12 +76281,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 102,
+				"row": 103,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:103",
+			"id": "sustained:104",
 			"name": "Lightweight shotgun",
 			"loadout": "body, Assault Mag, Elemental Honing x5 (Starscape Null), reload cancelling",
 			"slot": "special",
@@ -76283,12 +76333,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 103,
+				"row": 104,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:104",
+			"id": "sustained:105",
 			"name": "Precision linear fusion rifle",
 			"loadout": "Enhanced Battery + e. Backup Mag, Charge MW, e. Fourth Time's the Charm + Elemental Honing x5 + Heretical Behavior (Eyes Unveiled), Particle Reconstruction",
 			"slot": "power",
@@ -76335,12 +76385,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 104,
+				"row": 105,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:105",
+			"id": "sustained:106",
 			"name": "Lord of Wolves",
 			"loadout": "Release the Wolves, hip-fire, precision, includes ignition",
 			"slot": "special",
@@ -76386,12 +76436,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 105,
+				"row": 106,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:106",
+			"id": "sustained:107",
 			"name": "High-impact sniper",
 			"loadout": "sprint cancelling, Elemental Honing x5 + e. Accelerated Assault (The Helmsman), Networked Targeting x5, Sniper's Meditation",
 			"slot": "special",
@@ -76438,12 +76488,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 106,
+				"row": 107,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:107",
+			"id": "sustained:108",
 			"name": "Leviathan's Breath",
 			"loadout": "Archer's Tempo",
 			"slot": "power",
@@ -76489,12 +76539,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0b212b58a961f150708bca95095e0ecb.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 107,
+				"row": 108,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:108",
+			"id": "sustained:109",
 			"name": "Pulse grenade",
 			"loadout": "Empowered Grenade x2, Touch of Thunder, Spark of Magnitude, Feel the Flame",
 			"slot": "grenade",
@@ -76539,12 +76589,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
 			"ref": {
 				"tab": "Sustained",
-				"row": 108,
+				"row": 109,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:109",
+			"id": "sustained:110",
 			"name": "Euphony",
 			"loadout": "starts at 0 stacks, includes Threadlings, Pack Tactics (simplified underestimate of 3 stack start)",
 			"slot": "special",
@@ -76591,12 +76641,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/661c84a377389a3b8a1fc38b44189b41.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 109,
+				"row": 110,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:110",
+			"id": "sustained:111",
 			"name": "One Thousand Voices",
 			"loadout": "Ember of Ashes, Particle Reconstruction",
 			"slot": "power",
@@ -76643,12 +76693,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 110,
+				"row": 111,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:111",
+			"id": "sustained:112",
 			"name": "One Thousand Voices",
 			"loadout": "Ember of Ashes, catalyst, Particle Reconstruction, no ignitions",
 			"slot": "power",
@@ -76695,12 +76745,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 111,
+				"row": 112,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:112",
+			"id": "sustained:113",
 			"name": "Praxic Blade",
 			"loadout": "3L1H combo, Offensive Form, Forceful Blade III, Impact Core (solar), Kinetic Synthesis, Combination Argent Blade, Sword Storm Combo",
 			"slot": "special",
@@ -76746,12 +76796,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/95f7754d52d6016fdc445fb62aa7a31e.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 112,
+				"row": 113,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:113",
+			"id": "sustained:114",
 			"name": "Rapid-fire sniper",
 			"loadout": "Tactical Mag, e. Fourth Time's the Charm + Elemental Honing x5 (Omniscient Eye), Networked Targeting x5, Sniper's Meditation, Incendiary Rifle Rounds, Solar Fulmination",
 			"slot": "special",
@@ -76798,12 +76848,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 113,
+				"row": 114,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:114",
+			"id": "sustained:115",
 			"name": "Cull's Shadow",
 			"loadout": "corrupted melees, Combination Blow x3, Biotic Enhancements",
 			"slot": "melee",
@@ -76849,12 +76899,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 114,
+				"row": 115,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:115",
+			"id": "sustained:116",
 			"name": "Bastion",
 			"loadout": "Saint's Fury, includes melee time",
 			"slot": "special",
@@ -76901,12 +76951,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/ede19a0e1a54564243b0e5e8a18bde84.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 115,
+				"row": 116,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:116",
+			"id": "sustained:117",
 			"name": "High-impact bow",
 			"loadout": "Heavy Bolts, e. Aggregate Charge x3 (Submersion), Argent Quiver",
 			"slot": "power",
@@ -76952,12 +77002,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6eeb62a30439cecc7699c22f3e1fb3cf.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 116,
+				"row": 117,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:117",
+			"id": "sustained:118",
 			"name": "Adaptive burst linear fusion rifle",
 			"loadout": "Accelerated Coils, Charge MW, e. Rewind Rounds + Chaos Reshaped x2 (Briar's Contempt), Particle Reconstruction",
 			"slot": "power",
@@ -77004,12 +77054,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/fc02418ad2002351a3f88faa5b14eb88.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 117,
+				"row": 118,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:118",
+			"id": "sustained:119",
 			"name": "The Lament",
 			"loadout": "2L1H1R combo, Lucent Blades x3, Argent Blade",
 			"slot": "power",
@@ -77056,12 +77106,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/bce51cf90464e28026140df77c4eb6ce.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 118,
+				"row": 119,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:119",
+			"id": "sustained:120",
 			"name": "New Land Beyond",
 			"loadout": "starts at The Master x20, Rally Barricade, Sniper's Meditation",
 			"slot": "special",
@@ -77107,12 +77157,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 119,
+				"row": 120,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:120",
+			"id": "sustained:121",
 			"name": "Two-Tailed Fox",
 			"loadout": "Ember of Ashes, Argent Ordnance",
 			"slot": "power",
@@ -77158,12 +77208,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 120,
+				"row": 121,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:121",
+			"id": "sustained:122",
 			"name": "Sleeper Simulant",
 			"slot": "power",
 			"family": "linear",
@@ -77207,56 +77257,6 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/af232d6f94c12a4cf1080e659264294f.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/da5f961ef97b78293cc498978c10e178.png",
-			"ref": {
-				"tab": "Sustained",
-				"row": 121,
-				"gid": 1455724279
-			}
-		},
-		{
-			"id": "sustained:122",
-			"name": "Grapple melee",
-			"loadout": "One-Two Punch, Banner of War, Biotic Enhancements",
-			"slot": "melee",
-			"family": "melee",
-			"distribution": "N/A",
-			"peakRate": {
-				"raw": "1.500",
-				"value": 1.5
-			},
-			"timeToEmpty": {
-				"raw": "N/A",
-				"value": null
-			},
-			"base": {
-				"raw": "778",
-				"value": 778
-			},
-			"perk": {
-				"raw": "",
-				"value": null
-			},
-			"surge": {
-				"raw": "",
-				"value": null
-			},
-			"buff": {
-				"raw": "5.775",
-				"value": 5.775
-			},
-			"debuff": {
-				"raw": "1.300",
-				"value": 1.3
-			},
-			"total": {
-				"raw": "INF",
-				"value": null
-			},
-			"dps": {
-				"raw": "3,895",
-				"value": 3895
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Sustained",
 				"row": 122,
@@ -84182,6 +84182,55 @@
 		},
 		{
 			"id": "sustained:258",
+			"name": "Mantle of Battle Harmony",
+			"loadout": "Harmonic Munitions, max rate",
+			"slot": "tick",
+			"family": "effect",
+			"distribution": "N/A",
+			"peakRate": {
+				"raw": "1.000",
+				"value": 1
+			},
+			"timeToEmpty": {
+				"raw": "N/A",
+				"value": null
+			},
+			"base": {
+				"raw": "117",
+				"value": 117
+			},
+			"perk": {
+				"raw": "",
+				"value": null
+			},
+			"surge": {
+				"raw": "",
+				"value": null
+			},
+			"buff": {
+				"raw": "",
+				"value": null
+			},
+			"debuff": {
+				"raw": "1.300",
+				"value": 1.3
+			},
+			"total": {
+				"raw": "INF",
+				"value": null
+			},
+			"dps": {
+				"raw": "153",
+				"value": 153
+			},
+			"ref": {
+				"tab": "Sustained",
+				"row": 258,
+				"gid": 1455724279
+			}
+		},
+		{
+			"id": "sustained:259",
 			"name": "Unravel",
 			"loadout": "typical rate, Improved Unraveling",
 			"slot": "tick",
@@ -84225,12 +84274,12 @@
 			},
 			"ref": {
 				"tab": "Sustained",
-				"row": 258,
+				"row": 259,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:259",
+			"id": "sustained:260",
 			"name": "Unravel",
 			"loadout": "typical rate",
 			"slot": "tick",
@@ -84274,7 +84323,7 @@
 			},
 			"ref": {
 				"tab": "Sustained",
-				"row": 259,
+				"row": 260,
 				"gid": 1455724279
 			}
 		}
@@ -90359,7 +90408,7 @@
 			"id": "swap:151",
 			"name": "Bequest",
 			"loadout": "heavy attack, Jagged Edge, Elemental Honing x5 (Bequest), Pack Hunter",
-			"attackType": "sword",
+			"attackType": "swap",
 			"base": {
 				"raw": "1,886",
 				"value": 1886
@@ -91126,7 +91175,7 @@
 			"id": "swap:170",
 			"name": "Caster sword",
 			"loadout": "heavy attack, Jagged Edge, Elemental Honing x5 (Night Terror), Pack Hunter",
-			"attackType": "sword",
+			"attackType": "swap",
 			"base": {
 				"raw": "1,838",
 				"value": 1838
@@ -91287,6 +91336,46 @@
 		},
 		{
 			"id": "swap:174",
+			"name": "Crackshot",
+			"loadout": "average, includes ignition and Radiant",
+			"attackType": "swap",
+			"base": {
+				"raw": "1,451",
+				"value": 1451
+			},
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"total": {
+				"raw": "3,324",
+				"value": 3324
+			},
+			"swapTime": {
+				"raw": "1.183",
+				"value": 1.183
+			},
+			"totalTime": {
+				"raw": "1.183",
+				"value": 1.183
+			},
+			"swapDps": {
+				"raw": "2,809",
+				"value": 2809
+			},
+			"trueDps": {
+				"raw": "2,809",
+				"value": 2809
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c1f8cb8d59fc2d885b607e68020465b6.jpg",
+			"ref": {
+				"tab": "Swap",
+				"row": 174,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:175",
 			"name": "Grapple melee",
 			"loadout": "One-Two Punch",
 			"attackType": "melee",
@@ -91321,12 +91410,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5d65ba9eb04c2f3760eba0b5eec9be8a.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 174,
+				"row": 175,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:175",
+			"id": "swap:176",
 			"name": "Whirling Ovation",
 			"loadout": "no Anticipation, Argent Ordnance",
 			"attackType": "swap",
@@ -91362,12 +91451,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 175,
+				"row": 176,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:176",
+			"id": "swap:177",
 			"name": "Burning Maul",
 			"loadout": "light attacks, Roaring Flames x3, Sol Invictus, Ember of Ashes, Biotic Enhancements, Limit Break",
 			"attackType": "super",
@@ -91402,12 +91491,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a0391bd2a8cf73c58cec261961db0136.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 176,
+				"row": 177,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:177",
+			"id": "swap:178",
 			"name": "Shadowshot: Moebius Quiver",
 			"loadout": "both volleys, assumes no other debuff, Limit Break",
 			"attackType": "super",
@@ -91442,12 +91531,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/986e8f2dd0699371d605a331bb63742a.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 177,
+				"row": 178,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:178",
+			"id": "swap:179",
 			"name": "Pulse grenade",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -91482,12 +91571,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/11837de6306d28df467178af097d748b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 178,
+				"row": 179,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:179",
+			"id": "swap:180",
 			"name": "Malfeasance",
 			"loadout": "17 shot burst, Illegally Modded Holster",
 			"attackType": "LP",
@@ -91523,12 +91612,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/aeb95eb1abe8e45e1fe2573d6b3ab3c5.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 179,
+				"row": 180,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:180",
+			"id": "swap:181",
 			"name": "Song of Flame",
 			"loadout": "Feast of Light x6 + Necrotic Grip, wisp/snap cycling, Facet of Courage, Shieldcrush",
 			"attackType": "super",
@@ -91563,12 +91652,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 180,
+				"row": 181,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:181",
+			"id": "swap:182",
 			"name": "Tessellation",
 			"loadout": "Property: Irreducible, includes re-proc time, Transcendent but excludes 5%",
 			"attackType": "burst",
@@ -91604,12 +91693,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/2dc17f123b7449b14144e76cfbeb2309.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 181,
+				"row": 182,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:182",
+			"id": "swap:183",
 			"name": "Fists of Havoc",
 			"loadout": "light attacks, Biotic Enhancements, Shieldcrush",
 			"attackType": "super",
@@ -91644,12 +91733,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/5bc4f4029b38fd41d0232460b4295600.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 182,
+				"row": 183,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:183",
+			"id": "swap:184",
 			"name": "Rapid-fire fusion rifle",
 			"loadout": "Charge MW, Accelerated Coils, Aggregate Charge x3 (Cartesian Coordinate), 1 shot",
 			"attackType": "swap",
@@ -91685,12 +91774,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/7b48b09fbb50634680168d5880b16bc9.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 183,
+				"row": 184,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:184",
+			"id": "swap:185",
 			"name": "Vex Mythoclast",
 			"loadout": "Temporal Unlimiter",
 			"attackType": "burst",
@@ -91726,12 +91815,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/36418dde751148bd3b95a023d491ea73.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 184,
+				"row": 185,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:185",
+			"id": "swap:186",
 			"name": "Tractor Cannon",
 			"attackType": "swap",
 			"base": {
@@ -91766,12 +91855,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/4f28dc0f39238fe25d298a894ea71389.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 185,
+				"row": 186,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:186",
+			"id": "swap:187",
 			"name": "Scatter grenade",
 			"loadout": "Chaos Accelerant",
 			"attackType": "grenade",
@@ -91806,12 +91895,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/562f1b6ca7ecda82248f4b02e833d211.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 186,
+				"row": 187,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:187",
+			"id": "swap:188",
 			"name": "Winter's Wrath",
 			"loadout": "Ballidorse Wrathweavers, light-heavy cycle, Whisper of Fissures, Limit Break",
 			"attackType": "super",
@@ -91846,12 +91935,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c9f25c8f6d5e647366ffc4f71a825961.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 187,
+				"row": 188,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:188",
+			"id": "swap:189",
 			"name": "Song of Flame",
 			"loadout": "snap spam, Shieldcrush",
 			"attackType": "super",
@@ -91886,12 +91975,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 188,
+				"row": 189,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:189",
+			"id": "swap:190",
 			"name": "Song of Flame",
 			"loadout": "Claws of Ahamkara + Necrotic Grip, snap spam, Facet of Courage, Shieldcrush",
 			"attackType": "super",
@@ -91926,12 +92015,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ed2e5deb9b67c0120468ee136f98f2b2.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 189,
+				"row": 190,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:190",
+			"id": "swap:191",
 			"name": "Precision hand cannon",
 			"loadout": "17 shot burst, e. Precision Instrument (Sightline Survey), Illegally Modded Holster",
 			"attackType": "LP",
@@ -91967,12 +92056,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/9bfaa5536772e2f3ef1252813a21c4d1.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 190,
+				"row": 191,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:191",
+			"id": "swap:192",
 			"name": "Tripmine grenade",
 			"loadout": "Young Ahamkara's Spine, Ember of Ashes",
 			"attackType": "grenade",
@@ -92007,12 +92096,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/05609c418be3a985a640632ccaca796b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 191,
+				"row": 192,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:192",
+			"id": "swap:193",
 			"name": "Solar grenade",
 			"loadout": "Ember of Ashes",
 			"attackType": "grenade",
@@ -92047,12 +92136,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/720bf9cc73dce537c5ee5577e0edcf9b.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 192,
+				"row": 193,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:193",
+			"id": "swap:194",
 			"name": "Electrified Snare",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -92087,12 +92176,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9aba9869bd8266696a1fdad190a65b4c.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 193,
+				"row": 194,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:194",
+			"id": "swap:195",
 			"name": "Vortex grenade",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -92127,12 +92216,53 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/12997544665705bbbd94742268ce7091.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 194,
+				"row": 195,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:195",
+			"id": "swap:196",
+			"name": "Adaptive SMG",
+			"loadout": "e. Rewind Rounds + e. Target Lock (Antedate), Peacekeepers",
+			"attackType": "swap",
+			"base": {
+				"raw": "59",
+				"value": 59
+			},
+			"shots": {
+				"raw": "93",
+				"value": 93
+			},
+			"total": {
+				"raw": "13,529",
+				"value": 13529
+			},
+			"swapTime": {
+				"raw": "6.699",
+				"value": 6.699
+			},
+			"totalTime": {
+				"raw": "6.699",
+				"value": 6.699
+			},
+			"swapDps": {
+				"raw": "2,020",
+				"value": 2020
+			},
+			"trueDps": {
+				"raw": "2,020",
+				"value": 2020
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/2ab789069deeb4032b8ad2ee108b9a3b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/6129365b4fad6754f2b8c4478fc3c4ac.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 196,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:197",
 			"name": "Threadling grenade",
 			"loadout": "Thread of Evolution",
 			"attackType": "grenade",
@@ -92167,12 +92297,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/18a14aeac121b2a5c8699556b63e38fd.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 195,
+				"row": 197,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:196",
+			"id": "swap:198",
 			"name": "Freezing Singularity",
 			"loadout": "Facet of Courage, Facet of Ruin",
 			"attackType": "grenade",
@@ -92207,12 +92337,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/6d0151b4c04668eb6272dc58ecacc3aa.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 196,
+				"row": 198,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:197",
+			"id": "swap:199",
 			"name": "Twilight Arsenal",
 			"loadout": "axe heavy attack",
 			"attackType": "super",
@@ -92247,12 +92377,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 197,
+				"row": 199,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:198",
+			"id": "swap:200",
 			"name": "Storm grenade",
 			"loadout": "Facet of Courage",
 			"attackType": "grenade",
@@ -92287,12 +92417,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9f4ace2bd6ab050148f54ff6f4ce9a0f.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 198,
+				"row": 200,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:199",
+			"id": "swap:201",
 			"name": "Incinerator Snap",
 			"loadout": "Ember of Ashes",
 			"attackType": "melee",
@@ -92327,12 +92457,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e9dee44a01ea409afe80a939b6341843.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 199,
+				"row": 201,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:200",
+			"id": "swap:202",
 			"name": "Threadling grenade",
 			"attackType": "grenade",
 			"base": {
@@ -92366,12 +92496,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/18a14aeac121b2a5c8699556b63e38fd.jpg",
 			"ref": {
 				"tab": "Swap",
-				"row": 200,
+				"row": 202,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:201",
+			"id": "swap:203",
 			"name": "Twilight Arsenal",
 			"loadout": "axe light attack spam",
 			"attackType": "super",
@@ -92406,12 +92536,12 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/ad8fd9cd668f4d980b29e26ade9e4369.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 201,
+				"row": 203,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:202",
+			"id": "swap:204",
 			"name": "Arcane Needle",
 			"attackType": "melee",
 			"base": {
@@ -92445,7 +92575,7 @@
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/e996524beb9d4371b1adc1212a6accdf.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 202,
+				"row": 204,
 				"gid": 544204052
 			}
 		}
@@ -93322,8 +93452,8 @@
 				"value": 530451
 			},
 			"effectiveHealth": {
-				"raw": "589,792",
-				"value": 589792
+				"raw": "530,451",
+				"value": 530451
 			},
 			"species": "Vex",
 			"mechanics": "Teleports, accelerator rings, laser detain",
@@ -93332,12 +93462,12 @@
 			"range": "Varies",
 			"phase": "91.5",
 			"clearableDps": {
-				"raw": "358",
-				"value": 358
+				"raw": "322",
+				"value": 322
 			},
 			"onePhaseDps": {
-				"raw": "1074",
-				"value": 1074
+				"raw": "966",
+				"value": 966
 			},
 			"mods": [
 				"No"
@@ -93358,8 +93488,8 @@
 				"value": 537446
 			},
 			"effectiveHealth": {
-				"raw": "597,570",
-				"value": 597570
+				"raw": "537,446",
+				"value": 537446
 			},
 			"species": "Vex",
 			"mechanics": "Rotating eye lights",
@@ -93368,12 +93498,12 @@
 			"range": "Close to medium",
 			"phase": "90.9",
 			"clearableDps": {
-				"raw": "365",
-				"value": 365
+				"raw": "328",
+				"value": 328
 			},
 			"onePhaseDps": {
-				"raw": "1096",
-				"value": 1096
+				"raw": "985",
+				"value": 985
 			},
 			"mods": [
 				"No"
@@ -93394,8 +93524,8 @@
 				"value": 250154
 			},
 			"effectiveHealth": {
-				"raw": "278,139",
-				"value": 278139
+				"raw": "250,154",
+				"value": 250154
 			},
 			"species": "Vex",
 			"mechanics": "Diastole pulses",
@@ -93404,12 +93534,12 @@
 			"range": "Close to medium",
 			"phase": "45.65",
 			"clearableDps": {
-				"raw": "338",
-				"value": 338
+				"raw": "304",
+				"value": 304
 			},
 			"onePhaseDps": {
-				"raw": "1015",
-				"value": 1015
+				"raw": "913",
+				"value": 913
 			},
 			"mods": [
 				"No"
@@ -93431,8 +93561,8 @@
 				"value": 756068
 			},
 			"effectiveHealth": {
-				"raw": "840,649",
-				"value": 840649
+				"raw": "756,068",
+				"value": 756068
 			},
 			"species": "Vex",
 			"mechanics": "Chronon refresh, rotating lasers",
@@ -93441,12 +93571,12 @@
 			"range": "Close",
 			"phase": "80",
 			"clearableDps": {
-				"raw": "649",
-				"value": 649
+				"raw": "583",
+				"value": 583
 			},
 			"onePhaseDps": {
-				"raw": "1946",
-				"value": 1946
+				"raw": "1750",
+				"value": 1750
 			},
 			"mods": [
 				"No"
@@ -93468,8 +93598,8 @@
 				"value": 339461
 			},
 			"effectiveHealth": {
-				"raw": "549,739",
-				"value": 549739
+				"raw": "339,461",
+				"value": 339461
 			},
 			"species": "Vex",
 			"mechanics": "Teleports, accelerator rings, laser detain, clone final",
@@ -93504,8 +93634,8 @@
 				"value": 554669
 			},
 			"effectiveHealth": {
-				"raw": "898,257",
-				"value": 898257
+				"raw": "554,669",
+				"value": 554669
 			},
 			"species": "Vex",
 			"mechanics": "Teleports, rotating shields",
@@ -93540,8 +93670,8 @@
 				"value": 272822
 			},
 			"effectiveHealth": {
-				"raw": "441,821",
-				"value": 441821
+				"raw": "272,822",
+				"value": 272822
 			},
 			"species": "Vex",
 			"mechanics": "Diastole pulses",
@@ -93576,8 +93706,8 @@
 				"value": 761063
 			},
 			"effectiveHealth": {
-				"raw": "1,232,501",
-				"value": 1232501
+				"raw": "761,063",
+				"value": 761063
 			},
 			"species": "Vex",
 			"mechanics": "Rotating lasers, interact crystals",

@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-15T23:56:44.932Z",
+	"generatedAt": "2026-09-18T00:57:16.125Z",
 	"sheetId": "1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4",
 	"tabIds": {
 		"Weapon Perks": 1662574278,
@@ -3007,7 +3007,7 @@
 				"Upon inflicting a Darkness Debuff on a Non-Boss Combatants:\n\n75% Increased Solar Damage dealt.\nIndicated by getting Yellow Numbers on Solar Damage.\nStacks with other Weaken sources.\n\nIncurs a 2? second cooldown between additional Darkness Debuffs inflicting the Cauterized Darkness debuff.",
 				"",
 				"",
-				"While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk."
+				"While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active."
 			],
 			[],
 			[
@@ -3552,7 +3552,7 @@
 				"While a Solar or Prismatic Subclass is equipped:\n\nOrbs of Power grant Radiant for 10+5 seconds.",
 				"",
 				"",
-				"While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk."
+				"While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active."
 			],
 			[],
 			[
@@ -8823,7 +8823,7 @@
 				"",
 				"Generation",
 				"",
-				"Upon dealing damage:\nGrants a variable amount of Grenade Ability Energy.\n\nGrenade Ability Energy Gains vary depending on the source, as well as the amount of damage.\nGenerally, the more damage something deals, the more Ability Energy it will grant.",
+				"Upon dealing damage:\nGrants a variable amount of Grenade Ability Energy.\nDoes not grant Slicewire Grenade Energy.\n\nGrenade Ability Energy Gains vary depending on the source, as well as the amount of damage.\nGenerally, the more damage something deals, the more Ability Energy it will grant.",
 				"",
 				"",
 				"",
@@ -65235,7 +65235,7 @@
 		[
 			"Artifact Perks:37:7",
 			{
-				"text": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.",
+				"text": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active.",
 				"runs": [
 					{
 						"start": 0,
@@ -65402,8 +65402,13 @@
 					},
 					{
 						"start": 325,
-						"end": 403,
+						"end": 404,
 						"color": "rgb(99, 210, 117)"
+					},
+					{
+						"start": 404,
+						"end": 477,
+						"color": "rgb(224, 102, 102)"
 					}
 				]
 			}
@@ -72439,7 +72444,7 @@
 		[
 			"Artifact Perks:115:7",
 			{
-				"text": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.",
+				"text": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active.",
 				"runs": [
 					{
 						"start": 0,
@@ -72606,8 +72611,13 @@
 					},
 					{
 						"start": 325,
-						"end": 403,
+						"end": 404,
 						"color": "rgb(99, 210, 117)"
+					},
+					{
+						"start": 404,
+						"end": 477,
+						"color": "rgb(224, 102, 102)"
 					}
 				]
 			}
@@ -118904,7 +118914,7 @@
 		[
 			"Strand:21:3",
 			{
-				"text": "Upon dealing damage:\nGrants a variable amount of Grenade Ability Energy.\n\nGrenade Ability Energy Gains vary depending on the source, as well as the amount of damage.\nGenerally, the more damage something deals, the more Ability Energy it will grant.",
+				"text": "Upon dealing damage:\nGrants a variable amount of Grenade Ability Energy.\nDoes not grant Slicewire Grenade Energy.\n\nGrenade Ability Energy Gains vary depending on the source, as well as the amount of damage.\nGenerally, the more damage something deals, the more Ability Energy it will grant.",
 				"runs": [
 					{
 						"start": 0,
@@ -118925,25 +118935,39 @@
 					},
 					{
 						"start": 71,
-						"end": 74
+						"end": 73
 					},
 					{
-						"start": 74,
-						"end": 166,
+						"start": 73,
+						"end": 113,
+						"color": "rgb(224, 102, 102)"
+					},
+					{
+						"start": 113,
+						"end": 114,
+						"color": "rgb(224, 102, 102)"
+					},
+					{
+						"start": 114,
+						"end": 115
+					},
+					{
+						"start": 115,
+						"end": 207,
 						"color": "rgb(224, 162, 97)"
 					},
 					{
-						"start": 166,
-						"end": 219
+						"start": 207,
+						"end": 260
 					},
 					{
-						"start": 219,
-						"end": 233,
+						"start": 260,
+						"end": 274,
 						"color": "rgb(246, 178, 107)"
 					},
 					{
-						"start": 233,
-						"end": 248
+						"start": 274,
+						"end": 289
 					}
 				]
 			}

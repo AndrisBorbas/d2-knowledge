@@ -67581,6 +67581,594 @@
 			"officialAnnotations": []
 		},
 		{
+			"id": "clarity:988980154:banner-of-war",
+			"tab": "Strand",
+			"section": "Aspect",
+			"groups": [
+				"Strand",
+				"Aspect",
+				"Abilities",
+				"Titan"
+			],
+			"source": {
+				"tab": "clarity",
+				"row": 403,
+				"column": 0
+			},
+			"title": "Banner of War",
+			"description": "Scoring a kill with your Melee, Sword, Glaive, Super Light Attack, or Finisher begins 0 'Banner of War' for 15 seconds. Banner of War has a radius of 10 meters and stacks up to 4 times.\n\nAllies within the radius are granted the following benefits:\n• 100% Increased Base Melee Damage\n• 40% Increased 1 Bladefury Damage\n• 10% Increased Sword Damage (20% for the user)\n• 20 HP Healing Pulses every 2.5 seconds\n\nGain an additional stack when 7 [PVP: 2] kills occur through any of three methods:\n• You kill an enemy\n• An enemy within a 20 meter radius of you dies\n• An ally within a 20 meter radius of you kills an enemy\n\nEach kill extends the buff timer up to 30 seconds, with the extension dependent on the number stacks you currently have. Higher stacks reduce the delay between each healing pulse.\n\nExtension amount and Healing Pulse delay per stack:\n• x1: 6 seconds | 2.5 Seconds\n• x2: 5 seconds | 2 Seconds\n• x3: 4 seconds | 1.5 Seconds\n• x4: 3 seconds | 1 Second",
+			"officialDescription": "Defeat a target with a melee attack, finisher, or Sword to raise a Banner of War that pulses with energy, periodically healing nearby allies and increasing melee and Sword damage.\n\nTargets defeated by you and nearby allies charge the banner, increasing the speed of its pulses.",
+			"kind": "ability",
+			"sourceId": "clarity",
+			"sourceRefs": [
+				{
+					"sourceId": "clarity",
+					"sourceKey": "988980154",
+					"hash": 988980154,
+					"type": "Subclass Aspect",
+					"updatedAt": 1787265837991
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Strand:80:1",
+					"tab": "Strand",
+					"row": 80,
+					"column": 1
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fe233d1b109122cec31208633e8e9851.jpg",
+			"perkHash": 988980154,
+			"iconGlyphs": [
+				{
+					"label": "Strand",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_b2fe51a94f3533f97079dfa0d27a4096.png"
+				},
+				{
+					"label": "Strand",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_b2fe51a94f3533f97079dfa0d27a4096.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "Upon scoring a Sword Kill, Melee Kill, Glaive Melee Kill, Super Light Attack Kill, or Finisher:\nRaises a Banner of War for 15 seconds, buffing the user and nearby allies within 10 metres. \nKills scored by the user or nearby allies empower and extend the duration of Banner of War, up to a maximum of x4 Banner of War and 30 seconds.\n\nBanner of War:\nLasts for 15 seconds, up to a maximum of 24 seconds.\nGrants x1 stacks for every 7 [2] enemies that either die within 20 meters, are killed by the user, or by allies within 20 metres.\nKills increase the duration by +5 seconds. Each stack after the second decreases the duration extension by -1, down to +3 seconds per kill at x4 stacks.\nPeriodically restores 20 HP every 2.5 seconds. Each stack after the first decreases the delay between pulses by 0.5 second, down to 1 second at x4 stacks.\nGrants 100% [Varies] Increased Melee Damage, 40% Increased Bladefury Damage, and 20% Increased Sword Damage.\n[x1 = ?% Inc. Melee DMG | x2 = ?% | x3 = ?% | x4 = ?%]\n\nStacks | Time Extension | Kills for next stack | Pulse Delay\nx1 | +6 seconds | 7 [2] Kills | 2.5 seconds\nx2 | +5 seconds | 7 [2] Kills | 2 seconds\nx3 | +4 seconds | 7 [2] Kills | 1.5 seconds\nx4 | +3 seconds | - | 1 second",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Strand",
+								"row": 80,
+								"column": 3
+							},
+							"start": 0,
+							"length": 1226
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "sheet-color:Strand:80:3:15:15",
+							"start": 15,
+							"end": 25,
+							"text": "Sword Kill",
+							"color": "rgb(164, 129, 225)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 27,
+							"end": 32,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:27:32",
+							"start": 32,
+							"end": 37,
+							"text": " Kill",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:39:39",
+							"start": 39,
+							"end": 46,
+							"text": "Glaive ",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 46,
+							"end": 51,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:39:51",
+							"start": 51,
+							"end": 56,
+							"text": " Kill",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 58,
+							"end": 63,
+							"text": "Super",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:58:63",
+							"start": 63,
+							"end": 81,
+							"text": " Light Attack Kill",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:86:86",
+							"start": 86,
+							"end": 94,
+							"text": "Finisher",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "banner-of-war",
+							"start": 105,
+							"end": 118,
+							"text": "Banner of War"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:105:118",
+							"start": 118,
+							"end": 119,
+							"text": " ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:156:156",
+							"start": 156,
+							"end": 169,
+							"text": "nearby allies",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:217:217",
+							"start": 217,
+							"end": 230,
+							"text": "nearby allies",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "banner-of-war",
+							"start": 266,
+							"end": 279,
+							"text": "Banner of War"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:300:300",
+							"start": 300,
+							"end": 303,
+							"text": "x4 ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "banner-of-war",
+							"start": 303,
+							"end": 316,
+							"text": "Banner of War"
+						},
+						{
+							"keywordId": "banner-of-war",
+							"start": 334,
+							"end": 347,
+							"text": "Banner of War"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:334:347",
+							"start": 347,
+							"end": 349,
+							"text": ":\n",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:409:409",
+							"start": 409,
+							"end": 419,
+							"text": "x1 stacks ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 429,
+							"end": 430,
+							"text": "7",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:429:430",
+							"start": 430,
+							"end": 431,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 431,
+							"end": 434,
+							"text": "[2]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:507:507",
+							"start": 507,
+							"end": 514,
+							"text": "allies ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:580:580",
+							"start": 580,
+							"end": 603,
+							"text": "stack after the second ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:674:674",
+							"start": 674,
+							"end": 683,
+							"text": "x4 stacks",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:698:698",
+							"start": 698,
+							"end": 713,
+							"text": "restores 20 HP ",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:719:719",
+							"start": 719,
+							"end": 730,
+							"text": "2.5 seconds",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:737:737",
+							"start": 737,
+							"end": 759,
+							"text": "stack after the first ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:773:773",
+							"start": 773,
+							"end": 786,
+							"text": "delay between",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:787:787",
+							"start": 787,
+							"end": 794,
+							"text": "pulses ",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:797:797",
+							"start": 797,
+							"end": 807,
+							"text": "0.5 second",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:817:817",
+							"start": 817,
+							"end": 825,
+							"text": "1 second",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:829:829",
+							"start": 829,
+							"end": 838,
+							"text": "x4 stacks",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:839:839",
+							"start": 839,
+							"end": 840,
+							"text": "\n",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:847:847",
+							"start": 847,
+							"end": 852,
+							"text": "100% ",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:852:852",
+							"start": 852,
+							"end": 860,
+							"text": "[Varies]",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:860:860",
+							"start": 860,
+							"end": 871,
+							"text": " Increased ",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 871,
+							"end": 876,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:860:876",
+							"start": 876,
+							"end": 883,
+							"text": " Damage",
+							"color": "rgb(121, 190, 195)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:885:885",
+							"start": 885,
+							"end": 899,
+							"text": "40% Increased ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "bladefury",
+							"start": 899,
+							"end": 908,
+							"text": "Bladefury"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:885:908",
+							"start": 908,
+							"end": 915,
+							"text": " Damage",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:921:921",
+							"start": 921,
+							"end": 947,
+							"text": "20% Increased Sword Damage",
+							"color": "rgb(164, 129, 225)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:949:949",
+							"start": 949,
+							"end": 963,
+							"text": "[x1 = ?% Inc. ",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "pattern:text-energy-melee",
+							"start": 963,
+							"end": 968,
+							"text": "Melee",
+							"colorClass": "text-energy-melee"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:949:968",
+							"start": 968,
+							"end": 1004,
+							"text": " DMG | x2 = ?% | x3 = ?% | x4 = ?%]\n",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1005:1005",
+							"start": 1005,
+							"end": 1012,
+							"text": "Stacks ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1054:1054",
+							"start": 1054,
+							"end": 1065,
+							"text": "Pulse Delay",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1066:1066",
+							"start": 1066,
+							"end": 1069,
+							"text": "x1 ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 1084,
+							"end": 1085,
+							"text": "7",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 1086,
+							"end": 1089,
+							"text": "[2]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1098:1098",
+							"start": 1098,
+							"end": 1109,
+							"text": "2.5 seconds",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1110:1110",
+							"start": 1110,
+							"end": 1113,
+							"text": "x2 ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 1128,
+							"end": 1129,
+							"text": "7",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1129:1129",
+							"start": 1129,
+							"end": 1130,
+							"text": " ",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 1130,
+							"end": 1133,
+							"text": "[2]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1142:1142",
+							"start": 1142,
+							"end": 1151,
+							"text": "2 seconds",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1152:1152",
+							"start": 1152,
+							"end": 1155,
+							"text": "x3 ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "pattern:text-pve-damage",
+							"start": 1170,
+							"end": 1171,
+							"text": "7",
+							"colorClass": "text-pve-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1171:1171",
+							"start": 1171,
+							"end": 1172,
+							"text": " ",
+							"color": "rgb(234, 153, 153)"
+						},
+						{
+							"keywordId": "pattern:text-pvp-damage",
+							"start": 1172,
+							"end": 1175,
+							"text": "[2]",
+							"colorClass": "text-pvp-damage"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1184:1184",
+							"start": 1184,
+							"end": 1195,
+							"text": "1.5 seconds",
+							"color": "rgb(221, 126, 107)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1196:1196",
+							"start": 1196,
+							"end": 1199,
+							"text": "x4 ",
+							"color": "rgb(147, 196, 125)"
+						},
+						{
+							"keywordId": "sheet-color:Strand:80:3:1218:1218",
+							"start": 1218,
+							"end": 1226,
+							"text": "1 second",
+							"color": "rgb(221, 126, 107)"
+						}
+					]
+				}
+			],
+			"annotations": [
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 25,
+					"end": 30,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "pattern:text-energy-super",
+					"start": 47,
+					"end": 52,
+					"text": "Super",
+					"colorClass": "text-energy-super"
+				},
+				{
+					"keywordId": "banner-of-war",
+					"start": 91,
+					"end": 104,
+					"text": "Banner of War"
+				},
+				{
+					"keywordId": "banner-of-war",
+					"start": 122,
+					"end": 135,
+					"text": "Banner of War"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 272,
+					"end": 277,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "bladefury",
+					"start": 305,
+					"end": 314,
+					"text": "Bladefury"
+				},
+				{
+					"keywordId": "pattern:text-pve-damage",
+					"start": 442,
+					"end": 443,
+					"text": "7",
+					"colorClass": "text-pve-damage"
+				},
+				{
+					"keywordId": "pattern:text-pvp-damage",
+					"start": 444,
+					"end": 452,
+					"text": "[PVP: 2]",
+					"colorClass": "text-pvp-damage"
+				}
+			],
+			"officialAnnotations": [
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 23,
+					"end": 28,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "banner-of-war",
+					"start": 67,
+					"end": 80,
+					"text": "Banner of War"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 156,
+					"end": 161,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				}
+			]
+		},
+		{
 			"id": "clarity:4208512211:thread-of-evolution",
 			"tab": "Strand",
 			"section": "Fragments",
@@ -68246,594 +68834,6 @@
 				}
 			],
 			"officialAnnotations": []
-		},
-		{
-			"id": "clarity:988980154:banner-of-war",
-			"tab": "Strand",
-			"section": "Aspect",
-			"groups": [
-				"Strand",
-				"Aspect",
-				"Abilities",
-				"Titan"
-			],
-			"source": {
-				"tab": "clarity",
-				"row": 403,
-				"column": 0
-			},
-			"title": "Banner of War",
-			"description": "Scoring a kill with your Melee, Sword, Glaive, Super Light Attack, or Finisher begins 0 'Banner of War' for 15 seconds. Banner of War has a radius of 10 meters and stacks up to 4 times.\n\nAllies within the radius are granted the following benefits:\n• 100% Increased Base Melee Damage\n• 40% Increased 1 Bladefury Damage\n• 10% Increased Sword Damage (20% for the user)\n• 20 HP Healing Pulses every 2.5 seconds\n\nGain an additional stack when 7 [PVP: 2] kills occur through any of three methods:\n• You kill an enemy\n• An enemy within a 20 meter radius of you dies\n• An ally within a 20 meter radius of you kills an enemy\n\nEach kill extends the buff timer up to 30 seconds, with the extension dependent on the number stacks you currently have. Higher stacks reduce the delay between each healing pulse.\n\nExtension amount and Healing Pulse delay per stack:\n• x1: 6 seconds | 2.5 Seconds\n• x2: 5 seconds | 2 Seconds\n• x3: 4 seconds | 1.5 Seconds\n• x4: 3 seconds | 1 Second",
-			"officialDescription": "Defeat a target with a melee attack, finisher, or Sword to raise a Banner of War that pulses with energy, periodically healing nearby allies and increasing melee and Sword damage.\n\nTargets defeated by you and nearby allies charge the banner, increasing the speed of its pulses.",
-			"kind": "ability",
-			"sourceId": "clarity",
-			"sourceRefs": [
-				{
-					"sourceId": "clarity",
-					"sourceKey": "988980154",
-					"hash": 988980154,
-					"type": "Subclass Aspect",
-					"updatedAt": 1787265837991
-				},
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Strand:80:1",
-					"tab": "Strand",
-					"row": 80,
-					"column": 1
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/fe233d1b109122cec31208633e8e9851.jpg",
-			"perkHash": 988980154,
-			"iconGlyphs": [
-				{
-					"label": "Strand",
-					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_b2fe51a94f3533f97079dfa0d27a4096.png"
-				},
-				{
-					"label": "Strand",
-					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_b2fe51a94f3533f97079dfa0d27a4096.png"
-				}
-			],
-			"alternateDescriptions": [
-				{
-					"sourceId": "ddc",
-					"text": "Upon scoring a Sword Kill, Melee Kill, Glaive Melee Kill, Super Light Attack Kill, or Finisher:\nRaises a Banner of War for 15 seconds, buffing the user and nearby allies within 10 metres. \nKills scored by the user or nearby allies empower and extend the duration of Banner of War, up to a maximum of x4 Banner of War and 30 seconds.\n\nBanner of War:\nLasts for 15 seconds, up to a maximum of 24 seconds.\nGrants x1 stacks for every 7 [2] enemies that either die within 20 meters, are killed by the user, or by allies within 20 metres.\nKills increase the duration by +5 seconds. Each stack after the second decreases the duration extension by -1, down to +3 seconds per kill at x4 stacks.\nPeriodically restores 20 HP every 2.5 seconds. Each stack after the first decreases the delay between pulses by 0.5 second, down to 1 second at x4 stacks.\nGrants 100% [Varies] Increased Melee Damage, 40% Increased Bladefury Damage, and 20% Increased Sword Damage.\n[x1 = ?% Inc. Melee DMG | x2 = ?% | x3 = ?% | x4 = ?%]\n\nStacks | Time Extension | Kills for next stack | Pulse Delay\nx1 | +6 seconds | 7 [2] Kills | 2.5 seconds\nx2 | +5 seconds | 7 [2] Kills | 2 seconds\nx3 | +4 seconds | 7 [2] Kills | 1.5 seconds\nx4 | +3 seconds | - | 1 second",
-					"descriptionSegments": [
-						{
-							"source": {
-								"tab": "Strand",
-								"row": 80,
-								"column": 3
-							},
-							"start": 0,
-							"length": 1226
-						}
-					],
-					"annotations": [
-						{
-							"keywordId": "sheet-color:Strand:80:3:15:15",
-							"start": 15,
-							"end": 25,
-							"text": "Sword Kill",
-							"color": "rgb(164, 129, 225)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 27,
-							"end": 32,
-							"text": "Melee",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:27:32",
-							"start": 32,
-							"end": 37,
-							"text": " Kill",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:39:39",
-							"start": 39,
-							"end": 46,
-							"text": "Glaive ",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 46,
-							"end": 51,
-							"text": "Melee",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:39:51",
-							"start": 51,
-							"end": 56,
-							"text": " Kill",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "pattern:text-energy-super",
-							"start": 58,
-							"end": 63,
-							"text": "Super",
-							"colorClass": "text-energy-super"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:58:63",
-							"start": 63,
-							"end": 81,
-							"text": " Light Attack Kill",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:86:86",
-							"start": 86,
-							"end": 94,
-							"text": "Finisher",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "banner-of-war",
-							"start": 105,
-							"end": 118,
-							"text": "Banner of War"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:105:118",
-							"start": 118,
-							"end": 119,
-							"text": " ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:156:156",
-							"start": 156,
-							"end": 169,
-							"text": "nearby allies",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:217:217",
-							"start": 217,
-							"end": 230,
-							"text": "nearby allies",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "banner-of-war",
-							"start": 266,
-							"end": 279,
-							"text": "Banner of War"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:300:300",
-							"start": 300,
-							"end": 303,
-							"text": "x4 ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "banner-of-war",
-							"start": 303,
-							"end": 316,
-							"text": "Banner of War"
-						},
-						{
-							"keywordId": "banner-of-war",
-							"start": 334,
-							"end": 347,
-							"text": "Banner of War"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:334:347",
-							"start": 347,
-							"end": 349,
-							"text": ":\n",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:409:409",
-							"start": 409,
-							"end": 419,
-							"text": "x1 stacks ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "pattern:text-pve-damage",
-							"start": 429,
-							"end": 430,
-							"text": "7",
-							"colorClass": "text-pve-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:429:430",
-							"start": 430,
-							"end": 431,
-							"text": " ",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "pattern:text-pvp-damage",
-							"start": 431,
-							"end": 434,
-							"text": "[2]",
-							"colorClass": "text-pvp-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:507:507",
-							"start": 507,
-							"end": 514,
-							"text": "allies ",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:580:580",
-							"start": 580,
-							"end": 603,
-							"text": "stack after the second ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:674:674",
-							"start": 674,
-							"end": 683,
-							"text": "x4 stacks",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:698:698",
-							"start": 698,
-							"end": 713,
-							"text": "restores 20 HP ",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:719:719",
-							"start": 719,
-							"end": 730,
-							"text": "2.5 seconds",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:737:737",
-							"start": 737,
-							"end": 759,
-							"text": "stack after the first ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:773:773",
-							"start": 773,
-							"end": 786,
-							"text": "delay between",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:787:787",
-							"start": 787,
-							"end": 794,
-							"text": "pulses ",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:797:797",
-							"start": 797,
-							"end": 807,
-							"text": "0.5 second",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:817:817",
-							"start": 817,
-							"end": 825,
-							"text": "1 second",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:829:829",
-							"start": 829,
-							"end": 838,
-							"text": "x4 stacks",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:839:839",
-							"start": 839,
-							"end": 840,
-							"text": "\n",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:847:847",
-							"start": 847,
-							"end": 852,
-							"text": "100% ",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:852:852",
-							"start": 852,
-							"end": 860,
-							"text": "[Varies]",
-							"color": "rgb(234, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:860:860",
-							"start": 860,
-							"end": 871,
-							"text": " Increased ",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 871,
-							"end": 876,
-							"text": "Melee",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:860:876",
-							"start": 876,
-							"end": 883,
-							"text": " Damage",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:885:885",
-							"start": 885,
-							"end": 899,
-							"text": "40% Increased ",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "bladefury",
-							"start": 899,
-							"end": 908,
-							"text": "Bladefury"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:885:908",
-							"start": 908,
-							"end": 915,
-							"text": " Damage",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:921:921",
-							"start": 921,
-							"end": 947,
-							"text": "20% Increased Sword Damage",
-							"color": "rgb(164, 129, 225)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:949:949",
-							"start": 949,
-							"end": 963,
-							"text": "[x1 = ?% Inc. ",
-							"color": "rgb(234, 153, 153)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 963,
-							"end": 968,
-							"text": "Melee",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:949:968",
-							"start": 968,
-							"end": 1004,
-							"text": " DMG | x2 = ?% | x3 = ?% | x4 = ?%]\n",
-							"color": "rgb(234, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1005:1005",
-							"start": 1005,
-							"end": 1012,
-							"text": "Stacks ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1054:1054",
-							"start": 1054,
-							"end": 1065,
-							"text": "Pulse Delay",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1066:1066",
-							"start": 1066,
-							"end": 1069,
-							"text": "x1 ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "pattern:text-pve-damage",
-							"start": 1084,
-							"end": 1085,
-							"text": "7",
-							"colorClass": "text-pve-damage"
-						},
-						{
-							"keywordId": "pattern:text-pvp-damage",
-							"start": 1086,
-							"end": 1089,
-							"text": "[2]",
-							"colorClass": "text-pvp-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1098:1098",
-							"start": 1098,
-							"end": 1109,
-							"text": "2.5 seconds",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1110:1110",
-							"start": 1110,
-							"end": 1113,
-							"text": "x2 ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "pattern:text-pve-damage",
-							"start": 1128,
-							"end": 1129,
-							"text": "7",
-							"colorClass": "text-pve-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1129:1129",
-							"start": 1129,
-							"end": 1130,
-							"text": " ",
-							"color": "rgb(234, 153, 153)"
-						},
-						{
-							"keywordId": "pattern:text-pvp-damage",
-							"start": 1130,
-							"end": 1133,
-							"text": "[2]",
-							"colorClass": "text-pvp-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1142:1142",
-							"start": 1142,
-							"end": 1151,
-							"text": "2 seconds",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1152:1152",
-							"start": 1152,
-							"end": 1155,
-							"text": "x3 ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "pattern:text-pve-damage",
-							"start": 1170,
-							"end": 1171,
-							"text": "7",
-							"colorClass": "text-pve-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1171:1171",
-							"start": 1171,
-							"end": 1172,
-							"text": " ",
-							"color": "rgb(234, 153, 153)"
-						},
-						{
-							"keywordId": "pattern:text-pvp-damage",
-							"start": 1172,
-							"end": 1175,
-							"text": "[2]",
-							"colorClass": "text-pvp-damage"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1184:1184",
-							"start": 1184,
-							"end": 1195,
-							"text": "1.5 seconds",
-							"color": "rgb(221, 126, 107)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1196:1196",
-							"start": 1196,
-							"end": 1199,
-							"text": "x4 ",
-							"color": "rgb(147, 196, 125)"
-						},
-						{
-							"keywordId": "sheet-color:Strand:80:3:1218:1218",
-							"start": 1218,
-							"end": 1226,
-							"text": "1 second",
-							"color": "rgb(221, 126, 107)"
-						}
-					]
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 25,
-					"end": 30,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "pattern:text-energy-super",
-					"start": 47,
-					"end": 52,
-					"text": "Super",
-					"colorClass": "text-energy-super"
-				},
-				{
-					"keywordId": "banner-of-war",
-					"start": 91,
-					"end": 104,
-					"text": "Banner of War"
-				},
-				{
-					"keywordId": "banner-of-war",
-					"start": 122,
-					"end": 135,
-					"text": "Banner of War"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 272,
-					"end": 277,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "bladefury",
-					"start": 305,
-					"end": 314,
-					"text": "Bladefury"
-				},
-				{
-					"keywordId": "pattern:text-pve-damage",
-					"start": 442,
-					"end": 443,
-					"text": "7",
-					"colorClass": "text-pve-damage"
-				},
-				{
-					"keywordId": "pattern:text-pvp-damage",
-					"start": 444,
-					"end": 452,
-					"text": "[PVP: 2]",
-					"colorClass": "text-pvp-damage"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 23,
-					"end": 28,
-					"text": "melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "banner-of-war",
-					"start": 67,
-					"end": 80,
-					"text": "Banner of War"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 156,
-					"end": 161,
-					"text": "melee",
-					"colorClass": "text-energy-melee"
-				}
-			]
 		},
 		{
 			"id": "clarity:3298446480:causality-arrows",
@@ -73475,7 +73475,7 @@
 				"column": 8
 			},
 			"title": "Shieldcrush",
-			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.",
+			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -73484,7 +73484,7 @@
 						"column": 7
 					},
 					"start": 0,
-					"length": 403
+					"length": 477
 				}
 			],
 			"officialDescription": "While you have Woven Mail, Frost Armor, or a Void Overshield, your melee recharges faster and deals increased damage.\n\nWhile you are amplified or radiant, your grenade recharges faster and deals increased damage.",
@@ -73798,9 +73798,62 @@
 				{
 					"keywordId": "sheet-color:Artifact Perks:37:7:325:338",
 					"start": 338,
-					"end": 403,
-					"text": " instead receives 12% Increased Damage for each half of the perk.",
+					"end": 404,
+					"text": " instead receives 12% Increased Damage for each half of the perk.\n",
 					"color": "rgb(99, 210, 117)"
+				},
+				{
+					"keywordId": "shieldcrush",
+					"start": 404,
+					"end": 415,
+					"text": "Shieldcrush"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:415",
+					"start": 415,
+					"end": 430,
+					"text": " will not buff ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "grapple",
+					"start": 430,
+					"end": 437,
+					"text": "Grapple"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:437",
+					"start": 437,
+					"end": 438,
+					"text": " ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 438,
+					"end": 443,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:443",
+					"start": 443,
+					"end": 450,
+					"text": " while ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "combination-blow",
+					"start": 450,
+					"end": 466,
+					"text": "Combination Blow"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:37:7:404:466",
+					"start": 466,
+					"end": 477,
+					"text": " is active.",
+					"color": "rgb(224, 102, 102)"
 				}
 			],
 			"officialAnnotations": [
@@ -73864,7 +73917,7 @@
 				"column": 8
 			},
 			"title": "Shieldcrush",
-			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.",
+			"description": "While Frost Armor, Void Overshield, or Woven Mail are active:\n?% [?%] Additional Base Melee Recharge Rate\n 50% [5%] Increased Powered Melee Damage.\nAlso increases Super Melee Damage and Ignition Damage.\n\nWhile Amplified or Radiant are active:\n?% [?%] Additional Base Grenade Recharge Rate\n25% [5%] Increased Grenade Damage.\n\nGrapple Melee instead receives 12% Increased Damage for each half of the perk.\nShieldcrush will not buff Grapple Melee while Combination Blow is active.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -73873,7 +73926,7 @@
 						"column": 7
 					},
 					"start": 0,
-					"length": 403
+					"length": 477
 				}
 			],
 			"officialDescription": "While you have Woven Mail, Frost Armor, or a Void Overshield, your melee recharges faster and deals increased damage.\n\nWhile you are amplified or radiant, your grenade recharges faster and deals increased damage.",
@@ -74187,9 +74240,62 @@
 				{
 					"keywordId": "sheet-color:Artifact Perks:115:7:325:338",
 					"start": 338,
-					"end": 403,
-					"text": " instead receives 12% Increased Damage for each half of the perk.",
+					"end": 404,
+					"text": " instead receives 12% Increased Damage for each half of the perk.\n",
 					"color": "rgb(99, 210, 117)"
+				},
+				{
+					"keywordId": "shieldcrush",
+					"start": 404,
+					"end": 415,
+					"text": "Shieldcrush"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:415",
+					"start": 415,
+					"end": 430,
+					"text": " will not buff ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "grapple",
+					"start": 430,
+					"end": 437,
+					"text": "Grapple"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:437",
+					"start": 437,
+					"end": 438,
+					"text": " ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 438,
+					"end": 443,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:443",
+					"start": 443,
+					"end": 450,
+					"text": " while ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "combination-blow",
+					"start": 450,
+					"end": 466,
+					"text": "Combination Blow"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:115:7:404:466",
+					"start": 466,
+					"end": 477,
+					"text": " is active.",
+					"color": "rgb(224, 102, 102)"
 				}
 			],
 			"officialAnnotations": [
@@ -81471,6 +81577,18 @@
 			]
 		},
 		{
+			"id": "banner-of-war",
+			"label": "Banner of War",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"clarity:988980154:banner-of-war"
+			]
+		},
+		{
 			"id": "thread-of-evolution",
 			"label": "Thread of Evolution",
 			"aliases": [],
@@ -81517,18 +81635,6 @@
 			"references": [
 				"ddc:rally-barricade:21:1",
 				"clarity:489583097:rally-barricade"
-			]
-		},
-		{
-			"id": "banner-of-war",
-			"label": "Banner of War",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"clarity:988980154:banner-of-war"
 			]
 		},
 		{
@@ -85975,20 +86081,6 @@
 		],
 		"sustained:50:loadout": [
 			{
-				"keywordId": "biotic-enhancements",
-				"start": 0,
-				"end": 19,
-				"text": "Biotic Enhancements"
-			},
-			{
-				"keywordId": "roaring-flames",
-				"start": 21,
-				"end": 35,
-				"text": "Roaring Flames"
-			}
-		],
-		"sustained:51:loadout": [
-			{
 				"keywordId": "burning-ambition",
 				"start": 40,
 				"end": 56,
@@ -86019,7 +86111,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:52:loadout": [
+		"sustained:51:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 12,
@@ -86045,7 +86137,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:53:loadout": [
+		"sustained:52:loadout": [
 			{
 				"keywordId": "timelost-magazine",
 				"start": 19,
@@ -86060,18 +86152,18 @@
 			},
 			{
 				"keywordId": "trench-barrel",
-				"start": 60,
-				"end": 73,
+				"start": 63,
+				"end": 76,
 				"text": "Trench Barrel"
 			},
 			{
 				"keywordId": "arc-compounding",
-				"start": 114,
-				"end": 129,
+				"start": 117,
+				"end": 132,
 				"text": "Arc Compounding"
 			}
 		],
-		"sustained:54:loadout": [
+		"sustained:53:loadout": [
 			{
 				"keywordId": "combination-blow",
 				"start": 26,
@@ -86091,7 +86183,7 @@
 				"text": "No Bell"
 			}
 		],
-		"sustained:55:loadout": [
+		"sustained:54:loadout": [
 			{
 				"keywordId": "the-perfect-fifth",
 				"start": 14,
@@ -86135,7 +86227,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:56:loadout": [
+		"sustained:55:loadout": [
 			{
 				"keywordId": "mega-kill-clip",
 				"start": 32,
@@ -86155,7 +86247,7 @@
 				"text": "Heretical Behavior"
 			}
 		],
-		"sustained:57:loadout": [
+		"sustained:56:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -86181,7 +86273,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:58:loadout": [
+		"sustained:57:loadout": [
 			{
 				"keywordId": "touch-of-flame",
 				"start": 12,
@@ -86195,7 +86287,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:59:loadout": [
+		"sustained:58:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -86209,7 +86301,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:60:loadout": [
+		"sustained:59:loadout": [
 			{
 				"keywordId": "relentless-strikes",
 				"start": 37,
@@ -86235,7 +86327,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:61:loadout": [
+		"sustained:60:loadout": [
 			{
 				"keywordId": "envious-arsenal",
 				"start": 0,
@@ -86255,7 +86347,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:62:loadout": [
+		"sustained:61:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -86281,7 +86373,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:63:loadout": [
+		"sustained:62:loadout": [
 			{
 				"keywordId": "vorpal-weapon",
 				"start": 37,
@@ -86307,7 +86399,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:64:loadout": [
+		"sustained:63:loadout": [
 			{
 				"keywordId": "unplanned-reprieve",
 				"start": 14,
@@ -86345,7 +86437,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:65:loadout": [
+		"sustained:64:loadout": [
 			{
 				"keywordId": "unplanned-reprieve",
 				"start": 12,
@@ -86383,7 +86475,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:66:loadout": [
+		"sustained:65:loadout": [
 			{
 				"keywordId": "heavy-bolts",
 				"start": 0,
@@ -86407,6 +86499,26 @@
 				"start": 68,
 				"end": 81,
 				"text": "Argent Quiver"
+			}
+		],
+		"sustained:66:loadout": [
+			{
+				"keywordId": "one-two-punch",
+				"start": 0,
+				"end": 13,
+				"text": "One-Two Punch"
+			},
+			{
+				"keywordId": "banner-of-war",
+				"start": 15,
+				"end": 28,
+				"text": "Banner of War"
+			},
+			{
+				"keywordId": "biotic-enhancements",
+				"start": 30,
+				"end": 49,
+				"text": "Biotic Enhancements"
 			}
 		],
 		"sustained:67:loadout": [
@@ -86483,6 +86595,20 @@
 		],
 		"sustained:70:loadout": [
 			{
+				"keywordId": "biotic-enhancements",
+				"start": 0,
+				"end": 19,
+				"text": "Biotic Enhancements"
+			},
+			{
+				"keywordId": "roaring-flames",
+				"start": 21,
+				"end": 35,
+				"text": "Roaring Flames"
+			}
+		],
+		"sustained:71:loadout": [
+			{
 				"keywordId": "the-roadborn",
 				"start": 0,
 				"end": 12,
@@ -86501,7 +86627,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:71:loadout": [
+		"sustained:72:loadout": [
 			{
 				"keywordId": "arc-compounding",
 				"start": 6,
@@ -86509,7 +86635,7 @@
 				"text": "Arc Compounding"
 			}
 		],
-		"sustained:72:loadout": [
+		"sustained:73:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 12,
@@ -86535,7 +86661,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:73:loadout": [
+		"sustained:74:loadout": [
 			{
 				"keywordId": "on-black-wings",
 				"start": 25,
@@ -86543,7 +86669,7 @@
 				"text": "On Black Wings"
 			}
 		],
-		"sustained:74:loadout": [
+		"sustained:75:loadout": [
 			{
 				"keywordId": "triple-tap",
 				"start": 14,
@@ -86581,7 +86707,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:75:loadout": [
+		"sustained:76:loadout": [
 			{
 				"keywordId": "lightweight-frame",
 				"start": 0,
@@ -86625,7 +86751,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:76:loadout": [
+		"sustained:77:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 6,
@@ -86645,7 +86771,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:77:loadout": [
+		"sustained:78:loadout": [
 			{
 				"keywordId": "mega-kill-clip",
 				"start": 32,
@@ -86665,7 +86791,7 @@
 				"text": "Heretical Behavior"
 			}
 		],
-		"sustained:78:loadout": [
+		"sustained:79:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -86697,7 +86823,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:79:loadout": [
+		"sustained:80:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -86711,7 +86837,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:80:loadout": [
+		"sustained:81:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -86725,7 +86851,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:81:loadout": [
+		"sustained:82:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -86769,7 +86895,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:82:loadout": [
+		"sustained:83:loadout": [
 			{
 				"keywordId": "particle-reconstruction",
 				"start": 10,
@@ -86777,7 +86903,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:83:loadout": [
+		"sustained:84:loadout": [
 			{
 				"keywordId": "arc-compounding",
 				"start": 20,
@@ -86791,7 +86917,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:84:loadout": [
+		"sustained:85:loadout": [
 			{
 				"keywordId": "frenzy",
 				"start": 37,
@@ -86817,7 +86943,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:85:loadout": [
+		"sustained:86:loadout": [
 			{
 				"keywordId": "rewind-rounds",
 				"start": 17,
@@ -86849,7 +86975,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:86:loadout": [
+		"sustained:87:loadout": [
 			{
 				"keywordId": "one-two-punch",
 				"start": 0,
@@ -86863,7 +86989,7 @@
 				"text": "Roaring Flames"
 			}
 		],
-		"sustained:87:loadout": [
+		"sustained:88:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -86889,7 +87015,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:88:loadout": [
+		"sustained:89:loadout": [
 			{
 				"keywordId": "whispered-breathing",
 				"start": 0,
@@ -86915,7 +87041,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:89:loadout": [
+		"sustained:90:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -86941,7 +87067,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:90:loadout": [
+		"sustained:91:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -86967,7 +87093,7 @@
 				"text": "Energy Acceleration"
 			}
 		],
-		"sustained:91:loadout": [
+		"sustained:92:loadout": [
 			{
 				"keywordId": "thread-of-evolution",
 				"start": 20,
@@ -86987,7 +87113,7 @@
 				"text": "Pack Tactics"
 			}
 		],
-		"sustained:92:loadout": [
+		"sustained:93:loadout": [
 			{
 				"keywordId": "frenzy",
 				"start": 37,
@@ -87019,7 +87145,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:93:loadout": [
+		"sustained:94:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 17,
@@ -87051,7 +87177,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:94:loadout": [
+		"sustained:95:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87077,7 +87203,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:95:loadout": [
+		"sustained:96:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87097,7 +87223,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:96:loadout": [
+		"sustained:97:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87123,7 +87249,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:97:loadout": [
+		"sustained:98:loadout": [
 			{
 				"keywordId": "guidance-ring",
 				"start": 0,
@@ -87137,7 +87263,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:98:loadout": [
+		"sustained:99:loadout": [
 			{
 				"keywordId": "the-master",
 				"start": 10,
@@ -87157,7 +87283,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:99:loadout": [
+		"sustained:100:loadout": [
 			{
 				"keywordId": "whispered-breathing",
 				"start": 0,
@@ -87171,7 +87297,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:101:loadout": [
+		"sustained:102:loadout": [
 			{
 				"keywordId": "envious-arsenal",
 				"start": 0,
@@ -87191,7 +87317,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:103:loadout": [
+		"sustained:104:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 19,
@@ -87199,7 +87325,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"sustained:104:loadout": [
+		"sustained:105:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 22,
@@ -87231,7 +87357,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:105:loadout": [
+		"sustained:106:loadout": [
 			{
 				"keywordId": "release-the-wolves",
 				"start": 0,
@@ -87245,7 +87371,7 @@
 				"text": "ignition"
 			}
 		],
-		"sustained:106:loadout": [
+		"sustained:107:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 19,
@@ -87271,7 +87397,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:107:loadout": [
+		"sustained:108:loadout": [
 			{
 				"keywordId": "archer-s-tempo",
 				"start": 0,
@@ -87279,7 +87405,7 @@
 				"text": "Archer's Tempo"
 			}
 		],
-		"sustained:108:loadout": [
+		"sustained:109:loadout": [
 			{
 				"keywordId": "touch-of-thunder",
 				"start": 22,
@@ -87293,7 +87419,7 @@
 				"text": "Spark of Magnitude"
 			}
 		],
-		"sustained:109:loadout": [
+		"sustained:110:loadout": [
 			{
 				"keywordId": "threadling",
 				"start": 29,
@@ -87307,7 +87433,7 @@
 				"text": "Pack Tactics"
 			}
 		],
-		"sustained:110:loadout": [
+		"sustained:111:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -87321,7 +87447,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:111:loadout": [
+		"sustained:112:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -87341,7 +87467,7 @@
 				"text": "ignitions"
 			}
 		],
-		"sustained:112:loadout": [
+		"sustained:113:loadout": [
 			{
 				"keywordId": "kinetic-synthesis",
 				"start": 69,
@@ -87361,7 +87487,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:113:loadout": [
+		"sustained:114:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -87405,7 +87531,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:114:loadout": [
+		"sustained:115:loadout": [
 			{
 				"keywordId": "combination-blow",
 				"start": 18,
@@ -87419,7 +87545,7 @@
 				"text": "Biotic Enhancements"
 			}
 		],
-		"sustained:116:loadout": [
+		"sustained:117:loadout": [
 			{
 				"keywordId": "heavy-bolts",
 				"start": 0,
@@ -87439,7 +87565,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:117:loadout": [
+		"sustained:118:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 0,
@@ -87465,7 +87591,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:118:loadout": [
+		"sustained:119:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87479,7 +87605,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:119:loadout": [
+		"sustained:120:loadout": [
 			{
 				"keywordId": "the-master",
 				"start": 10,
@@ -87499,7 +87625,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:120:loadout": [
+		"sustained:121:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -87511,26 +87637,6 @@
 				"start": 16,
 				"end": 31,
 				"text": "Argent Ordnance"
-			}
-		],
-		"sustained:122:loadout": [
-			{
-				"keywordId": "one-two-punch",
-				"start": 0,
-				"end": 13,
-				"text": "One-Two Punch"
-			},
-			{
-				"keywordId": "banner-of-war",
-				"start": 15,
-				"end": 28,
-				"text": "Banner of War"
-			},
-			{
-				"keywordId": "biotic-enhancements",
-				"start": 30,
-				"end": 49,
-				"text": "Biotic Enhancements"
 			}
 		],
 		"sustained:123:loadout": [
@@ -88961,7 +89067,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"sustained:258:loadout": [
+		"sustained:259:loadout": [
 			{
 				"keywordId": "improved-unraveling",
 				"start": 14,
@@ -91435,13 +91541,27 @@
 		],
 		"swap:174:loadout": [
 			{
+				"keywordId": "ignition",
+				"start": 18,
+				"end": 26,
+				"text": "ignition"
+			},
+			{
+				"keywordId": "radiant",
+				"start": 31,
+				"end": 38,
+				"text": "Radiant"
+			}
+		],
+		"swap:175:loadout": [
+			{
 				"keywordId": "one-two-punch",
 				"start": 0,
 				"end": 13,
 				"text": "One-Two Punch"
 			}
 		],
-		"swap:175:loadout": [
+		"swap:176:loadout": [
 			{
 				"keywordId": "anticipation",
 				"start": 3,
@@ -91455,7 +91575,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"swap:176:loadout": [
+		"swap:177:loadout": [
 			{
 				"keywordId": "roaring-flames",
 				"start": 15,
@@ -91487,7 +91607,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:177:loadout": [
+		"swap:178:loadout": [
 			{
 				"keywordId": "limit-break",
 				"start": 39,
@@ -91495,7 +91615,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:178:loadout": [
+		"swap:179:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -91503,7 +91623,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"swap:179:loadout": [
+		"swap:180:loadout": [
 			{
 				"keywordId": "illegally-modded-holster",
 				"start": 15,
@@ -91511,7 +91631,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:180:loadout": [
+		"swap:181:loadout": [
 			{
 				"keywordId": "feast-of-light",
 				"start": 0,
@@ -91531,7 +91651,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:181:loadout": [
+		"swap:182:loadout": [
 			{
 				"keywordId": "property-irreducible",
 				"start": 0,
@@ -91545,7 +91665,7 @@
 				"text": "Transcendent"
 			}
 		],
-		"swap:182:loadout": [
+		"swap:183:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 15,
@@ -91559,7 +91679,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:183:loadout": [
+		"swap:184:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 11,
@@ -91573,7 +91693,7 @@
 				"text": "Aggregate Charge"
 			}
 		],
-		"swap:184:loadout": [
+		"swap:185:loadout": [
 			{
 				"keywordId": "temporal-unlimiter",
 				"start": 0,
@@ -91581,7 +91701,7 @@
 				"text": "Temporal Unlimiter"
 			}
 		],
-		"swap:186:loadout": [
+		"swap:187:loadout": [
 			{
 				"keywordId": "chaos-accelerant",
 				"start": 0,
@@ -91589,7 +91709,7 @@
 				"text": "Chaos Accelerant"
 			}
 		],
-		"swap:187:loadout": [
+		"swap:188:loadout": [
 			{
 				"keywordId": "whisper-of-fissures",
 				"start": 44,
@@ -91603,7 +91723,7 @@
 				"text": "Limit Break"
 			}
 		],
-		"swap:188:loadout": [
+		"swap:189:loadout": [
 			{
 				"keywordId": "shieldcrush",
 				"start": 11,
@@ -91611,7 +91731,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:189:loadout": [
+		"swap:190:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 46,
@@ -91625,7 +91745,7 @@
 				"text": "Shieldcrush"
 			}
 		],
-		"swap:190:loadout": [
+		"swap:191:loadout": [
 			{
 				"keywordId": "precision-instrument",
 				"start": 18,
@@ -91639,7 +91759,7 @@
 				"text": "Illegally Modded Holster"
 			}
 		],
-		"swap:191:loadout": [
+		"swap:192:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 24,
@@ -91647,20 +91767,12 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"swap:192:loadout": [
+		"swap:193:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
 				"end": 14,
 				"text": "Ember of Ashes"
-			}
-		],
-		"swap:193:loadout": [
-			{
-				"keywordId": "facet-of-courage",
-				"start": 0,
-				"end": 16,
-				"text": "Facet of Courage"
 			}
 		],
 		"swap:194:loadout": [
@@ -91673,13 +91785,35 @@
 		],
 		"swap:195:loadout": [
 			{
+				"keywordId": "facet-of-courage",
+				"start": 0,
+				"end": 16,
+				"text": "Facet of Courage"
+			}
+		],
+		"swap:196:loadout": [
+			{
+				"keywordId": "rewind-rounds",
+				"start": 3,
+				"end": 16,
+				"text": "Rewind Rounds"
+			},
+			{
+				"keywordId": "target-lock",
+				"start": 22,
+				"end": 33,
+				"text": "Target Lock"
+			}
+		],
+		"swap:197:loadout": [
+			{
 				"keywordId": "thread-of-evolution",
 				"start": 0,
 				"end": 19,
 				"text": "Thread of Evolution"
 			}
 		],
-		"swap:196:loadout": [
+		"swap:198:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -91693,7 +91827,7 @@
 				"text": "Facet of Ruin"
 			}
 		],
-		"swap:198:loadout": [
+		"swap:200:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -91701,7 +91835,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"swap:199:loadout": [
+		"swap:201:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
