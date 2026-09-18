@@ -43,6 +43,14 @@ export const SITE_PAGES: SiteSection[] = [
 		status: "live",
 	},
 	{
+		slug: "mechanics",
+		href: "/mechanics",
+		title: "Game Mechanics",
+		description:
+			"Ability energy, activity modifiers, stats, Champions, Banes and heat weapons: the systems underneath the perks, with the numbers.",
+		status: "live",
+	},
+	{
 		slug: "changelog",
 		href: "/changelog",
 		title: "Changelog",

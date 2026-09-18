@@ -10,6 +10,7 @@ import {
 } from "../src/lib/compendium/artifacts";
 import { loadCompendiumDataset } from "../src/lib/compendium/load";
 import { buildSubclasses } from "../src/lib/compendium/subclasses";
+import { loadGameMechanics } from "../src/lib/ddc/mechanics";
 import { ogImagePath } from "../src/lib/site/meta";
 import {
 	fetchImageDataUri,
@@ -75,11 +76,12 @@ async function newestInputMtime() {
 }
 
 async function collectCards(): Promise<Card[]> {
-	const [dataset, weapons, resolver, releases] = await Promise.all([
+	const [dataset, weapons, resolver, releases, mechanics] = await Promise.all([
 		loadCompendiumDataset().catch(() => null),
 		loadWeaponsDataset().catch(() => null),
 		loadBungieManifestSnapshotResolver().catch(() => null),
 		loadChangelog().catch(() => []),
+		loadGameMechanics().catch(() => []),
 	]);
 
 	const artifacts = dataset ? buildArtifacts(dataset.entries) : [];
@@ -141,6 +143,26 @@ async function collectCards(): Promise<Card[]> {
 				? [
 						{ label: "Subclasses", value: String(subclasses.length) },
 						{ label: "Classes", value: "3" },
+					]
+				: [],
+		},
+		{
+			path: "/mechanics",
+			title: "Game Mechanics",
+			description:
+				"How Destiny 2 works under the hood: ability energy, activity modifiers, stats, Champions, Banes and heat weapons.",
+			accent: OG_ACCENTS.stasis,
+			stats: mechanics.length
+				? [
+						{ label: "Chapters", value: String(mechanics.length) },
+						{
+							label: "Tables",
+							value: String(
+								mechanics
+									.flatMap((chapter) => chapter.blocks)
+									.filter((block) => block.kind === "table").length,
+							),
+						},
 					]
 				: [],
 		},

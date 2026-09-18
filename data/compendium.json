@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-18T00:57:25.801Z",
+	"generatedAt": "2026-09-18T20:47:46.209Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -41033,1465 +41033,9 @@
 			"officialAnnotations": []
 		},
 		{
-			"id": "ddc:calm-amidst-chaos:254:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 254,
-				"column": 0
-			},
-			"title": "Calm Amidst Chaos",
-			"description": "After not receiving damage for 5 ↑4 seconds:\n+35? Handling, 0.75?x ADS Duration Multiplier, and ?% Flinch Resist until the next shot is fired.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 254,
-						"column": 2
-					},
-					"start": 0,
-					"length": 142
-				}
-			],
-			"officialDescription": "After not taking damage for a short duration, this weapon gains significantly increased aim down sight speed, handling and flinch resistance until the next shot is fired.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:254:0",
-					"tab": "Weapon Perks",
-					"row": 254,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f95264d47c1cf80d193b32bc0734f31d.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:254:2:33:33",
-					"start": 33,
-					"end": 35,
-					"text": "↑4",
-					"color": "rgb(255, 217, 102)"
-				}
-			],
-			"officialAnnotations": []
-		},
-		{
-			"id": "ddc:kill-shot:255:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 255,
-				"column": 0
-			},
-			"title": "Kill Shot",
-			"description": "Upon finishing a reload within 5 seconds of a kill:\nThe impact from the first shot fired deals an additional instance of 230 ↑250 [10 ↑12] Weapon-Matching Splash Damage over ~2 meters, removing Combatant Shields on hit.\n Also removes Barrier Champion's Barrier Shield, even with a different Breaker Effect active. Ignores Bane Damage Resist. Does NOT remove Ablative Shields. \nSplash Damage is not affected by Weapon Damage Increases, Power Delta, or Combatant Scalars, but does count as Weapon Damage.\nBuff persists through stow. Can be triggered multiple times from a single kill. Removes SOME immune shields :)\n\nPicking up a Special/Power Ammo Bricks grants Kill Shot to all weapons with the mod equipped.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 255,
-						"column": 2
-					},
-					"start": 0,
-					"length": 708
-				}
-			],
-			"officialDescription": "Reloading after a final blow loads a high-powered round, causing the next hit to cause improved additional splash damage. Strong against 0 Barrier Champions.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:255:0",
-					"tab": "Weapon Perks",
-					"row": 255,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/96a9c33d2ccbf225dce3274c48fc8767.png",
-			"iconGlyphs": [
-				{
-					"label": "Barrier",
-					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyBreakerTypeDefinition_07b9ba0194e85e46b258b04783e93d5d.png"
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:121:121",
-					"start": 121,
-					"end": 125,
-					"text": "230 ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:125:125",
-					"start": 125,
-					"end": 129,
-					"text": "↑250",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:130:130",
-					"start": 130,
-					"end": 134,
-					"text": "[10 ",
-					"color": "rgb(234, 153, 153)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:134:134",
-					"start": 134,
-					"end": 137,
-					"text": "↑12",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:137:137",
-					"start": 137,
-					"end": 138,
-					"text": "]",
-					"color": "rgb(234, 153, 153)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:139:139",
-					"start": 139,
-					"end": 168,
-					"text": "Weapon-Matching Splash Damage",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:185:185",
-					"start": 185,
-					"end": 221,
-					"text": "removing Combatant Shields on hit.\n ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:221:221",
-					"start": 221,
-					"end": 234,
-					"text": "Also removes ",
-					"color": "rgb(249, 203, 156)"
-				},
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 234,
-					"end": 250,
-					"text": "Barrier Champion",
-					"colorClass": "text-tier-champion"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:221:250",
-					"start": 250,
-					"end": 281,
-					"text": "'s Barrier Shield, even with a ",
-					"color": "rgb(249, 203, 156)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:281:281",
-					"start": 281,
-					"end": 312,
-					"text": "different Breaker Effect active",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:314:314",
-					"start": 314,
-					"end": 340,
-					"text": "Ignores Bane Damage Resist",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:342:342",
-					"start": 342,
-					"end": 374,
-					"text": "Does NOT remove Ablative Shields",
-					"color": "rgb(224, 102, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:628:628",
-					"start": 628,
-					"end": 635,
-					"text": "Special",
-					"color": "rgb(99, 210, 117)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:255:2:636:636",
-					"start": 636,
-					"end": 642,
-					"text": "Power ",
-					"color": "rgb(164, 129, 225)"
-				},
-				{
-					"keywordId": "kill-shot",
-					"start": 661,
-					"end": 670,
-					"text": "Kill Shot"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 141,
-					"end": 158,
-					"text": "Barrier Champions",
-					"colorClass": "text-tier-champion"
-				}
-			]
-		},
-		{
-			"id": "ddc:opening-salvo:256:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 256,
-				"column": 0
-			},
-			"title": "Opening Salvo",
-			"description": "After not receiving damage for 5 seconds:\nGrants Opening Salvo Ready until firing.\nOnce Opening Salvo expires, Opening Salvo Ready can be reobtained after 5 seconds of not receiving damage.\n\nOpening Salvo | +20 Range, ?% Increased Flinch, and damage staggers Unstoppable Champions for ? ↑4 seconds.\nStaggers Unstoppable Champions even while a different Breaker Effect is active.\nBoth buffs persist and remain active through stow.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 256,
-						"column": 2
-					},
-					"start": 0,
-					"length": 429
-				}
-			],
-			"officialDescription": "This weapon gains bonus range and deals more flinch at the start of combat for an improved duration. Strong against 0 Unstoppable Champions.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:256:0",
-					"tab": "Weapon Perks",
-					"row": 256,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/611acb82ebe581e405e7e599ced066ca.png",
-			"iconGlyphs": [
-				{
-					"label": "Unstoppable",
-					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyBreakerTypeDefinition_825a438c85404efd6472ff9e97fc7251.png"
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "opening-salvo",
-					"start": 49,
-					"end": 62,
-					"text": "Opening Salvo"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:256:2:49:62",
-					"start": 62,
-					"end": 68,
-					"text": " Ready",
-					"color": "rgb(234, 153, 153)"
-				},
-				{
-					"keywordId": "opening-salvo",
-					"start": 88,
-					"end": 101,
-					"text": "Opening Salvo"
-				},
-				{
-					"keywordId": "opening-salvo",
-					"start": 111,
-					"end": 124,
-					"text": "Opening Salvo"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:256:2:111:124",
-					"start": 124,
-					"end": 130,
-					"text": " Ready",
-					"color": "rgb(244, 204, 204)"
-				},
-				{
-					"keywordId": "opening-salvo",
-					"start": 191,
-					"end": 204,
-					"text": "Opening Salvo"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:256:2:250:250",
-					"start": 250,
-					"end": 259,
-					"text": "staggers ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 259,
-					"end": 280,
-					"text": "Unstoppable Champions",
-					"colorClass": "text-tier-champion"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:256:2:287:287",
-					"start": 287,
-					"end": 289,
-					"text": "↑4",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:256:2:299:299",
-					"start": 299,
-					"end": 308,
-					"text": "Staggers ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 308,
-					"end": 329,
-					"text": "Unstoppable Champions",
-					"colorClass": "text-tier-champion"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:256:2:329:329",
-					"start": 329,
-					"end": 379,
-					"text": " even while a different Breaker Effect is active.\n",
-					"color": "rgb(164, 194, 244)"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 120,
-					"end": 141,
-					"text": "Unstoppable Champions",
-					"colorClass": "text-tier-champion"
-				}
-			]
-		},
-		{
-			"id": "ddc:overpressured-munitions:257:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 257,
-				"column": 0
-			},
-			"title": "Overpressured Munitions",
-			"description": "Passively deals ?15 ↑17% increased damage towards Cabal Combatants.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 257,
-						"column": 2
-					},
-					"start": 0,
-					"length": 67
-				}
-			],
-			"officialDescription": "This weapon gains bonus damage against Cabal targets.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:257:0",
-					"tab": "Weapon Perks",
-					"row": 257,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/4fb0a0dbbe80ceeaf95a0ace368fc2c2.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:257:2:16:16",
-					"start": 16,
-					"end": 20,
-					"text": "?15 ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:257:2:20:20",
-					"start": 20,
-					"end": 24,
-					"text": "↑17%",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:257:2:24:24",
-					"start": 24,
-					"end": 66,
-					"text": " increased damage towards Cabal Combatants",
-					"color": "rgb(164, 194, 244)"
-				}
-			],
-			"officialAnnotations": []
-		},
-		{
-			"id": "ddc:stay-in-the-fight:258:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 258,
-				"column": 0
-			},
-			"title": "Stay in the Fight",
-			"description": "While at Critical Health:\n+? Stability and +? Ammo Generation.\nBuff lingers for 6 ↑7 seconds after regenerating Shields.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 258,
-						"column": 2
-					},
-					"start": 0,
-					"length": 120
-				}
-			],
-			"officialDescription": "When your shields are broken, this weapon gains an improved period of increased stability and ammo generation.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:258:0",
-					"tab": "Weapon Perks",
-					"row": 258,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1260d43764fdda097e64957e3e91431c.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:258:2:8:8",
-					"start": 8,
-					"end": 24,
-					"text": " Critical Health",
-					"color": "rgb(221, 126, 107)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:258:2:82:82",
-					"start": 82,
-					"end": 84,
-					"text": "↑7",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:258:2:112:112",
-					"start": 112,
-					"end": 119,
-					"text": "Shields",
-					"color": "rgb(124, 173, 255)"
-				}
-			],
-			"officialAnnotations": []
-		},
-		{
-			"id": "ddc:temporal-adapter:260:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 260,
-				"column": 0
-			},
-			"title": "Temporal Adapter",
-			"description": "Upon readying:\n+? Stability, +? Handling, +20 Reload Speed, and 0.95x Reload Duration Multiplier for 10.5 seconds.\nSwords receive +? Charge Rate and +? Guard Resistance.\nHas a funny flavor text.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 260,
-						"column": 2
-					},
-					"start": 0,
-					"length": 194
-				}
-			],
-			"officialDescription": "Readying this weapon grants it bonus stability, handling, and reload speed for a moderate duration that is borrowed from an alternate timeline version of the weapon. Swords gain bonus charge rate and guard resistance.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:260:0",
-					"tab": "Weapon Perks",
-					"row": 260,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/a94feaf4bbaf5c96a5e01b0ac62bdb24.png",
-			"annotations": [
-				{
-					"keywordId": "charge-rate",
-					"start": 133,
-					"end": 144,
-					"text": "Charge Rate"
-				},
-				{
-					"keywordId": "guard-resistance",
-					"start": 152,
-					"end": 168,
-					"text": "Guard Resistance"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:260:2:170:170",
-					"start": 170,
-					"end": 194,
-					"text": "Has a funny flavor text.",
-					"color": "rgb(255, 178, 71)"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "charge-rate",
-					"start": 184,
-					"end": 195,
-					"text": "charge rate"
-				},
-				{
-					"keywordId": "guard-resistance",
-					"start": 200,
-					"end": 216,
-					"text": "guard resistance"
-				}
-			]
-		},
-		{
-			"id": "ddc:temporal-armaments:261:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 261,
-				"column": 0
-			},
-			"title": "Temporal Armaments",
-			"description": "Passively deals 15% ↑17% increased damage towards Cabal and Vex Combatants.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 261,
-						"column": 2
-					},
-					"start": 0,
-					"length": 75
-				}
-			],
-			"officialDescription": "This weapon gains improved bonus damage versus Cabal and Vex targets.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:261:0",
-					"tab": "Weapon Perks",
-					"row": 261,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/968c12faa75c0b20cb442aac944d6afb.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:261:2:16:16",
-					"start": 16,
-					"end": 20,
-					"text": "15% ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:261:2:20:20",
-					"start": 20,
-					"end": 24,
-					"text": "↑17%",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:261:2:24:24",
-					"start": 24,
-					"end": 74,
-					"text": " increased damage towards Cabal and Vex Combatants",
-					"color": "rgb(164, 194, 244)"
-				}
-			],
-			"officialAnnotations": []
-		},
-		{
-			"id": "ddc:temporal-blast:262:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 262,
-				"column": 0
-			},
-			"title": "Temporal Blast",
-			"description": "Dealing damage charges up an explosive blast.\nTemporal Blast requires dealing ~900 ↑~800 damage to fully charge.\nDamage built up persists through stow.\n\nWhile Temporal Blast is readied:\nShot explodes on impact, dealing 351 [157] additional damage as an Explosive Payload, damaging enemies within ? meters.\nDamage scales with Combatant Multiplier.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 262,
-						"column": 2
-					},
-					"start": 0,
-					"length": 346
-				}
-			],
-			"officialDescription": "This weapon stores a portion of its damage dealt into charges. At 5 charges, the weapon's next shot creates an explosive blast on impact that damages nearby combatants.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:262:0",
-					"tab": "Weapon Perks",
-					"row": 262,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/746df42d7a8cabcc382daaa854cda5fe.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:262:2:29:29",
-					"start": 29,
-					"end": 44,
-					"text": "explosive blast",
-					"color": "rgb(249, 203, 156)"
-				},
-				{
-					"keywordId": "temporal-blast",
-					"start": 46,
-					"end": 60,
-					"text": "Temporal Blast"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:262:2:83:83",
-					"start": 83,
-					"end": 88,
-					"text": "↑~800",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "temporal-blast",
-					"start": 159,
-					"end": 173,
-					"text": "Temporal Blast"
-				},
-				{
-					"keywordId": "pattern:text-pve-damage",
-					"start": 219,
-					"end": 222,
-					"text": "351",
-					"colorClass": "text-pve-damage"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:262:2:219:222",
-					"start": 222,
-					"end": 223,
-					"text": " ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "pattern:text-pvp-damage",
-					"start": 223,
-					"end": 228,
-					"text": "[157]",
-					"colorClass": "text-pvp-damage"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:262:2:228:228",
-					"start": 228,
-					"end": 229,
-					"text": " ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "explosive-payload",
-					"start": 253,
-					"end": 270,
-					"text": "Explosive Payload"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:262:2:306:306",
-					"start": 306,
-					"end": 346,
-					"text": "Damage scales with Combatant Multiplier.",
-					"color": "rgb(164, 194, 244)"
-				}
-			],
-			"officialAnnotations": []
-		},
-		{
-			"id": "ddc:temporal-loader:263:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 263,
-				"column": 0
-			},
-			"title": "Temporal Loader",
-			"description": "Upon dealing damage to Slowed, Frozen, or Suspended Enemies:\nPartially Refills Magazine. Incurs a 2.5? second cooldown upon activating.\nPrimaries = 27.5% ↑30% of Magazine, rounded up.\nSpecials = 20% ↑22% of Magazine, rounded up.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 263,
-						"column": 2
-					},
-					"start": 0,
-					"length": 228
-				}
-			],
-			"officialDescription": "This weapon loads ammo from reserves when dealing damage to targets that are slowed, frozen, or suspended.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:263:0",
-					"tab": "Weapon Perks",
-					"row": 263,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/bfb75c0c5b8ccf461ba7d59224980c16.png",
-			"annotations": [
-				{
-					"keywordId": "slow",
-					"start": 23,
-					"end": 29,
-					"text": "Slowed"
-				},
-				{
-					"keywordId": "freeze",
-					"start": 31,
-					"end": 37,
-					"text": "Frozen"
-				},
-				{
-					"keywordId": "suspend",
-					"start": 42,
-					"end": 51,
-					"text": "Suspended"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:263:2:42:51",
-					"start": 51,
-					"end": 52,
-					"text": " ",
-					"color": "rgb(106, 168, 79)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:263:2:89:89",
-					"start": 89,
-					"end": 136,
-					"text": "Incurs a 2.5? second cooldown upon activating.\n",
-					"color": "rgb(224, 102, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:263:2:154:154",
-					"start": 154,
-					"end": 158,
-					"text": "↑30%",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:263:2:199:199",
-					"start": 199,
-					"end": 203,
-					"text": "↑22%",
-					"color": "rgb(255, 217, 102)"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "slow",
-					"start": 77,
-					"end": 83,
-					"text": "slowed"
-				},
-				{
-					"keywordId": "freeze",
-					"start": 85,
-					"end": 91,
-					"text": "frozen"
-				},
-				{
-					"keywordId": "suspend",
-					"start": 96,
-					"end": 105,
-					"text": "suspended"
-				}
-			]
-		},
-		{
-			"id": "ddc:temporal-tracker:264:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 264,
-				"column": 0
-			},
-			"title": "Temporal Tracker",
-			"description": "On Orb of Power Pickup:\nGrants Temporal Tracker 10.5 ↑11 seconds.\n\nTemporal Tracker:\n+? Aim Assist while active.\nProjectile Weapons instead receive 50% Increased Aim Assist Falloff Distance, and 50% Increased Projectile Tracking Cone Size.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 264,
-						"column": 2
-					},
-					"start": 0,
-					"length": 239
-				}
-			],
-			"officialDescription": "Gain bonus aim assistance or projectile tracking for an improved duration after picking up an Orb of Power.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:264:0",
-					"tab": "Weapon Perks",
-					"row": 264,
-					"column": 0
-				}
-			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/0c07a1c3e35f5914ae047c2e7fd7723a.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:264:2:3:3",
-					"start": 3,
-					"end": 22,
-					"text": "Orb of Power Pickup",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "temporal-tracker",
-					"start": 31,
-					"end": 47,
-					"text": "Temporal Tracker"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:264:2:53:53",
-					"start": 53,
-					"end": 56,
-					"text": "↑11",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "temporal-tracker",
-					"start": 67,
-					"end": 83,
-					"text": "Temporal Tracker"
-				}
-			],
-			"officialAnnotations": []
-		},
-		{
-			"id": "ddc:armaments-of-ambition:266:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 266,
-				"column": 0
-			},
-			"title": "Armaments of Ambition",
-			"description": "+6 Handling, +6 Reload Speed, 0.x? Ready/Stow Duration Multiplier.\nFusion Rifles additionally receive +10 Charge Time\nSwords additionally receive +10 Charge Rate and +10 Ammo Capacity\n\nPassively grants Overcharge to the weapon when said modifier is active.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 266,
-						"column": 2
-					},
-					"start": 0,
-					"length": 256
-				}
-			],
-			"extraInfo": "Equippable on Fusion Rifles, Grenade Launchers, Sidearms, SMGs, and Swords.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:266:0",
-					"tab": "Weapon Perks",
-					"row": 266,
-					"column": 0
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "charge-rate",
-					"start": 150,
-					"end": 161,
-					"text": "Charge Rate"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:266:2:202:202",
-					"start": 202,
-					"end": 213,
-					"text": "Overcharge ",
-					"color": "rgb(164, 194, 244)"
-				}
-			]
-		},
-		{
-			"id": "ddc:armaments-of-resolve:267:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 267,
-				"column": 0
-			},
-			"title": "Armaments of Resolve",
-			"description": "+5 Aim Assist and +15 Recoil Direction.\n\nPassively grants Overcharge to the weapon when said modifier is active.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 267,
-						"column": 2
-					},
-					"start": 0,
-					"length": 112
-				}
-			],
-			"extraInfo": "Equippable on Auto Rifles, Bows, Pulse Rifles, Linear Fusions, and Machine Guns.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:267:0",
-					"tab": "Weapon Perks",
-					"row": 267,
-					"column": 0
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:267:2:58:58",
-					"start": 58,
-					"end": 69,
-					"text": "Overcharge ",
-					"color": "rgb(164, 194, 244)"
-				}
-			]
-		},
-		{
-			"id": "ddc:power-of-ambition:268:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 268,
-				"column": 0
-			},
-			"title": "Power of Ambition",
-			"description": "Blight Rounds is triggered through a Weapon Archetype based Counter System that progresses by dealing damage multiple times within ? seconds of each damage instance, activating upon reaching 100% progress.\n\nCounter Progress per damage instance:\nGrenade Launcher: ~3.4% (~30 hits)\nSubmachine Gun: 3.85% (26 hits)\n Fusion Rifle: 7.15% (14 hits)\nSidearm and Glaive Melee: 10% (10 hits)\nGlaive Projectile: 40% (3 hits)\n\nUpon reaching 100% Counter Progress:\nGrants Blight Rounds for 10 seconds. Buff cannot be refreshed.\n\nWhile Blight Rounds is active:\nDealing Weapon Damage inflicts Blighted. Glaive Melee cannot inflict Blight.\nBlighted deals 5 [8] Element-Matching Weapon Damage every 0.267 seconds, up to 7 times over 2 seconds after a 0.48 second delay. \nBlighted duration can be refreshed by Blight damage ticks, to a maximum of 45 ticks.\nBlighted inflicts Disruption, stunning Overload Champions and exhausting.\nDoT against Combatants scales with Combatant Rank Modifiers and other buffs.\n\nPassively grants Overcharge to the weapon when said modifier is active.\nNo interactions with Necrotic Grips, or any other Poison.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 268,
-						"column": 2
-					},
-					"start": 0,
-					"length": 1121
-				}
-			],
-			"extraInfo": "Equippable on Fusion Rifles, Grenade Launchers, Glaives, Sidearms, SMGs, and Swords.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:268:0",
-					"tab": "Weapon Perks",
-					"row": 268,
-					"column": 0
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:0:0",
-					"start": 0,
-					"end": 13,
-					"text": "Blight Rounds",
-					"color": "rgb(133, 202, 183)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:191:191",
-					"start": 191,
-					"end": 204,
-					"text": "100% progress",
-					"color": "rgb(133, 202, 183)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:207:207",
-					"start": 207,
-					"end": 245,
-					"text": "Counter Progress per damage instance:\n",
-					"color": "rgb(133, 202, 183)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:245:245",
-					"start": 245,
-					"end": 261,
-					"text": "Grenade Launcher",
-					"color": "rgb(147, 196, 125)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:280:280",
-					"start": 280,
-					"end": 294,
-					"text": "Submachine Gun",
-					"color": "rgb(183, 183, 183)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:313:313",
-					"start": 313,
-					"end": 325,
-					"text": "Fusion Rifle",
-					"color": "rgb(147, 196, 125)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:343:343",
-					"start": 343,
-					"end": 351,
-					"text": "Sidearm ",
-					"color": "rgb(204, 204, 204)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:355:355",
-					"start": 355,
-					"end": 362,
-					"text": "Glaive ",
-					"color": "rgb(137, 205, 209)"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 362,
-					"end": 367,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:383:383",
-					"start": 383,
-					"end": 400,
-					"text": "Glaive Projectile",
-					"color": "rgb(147, 196, 125)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:460:460",
-					"start": 460,
-					"end": 473,
-					"text": "Blight Rounds",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:490:490",
-					"start": 490,
-					"end": 514,
-					"text": "Buff cannot be refreshed",
-					"color": "rgb(224, 102, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:523:523",
-					"start": 523,
-					"end": 536,
-					"text": "Blight Rounds",
-					"color": "rgb(133, 202, 183)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:579:579",
-					"start": 579,
-					"end": 588,
-					"text": "Blighted.",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:589:589",
-					"start": 589,
-					"end": 596,
-					"text": "Glaive ",
-					"color": "rgb(137, 205, 209)"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 596,
-					"end": 601,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:602:602",
-					"start": 602,
-					"end": 609,
-					"text": "cannot ",
-					"color": "rgb(224, 102, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:617:617",
-					"start": 617,
-					"end": 623,
-					"text": "Blight",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:625:625",
-					"start": 625,
-					"end": 634,
-					"text": "Blighted ",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "pattern:text-pve-damage",
-					"start": 640,
-					"end": 641,
-					"text": "5",
-					"colorClass": "text-pve-damage"
-				},
-				{
-					"keywordId": "pattern:text-pvp-damage",
-					"start": 642,
-					"end": 645,
-					"text": "[8]",
-					"colorClass": "text-pvp-damage"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:646:646",
-					"start": 646,
-					"end": 676,
-					"text": "Element-Matching Weapon Damage",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:755:755",
-					"start": 755,
-					"end": 772,
-					"text": "Blighted duration",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:793:793",
-					"start": 793,
-					"end": 812,
-					"text": "Blight damage ticks",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:830:830",
-					"start": 830,
-					"end": 839,
-					"text": "45 ticks.",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:840:840",
-					"start": 840,
-					"end": 849,
-					"text": "Blighted ",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:858:858",
-					"start": 858,
-					"end": 868,
-					"text": "Disruption",
-					"color": "rgb(180, 167, 214)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:870:870",
-					"start": 870,
-					"end": 879,
-					"text": "stunning ",
-					"color": "rgb(159, 197, 232)"
-				},
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 879,
-					"end": 897,
-					"text": "Overload Champions",
-					"colorClass": "text-tier-champion"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:902:902",
-					"start": 902,
-					"end": 912,
-					"text": "exhausting",
-					"color": "rgb(221, 126, 107)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:914:914",
-					"start": 914,
-					"end": 991,
-					"text": "DoT against Combatants scales with Combatant Rank Modifiers and other buffs.\n",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:1009:1009",
-					"start": 1009,
-					"end": 1020,
-					"text": "Overcharge ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:1085:1085",
-					"start": 1085,
-					"end": 1099,
-					"text": "Necrotic Grips",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:268:2:1114:1114",
-					"start": 1114,
-					"end": 1120,
-					"text": "Poison",
-					"color": "rgb(106, 168, 79)"
-				}
-			]
-		},
-		{
-			"id": "ddc:power-of-resolve:269:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 269,
-				"column": 0
-			},
-			"title": "Power of Resolve",
-			"description": "Upon scoring multiple direct hits within ? seconds of each:\n\nReleases a seeking Taken projectile, dealing up to 39.4 [16] Element-Matching Damage on hit.\nTaken Projectile staggers Unstoppable Champions.\nDamage against Combatants scales with Combatant Rank Modifiers and counts as Weapon Damage.\n\nPassively grants Overcharge to the weapon when said modifier is active.\n\nHit Requirements to Trigger:\nMachine Gun: 17\nAuto Rifle: 12\nPulse Rifle: 9\nBow and LFR: 2",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 269,
-						"column": 2
-					},
-					"start": 0,
-					"length": 458
-				}
-			],
-			"extraInfo": "Equippable on Auto Rifles, Bows, Pulse Rifles, Linear Fusions, and Machine Guns.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:269:0",
-					"tab": "Weapon Perks",
-					"row": 269,
-					"column": 0
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:72:72",
-					"start": 72,
-					"end": 96,
-					"text": "seeking Taken projectile",
-					"color": "rgb(133, 202, 183)"
-				},
-				{
-					"keywordId": "pattern:text-pve-damage",
-					"start": 112,
-					"end": 116,
-					"text": "39.4",
-					"colorClass": "text-pve-damage"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:116:116",
-					"start": 116,
-					"end": 117,
-					"text": " ",
-					"color": "rgb(234, 153, 153)"
-				},
-				{
-					"keywordId": "pattern:text-pvp-damage",
-					"start": 117,
-					"end": 121,
-					"text": "[16]",
-					"colorClass": "text-pvp-damage"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:116:121",
-					"start": 121,
-					"end": 122,
-					"text": " ",
-					"color": "rgb(234, 153, 153)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:122:122",
-					"start": 122,
-					"end": 145,
-					"text": "Element-Matching Damage",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:171:171",
-					"start": 171,
-					"end": 180,
-					"text": "staggers ",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "pattern:text-tier-champion",
-					"start": 180,
-					"end": 201,
-					"text": "Unstoppable Champions",
-					"colorClass": "text-tier-champion"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:203:203",
-					"start": 203,
-					"end": 295,
-					"text": "Damage against Combatants scales with Combatant Rank Modifiers and counts as Weapon Damage.\n",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:269:2:313:313",
-					"start": 313,
-					"end": 324,
-					"text": "Overcharge ",
-					"color": "rgb(164, 194, 244)"
-				}
-			]
-		},
-		{
-			"id": "ddc:willbreaker-munitions:270:0",
-			"tab": "Weapon Perks",
-			"section": "Weapon Mods",
-			"groups": [
-				"Weapon Perks",
-				"Weapon Mods"
-			],
-			"source": {
-				"tab": "Weapon Perks",
-				"row": 270,
-				"column": 0
-			},
-			"title": "Willbreaker Munitions",
-			"description": "Passively deals 15% increased damage towards Dread and Taken Combatants.\n\nPassively grants Overcharge to the weapon when said modifier is active.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Weapon Perks",
-						"row": 270,
-						"column": 2
-					},
-					"start": 0,
-					"length": 145
-				}
-			],
-			"extraInfo": "Equippable on any weapon with Paracausal Fluid or Heretic Arsenal Origin Traits.",
-			"kind": "weapon_perk_or_verb",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:270:0",
-					"tab": "Weapon Perks",
-					"row": 270,
-					"column": 0
-				}
-			],
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Weapon Perks:270:2:16:16",
-					"start": 16,
-					"end": 71,
-					"text": "15% increased damage towards Dread and Taken Combatants",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Weapon Perks:270:2:91:91",
-					"start": 91,
-					"end": 102,
-					"text": "Overcharge ",
-					"color": "rgb(164, 194, 244)"
-				}
-			]
-		},
-		{
 			"id": "clarity:1197814525:heavy-ammo-finder-enhancement",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -42569,7 +41113,7 @@
 		{
 			"id": "clarity:2254149382:aerodynamics",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -42661,7 +41205,7 @@
 		{
 			"id": "clarity:3159358855:anti-flinch",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -42726,7 +41270,7 @@
 		{
 			"id": "clarity:3336648220:backup-mag",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -42811,7 +41355,7 @@
 		{
 			"id": "clarity:3417406043:ballistics",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -42883,7 +41427,7 @@
 		{
 			"id": "clarity:2420924065:special-ammo-finder-enhancement",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -42968,7 +41512,7 @@
 		{
 			"id": "clarity:1588595445:counterbalance-stock",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43033,7 +41577,7 @@
 		{
 			"id": "clarity:52638289:cqc-optics-high",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43090,7 +41634,7 @@
 		{
 			"id": "clarity:3310993845:cqc-optics-low",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43147,7 +41691,7 @@
 		{
 			"id": "clarity:574010092:edge",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43257,7 +41801,7 @@
 		{
 			"id": "ddc:enhanced-accuracy:283:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43297,7 +41841,7 @@
 		{
 			"id": "ddc:enhanced-blast-radius:284:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43344,7 +41888,7 @@
 		{
 			"id": "ddc:enhanced-charge-time:285:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43386,7 +41930,7 @@
 		{
 			"id": "ddc:enhanced-draw-time:286:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43428,7 +41972,7 @@
 		{
 			"id": "ddc:enhanced-handling:287:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43468,7 +42012,7 @@
 		{
 			"id": "ddc:enhanced-impact:288:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43510,7 +42054,7 @@
 		{
 			"id": "ddc:enhanced-persistence:289:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43550,7 +42094,7 @@
 		{
 			"id": "ddc:enhanced-projectile-speed:290:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43592,7 +42136,7 @@
 		{
 			"id": "ddc:enhanced-range:291:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43632,7 +42176,7 @@
 		{
 			"id": "ddc:enhanced-reload:292:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43672,7 +42216,7 @@
 		{
 			"id": "ddc:enhanced-shield-duration:293:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43712,7 +42256,7 @@
 		{
 			"id": "ddc:enhanced-stability:294:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43752,7 +42296,7 @@
 		{
 			"id": "ddc:flight:295:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43809,7 +42353,7 @@
 		{
 			"id": "clarity:736000386:freehand-grip",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43881,7 +42425,7 @@
 		{
 			"id": "clarity:941997506:icarus-grip",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -43946,7 +42490,7 @@
 		{
 			"id": "clarity:1847129788:marksman-optics-high",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44003,7 +42547,7 @@
 		{
 			"id": "clarity:2649250174:marksman-optics-low",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44060,7 +42604,7 @@
 		{
 			"id": "clarity:1334978104:quick-access-sling",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44125,7 +42669,7 @@
 		{
 			"id": "clarity:3785661089:radar-booster",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44182,7 +42726,7 @@
 		{
 			"id": "clarity:371216963:radar-tuner",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44260,7 +42804,7 @@
 		{
 			"id": "clarity:518387148:sprint-grip",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44325,7 +42869,7 @@
 		{
 			"id": "clarity:3024601835:stunloader",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44420,7 +42964,7 @@
 		{
 			"id": "clarity:3820243349:synergy",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44834,7 +43378,7 @@
 		{
 			"id": "clarity:2400144052:tactical",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44906,7 +43450,7 @@
 		{
 			"id": "clarity:3228611386:targeting-adjuster",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -44971,7 +43515,7 @@
 		{
 			"id": "clarity:1882549863:tension",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -152446,13 +150990,6 @@
 				},
 				{
 					"sourceId": "ddc",
-					"sourceKey": "Void:78:1",
-					"tab": "Void",
-					"row": 78,
-					"column": 1
-				},
-				{
-					"sourceId": "ddc",
 					"sourceKey": "Void:79:1",
 					"tab": "Void",
 					"row": 79,
@@ -152496,194 +151033,6 @@
 				}
 			],
 			"alternateDescriptions": [
-				{
-					"sourceId": "ddc",
-					"text": "[Air Move] activates Quickfall, spending a Melee Charge to dive and create a Smoke Cloud upon landing with a longer smoke duration of 6 seconds.\n\nEnemies caught by the Smoke Cloud are dealt 200 [50] Void Damage and become weakened for 10 [5] seconds. \nAllies caught by the Smoke Cloud become invisible for 6.5 seconds.\n\nSnare Bombs grant Invisibility to allies within 6 meters of its impact for 5+2 seconds.",
-					"descriptionSegments": [
-						{
-							"source": {
-								"tab": "Void",
-								"row": 78,
-								"column": 3
-							},
-							"start": 0,
-							"length": 407
-						}
-					],
-					"annotations": [
-						{
-							"keywordId": "sheet-color:Void:78:3:21:21",
-							"start": 21,
-							"end": 30,
-							"text": "Quickfall",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 43,
-							"end": 48,
-							"text": "Melee",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:43:48",
-							"start": 48,
-							"end": 55,
-							"text": " Charge",
-							"color": "rgb(121, 190, 195)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:77:77",
-							"start": 77,
-							"end": 88,
-							"text": "Smoke Cloud",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:116:116",
-							"start": 116,
-							"end": 122,
-							"text": "smoke ",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:168:168",
-							"start": 168,
-							"end": 179,
-							"text": "Smoke Cloud",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "pattern:text-pve-damage",
-							"start": 190,
-							"end": 193,
-							"text": "200",
-							"colorClass": "text-pve-damage"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:190:193",
-							"start": 193,
-							"end": 194,
-							"text": " ",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "pattern:text-pvp-damage",
-							"start": 194,
-							"end": 198,
-							"text": "[50]",
-							"colorClass": "text-pvp-damage"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:199:199",
-							"start": 199,
-							"end": 211,
-							"text": "Void Damage ",
-							"color": "rgb(187, 165, 243)"
-						},
-						{
-							"keywordId": "weaken",
-							"start": 222,
-							"end": 230,
-							"text": "weakened"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:222:230",
-							"start": 230,
-							"end": 231,
-							"text": " ",
-							"color": "rgb(194, 123, 160)"
-						},
-						{
-							"keywordId": "pattern:text-pve-damage",
-							"start": 235,
-							"end": 237,
-							"text": "10",
-							"colorClass": "text-pve-damage"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:235:237",
-							"start": 237,
-							"end": 238,
-							"text": " ",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "pattern:text-pvp-damage",
-							"start": 238,
-							"end": 241,
-							"text": "[5]",
-							"colorClass": "text-pvp-damage"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:238:241",
-							"start": 241,
-							"end": 242,
-							"text": " ",
-							"color": "rgb(234, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:242:242",
-							"start": 242,
-							"end": 250,
-							"text": "seconds.",
-							"color": "rgb(194, 123, 160)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:252:252",
-							"start": 252,
-							"end": 259,
-							"text": "Allies ",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:273:273",
-							"start": 273,
-							"end": 284,
-							"text": "Smoke Cloud",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "invisibility",
-							"start": 292,
-							"end": 301,
-							"text": "invisible"
-						},
-						{
-							"keywordId": "snare-bomb",
-							"start": 320,
-							"end": 331,
-							"text": "Snare Bombs"
-						},
-						{
-							"keywordId": "invisibility",
-							"start": 338,
-							"end": 350,
-							"text": "Invisibility"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:338:350",
-							"start": 350,
-							"end": 351,
-							"text": " ",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:354:354",
-							"start": 354,
-							"end": 361,
-							"text": "allies ",
-							"color": "rgb(164, 194, 244)"
-						},
-						{
-							"keywordId": "sheet-color:Void:78:3:396:396",
-							"start": 396,
-							"end": 398,
-							"text": "+2",
-							"color": "rgb(180, 167, 214)"
-						}
-					]
-				},
 				{
 					"sourceId": "ddc",
 					"text": "[Air Move] triggers Quickfall, consuming a Class Ability Charge.\nTriggers the effects of the equipped Class Ability on usage. Quickfall retriggers Invisibility if said buff is active.\n\nQuickfall:\nPerforms a slam, dealing up to 630 [71 Guardians | 700 Constructs] Void Damage over ? meters.\nDamage is increased by 50% while a Void Buff is active.\nRestores ? HP upon dealing damage.\nKills grant Devour for 10+5 seconds.\n–––––\nWhile Vanishing Step is also equipped:\nQuickfall inflicts disorient and weaken to enemies and grants invisibility to the user and allies within 10 meters.\n\nAspect's damage scales with Class Stat above 100, up to 65% [?%] at 200 Stat.",
@@ -295484,30 +293833,6 @@
 			]
 		},
 		{
-			"id": "armaments-of-ambition",
-			"label": "Armaments of Ambition",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:armaments-of-ambition:266:0"
-			]
-		},
-		{
-			"id": "armaments-of-resolve",
-			"label": "Armaments of Resolve",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:armaments-of-resolve:267:0"
-			]
-		},
-		{
 			"id": "armor-of-the-colossus",
 			"label": "Armor of the Colossus",
 			"aliases": [],
@@ -296903,18 +295228,6 @@
 			"variant": "default",
 			"references": [
 				"clarity:838219733:vex-mythoclast-catalyst"
-			]
-		},
-		{
-			"id": "calm-amidst-chaos",
-			"label": "Calm Amidst Chaos",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:calm-amidst-chaos:254:0"
 			]
 		},
 		{
@@ -304035,18 +302348,6 @@
 			]
 		},
 		{
-			"id": "kill-shot",
-			"label": "Kill Shot",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:kill-shot:255:0"
-			]
-		},
-		{
 			"id": "killing-breeze",
 			"label": "Killing Breeze",
 			"aliases": [],
@@ -306193,18 +304494,6 @@
 			]
 		},
 		{
-			"id": "opening-salvo",
-			"label": "Opening Salvo",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:opening-salvo:256:0"
-			]
-		},
-		{
 			"id": "opening-shot",
 			"label": "Opening Shot",
 			"aliases": [],
@@ -306358,18 +304647,6 @@
 			"variant": "default",
 			"references": [
 				"ddc:overload-grenades:168:5"
-			]
-		},
-		{
-			"id": "overpressured-munitions",
-			"label": "Overpressured Munitions",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:overpressured-munitions:257:0"
 			]
 		},
 		{
@@ -307006,30 +305283,6 @@
 			"variant": "default",
 			"references": [
 				"ddc:power-loader:53:0"
-			]
-		},
-		{
-			"id": "power-of-ambition",
-			"label": "Power of Ambition",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:power-of-ambition:268:0"
-			]
-		},
-		{
-			"id": "power-of-resolve",
-			"label": "Power of Resolve",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:power-of-resolve:269:0"
 			]
 		},
 		{
@@ -311485,18 +309738,6 @@
 			]
 		},
 		{
-			"id": "stay-in-the-fight",
-			"label": "Stay in the Fight",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:stay-in-the-fight:258:0"
-			]
-		},
-		{
 			"id": "steady-hands",
 			"label": "Steady Hands",
 			"aliases": [],
@@ -312819,18 +311060,6 @@
 			]
 		},
 		{
-			"id": "temporal-adapter",
-			"label": "Temporal Adapter",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:temporal-adapter:260:0"
-			]
-		},
-		{
 			"id": "temporal-alignment-refit",
 			"label": "Temporal Alignment Refit",
 			"aliases": [],
@@ -312852,42 +311081,6 @@
 			"variant": "default",
 			"references": [
 				"clarity:1259444143:temporal-anomaly"
-			]
-		},
-		{
-			"id": "temporal-armaments",
-			"label": "Temporal Armaments",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:temporal-armaments:261:0"
-			]
-		},
-		{
-			"id": "temporal-blast",
-			"label": "Temporal Blast",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:temporal-blast:262:0"
-			]
-		},
-		{
-			"id": "temporal-loader",
-			"label": "Temporal Loader",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:temporal-loader:263:0"
 			]
 		},
 		{
@@ -312936,18 +311129,6 @@
 			"variant": "default",
 			"references": [
 				"clarity:3235313316:temporal-manipulation-iv"
-			]
-		},
-		{
-			"id": "temporal-tracker",
-			"label": "Temporal Tracker",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:temporal-tracker:264:0"
 			]
 		},
 		{
@@ -316123,18 +314304,6 @@
 			"variant": "default",
 			"references": [
 				"ddc:will-of-light:12:20"
-			]
-		},
-		{
-			"id": "willbreaker-munitions",
-			"label": "Willbreaker Munitions",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"ddc:willbreaker-munitions:270:0"
 			]
 		},
 		{

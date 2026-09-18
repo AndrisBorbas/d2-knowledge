@@ -81,6 +81,7 @@ type CompactManifestTables = {
 	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
 	DestinyBreakerTypeDefinition: Record<string, CompactDefinition>;
 	DestinyEquipableItemSetDefinition: Record<string, CompactItemSetDefinition>;
+	ActivityModifiers: Record<string, CompactDefinition>;
 };
 
 function removeFromName(value: string, remove: string) {
@@ -429,6 +430,32 @@ function toCompactDefinition(value: unknown) {
 		i: icon,
 		d: description || undefined,
 	} satisfies CompactDefinition;
+}
+
+// Activity modifiers keyed by their lookup name, name and icon only. The Game
+// Mechanics page matches its modifier and Bane write-ups against these by
+// name. Several modifiers are defined more than once (one per playlist); the
+// one offered in activity selection wins, since that is the icon players see.
+function collectActivityModifiers(table: unknown) {
+	const source = asRecord<unknown>(table) ?? {};
+	const byName: Record<string, CompactDefinition> = {};
+	const selectable = new Set<string>();
+
+	for (const value of Object.values(source)) {
+		const row = asRecord<unknown>(value);
+		const compact = toCompactDefinition(value);
+		if (!row || !compact?.n || !compact.i) continue;
+
+		const key = normalizeLookupName(compact.n);
+		if (!key) continue;
+		const isSelectable = row.displayInActivitySelection === true;
+		if (byName[key] && (selectable.has(key) || !isSelectable)) continue;
+
+		byName[key] = { n: compact.n, i: compact.i };
+		if (isSelectable) selectable.add(key);
+	}
+
+	return byName;
 }
 
 type PerkFallbackDisplay = {
@@ -917,6 +944,10 @@ async function main() {
 		),
 		Subclasses: subclassResult.rows,
 		Weapons: weaponRows,
+		ActivityModifiers: collectActivityModifiers(
+			(snapshot.tables as Record<string, unknown>)
+				.DestinyActivityModifierDefinition,
+		),
 	};
 
 	const outputPath = path.join(outputDir, "bungie-manifest.json");

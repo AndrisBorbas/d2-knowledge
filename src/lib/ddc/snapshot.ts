@@ -5,6 +5,9 @@ import {
 	fetchSheetTabsWithColors,
 	type SheetColorCell,
 	type SheetColorIndex,
+	sheetColorKey,
+	type SheetHidden,
+	type SheetMerge,
 } from "@/lib/sheets/api";
 
 import { COMPENDIUM_ACTIVE_TAB_NAMES, COMPENDIUM_SHEET_ID } from "./config";
@@ -23,17 +26,25 @@ export type DdcSheetSnapshot = {
 	// `SheetColorIndex` is a Map, which JSON cannot hold, so it travels as its
 	// entry pairs and is rebuilt on read.
 	colors: [string, SheetColorCell][];
+	// Optional because snapshots taken before merges were recorded lack them;
+	// readers fall back to guessing spans from the gaps between cells.
+	merges?: Record<string, SheetMerge[]>;
+	// The raw grid keeps hidden rows and columns so the snapshot stays a
+	// faithful copy; they are blanked on read. Optional for the same reason as
+	// `merges`, and an older snapshot shows everything.
+	hidden?: Record<string, SheetHidden>;
 };
 
 export async function fetchDdcSheetSnapshot(): Promise<DdcSheetSnapshot> {
 	const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
 	if (!apiKey) throw new Error("GOOGLE_SHEETS_API_KEY is not set");
 
-	const { grid, colors, tabIds } = await fetchSheetTabsWithColors(
-		COMPENDIUM_SHEET_ID,
-		COMPENDIUM_ACTIVE_TAB_NAMES,
-		apiKey,
-	);
+	const { grid, colors, tabIds, merges, hidden } =
+		await fetchSheetTabsWithColors(
+			COMPENDIUM_SHEET_ID,
+			COMPENDIUM_ACTIVE_TAB_NAMES,
+			apiKey,
+		);
 
 	const missing = COMPENDIUM_ACTIVE_TAB_NAMES.filter(
 		(tab) => (grid[tab]?.length ?? 0) === 0,
@@ -50,13 +61,46 @@ export async function fetchDdcSheetSnapshot(): Promise<DdcSheetSnapshot> {
 		tabIds,
 		grid,
 		colors: [...colors.entries()],
+		merges,
+		hidden,
 	};
 }
 
 type DdcSheetSource = {
 	grid: Record<string, string[][]>;
 	colors: SheetColorIndex;
+	merges: Record<string, SheetMerge[]>;
 };
+
+// Blanks every cell the sheet hides, rather than dropping the rows, so row and
+// column indices still line up with the sheet and with the color and merge
+// indexes keyed by them. A blank row reads as a separator to every parser,
+// which is what a hidden run of rows looks like on the published sheet.
+function maskHiddenCells(snapshot: DdcSheetSnapshot): DdcSheetSource {
+	const colors: SheetColorIndex = new Map(snapshot.colors);
+	const merges: Record<string, SheetMerge[]> = {};
+	const grid: Record<string, string[][]> = {};
+
+	for (const [tab, rows] of Object.entries(snapshot.grid)) {
+		const hiddenRows = new Set(snapshot.hidden?.[tab]?.rows);
+		const hiddenColumns = new Set(snapshot.hidden?.[tab]?.columns);
+		const isHidden = (row: number, column: number) =>
+			hiddenRows.has(row) || hiddenColumns.has(column);
+
+		grid[tab] = rows.map((cells, row) =>
+			cells.map((text, column) => {
+				if (!isHidden(row, column)) return text;
+				colors.delete(sheetColorKey(tab, row, column));
+				return "";
+			}),
+		);
+		merges[tab] = (snapshot.merges?.[tab] ?? []).filter(
+			(merge) => !isHidden(merge.startRow, merge.startColumn),
+		);
+	}
+
+	return { grid, colors, merges };
+}
 
 async function readSnapshotFile(): Promise<DdcSheetSource> {
 	// Literal segments, not a spread: Next traces filesystem access statically.
@@ -79,7 +123,7 @@ async function readSnapshotFile(): Promise<DdcSheetSource> {
 		);
 	}
 
-	return { grid: snapshot.grid, colors: new Map(snapshot.colors) };
+	return maskHiddenCells(snapshot);
 }
 
 // 3.5 MB of JSON that the manifest script alone asks for twice. One promise per

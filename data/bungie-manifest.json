@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-18T00:57:19.926Z",
+	"generatedAt": "2026-09-18T20:47:39.792Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -8,7 +8,8 @@
 		"DestinyBreakerTypeDefinition",
 		"DestinyEquipableItemSetDefinition",
 		"DestinyPlugSetDefinition",
-		"DestinyStatDefinition"
+		"DestinyStatDefinition",
+		"DestinyActivityModifierDefinition"
 	],
 	"manifestVersion": "244213.26.06.29.2000-1-bnet.65864",
 	"manifestPath": "/common/destiny2_content/sqlite/en/world_sql_content_a695ee698e87bcb0333c1026ba10cd63.content",
@@ -3598,11 +3599,6 @@
 				"n": "Wicked Implement",
 				"i": "/common/destiny2_content/icons/0b506106c2cc195aaad59280be3b1fcc.jpg"
 			},
-			"941476219": {
-				"n": "Temporal Armaments",
-				"i": "/common/destiny2_content/icons/968c12faa75c0b20cb442aac944d6afb.png",
-				"d": "This weapon gains improved bonus damage versus Cabal and Vex targets."
-			},
 			"941997506": {
 				"n": "Icarus Grip",
 				"i": "/common/destiny2_content/icons/47257d7e3ee92a018085d7c9d7b6a0ae.png",
@@ -4782,11 +4778,6 @@
 				"n": "Enhanced Blast Radius",
 				"i": "/common/destiny2_content/icons/7491efe7090564c64cbf0558a86a4388.png",
 				"d": "+10 Blast Radius"
-			},
-			"1254077559": {
-				"n": "Opening Salvo",
-				"i": "/common/destiny2_content/icons/611acb82ebe581e405e7e599ced066ca.png",
-				"d": "This weapon gains bonus range and deals more flinch at the start of combat for an improved duration. Strong against [Stagger] Unstoppable Champions."
 			},
 			"1255073825": {
 				"n": "Void Spike",
@@ -9083,31 +9074,6 @@
 				"n": "Rat King",
 				"i": "/common/destiny2_content/icons/b86c24934b3ec9954218ecfa0992aeb2.jpg"
 			},
-			"2363538323": {
-				"n": "Overpressured Munitions",
-				"i": "/common/destiny2_content/icons/4fb0a0dbbe80ceeaf95a0ace368fc2c2.png",
-				"d": "This weapon gains bonus damage against Cabal targets."
-			},
-			"2363538324": {
-				"n": "Calm Amidst Chaos",
-				"i": "/common/destiny2_content/icons/f95264d47c1cf80d193b32bc0734f31d.png",
-				"d": "After not taking damage for a short duration, this weapon gains significantly increased aim down sight speed, handling and flinch resistance until the next shot is fired."
-			},
-			"2363538325": {
-				"n": "Opening Salvo",
-				"i": "/common/destiny2_content/icons/5e1c666e2d95937351a2134a4ebb34f7.png",
-				"d": "This weapon gains bonus range and deals more flinch at the start of combat for a duration. Strong against [Stagger] Unstoppable Champions."
-			},
-			"2363538326": {
-				"n": "Stay in the Fight",
-				"i": "/common/destiny2_content/icons/6eff29e10d8c9b7c444dfd8cde3cb103.png",
-				"d": "When your shields are broken, this weapon gains a period of increased stability and ammo generation."
-			},
-			"2363538327": {
-				"n": "Kill Shot",
-				"i": "/common/destiny2_content/icons/dafc177285b3a5a994ffd716f1b5a14a.png",
-				"d": "Reloading after a final blow loads a high-powered round, causing the next hit to cause additional splash damage. Strong against [Shield-Piercing] Barrier Champions."
-			},
 			"2368990400": {
 				"n": "Whisper of Reversal",
 				"i": "/common/destiny2_content/icons/b49e2d59fa7cf666045c38f01655230d.png",
@@ -12402,31 +12368,6 @@
 				"i": "/common/destiny2_content/icons/00887852b7c187bbca7298f1edcbbf59.png",
 				"d": "Stasis weapons get bonus reserves when picking up ammo used by that weapon."
 			},
-			"3176795729": {
-				"n": "Overpressured Munitions",
-				"i": "/common/destiny2_content/icons/4fb0a0dbbe80ceeaf95a0ace368fc2c2.png",
-				"d": "This weapon gains bonus damage against Cabal targets."
-			},
-			"3176795732": {
-				"n": "Stay in the Fight",
-				"i": "/common/destiny2_content/icons/6eff29e10d8c9b7c444dfd8cde3cb103.png",
-				"d": "When your shields are broken, this weapon gains a period of increased stability and ammo generation."
-			},
-			"3176795733": {
-				"n": "Kill Shot",
-				"i": "/common/destiny2_content/icons/dafc177285b3a5a994ffd716f1b5a14a.png",
-				"d": "Reloading after a final blow loads a high-powered round, causing the next hit to cause additional splash damage. Strong against [Shield-Piercing] Barrier Champions."
-			},
-			"3176795734": {
-				"n": "Calm Amidst Chaos",
-				"i": "/common/destiny2_content/icons/f95264d47c1cf80d193b32bc0734f31d.png",
-				"d": "After not taking damage for a short duration, this weapon gains significantly increased aim down sight speed, handling and flinch resistance until the next shot is fired."
-			},
-			"3176795735": {
-				"n": "Opening Salvo",
-				"i": "/common/destiny2_content/icons/5e1c666e2d95937351a2134a4ebb34f7.png",
-				"d": "This weapon gains bonus range and deals more flinch at the start of combat for a duration. Strong against [Stagger] Unstoppable Champions."
-			},
 			"3181253856": {
 				"n": "Spirit of Apotheosis",
 				"i": "/common/destiny2_content/icons/55caef25f1956ddf72f71d672acdae39.jpg",
@@ -12766,11 +12707,6 @@
 				"n": "Ticuu's Divination",
 				"i": "/common/destiny2_content/icons/39ef1673136f2f463879a83a44f11b0d.jpg"
 			},
-			"3261189180": {
-				"n": "Temporal Blast",
-				"i": "/common/destiny2_content/icons/a5a12d9748ad165f01648bfd7603de02.png",
-				"d": "This weapon stores an improved portion of its damage dealt into charges. At 5 charges, the weapon's next shot creates an explosive blast on impact that damages nearby combatants."
-			},
 			"3268255645": {
 				"n": "Sect of Force",
 				"i": "/common/destiny2_content/icons/b8a55863e8d952535d306476df20cf3c.jpg",
@@ -13017,11 +12953,6 @@
 				"i": "/common/destiny2_content/icons/8ca9b9caef4c4c5c0c19d3be25be3755.png",
 				"d": "Missing a shot has a chance to return ammo directly to the magazine."
 			},
-			"3347303957": {
-				"n": "Temporal Tracker",
-				"i": "/common/destiny2_content/icons/0c07a1c3e35f5914ae047c2e7fd7723a.png",
-				"d": "Gain bonus aim assistance or projectile tracking for an improved duration after picking up an Orb of Power."
-			},
 			"3347978672": {
 				"n": "Alchemical Etchings",
 				"i": "/common/destiny2_content/icons/c6e1c87f613c0eaabd4420dfc93de88a.png",
@@ -13074,11 +13005,6 @@
 				"n": "Precision Frame",
 				"i": "/common/destiny2_content/icons/e9dd736124e8ef94048901a279a5bb18.png",
 				"d": "Fires a long-range precision energy bolt. This weapon's recoil pattern is more predictably vertical."
-			},
-			"3356720704": {
-				"n": "Temporal Loader",
-				"i": "/common/destiny2_content/icons/7e6556c22dd4a7f84aecfdd76937223e.png",
-				"d": "This weapon loads an increased amount of ammo from reserves when dealing damage to targets that are slowed, frozen, or suspended."
 			},
 			"3363267119": {
 				"n": "Souldrinker",
@@ -13575,11 +13501,6 @@
 			"3481695565": {
 				"n": "Eunoia",
 				"i": "/common/destiny2_content/icons/2964b23eaa7ace60ac320c51dc500198.jpg"
-			},
-			"3481749002": {
-				"n": "Calm Amidst Chaos",
-				"i": "/common/destiny2_content/icons/b5a76904ce213ddada1ffca7bf339d90.png",
-				"d": "After not taking damage for a short duration, this weapon gains significantly increased aim down sight speed, handling and flinch resistance until the next shot is fired. Activates faster."
 			},
 			"3487253372": {
 				"n": "The Lament",
@@ -14160,31 +14081,6 @@
 				"i": "/common/destiny2_content/icons/e9dd736124e8ef94048901a279a5bb18.png",
 				"d": "Recoil pattern on this weapon is more predictably vertical. Fires a 4-round burst."
 			},
-			"3647810000": {
-				"n": "Temporal Loader",
-				"i": "/common/destiny2_content/icons/bfb75c0c5b8ccf461ba7d59224980c16.png",
-				"d": "This weapon loads ammo from reserves when dealing damage to targets that are slowed, frozen, or suspended."
-			},
-			"3647810001": {
-				"n": "Temporal Tracker",
-				"i": "/common/destiny2_content/icons/89567e8b273f18d3171539ff31e24ed7.png",
-				"d": "Gain bonus aim assistance or projectile tracking for a moderate duration after picking up an Orb of Power."
-			},
-			"3647810002": {
-				"n": "Temporal Adapter",
-				"i": "/common/destiny2_content/icons/a94feaf4bbaf5c96a5e01b0ac62bdb24.png",
-				"d": "Readying this weapon grants it bonus stability, handling, and reload speed for a moderate duration that is borrowed from an alternate timeline version of the weapon. Swords gain bonus charge rate and guard resistance."
-			},
-			"3647810003": {
-				"n": "Temporal Armaments",
-				"i": "/common/destiny2_content/icons/5293e29c71d1e815d8f87f9a83384c94.png",
-				"d": "This weapon gains bonus damage versus Cabal and Vex targets."
-			},
-			"3647810004": {
-				"n": "Temporal Blast",
-				"i": "/common/destiny2_content/icons/746df42d7a8cabcc382daaa854cda5fe.png",
-				"d": "This weapon stores a portion of its damage dealt into charges. At 5 charges, the weapon's next shot creates an explosive blast on impact that damages nearby combatants."
-			},
 			"3649430342": {
 				"n": "Twintails",
 				"i": "/common/destiny2_content/icons/3e2c8b1bab53ea59b73f69459980c540.png",
@@ -14480,11 +14376,6 @@
 				"i": "/common/destiny2_content/icons/ef9c0dbddcb4c51fe5d3768e26b73746.png",
 				"d": "Aiming this weapon without firing for a brief moment grants bonus range and precision damage while it remains zoomed."
 			},
-			"3734826478": {
-				"n": "Temporal Adapter",
-				"i": "/common/destiny2_content/icons/0dce13336bba45f819dc85b9f44cd900.png",
-				"d": "Readying this weapon grants it bonus stability, handling, and reload speed for an improved duration that is borrowed from an alternate timeline version of the weapon. Swords gain bonus charge rate and guard resistance."
-			},
 			"3735294183": {
 				"n": "Time Dilation",
 				"i": "/common/destiny2_content/icons/6e8e5886d1153072c1c5b24389746816.jpg"
@@ -14775,11 +14666,6 @@
 				"i": "/common/destiny2_content/icons/b46040930266213713f3dfcff9684f7e.png",
 				"d": "Readying this weapon grants an increased period of rapidly decaying accuracy and range. Swords gain increased lunge distance."
 			},
-			"3804466364": {
-				"n": "Stay in the Fight",
-				"i": "/common/destiny2_content/icons/1260d43764fdda097e64957e3e91431c.png",
-				"d": "When your shields are broken, this weapon gains an improved period of increased stability and ammo generation."
-			},
 			"3808234135": {
 				"n": "Shocked Glyphkeeper",
 				"i": "/common/destiny2_content/icons/d59371961c3794ebdecdb03351197b10.png",
@@ -15032,11 +14918,6 @@
 				"n": "Unflinching Void Aim",
 				"i": "/common/destiny2_content/icons/cbd47b9d27d7540725fabd5d2b291af7.png",
 				"d": "Reduces flinching from incoming fire while aiming a Void weapon."
-			},
-			"3890581141": {
-				"n": "Overpressured Munitions",
-				"i": "/common/destiny2_content/icons/f27d0a4981f351209b012423e578194f.png",
-				"d": "This weapon gains improved bonus damage against Cabal targets."
 			},
 			"3891536761": {
 				"n": "Kinetic Tremors",
@@ -15581,11 +15462,6 @@
 				"i": "/common/destiny2_content/icons/a1bad0a0e57792921e840dc126b5ecf7.png",
 				"d": "Recovering a bolt increases reload speed and handling."
 			},
-			"4043176609": {
-				"n": "Kill Shot",
-				"i": "/common/destiny2_content/icons/96a9c33d2ccbf225dce3274c48fc8767.png",
-				"d": "Reloading after a final blow loads a high-powered round, causing the next hit to cause improved additional splash damage. Strong against [Shield-Piercing] Barrier Champions."
-			},
 			"4045335048": {
 				"n": "Headseeker",
 				"i": "/common/destiny2_content/icons/bdca577f8850f3c6168e9bc055019934.png",
@@ -15625,31 +15501,6 @@
 				"n": "Duskfield Grenade",
 				"i": "/common/destiny2_content/icons/5ed90305d6131582eb76abd99c487826.png",
 				"d": "A grenade that shatters on impact, leaving behind a field that slows targets and freezes those who do not leave the volume."
-			},
-			"4057015648": {
-				"n": "Temporal Adapter",
-				"i": "/common/destiny2_content/icons/a94feaf4bbaf5c96a5e01b0ac62bdb24.png",
-				"d": "Readying this weapon grants it bonus stability, handling, and reload speed for a moderate duration that is borrowed from an alternate timeline version of the weapon. Swords gain bonus charge rate and guard resistance."
-			},
-			"4057015649": {
-				"n": "Temporal Armaments",
-				"i": "/common/destiny2_content/icons/5293e29c71d1e815d8f87f9a83384c94.png",
-				"d": "This weapon gains bonus damage versus Cabal and Vex targets."
-			},
-			"4057015650": {
-				"n": "Temporal Loader",
-				"i": "/common/destiny2_content/icons/bfb75c0c5b8ccf461ba7d59224980c16.png",
-				"d": "This weapon loads ammo from reserves when dealing damage to targets that are slowed, frozen, or suspended."
-			},
-			"4057015651": {
-				"n": "Temporal Tracker",
-				"i": "/common/destiny2_content/icons/89567e8b273f18d3171539ff31e24ed7.png",
-				"d": "Gain bonus aim assistance or projectile tracking for a moderate duration after picking up an Orb of Power."
-			},
-			"4057015654": {
-				"n": "Temporal Blast",
-				"i": "/common/destiny2_content/icons/746df42d7a8cabcc382daaa854cda5fe.png",
-				"d": "This weapon stores a portion of its damage dealt into charges. At 5 charges, the weapon's next shot creates an explosive blast on impact that damages nearby combatants."
 			},
 			"4057299719": {
 				"n": "Phoenix Protocol",
@@ -18769,11 +18620,6 @@
 				"i": "/common/destiny2_content/icons/17d84346ffe49f92a4db97b2fa59ba21.png",
 				"d": "While you have a Void or Prismatic subclass equipped, defeating weakened targets provides a small Void Overshield."
 			},
-			"1245958650": {
-				"n": "Stay in the Fight",
-				"i": "/common/destiny2_content/icons/1260d43764fdda097e64957e3e91431c.png",
-				"d": "When your shields are broken, this weapon gains an improved period of increased stability and ammo generation."
-			},
 			"1246205950": {
 				"n": "A Wish for Protection",
 				"i": "/common/destiny2_content/icons/f61c57bf97db2da78a537c7933e45b94.png",
@@ -18983,11 +18829,6 @@
 				"n": "Tilting at Windmills",
 				"i": "/common/destiny2_content/icons/212c0e69de61bbb0a9cfea024cf3a279.png",
 				"d": "Blocking damage with your shield increases movement speed for an improved duration while you are shielding."
-			},
-			"1358985671": {
-				"n": "Opening Salvo",
-				"i": "/common/destiny2_content/icons/611acb82ebe581e405e7e599ced066ca.png",
-				"d": "This weapon gains bonus range and deals more flinch at the start of combat for an improved duration. Strong against [Stagger] Unstoppable Champions."
 			},
 			"1360472098": {
 				"n": "Trickle Charge",
@@ -20569,11 +20410,6 @@
 				"i": "/common/destiny2_content/icons/9589b92d6863ebf09f776aad4dfbc2e3.png",
 				"d": "While you have stacks of Untold Greed, Orbs of Power and Elemental pickups provide more of their respective energy, and Strand Tangles deal increased damage. When your shields are broken, all stacks are converted into a fountain of Orbs of Power."
 			},
-			"2162803457": {
-				"n": "Kill Shot",
-				"i": "/common/destiny2_content/icons/96a9c33d2ccbf225dce3274c48fc8767.png",
-				"d": "Reloading after a final blow loads a high-powered round, causing the next hit to cause improved additional splash damage. Strong against [Shield-Piercing] Barrier Champions."
-			},
 			"2167622213": {
 				"n": "Counterattack",
 				"i": "/common/destiny2_content/icons/3a96a1a06bfeab461fd03b6d9fa9707f.png",
@@ -20603,11 +20439,6 @@
 				"n": "Bait and Switch",
 				"i": "/common/destiny2_content/icons/bc91e95edfbc9163dd88339a93b66913.png",
 				"d": "Deal damage with all equipped weapons within a short time to give this weapon a damage boost."
-			},
-			"2186554781": {
-				"n": "Temporal Tracker",
-				"i": "/common/destiny2_content/icons/0c07a1c3e35f5914ae047c2e7fd7723a.png",
-				"d": "Gain bonus aim assistance or projectile tracking for an improved duration after picking up an Orb of Power."
 			},
 			"2196183250": {
 				"n": "Blast Radius",
@@ -21869,11 +21700,6 @@
 				"i": "/common/destiny2_content/icons/c38aff78c3d2f91d47afa3ddb90acab6.png",
 				"d": "Gain even more increased reload, stability, aim assist, and range when an ally is defeated. Bonus further increases when multiple allies are dead at the same time or when you are running solo."
 			},
-			"2835104563": {
-				"n": "Temporal Armaments",
-				"i": "/common/destiny2_content/icons/968c12faa75c0b20cb442aac944d6afb.png",
-				"d": "This weapon gains improved bonus damage versus Cabal and Vex targets."
-			},
 			"2835443516": {
 				"n": "Dynamic Heat Weapon",
 				"i": "/common/destiny2_content/icons/4e065ecc7e8166279873c55b563b5311.png",
@@ -22433,31 +22259,6 @@
 				"n": "Rampage",
 				"i": "/common/destiny2_content/icons/8976ead57430e4f5f8af1b3005de4f83.png",
 				"d": "Final blows with this weapon grant increased damage for an improved duration. Stacks 3 times."
-			},
-			"3176795729": {
-				"n": "Overpressured Munitions",
-				"i": "/common/destiny2_content/icons/4fb0a0dbbe80ceeaf95a0ace368fc2c2.png",
-				"d": "This weapon gains bonus damage against Cabal targets."
-			},
-			"3176795732": {
-				"n": "Stay in the Fight",
-				"i": "/common/destiny2_content/icons/6eff29e10d8c9b7c444dfd8cde3cb103.png",
-				"d": "When your shields are broken, this weapon gains a period of increased stability and ammo generation."
-			},
-			"3176795733": {
-				"n": "Kill Shot",
-				"i": "/common/destiny2_content/icons/dafc177285b3a5a994ffd716f1b5a14a.png",
-				"d": "Reloading after a final blow loads a high-powered round, causing the next hit to cause additional splash damage. Strong against [Shield-Piercing] Barrier Champions."
-			},
-			"3176795734": {
-				"n": "Calm Amidst Chaos",
-				"i": "/common/destiny2_content/icons/f95264d47c1cf80d193b32bc0734f31d.png",
-				"d": "After not taking damage for a short duration, this weapon gains significantly increased aim down sight speed, handling and flinch resistance until the next shot is fired."
-			},
-			"3176795735": {
-				"n": "Opening Salvo",
-				"i": "/common/destiny2_content/icons/5e1c666e2d95937351a2134a4ebb34f7.png",
-				"d": "This weapon gains bonus range and deals more flinch at the start of combat for a duration. Strong against [Stagger] Unstoppable Champions."
 			},
 			"3177387065": {
 				"n": "Bray Inheritance",
@@ -23437,31 +23238,6 @@
 				"i": "/common/destiny2_content/icons/322697412ebf6e43488a8e3b55b2db91.png",
 				"d": "While Charged with Light, readying or firing a Rocket Launcher grants it increased damage and reload speed. Damaging a combatant with a rocket consumes one stack of Charged with Light."
 			},
-			"3647810000": {
-				"n": "Temporal Loader",
-				"i": "/common/destiny2_content/icons/bfb75c0c5b8ccf461ba7d59224980c16.png",
-				"d": "This weapon loads ammo from reserves when dealing damage to targets that are slowed, frozen, or suspended."
-			},
-			"3647810001": {
-				"n": "Temporal Tracker",
-				"i": "/common/destiny2_content/icons/89567e8b273f18d3171539ff31e24ed7.png",
-				"d": "Gain bonus aim assistance or projectile tracking for a moderate duration after picking up an Orb of Power."
-			},
-			"3647810002": {
-				"n": "Temporal Adapter",
-				"i": "/common/destiny2_content/icons/a94feaf4bbaf5c96a5e01b0ac62bdb24.png",
-				"d": "Readying this weapon grants it bonus stability, handling, and reload speed for a moderate duration that is borrowed from an alternate timeline version of the weapon. Swords gain bonus charge rate and guard resistance."
-			},
-			"3647810003": {
-				"n": "Temporal Armaments",
-				"i": "/common/destiny2_content/icons/5293e29c71d1e815d8f87f9a83384c94.png",
-				"d": "This weapon gains bonus damage versus Cabal and Vex targets."
-			},
-			"3647810004": {
-				"n": "Temporal Blast",
-				"i": "/common/destiny2_content/icons/746df42d7a8cabcc382daaa854cda5fe.png",
-				"d": "This weapon stores a portion of its damage dealt into charges. At 5 charges, the weapon's next shot creates an explosive blast on impact that damages nearby combatants."
-			},
 			"3650690523": {
 				"n": "Slideshot",
 				"i": "/common/destiny2_content/icons/7d41765e3db3a77da5cce27888c52d87.png",
@@ -23717,11 +23493,6 @@
 				"i": "/common/destiny2_content/icons/9760ffcf788d95ba21c2faec7b60566d.png",
 				"d": "Radar immediately returns when you stop aiming down sights."
 			},
-			"3802512157": {
-				"n": "Overpressured Munitions",
-				"i": "/common/destiny2_content/icons/f27d0a4981f351209b012423e578194f.png",
-				"d": "This weapon gains improved bonus damage against Cabal targets."
-			},
 			"3802814258": {
 				"n": "Indomitability",
 				"i": "/common/destiny2_content/icons/82a2dd97afec22865d0a1098c1de59ff.png",
@@ -23926,11 +23697,6 @@
 				"n": "Balanced Heat Weapon",
 				"i": "/common/destiny2_content/icons/b46e3f554098e175b34f6abe2b311c7c.png",
 				"d": "Very low heat generated. [Reload]  to vent heat from the weapon. Overheating forces a sustained vent. Manually venting at very high heat greatly increases venting speed."
-			},
-			"3924968570": {
-				"n": "Temporal Blast",
-				"i": "/common/destiny2_content/icons/a5a12d9748ad165f01648bfd7603de02.png",
-				"d": "This weapon stores an improved portion of its damage dealt into charges. At 5 charges, the weapon's next shot creates an explosive blast on impact that damages nearby combatants."
 			},
 			"3927793532": {
 				"n": "Whisper of Fractures",
@@ -24282,11 +24048,6 @@
 				"i": "/common/destiny2_content/icons/25692d31f4963c07c3a82aba508b52b6.png",
 				"d": "Weapon final blows grant bonus damage. Melee and grenade final blows grant a larger damage bonus that can stack."
 			},
-			"4131550260": {
-				"n": "Temporal Adapter",
-				"i": "/common/destiny2_content/icons/0dce13336bba45f819dc85b9f44cd900.png",
-				"d": "Readying this weapon grants it bonus stability, handling, and reload speed for an improved duration that is borrowed from an alternate timeline version of the weapon. Swords gain bonus charge rate and guard resistance."
-			},
 			"4135459061": {
 				"n": "Reaper",
 				"i": "/common/destiny2_content/icons/f1fba3ecacb97239cb2f8422dd8c7a03.png",
@@ -24347,11 +24108,6 @@
 				"i": "/common/destiny2_content/icons/d1d0a66bbefc83e8240648d399041a96.png",
 				"d": "Improves your Shield Throw melee."
 			},
-			"4155401192": {
-				"n": "Calm Amidst Chaos",
-				"i": "/common/destiny2_content/icons/b5a76904ce213ddada1ffca7bf339d90.png",
-				"d": "After not taking damage for a short duration, this weapon gains significantly increased aim down sight speed, handling and flinch resistance until the next shot is fired. Activates faster."
-			},
 			"4155879577": {
 				"n": "Echo of Domineering",
 				"i": "/common/destiny2_content/icons/958ff340ae4ce16d7cf71c5268a13919.jpg",
@@ -24386,11 +24142,6 @@
 				"n": "Cauterizing Flame",
 				"i": "/common/destiny2_content/icons/112420b294bf86cb9911ed30c4d0669e.png",
 				"d": "Create a Sunspot when critically wounded or on Barricade cast."
-			},
-			"4175156998": {
-				"n": "Temporal Loader",
-				"i": "/common/destiny2_content/icons/7e6556c22dd4a7f84aecfdd76937223e.png",
-				"d": "This weapon loads an increased amount of ammo from reserves when dealing damage to targets that are slowed, frozen, or suspended."
 			},
 			"4180169223": {
 				"n": "Focusing Strike",
@@ -33737,6 +33488,1012 @@
 				"dt": 1,
 				"at": 1,
 				"bt": 3
+			}
+		},
+		"ActivityModifiers": {
+			"illicit blade battery": {
+				"n": "Illicit Blade Battery",
+				"i": "/common/destiny2_content/icons/8c33d7ef2f60bdc8a21c1040083dae24.png"
+			},
+			"a challenge awaits": {
+				"n": "A Challenge Awaits…",
+				"i": "/common/destiny2_content/icons/df6e511a8b2ff51c8befdf38ac73e7fd.png"
+			},
+			"3 feats armor locks": {
+				"n": "3+ Feats: Armor Locks",
+				"i": "/common/destiny2_content/icons/cbf984b2b75765631debbe89682a3262.png"
+			},
+			"legendary": {
+				"n": "Legendary",
+				"i": "/common/destiny2_content/icons/07c0a5825aedb265bc69248604fb07cb.png"
+			},
+			"champion foes": {
+				"n": "Champion Foes",
+				"i": "/common/destiny2_content/icons/214f06ead880d46aca85cca14a07130a.png"
+			},
+			"solstice scorched": {
+				"n": "Solstice Scorched",
+				"i": "/common/destiny2_content/icons/549c82d1c59bd14a9dea6a1bc526271b.png"
+			},
+			"heavy ammo rules alpha": {
+				"n": "Heavy Ammo Rules (Alpha)",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"air superiority": {
+				"n": "Air Superiority",
+				"i": "/common/destiny2_content/icons/130884e49896d0d2a5a5827d4c53048b.png"
+			},
+			"rank and file damage increase": {
+				"n": "Rank-and-File Damage Increase",
+				"i": "/common/destiny2_content/icons/e52bc9f6cd5b0d5936290cd8d8262c47.png"
+			},
+			"master modifiers": {
+				"n": "Master Modifiers",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"overcharged rocket launcher": {
+				"n": "Overcharged Rocket Launcher",
+				"i": "/common/destiny2_content/icons/dd28546b6d1b7824bcba8ab563f128b6.png"
+			},
+			"hot knife": {
+				"n": "Hot Knife",
+				"i": "/common/destiny2_content/icons/21e94766fc965a6afedbaf9ecc6d8c36.png"
+			},
+			"crossfire challenge": {
+				"n": "Crossfire Challenge",
+				"i": "/common/destiny2_content/icons/86291d01b1b39aa815adbeff3295aa43.png"
+			},
+			"ashes to ashes": {
+				"n": "Ashes to Ashes",
+				"i": "/common/destiny2_content/icons/84a9b46a7df6de79284228359e6ecc74.png"
+			},
+			"empath": {
+				"n": "Empath",
+				"i": "/common/destiny2_content/icons/aada29594b808f94f09df05c5f23282e.png"
+			},
+			"special ammo increased": {
+				"n": "Special Ammo Increased",
+				"i": "/common/destiny2_content/icons/71a79e309fa84334abdbb8dfc55c8c43.png"
+			},
+			"arc threat": {
+				"n": "Arc Threat",
+				"i": "/common/destiny2_content/icons/051be5914e15fa34819fcbc412576f44.png"
+			},
+			"the core four": {
+				"n": "The Core Four",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"of all trades": {
+				"n": "Of All Trades",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"limited revives": {
+				"n": "Limited Revives",
+				"i": "/common/destiny2_content/icons/e77762b85dd35479e4b3f2c71fe626a7.png"
+			},
+			"which witch": {
+				"n": "Which Witch",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"grounded": {
+				"n": "Grounded",
+				"i": "/common/destiny2_content/icons/28972c7983eb4474507c1a1e6b644bc4.png"
+			},
+			"the only oracle for you": {
+				"n": "The Only Oracle For You",
+				"i": "/common/destiny2_content/icons/75155c6d06a82303493cca1f29b622b2.png"
+			},
+			"tomb of elders": {
+				"n": "Tomb of Elders",
+				"i": "/common/destiny2_content/icons/e952587eebd9dc2444f163f6180c9e23.png"
+			},
+			"glass": {
+				"n": "Glass",
+				"i": "/common/destiny2_content/icons/9d122bcd693ef3b44a1a066574e80e93.png"
+			},
+			"accelerator heavy surge": {
+				"n": "Accelerator: Heavy Surge",
+				"i": "/common/destiny2_content/icons/34ef86fd7f0d3e7d33a00c0cc5d7893a.png"
+			},
+			"shocker": {
+				"n": "Shocker",
+				"i": "/common/destiny2_content/icons/1011375332d042ecf0c85f1f521852e6.png"
+			},
+			"iron banner eruption": {
+				"n": "Iron Banner: Eruption",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"contestants the way of the hoof": {
+				"n": "Contestants: The Way of the Hoof",
+				"i": "/common/destiny2_content/icons/5da2aebe18add29b30e5ed068c8820e5.png"
+			},
+			"solar surge": {
+				"n": "Solar Surge",
+				"i": "/common/destiny2_content/icons/1f27bdc178bf645944119d6481f33656.png"
+			},
+			"hardware focus": {
+				"n": "Hardware Focus",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"galvanized": {
+				"n": "Galvanized",
+				"i": "/common/destiny2_content/icons/a5064c9a71c811a7478cd2e3662a7031.png"
+			},
+			"grandmaster modifiers": {
+				"n": "Grandmaster Modifiers",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"havoc rules": {
+				"n": "Havoc Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"accelerator special surge": {
+				"n": "Accelerator: Special Surge",
+				"i": "/common/destiny2_content/icons/cd86914426e793978a4bab2423f36e15.png"
+			},
+			"stasis threat": {
+				"n": "Stasis Threat",
+				"i": "/common/destiny2_content/icons/cd503f17a71a05d8b64edbaae87df834.png"
+			},
+			"quitter status good standing": {
+				"n": "Quitter Status: Good Standing",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"join in progress disabled": {
+				"n": "Join In Progress Disabled",
+				"i": "/common/destiny2_content/icons/5c45a4f1f41d5746c314d3a2cc1a6fbb.png"
+			},
+			"stasis slide": {
+				"n": "Stasis Slide",
+				"i": "/common/destiny2_content/icons/ae70fb85425284e7401c5ca84ee2b2f4.png"
+			},
+			"exotic drop rate boosts gained": {
+				"n": "Exotic Drop Rate Boosts Gained",
+				"i": "/common/destiny2_content/icons/e8b3345969eca43c46bfc13c0964f267.png"
+			},
+			"leftovers": {
+				"n": "Leftovers",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"onslaught rules": {
+				"n": "Onslaught Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"the pathways": {
+				"n": "The Pathways",
+				"i": "/common/destiny2_content/icons/e952587eebd9dc2444f163f6180c9e23.png"
+			},
+			"survival rules": {
+				"n": "Survival Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"contest mode": {
+				"n": "Contest Mode",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"scorched earth": {
+				"n": "Scorched Earth",
+				"i": "/common/destiny2_content/icons/38544528a6169e9d54fe3774fa17c204.png"
+			},
+			"heavy ammo rules bravo": {
+				"n": "Heavy Ammo Rules (Bravo)",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"shielded foes": {
+				"n": "Shielded Foes",
+				"i": "/common/destiny2_content/icons/7b4f308471f112ce53952df4185cc2e0.png"
+			},
+			"equal vessels": {
+				"n": "Equal Vessels",
+				"i": "/common/destiny2_content/icons/5e9b55c6e24cc842479aeddf80068fd0.png"
+			},
+			"competitive division rules": {
+				"n": "Competitive Division Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"srl info": {
+				"n": "SRL Info",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"illuminated torment challenge": {
+				"n": "Illuminated Torment Challenge",
+				"i": "/common/destiny2_content/icons/86291d01b1b39aa815adbeff3295aa43.png"
+			},
+			"a link to the chain": {
+				"n": "A Link to the Chain",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"overcharged machine gun": {
+				"n": "Overcharged Machine Gun",
+				"i": "/common/destiny2_content/icons/3ca526bce517862693135d5c2acc08fc.png"
+			},
+			"stasis burn": {
+				"n": "Stasis Burn",
+				"i": "/common/destiny2_content/icons/cd503f17a71a05d8b64edbaae87df834.png"
+			},
+			"volatile weapon mods bows": {
+				"n": "Volatile Weapon Mods: Bows",
+				"i": "/common/destiny2_content/icons/f416c9970286f5cdfa19e8f3060fdb0b.png"
+			},
+			"haste": {
+				"n": "Haste",
+				"i": "/common/destiny2_content/icons/9c955fa32f73d79db8a5ba164274a4ee.png"
+			},
+			"new territory": {
+				"n": "New Territory",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"famine": {
+				"n": "Famine",
+				"i": "/common/destiny2_content/icons/bf428f6db590124ca76f9d49b2033d57.png"
+			},
+			"epitaph": {
+				"n": "Epitaph",
+				"i": "/common/destiny2_content/icons/533e06cc31365d690c99825085e1fc1d.png"
+			},
+			"double bonus focus": {
+				"n": "Double Bonus Focus",
+				"i": "/common/destiny2_content/icons/b7c1b06ec85d1e74996b1bc6cdc5e792.png"
+			},
+			"hot step": {
+				"n": "Hot Step",
+				"i": "/common/destiny2_content/icons/ac0ff115bd6def2b192d1716781b2abd.png"
+			},
+			"difficult combatants shield piercing disruption stagger": {
+				"n": "Difficult Combatants [Shield-Piercing] [Disruption] [Stagger]",
+				"i": "/common/destiny2_content/icons/70c843c68353be08b99389e2e910cb02.png"
+			},
+			"brutal": {
+				"n": "Brutal",
+				"i": "/common/destiny2_content/icons/7d665219a328178802753159ca3ae143.png"
+			},
+			"expert modifiers": {
+				"n": "Expert Modifiers",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"quitter status warning": {
+				"n": "Quitter Status: Warning",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"synergy": {
+				"n": "Synergy",
+				"i": "/common/destiny2_content/icons/3f23f55fbfc27f470754ad19078b019c.png"
+			},
+			"double nightfall drops": {
+				"n": "Double Nightfall Drops",
+				"i": "/common/destiny2_content/icons/f60cfd9b9ee1454a6efd0c0727bd3294.png"
+			},
+			"boosts gained": {
+				"n": "Boosts Gained",
+				"i": "/common/destiny2_content/icons/e8b3345969eca43c46bfc13c0964f267.png"
+			},
+			"no time limit": {
+				"n": "No Time Limit",
+				"i": "/common/destiny2_content/icons/da3e909b438090888aa440a6335f07c6.png"
+			},
+			"accelerator score multiplier": {
+				"n": "Accelerator: Score Multiplier",
+				"i": "/common/destiny2_content/icons/2fac19deb367f827e27d5b8a3de4ac02.png"
+			},
+			"champions overload": {
+				"n": "Champions: Overload",
+				"i": "/common/destiny2_content/icons/f5b9dd270a544afaf2b9a726b1296501.png"
+			},
+			"at capacity challenge": {
+				"n": "At Capacity Challenge",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"firesprite fancy": {
+				"n": "Firesprite Fancy",
+				"i": "/common/destiny2_content/icons/67019e9947bd13ebbf45131ea4e37da8.png"
+			},
+			"focused activity": {
+				"n": "Focused Activity",
+				"i": "/common/destiny2_content/icons/ccbf1983a41304acf64d7e659a3bb18f.png"
+			},
+			"foundry sponsorship suros": {
+				"n": "Foundry Sponsorship: Suros",
+				"i": "/common/destiny2_content/icons/f921ec8ccace32aa230aa3c2d607c13f.png"
+			},
+			"balanced scales": {
+				"n": "Balanced Scales",
+				"i": "/common/destiny2_content/icons/d1c9f45b87a2c195b1b163fc608adbd1.png"
+			},
+			"challenge mode": {
+				"n": "Challenge Mode",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"fired up": {
+				"n": "Fired Up",
+				"i": "/common/destiny2_content/icons/0aa8462330d7f28ef55726e9dd8bdc0a.png"
+			},
+			"counterfeit": {
+				"n": "Counterfeit",
+				"i": "/common/destiny2_content/icons/b25a459754aea76c9604a7b6cccd49bc.png"
+			},
+			"overcharged sniper rifle": {
+				"n": "Overcharged Sniper Rifle",
+				"i": "/common/destiny2_content/icons/42ee3b4d0e96fb29e45a17402d764cac.png"
+			},
+			"coordinated efforts challenge": {
+				"n": "Coordinated Efforts Challenge",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"overcharged sword": {
+				"n": "Overcharged Sword",
+				"i": "/common/destiny2_content/icons/d3eae1838151c4fb2ed1ac18a1327733.png"
+			},
+			"radiant joy": {
+				"n": "Radiant Joy",
+				"i": "/common/destiny2_content/icons/f1a4c836ccdbdea48971bcb42f39db03.png"
+			},
+			"paracausal focus": {
+				"n": "Paracausal Focus",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"rumble rules": {
+				"n": "Rumble Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"brawler": {
+				"n": "Brawler",
+				"i": "/common/destiny2_content/icons/71abf1263987bec8622e03f231867dbb.png"
+			},
+			"clash rules": {
+				"n": "Clash Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"mettle": {
+				"n": "Mettle",
+				"i": "/common/destiny2_content/icons/e5d74f03f4a20212c07f0994bc09af32.png"
+			},
+			"snowstorm": {
+				"n": "Snowstorm",
+				"i": "/common/destiny2_content/icons/876f6b0e3fee085cdd73d81a0461425f.png"
+			},
+			"foundry sponsorship h kke": {
+				"n": "Foundry Sponsorship: Häkke",
+				"i": "/common/destiny2_content/icons/b0fa7fdea5b79468043568f2536ce78b.png"
+			},
+			"blasts": {
+				"n": "Blasts",
+				"i": "/common/destiny2_content/icons/b49d575dc71c696a0ff91cf2307d14f0.png"
+			},
+			"blackout": {
+				"n": "Blackout",
+				"i": "/common/destiny2_content/icons/cc2c7f1e8d51b5807edd62c7aefc8b3a.png"
+			},
+			"contestants disciples of the neigh": {
+				"n": "Contestants: Disciples of the Neigh",
+				"i": "/common/destiny2_content/icons/5da2aebe18add29b30e5ed068c8820e5.png"
+			},
+			"all ammo famine": {
+				"n": "All Ammo Famine",
+				"i": "/common/destiny2_content/icons/bf428f6db590124ca76f9d49b2033d57.png"
+			},
+			"iron": {
+				"n": "Iron",
+				"i": "/common/destiny2_content/icons/a5064c9a71c811a7478cd2e3662a7031.png"
+			},
+			"equipment locked": {
+				"n": "Equipment Locked",
+				"i": "/common/destiny2_content/icons/63c499eaf4cd558161b6d58b97951765.png"
+			},
+			"cutting edge rules": {
+				"n": "Cutting Edge Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"strength of memory": {
+				"n": "Strength of Memory",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"shot caller": {
+				"n": "Shot Caller",
+				"i": "/common/destiny2_content/icons/660899690112212eb5c3536d8ebed9bd.png"
+			},
+			"placement series": {
+				"n": "Placement Series",
+				"i": "/common/destiny2_content/icons/9058f992f2032ae8b6abc4a14a1a8866.png"
+			},
+			"equilibrium": {
+				"n": "Equilibrium",
+				"i": "/common/destiny2_content/icons/e8b3345969eca43c46bfc13c0964f267.png"
+			},
+			"collision rules": {
+				"n": "Collision Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"denial": {
+				"n": "Denial",
+				"i": "/common/destiny2_content/icons/f444bedee9eab9b197308e73877e44dd.png"
+			},
+			"escalating difficulty": {
+				"n": "Escalating Difficulty",
+				"i": "/common/destiny2_content/icons/112610c51efacefd71824666edf122b1.png"
+			},
+			"balanced diet challenge": {
+				"n": "Balanced Diet Challenge",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"martyr": {
+				"n": "Martyr",
+				"i": "/common/destiny2_content/icons/a9b0310bfe612da7855d66a86575a81e.png"
+			},
+			"ensemble s refrain": {
+				"n": "Ensemble's Refrain",
+				"i": "/common/destiny2_content/icons/75155c6d06a82303493cca1f29b622b2.png"
+			},
+			"chill touch": {
+				"n": "Chill Touch",
+				"i": "/common/destiny2_content/icons/76925e72fdf52b3f16636e0a35f84082.png"
+			},
+			"solar thermal swap": {
+				"n": "Solar Thermal Swap",
+				"i": "/common/destiny2_content/icons/8819cd14de8c747e7aa5428b61690ba2.png"
+			},
+			"strand threat": {
+				"n": "Strand Threat",
+				"i": "/common/destiny2_content/icons/1d08f7349ac49a59f243db82fbdffd80.png"
+			},
+			"matchmaking": {
+				"n": "Matchmaking",
+				"i": "/common/destiny2_content/icons/3f23f55fbfc27f470754ad19078b019c.png"
+			},
+			"all hands challenge": {
+				"n": "All Hands Challenge",
+				"i": "/common/destiny2_content/icons/86291d01b1b39aa815adbeff3295aa43.png"
+			},
+			"heavyweight": {
+				"n": "Heavyweight",
+				"i": "/common/destiny2_content/icons/8af9cf3b89da5ac9c96b5e4cf76398d2.png"
+			},
+			"keep out": {
+				"n": "Keep Out",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"fabled": {
+				"n": "Fabled",
+				"i": "/common/destiny2_content/icons/50dbefe7c089f555e9cc9b64b10c7e1a.png"
+			},
+			"boss rotation": {
+				"n": "Boss Rotation",
+				"i": "/common/destiny2_content/icons/c9e7fb8ef4c19de46f7a189766803fcc.png"
+			},
+			"mayhem rules": {
+				"n": "Mayhem Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"fireteam power boosting disabled": {
+				"n": "Fireteam Power Boosting Disabled",
+				"i": "/common/destiny2_content/icons/0254bab45bd31607df38d17098efd053.png"
+			},
+			"quitter status restriction": {
+				"n": "Quitter Status: Restriction",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"solar storms": {
+				"n": "Solar Storms",
+				"i": "/common/destiny2_content/icons/6bd8c080de66e1ac799d291127ad4e47.png"
+			},
+			"solar singe": {
+				"n": "Solar Singe",
+				"i": "/common/destiny2_content/icons/11477e42dd2738f0af4d60a78cd19168.png"
+			},
+			"countdown rules": {
+				"n": "Countdown Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"igniter": {
+				"n": "Igniter",
+				"i": "/common/destiny2_content/icons/4a3cf1b1c8bd3899a51ae7f5d8bcc386.png"
+			},
+			"restricted": {
+				"n": "Restricted",
+				"i": "/common/destiny2_content/icons/9ea217392fd88ee5f2709da7fc475777.png"
+			},
+			"ma 75 multipurpose": {
+				"n": "MA-75 Multipurpose",
+				"i": "/common/destiny2_content/icons/5125ee010404241ca8f1203e8454f764.png"
+			},
+			"keep it loaded": {
+				"n": "Keep It Loaded",
+				"i": "/common/destiny2_content/icons/f9c90dbc192d1683e063cf152ac1f716.png"
+			},
+			"grit": {
+				"n": "Grit",
+				"i": "/common/destiny2_content/icons/71deb64e69aa418a33ee4a807d4b407f.png"
+			},
+			"deluge": {
+				"n": "Deluge",
+				"i": "/common/destiny2_content/icons/110133f3e527e3b5dee11f83e8f1f3d4.png"
+			},
+			"champions barrier": {
+				"n": "Champions: Barrier",
+				"i": "/common/destiny2_content/icons/2ee146c19b93b88d2c7857005fc9a8c3.png"
+			},
+			"foundry sponsorship tex mechanica": {
+				"n": "Foundry Sponsorship: Tex Mechanica",
+				"i": "/common/destiny2_content/icons/8c91722e8e7e6cba4d9fbb9b71977a2a.png"
+			},
+			"checkmate modifiers": {
+				"n": "Checkmate Modifiers",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"brawn": {
+				"n": "Brawn",
+				"i": "/common/destiny2_content/icons/a2d5aaf161fb32e085b202f3f1f665f1.png"
+			},
+			"grenadier": {
+				"n": "Grenadier",
+				"i": "/common/destiny2_content/icons/2101b8a76b18e307b6f8b332bf2f13a6.png"
+			},
+			"cosmic equilibrium challenge": {
+				"n": "Cosmic Equilibrium Challenge",
+				"i": "/common/destiny2_content/icons/86291d01b1b39aa815adbeff3295aa43.png"
+			},
+			"stasis thermal swap": {
+				"n": "Stasis Thermal Swap",
+				"i": "/common/destiny2_content/icons/a59a3a9d323a0aba67e405476ffbc1f8.png"
+			},
+			"looping catalyst": {
+				"n": "Looping Catalyst",
+				"i": "/common/destiny2_content/icons/2d2330c849610269af5c58934840b329.png"
+			},
+			"class warfare": {
+				"n": "Class Warfare",
+				"i": "/common/destiny2_content/icons/660899690112212eb5c3536d8ebed9bd.png"
+			},
+			"fire pit": {
+				"n": "Fire Pit",
+				"i": "/common/destiny2_content/icons/41d5cd8aa0cea5daf367bb932721c16c.png"
+			},
+			"devious thievery": {
+				"n": "Devious Thievery",
+				"i": "/common/destiny2_content/icons/0e11e2552752554039b129908859487a.png"
+			},
+			"overcharged trace rifle": {
+				"n": "Overcharged Trace Rifle",
+				"i": "/common/destiny2_content/icons/6d94b75fc58909034c95dd6b04a2c0a1.png"
+			},
+			"control rules": {
+				"n": "Control Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"meteors": {
+				"n": "Meteors",
+				"i": "/common/destiny2_content/icons/8ac08fc5a795d63d3b9400006c9bd776.png"
+			},
+			"multiplicity": {
+				"n": "Multiplicity",
+				"i": "/common/destiny2_content/icons/ce8d17595b1efc562f238fb16c003ab0.png"
+			},
+			"defenses down": {
+				"n": "Defenses Down",
+				"i": "/common/destiny2_content/icons/2d2330c849610269af5c58934840b329.png"
+			},
+			"momentum control rules": {
+				"n": "Momentum Control Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"activity scoring final blows": {
+				"n": "Activity Scoring: Final Blows",
+				"i": "/common/destiny2_content/icons/3acb74b0ec6d1ab9131481c278105c7c.png"
+			},
+			"volatile weapon mods shotguns": {
+				"n": "Volatile Weapon Mods: Shotguns",
+				"i": "/common/destiny2_content/icons/ed216224c4733eb9e546ce189acecb6f.png"
+			},
+			"glass cannons": {
+				"n": "Glass Cannons",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"frontliner": {
+				"n": "Frontliner",
+				"i": "/common/destiny2_content/icons/df63f0ffc2aad7c57561346872a09e2d.png"
+			},
+			"stasis singe": {
+				"n": "Stasis Singe",
+				"i": "/common/destiny2_content/icons/c3f1217f9e8a5a18e92636c8b2724e3f.png"
+			},
+			"avatara s psyche": {
+				"n": "Avatara's Psyche",
+				"i": "/common/destiny2_content/icons/f9155e6c2b48642e3ff8d509fb899df3.png"
+			},
+			"prism day": {
+				"n": "PRISM Day",
+				"i": "/common/destiny2_content/icons/8b45ff19a3edaa8626c9c15c7e3fc890.png"
+			},
+			"melee health increase": {
+				"n": "Melee Health Increase",
+				"i": "/common/destiny2_content/icons/3605dd90f6c517ab58cebdfd360e48d2.png"
+			},
+			"void singe": {
+				"n": "Void Singe",
+				"i": "/common/destiny2_content/icons/0c1d65aad111e04b4a28b185dd2fe310.png"
+			},
+			"to the top": {
+				"n": "To the Top",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"overcharged fusion rifle": {
+				"n": "Overcharged Fusion Rifle",
+				"i": "/common/destiny2_content/icons/b1db6bd79264f6ed90647eec71146a63.png"
+			},
+			"healing finishers": {
+				"n": "Healing Finishers",
+				"i": "/common/destiny2_content/icons/6e69300032cdf14647752f9582d713b1.png"
+			},
+			"swift destruction": {
+				"n": "Swift Destruction",
+				"i": "/common/destiny2_content/icons/2d2330c849610269af5c58934840b329.png"
+			},
+			"arc surge": {
+				"n": "Arc Surge",
+				"i": "/common/destiny2_content/icons/226a64add0dbb3919e3f34ae778fd9b8.png"
+			},
+			"surge protector": {
+				"n": "Surge Protector",
+				"i": "/common/destiny2_content/icons/df63f0ffc2aad7c57561346872a09e2d.png"
+			},
+			"overcharged glaive": {
+				"n": "Overcharged Glaive",
+				"i": "/common/destiny2_content/icons/6a713ca8b5cee2473f8cc1f1bf5b99d8.png"
+			},
+			"match game": {
+				"n": "Match Game",
+				"i": "/common/destiny2_content/icons/a57ade7e65268d49a17250fb45616184.png"
+			},
+			"notswap": {
+				"n": "Notswap",
+				"i": "/common/destiny2_content/icons/cbf984b2b75765631debbe89682a3262.png"
+			},
+			"precarious balance": {
+				"n": "Precarious Balance",
+				"i": "/common/destiny2_content/icons/5e9b55c6e24cc842479aeddf80068fd0.png"
+			},
+			"delayed extinguish": {
+				"n": "Delayed Extinguish",
+				"i": "/common/destiny2_content/icons/a95beaea204c3f2724053b39d1117baa.png"
+			},
+			"out of its way": {
+				"n": "Out of Its Way",
+				"i": "/common/destiny2_content/icons/75155c6d06a82303493cca1f29b622b2.png"
+			},
+			"varied geometry challenge": {
+				"n": "Varied Geometry Challenge",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"summoning ritual": {
+				"n": "Summoning Ritual",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"gambit rules": {
+				"n": "Gambit Rules",
+				"i": "/common/destiny2_content/icons/3433a231a27a86a7004a6ca87137d4b9.png"
+			},
+			"quitter status protected": {
+				"n": "Quitter Status: Protected",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"iron banner multiplier": {
+				"n": "Iron Banner Multiplier",
+				"i": "/common/destiny2_content/icons/2fac19deb367f827e27d5b8a3de4ac02.png"
+			},
+			"extinguish": {
+				"n": "Extinguish",
+				"i": "/common/destiny2_content/icons/a95beaea204c3f2724053b39d1117baa.png"
+			},
+			"gaze amaze": {
+				"n": "Gaze Amaze",
+				"i": "/common/destiny2_content/icons/0e11e2552752554039b129908859487a.png"
+			},
+			"galvanized iii": {
+				"n": "Galvanized III",
+				"i": "/common/destiny2_content/icons/417611d0712cc47121d630e30a30e81f.png"
+			},
+			"under construction": {
+				"n": "Under Construction",
+				"i": "/common/destiny2_content/icons/0e11e2552752554039b129908859487a.png"
+			},
+			"exfiltration countdown": {
+				"n": "Exfiltration Countdown",
+				"i": "/common/destiny2_content/icons/3653cb7ad5a39eaf17111321ab0e838e.png"
+			},
+			"zealous": {
+				"n": "Zealous",
+				"i": "/common/destiny2_content/icons/8890365ac5343e65a88280a23605e025.png"
+			},
+			"promotion series": {
+				"n": "Promotion Series",
+				"i": "/common/destiny2_content/icons/48216008284c17413b3e45465d2f33d7.png"
+			},
+			"stasis surge": {
+				"n": "Stasis Surge",
+				"i": "/common/destiny2_content/icons/d542fb1a1171b0270cd83b5aa79f3e0d.png"
+			},
+			"arach no": {
+				"n": "Arach-NO!",
+				"i": "/common/destiny2_content/icons/6efa85af703b439a44144e0667ddd57f.png"
+			},
+			"subclass locked": {
+				"n": "Subclass Locked",
+				"i": "/common/destiny2_content/icons/7262f1f7b2311a8a284d9153a0e5c6ef.png"
+			},
+			"fire and ice": {
+				"n": "Fire and Ice",
+				"i": "/common/destiny2_content/icons/3b35c05ce8060812c92ef37fad338d01.png"
+			},
+			"chaff": {
+				"n": "Chaff",
+				"i": "/common/destiny2_content/icons/46fb1f205a75231701886092cb7b59ed.png"
+			},
+			"overcharged shotgun": {
+				"n": "Overcharged Shotgun",
+				"i": "/common/destiny2_content/icons/197fd9efad3fc9ffbc3337b07411a390.png"
+			},
+			"wait for it": {
+				"n": "Wait For It…",
+				"i": "/common/destiny2_content/icons/75155c6d06a82303493cca1f29b622b2.png"
+			},
+			"energy drain": {
+				"n": "Energy Drain",
+				"i": "/common/destiny2_content/icons/96ef283ad519dc1f33a89987fd3e468c.png"
+			},
+			"contest mode rules": {
+				"n": "Contest Mode Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"void surge": {
+				"n": "Void Surge",
+				"i": "/common/destiny2_content/icons/382ae8c952160e4272ffb0b852f55142.png"
+			},
+			"lockdown rules": {
+				"n": "Lockdown Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"strangers in time": {
+				"n": "Strangers in Time",
+				"i": "/common/destiny2_content/icons/75155c6d06a82303493cca1f29b622b2.png"
+			},
+			"longer respawns": {
+				"n": "Longer Respawns",
+				"i": "/common/destiny2_content/icons/3653cb7ad5a39eaf17111321ab0e838e.png"
+			},
+			"advanced modifiers": {
+				"n": "Advanced Modifiers",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"elimination rules": {
+				"n": "Elimination Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"supremacy rules": {
+				"n": "Supremacy Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"shaxx s training weights": {
+				"n": "Shaxx's Training Weights",
+				"i": "/common/destiny2_content/icons/96ef283ad519dc1f33a89987fd3e468c.png"
+			},
+			"overcharged linear fusion rifle": {
+				"n": "Overcharged Linear Fusion Rifle",
+				"i": "/common/destiny2_content/icons/48afffed35c71d7c6ca711d5a776eb44.png"
+			},
+			"attrition": {
+				"n": "Attrition",
+				"i": "/common/destiny2_content/icons/b4383b9237eec978dd56dc68377a629c.png"
+			},
+			"copies of copies": {
+				"n": "Copies of Copies",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"showdown rules": {
+				"n": "Showdown Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"activity scoring objectives": {
+				"n": "Activity Scoring: Objectives",
+				"i": "/common/destiny2_content/icons/3acb74b0ec6d1ab9131481c278105c7c.png"
+			},
+			"base information": {
+				"n": "Base Information",
+				"i": "/common/destiny2_content/icons/2d2330c849610269af5c58934840b329.png"
+			},
+			"iron banner tribute": {
+				"n": "Iron Banner: Tribute",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"team scorched rules": {
+				"n": "Team Scorched Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"galvanized ii": {
+				"n": "Galvanized II",
+				"i": "/common/destiny2_content/icons/44a502a937718f5ab6daddc00c1527e3.png"
+			},
+			"arena": {
+				"n": "Arena",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"solar threat": {
+				"n": "Solar Threat",
+				"i": "/common/destiny2_content/icons/2a6824e02b7f407e69e2e92c9754716e.png"
+			},
+			"zone control rules": {
+				"n": "Zone Control Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"all for one": {
+				"n": "All for One",
+				"i": "/common/destiny2_content/icons/5e9b55c6e24cc842479aeddf80068fd0.png"
+			},
+			"raider shield": {
+				"n": "Raider Shield",
+				"i": "/common/destiny2_content/icons/914083702800423faf89e75551ead005.png"
+			},
+			"the grass is always greener": {
+				"n": "The Grass Is Always Greener",
+				"i": "/common/destiny2_content/icons/0e11e2552752554039b129908859487a.png"
+			},
+			"invasion timer": {
+				"n": "Invasion Timer",
+				"i": "/common/destiny2_content/icons/3653cb7ad5a39eaf17111321ab0e838e.png"
+			},
+			"scourge i": {
+				"n": "Scourge I",
+				"i": "/common/destiny2_content/icons/e6cd7a73e147304e8b2a675b1f7e0cc6.png"
+			},
+			"scenic route challenge": {
+				"n": "Scenic Route Challenge",
+				"i": "/common/destiny2_content/icons/10eb0f19b91d49c7b3e983cf8e32094f.png"
+			},
+			"togetherness": {
+				"n": "Togetherness",
+				"i": "/common/destiny2_content/icons/8079a22bd9a9972ec51cdab63df364f8.png"
+			},
+			"forever fight": {
+				"n": "Forever Fight",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"conservation of energy": {
+				"n": "Conservation of Energy",
+				"i": "/common/destiny2_content/icons/5e9b55c6e24cc842479aeddf80068fd0.png"
+			},
+			"void threat": {
+				"n": "Void Threat",
+				"i": "/common/destiny2_content/icons/81ec1c69ec28e2d19238dbe1d636f335.png"
+			},
+			"medusa": {
+				"n": "Medusa",
+				"i": "/common/destiny2_content/icons/13f8c441c7bd261521f7d0ea026e8f68.png"
+			},
+			"iron banner fortress": {
+				"n": "Iron Banner: Fortress",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"dawning snowball fight": {
+				"n": "Dawning: Snowball Fight",
+				"i": "/common/destiny2_content/icons/876f6b0e3fee085cdd73d81a0461425f.png"
+			},
+			"no radar": {
+				"n": "No Radar",
+				"i": "/common/destiny2_content/icons/46fb1f205a75231701886092cb7b59ed.png"
+			},
+			"overcharged grenade launcher": {
+				"n": "Overcharged Grenade Launcher",
+				"i": "/common/destiny2_content/icons/4647662d430548d3d392ea5d7562d644.png"
+			},
+			"volatile weapon mods rocket launchers": {
+				"n": "Volatile Weapon Mods: Rocket Launchers",
+				"i": "/common/destiny2_content/icons/a4bc974f715c0a5b1a3933e42bc28f6a.png"
+			},
+			"advanced combat tactics": {
+				"n": "Advanced Combat Tactics",
+				"i": "/common/destiny2_content/icons/c967a582abc276651782e81dc2e842eb.png"
+			},
+			"daodan surge": {
+				"n": "Daodan Surge",
+				"i": "/common/destiny2_content/icons/ec93f87857ecdff36731ca9bea5e49bf.png"
+			},
+			"durandal s edge": {
+				"n": "Durandal's Edge",
+				"i": "/common/destiny2_content/icons/73bb5da6bffc220a48c4854a65a9e8d8.png"
+			},
+			"strand surge": {
+				"n": "Strand Surge",
+				"i": "/common/destiny2_content/icons/e8ab8ba72b54125d2750e943ba6c824d.png"
+			},
+			"slow capturing zones": {
+				"n": "Slow Capturing Zones",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"randomized banes": {
+				"n": "Randomized Banes",
+				"i": "/common/destiny2_content/icons/e974297794ab99a5d63587fbc6f1d2bb.png"
+			},
+			"mythic": {
+				"n": "Mythic",
+				"i": "/common/destiny2_content/icons/a03cd268c85da9c6adfa2851a86362aa.png"
+			},
+			"subclass requirements": {
+				"n": "Subclass Requirements",
+				"i": "/common/destiny2_content/icons/dddb5389e17947d4b591d56c82c6d12f.png"
+			},
+			"dreaming brighter": {
+				"n": "Dreaming Brighter",
+				"i": "/common/destiny2_content/icons/9ada18d1fc71de68c71d3f5ba44ea70d.png"
+			},
+			"crucible scoring enabled": {
+				"n": "Crucible Scoring Enabled",
+				"i": "/common/destiny2_content/icons/3acb74b0ec6d1ab9131481c278105c7c.png"
+			},
+			"relegation series": {
+				"n": "Relegation Series",
+				"i": "/common/destiny2_content/icons/2ea1f1830b21f538938e385a9a4a93a1.png"
+			},
+			"modified health rules": {
+				"n": "Modified Health Rules",
+				"i": "/common/destiny2_content/icons/4e74cf30f6075a2758018849be445f2b.png"
+			},
+			"scourge ii": {
+				"n": "Scourge II",
+				"i": "/common/destiny2_content/icons/ae17e4173a263caeedb6d7acba61f9db.png"
+			},
+			"red rover": {
+				"n": "Red Rover",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"cooperative focus campaign": {
+				"n": "Cooperative Focus Campaign",
+				"i": "/common/destiny2_content/icons/502495f1636f4bb8d76806878f14c09d.png"
+			},
+			"solar slide": {
+				"n": "Solar Slide",
+				"i": "/common/destiny2_content/icons/3785081d6a1370f2bb74837de639f842.png"
+			},
+			"zero to one hundred": {
+				"n": "Zero to One Hundred",
+				"i": "/common/destiny2_content/icons/135816ebe386fca59bd2e65769f821e9.png"
+			},
+			"volatile weapon mods hand cannons": {
+				"n": "Volatile Weapon Mods: Hand Cannons",
+				"i": "/common/destiny2_content/icons/4bd51051768402ab68c98baf130e64ca.png"
+			},
+			"doubles rules": {
+				"n": "Doubles Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"mission is timed": {
+				"n": "Mission Is Timed",
+				"i": "/common/destiny2_content/icons/4d49cb7aff2cddcbfd585e79112c34f2.png"
+			},
+			"hands off": {
+				"n": "Hands Off",
+				"i": "/common/destiny2_content/icons/0e11e2552752554039b129908859487a.png"
+			},
+			"arc singe": {
+				"n": "Arc Singe",
+				"i": "/common/destiny2_content/icons/b265654556f540baefb278b0e5e417af.png"
+			},
+			"rift rules": {
+				"n": "Rift Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"pestilence": {
+				"n": "Pestilence",
+				"i": "/common/destiny2_content/icons/01fe532bf37f5c107ea9de809ce0f054.png"
+			},
+			"relic rules": {
+				"n": "Relic Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"dominion rules": {
+				"n": "Dominion Rules",
+				"i": "/common/destiny2_content/icons/e6507058cbddfc8b72dde057674e792a.png"
+			},
+			"class healing": {
+				"n": "Class Healing",
+				"i": "/common/destiny2_content/icons/e57c1f666afbbaf2ea633d1212f3ff0c.png"
 			}
 		}
 	}

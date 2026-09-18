@@ -10,6 +10,7 @@ import {
 	type DescriptionBlock,
 	getDescriptionBlocks,
 	orderExtraInfoBlocks,
+	selectDdcVariants,
 } from "@/lib/compendium/descriptions";
 import type { Annotation, IconGlyph } from "@/lib/compendium/model";
 import {
@@ -18,6 +19,7 @@ import {
 } from "@/lib/site/settingsStore";
 import { cn } from "@/lib/utils/utils";
 
+import { useDdcVariant } from "./DdcVariantContext";
 import { TextWithTooltips } from "./TextWithTooltips";
 import type { TooltipContentProps } from "./types";
 
@@ -141,13 +143,18 @@ function EntryDescriptions(props: TooltipContentProps) {
 		(state) => state.alwaysShowExtraInfo,
 	);
 	const extraInfoOrder = useSettingsStore((state) => state.extraInfoOrder);
+	const ddcVariant = useDdcVariant();
 
 	// Ordered before anything is filtered out, so the fallback below hands back
 	// hidden bodies in the reader's chosen order too.
+	const entryBlocks = selectDdcVariants(
+		getDescriptionBlocks(entry),
+		ddcVariant,
+	);
 	const allBlocks =
 		extraInfoOrder === "auto"
-			? getDescriptionBlocks(entry)
-			: orderExtraInfoBlocks(getDescriptionBlocks(entry), extraInfoOrder);
+			? entryBlocks
+			: orderExtraInfoBlocks(entryBlocks, extraInfoOrder);
 	// The in-game body is not extra info: its toggle is absolute, and it never
 	// counts towards the fallback below.
 	const communityBlocks = allBlocks.filter(

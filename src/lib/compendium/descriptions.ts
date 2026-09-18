@@ -80,6 +80,46 @@ export function getDescriptionBlocks(
 		.map(({ block }) => block);
 }
 
+// The sheet tabs one per subclass element. An aspect or ability that exists on
+// an element and on Prismatic is written up on both tabs, often with different
+// numbers.
+const ELEMENT_TABS = new Set([
+	"Arc",
+	"Solar",
+	"Void",
+	"Stasis",
+	"Strand",
+	"Prismatic",
+]);
+
+// Keeps only the DDC bodies that describe the subclass being looked at. On the
+// Prismatic Hunter page, Stylish Executioner shows its Prismatic row, not the
+// Void one. With no row from that tab, rows from other element tabs go and
+// generic ones stay (Thruster's "Class Abilities" row on Prismatic). If that
+// would leave no DDC body at all, every one is kept.
+export function selectDdcVariants(
+	blocks: DescriptionBlock[],
+	tab: string | undefined,
+): DescriptionBlock[] {
+	if (!tab) return blocks;
+	const ddcBlocks = blocks.filter((block) => block.sourceId === "ddc");
+	if (ddcBlocks.length < 2) return blocks;
+
+	const matching = ddcBlocks.filter((block) => block.variantLabel === tab);
+	const kept =
+		matching.length > 0
+			? matching
+			: ddcBlocks.filter(
+					(block) =>
+						!block.variantLabel || !ELEMENT_TABS.has(block.variantLabel),
+				);
+	if (kept.length === 0) return blocks;
+
+	return blocks.filter(
+		(block) => block.sourceId !== "ddc" || kept.includes(block),
+	);
+}
+
 // Reorders only the community ("extra info") bodies, in place: the in-game
 // block - and any other non-toggleable source - keeps the slot the per-group
 // config gave it, so a reader flipping this setting never moves the Bungie

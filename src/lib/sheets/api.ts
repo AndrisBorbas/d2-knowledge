@@ -11,6 +11,24 @@ export type SheetColorCell = {
 
 export type SheetColorIndex = Map<string, SheetColorCell>;
 
+// Rows and columns the sheet's author hid, by hand or through a filter. They
+// hold superseded text (old versions of an ability, last season's mods) that
+// the published sheet does not show and neither should the site.
+export type SheetHidden = {
+	rows: number[];
+	columns: number[];
+};
+
+// A merged range, end-exclusive, the way the API reports it. The grid only
+// carries a merged cell's text in its top left corner, so without these a
+// value spanning five columns reads as one value beside four blanks.
+export type SheetMerge = {
+	startRow: number;
+	endRow: number;
+	startColumn: number;
+	endColumn: number;
+};
+
 export function sheetColorKey(tab: string, row: number, column: number) {
 	return `${tab}:${row}:${column}`;
 }
@@ -58,7 +76,20 @@ export type SheetFetchResult = {
 	// Tab title -> gid. Recorded so a snapshot can assert it still points at the
 	// tab it was written against: a renamed tab silently returns nothing.
 	tabIds: Record<string, number>;
+	merges: Record<string, SheetMerge[]>;
+	hidden: Record<string, SheetHidden>;
 };
+
+type SheetsApiDimensionMetadata = {
+	hiddenByUser?: boolean;
+	hiddenByFilter?: boolean;
+};
+
+function hiddenIndices(metadata: SheetsApiDimensionMetadata[] | undefined) {
+	return (metadata ?? []).flatMap((entry, index) =>
+		entry.hiddenByUser || entry.hiddenByFilter ? [index] : [],
+	);
+}
 
 export async function fetchSheetTabsWithColors(
 	sheetId: string,
@@ -69,7 +100,7 @@ export async function fetchSheetTabsWithColors(
 	for (const tab of tabs) params.append("ranges", tab);
 	params.set(
 		"fields",
-		"sheets(properties(title,sheetId),data.rowData.values(formattedValue,textFormatRuns))",
+		"sheets(properties(title,sheetId),merges,data(rowData.values(formattedValue,textFormatRuns),rowMetadata(hiddenByUser,hiddenByFilter),columnMetadata(hiddenByUser,hiddenByFilter)))",
 	);
 	params.set("key", apiKey);
 
@@ -82,13 +113,25 @@ export async function fetchSheetTabsWithColors(
 	const json = (await res.json()) as {
 		sheets?: {
 			properties?: { title?: string; sheetId?: number };
-			data?: { rowData?: { values?: SheetsApiCellData[] }[] }[];
+			merges?: {
+				startRowIndex?: number;
+				endRowIndex?: number;
+				startColumnIndex?: number;
+				endColumnIndex?: number;
+			}[];
+			data?: {
+				rowData?: { values?: SheetsApiCellData[] }[];
+				rowMetadata?: SheetsApiDimensionMetadata[];
+				columnMetadata?: SheetsApiDimensionMetadata[];
+			}[];
 		}[];
 	};
 
 	const grid: Record<string, string[][]> = {};
 	const colors: SheetColorIndex = new Map();
 	const tabIds: Record<string, number> = {};
+	const merges: Record<string, SheetMerge[]> = {};
+	const hidden: Record<string, SheetHidden> = {};
 
 	for (const sheet of json.sheets ?? []) {
 		const tabName = sheet.properties?.title;
@@ -96,6 +139,17 @@ export async function fetchSheetTabsWithColors(
 		if (typeof sheet.properties?.sheetId === "number") {
 			tabIds[tabName] = sheet.properties.sheetId;
 		}
+		merges[tabName] = (sheet.merges ?? []).map((merge) => ({
+			startRow: merge.startRowIndex ?? 0,
+			endRow: merge.endRowIndex ?? 0,
+			startColumn: merge.startColumnIndex ?? 0,
+			endColumn: merge.endColumnIndex ?? 0,
+		}));
+
+		hidden[tabName] = {
+			rows: hiddenIndices(sheet.data?.[0]?.rowMetadata),
+			columns: hiddenIndices(sheet.data?.[0]?.columnMetadata),
+		};
 
 		const rowData = sheet.data?.[0]?.rowData ?? [];
 		const rows: string[][] = [];
@@ -121,5 +175,5 @@ export async function fetchSheetTabsWithColors(
 		grid[tabName] = rows;
 	}
 
-	return { grid, colors, tabIds };
+	return { grid, colors, tabIds, merges, hidden };
 }

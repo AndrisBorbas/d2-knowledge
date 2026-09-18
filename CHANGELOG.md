@@ -7,6 +7,20 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.8.0] - 2026-09-18
+
+### Added
+
+- A **Game Mechanics** page at [/mechanics](https://owlsector.net/mechanics) with the Destiny Data Compendium's write-ups on ability energy, activity modifiers, character stats, Champions, combatant tiers and Banes, heat weapons and Super energy.
+
+### Changed
+
+- Abilities, aspects and class abilities on a subclass page show only the Destiny Data Compendium write-up for that subclass, instead of every element's version.
+
+### Removed
+
+- Entries the Destiny Data Compendium hides in its sheet, such as past seasons' weapon mods and superseded ability text, no longer appear on the site.
+
 ## [1.7.6] - 2026-09-18
 
 ### Fixed

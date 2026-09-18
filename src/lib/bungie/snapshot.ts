@@ -63,6 +63,8 @@ type BungieManifestSnapshot = {
 		DestinyStatDefinition?: Record<string, BungieManifestRow>;
 		Subclasses?: Record<string, CompactSubclassRow>;
 		Weapons?: Record<string, CompactWeaponRow>;
+		// Keyed by `normalizeLookupName` of the modifier's name.
+		ActivityModifiers?: Record<string, BungieManifestRow>;
 	};
 };
 
@@ -188,6 +190,7 @@ export type BungieManifestSnapshotResolver = {
 		perkIconPath?: string;
 	} | null;
 	getArmorSetIconPath(setName: string): string | undefined;
+	getActivityModifierIconPath(name: string): string | undefined;
 	getSubclassAbilityIconPath(name: string): string | undefined;
 	getGlyphIconPath(className: string): string | undefined;
 	getOfficialDescription(params: {
@@ -207,6 +210,10 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	private readonly statTable: Record<string, BungieManifestRow> | null;
 	private readonly subclassTable: Record<string, CompactSubclassRow> | null;
 	private readonly weaponTable: Record<string, CompactWeaponRow> | null;
+	private readonly activityModifierTable: Record<
+		string,
+		BungieManifestRow
+	> | null;
 	private readonly displayByName: Map<string, BungieDisplayProperties>;
 	private readonly itemDisplayByName: Map<string, BungieDisplayProperties>;
 	private readonly artifactPerkDisplayByName: Map<
@@ -218,6 +225,7 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 	// Built on first use rather than in the constructor: walking every subclass
 	// costs more than the handful of callers that want an ability icon.
 	private subclassAbilityIcons: Map<string, string> | null = null;
+	private activityModifierIcons: Map<string, string> | null = null;
 
 	constructor(snapshot: BungieManifestSnapshot) {
 		this.inventoryTable = asRecord<BungieManifestRow>(
@@ -245,6 +253,9 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			snapshot.tables?.Subclasses,
 		);
 		this.weaponTable = asRecord<CompactWeaponRow>(snapshot.tables?.Weapons);
+		this.activityModifierTable = asRecord<BungieManifestRow>(
+			snapshot.tables?.ActivityModifiers,
+		);
 		this.displayByName = new Map<string, BungieDisplayProperties>();
 		this.itemDisplayByName = new Map<string, BungieDisplayProperties>();
 		this.artifactPerkDisplayByName = new Map<string, BungieDisplayProperties>();
@@ -450,6 +461,23 @@ class BungieSnapshotResolver implements BungieManifestSnapshotResolver {
 			perkName: perkDisplay.name,
 			perkIconPath: normalizeIconPath(perkDisplay.icon),
 		};
+	}
+
+	// Spacing is not reliable between the sheet and the game ("Matchgame" is
+	// "Match Game" in the manifest), so names are compared without it.
+	getActivityModifierIconPath(name: string) {
+		if (!this.activityModifierIcons) {
+			this.activityModifierIcons = new Map();
+			for (const [key, row] of Object.entries(
+				this.activityModifierTable ?? {},
+			)) {
+				const icon = normalizeIconPath(row.i);
+				if (icon) this.activityModifierIcons.set(key.replace(/ /g, ""), icon);
+			}
+		}
+		return this.activityModifierIcons.get(
+			normalizeLookupName(name).replace(/ /g, ""),
+		);
 	}
 
 	getArmorSetIconPath(setName: string) {

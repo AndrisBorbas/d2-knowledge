@@ -1,7 +1,7 @@
 {
-	"generatedAt": "2026-09-18T00:57:25.935Z",
-	"endgameGeneratedAt": "2026-09-18T00:57:17.628Z",
-	"damageGeneratedAt": "2026-09-18T00:57:18.731Z",
+	"generatedAt": "2026-09-18T20:47:46.364Z",
+	"endgameGeneratedAt": "2026-09-18T20:47:37.392Z",
+	"damageGeneratedAt": "2026-09-18T20:47:38.630Z",
 	"categories": [
 		{
 			"slug": "auto-rifles",
@@ -94834,7 +94834,7 @@
 			"tab": "Shopping List",
 			"updated": "2026-08-19",
 			"status": "updated",
-			"news": "Ability tier listing done. Working on endgame meta update."
+			"news": "Taking a break to work on damage rotations."
 		},
 		{
 			"tab": "Archetypes",

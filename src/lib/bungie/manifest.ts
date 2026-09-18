@@ -17,6 +17,8 @@ export const DEFAULT_MANIFEST_TABLES: DestinyManifestComponentName[] = [
 	// plug sets, and aspects/fragments carry stat modifiers by stat hash.
 	"DestinyPlugSetDefinition",
 	"DestinyStatDefinition",
+	// Activity modifiers, for their icons on the Game Mechanics page.
+	"DestinyActivityModifierDefinition",
 ];
 
 export async function fetchDestinyManifestSummary() {

@@ -52587,7 +52587,7 @@
 		{
 			"id": "clarity:3336648220:backup-mag",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -53803,7 +53803,7 @@
 		{
 			"id": "clarity:1197814525:heavy-ammo-finder-enhancement",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -56518,7 +56518,7 @@
 		{
 			"id": "clarity:2400144052:tactical",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
@@ -61413,7 +61413,7 @@
 		{
 			"id": "ddc:enhanced-impact:288:0",
 			"tab": "Weapon Perks",
-			"section": "Regular Weapon Mods",
+			"section": "Weapon Mods",
 			"groups": [
 				"Weapon Perks",
 				"Weapon Mods"
