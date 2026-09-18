@@ -6,19 +6,30 @@ import { useEffect, useMemo, useState } from "react";
 import { categorizeGroups, CURATED_TOP_GROUPS } from "@/lib/compendium/groups";
 import type { CompendiumDataset } from "@/lib/compendium/model";
 import { fuzzyFilterCompendiumEntries } from "@/lib/utils/fuzzy";
+import { useHydrated } from "@/lib/utils/hydration";
 
 import { hashStringWithSeed } from "./helpers";
 
 const SEARCH_DEBOUNCE_MS = 500;
 
+// Picked once per page load. Server and client would roll different numbers,
+// so the prerender and the hydrating render both use 0 and the real seed only
+// applies after hydration.
+const SESSION_SHUFFLE_SEED = Math.floor(Math.random() * 0x7fffffff);
+const NO_GROUPS: string[] = [];
+
 export function useEntryFiltering(dataset: CompendiumDataset) {
-	const [searchQuery, setSearchQuery] = useQueryState("q", {
+	const hydrated = useHydrated();
+	const [urlSearchQuery, setSearchQuery] = useQueryState("q", {
 		history: "push",
 		limitUrlUpdates: { method: "throttle", timeMs: 200 },
 	});
+	// The prerender saw no query string, so the URL only takes over once
+	// hydration is done.
+	const searchQuery = hydrated ? urlSearchQuery : null;
 	const [searchInput, setSearchInput] = useState(() => searchQuery ?? "");
 	const [priorSearchQuery, setPriorSearchQuery] = useState(searchQuery);
-	const [activeGroups, setActiveGroups] = useQueryState(
+	const [urlActiveGroups, setActiveGroups] = useQueryState(
 		"g",
 		parseAsArrayOf(parseAsString)
 			.withDefault([])
@@ -27,7 +38,8 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 				limitUrlUpdates: { method: "throttle", timeMs: 200 },
 			}),
 	);
-	const [shuffleSeed] = useState(() => Math.floor(Math.random() * 0x7fffffff));
+	const activeGroups = hydrated ? urlActiveGroups : NO_GROUPS;
+	const shuffleSeed = hydrated ? SESSION_SHUFFLE_SEED : 0;
 	// The ids the page was rendered with before the full dataset arrived. They
 	// keep the top of the shuffled list so the order the reader is already
 	// looking at does not rearrange under them mid-scroll.

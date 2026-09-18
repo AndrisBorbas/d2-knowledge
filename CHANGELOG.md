@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.7.6] - 2026-09-18
+
+### Fixed
+
+- The glossary, weapons and artifacts pages no longer throw a hydration error on load, including shared links with filters in the address.
+
 ## [1.7.5] - 2026-09-16
 
 ### Added

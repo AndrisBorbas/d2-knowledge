@@ -11,6 +11,7 @@ import { Tooltip } from "@/components/tooltip/Tooltip";
 import { Button, UnpinButton } from "@/components/ui/Button";
 import type { Artifact } from "@/lib/compendium/artifacts";
 import { buildBundleMaps, type TooltipBundle } from "@/lib/compendium/bundle";
+import { useHydrated } from "@/lib/utils/hydration";
 
 import { ArtifactBackdrop } from "./ArtifactBackdrop";
 import { ArtifactPerkGrid } from "./ArtifactPerkGrid";
@@ -21,12 +22,16 @@ type ArtifactExplorerProps = {
 };
 
 export function ArtifactExplorer({ artifacts, bundle }: ArtifactExplorerProps) {
-	const [slug, setSlug] = useQueryState(
+	const hydrated = useHydrated();
+	const [urlSlug, setSlug] = useQueryState(
 		"a",
 		parseAsString.withDefault(artifacts[0].slug).withOptions({
 			history: "push",
 		}),
 	);
+	// The page is prerendered with no query string, so a shared `?a=` link only
+	// switches artifacts once hydration is done.
+	const slug = hydrated ? urlSlug : artifacts[0].slug;
 	const [pinnedIds, setPinnedIds] = useState<string[]>([]);
 	const router = useRouter();
 

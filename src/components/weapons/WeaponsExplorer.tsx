@@ -13,6 +13,7 @@ import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
 import { Button } from "@/components/ui/Button";
 import { ENERGY_TYPES, TIER_RANKS } from "@/lib/aegis/config";
+import { useHydrated } from "@/lib/utils/hydration";
 import { cn } from "@/lib/utils/utils";
 import { RANK_TEXT_CLASS } from "@/lib/weapons/display";
 import type { WeaponsDataset } from "@/lib/weapons/model";
@@ -43,6 +44,7 @@ const URL_OPTIONS = {
 };
 
 const SEARCH_DEBOUNCE_MS = 300;
+const NONE: string[] = [];
 
 type WeaponsExplorerProps = {
 	seed: WeaponsDataset;
@@ -71,7 +73,7 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 		handleKeywordLeave,
 	} = useHoverPreview({ keywordMap, entryMap });
 
-	const [view, setView] = useQueryState(
+	const [urlView, setView] = useQueryState(
 		"v",
 		parseAsStringLiteral(VIEW_KEYS)
 			.withDefault("tiers")
@@ -79,32 +81,43 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 	);
 	// Empty is every category, so the list opens on everything and narrowing is
 	// something you opt into.
-	const [categories, setCategories] = useQueryState(
+	const [urlCategories, setCategories] = useQueryState(
 		"c",
 		parseAsArrayOf(parseAsString).withDefault([]).withOptions(URL_OPTIONS),
 	);
-	const [damageTab, setDamageTab] = useQueryState(
+	const [urlDamageTab, setDamageTab] = useQueryState(
 		"d",
 		parseAsStringLiteral(VISIBLE_DAMAGE_TAB_KEYS)
 			.withDefault("sustained")
 			.withOptions(URL_OPTIONS),
 	);
-	const [query, setQuery] = useQueryState(
+	const [urlQuery, setQuery] = useQueryState(
 		"q",
 		parseAsString.withDefault("").withOptions(URL_OPTIONS),
 	);
-	const [tiers, setTiers] = useQueryState(
+	const [urlTiers, setTiers] = useQueryState(
 		"t",
 		parseAsArrayOf(parseAsString).withDefault([]).withOptions(URL_OPTIONS),
 	);
-	const [energies, setEnergies] = useQueryState(
+	const [urlEnergies, setEnergies] = useQueryState(
 		"e",
 		parseAsArrayOf(parseAsString).withDefault([]).withOptions(URL_OPTIONS),
 	);
-	const [expandedId, setExpandedId] = useQueryState(
+	const [urlExpandedId, setExpandedId] = useQueryState(
 		"x",
 		parseAsString.withOptions(URL_OPTIONS),
 	);
+
+	// The page is prerendered with no query string, so the hydrating render has
+	// to match that and the URL only takes over once hydration is done.
+	const hydrated = useHydrated();
+	const view = hydrated ? urlView : "tiers";
+	const categories = hydrated ? urlCategories : NONE;
+	const damageTab = hydrated ? urlDamageTab : "sustained";
+	const query = hydrated ? urlQuery : "";
+	const tiers = hydrated ? urlTiers : NONE;
+	const energies = hydrated ? urlEnergies : NONE;
+	const expandedId = hydrated ? urlExpandedId : null;
 
 	// A shared link can arrive with a row already expanded, so the fetch the
 	// click handler would have started has to happen here too. The damage view
@@ -117,6 +130,11 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 	// The input stays instant while the URL catches up on a debounce, the same
 	// split `useEntryFiltering` uses.
 	const [searchInput, setSearchInput] = useState(query);
+	const [priorQuery, setPriorQuery] = useState(query);
+	if (query !== priorQuery) {
+		setPriorQuery(query);
+		setSearchInput(query);
+	}
 	useEffect(() => {
 		if (searchInput === query) return;
 		const timer = setTimeout(() => {
