@@ -16,7 +16,7 @@ export function useSwetrix(
 			disabled: process.env.NODE_ENV !== "production",
 			...initOptions,
 		});
-		void Swetrix.trackViews({ search: true, ...pageViewsOptions });
+		void Swetrix.trackViews({ search: true, hash: true, ...pageViewsOptions });
 		void Swetrix.trackErrors({
 			callback: (error) => {
 				if (error.message?.includes("ResizeObserver")) return false;

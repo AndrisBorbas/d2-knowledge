@@ -63,7 +63,7 @@ function RichParagraphs({ text }: { text: RichText }) {
 // score.
 function DifficultyMark({ value }: { value: string }) {
 	const raises = value.includes("▲");
-	const label = `${raises ? "Raises" : "Lowers"} the challenge score by ${value.length}`;
+	const label = `${raises ? "Raises" : "Lowers"} the reward multiplier by ${value.length}`;
 	return (
 		<span
 			title={label}
@@ -71,8 +71,8 @@ function DifficultyMark({ value }: { value: string }) {
 			className={cn(
 				"shrink-0 px-1.5 py-0.5 text-[10px] leading-none tracking-[0.1em]",
 				raises
-					? "bg-red-500/15 text-red-300"
-					: "bg-emerald-500/15 text-emerald-200",
+					? "bg-emerald-500/15 text-emerald-200"
+					: "bg-red-500/15 text-red-300",
 			)}
 		>
 			{value}
