@@ -17,6 +17,12 @@ export function useSwetrix(
 			...initOptions,
 		});
 		void Swetrix.trackViews({ search: true, ...pageViewsOptions });
-		void Swetrix.trackErrors(errorOptions);
+		void Swetrix.trackErrors({
+			callback: (error) => {
+				if (error.message?.includes("ResizeObserver")) return false;
+				return error;
+			},
+			...errorOptions,
+		});
 	}, [errorOptions, initOptions, pageViewsOptions, pid]);
 }
