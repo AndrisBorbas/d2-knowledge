@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.8.1] - 2026-09-21
+
+### Changed
+
+- A link to an expanded weapon on the tier list names the weapon instead of a sheet row number, so it keeps pointing at the same weapon after the sheet is updated. Links shared before this change no longer open a row.
+
 ## [1.8.0] - 2026-09-18
 
 ### Added

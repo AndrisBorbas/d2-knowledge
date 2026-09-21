@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-18T20:47:36.145Z",
+	"generatedAt": "2026-09-21T09:28:43.654Z",
 	"sheetId": "1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4",
 	"tabIds": {
 		"Weapon Perks": 1662574278,
@@ -10801,7 +10801,7 @@
 				"Enhances Threaded Specter\n Specter has 50% [25%] Damage Resist, 67% increased Duration, and 2 Perched Threadlings.\nPerched Threadlings are released when the Specter takes 40 damage.\nDestroying the Specter releases all Perched Threadlings.\nDamage Resist does not apply to damage from the user.\n\nBeing within 15 meters of the user's Threaded Specter removes the user from radar.\nSignified by the Hidden buff.\n\n0.5x Class Ability Regeneration Speed for 19 seconds upon Class Ability usage.",
 				"Actium War Rig",
 				"",
-				"Passively grants +30 Airborne Effectiveness to Auto Rifles and Machine Guns.\nReadied Auto Rifles and Machine Guns refill 10% of their Magazine every 1.5 seconds.\n\nOn Auto Rifle or Machine Gun Kill:\nGrants a stack of Auto-Loading Link for a varying duration, up to a maximum of 10 stacks.\nLoses 1 Auto-Loading Link stack upon expiring, rather than all of them.\n\nAuto-Loading Link:\nUp to 15% increased Damage, +? Stability, and +50 Ammo Generation at 10 stacks.\n1.5% | 3% | 4.5% | 6% | 7.5% | 9% | 10.5% | 12% | 13.5% | 15% Increased Damage\n+? |  | +? | +? | +? | +? | +? | +? | +? | +? Stability\n+5 | +10 | +15 | +20 | +25 | +30 | +35 | +40 | +45 | +50 Ammo Generation.\n7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
+				"Passively grants +30 Airborne Effectiveness to Auto Rifles and Machine Guns.\nReadied Auto Rifles and Machine Guns refill 10% of their Magazine every 1.5 seconds.\n\nOn Auto Rifle or Machine Gun Kill:\nGrants a stack of Auto-Loading Link for a varying duration, up to a maximum of 10 stacks.\nLoses 1 Auto-Loading Link stack upon expiring, rather than all of them.\nStacks can also be gained by destroying \"destroyable entities\" as well as Constructs.\n\nAuto-Loading Link:\nUp to 15% increased Damage, +? Stability, and +50 Ammo Generation at 10 stacks.\n1.5% | 3% | 4.5% | 6% | 7.5% | 9% | 10.5% | 12% | 13.5% | 15% Increased Damage\n+? |  | +? | +? | +? | +? | +? | +? | +? | +? Stability\n+5 | +10 | +15 | +20 | +25 | +30 | +35 | +40 | +45 | +50 Ammo Generation.\n7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
 				"Ballidorse Wrathweavers",
 				"",
 				"Enemies frozen by Winter's Wrath receive 150% increased Shatter Damage.\n\nUpon performing Winter's Wrath's Shatter Attack:\nAllies within 30? meters receive x4 Stasis Weapon Surge for 15 [6] seconds and maximum Frost Armor stacks. \nRefunds ?% Super Energy per Ally buffed. \n Buff is refreshable. Refund only works once per ally?.\n\nOn Rift Cast while the Frostpulse Aspect is equipped:\nUser and Allies within ? meters receive x2 Stasis Weapon Surge for 11 [6] seconds and maximum Frost Armor.\nGrants 2% Super Energy per ally that receives Frost Armor through Frostpulse.\n\nOn Winter's Wrath End:\nGrants maximum Frost Armor stacks to the user."
@@ -12167,7 +12167,7 @@
 			[
 				"",
 				"",
-				"Glass Cannon",
+				"Glass Cannon\n▲▲▲▲",
 				"",
 				"",
 				"For the Guardian with the most kills in the fireteam:\n50% Damage Resist.\nWait, hold up, that isn't what a Glass Cannon is? "
@@ -13386,7 +13386,7 @@
 			[
 				"",
 				"",
-				"Barrier Champions summon an impenetrable Shield once their Health is lowered past a difficulty-determined HP Threshold. \nBarrier Champions constantly regenerate a portion of their Health while shielded.\n\nThe Shield can be damaged and broken through the usage of Anti-Barrier Effects, stunning the Champion for a brief time.\n The Shield's Durability is determined by difficulty.\n\nStunning prevents the Champion from attacking, moving, or using any abilities.\nDealing damage to the Shield briefly stops Health Regeneration.\n\nAdditional Shield-Piercing Effects:\nIgnores Shielded Bane Shields, Hydra Shields, Hobgoblin Immunity, (Taken) Phalanx Shields, and Scorn Buckler Shields.\nWeapons deal 30% increased damage towards Titan Barricades."
+				"Barrier Champions summon an impenetrable Shield once their Health is lowered past a difficulty-determined HP Threshold. \nBarrier Champions constantly regenerate a portion of their Health while shielded.\n\nThe Shield can be damaged and broken through the usage of Anti-Barrier Effects, stunning the Champion for a brief time.\n The Shield's Durability is determined by difficulty.\n\nStunning prevents the Champion from attacking, moving, or using any abilities.\nDealing damage to the Shield briefly stops Health Regeneration.\n\nAdditional Shield-Piercing Effects:\nIgnores Shielded-Affixed Bane Combatant Shields, Hydra Shields, Hobgoblin Immunity, (Taken) Phalanx Shields, Taken Vandal Shields, and Scorn Buckler Shields.\nWeapons deal 30% increased damage towards Titan Barricades."
 			],
 			[
 				"",
@@ -135978,7 +135978,7 @@
 		[
 			"Exotic Armors:9:5",
 			{
-				"text": "Passively grants +30 Airborne Effectiveness to Auto Rifles and Machine Guns.\nReadied Auto Rifles and Machine Guns refill 10% of their Magazine every 1.5 seconds.\n\nOn Auto Rifle or Machine Gun Kill:\nGrants a stack of Auto-Loading Link for a varying duration, up to a maximum of 10 stacks.\nLoses 1 Auto-Loading Link stack upon expiring, rather than all of them.\n\nAuto-Loading Link:\nUp to 15% increased Damage, +? Stability, and +50 Ammo Generation at 10 stacks.\n1.5% | 3% | 4.5% | 6% | 7.5% | 9% | 10.5% | 12% | 13.5% | 15% Increased Damage\n+? |  | +? | +? | +? | +? | +? | +? | +? | +? Stability\n+5 | +10 | +15 | +20 | +25 | +30 | +35 | +40 | +45 | +50 Ammo Generation.\n7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
+				"text": "Passively grants +30 Airborne Effectiveness to Auto Rifles and Machine Guns.\nReadied Auto Rifles and Machine Guns refill 10% of their Magazine every 1.5 seconds.\n\nOn Auto Rifle or Machine Gun Kill:\nGrants a stack of Auto-Loading Link for a varying duration, up to a maximum of 10 stacks.\nLoses 1 Auto-Loading Link stack upon expiring, rather than all of them.\nStacks can also be gained by destroying \"destroyable entities\" as well as Constructs.\n\nAuto-Loading Link:\nUp to 15% increased Damage, +? Stability, and +50 Ammo Generation at 10 stacks.\n1.5% | 3% | 4.5% | 6% | 7.5% | 9% | 10.5% | 12% | 13.5% | 15% Increased Damage\n+? |  | +? | +? | +? | +? | +? | +? | +? | +? Stability\n+5 | +10 | +15 | +20 | +25 | +30 | +35 | +40 | +45 | +50 Ammo Generation.\n7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
 				"runs": [
 					{
 						"start": 0,
@@ -136042,29 +136042,37 @@
 					},
 					{
 						"start": 319,
-						"end": 361
+						"end": 360
 					},
 					{
-						"start": 361,
-						"end": 380,
+						"start": 360,
+						"end": 446
+					},
+					{
+						"start": 446,
+						"end": 447
+					},
+					{
+						"start": 447,
+						"end": 466,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 380,
-						"end": 449
+						"start": 466,
+						"end": 535
 					},
 					{
-						"start": 449,
-						"end": 458,
+						"start": 535,
+						"end": 544,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 458,
-						"end": 669
+						"start": 544,
+						"end": 755
 					},
 					{
-						"start": 669,
-						"end": 741,
+						"start": 755,
+						"end": 827,
 						"color": "rgb(255, 217, 102)"
 					}
 				]
@@ -162292,6 +162300,23 @@
 			}
 		],
 		[
+			"Game Mechanics:60:2",
+			{
+				"text": "Glass Cannon\n▲▲▲▲",
+				"runs": [
+					{
+						"start": 0,
+						"end": 13
+					},
+					{
+						"start": 13,
+						"end": 17,
+						"color": "rgb(112, 210, 122)"
+					}
+				]
+			}
+		],
+		[
 			"Game Mechanics:60:5",
 			{
 				"text": "For the Guardian with the most kills in the fireteam:\n50% Damage Resist.\nWait, hold up, that isn't what a Glass Cannon is? ",
@@ -169822,7 +169847,7 @@
 		[
 			"Game Mechanics:207:2",
 			{
-				"text": "Barrier Champions summon an impenetrable Shield once their Health is lowered past a difficulty-determined HP Threshold. \nBarrier Champions constantly regenerate a portion of their Health while shielded.\n\nThe Shield can be damaged and broken through the usage of Anti-Barrier Effects, stunning the Champion for a brief time.\n The Shield's Durability is determined by difficulty.\n\nStunning prevents the Champion from attacking, moving, or using any abilities.\nDealing damage to the Shield briefly stops Health Regeneration.\n\nAdditional Shield-Piercing Effects:\nIgnores Shielded Bane Shields, Hydra Shields, Hobgoblin Immunity, (Taken) Phalanx Shields, and Scorn Buckler Shields.\nWeapons deal 30% increased damage towards Titan Barricades.",
+				"text": "Barrier Champions summon an impenetrable Shield once their Health is lowered past a difficulty-determined HP Threshold. \nBarrier Champions constantly regenerate a portion of their Health while shielded.\n\nThe Shield can be damaged and broken through the usage of Anti-Barrier Effects, stunning the Champion for a brief time.\n The Shield's Durability is determined by difficulty.\n\nStunning prevents the Champion from attacking, moving, or using any abilities.\nDealing damage to the Shield briefly stops Health Regeneration.\n\nAdditional Shield-Piercing Effects:\nIgnores Shielded-Affixed Bane Combatant Shields, Hydra Shields, Hobgoblin Immunity, (Taken) Phalanx Shields, Taken Vandal Shields, and Scorn Buckler Shields.\nWeapons deal 30% increased damage towards Titan Barricades.",
 				"runs": [
 					{
 						"start": 0,
@@ -170037,12 +170062,12 @@
 					},
 					{
 						"start": 559,
-						"end": 677,
+						"end": 717,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 677,
-						"end": 736,
+						"start": 717,
+						"end": 776,
 						"color": "rgb(234, 153, 153)"
 					}
 				]

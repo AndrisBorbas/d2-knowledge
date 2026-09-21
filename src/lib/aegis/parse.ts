@@ -46,6 +46,33 @@ function ref(layout: TabLayout, row: SheetRow) {
 	return { tab: layout.tab, row: row.index, gid: layout.gid };
 }
 
+// A rated row's id travels in the page URL, so it is built from the weapon's
+// own name rather than from where the row happens to sit in the sheet. Aegis
+// inserting a line near the top of a tab would otherwise renumber every
+// shared link below it.
+function nameSlug(value: string) {
+	return value
+		.toLowerCase()
+		.trim()
+		.replace(/['‘’]/g, "")
+		.replace(/[^a-z0-9]+/g, "-")
+		.replace(/^-+|-+$/g, "");
+}
+
+// The sheet rates some weapons twice - a Pantheon "Reckless Oracle" beside the
+// Garden of Salvation one - and tells the two apart with the qualifier written
+// under the name, which is why that is part of the id. Where even that is
+// missing, a counter keeps the later row addressable instead of colliding with
+// the first.
+function idMinter() {
+	const taken = new Map<string, number>();
+	return (base: string) => {
+		const count = (taken.get(base) ?? 0) + 1;
+		taken.set(base, count);
+		return count === 1 ? base : `${base}-${String(count)}`;
+	};
+}
+
 function toTier(value: string): TierRank | null {
 	const text = cellText(value).toUpperCase();
 	return (TIER_RANKS as readonly string[]).includes(text)
@@ -106,12 +133,20 @@ export function parseTierTab(
 	assertHeaders(table, TIER_REQUIRED);
 
 	const rows: WeaponTierRow[] = [];
+	const mintId = idMinter();
 	for (const row of table.rows) {
 		const { name, nameNote } = splitName(row.get("Name"));
 		if (!name) continue;
 
+		// A name of nothing but punctuation would slug to an empty string, which
+		// is no more addressable than no id at all.
+		const slug =
+			[nameSlug(name), nameNote ? nameSlug(nameNote) : ""]
+				.filter(Boolean)
+				.join("-") || String(row.index);
+
 		rows.push({
-			id: `tier:${layout.slug}:${row.index}`,
+			id: mintId(`tier:${layout.slug}:${slug}`),
 			tab: layout.tab,
 			categorySlug: layout.slug,
 			categoryLabel: layout.weaponType,
@@ -160,12 +195,13 @@ export function parseExoticTab(grid: string[][]): ExoticWeaponRow[] {
 	]);
 
 	const rows: ExoticWeaponRow[] = [];
+	const mintId = idMinter();
 	for (const row of table.rows) {
 		const name = cellFirstLine(row.get("Name"));
 		if (!name) continue;
 
 		rows.push({
-			id: `exotic:${row.index}`,
+			id: mintId(`exotic:${nameSlug(name) || String(row.index)}`),
 			rank: cellInteger(row.get("#")),
 			tier: toTier(row.get("Tier")),
 			name,

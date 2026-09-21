@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-18T20:47:46.209Z",
+	"generatedAt": "2026-09-21T09:28:59.624Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -200774,7 +200774,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "Passively grants +30 Airborne Effectiveness to Auto Rifles and Machine Guns.\nReadied Auto Rifles and Machine Guns refill 10% of their Magazine every 1.5 seconds.\n\nOn Auto Rifle or Machine Gun Kill:\nGrants a stack of Auto-Loading Link for a varying duration, up to a maximum of 10 stacks.\nLoses 1 Auto-Loading Link stack upon expiring, rather than all of them.\n\nAuto-Loading Link:\nUp to 15% increased Damage, +? Stability, and +50 Ammo Generation at 10 stacks.\n1.5% | 3% | 4.5% | 6% | 7.5% | 9% | 10.5% | 12% | 13.5% | 15% Increased Damage\n+? |  | +? | +? | +? | +? | +? | +? | +? | +? Stability\n+5 | +10 | +15 | +20 | +25 | +30 | +35 | +40 | +45 | +50 Ammo Generation.\n7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
+					"text": "Passively grants +30 Airborne Effectiveness to Auto Rifles and Machine Guns.\nReadied Auto Rifles and Machine Guns refill 10% of their Magazine every 1.5 seconds.\n\nOn Auto Rifle or Machine Gun Kill:\nGrants a stack of Auto-Loading Link for a varying duration, up to a maximum of 10 stacks.\nLoses 1 Auto-Loading Link stack upon expiring, rather than all of them.\nStacks can also be gained by destroying \"destroyable entities\" as well as Constructs.\n\nAuto-Loading Link:\nUp to 15% increased Damage, +? Stability, and +50 Ammo Generation at 10 stacks.\n1.5% | 3% | 4.5% | 6% | 7.5% | 9% | 10.5% | 12% | 13.5% | 15% Increased Damage\n+? |  | +? | +? | +? | +? | +? | +? | +? | +? Stability\n+5 | +10 | +15 | +20 | +25 | +30 | +35 | +40 | +45 | +50 Ammo Generation.\n7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -200783,7 +200783,7 @@
 								"column": 5
 							},
 							"start": 0,
-							"length": 741
+							"length": 827
 						}
 					],
 					"annotations": [
@@ -200829,28 +200829,28 @@
 						},
 						{
 							"keywordId": "auto-loading-link",
-							"start": 361,
-							"end": 378,
+							"start": 447,
+							"end": 464,
 							"text": "Auto-Loading Link"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:9:5:361:378",
-							"start": 378,
-							"end": 380,
+							"keywordId": "sheet-color:Exotic Armors:9:5:447:464",
+							"start": 464,
+							"end": 466,
 							"text": ":\n",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:9:5:449:449",
-							"start": 449,
-							"end": 458,
+							"keywordId": "sheet-color:Exotic Armors:9:5:535:535",
+							"start": 535,
+							"end": 544,
 							"text": "10 stacks",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:9:5:669:669",
-							"start": 669,
-							"end": 741,
+							"keywordId": "sheet-color:Exotic Armors:9:5:755:755",
+							"start": 755,
+							"end": 827,
 							"text": "7s | 6.5s | 6s | 5.5s | 5s | 4.5s | 4s | 3.5s | 3s | 2.5s Stack Duration",
 							"color": "rgb(255, 217, 102)"
 						}

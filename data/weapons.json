@@ -1,7 +1,7 @@
 {
-	"generatedAt": "2026-09-18T20:47:46.364Z",
-	"endgameGeneratedAt": "2026-09-18T20:47:37.392Z",
-	"damageGeneratedAt": "2026-09-18T20:47:38.630Z",
+	"generatedAt": "2026-09-21T09:28:59.940Z",
+	"endgameGeneratedAt": "2026-09-21T09:28:45.152Z",
+	"damageGeneratedAt": "2026-09-21T09:28:46.226Z",
 	"categories": [
 		{
 			"slug": "auto-rifles",
@@ -146,7 +146,7 @@
 	],
 	"tierRows": [
 		{
-			"id": "tier:auto-rifles:2",
+			"id": "tier:auto-rifles:no-hesitation",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -194,7 +194,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:3",
+			"id": "tier:auto-rifles:cusp-sempiternal",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -243,7 +243,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:4",
+			"id": "tier:auto-rifles:decatur-02",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -292,7 +292,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:5",
+			"id": "tier:auto-rifles:reckless-oracle-pantheon-version",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -344,7 +344,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:6",
+			"id": "tier:auto-rifles:gnawing-hunger",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -392,7 +392,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:7",
+			"id": "tier:auto-rifles:reghusks-pledge",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -441,7 +441,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:8",
+			"id": "tier:auto-rifles:positive-outlook",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -490,7 +490,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:9",
+			"id": "tier:auto-rifles:age-old-bond",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -538,7 +538,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:10",
+			"id": "tier:auto-rifles:reckless-oracle",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -586,7 +586,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:11",
+			"id": "tier:auto-rifles:the-riposte",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -634,7 +634,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:12",
+			"id": "tier:auto-rifles:scathelocke",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -682,7 +682,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:13",
+			"id": "tier:auto-rifles:abyss-defiant",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -729,7 +729,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:14",
+			"id": "tier:auto-rifles:pluperfect",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -776,7 +776,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:15",
+			"id": "tier:auto-rifles:vs-pyroelectric-propellant",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -824,7 +824,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:16",
+			"id": "tier:auto-rifles:snipehunt-mk-47",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -871,7 +871,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:17",
+			"id": "tier:auto-rifles:adamantite",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -920,7 +920,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:18",
+			"id": "tier:auto-rifles:arctic-haze",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -968,7 +968,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:19",
+			"id": "tier:auto-rifles:the-ringing-nail",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1019,7 +1019,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:20",
+			"id": "tier:auto-rifles:seventh-seraph-carbine",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1067,7 +1067,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:21",
+			"id": "tier:auto-rifles:chrysura-melo",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1114,7 +1114,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:22",
+			"id": "tier:auto-rifles:the-summoner",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1162,7 +1162,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:23",
+			"id": "tier:auto-rifles:everburning-glitz",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1211,7 +1211,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:24",
+			"id": "tier:auto-rifles:origin-story",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1258,7 +1258,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:25",
+			"id": "tier:auto-rifles:tigerspite",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1307,7 +1307,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:26",
+			"id": "tier:auto-rifles:chroma-rush",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1355,7 +1355,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:27",
+			"id": "tier:auto-rifles:zealous-ideal",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1402,7 +1402,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:28",
+			"id": "tier:auto-rifles:ros-arago-iv",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1450,7 +1450,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:29",
+			"id": "tier:auto-rifles:the-forward-path",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1498,7 +1498,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:30",
+			"id": "tier:auto-rifles:lethal-abundance",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1548,7 +1548,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:31",
+			"id": "tier:auto-rifles:come-to-pass",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1595,7 +1595,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:32",
+			"id": "tier:auto-rifles:rufuss-fury",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1643,7 +1643,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:33",
+			"id": "tier:auto-rifles:auric-disabler",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1693,7 +1693,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:34",
+			"id": "tier:auto-rifles:intercalary",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1742,7 +1742,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:35",
+			"id": "tier:auto-rifles:trendsetter",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1791,7 +1791,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:36",
+			"id": "tier:auto-rifles:prosecutor-rotn-version",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1840,7 +1840,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:37",
+			"id": "tier:auto-rifles:shadow-price",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1887,7 +1887,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:38",
+			"id": "tier:auto-rifles:sorrows-verse",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1935,7 +1935,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:39",
+			"id": "tier:auto-rifles:veiled-threat",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -1984,7 +1984,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:40",
+			"id": "tier:auto-rifles:givers-blessing",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2033,7 +2033,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:41",
+			"id": "tier:auto-rifles:prosecutor",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2082,7 +2082,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:42",
+			"id": "tier:auto-rifles:ahab-char",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2129,7 +2129,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:43",
+			"id": "tier:auto-rifles:arc-logic",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2177,7 +2177,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:44",
+			"id": "tier:auto-rifles:breakneck",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2225,7 +2225,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:45",
+			"id": "tier:auto-rifles:braytech-werewolf",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2273,7 +2273,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:46",
+			"id": "tier:auto-rifles:fair-judgment",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2321,7 +2321,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:47",
+			"id": "tier:auto-rifles:steelfeather-repeater",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2368,7 +2368,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:48",
+			"id": "tier:auto-rifles:khvostov-7g-02",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2415,7 +2415,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:49",
+			"id": "tier:auto-rifles:old-sterling",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2462,7 +2462,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:50",
+			"id": "tier:auto-rifles:herod-c",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2510,7 +2510,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:51",
+			"id": "tier:auto-rifles:false-promises",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2557,7 +2557,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:52",
+			"id": "tier:auto-rifles:duty-bound",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2605,7 +2605,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:53",
+			"id": "tier:auto-rifles:dark-decider",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2653,7 +2653,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:54",
+			"id": "tier:auto-rifles:coronach-22",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2700,7 +2700,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:55",
+			"id": "tier:auto-rifles:horror-story",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2747,7 +2747,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:56",
+			"id": "tier:auto-rifles:krait",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2794,7 +2794,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:57",
+			"id": "tier:auto-rifles:perpetualis",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2841,7 +2841,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:58",
+			"id": "tier:auto-rifles:ammit-ar2",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2890,7 +2890,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:59",
+			"id": "tier:auto-rifles:sweet-sorrow",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2937,7 +2937,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:60",
+			"id": "tier:auto-rifles:the-last-breath",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -2985,7 +2985,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:61",
+			"id": "tier:auto-rifles:lodbrok-c",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -3033,7 +3033,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:62",
+			"id": "tier:auto-rifles:firefright",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -3080,7 +3080,7 @@
 			}
 		},
 		{
-			"id": "tier:auto-rifles:63",
+			"id": "tier:auto-rifles:the-number",
 			"tab": "Autos",
 			"categorySlug": "auto-rifles",
 			"categoryLabel": "Auto Rifle",
@@ -3127,7 +3127,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:2",
+			"id": "tier:bows:biting-winds",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3173,7 +3173,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:3",
+			"id": "tier:bows:the-spiteful-fang",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3220,7 +3220,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:4",
+			"id": "tier:bows:point-of-the-stag",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3266,7 +3266,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:5",
+			"id": "tier:bows:non-denouement",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3315,7 +3315,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:6",
+			"id": "tier:bows:accrued-redemption",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3361,7 +3361,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:7",
+			"id": "tier:bows:fortunate-star",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3410,7 +3410,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:8",
+			"id": "tier:bows:anamnesis",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3458,7 +3458,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:9",
+			"id": "tier:bows:hush",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3506,7 +3506,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:10",
+			"id": "tier:bows:pre-astyanax-iv",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3552,7 +3552,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:11",
+			"id": "tier:bows:tyranny-of-heaven",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3599,7 +3599,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:12",
+			"id": "tier:bows:vengeful-whisper",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3648,7 +3648,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:13",
+			"id": "tier:bows:convened-recurve",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3696,7 +3696,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:14",
+			"id": "tier:bows:king-orfeo",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3743,7 +3743,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:15",
+			"id": "tier:bows:hushed-whisper",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3790,7 +3790,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:16",
+			"id": "tier:bows:mercury-a",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3836,7 +3836,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:17",
+			"id": "tier:bows:lethophobia",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3882,7 +3882,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:18",
+			"id": "tier:bows:tripwire-canary",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3927,7 +3927,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:19",
+			"id": "tier:bows:arsenic-bite-4b",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -3972,7 +3972,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:20",
+			"id": "tier:bows:raconteur",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4019,7 +4019,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:21",
+			"id": "tier:bows:strident-whistle",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4065,7 +4065,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:22",
+			"id": "tier:bows:under-your-skin",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4111,7 +4111,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:23",
+			"id": "tier:bows:fel-taradiddle",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4157,7 +4157,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:24",
+			"id": "tier:bows:wolftone-draw",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4203,7 +4203,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:25",
+			"id": "tier:bows:lunulata-4b",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4248,7 +4248,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:26",
+			"id": "tier:bows:neoptolemus-ii",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4293,7 +4293,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:27",
+			"id": "tier:bows:whispering-slab",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4339,7 +4339,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:28",
+			"id": "tier:bows:imperial-needle",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4384,7 +4384,7 @@
 			}
 		},
 		{
-			"id": "tier:bows:29",
+			"id": "tier:bows:whistlers-whim",
 			"tab": "Bows",
 			"categorySlug": "bows",
 			"categoryLabel": "Bow",
@@ -4432,7 +4432,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:2",
+			"id": "tier:hand-cannons:kindled-orchid",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4481,7 +4481,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:3",
+			"id": "tier:hand-cannons:ironwood-03",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4530,7 +4530,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:4",
+			"id": "tier:hand-cannons:word-of-crota",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4578,7 +4578,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:5",
+			"id": "tier:hand-cannons:exalted-truth",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4624,7 +4624,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:6",
+			"id": "tier:hand-cannons:modified-b-7-pistol",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4668,7 +4668,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:7",
+			"id": "tier:hand-cannons:zaoulis-bane-pantheon-version",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4718,7 +4718,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:8",
+			"id": "tier:hand-cannons:zaoulis-bane",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4766,7 +4766,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:9",
+			"id": "tier:hand-cannons:epochal-integration",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4814,7 +4814,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:10",
+			"id": "tier:hand-cannons:eyasluna",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4863,7 +4863,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:11",
+			"id": "tier:hand-cannons:corundum-hammer",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4911,7 +4911,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:12",
+			"id": "tier:hand-cannons:vulpecula",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -4958,7 +4958,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:13",
+			"id": "tier:hand-cannons:service-revolver",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5005,7 +5005,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:14",
+			"id": "tier:hand-cannons:unloved",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5053,7 +5053,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:15",
+			"id": "tier:hand-cannons:nation-of-beasts",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5101,7 +5101,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:16",
+			"id": "tier:hand-cannons:solemn-remembrance",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5146,7 +5146,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:17",
+			"id": "tier:hand-cannons:lunas-howl",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5194,7 +5194,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:18",
+			"id": "tier:hand-cannons:fatebringer",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5242,7 +5242,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:19",
+			"id": "tier:hand-cannons:midnight-coup",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5291,7 +5291,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:20",
+			"id": "tier:hand-cannons:triple-laureate",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5337,7 +5337,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:21",
+			"id": "tier:hand-cannons:trust",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5383,7 +5383,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:22",
+			"id": "tier:hand-cannons:posterity",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5429,7 +5429,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:23",
+			"id": "tier:hand-cannons:aureus-neutralizer",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5477,7 +5477,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:24",
+			"id": "tier:hand-cannons:maahes-hc4",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5524,7 +5524,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:25",
+			"id": "tier:hand-cannons:seventh-seraph-officer-revolver",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5570,7 +5570,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:26",
+			"id": "tier:hand-cannons:bold-endings",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5616,7 +5616,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:27",
+			"id": "tier:hand-cannons:agape",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5664,7 +5664,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:28",
+			"id": "tier:hand-cannons:ancient-gospel",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5711,7 +5711,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:29",
+			"id": "tier:hand-cannons:sarpedon-d",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5759,7 +5759,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:30",
+			"id": "tier:hand-cannons:phoneutria-fera",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5807,7 +5807,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:31",
+			"id": "tier:hand-cannons:sightline-survey",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5853,7 +5853,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:32",
+			"id": "tier:hand-cannons:spare-rations",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5897,7 +5897,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:33",
+			"id": "tier:hand-cannons:d-f-a",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5942,7 +5942,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:34",
+			"id": "tier:hand-cannons:loud-lullaby",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -5990,7 +5990,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:35",
+			"id": "tier:hand-cannons:rose",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6033,7 +6033,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:36",
+			"id": "tier:hand-cannons:igneous-hammer",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6080,7 +6080,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:37",
+			"id": "tier:hand-cannons:mos-athanor-iv",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6126,7 +6126,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:38",
+			"id": "tier:hand-cannons:optative",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6171,7 +6171,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:39",
+			"id": "tier:hand-cannons:ikelos-hc-v1-0-3",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6216,7 +6216,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:40",
+			"id": "tier:hand-cannons:yesterdays-question",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6262,7 +6262,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:41",
+			"id": "tier:hand-cannons:malediction",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6309,7 +6309,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:42",
+			"id": "tier:hand-cannons:round-robin",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6355,7 +6355,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:43",
+			"id": "tier:hand-cannons:judgment-rotn-version",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6402,7 +6402,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:44",
+			"id": "tier:hand-cannons:judgment",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6449,7 +6449,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:45",
+			"id": "tier:hand-cannons:finite-impactor",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6495,7 +6495,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:46",
+			"id": "tier:hand-cannons:better-devils",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6541,7 +6541,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:47",
+			"id": "tier:hand-cannons:sixth-sense",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6588,7 +6588,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:48",
+			"id": "tier:hand-cannons:crimils-dagger",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6633,7 +6633,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:49",
+			"id": "tier:hand-cannons:exuviae",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6678,7 +6678,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:50",
+			"id": "tier:hand-cannons:the-palindrome",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6723,7 +6723,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:51",
+			"id": "tier:hand-cannons:something-new",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6770,7 +6770,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:52",
+			"id": "tier:hand-cannons:true-prophecy",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6816,7 +6816,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:53",
+			"id": "tier:hand-cannons:targeted-redaction",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6861,7 +6861,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:54",
+			"id": "tier:hand-cannons:waking-vigil",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6907,7 +6907,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:55",
+			"id": "tier:hand-cannons:survivors-epitaph",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6952,7 +6952,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:56",
+			"id": "tier:hand-cannons:wardens-law",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -6998,7 +6998,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:57",
+			"id": "tier:hand-cannons:cantata-57",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7043,7 +7043,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:58",
+			"id": "tier:hand-cannons:solemn-lie",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7087,7 +7087,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:59",
+			"id": "tier:hand-cannons:annual-skate",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7133,7 +7133,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:60",
+			"id": "tier:hand-cannons:combined-action",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7179,7 +7179,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:61",
+			"id": "tier:hand-cannons:bottom-dollar",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7224,7 +7224,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:62",
+			"id": "tier:hand-cannons:kept-confidence",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7269,7 +7269,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:63",
+			"id": "tier:hand-cannons:crisis-inverted",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7319,7 +7319,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:64",
+			"id": "tier:hand-cannons:pure-poetry",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7367,7 +7367,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:65",
+			"id": "tier:hand-cannons:austringer",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7413,7 +7413,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:66",
+			"id": "tier:hand-cannons:frontiers-cry",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7458,7 +7458,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:67",
+			"id": "tier:hand-cannons:dire-promise",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7505,7 +7505,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:68",
+			"id": "tier:hand-cannons:nature-of-the-beast",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7550,7 +7550,7 @@
 			}
 		},
 		{
-			"id": "tier:hand-cannons:69",
+			"id": "tier:hand-cannons:the-steady-hand",
 			"tab": "HCs",
 			"categorySlug": "hand-cannons",
 			"categoryLabel": "Hand Cannon",
@@ -7597,7 +7597,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:2",
+			"id": "tier:pulse-rifles:joxers-longsword",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7647,7 +7647,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:3",
+			"id": "tier:pulse-rifles:claws-of-the-wolf",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7696,7 +7696,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:4",
+			"id": "tier:pulse-rifles:the-martlet",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7745,7 +7745,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:5",
+			"id": "tier:pulse-rifles:gridskipper",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7794,7 +7794,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:6",
+			"id": "tier:pulse-rifles:nullify",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7843,7 +7843,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:7",
+			"id": "tier:pulse-rifles:veles-x",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7893,7 +7893,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:8",
+			"id": "tier:pulse-rifles:high-tyrant",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7942,7 +7942,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:9",
+			"id": "tier:pulse-rifles:elsies-rifle",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -7992,7 +7992,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:10",
+			"id": "tier:pulse-rifles:premonition",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8043,7 +8043,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:11",
+			"id": "tier:pulse-rifles:the-time-worn-spire",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8091,7 +8091,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:12",
+			"id": "tier:pulse-rifles:all-or-nothing",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8139,7 +8139,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:13",
+			"id": "tier:pulse-rifles:chattering-bone-pantheon-version",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8190,7 +8190,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:14",
+			"id": "tier:pulse-rifles:redrixs-estoc",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8235,7 +8235,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:15",
+			"id": "tier:pulse-rifles:hailing-confusion",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8284,7 +8284,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:16",
+			"id": "tier:pulse-rifles:new-purpose",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8332,7 +8332,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:17",
+			"id": "tier:pulse-rifles:blast-furnace",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8381,7 +8381,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:18",
+			"id": "tier:pulse-rifles:the-messenger",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8431,7 +8431,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:19",
+			"id": "tier:pulse-rifles:oversoul-edict",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8480,7 +8480,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:20",
+			"id": "tier:pulse-rifles:adhortative",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8528,7 +8528,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:21",
+			"id": "tier:pulse-rifles:jurassic-green",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8574,7 +8574,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:22",
+			"id": "tier:pulse-rifles:darkest-before",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8622,7 +8622,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:23",
+			"id": "tier:pulse-rifles:chattering-bone",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8670,7 +8670,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:24",
+			"id": "tier:pulse-rifles:battle-scar",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8717,7 +8717,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:25",
+			"id": "tier:pulse-rifles:stars-in-shadow",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8764,7 +8764,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:26",
+			"id": "tier:pulse-rifles:infinite-paths-8",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8810,7 +8810,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:27",
+			"id": "tier:pulse-rifles:relentless-rotn-version",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8860,7 +8860,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:28",
+			"id": "tier:pulse-rifles:belisarius-d",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8910,7 +8910,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:29",
+			"id": "tier:pulse-rifles:relentless",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -8959,7 +8959,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:30",
+			"id": "tier:pulse-rifles:insidious",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9008,7 +9008,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:31",
+			"id": "tier:pulse-rifles:bygones",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9057,7 +9057,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:32",
+			"id": "tier:pulse-rifles:smite-of-merain",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9104,7 +9104,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:33",
+			"id": "tier:pulse-rifles:sacred-provenance",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9152,7 +9152,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:34",
+			"id": "tier:pulse-rifles:corrasion",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9198,7 +9198,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:35",
+			"id": "tier:pulse-rifles:vantage-point",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9244,7 +9244,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:36",
+			"id": "tier:pulse-rifles:horrors-least",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9290,7 +9290,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:37",
+			"id": "tier:pulse-rifles:phyllotactic-spiral",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9338,7 +9338,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:38",
+			"id": "tier:pulse-rifles:nightshade",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9385,7 +9385,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:39",
+			"id": "tier:pulse-rifles:jorums-claw",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9432,7 +9432,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:40",
+			"id": "tier:pulse-rifles:aishas-care",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9478,7 +9478,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:41",
+			"id": "tier:pulse-rifles:bxr-55-battler",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9522,7 +9522,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:42",
+			"id": "tier:pulse-rifles:stay-frosty",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9568,7 +9568,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:43",
+			"id": "tier:pulse-rifles:cruel-mercy",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9614,7 +9614,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:44",
+			"id": "tier:pulse-rifles:psi-hermetic-v",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9660,7 +9660,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:45",
+			"id": "tier:pulse-rifles:disparity",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9707,7 +9707,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:46",
+			"id": "tier:pulse-rifles:syncopation-53",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9755,7 +9755,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:47",
+			"id": "tier:pulse-rifles:last-thursday",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9803,7 +9803,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:48",
+			"id": "tier:pulse-rifles:different-times",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9850,7 +9850,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:49",
+			"id": "tier:pulse-rifles:yesteryear",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9899,7 +9899,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:50",
+			"id": "tier:pulse-rifles:piece-of-mind",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9948,7 +9948,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:51",
+			"id": "tier:pulse-rifles:ogma-pr6",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -9996,7 +9996,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:52",
+			"id": "tier:pulse-rifles:outlast",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10043,7 +10043,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:53",
+			"id": "tier:pulse-rifles:autumn-wind",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10090,7 +10090,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:54",
+			"id": "tier:pulse-rifles:forges-pledge",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10138,7 +10138,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:55",
+			"id": "tier:pulse-rifles:the-third-axiom",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10188,7 +10188,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:56",
+			"id": "tier:pulse-rifles:scalar-potential",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10236,7 +10236,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:57",
+			"id": "tier:pulse-rifles:cold-denial",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10284,7 +10284,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:58",
+			"id": "tier:pulse-rifles:jian-7-rifle",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10331,7 +10331,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:59",
+			"id": "tier:pulse-rifles:last-perdition",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10377,7 +10377,7 @@
 			}
 		},
 		{
-			"id": "tier:pulse-rifles:60",
+			"id": "tier:pulse-rifles:legal-action-ii",
 			"tab": "Pulses",
 			"categorySlug": "pulse-rifles",
 			"categoryLabel": "Pulse Rifle",
@@ -10424,7 +10424,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:2",
+			"id": "tier:scout-rifles:vouchsafe",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10473,7 +10473,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:3",
+			"id": "tier:scout-rifles:voltaic-shade",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10520,7 +10520,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:4",
+			"id": "tier:scout-rifles:unworthy",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10567,7 +10567,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:5",
+			"id": "tier:scout-rifles:trustee",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10615,7 +10615,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:6",
+			"id": "tier:scout-rifles:doom-of-chelchis",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10664,7 +10664,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:7",
+			"id": "tier:scout-rifles:pointed-inquiry",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10712,7 +10712,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:8",
+			"id": "tier:scout-rifles:no-feelings",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10759,7 +10759,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:9",
+			"id": "tier:scout-rifles:fang-of-ir-y-t",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10808,7 +10808,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:10",
+			"id": "tier:scout-rifles:hung-jury-sr4",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10856,7 +10856,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:11",
+			"id": "tier:scout-rifles:the-scholar",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10905,7 +10905,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:12",
+			"id": "tier:scout-rifles:vision-of-confluence",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -10953,7 +10953,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:13",
+			"id": "tier:scout-rifles:nature-reclaimed",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11000,7 +11000,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:14",
+			"id": "tier:scout-rifles:aishas-embrace",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11048,7 +11048,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:15",
+			"id": "tier:scout-rifles:timeworn-wayfarer",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11094,7 +11094,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:16",
+			"id": "tier:scout-rifles:oxygen-sr3",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11141,7 +11141,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:17",
+			"id": "tier:scout-rifles:inbound-surveillance",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11189,7 +11189,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:18",
+			"id": "tier:scout-rifles:forced-memorializer",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11237,7 +11237,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:19",
+			"id": "tier:scout-rifles:randys-throwing-knife",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11283,7 +11283,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:20",
+			"id": "tier:scout-rifles:long-arm",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11331,7 +11331,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:21",
+			"id": "tier:scout-rifles:patron-of-lost-causes",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11376,7 +11376,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:22",
+			"id": "tier:scout-rifles:bryas-love",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11423,7 +11423,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:23",
+			"id": "tier:scout-rifles:sublimation",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11471,7 +11471,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:24",
+			"id": "tier:scout-rifles:tarnished-mettle",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11518,7 +11518,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:25",
+			"id": "tier:scout-rifles:nameless-midnight",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11565,7 +11565,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:26",
+			"id": "tier:scout-rifles:admetus-d",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11611,7 +11611,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:27",
+			"id": "tier:scout-rifles:transfiguration",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11658,7 +11658,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:28",
+			"id": "tier:scout-rifles:the-guiding-sight",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11703,7 +11703,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:29",
+			"id": "tier:scout-rifles:imperative",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11749,7 +11749,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:30",
+			"id": "tier:scout-rifles:last-rite",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11797,7 +11797,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:31",
+			"id": "tier:scout-rifles:red-tape",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11844,7 +11844,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:32",
+			"id": "tier:scout-rifles:jurisprudent",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11889,7 +11889,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:33",
+			"id": "tier:scout-rifles:live-fire",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11935,7 +11935,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:34",
+			"id": "tier:scout-rifles:staccato-46",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -11982,7 +11982,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:35",
+			"id": "tier:scout-rifles:perses-d",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12029,7 +12029,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:36",
+			"id": "tier:scout-rifles:jararaca-3sr",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12075,7 +12075,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:37",
+			"id": "tier:scout-rifles:taraxippos",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12122,7 +12122,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:38",
+			"id": "tier:scout-rifles:the-prophet",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12168,7 +12168,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:39",
+			"id": "tier:scout-rifles:glissando-47",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12214,7 +12214,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:40",
+			"id": "tier:scout-rifles:long-arm-rotn-version",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12261,7 +12261,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:41",
+			"id": "tier:scout-rifles:night-watch",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12306,7 +12306,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:42",
+			"id": "tier:scout-rifles:tears-of-contrition",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12352,7 +12352,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:43",
+			"id": "tier:scout-rifles:talons-of-the-eagle",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12397,7 +12397,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:44",
+			"id": "tier:scout-rifles:servant-leader",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12443,7 +12443,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:45",
+			"id": "tier:scout-rifles:contingency-plan",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12488,7 +12488,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:46",
+			"id": "tier:scout-rifles:royal-chase",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12533,7 +12533,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:47",
+			"id": "tier:scout-rifles:eternal-blazon",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12579,7 +12579,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:48",
+			"id": "tier:scout-rifles:adverse-possession-ix",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12627,7 +12627,7 @@
 			}
 		},
 		{
-			"id": "tier:scout-rifles:49",
+			"id": "tier:scout-rifles:pleiades-corrector",
 			"tab": "Scouts",
 			"categorySlug": "scout-rifles",
 			"categoryLabel": "Scout Rifle",
@@ -12673,7 +12673,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:2",
+			"id": "tier:sidearms:compact-defender",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -12718,7 +12718,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:3",
+			"id": "tier:sidearms:brass-attacks",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -12767,7 +12767,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:4",
+			"id": "tier:sidearms:seventh-seraph-si-2",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -12815,7 +12815,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:5",
+			"id": "tier:sidearms:evening-si4",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -12862,7 +12862,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:6",
+			"id": "tier:sidearms:insurmountable",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -12911,7 +12911,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:7",
+			"id": "tier:sidearms:punching-out",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -12958,7 +12958,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:8",
+			"id": "tier:sidearms:drang",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13002,7 +13002,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:9",
+			"id": "tier:sidearms:heliocentric-qsc",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13048,7 +13048,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:10",
+			"id": "tier:sidearms:anonymous-autumn",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13094,7 +13094,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:11",
+			"id": "tier:sidearms:the-keening",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13141,7 +13141,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:12",
+			"id": "tier:sidearms:forgiveness",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13188,7 +13188,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:13",
+			"id": "tier:sidearms:empirical-evidence",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13234,7 +13234,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:14",
+			"id": "tier:sidearms:peacebond",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13281,7 +13281,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:15",
+			"id": "tier:sidearms:division",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13326,7 +13326,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:16",
+			"id": "tier:sidearms:brigands-law",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13373,7 +13373,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:17",
+			"id": "tier:sidearms:fimbulwinter-stitch",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13421,7 +13421,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:18",
+			"id": "tier:sidearms:drang-baroque",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13464,7 +13464,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:19",
+			"id": "tier:sidearms:liminal-vigil-rotn-version",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13514,7 +13514,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:20",
+			"id": "tier:sidearms:liminal-vigil",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13563,7 +13563,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:21",
+			"id": "tier:sidearms:mykels-reverence",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13611,7 +13611,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:22",
+			"id": "tier:sidearms:breachlight",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13657,7 +13657,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:23",
+			"id": "tier:sidearms:buzzard",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13704,7 +13704,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:24",
+			"id": "tier:sidearms:faustus-decline",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13750,7 +13750,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:25",
+			"id": "tier:sidearms:fioritura-59",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13796,7 +13796,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:26",
+			"id": "tier:sidearms:senuna-si6",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13843,7 +13843,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:27",
+			"id": "tier:sidearms:boudica-c",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13891,7 +13891,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:28",
+			"id": "tier:sidearms:allied-demand",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13939,7 +13939,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:29",
+			"id": "tier:sidearms:controlling-vision",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -13986,7 +13986,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:30",
+			"id": "tier:sidearms:the-last-dance",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14034,7 +14034,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:31",
+			"id": "tier:sidearms:the-vision",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14081,7 +14081,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:32",
+			"id": "tier:sidearms:the-fools-remedy",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14127,7 +14127,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:33",
+			"id": "tier:sidearms:redback-5si",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14173,7 +14173,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:34",
+			"id": "tier:sidearms:spoiler-alert",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14221,7 +14221,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:35",
+			"id": "tier:sidearms:a-swift-verdict",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14268,7 +14268,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:36",
+			"id": "tier:sidearms:lonesome",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14315,7 +14315,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:37",
+			"id": "tier:sidearms:enigmas-draw",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14361,7 +14361,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:38",
+			"id": "tier:sidearms:farewell",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14408,7 +14408,7 @@
 			}
 		},
 		{
-			"id": "tier:sidearms:39",
+			"id": "tier:sidearms:high-albedo",
 			"tab": "Sidearms",
 			"categorySlug": "sidearms",
 			"categoryLabel": "Sidearm",
@@ -14454,7 +14454,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:2",
+			"id": "tier:smgs:unforgiven",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14504,7 +14504,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:3",
+			"id": "tier:smgs:multimach-ccx",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14551,7 +14551,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:4",
+			"id": "tier:smgs:the-recluse",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14599,7 +14599,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:5",
+			"id": "tier:smgs:bug-out-bag",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14648,7 +14648,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:6",
+			"id": "tier:smgs:m-17-fast-talker",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14694,7 +14694,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:7",
+			"id": "tier:smgs:yeartide-apex",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14743,7 +14743,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:8",
+			"id": "tier:smgs:mida-mini-tool",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14790,7 +14790,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:9",
+			"id": "tier:smgs:submission",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14835,7 +14835,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:10",
+			"id": "tier:smgs:vikala-smg4",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14883,7 +14883,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:11",
+			"id": "tier:smgs:the-title",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14931,7 +14931,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:12",
+			"id": "tier:smgs:every-waking-moment",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -14981,7 +14981,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:13",
+			"id": "tier:smgs:no-survivors",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15030,7 +15030,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:14",
+			"id": "tier:smgs:parabellum",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15078,7 +15078,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:15",
+			"id": "tier:smgs:imminence",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15127,7 +15127,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:16",
+			"id": "tier:smgs:shayuras-wrath",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15175,7 +15175,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:17",
+			"id": "tier:smgs:synchronic-roulette",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15223,7 +15223,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:18",
+			"id": "tier:smgs:peculiar-charm",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15272,7 +15272,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:19",
+			"id": "tier:smgs:no-survivors-rotn-version",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15321,7 +15321,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:20",
+			"id": "tier:smgs:adjudicator",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15367,7 +15367,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:21",
+			"id": "tier:smgs:noxious-vetiver",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15413,7 +15413,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:22",
+			"id": "tier:smgs:out-of-bounds",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15460,7 +15460,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:23",
+			"id": "tier:smgs:gunburn",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15508,7 +15508,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:24",
+			"id": "tier:smgs:forensic-nightmare",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15556,7 +15556,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:25",
+			"id": "tier:smgs:unending-tempest",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15604,7 +15604,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:26",
+			"id": "tier:smgs:perfect-pitch",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15651,7 +15651,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:27",
+			"id": "tier:smgs:deadhorse-04",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15698,7 +15698,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:28",
+			"id": "tier:smgs:seraphine-haze",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15743,7 +15743,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:29",
+			"id": "tier:smgs:antedate",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15792,7 +15792,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:30",
+			"id": "tier:smgs:the-heros-burden",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15839,7 +15839,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:31",
+			"id": "tier:smgs:whatchamacallit",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15887,7 +15887,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:32",
+			"id": "tier:smgs:the-showrunner",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15934,7 +15934,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:33",
+			"id": "tier:smgs:death-adder",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -15979,7 +15979,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:34",
+			"id": "tier:smgs:subjunctive",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16026,7 +16026,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:35",
+			"id": "tier:smgs:ikelos-smg-v1-0-3",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16073,7 +16073,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:36",
+			"id": "tier:smgs:seventh-seraph-vy-7",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16120,7 +16120,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:37",
+			"id": "tier:smgs:the-immortal",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16168,7 +16168,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:38",
+			"id": "tier:smgs:calus-mini-tool",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16213,7 +16213,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:39",
+			"id": "tier:smgs:qua-nilus-ii",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16260,7 +16260,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:40",
+			"id": "tier:smgs:mirror-imago",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16306,7 +16306,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:41",
+			"id": "tier:smgs:prolonged-engagement",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16353,7 +16353,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:42",
+			"id": "tier:smgs:yarovit-mg4",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16402,7 +16402,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:43",
+			"id": "tier:smgs:blood-feud",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16448,7 +16448,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:44",
+			"id": "tier:smgs:rapacious-appetite",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16496,7 +16496,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:45",
+			"id": "tier:smgs:cold-front",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16543,7 +16543,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:46",
+			"id": "tier:smgs:borrowed-time",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16592,7 +16592,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:47",
+			"id": "tier:smgs:funnelweb",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16639,7 +16639,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:48",
+			"id": "tier:smgs:escape-velocity",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16685,7 +16685,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:49",
+			"id": "tier:smgs:friction-fire",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16733,7 +16733,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:50",
+			"id": "tier:smgs:boondoggle-mk-55",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16779,7 +16779,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:51",
+			"id": "tier:smgs:stochastic-variable",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16827,7 +16827,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:52",
+			"id": "tier:smgs:extraordinary-rendition",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16874,7 +16874,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:53",
+			"id": "tier:smgs:enyo-d",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16921,7 +16921,7 @@
 			}
 		},
 		{
-			"id": "tier:smgs:54",
+			"id": "tier:smgs:pizzicato-22",
 			"tab": "SMGs",
 			"categorySlug": "smgs",
 			"categoryLabel": "Submachine Gun",
@@ -16969,7 +16969,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:2",
+			"id": "tier:breech-grenade-launchers:vs-velocity-baton",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17019,7 +17019,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:3",
+			"id": "tier:breech-grenade-launchers:ouster-engine",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17069,7 +17069,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:4",
+			"id": "tier:breech-grenade-launchers:gizmo-weft",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17121,7 +17121,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:5",
+			"id": "tier:breech-grenade-launchers:psychopomp",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17171,7 +17171,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:6",
+			"id": "tier:breech-grenade-launchers:festival-flight",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17221,7 +17221,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:7",
+			"id": "tier:breech-grenade-launchers:theodolite",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17269,7 +17269,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:8",
+			"id": "tier:breech-grenade-launchers:lost-signal",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17319,7 +17319,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:9",
+			"id": "tier:breech-grenade-launchers:motif-41",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17367,7 +17367,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:10",
+			"id": "tier:breech-grenade-launchers:new-pacific-epitaph",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17417,7 +17417,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:11",
+			"id": "tier:breech-grenade-launchers:forbearance-brave-version",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17468,7 +17468,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:12",
+			"id": "tier:breech-grenade-launchers:wilderflight",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17517,7 +17517,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:13",
+			"id": "tier:breech-grenade-launchers:permafrost",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17566,7 +17566,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:14",
+			"id": "tier:breech-grenade-launchers:wilderflight-rotn-version",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17617,7 +17617,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:15",
+			"id": "tier:breech-grenade-launchers:liturgy",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17664,7 +17664,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:16",
+			"id": "tier:breech-grenade-launchers:romantic-death",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17711,7 +17711,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:17",
+			"id": "tier:breech-grenade-launchers:forbearance",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17760,7 +17760,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:18",
+			"id": "tier:breech-grenade-launchers:new-pacific-epitaph-rotn-version",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17810,7 +17810,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:19",
+			"id": "tier:breech-grenade-launchers:salvagers-salvo",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17859,7 +17859,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:20",
+			"id": "tier:breech-grenade-launchers:harsh-language",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17907,7 +17907,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:21",
+			"id": "tier:breech-grenade-launchers:martyrs-retribution",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -17956,7 +17956,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:22",
+			"id": "tier:breech-grenade-launchers:lingering-dread",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18005,7 +18005,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:23",
+			"id": "tier:breech-grenade-launchers:tusk-of-the-boar",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18052,7 +18052,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:24",
+			"id": "tier:breech-grenade-launchers:explosive-personality",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18100,7 +18100,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:25",
+			"id": "tier:breech-grenade-launchers:the-mountaintop-brave-version",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18152,7 +18152,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:26",
+			"id": "tier:breech-grenade-launchers:the-militias-birthright",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18199,7 +18199,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:27",
+			"id": "tier:breech-grenade-launchers:undercurrent",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18248,7 +18248,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:28",
+			"id": "tier:breech-grenade-launchers:wild-style",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18296,7 +18296,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:29",
+			"id": "tier:breech-grenade-launchers:ignition-code",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18343,7 +18343,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:30",
+			"id": "tier:breech-grenade-launchers:pardon-our-dust",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18389,7 +18389,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:31",
+			"id": "tier:breech-grenade-launchers:orewings-maul",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18435,7 +18435,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:32",
+			"id": "tier:breech-grenade-launchers:empty-vessel",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18481,7 +18481,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:33",
+			"id": "tier:breech-grenade-launchers:deafening-whisper",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18528,7 +18528,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:34",
+			"id": "tier:breech-grenade-launchers:prodigal-return",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18574,7 +18574,7 @@
 			}
 		},
 		{
-			"id": "tier:breech-grenade-launchers:35",
+			"id": "tier:breech-grenade-launchers:truthteller",
 			"tab": "BGLs",
 			"categorySlug": "breech-grenade-launchers",
 			"categoryLabel": "Breech Grenade Launcher",
@@ -18620,7 +18620,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:2",
+			"id": "tier:fusion-rifles:the-wizened-rebuke",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18668,7 +18668,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:3",
+			"id": "tier:fusion-rifles:glacioclasm",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18715,7 +18715,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:4",
+			"id": "tier:fusion-rifles:loaded-question",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18764,7 +18764,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:5",
+			"id": "tier:fusion-rifles:accelerando-42",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18813,7 +18813,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:6",
+			"id": "tier:fusion-rifles:the-eremite",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18860,7 +18860,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:7",
+			"id": "tier:fusion-rifles:techeun-force",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18909,7 +18909,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:8",
+			"id": "tier:fusion-rifles:cartesian-coordinate",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -18959,7 +18959,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:9",
+			"id": "tier:fusion-rifles:nox-perennial-v",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19005,7 +19005,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:10",
+			"id": "tier:fusion-rifles:monody-44",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19052,7 +19052,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:11",
+			"id": "tier:fusion-rifles:midhas-reckoning",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19100,7 +19100,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:12",
+			"id": "tier:fusion-rifles:plug-one-1",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19147,7 +19147,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:13",
+			"id": "tier:fusion-rifles:axial-lacuna",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19194,7 +19194,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:14",
+			"id": "tier:fusion-rifles:main-ingredient",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19241,7 +19241,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:15",
+			"id": "tier:fusion-rifles:burden-of-guilt",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19289,7 +19289,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:16",
+			"id": "tier:fusion-rifles:deliverance",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19337,7 +19337,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:17",
+			"id": "tier:fusion-rifles:null-composure",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19386,7 +19386,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:18",
+			"id": "tier:fusion-rifles:riptide",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19434,7 +19434,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:19",
+			"id": "tier:fusion-rifles:dream-breaker",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19482,7 +19482,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:20",
+			"id": "tier:fusion-rifles:lionfish-4fr",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19531,7 +19531,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:21",
+			"id": "tier:fusion-rifles:the-beacon",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19580,7 +19580,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:22",
+			"id": "tier:fusion-rifles:tempered-dynamo",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19629,7 +19629,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:23",
+			"id": "tier:fusion-rifles:aurvandil-fr6",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19675,7 +19675,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:24",
+			"id": "tier:fusion-rifles:vs-gravitic-arrest",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19723,7 +19723,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:25",
+			"id": "tier:fusion-rifles:zealots-reward",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19771,7 +19771,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:26",
+			"id": "tier:fusion-rifles:tahoma-01",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19820,7 +19820,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:27",
+			"id": "tier:fusion-rifles:scatter-signal",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19867,7 +19867,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:28",
+			"id": "tier:fusion-rifles:iterative-loop",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19914,7 +19914,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:29",
+			"id": "tier:fusion-rifles:afterlight",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -19960,7 +19960,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:30",
+			"id": "tier:fusion-rifles:finite-maybe",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20010,7 +20010,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:31",
+			"id": "tier:fusion-rifles:pressurized-precision",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20058,7 +20058,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:32",
+			"id": "tier:fusion-rifles:royal-executioner",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20105,7 +20105,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:33",
+			"id": "tier:fusion-rifles:resounding",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20152,7 +20152,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:34",
+			"id": "tier:fusion-rifles:nox-sidereal-iv",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20200,7 +20200,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:35",
+			"id": "tier:fusion-rifles:cruoris-fr4",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20247,7 +20247,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:36",
+			"id": "tier:fusion-rifles:iota-draconis",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20293,7 +20293,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:37",
+			"id": "tier:fusion-rifles:exiles-curse",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20340,7 +20340,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:38",
+			"id": "tier:fusion-rifles:likely-suspect",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20386,7 +20386,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:39",
+			"id": "tier:fusion-rifles:coriolis-force",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20432,7 +20432,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:40",
+			"id": "tier:fusion-rifles:snorri-fr5",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20480,7 +20480,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:41",
+			"id": "tier:fusion-rifles:hollow-words",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20527,7 +20527,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:42",
+			"id": "tier:fusion-rifles:trinary-system",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20574,7 +20574,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:43",
+			"id": "tier:fusion-rifles:timelines-vertex",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20620,7 +20620,7 @@
 			}
 		},
 		{
-			"id": "tier:fusion-rifles:44",
+			"id": "tier:fusion-rifles:the-epicurean",
 			"tab": "Fusions",
 			"categorySlug": "fusion-rifles",
 			"categoryLabel": "Fusion Rifle",
@@ -20666,7 +20666,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:2",
+			"id": "tier:glaives:ecliptic-distaff",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -20717,7 +20717,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:3",
+			"id": "tier:glaives:the-heron",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -20768,7 +20768,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:4",
+			"id": "tier:glaives:forthcoming-deviance",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -20819,7 +20819,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:5",
+			"id": "tier:glaives:refusal-of-the-call",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -20869,7 +20869,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:6",
+			"id": "tier:glaives:rake-angle",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -20919,7 +20919,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:7",
+			"id": "tier:glaives:lubraes-ruin",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -20970,7 +20970,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:8",
+			"id": "tier:glaives:nezarecs-whisper",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21020,7 +21020,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:9",
+			"id": "tier:glaives:judgment-of-kelgorath",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21071,7 +21071,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:10",
+			"id": "tier:glaives:the-enigma",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21120,7 +21120,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:11",
+			"id": "tier:glaives:greasy-luck",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21171,7 +21171,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:12",
+			"id": "tier:glaives:greasy-luck-rotn-version",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21223,7 +21223,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:13",
+			"id": "tier:glaives:albedo-wing",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21274,7 +21274,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:14",
+			"id": "tier:glaives:backfang",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21325,7 +21325,7 @@
 			}
 		},
 		{
-			"id": "tier:glaives:15",
+			"id": "tier:glaives:unexpected-resurgence",
 			"tab": "Glaives",
 			"categorySlug": "glaives",
 			"categoryLabel": "Glaive",
@@ -21375,7 +21375,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:2",
+			"id": "tier:shotguns:threat-level",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21425,7 +21425,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:3",
+			"id": "tier:shotguns:found-verdict",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21475,7 +21475,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:4",
+			"id": "tier:shotguns:perfect-paradox",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21525,7 +21525,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:5",
+			"id": "tier:shotguns:heritage",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21574,7 +21574,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:6",
+			"id": "tier:shotguns:basso-ostinato",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21623,7 +21623,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:7",
+			"id": "tier:shotguns:unvoiced",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21672,7 +21672,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:8",
+			"id": "tier:shotguns:felwinters-lie",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21719,7 +21719,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:9",
+			"id": "tier:shotguns:ikelos-sg-v1-0-3",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21767,7 +21767,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:10",
+			"id": "tier:shotguns:the-deicide",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21817,7 +21817,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:11",
+			"id": "tier:shotguns:one-small-step",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21865,7 +21865,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:12",
+			"id": "tier:shotguns:a-sudden-death-rotn-version",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21914,7 +21914,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:13",
+			"id": "tier:shotguns:a-sudden-death",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -21962,7 +21962,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:14",
+			"id": "tier:shotguns:imperial-decree",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22009,7 +22009,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:15",
+			"id": "tier:shotguns:pure-recollection",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22058,7 +22058,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:16",
+			"id": "tier:shotguns:arcane-embrace",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22107,7 +22107,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:17",
+			"id": "tier:shotguns:until-its-return",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22156,7 +22156,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:18",
+			"id": "tier:shotguns:starscape-null",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22206,7 +22206,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:19",
+			"id": "tier:shotguns:swordbreaker",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22255,7 +22255,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:20",
+			"id": "tier:shotguns:xenoclast-iv",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22304,7 +22304,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:21",
+			"id": "tier:shotguns:last-man-standing",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22353,7 +22353,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:22",
+			"id": "tier:shotguns:fractethyst",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22400,7 +22400,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:23",
+			"id": "tier:shotguns:mida-macro-tool",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22446,7 +22446,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:24",
+			"id": "tier:shotguns:compass-rose",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22493,7 +22493,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:25",
+			"id": "tier:shotguns:astral-horizon",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22542,7 +22542,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:26",
+			"id": "tier:shotguns:trachinus",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22590,7 +22590,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:27",
+			"id": "tier:shotguns:gunnoras-axe",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22640,7 +22640,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:28",
+			"id": "tier:shotguns:prophet-of-doom",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22689,7 +22689,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:29",
+			"id": "tier:shotguns:seventh-seraph-cqc-12",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22737,7 +22737,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:30",
+			"id": "tier:shotguns:ded-gramarye-iv",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22786,7 +22786,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:31",
+			"id": "tier:shotguns:dead-weight",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22836,7 +22836,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:32",
+			"id": "tier:shotguns:python",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22884,7 +22884,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:33",
+			"id": "tier:shotguns:someday",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22932,7 +22932,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:34",
+			"id": "tier:shotguns:matador-64",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -22980,7 +22980,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:35",
+			"id": "tier:shotguns:deadpan-delivery",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23029,7 +23029,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:36",
+			"id": "tier:shotguns:sojourners-tale",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23078,7 +23078,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:37",
+			"id": "tier:shotguns:precipial",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23126,7 +23126,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:38",
+			"id": "tier:shotguns:reckless-endangerment",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23173,7 +23173,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:39",
+			"id": "tier:shotguns:hawthornes-field-forged-shotgun",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23220,7 +23220,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:40",
+			"id": "tier:shotguns:scavengers-fate",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23268,7 +23268,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:41",
+			"id": "tier:shotguns:blasphemer",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23314,7 +23314,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:42",
+			"id": "tier:shotguns:fortissimo-11",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23362,7 +23362,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:43",
+			"id": "tier:shotguns:nessas-oblation",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23409,7 +23409,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:44",
+			"id": "tier:shotguns:supercluster",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23459,7 +23459,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:45",
+			"id": "tier:shotguns:without-remorse",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23506,7 +23506,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:46",
+			"id": "tier:shotguns:retold-tale",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23553,7 +23553,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:47",
+			"id": "tier:shotguns:wastelander-m5",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23601,7 +23601,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:48",
+			"id": "tier:shotguns:retrofuturist",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23649,7 +23649,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:49",
+			"id": "tier:shotguns:ragnhild-d",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23695,7 +23695,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:50",
+			"id": "tier:shotguns:hand-in-hand",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23743,7 +23743,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:51",
+			"id": "tier:shotguns:the-comedian",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23790,7 +23790,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:52",
+			"id": "tier:shotguns:mindbenders-ambition",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23837,7 +23837,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:53",
+			"id": "tier:shotguns:deadlock",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23884,7 +23884,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:54",
+			"id": "tier:shotguns:no-reprieve",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23931,7 +23931,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:55",
+			"id": "tier:shotguns:legato-11",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -23979,7 +23979,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:56",
+			"id": "tier:shotguns:first-in-last-out",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -24026,7 +24026,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:57",
+			"id": "tier:shotguns:bonechiller",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -24074,7 +24074,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:58",
+			"id": "tier:shotguns:the-inquisitor",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -24121,7 +24121,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:59",
+			"id": "tier:shotguns:riiswalker",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -24168,7 +24168,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:60",
+			"id": "tier:shotguns:toil-and-trouble",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -24214,7 +24214,7 @@
 			}
 		},
 		{
-			"id": "tier:shotguns:61",
+			"id": "tier:shotguns:wishbringer",
 			"tab": "Shotguns",
 			"categorySlug": "shotguns",
 			"categoryLabel": "Shotgun",
@@ -24260,7 +24260,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:2",
+			"id": "tier:sniper-rifles:conspiracy-honed",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24307,7 +24307,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:3",
+			"id": "tier:sniper-rifles:something-something",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24355,7 +24355,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:4",
+			"id": "tier:sniper-rifles:praedyths-revenge",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24404,7 +24404,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:5",
+			"id": "tier:sniper-rifles:the-helmsman",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24453,7 +24453,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:6",
+			"id": "tier:sniper-rifles:lance-ephemeral",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24501,7 +24501,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:7",
+			"id": "tier:sniper-rifles:omniscient-eye",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24548,7 +24548,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:8",
+			"id": "tier:sniper-rifles:rapid-growth",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24594,7 +24594,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:9",
+			"id": "tier:sniper-rifles:adored",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24639,7 +24639,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:10",
+			"id": "tier:sniper-rifles:fathers-sins",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24688,7 +24688,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:11",
+			"id": "tier:sniper-rifles:critical-anomaly",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24735,7 +24735,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:12",
+			"id": "tier:sniper-rifles:apostate",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24783,7 +24783,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:13",
+			"id": "tier:sniper-rifles:succession",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24831,7 +24831,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:14",
+			"id": "tier:sniper-rifles:last-foray",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24879,7 +24879,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:15",
+			"id": "tier:sniper-rifles:succession-brave-version",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24929,7 +24929,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:16",
+			"id": "tier:sniper-rifles:tatara-gaze",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -24977,7 +24977,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:17",
+			"id": "tier:sniper-rifles:volta-bracket",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25026,7 +25026,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:18",
+			"id": "tier:sniper-rifles:the-supremacy",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25072,7 +25072,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:19",
+			"id": "tier:sniper-rifles:trophy-hunter",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25121,7 +25121,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:20",
+			"id": "tier:sniper-rifles:embraced-identity",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25170,7 +25170,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:21",
+			"id": "tier:sniper-rifles:alone-as-a-god",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25217,7 +25217,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:22",
+			"id": "tier:sniper-rifles:naeems-lance",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25266,7 +25266,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:23",
+			"id": "tier:sniper-rifles:1000-yard-stare",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25313,7 +25313,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:24",
+			"id": "tier:sniper-rifles:locus-locutus",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25361,7 +25361,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:25",
+			"id": "tier:sniper-rifles:luna-regolith-iii",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25409,7 +25409,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:26",
+			"id": "tier:sniper-rifles:tranquility",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25457,7 +25457,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:27",
+			"id": "tier:sniper-rifles:defiance-of-yasmin",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25505,7 +25505,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:28",
+			"id": "tier:sniper-rifles:irukandji",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25553,7 +25553,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:29",
+			"id": "tier:sniper-rifles:eye-of-sol",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25599,7 +25599,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:30",
+			"id": "tier:sniper-rifles:ikelos-sr-v1-0-3",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25644,7 +25644,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:31",
+			"id": "tier:sniper-rifles:allen-05",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25692,7 +25692,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:32",
+			"id": "tier:sniper-rifles:uzume-rr4",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25741,7 +25741,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:33",
+			"id": "tier:sniper-rifles:veleda-f",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25788,7 +25788,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:34",
+			"id": "tier:sniper-rifles:sovereignty",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25836,7 +25836,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:35",
+			"id": "tier:sniper-rifles:fugue-55",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25883,7 +25883,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:36",
+			"id": "tier:sniper-rifles:keen-thistle",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25932,7 +25932,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:37",
+			"id": "tier:sniper-rifles:shoreline-dissident",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -25980,7 +25980,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:38",
+			"id": "tier:sniper-rifles:occluded-finality",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26028,7 +26028,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:39",
+			"id": "tier:sniper-rifles:a-distant-pull",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26073,7 +26073,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:40",
+			"id": "tier:sniper-rifles:silicon-neuroma",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26119,7 +26119,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:41",
+			"id": "tier:sniper-rifles:albruna-d",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26167,7 +26167,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:42",
+			"id": "tier:sniper-rifles:gallu-rr3",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26213,7 +26213,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:43",
+			"id": "tier:sniper-rifles:frozen-orbit",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26260,7 +26260,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:44",
+			"id": "tier:sniper-rifles:twilight-oath",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26307,7 +26307,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:45",
+			"id": "tier:sniper-rifles:mechabre",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26353,7 +26353,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:46",
+			"id": "tier:sniper-rifles:persuader",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26399,7 +26399,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:47",
+			"id": "tier:sniper-rifles:mercurial-overreach",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26446,7 +26446,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:48",
+			"id": "tier:sniper-rifles:sole-survivor",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26493,7 +26493,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:49",
+			"id": "tier:sniper-rifles:thoughtless",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26538,7 +26538,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:50",
+			"id": "tier:sniper-rifles:distant-tumulus",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26583,7 +26583,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:51",
+			"id": "tier:sniper-rifles:the-long-walk",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26629,7 +26629,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:52",
+			"id": "tier:sniper-rifles:bite-of-the-fox",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26674,7 +26674,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:53",
+			"id": "tier:sniper-rifles:shepherds-watch",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26719,7 +26719,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:54",
+			"id": "tier:sniper-rifles:far-future",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26766,7 +26766,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:55",
+			"id": "tier:sniper-rifles:the-domino",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26812,7 +26812,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:56",
+			"id": "tier:sniper-rifles:beloved",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26857,7 +26857,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:57",
+			"id": "tier:sniper-rifles:widows-bite",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26903,7 +26903,7 @@
 			}
 		},
 		{
-			"id": "tier:sniper-rifles:58",
+			"id": "tier:sniper-rifles:long-shadow",
 			"tab": "Snipers",
 			"categorySlug": "sniper-rifles",
 			"categoryLabel": "Sniper Rifle",
@@ -26948,7 +26948,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:2",
+			"id": "tier:rocket-sidearms:lotus-eater",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -26998,7 +26998,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:3",
+			"id": "tier:rocket-sidearms:high-albedo",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27048,7 +27048,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:4",
+			"id": "tier:rocket-sidearms:returned-memory",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27100,7 +27100,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:5",
+			"id": "tier:rocket-sidearms:indebted-kindness",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27150,7 +27150,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:6",
+			"id": "tier:rocket-sidearms:aberrant-action",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27199,7 +27199,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:7",
+			"id": "tier:rocket-sidearms:tinashas-mastery",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27249,7 +27249,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:8",
+			"id": "tier:rocket-sidearms:the-call",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27299,7 +27299,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-sidearms:9",
+			"id": "tier:rocket-sidearms:unfall",
 			"tab": "Rocket Sidearms",
 			"categorySlug": "rocket-sidearms",
 			"categoryLabel": "Rocket Sidearm",
@@ -27346,7 +27346,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:2",
+			"id": "tier:trace-rifles:chronophage",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27390,7 +27390,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:3",
+			"id": "tier:trace-rifles:unsworn",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27435,7 +27435,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:4",
+			"id": "tier:trace-rifles:hollow-denial",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27478,7 +27478,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:5",
+			"id": "tier:trace-rifles:retraced-path",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27523,7 +27523,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:6",
+			"id": "tier:trace-rifles:keraunios",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27568,7 +27568,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:7",
+			"id": "tier:trace-rifles:acasias-dejection",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27614,7 +27614,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:8",
+			"id": "tier:trace-rifles:path-of-least-resistance",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27657,7 +27657,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:9",
+			"id": "tier:trace-rifles:incisor",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27700,7 +27700,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:10",
+			"id": "tier:trace-rifles:action-item",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27746,7 +27746,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:11",
+			"id": "tier:trace-rifles:warlords-spear",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27792,7 +27792,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:12",
+			"id": "tier:trace-rifles:appetence",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27834,7 +27834,7 @@
 			}
 		},
 		{
-			"id": "tier:trace-rifles:13",
+			"id": "tier:trace-rifles:ribbontail",
 			"tab": "Traces",
 			"categorySlug": "trace-rifles",
 			"categoryLabel": "Trace Rifle",
@@ -27879,7 +27879,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:2",
+			"id": "tier:heavy-grenade-launchers:edge-transit-brave-version",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -27930,7 +27930,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:3",
+			"id": "tier:heavy-grenade-launchers:vs-chill-inhibitor",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -27978,7 +27978,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:4",
+			"id": "tier:heavy-grenade-launchers:the-ever-present",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28026,7 +28026,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:5",
+			"id": "tier:heavy-grenade-launchers:koraxiss-distress",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28076,7 +28076,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:6",
+			"id": "tier:heavy-grenade-launchers:love-and-death",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28125,7 +28125,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:7",
+			"id": "tier:heavy-grenade-launchers:outrageous-fortune",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28172,7 +28172,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:8",
+			"id": "tier:heavy-grenade-launchers:doomsday",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28220,7 +28220,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:9",
+			"id": "tier:heavy-grenade-launchers:bitter-sweet",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28267,7 +28267,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:10",
+			"id": "tier:heavy-grenade-launchers:cataphract-gl3",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28315,7 +28315,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:11",
+			"id": "tier:heavy-grenade-launchers:wicked-sister",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28363,7 +28363,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:12",
+			"id": "tier:heavy-grenade-launchers:regnant",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28411,7 +28411,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:13",
+			"id": "tier:heavy-grenade-launchers:canis-major",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28461,7 +28461,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:14",
+			"id": "tier:heavy-grenade-launchers:dimensional-hypotrochoid",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28510,7 +28510,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:15",
+			"id": "tier:heavy-grenade-launchers:tarnation",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28560,7 +28560,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:16",
+			"id": "tier:heavy-grenade-launchers:hullabaloo",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28609,7 +28609,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:17",
+			"id": "tier:heavy-grenade-launchers:cry-mutiny",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28657,7 +28657,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:18",
+			"id": "tier:heavy-grenade-launchers:acosmic",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28706,7 +28706,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:19",
+			"id": "tier:heavy-grenade-launchers:marsilion-c",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28753,7 +28753,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:20",
+			"id": "tier:heavy-grenade-launchers:wendigo-gl3",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28800,7 +28800,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:21",
+			"id": "tier:heavy-grenade-launchers:swarm-of-the-raven",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28847,7 +28847,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:22",
+			"id": "tier:heavy-grenade-launchers:interference-vi",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28893,7 +28893,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:23",
+			"id": "tier:heavy-grenade-launchers:typhon-gl5",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28938,7 +28938,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:24",
+			"id": "tier:heavy-grenade-launchers:memory-interdict",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -28985,7 +28985,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:25",
+			"id": "tier:heavy-grenade-launchers:crowd-pleaser",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -29032,7 +29032,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:26",
+			"id": "tier:heavy-grenade-launchers:blast-battue",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -29078,7 +29078,7 @@
 			}
 		},
 		{
-			"id": "tier:heavy-grenade-launchers:27",
+			"id": "tier:heavy-grenade-launchers:berengers-memory",
 			"tab": "HGLs",
 			"categorySlug": "heavy-grenade-launchers",
 			"categoryLabel": "Heavy Grenade Launcher",
@@ -29123,7 +29123,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:2",
+			"id": "tier:linear-fusion-rifles:eyes-unveiled",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29171,7 +29171,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:3",
+			"id": "tier:linear-fusion-rifles:cataclysmic",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29218,7 +29218,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:4",
+			"id": "tier:linear-fusion-rifles:reeds-regret",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29264,7 +29264,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:5",
+			"id": "tier:linear-fusion-rifles:taipan-4fr",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29310,7 +29310,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:6",
+			"id": "tier:linear-fusion-rifles:line-in-the-sand",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29358,7 +29358,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:7",
+			"id": "tier:linear-fusion-rifles:briars-contempt",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29405,7 +29405,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:8",
+			"id": "tier:linear-fusion-rifles:stormchaser",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29454,7 +29454,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:9",
+			"id": "tier:linear-fusion-rifles:laser-painter",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29500,7 +29500,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:10",
+			"id": "tier:linear-fusion-rifles:sailspy-pitchglass",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29545,7 +29545,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:11",
+			"id": "tier:linear-fusion-rifles:scintillation",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29592,7 +29592,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:12",
+			"id": "tier:linear-fusion-rifles:suspectum-4fr",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29639,7 +29639,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:13",
+			"id": "tier:linear-fusion-rifles:mistral-lift",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29687,7 +29687,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:14",
+			"id": "tier:linear-fusion-rifles:doomed-petitioner",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29735,7 +29735,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:15",
+			"id": "tier:linear-fusion-rifles:willful-hamartia",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29782,7 +29782,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:16",
+			"id": "tier:linear-fusion-rifles:threaded-needle",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29828,7 +29828,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:17",
+			"id": "tier:linear-fusion-rifles:boomslang-4fr",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29874,7 +29874,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:18",
+			"id": "tier:linear-fusion-rifles:fire-and-forget",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29920,7 +29920,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:19",
+			"id": "tier:linear-fusion-rifles:tarantula",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -29965,7 +29965,7 @@
 			}
 		},
 		{
-			"id": "tier:linear-fusion-rifles:20",
+			"id": "tier:linear-fusion-rifles:corsairs-wrath",
 			"tab": "LFRs",
 			"categorySlug": "linear-fusion-rifles",
 			"categoryLabel": "Linear Fusion Rifle",
@@ -30010,7 +30010,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:2",
+			"id": "tier:machine-guns:corrective-measure",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30062,7 +30062,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:3",
+			"id": "tier:machine-guns:hammerhead",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30115,7 +30115,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:4",
+			"id": "tier:machine-guns:song-of-ir-y-t",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30167,7 +30167,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:5",
+			"id": "tier:machine-guns:qua-vinctus-iv",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30218,7 +30218,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:6",
+			"id": "tier:machine-guns:pro-memoria",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30271,7 +30271,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:7",
+			"id": "tier:machine-guns:circular-logic",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30323,7 +30323,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:8",
+			"id": "tier:machine-guns:bane-of-sorrow",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30375,7 +30375,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:9",
+			"id": "tier:machine-guns:diablerets-06",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30428,7 +30428,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:10",
+			"id": "tier:machine-guns:commemoration",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30480,7 +30480,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:11",
+			"id": "tier:machine-guns:temporal-clause",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30533,7 +30533,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:12",
+			"id": "tier:machine-guns:thermal-erosion",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30585,7 +30585,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:13",
+			"id": "tier:machine-guns:marcato-45",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30636,7 +30636,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:14",
+			"id": "tier:machine-guns:chain-of-command",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30688,7 +30688,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:15",
+			"id": "tier:machine-guns:ulterior-observation",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30740,7 +30740,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:16",
+			"id": "tier:machine-guns:qullims-terminus",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30791,7 +30791,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:17",
+			"id": "tier:machine-guns:terminus-horizon-rotn-version",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30844,7 +30844,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:18",
+			"id": "tier:machine-guns:dawn-far-off",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30896,7 +30896,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:19",
+			"id": "tier:machine-guns:terminus-horizon",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30948,7 +30948,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:20",
+			"id": "tier:machine-guns:seventh-seraph-saw",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -30999,7 +30999,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:21",
+			"id": "tier:machine-guns:unwavering-duty",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31051,7 +31051,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:22",
+			"id": "tier:machine-guns:archons-thunder",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31103,7 +31103,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:23",
+			"id": "tier:machine-guns:avalanche",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31155,7 +31155,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:24",
+			"id": "tier:machine-guns:recurrent-impact",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31204,7 +31204,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:25",
+			"id": "tier:machine-guns:bitter-end",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31256,7 +31256,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:26",
+			"id": "tier:machine-guns:speleologist",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31307,7 +31307,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:27",
+			"id": "tier:machine-guns:a-fine-memorial",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31360,7 +31360,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:28",
+			"id": "tier:machine-guns:21-delirium",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31413,7 +31413,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:29",
+			"id": "tier:machine-guns:watchful-eye",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31466,7 +31466,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:30",
+			"id": "tier:machine-guns:qua-xaphan-v",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31517,7 +31517,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:31",
+			"id": "tier:machine-guns:shattered-cipher",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31566,7 +31566,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:32",
+			"id": "tier:machine-guns:retrofit-escapade",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31615,7 +31615,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:33",
+			"id": "tier:machine-guns:fixed-odds",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31663,7 +31663,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:34",
+			"id": "tier:machine-guns:qua-furor-v",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31714,7 +31714,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:35",
+			"id": "tier:machine-guns:plancks-stride",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31762,7 +31762,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:36",
+			"id": "tier:machine-guns:eleatic-principle",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31811,7 +31811,7 @@
 			}
 		},
 		{
-			"id": "tier:machine-guns:37",
+			"id": "tier:machine-guns:the-swarm",
 			"tab": "LMGs",
 			"categorySlug": "machine-guns",
 			"categoryLabel": "Machine Gun",
@@ -31859,7 +31859,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:2",
+			"id": "tier:rocket-launchers:hezen-vengeance",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -31909,7 +31909,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:3",
+			"id": "tier:rocket-launchers:bellowing-giant",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -31959,7 +31959,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:4",
+			"id": "tier:rocket-launchers:apex-predator",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32009,7 +32009,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:5",
+			"id": "tier:rocket-launchers:the-hothead",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32059,7 +32059,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:6",
+			"id": "tier:rocket-launchers:cynosure",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32108,7 +32108,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:7",
+			"id": "tier:rocket-launchers:the-when-and-where",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32158,7 +32158,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:8",
+			"id": "tier:rocket-launchers:heretic",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32207,7 +32207,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:9",
+			"id": "tier:rocket-launchers:red-herring",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32255,7 +32255,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:10",
+			"id": "tier:rocket-launchers:cold-comfort-rotn-version",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32304,7 +32304,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:11",
+			"id": "tier:rocket-launchers:roar-of-the-bear",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32351,7 +32351,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:12",
+			"id": "tier:rocket-launchers:cold-comfort",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32400,7 +32400,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:13",
+			"id": "tier:rocket-launchers:crux-celeritas-iv",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32449,7 +32449,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:14",
+			"id": "tier:rocket-launchers:tomorrows-answer",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32499,7 +32499,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:15",
+			"id": "tier:rocket-launchers:bad-omens",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32548,7 +32548,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:16",
+			"id": "tier:rocket-launchers:crux-termination-iv",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32597,7 +32597,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:17",
+			"id": "tier:rocket-launchers:haliaetus",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32647,7 +32647,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:18",
+			"id": "tier:rocket-launchers:pyroclastic-flow",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32697,7 +32697,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:19",
+			"id": "tier:rocket-launchers:sleepless",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32746,7 +32746,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:20",
+			"id": "tier:rocket-launchers:folded-root",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32793,7 +32793,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:21",
+			"id": "tier:rocket-launchers:heretics-fervor",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32842,7 +32842,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:22",
+			"id": "tier:rocket-launchers:micromort",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32891,7 +32891,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:23",
+			"id": "tier:rocket-launchers:faith-keeper",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32939,7 +32939,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:24",
+			"id": "tier:rocket-launchers:ascendancy",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -32988,7 +32988,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:25",
+			"id": "tier:rocket-launchers:braytech-osprey",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33037,7 +33037,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:26",
+			"id": "tier:rocket-launchers:crowning-duologue",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33086,7 +33086,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:27",
+			"id": "tier:rocket-launchers:subzero-salvo",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33136,7 +33136,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:28",
+			"id": "tier:rocket-launchers:semiotician",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33183,7 +33183,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:29",
+			"id": "tier:rocket-launchers:hoosegow",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33229,7 +33229,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:30",
+			"id": "tier:rocket-launchers:blowout",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33277,7 +33277,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:31",
+			"id": "tier:rocket-launchers:code-duello",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33323,7 +33323,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:32",
+			"id": "tier:rocket-launchers:bump-in-the-night",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33369,7 +33369,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:33",
+			"id": "tier:rocket-launchers:palmyra-b",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33416,7 +33416,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:34",
+			"id": "tier:rocket-launchers:royal-entry",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33464,7 +33464,7 @@
 			}
 		},
 		{
-			"id": "tier:rocket-launchers:35",
+			"id": "tier:rocket-launchers:shining-sphere",
 			"tab": "Rockets",
 			"categorySlug": "rocket-launchers",
 			"categoryLabel": "Rocket Launcher",
@@ -33510,7 +33510,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:2",
+			"id": "tier:swords:sullen-claw",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33561,7 +33561,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:3",
+			"id": "tier:swords:chivalric-fire",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33614,7 +33614,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:4",
+			"id": "tier:swords:falling-guillotine-brave-version",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33668,7 +33668,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:5",
+			"id": "tier:swords:false-idols",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33718,7 +33718,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:6",
+			"id": "tier:swords:the-slammer",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33768,7 +33768,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:7",
+			"id": "tier:swords:nasreddin",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33821,7 +33821,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:8",
+			"id": "tier:swords:terciopelo-4bl",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33872,7 +33872,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:9",
+			"id": "tier:swords:bequest",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33922,7 +33922,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:10",
+			"id": "tier:swords:strykers-sure-hand",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -33975,7 +33975,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:11",
+			"id": "tier:swords:hardline-cut",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34028,7 +34028,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:12",
+			"id": "tier:swords:zephyr",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34081,7 +34081,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:13",
+			"id": "tier:swords:abide-the-return",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34133,7 +34133,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:14",
+			"id": "tier:swords:night-terror",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34186,7 +34186,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:15",
+			"id": "tier:swords:solas-scar",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34239,7 +34239,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:16",
+			"id": "tier:swords:abyssal-edge",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34292,7 +34292,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:17",
+			"id": "tier:swords:hero-of-ages",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34345,7 +34345,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:18",
+			"id": "tier:swords:ill-omen",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34394,7 +34394,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:19",
+			"id": "tier:swords:temptations-hook",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34445,7 +34445,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:20",
+			"id": "tier:swords:eighty-six",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34496,7 +34496,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:21",
+			"id": "tier:swords:dragoncult-sickle",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34547,7 +34547,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:22",
+			"id": "tier:swords:geodetic-hsm",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34594,7 +34594,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:23",
+			"id": "tier:swords:double-edged-answer",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34647,7 +34647,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:24",
+			"id": "tier:swords:goldtusk",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34694,7 +34694,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:25",
+			"id": "tier:swords:synanceia",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34746,7 +34746,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:26",
+			"id": "tier:swords:the-other-half",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34797,7 +34797,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:27",
+			"id": "tier:swords:summum-bonum",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34848,7 +34848,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:28",
+			"id": "tier:swords:aurora-dawn",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34896,7 +34896,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:29",
+			"id": "tier:swords:just-in-case",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34945,7 +34945,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:30",
+			"id": "tier:swords:negative-space",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -34993,7 +34993,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:31",
+			"id": "tier:swords:steel-sybil-z-14",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35040,7 +35040,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:32",
+			"id": "tier:swords:half-truths",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35087,7 +35087,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:33",
+			"id": "tier:swords:crown-splitter",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35135,7 +35135,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:34",
+			"id": "tier:swords:caretaker",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35182,7 +35182,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:35",
+			"id": "tier:swords:honors-edge",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35232,7 +35232,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:36",
+			"id": "tier:swords:deaths-razor",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35280,7 +35280,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:37",
+			"id": "tier:swords:falling-guillotine",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35328,7 +35328,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:38",
+			"id": "tier:swords:eternitys-edge",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35377,7 +35377,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:39",
+			"id": "tier:swords:throne-cleaver",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35424,7 +35424,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:40",
+			"id": "tier:swords:quickfang",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35471,7 +35471,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:41",
+			"id": "tier:swords:razors-edge",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35518,7 +35518,7 @@
 			}
 		},
 		{
-			"id": "tier:swords:42",
+			"id": "tier:swords:thin-precipice",
 			"tab": "Swords",
 			"categorySlug": "swords",
 			"categoryLabel": "Sword",
@@ -35567,7 +35567,7 @@
 			}
 		},
 		{
-			"id": "tier:other:2",
+			"id": "tier:other:refurbished-a499",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35613,7 +35613,7 @@
 			}
 		},
 		{
-			"id": "tier:other:3",
+			"id": "tier:other:veillantif-d",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35662,7 +35662,7 @@
 			}
 		},
 		{
-			"id": "tier:other:4",
+			"id": "tier:other:mint-retrograde",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35711,7 +35711,7 @@
 			}
 		},
 		{
-			"id": "tier:other:5",
+			"id": "tier:other:a-good-shout",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35759,7 +35759,7 @@
 			}
 		},
 		{
-			"id": "tier:other:6",
+			"id": "tier:other:psi-aeterna-iv",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35808,7 +35808,7 @@
 			}
 		},
 		{
-			"id": "tier:other:7",
+			"id": "tier:other:submersion",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35857,7 +35857,7 @@
 			}
 		},
 		{
-			"id": "tier:other:8",
+			"id": "tier:other:uncivil-discourse",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35903,7 +35903,7 @@
 			}
 		},
 		{
-			"id": "tier:other:9",
+			"id": "tier:other:opaque-hourglass",
 			"tab": "Other",
 			"categorySlug": "other",
 			"categoryLabel": "Other",
@@ -35954,7 +35954,7 @@
 	],
 	"exotics": [
 		{
-			"id": "exotic:2",
+			"id": "exotic:tractor-cannon",
 			"rank": null,
 			"tier": "S",
 			"name": "Tractor Cannon",
@@ -35981,7 +35981,7 @@
 			}
 		},
 		{
-			"id": "exotic:3",
+			"id": "exotic:choir-of-one",
 			"rank": null,
 			"tier": "A",
 			"name": "Choir of One",
@@ -36009,7 +36009,7 @@
 			}
 		},
 		{
-			"id": "exotic:4",
+			"id": "exotic:dead-messenger",
 			"rank": null,
 			"tier": "A",
 			"name": "Dead Messenger",
@@ -36036,7 +36036,7 @@
 			}
 		},
 		{
-			"id": "exotic:5",
+			"id": "exotic:gjallarhorn",
 			"rank": null,
 			"tier": "A",
 			"name": "Gjallarhorn",
@@ -36064,7 +36064,7 @@
 			}
 		},
 		{
-			"id": "exotic:6",
+			"id": "exotic:hierarchy-of-needs",
 			"rank": null,
 			"tier": "A",
 			"name": "Hierarchy of Needs",
@@ -36092,7 +36092,7 @@
 			}
 		},
 		{
-			"id": "exotic:7",
+			"id": "exotic:leviathans-breath",
 			"rank": null,
 			"tier": "A",
 			"name": "Leviathan's Breath",
@@ -36119,7 +36119,7 @@
 			}
 		},
 		{
-			"id": "exotic:8",
+			"id": "exotic:still-hunt",
 			"rank": null,
 			"tier": "A",
 			"name": "Still Hunt",
@@ -36146,7 +36146,7 @@
 			}
 		},
 		{
-			"id": "exotic:9",
+			"id": "exotic:truth",
 			"rank": null,
 			"tier": "A",
 			"name": "Truth",
@@ -36173,7 +36173,7 @@
 			}
 		},
 		{
-			"id": "exotic:10",
+			"id": "exotic:divinity",
 			"rank": null,
 			"tier": "B",
 			"name": "Divinity",
@@ -36200,7 +36200,7 @@
 			}
 		},
 		{
-			"id": "exotic:11",
+			"id": "exotic:ergo-sum",
 			"rank": null,
 			"tier": "B",
 			"name": "Ergo Sum",
@@ -36228,7 +36228,7 @@
 			}
 		},
 		{
-			"id": "exotic:12",
+			"id": "exotic:fafnir",
 			"rank": null,
 			"tier": "B",
 			"name": "Fafnir",
@@ -36255,7 +36255,7 @@
 			}
 		},
 		{
-			"id": "exotic:13",
+			"id": "exotic:izanagis-burden",
 			"rank": null,
 			"tier": "B",
 			"name": "Izanagi's Burden",
@@ -36282,7 +36282,7 @@
 			}
 		},
 		{
-			"id": "exotic:14",
+			"id": "exotic:merciless",
 			"rank": null,
 			"tier": "B",
 			"name": "Merciless",
@@ -36310,7 +36310,7 @@
 			}
 		},
 		{
-			"id": "exotic:15",
+			"id": "exotic:one-thousand-voices",
 			"rank": null,
 			"tier": "B",
 			"name": "One Thousand Voices",
@@ -36337,7 +36337,7 @@
 			}
 		},
 		{
-			"id": "exotic:16",
+			"id": "exotic:parasite",
 			"rank": null,
 			"tier": "B",
 			"name": "Parasite",
@@ -36364,7 +36364,7 @@
 			}
 		},
 		{
-			"id": "exotic:17",
+			"id": "exotic:praxic-blade",
 			"rank": null,
 			"tier": "B",
 			"name": "Praxic Blade",
@@ -36392,7 +36392,7 @@
 			}
 		},
 		{
-			"id": "exotic:18",
+			"id": "exotic:alethonym",
 			"rank": null,
 			"tier": "C",
 			"name": "Alethonym",
@@ -36419,7 +36419,7 @@
 			}
 		},
 		{
-			"id": "exotic:19",
+			"id": "exotic:anarchy",
 			"rank": null,
 			"tier": "C",
 			"name": "Anarchy",
@@ -36447,7 +36447,7 @@
 			}
 		},
 		{
-			"id": "exotic:20",
+			"id": "exotic:bastion",
 			"rank": null,
 			"tier": "C",
 			"name": "Bastion",
@@ -36475,7 +36475,7 @@
 			}
 		},
 		{
-			"id": "exotic:21",
+			"id": "exotic:d-a-r-c-i",
 			"rank": null,
 			"tier": "C",
 			"name": "D.A.R.C.I.",
@@ -36502,7 +36502,7 @@
 			}
 		},
 		{
-			"id": "exotic:22",
+			"id": "exotic:edge-of-action",
 			"rank": null,
 			"tier": "C",
 			"name": "Edge of Action",
@@ -36530,7 +36530,7 @@
 			}
 		},
 		{
-			"id": "exotic:23",
+			"id": "exotic:euphony",
 			"rank": null,
 			"tier": "C",
 			"name": "Euphony",
@@ -36557,7 +36557,7 @@
 			}
 		},
 		{
-			"id": "exotic:24",
+			"id": "exotic:heirloom",
 			"rank": null,
 			"tier": "C",
 			"name": "Heirloom",
@@ -36585,7 +36585,7 @@
 			}
 		},
 		{
-			"id": "exotic:25",
+			"id": "exotic:tessellation",
 			"rank": null,
 			"tier": "C",
 			"name": "Tessellation",
@@ -36612,7 +36612,7 @@
 			}
 		},
 		{
-			"id": "exotic:26",
+			"id": "exotic:the-fourth-horseman",
 			"rank": null,
 			"tier": "C",
 			"name": "The Fourth Horseman",
@@ -36639,7 +36639,7 @@
 			}
 		},
 		{
-			"id": "exotic:27",
+			"id": "exotic:turncoat",
 			"rank": null,
 			"tier": "C",
 			"name": "Turncoat",
@@ -36667,7 +36667,7 @@
 			}
 		},
 		{
-			"id": "exotic:28",
+			"id": "exotic:wavesplitter",
 			"rank": null,
 			"tier": "C",
 			"name": "Wavesplitter",
@@ -36694,7 +36694,7 @@
 			}
 		},
 		{
-			"id": "exotic:29",
+			"id": "exotic:agers-scepter",
 			"rank": null,
 			"tier": "D",
 			"name": "Ager's Scepter",
@@ -36721,7 +36721,7 @@
 			}
 		},
 		{
-			"id": "exotic:30",
+			"id": "exotic:arbalest",
 			"rank": null,
 			"tier": "D",
 			"name": "Arbalest",
@@ -36748,7 +36748,7 @@
 			}
 		},
 		{
-			"id": "exotic:31",
+			"id": "exotic:buried-bloodline",
 			"rank": null,
 			"tier": "D",
 			"name": "Buried Bloodline",
@@ -36775,7 +36775,7 @@
 			}
 		},
 		{
-			"id": "exotic:32",
+			"id": "exotic:collective-obligation",
 			"rank": null,
 			"tier": "D",
 			"name": "Collective Obligation",
@@ -36802,7 +36802,7 @@
 			}
 		},
 		{
-			"id": "exotic:33",
+			"id": "exotic:culls-shadow",
 			"rank": null,
 			"tier": "D",
 			"name": "Cull's Shadow",
@@ -36830,7 +36830,7 @@
 			}
 		},
 		{
-			"id": "exotic:34",
+			"id": "exotic:delicate-tomb",
 			"rank": null,
 			"tier": "D",
 			"name": "Delicate Tomb",
@@ -36857,7 +36857,7 @@
 			}
 		},
 		{
-			"id": "exotic:35",
+			"id": "exotic:dragons-breath",
 			"rank": null,
 			"tier": "D",
 			"name": "Dragon's Breath",
@@ -36885,7 +36885,7 @@
 			}
 		},
 		{
-			"id": "exotic:36",
+			"id": "exotic:finalitys-auger",
 			"rank": null,
 			"tier": "D",
 			"name": "Finality's Auger",
@@ -36913,7 +36913,7 @@
 			}
 		},
 		{
-			"id": "exotic:37",
+			"id": "exotic:graviton-lance",
 			"rank": null,
 			"tier": "D",
 			"name": "Graviton Lance",
@@ -36940,7 +36940,7 @@
 			}
 		},
 		{
-			"id": "exotic:38",
+			"id": "exotic:ice-breaker",
 			"rank": null,
 			"tier": "D",
 			"name": "Ice Breaker",
@@ -36968,7 +36968,7 @@
 			}
 		},
 		{
-			"id": "exotic:39",
+			"id": "exotic:khvostov-7g-0x",
 			"rank": null,
 			"tier": "D",
 			"name": "Khvostov 7G-0X",
@@ -36995,7 +36995,7 @@
 			}
 		},
 		{
-			"id": "exotic:40",
+			"id": "exotic:legend-of-acrius",
 			"rank": null,
 			"tier": "D",
 			"name": "Legend of Acrius",
@@ -37020,7 +37020,7 @@
 			}
 		},
 		{
-			"id": "exotic:41",
+			"id": "exotic:necrochasm",
 			"rank": null,
 			"tier": "D",
 			"name": "Necrochasm",
@@ -37047,7 +37047,7 @@
 			}
 		},
 		{
-			"id": "exotic:42",
+			"id": "exotic:new-malpais",
 			"rank": null,
 			"tier": "D",
 			"name": "New Malpais",
@@ -37075,7 +37075,7 @@
 			}
 		},
 		{
-			"id": "exotic:43",
+			"id": "exotic:prometheus-lens",
 			"rank": null,
 			"tier": "D",
 			"name": "Prometheus Lens",
@@ -37102,7 +37102,7 @@
 			}
 		},
 		{
-			"id": "exotic:44",
+			"id": "exotic:salvations-grip",
 			"rank": null,
 			"tier": "D",
 			"name": "Salvation's Grip",
@@ -37129,7 +37129,7 @@
 			}
 		},
 		{
-			"id": "exotic:45",
+			"id": "exotic:the-lament",
 			"rank": null,
 			"tier": "D",
 			"name": "The Lament",
@@ -37156,7 +37156,7 @@
 			}
 		},
 		{
-			"id": "exotic:46",
+			"id": "exotic:the-navigator",
 			"rank": null,
 			"tier": "D",
 			"name": "The Navigator",
@@ -37184,7 +37184,7 @@
 			}
 		},
 		{
-			"id": "exotic:47",
+			"id": "exotic:trinity-ghoul",
 			"rank": null,
 			"tier": "D",
 			"name": "Trinity Ghoul",
@@ -37211,7 +37211,7 @@
 			}
 		},
 		{
-			"id": "exotic:48",
+			"id": "exotic:vex-mythoclast",
 			"rank": null,
 			"tier": "D",
 			"name": "Vex Mythoclast",
@@ -37238,7 +37238,7 @@
 			}
 		},
 		{
-			"id": "exotic:49",
+			"id": "exotic:vexcalibur",
 			"rank": null,
 			"tier": "D",
 			"name": "Vexcalibur",
@@ -37265,7 +37265,7 @@
 			}
 		},
 		{
-			"id": "exotic:50",
+			"id": "exotic:whirling-ovation",
 			"rank": null,
 			"tier": "D",
 			"name": "Whirling Ovation",
@@ -37292,7 +37292,7 @@
 			}
 		},
 		{
-			"id": "exotic:51",
+			"id": "exotic:wolfsbane",
 			"rank": null,
 			"tier": "D",
 			"name": "Wolfsbane",
@@ -37319,7 +37319,7 @@
 			}
 		},
 		{
-			"id": "exotic:52",
+			"id": "exotic:bad-juju",
 			"rank": null,
 			"tier": "E",
 			"name": "Bad Juju",
@@ -37346,7 +37346,7 @@
 			}
 		},
 		{
-			"id": "exotic:53",
+			"id": "exotic:cerberus-1",
 			"rank": null,
 			"tier": "E",
 			"name": "Cerberus+1",
@@ -37373,7 +37373,7 @@
 			}
 		},
 		{
-			"id": "exotic:54",
+			"id": "exotic:cloudstrike",
 			"rank": null,
 			"tier": "E",
 			"name": "Cloudstrike",
@@ -37400,7 +37400,7 @@
 			}
 		},
 		{
-			"id": "exotic:55",
+			"id": "exotic:coldheart",
 			"rank": null,
 			"tier": "E",
 			"name": "Coldheart",
@@ -37427,7 +37427,7 @@
 			}
 		},
 		{
-			"id": "exotic:56",
+			"id": "exotic:conditional-finality",
 			"rank": null,
 			"tier": "E",
 			"name": "Conditional Finality",
@@ -37455,7 +37455,7 @@
 			}
 		},
 		{
-			"id": "exotic:57",
+			"id": "exotic:duality",
 			"rank": null,
 			"tier": "E",
 			"name": "Duality",
@@ -37482,7 +37482,7 @@
 			}
 		},
 		{
-			"id": "exotic:58",
+			"id": "exotic:erianas-vow",
 			"rank": null,
 			"tier": "E",
 			"name": "Eriana's Vow",
@@ -37509,7 +37509,7 @@
 			}
 		},
 		{
-			"id": "exotic:59",
+			"id": "exotic:ex-diris",
 			"rank": null,
 			"tier": "E",
 			"name": "Ex Diris",
@@ -37536,7 +37536,7 @@
 			}
 		},
 		{
-			"id": "exotic:60",
+			"id": "exotic:eyes-of-tomorrow",
 			"rank": null,
 			"tier": "E",
 			"name": "Eyes of Tomorrow",
@@ -37563,7 +37563,7 @@
 			}
 		},
 		{
-			"id": "exotic:61",
+			"id": "exotic:fighting-lion",
 			"rank": null,
 			"tier": "E",
 			"name": "Fighting Lion",
@@ -37590,7 +37590,7 @@
 			}
 		},
 		{
-			"id": "exotic:62",
+			"id": "exotic:final-warning",
 			"rank": null,
 			"tier": "E",
 			"name": "Final Warning",
@@ -37617,7 +37617,7 @@
 			}
 		},
 		{
-			"id": "exotic:63",
+			"id": "exotic:forerunner",
 			"rank": null,
 			"tier": "E",
 			"name": "Forerunner",
@@ -37644,7 +37644,7 @@
 			}
 		},
 		{
-			"id": "exotic:64",
+			"id": "exotic:grand-overture",
 			"rank": null,
 			"tier": "E",
 			"name": "Grand Overture",
@@ -37671,7 +37671,7 @@
 			}
 		},
 		{
-			"id": "exotic:65",
+			"id": "exotic:heartshadow",
 			"rank": null,
 			"tier": "E",
 			"name": "Heartshadow",
@@ -37699,7 +37699,7 @@
 			}
 		},
 		{
-			"id": "exotic:66",
+			"id": "exotic:le-monarque",
 			"rank": null,
 			"tier": "E",
 			"name": "Le Monarque",
@@ -37726,7 +37726,7 @@
 			}
 		},
 		{
-			"id": "exotic:67",
+			"id": "exotic:lord-of-wolves",
 			"rank": null,
 			"tier": "E",
 			"name": "Lord of Wolves",
@@ -37753,7 +37753,7 @@
 			}
 		},
 		{
-			"id": "exotic:68",
+			"id": "exotic:lumina",
 			"rank": null,
 			"tier": "E",
 			"name": "Lumina",
@@ -37780,7 +37780,7 @@
 			}
 		},
 		{
-			"id": "exotic:69",
+			"id": "exotic:microcosm",
 			"rank": null,
 			"tier": "E",
 			"name": "Microcosm",
@@ -37807,7 +37807,7 @@
 			}
 		},
 		{
-			"id": "exotic:70",
+			"id": "exotic:monte-carlo",
 			"rank": null,
 			"tier": "E",
 			"name": "Monte Carlo",
@@ -37834,7 +37834,7 @@
 			}
 		},
 		{
-			"id": "exotic:71",
+			"id": "exotic:new-land-beyond",
 			"rank": null,
 			"tier": "E",
 			"name": "New Land Beyond",
@@ -37862,7 +37862,7 @@
 			}
 		},
 		{
-			"id": "exotic:72",
+			"id": "exotic:osteo-striga",
 			"rank": null,
 			"tier": "E",
 			"name": "Osteo Striga",
@@ -37889,7 +37889,7 @@
 			}
 		},
 		{
-			"id": "exotic:73",
+			"id": "exotic:rat-king",
 			"rank": null,
 			"tier": "E",
 			"name": "Rat King",
@@ -37916,7 +37916,7 @@
 			}
 		},
 		{
-			"id": "exotic:74",
+			"id": "exotic:red-death-reformed",
 			"rank": null,
 			"tier": "E",
 			"name": "Red Death Reformed",
@@ -37943,7 +37943,7 @@
 			}
 		},
 		{
-			"id": "exotic:75",
+			"id": "exotic:riskrunner",
 			"rank": null,
 			"tier": "E",
 			"name": "Riskrunner",
@@ -37970,7 +37970,7 @@
 			}
 		},
 		{
-			"id": "exotic:76",
+			"id": "exotic:service-of-luzaku",
 			"rank": null,
 			"tier": "E",
 			"name": "Service of Luzaku",
@@ -37997,7 +37997,7 @@
 			}
 		},
 		{
-			"id": "exotic:77",
+			"id": "exotic:skyburners-oath",
 			"rank": null,
 			"tier": "E",
 			"name": "Skyburner's Oath",
@@ -38024,7 +38024,7 @@
 			}
 		},
 		{
-			"id": "exotic:78",
+			"id": "exotic:slayers-fang",
 			"rank": null,
 			"tier": "E",
 			"name": "Slayer's Fang",
@@ -38051,7 +38051,7 @@
 			}
 		},
 		{
-			"id": "exotic:79",
+			"id": "exotic:sleeper-simulant",
 			"rank": null,
 			"tier": "E",
 			"name": "Sleeper Simulant",
@@ -38078,7 +38078,7 @@
 			}
 		},
 		{
-			"id": "exotic:80",
+			"id": "exotic:sunshot",
 			"rank": null,
 			"tier": "E",
 			"name": "Sunshot",
@@ -38105,7 +38105,7 @@
 			}
 		},
 		{
-			"id": "exotic:81",
+			"id": "exotic:tarrabah",
 			"rank": null,
 			"tier": "E",
 			"name": "Tarrabah",
@@ -38132,7 +38132,7 @@
 			}
 		},
 		{
-			"id": "exotic:82",
+			"id": "exotic:the-chaperone",
 			"rank": null,
 			"tier": "E",
 			"name": "The Chaperone",
@@ -38159,7 +38159,7 @@
 			}
 		},
 		{
-			"id": "exotic:83",
+			"id": "exotic:the-huckleberry",
 			"rank": null,
 			"tier": "E",
 			"name": "The Huckleberry",
@@ -38186,7 +38186,7 @@
 			}
 		},
 		{
-			"id": "exotic:84",
+			"id": "exotic:the-wardcliff-coil",
 			"rank": null,
 			"tier": "E",
 			"name": "The Wardcliff Coil",
@@ -38213,7 +38213,7 @@
 			}
 		},
 		{
-			"id": "exotic:85",
+			"id": "exotic:third-iteration",
 			"rank": null,
 			"tier": "E",
 			"name": "Third Iteration",
@@ -38240,7 +38240,7 @@
 			}
 		},
 		{
-			"id": "exotic:86",
+			"id": "exotic:thunderlord",
 			"rank": null,
 			"tier": "E",
 			"name": "Thunderlord",
@@ -38268,7 +38268,7 @@
 			}
 		},
 		{
-			"id": "exotic:87",
+			"id": "exotic:travelers-chosen",
 			"rank": null,
 			"tier": "E",
 			"name": "Traveler's Chosen",
@@ -38295,7 +38295,7 @@
 			}
 		},
 		{
-			"id": "exotic:88",
+			"id": "exotic:verglas-curve",
 			"rank": null,
 			"tier": "E",
 			"name": "Verglas Curve",
@@ -38322,7 +38322,7 @@
 			}
 		},
 		{
-			"id": "exotic:89",
+			"id": "exotic:whisper-of-the-worm",
 			"rank": null,
 			"tier": "E",
 			"name": "Whisper of the Worm",
@@ -38349,7 +38349,7 @@
 			}
 		},
 		{
-			"id": "exotic:90",
+			"id": "exotic:winterbite",
 			"rank": null,
 			"tier": "E",
 			"name": "Winterbite",
@@ -38377,7 +38377,7 @@
 			}
 		},
 		{
-			"id": "exotic:91",
+			"id": "exotic:wish-ender",
 			"rank": null,
 			"tier": "E",
 			"name": "Wish-Ender",
@@ -38404,7 +38404,7 @@
 			}
 		},
 		{
-			"id": "exotic:92",
+			"id": "exotic:witherhoard",
 			"rank": null,
 			"tier": "E",
 			"name": "Witherhoard",
@@ -38432,7 +38432,7 @@
 			}
 		},
 		{
-			"id": "exotic:93",
+			"id": "exotic:worldline-zero",
 			"rank": null,
 			"tier": "E",
 			"name": "Worldline Zero",
@@ -38459,7 +38459,7 @@
 			}
 		},
 		{
-			"id": "exotic:94",
+			"id": "exotic:xenophage",
 			"rank": null,
 			"tier": "E",
 			"name": "Xenophage",
@@ -38486,7 +38486,7 @@
 			}
 		},
 		{
-			"id": "exotic:95",
+			"id": "exotic:ace-of-spades",
 			"rank": null,
 			"tier": "F",
 			"name": "Ace of Spades",
@@ -38513,7 +38513,7 @@
 			}
 		},
 		{
-			"id": "exotic:96",
+			"id": "exotic:barrow-dyad",
 			"rank": null,
 			"tier": "F",
 			"name": "Barrow-Dyad",
@@ -38540,7 +38540,7 @@
 			}
 		},
 		{
-			"id": "exotic:97",
+			"id": "exotic:black-talon",
 			"rank": null,
 			"tier": "F",
 			"name": "Black Talon",
@@ -38567,7 +38567,7 @@
 			}
 		},
 		{
-			"id": "exotic:98",
+			"id": "exotic:borealis",
 			"rank": null,
 			"tier": "F",
 			"name": "Borealis",
@@ -38594,7 +38594,7 @@
 			}
 		},
 		{
-			"id": "exotic:99",
+			"id": "exotic:centrifuse",
 			"rank": null,
 			"tier": "F",
 			"name": "Centrifuse",
@@ -38621,7 +38621,7 @@
 			}
 		},
 		{
-			"id": "exotic:100",
+			"id": "exotic:crimson",
 			"rank": null,
 			"tier": "F",
 			"name": "Crimson",
@@ -38648,7 +38648,7 @@
 			}
 		},
 		{
-			"id": "exotic:101",
+			"id": "exotic:cryosthesia-77k",
 			"rank": null,
 			"tier": "F",
 			"name": "Cryosthesia 77K",
@@ -38675,7 +38675,7 @@
 			}
 		},
 		{
-			"id": "exotic:102",
+			"id": "exotic:dead-mans-tale",
 			"rank": null,
 			"tier": "F",
 			"name": "Dead Man's Tale",
@@ -38702,7 +38702,7 @@
 			}
 		},
 		{
-			"id": "exotic:103",
+			"id": "exotic:deathbringer",
 			"rank": null,
 			"tier": "F",
 			"name": "Deathbringer",
@@ -38729,7 +38729,7 @@
 			}
 		},
 		{
-			"id": "exotic:104",
+			"id": "exotic:deterministic-chaos",
 			"rank": null,
 			"tier": "F",
 			"name": "Deterministic Chaos",
@@ -38756,7 +38756,7 @@
 			}
 		},
 		{
-			"id": "exotic:105",
+			"id": "exotic:devils-ruin",
 			"rank": null,
 			"tier": "F",
 			"name": "Devil's Ruin",
@@ -38783,7 +38783,7 @@
 			}
 		},
 		{
-			"id": "exotic:106",
+			"id": "exotic:edge-of-concurrence",
 			"rank": null,
 			"tier": "F",
 			"name": "Edge of Concurrence",
@@ -38810,7 +38810,7 @@
 			}
 		},
 		{
-			"id": "exotic:107",
+			"id": "exotic:edge-of-intent",
 			"rank": null,
 			"tier": "F",
 			"name": "Edge of Intent",
@@ -38837,7 +38837,7 @@
 			}
 		},
 		{
-			"id": "exotic:108",
+			"id": "exotic:graviton-spike",
 			"rank": null,
 			"tier": "F",
 			"name": "Graviton Spike",
@@ -38864,7 +38864,7 @@
 			}
 		},
 		{
-			"id": "exotic:109",
+			"id": "exotic:hard-light",
 			"rank": null,
 			"tier": "F",
 			"name": "Hard Light",
@@ -38891,7 +38891,7 @@
 			}
 		},
 		{
-			"id": "exotic:110",
+			"id": "exotic:hawkmoon",
 			"rank": null,
 			"tier": "F",
 			"name": "Hawkmoon",
@@ -38918,7 +38918,7 @@
 			}
 		},
 		{
-			"id": "exotic:111",
+			"id": "exotic:heir-apparent",
 			"rank": null,
 			"tier": "F",
 			"name": "Heir Apparent",
@@ -38945,7 +38945,7 @@
 			}
 		},
 		{
-			"id": "exotic:112",
+			"id": "exotic:j-tunn",
 			"rank": null,
 			"tier": "F",
 			"name": "Jötunn",
@@ -38972,7 +38972,7 @@
 			}
 		},
 		{
-			"id": "exotic:113",
+			"id": "exotic:lodestar",
 			"rank": null,
 			"tier": "F",
 			"name": "Lodestar",
@@ -38999,7 +38999,7 @@
 			}
 		},
 		{
-			"id": "exotic:114",
+			"id": "exotic:lorentz-driver",
 			"rank": null,
 			"tier": "F",
 			"name": "Lorentz Driver",
@@ -39026,7 +39026,7 @@
 			}
 		},
 		{
-			"id": "exotic:115",
+			"id": "exotic:malfeasance",
 			"rank": null,
 			"tier": "F",
 			"name": "Malfeasance",
@@ -39053,7 +39053,7 @@
 			}
 		},
 		{
-			"id": "exotic:116",
+			"id": "exotic:mida-multi-tool",
 			"rank": null,
 			"tier": "F",
 			"name": "MIDA Multi-Tool",
@@ -39080,7 +39080,7 @@
 			}
 		},
 		{
-			"id": "exotic:117",
+			"id": "exotic:no-time-to-explain",
 			"rank": null,
 			"tier": "F",
 			"name": "No Time to Explain",
@@ -39107,7 +39107,7 @@
 			}
 		},
 		{
-			"id": "exotic:118",
+			"id": "exotic:outbreak-perfected",
 			"rank": null,
 			"tier": "F",
 			"name": "Outbreak Perfected",
@@ -39134,7 +39134,7 @@
 			}
 		},
 		{
-			"id": "exotic:119",
+			"id": "exotic:polaris-lance",
 			"rank": null,
 			"tier": "F",
 			"name": "Polaris Lance",
@@ -39161,7 +39161,7 @@
 			}
 		},
 		{
-			"id": "exotic:120",
+			"id": "exotic:quicksilver-storm",
 			"rank": null,
 			"tier": "F",
 			"name": "Quicksilver Storm",
@@ -39188,7 +39188,7 @@
 			}
 		},
 		{
-			"id": "exotic:121",
+			"id": "exotic:revision-zero",
 			"rank": null,
 			"tier": "F",
 			"name": "Revision Zero",
@@ -39215,7 +39215,7 @@
 			}
 		},
 		{
-			"id": "exotic:122",
+			"id": "exotic:ruinous-effigy",
 			"rank": null,
 			"tier": "F",
 			"name": "Ruinous Effigy",
@@ -39242,7 +39242,7 @@
 			}
 		},
 		{
-			"id": "exotic:123",
+			"id": "exotic:sturm",
 			"rank": null,
 			"tier": "F",
 			"name": "Sturm",
@@ -39269,7 +39269,7 @@
 			}
 		},
 		{
-			"id": "exotic:124",
+			"id": "exotic:suros-regime",
 			"rank": null,
 			"tier": "F",
 			"name": "SUROS Regime",
@@ -39296,7 +39296,7 @@
 			}
 		},
 		{
-			"id": "exotic:125",
+			"id": "exotic:sweet-business",
 			"rank": null,
 			"tier": "F",
 			"name": "Sweet Business",
@@ -39323,7 +39323,7 @@
 			}
 		},
 		{
-			"id": "exotic:126",
+			"id": "exotic:symmetry",
 			"rank": null,
 			"tier": "F",
 			"name": "Symmetry",
@@ -39350,7 +39350,7 @@
 			}
 		},
 		{
-			"id": "exotic:127",
+			"id": "exotic:telesto",
 			"rank": null,
 			"tier": "F",
 			"name": "Telesto",
@@ -39377,7 +39377,7 @@
 			}
 		},
 		{
-			"id": "exotic:128",
+			"id": "exotic:the-colony",
 			"rank": null,
 			"tier": "F",
 			"name": "The Colony",
@@ -39404,7 +39404,7 @@
 			}
 		},
 		{
-			"id": "exotic:129",
+			"id": "exotic:the-jade-rabbit",
 			"rank": null,
 			"tier": "F",
 			"name": "The Jade Rabbit",
@@ -39431,7 +39431,7 @@
 			}
 		},
 		{
-			"id": "exotic:130",
+			"id": "exotic:the-last-word",
 			"rank": null,
 			"tier": "F",
 			"name": "The Last Word",
@@ -39458,7 +39458,7 @@
 			}
 		},
 		{
-			"id": "exotic:131",
+			"id": "exotic:the-manticore",
 			"rank": null,
 			"tier": "F",
 			"name": "The Manticore",
@@ -39485,7 +39485,7 @@
 			}
 		},
 		{
-			"id": "exotic:132",
+			"id": "exotic:the-prospector",
 			"rank": null,
 			"tier": "F",
 			"name": "The Prospector",
@@ -39512,7 +39512,7 @@
 			}
 		},
 		{
-			"id": "exotic:133",
+			"id": "exotic:the-queenbreaker",
 			"rank": null,
 			"tier": "F",
 			"name": "The Queenbreaker",
@@ -39539,7 +39539,7 @@
 			}
 		},
 		{
-			"id": "exotic:134",
+			"id": "exotic:thorn",
 			"rank": null,
 			"tier": "F",
 			"name": "Thorn",
@@ -39566,7 +39566,7 @@
 			}
 		},
 		{
-			"id": "exotic:135",
+			"id": "exotic:ticuus-divination",
 			"rank": null,
 			"tier": "F",
 			"name": "Ticuu's Divination",
@@ -39593,7 +39593,7 @@
 			}
 		},
 		{
-			"id": "exotic:136",
+			"id": "exotic:tommys-matchbook",
 			"rank": null,
 			"tier": "F",
 			"name": "Tommy's Matchbook",
@@ -39620,7 +39620,7 @@
 			}
 		},
 		{
-			"id": "exotic:137",
+			"id": "exotic:touch-of-malice",
 			"rank": null,
 			"tier": "F",
 			"name": "Touch of Malice",
@@ -39647,7 +39647,7 @@
 			}
 		},
 		{
-			"id": "exotic:138",
+			"id": "exotic:trespasser",
 			"rank": null,
 			"tier": "F",
 			"name": "Trespasser",
@@ -39674,7 +39674,7 @@
 			}
 		},
 		{
-			"id": "exotic:139",
+			"id": "exotic:two-tailed-fox",
 			"rank": null,
 			"tier": "F",
 			"name": "Two-Tailed Fox",
@@ -39701,7 +39701,7 @@
 			}
 		},
 		{
-			"id": "exotic:140",
+			"id": "exotic:vigilance-wing",
 			"rank": null,
 			"tier": "F",
 			"name": "Vigilance Wing",
@@ -39728,7 +39728,7 @@
 			}
 		},
 		{
-			"id": "exotic:141",
+			"id": "exotic:wicked-implement",
 			"rank": null,
 			"tier": "F",
 			"name": "Wicked Implement",
@@ -39755,7 +39755,7 @@
 			}
 		},
 		{
-			"id": "exotic:142",
+			"id": "exotic:wish-keeper",
 			"rank": null,
 			"tier": "F",
 			"name": "Wish-Keeper",
