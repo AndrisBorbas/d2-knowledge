@@ -92,9 +92,8 @@ export const metadata: Metadata = {
 		index: true,
 		follow: true,
 	},
-	alternates: {
-		canonical: siteUrl,
-	},
+	// No `alternates.canonical` here: every page sets its own, and a root-level
+	// one is inherited by the 404 page, which then claims to be the home page.
 };
 
 // The footer only needs the dataset's timestamp, but a failed load must not

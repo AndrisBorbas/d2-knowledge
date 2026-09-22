@@ -77,7 +77,7 @@ export function CompendiumPreview({ seed }: CompendiumPreviewProps) {
 				onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
 			/>
 
-			<main className="mr-4 min-h-[60vh]">
+			<div className="mr-4 min-h-[60vh]">
 				<div className="lg:hidden">
 					<EntryListPanel
 						entries={visibleEntries}
@@ -137,7 +137,7 @@ export function CompendiumPreview({ seed }: CompendiumPreviewProps) {
 						</Panel>
 					</Group>
 				</div>
-			</main>
+			</div>
 
 			<HoverPreviewCard
 				hoveredEntry={hoveredEntry}
