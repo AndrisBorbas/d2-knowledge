@@ -1,3 +1,7 @@
+// Tagged at build time on entries whose text says they do nothing in the
+// Crucible. Tooltips give this pill a red tint.
+export const DISABLED_IN_PVP_GROUP = "Disabled in PvP";
+
 export const CURATED_TOP_GROUPS = [
 	// "Arc",
 	// "Solar",
@@ -10,6 +14,7 @@ export const CURATED_TOP_GROUPS = [
 	// "Armor Sets",
 	// "Armor Perks",
 	// "Artifact Perks",
+	// DISABLED_IN_PVP_GROUP,
 ] as const;
 
 export type CuratedTopGroup = (typeof CURATED_TOP_GROUPS)[number];
@@ -112,6 +117,11 @@ const GROUP_CATEGORIES: readonly GroupCategory[] = [
 		// Seasonal artifacts carry their season in parentheses, e.g.
 		// "Tablet of Ruin (Heresy)". New ones land here without a code change.
 		matches: (group) => /\(.+\)$/.test(group),
+	},
+	{
+		id: "mode",
+		label: "Game Mode",
+		members: [DISABLED_IN_PVP_GROUP],
 	},
 	{
 		id: "activities",

@@ -3,6 +3,7 @@
 import { useRef } from "react";
 
 import { Button, PinButton } from "@/components/ui/Button";
+import { DISABLED_IN_PVP_GROUP } from "@/lib/compendium/groups";
 
 import { IconSlot, TooltipBody } from "./TooltipContent";
 import type {
@@ -70,7 +71,7 @@ export function Tooltip({
 				{entry.groups.map((group) => (
 					<Button
 						key={group}
-						variant="muted"
+						variant={group === DISABLED_IN_PVP_GROUP ? "mutedWarning" : "muted"}
 						size="tag"
 						onClick={() => onGroupClick?.(group)}
 						className="inline-block"

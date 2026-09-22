@@ -7,9 +7,29 @@ import { loadDdcSource } from "@/lib/ddc/source";
 import { isSameDescription } from "@/lib/utils/text";
 
 import { foldModFamilies, mergeUnifiedEntries, toEntries } from "./aggregate";
+import { DISABLED_IN_PVP_GROUP } from "./groups";
 import { annotateEntries, buildKeywords, toSlug } from "./keywords/annotate";
 import { Verbs } from "./keywords/data";
-import { type CompendiumDataset, compendiumDatasetSchema } from "./model";
+import {
+	type CompendiumDataset,
+	compendiumDatasetSchema,
+	type Entry,
+} from "./model";
+
+// The phrasings the sources use for a perk that does nothing in PvP: the DDC's
+// red ">>DISABLED IN CRUCIBLE<<" banner, "Does not function in the Crucible" /
+// "in PvP Game Modes", and Clarity's "Only works in PvE game modes". Each source
+// words it differently, so alternates count too. A note that names a single
+// playlist ("Does not work in the Rumble Crucible Playlist") stays out.
+const DISABLED_IN_PVP_PATTERN =
+	/disabled in (?:crucible|pvp)|does(?: not|n't) (?:work|function) in (?:the )?(?:crucible|pvp)|only works in pve/i;
+
+function isDisabledInPvp(entry: Entry) {
+	return [
+		entry.description,
+		...(entry.alternateDescriptions ?? []).map((alternate) => alternate.text),
+	].some((text) => DISABLED_IN_PVP_PATTERN.test(text));
+}
 
 export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 	const [ddcSource, claritySource, subclassEntries] = await Promise.all([
@@ -123,7 +143,13 @@ export async function buildCompendiumDataset(): Promise<CompendiumDataset> {
 		const isVerb = Verbs.some(
 			(verb) => toSlug(verb.name) === toSlug(entry.title.trim()),
 		);
-		return isVerb ? { ...entry, groups: [...entry.groups, "Verb"] } : entry;
+		const extraGroups = [
+			...(isVerb ? ["Verb"] : []),
+			...(isDisabledInPvp(entry) ? [DISABLED_IN_PVP_GROUP] : []),
+		];
+		return extraGroups.length > 0
+			? { ...entry, groups: [...entry.groups, ...extraGroups] }
+			: entry;
 	});
 
 	const dataset = {

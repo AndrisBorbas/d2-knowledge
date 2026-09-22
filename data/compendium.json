@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-21T09:28:59.624Z",
+	"generatedAt": "2026-09-22T22:23:46.414Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -64925,7 +64925,8 @@
 			"tab": "Armor Perks",
 			"section": null,
 			"groups": [
-				"Armor Sets"
+				"Armor Sets",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "Armor Perks",
@@ -65088,7 +65089,8 @@
 			"tab": "Armor Perks",
 			"section": null,
 			"groups": [
-				"Armor Sets"
+				"Armor Sets",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "Armor Perks",
@@ -65614,7 +65616,8 @@
 			"tab": "Armor Perks",
 			"section": null,
 			"groups": [
-				"Armor Sets"
+				"Armor Sets",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "Armor Perks",
@@ -76712,7 +76715,8 @@
 			"tab": "Armor Perks",
 			"section": null,
 			"groups": [
-				"Armor Sets"
+				"Armor Sets",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "Armor Perks",
@@ -86198,7 +86202,8 @@
 			"section": "Tablet of Ruin (Heresy)",
 			"groups": [
 				"Artifact Perks",
-				"Tablet of Ruin (Heresy)"
+				"Tablet of Ruin (Heresy)",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "Artifact Perks",
@@ -248722,7 +248727,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",
@@ -254701,7 +254707,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",
@@ -255054,7 +255061,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",
@@ -257766,7 +257774,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",
@@ -258764,7 +258773,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",
@@ -264779,7 +264789,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",
@@ -278464,7 +278475,8 @@
 			"section": "Legs",
 			"groups": [
 				"Armor Mods",
-				"Legs"
+				"Legs",
+				"Disabled in PvP"
 			],
 			"source": {
 				"tab": "clarity",

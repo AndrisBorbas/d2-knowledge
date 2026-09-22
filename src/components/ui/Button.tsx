@@ -21,6 +21,8 @@ export const buttonVariants = cva(
 				option: "bg-blue-500/8 text-white/55 hover:bg-blue-500/15",
 				// Recedes into the surface it sits on: group tags inside a tooltip.
 				muted: "bg-blue-950/20 text-white/60 hover:bg-blue-950/40",
+				// `muted` with a red cast, for a tag that warns: "Disabled in PvP".
+				mutedWarning: "bg-red-900/25 text-red-100/75 hover:bg-red-900/40",
 				// Destructive: clear all, unpin, remove.
 				danger: "bg-red-500/15 text-red-500 hover:bg-red-500/30",
 			},
