@@ -11,7 +11,7 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 
 ### Added
 
-- Add **Disabled in PvP** tag.
+- Add [Disabled in PvP](https://owlsector.net/glossary?g=Disabled+in+PvP) tag.
 
 ## [1.8.1] - 2026-09-21
 
