@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { CompendiumPreview } from "@/components/compendium/CompendiumPreview";
+import { JsonLd } from "@/components/site/JsonLd";
 import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 import type { CompendiumDataset } from "@/lib/compendium/model";
 import { buildPageMetadata } from "@/lib/site/meta";
+import { buildGlossaryJsonLd } from "@/lib/site/structured-data";
 import { pickEvenlySpaced } from "@/lib/utils/sample";
 
 // Prerendered at build time. This is load-bearing for portability, not just
@@ -65,6 +67,7 @@ export default async function GlossaryPage() {
 
 	return (
 		<main className="flex-1">
+			<JsonLd data={buildGlossaryJsonLd(dataset.generatedAt)} />
 			{/* Outside the Suspense boundary on purpose: the explorer reads the
 			    URL through nuqs, so it only renders client side, and without this
 			    the prerendered page has no heading or text at all. */}

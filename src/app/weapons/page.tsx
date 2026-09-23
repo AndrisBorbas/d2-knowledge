@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
+import { JsonLd } from "@/components/site/JsonLd";
 import { WeaponsExplorer } from "@/components/weapons/WeaponsExplorer";
+import {
+	DPS_SHEET_NAME,
+	DPS_SHEET_URL,
+	ENDGAME_SHEET_NAME,
+	ENDGAME_SHEET_URL,
+	SHEET_AUTHOR,
+	SHEET_AUTHOR_URL,
+} from "@/lib/aegis/config";
 import { buildPageMetadata } from "@/lib/site/meta";
+import { buildDatasetJsonLd } from "@/lib/site/structured-data";
 import { compareTierRows } from "@/lib/weapons/display";
 import { loadWeaponsDataset } from "@/lib/weapons/load";
 import type { WeaponsDataset } from "@/lib/weapons/model";
@@ -73,6 +83,21 @@ export default async function WeaponsPage() {
 
 	return (
 		<main className="flex-1">
+			<JsonLd
+				data={buildDatasetJsonLd({
+					name: "Destiny 2 endgame PvE weapon tier list",
+					description:
+						"Every Destiny 2 legendary and exotic weapon rated S to F for endgame PvE, with recommended perks, archetype damage numbers and simulated boss DPS.",
+					path: "/weapons",
+					dateModified: dataset.endgameGeneratedAt,
+					creator: { name: SHEET_AUTHOR, url: SHEET_AUTHOR_URL },
+					sources: [
+						{ name: ENDGAME_SHEET_NAME, url: ENDGAME_SHEET_URL },
+						{ name: DPS_SHEET_NAME, url: DPS_SHEET_URL },
+					],
+					keywords: ["Destiny 2", "weapons", "tier list", "PvE", "DPS"],
+				})}
+			/>
 			<Suspense fallback={null}>
 				<WeaponsExplorer seed={seed} />
 			</Suspense>

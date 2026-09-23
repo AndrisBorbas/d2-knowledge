@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { MechanicsBlocks } from "@/components/mechanics/MechanicsBlocks";
 import { MechanicsContents } from "@/components/mechanics/MechanicsContents";
+import { JsonLd } from "@/components/site/JsonLd";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
 import {
 	attachModifierIcons,
@@ -9,6 +10,7 @@ import {
 	type MechanicsChapter,
 } from "@/lib/ddc/mechanics";
 import { buildPageMetadata, DATA_COMPENDIUM_SHEET_URL } from "@/lib/site/meta";
+import { buildMechanicsJsonLd } from "@/lib/site/structured-data";
 
 // Read off the sheet snapshot on disk, so it is baked in at build time like
 // every other route here.
@@ -42,6 +44,7 @@ export default async function MechanicsPage() {
 
 	return (
 		<main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 p-4 md:px-6 lg:px-8">
+			<JsonLd data={buildMechanicsJsonLd()} />
 			<header className="mt-6 max-w-3xl">
 				<p className="text-xs font-semibold tracking-[0.3em] text-white/45 uppercase">
 					Destiny Data Compendium

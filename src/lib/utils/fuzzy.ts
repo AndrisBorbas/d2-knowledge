@@ -4,10 +4,37 @@ import type { AnnotatedEntry } from "@/lib/compendium/model";
 
 const SEARCH_THRESHOLD = 0.28;
 
-function scoreCompendiumEntries(
-	entries: AnnotatedEntry[],
-	query: string,
-): Map<string, number> {
+type CompendiumSearchDocument = {
+	entry: AnnotatedEntry;
+	title: string;
+	description: string;
+	originalDescription: string;
+	alternateDescriptions: string;
+	secondaryName: string;
+	secondaryDetail: string;
+	extraInfo: string;
+	itemHash: string;
+	perkHash: string;
+};
+
+// Building the index is most of a search's cost over the full glossary, and
+// the entry list only changes when the full dataset arrives, so each list gets
+// one index for its lifetime instead of one per keystroke.
+const compendiumIndexes = new WeakMap<
+	AnnotatedEntry[],
+	Fuse<CompendiumSearchDocument>
+>();
+
+function getCompendiumIndex(entries: AnnotatedEntry[]) {
+	const cached = compendiumIndexes.get(entries);
+	if (cached) return cached;
+
+	const fuse = buildCompendiumIndex(entries);
+	compendiumIndexes.set(entries, fuse);
+	return fuse;
+}
+
+function buildCompendiumIndex(entries: AnnotatedEntry[]) {
 	const indexedEntries = entries.map((entry) => ({
 		entry,
 		title: entry.title,
@@ -23,7 +50,7 @@ function scoreCompendiumEntries(
 		perkHash: entry.perkHash != null ? String(entry.perkHash) : "",
 	}));
 
-	const fuse = new Fuse(indexedEntries, {
+	return new Fuse<CompendiumSearchDocument>(indexedEntries, {
 		includeScore: true,
 		ignoreLocation: true,
 		threshold: SEARCH_THRESHOLD,
@@ -41,10 +68,15 @@ function scoreCompendiumEntries(
 			{ name: "perkHash", weight: 0.4 },
 		],
 	});
+}
 
+function scoreCompendiumEntries(
+	entries: AnnotatedEntry[],
+	query: string,
+): Map<string, number> {
 	const scores = new Map<string, number>();
 
-	for (const result of fuse.search(query)) {
+	for (const result of getCompendiumIndex(entries).search(query)) {
 		scores.set(result.item.entry.id, result.score ?? Number.MAX_SAFE_INTEGER);
 	}
 

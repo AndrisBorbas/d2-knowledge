@@ -44,5 +44,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			lastModified,
 		})),
 		{ url: `${SITE_URL}/changelog` },
+		{ url: `${SITE_URL}/about` },
 	];
 }

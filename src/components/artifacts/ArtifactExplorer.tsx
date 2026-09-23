@@ -106,7 +106,12 @@ export function ArtifactExplorer({ artifacts, bundle }: ArtifactExplorerProps) {
 								</div>
 							) : null}
 							<div>
+								{/* The eyebrow is part of the heading so the page's H1 names
+								    its topic, not just this season's artifact. */}
 								<h1 className="text-3xl font-black text-white uppercase lg:text-6xl">
+									<span className="block text-xs font-semibold tracking-[0.2em] text-white/50 lg:text-sm">
+										Seasonal Artifact
+									</span>
 									{selected.name}
 								</h1>
 								{selected.releaseLabel ? (

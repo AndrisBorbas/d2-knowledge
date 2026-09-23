@@ -125,17 +125,23 @@ export function SubclassExplorer({
 					<SubclassSwitcher subclasses={subclasses} selected={selected} />
 				</div>
 
-				<main className="min-h-[60vh] px-4 pb-8 md:px-6 lg:px-8">
-					<div className="@container lg:hidden">
-						<SubclassSlotLayout {...layoutProps} />
-					</div>
-
-					<div className="hidden lg:flex">
-						<Group orientation="horizontal" className="min-h-[60vh]">
+				<div className="min-h-[60vh] px-4 pb-8 md:px-6 lg:px-8">
+					{/* One tree for every width: the abilities used to be rendered twice,
+					    once per breakpoint, which doubled every heading on the page.
+					    Below `lg` the separator and the pin panel are hidden, and the
+					    abilities panel, the only flex item left, takes the full row.
+					    The panel's `className` lands on its inner div, so the outer
+					    one is targeted from the group. The drawer takes over the
+					    pins. */}
+					<div className="flex">
+						<Group
+							orientation="horizontal"
+							className="min-h-[60vh] max-lg:[&>[data-panel]:last-child]:hidden max-lg:[&>[data-separator]]:hidden"
+						>
 							{/* The abilities are not scrollable: this panel is as tall as
 						    its content, and it is what sets the row's height. */}
 							<Panel defaultSize="68%" minSize="20%">
-								<div className="@container px-2 pb-4">
+								<div className="@container lg:px-2 lg:pb-4">
 									<SubclassSlotLayout {...layoutProps} />
 								</div>
 							</Panel>
@@ -165,7 +171,7 @@ export function SubclassExplorer({
 							</Panel>
 						</Group>
 					</div>
-				</main>
+				</div>
 
 				<HoverPreviewCard
 					hoveredEntry={hoveredEntry}

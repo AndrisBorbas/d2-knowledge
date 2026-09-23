@@ -177,6 +177,13 @@ async function collectCards(): Promise<Card[]> {
 				{ label: "Releases", value: String(releases.length) },
 			],
 		},
+		{
+			path: "/about",
+			title: "About",
+			description:
+				"Who runs Owl Sector, where its Destiny 2 numbers come from, how often they are refreshed, and how to report a mistake.",
+			accent: OG_ACCENTS.prismatic,
+		},
 	];
 
 	for (const subclass of subclasses) {

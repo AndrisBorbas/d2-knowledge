@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { SubclassExplorer } from "@/components/abilities/SubclassExplorer";
+import { JsonLd } from "@/components/site/JsonLd";
 import { loadBungieManifestSnapshotResolver } from "@/lib/bungie/snapshot";
 import { buildTooltipBundle } from "@/lib/compendium/bundle";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
@@ -11,6 +12,7 @@ import {
 	type Subclass,
 } from "@/lib/compendium/subclasses";
 import { buildPageMetadata } from "@/lib/site/meta";
+import { buildBreadcrumbJsonLd } from "@/lib/site/structured-data";
 
 // Prerendered at build time. This is load-bearing for portability, not just
 // cost: `loadCompendiumDataset` reads the dataset off disk, and runtimes like
@@ -97,6 +99,16 @@ export default async function SubclassPage({ params }: SubclassPageProps) {
 
 	return (
 		<main className="flex-1">
+			<JsonLd
+				data={buildBreadcrumbJsonLd([
+					{ name: "Home", path: "/" },
+					{ name: "Abilities", path: "/abilities" },
+					{
+						name: `${selected.element} ${selected.className}`,
+						path: `/abilities/${classSlug}/${elementSlug}`,
+					},
+				])}
+			/>
 			<SubclassExplorer
 				subclasses={subclasses}
 				selected={selected}

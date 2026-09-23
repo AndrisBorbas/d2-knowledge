@@ -1,7 +1,7 @@
 "use client";
 
 import { parseAsArrayOf, parseAsString, useQueryState } from "nuqs";
-import { useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 
 import { categorizeGroups, CURATED_TOP_GROUPS } from "@/lib/compendium/groups";
 import type { CompendiumDataset } from "@/lib/compendium/model";
@@ -81,9 +81,13 @@ export function useEntryFiltering(dataset: CompendiumDataset) {
 		[allEntries],
 	);
 	const hasActiveQuery = effectiveQuery.trim().length > 0;
+	// A search over the full glossary takes tens of milliseconds, more on a
+	// phone. Deferring it lets a keystroke that lands mid-search paint first
+	// instead of waiting for the list behind it.
+	const deferredQuery = useDeferredValue(effectiveQuery);
 	const filteredEntries = useMemo(
-		() => fuzzyFilterCompendiumEntries(allEntries, effectiveQuery),
-		[allEntries, effectiveQuery],
+		() => fuzzyFilterCompendiumEntries(allEntries, deferredQuery),
+		[allEntries, deferredQuery],
 	);
 	const hasActiveGroups = activeGroups.length > 0;
 	const visibleEntriesFiltered = useMemo(() => {

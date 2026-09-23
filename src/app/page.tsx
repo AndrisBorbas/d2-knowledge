@@ -90,9 +90,9 @@ export default async function HomePage() {
 						Owl Sector
 					</h1>
 				</span>
-				<h2 className="max-w-3xl text-base leading-7 text-white/80">
+				<p className="max-w-3xl text-base leading-7 text-white/80">
 					{SITE_DESCRIPTION}
-				</h2>
+				</p>
 				<div className="max-w-3xl">
 					<Suspense fallback={null}>
 						<GlossarySearchBox />
@@ -108,9 +108,21 @@ export default async function HomePage() {
 
 			<StatTiles
 				tiles={[
-					{ label: "Entries", value: String(dataset.entries.length) },
-					{ label: "Keywords", value: String(dataset.keywords.length) },
-					{ label: "Annotations", value: String(annotationCount) },
+					{
+						label: "Entries",
+						value: String(dataset.entries.length),
+						href: "/about#sources",
+					},
+					{
+						label: "Keywords",
+						value: String(dataset.keywords.length),
+						href: "/about#sources",
+					},
+					{
+						label: "Annotations",
+						value: String(annotationCount),
+						href: "/about#sources",
+					},
 				]}
 			/>
 		</main>

@@ -5,11 +5,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import { Analytics } from "@/components/Analytics";
+import { JsonLd } from "@/components/site/JsonLd";
 import { SettingsHydrator } from "@/components/site/SettingsHydrator";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { loadCompendiumDataset } from "@/lib/compendium/load";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site/meta";
+import { buildWebsiteJsonLd } from "@/lib/site/structured-data";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -121,6 +123,7 @@ export default async function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
 		>
 			<body className="flex min-h-full flex-col">
+				<JsonLd data={buildWebsiteJsonLd()} />
 				<SettingsHydrator />
 
 				<div className="background">

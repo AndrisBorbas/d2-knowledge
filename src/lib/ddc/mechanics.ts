@@ -127,6 +127,21 @@ function splitLines(value: string) {
 		.filter((line) => line.length > 0);
 }
 
+// Terms the sheet calls by an old name, fixed on the way in so the page matches
+// what the game shows. Applied to finished text, never to the raw cell: the
+// sheet's colors are recorded as offsets into the original.
+const TERM_CORRECTIONS: [RegExp, string][] = [
+	[/\bChallenge Multiplier\b/g, "Reward Multiplier"],
+	[/\bchallenge multiplier\b/g, "reward multiplier"],
+];
+
+function correctTerms(value: string) {
+	return TERM_CORRECTIONS.reduce(
+		(text, [pattern, replacement]) => text.replace(pattern, replacement),
+		value,
+	);
+}
+
 function stripTrailingPeriod(value: string) {
 	return value.replace(/\.$/, "").trim();
 }
@@ -167,11 +182,10 @@ function toRichText(cell: Cell, colors: SheetColorIndex): RichText {
 	merged[0].text = merged[0].text.trimStart();
 	const last = merged.at(-1)!;
 	last.text = last.text.trimEnd();
-	return merged.map((run) =>
-		run.text.includes(" \n")
-			? { ...run, text: run.text.replace(/ +\n/g, "\n") }
-			: run,
-	);
+	return merged.map((run) => ({
+		...run,
+		text: correctTerms(run.text.replace(/ +\n/g, "\n")),
+	}));
 }
 
 type HeadingParts = { title: string; subtitle?: string; difficulty?: string };
@@ -188,14 +202,14 @@ function parseHeading(text: string): HeadingParts | null {
 	if (separator > 0) {
 		if (first.length > 120) return null;
 		return {
-			title: first.slice(0, separator).trim(),
-			subtitle: stripTrailingPeriod(first.slice(separator + 3)),
+			title: correctTerms(first.slice(0, separator).trim()),
+			subtitle: correctTerms(stripTrailingPeriod(first.slice(separator + 3))),
 			difficulty,
 		};
 	}
 
 	if (first.length > 80 || /[.!]$/.test(first)) return null;
-	return { title: first, difficulty };
+	return { title: correctTerms(first), difficulty };
 }
 
 // The effect half of a name + effect row. Short values ("1.75s", "70 [100]")

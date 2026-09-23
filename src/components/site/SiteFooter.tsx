@@ -183,6 +183,13 @@ export function SiteFooter({ generatedAt }: SiteFooterProps) {
 					>
 						v{manifest.version}
 					</Link>{" "}
+					·{" "}
+					<Link
+						href="/about"
+						className="decoration-masterwork/80 underline-offset-0 transition-all hover:text-white/80 hover:underline hover:underline-offset-2"
+					>
+						About
+					</Link>{" "}
 					© {new Date().getFullYear()} AndrisBorbas
 				</p>
 			</div>

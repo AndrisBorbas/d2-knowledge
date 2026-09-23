@@ -62,9 +62,9 @@ export function HighlightsShowcase({ bundle }: HighlightsShowcaseProps) {
 	return (
 		<section className="flex flex-col gap-4">
 			<div className="flex items-center justify-between gap-3">
-				<h3 className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
+				<h2 className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 					Random entries
-				</h3>
+				</h2>
 				<Button
 					size="md"
 					onClick={() => setShuffleCount((current) => current + 1)}
