@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-22T22:40:58.160Z",
+	"generatedAt": "2026-10-01T11:44:57.768Z",
 	"sheetId": "1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4",
 	"tabIds": {
 		"Weapons": 2139128689,
@@ -11034,6 +11034,28 @@
 				"10,964"
 			],
 			[
+				"Aggressive rocket launcher\nSupercharged Magazine + Gear Shift x5 (Heretic), Pack Hunter, Argent Ordnance, Light Shift x4*",
+				"power",
+				"rocket",
+				"",
+				"9",
+				"",
+				"9",
+				"1.100",
+				"11.600",
+				"2,550",
+				"2.273",
+				"1.220",
+				"1.350",
+				"1.300",
+				"1.100",
+				"13,649",
+				"",
+				"",
+				"122,840",
+				"10,590"
+			],
+			[
 				"High-impact bow\nHeavy Bolts, Envious Arsenal + High Ground + e. Accelerated Assault (A Good Shout), Guidance Ring x3",
 				"power",
 				"bow",
@@ -21671,7 +21693,7 @@
 				"Iatros",
 				"272,822",
 				"272,822",
-				"",
+				"has 35% DR against non-super damage",
 				"Wyvern",
 				"Vex",
 				"Diastole pulses",

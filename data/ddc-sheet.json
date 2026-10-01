@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-22T22:40:55.925Z",
+	"generatedAt": "2026-10-01T11:44:55.930Z",
 	"sheetId": "1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4",
 	"tabIds": {
 		"Weapon Perks": 1662574278,
@@ -2815,7 +2815,7 @@
 				"Upon breaking a Combatant's Shield:\n\n+20 Stability, +20? Handling, and +20 Reload Speed for 10 seconds.\nSwords receive +20 Guard Resistance.",
 				"",
 				"",
-				"On Arc-Debuffed Enemy Kill:\n\nGrants x1 Bolt Charge.\n\nUpon scoring 3 Arc-Debuffed Enemy Kills within 6 seconds of each:\nSpawns an Orb of Power that grants 7.15% Super Energy.\nRestores 40 HP.",
+				"On Arc-Debuffed Enemy Kill:\nGrants x1 Bolt Charge.\n\nUpon scoring 3 Arc-Debuffed Enemy Kills within 6 seconds of each:\nSpawns an Orb of Power that grants 7.15% Super Energy.\nRestores 40 HP.",
 				"",
 				"",
 				"Upon scoring 6 [2?] Arc Weapon Kills:\nSpawns an Arc Elemental Orb.\n\nArc Elemental Orb:\nArc Orbs remain on the ground for up to 20 seconds before expiring.\nArc Orbs that are picked up can be held for up to 20 seconds.\n\nArc Orbs deal up to 405 [101] damage, down to 90% damage, and inflict Jolt over 8 meters."
@@ -2947,7 +2947,7 @@
 				"Upon scoring 3 Machine Gun Kills within 3 seconds of each:\n\nRestores 15 HP.\nBegins Critical Health Regeneration.",
 				"",
 				"",
-				"Precision Kills grant stacks of Precision Equity, up to 10 stacks.\nRank-and-File = 1 | Elite = 2 | Miniboss = 5 | Champion+ = 10\nDoes not overflow or retains stacks past x10.\n\nUpon reaching x10 stacks:\nConsumes all stacks to spawn a MASSIVE Orb of Power.\nGlobe of Power grants 12.5% Super Energy.\n\nOn FIRMAMENT OF POWER PICKUP:\nWeapon Surge x2 for 11 seconds.\nDoes not overwrite stronger Weapon Surges.\nWorks for all damage types.",
+				"Precision Kills grant stacks of Precision Equity, up to 10 stacks.\nRank-and-File = 1 | Elite = 2 | Miniboss = 5 | Champion+ = 10\nDoes not overflow or retains stacks past x10.\n\nUpon reaching x10 stacks:\nConsumes all stacks to spawn a MASSIVE Orb of Power.\nGlobe of Power grants 12.5% Super Energy.\n\nOn GIGA ORB OF POWER PICKUP:\nWeapon Surge x2 for 11 seconds.\nDoes not overwrite stronger Weapon Surges.\nWorks for all damage types.",
 				"",
 				"",
 				"Flux, Fusion, and Magnetic deal increased damage on direct hits.\nFlux = 60% | Fusion = 30% | Magnetic = 22.5% total increase\nOnly the first Magnetic explosion gets increased by 45%.\nDoes not increase the Solar Effect Damage of Fusion Grenades.\n\nUpon scoring a kill with the aforementioned grenades:\nSpawns 4 homing Kinetic Micro-Missiles over the Enemy Death Location.\nMicro-missiles track the closest enemy within 30 meters.\n\nMicro-Missiles deal 216 [?] Kinetic Damage on impact.\nThey're identical in behavior to Ancillary Ordinance's missiles."
@@ -3886,7 +3886,7 @@
 				"Upon stunning a Champion:\n\nGrants a stack of Armor Charge.",
 				"",
 				"",
-				"On Finisher while affected by the Super-Matching Elemental Buff:\n\nAllies within ? metres are bestowed the Subclass-Specific Buff. \n\nSubclass Specific Buff:\nArc: Amplified | Void: Devour | Strand: Woven Mail"
+				"On Finisher:\nAllies within ? metres are bestowed an Elemental Buff:\n\nWhile Amplified is active: Amplified for 15 seconds.\nWhile Devour is active: Devour for 5 seconds.\nWhile Woven Mail is active: Woven Mail for 10 seconds.\n\nCan only bestow 1 buff to Allies, prioritized from top to bottom."
 			],
 			[],
 			[
@@ -8674,7 +8674,7 @@
 				"",
 				"Threadling",
 				"",
-				"Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nThreadlings are individually released upon dealing weapon damage or scoring a Melee Hit, with a 0.5 second cooldown between releases. \nThreadlings released this way will track at any range."
+				"Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nReleases a Threadling upon dealing weapon damage or scoring a Powered Melee Hit, with a 0.5 second cooldown between releases. Instantly killing an enemy won't release Threadlings.\nThreadlings released this way will track at any range."
 			],
 			[
 				"",
@@ -10966,7 +10966,7 @@
 			[
 				"Fortune’s Favor",
 				"",
-				"While at Full Health | Upon scoring a kill, or upon being not receiving damage for 4.5 [15] seconds:\nGrants 6.6 [1.1] Void Overshield HP per second until taking damage again.\nContinuously refreshes Overshield duration.\n\nWhile any kind of Overshield is active:\n+25 Stability, +25? Handling, and -5% Accuracy Cone Size.\nWeapons receive 15% increased damage against Combatants.\nHeat Weapons are instead granted 20% increased damage against Combatants. \n\nScoring a kill while an Overshield is active prepares Hasty Escape.\nHasty Escape grants +30? Mobility for 5 seconds when Overshield is depleted.",
+				"While at Full Health | Upon scoring a kill, or upon being not receiving damage for 4.5 [15] seconds:\nGrants 6.6 [1.1] Void Overshield HP per second until taking damage again.\nContinuously refreshes Overshield duration.\n\nWhile any kind of Overshield is active:\n+25 Stability, +25? Handling, and -5% Accuracy Cone Size.\nWeapons receive 15% increased damage against Combatants.\nHeat Weapons are instead granted 20% increased damage against Combatants.\nDamage buff stacks with everything.\n\nScoring a kill while an Overshield is active prepares Hasty Escape.\nHasty Escape grants +30? Mobility for 5 seconds when Overshield is depleted.",
 				"Citan's Ramparts",
 				"",
 				"Modifies Towering Barricade into Assault Barricade.\n\nAssault Barricade enables the user and their allies to shoot through it.\n\nGuardians deal 60% increased damage towards Assault Barricade (312.5 eHP)",
@@ -11092,7 +11092,7 @@
 			[
 				"Gyrfalcon's Hauberk",
 				"",
-				"Upon Void Invisibility ending:\nVolatile Rounds for 9 [3] seconds.\n\nUpon performing a Finisher while affected by Void Invisibility:\n35% increased damage for 6 seconds.\nThe user and their allies within 24 metres receive a Reserve Overshield \n\nReserve Overshield:\n500% Additional Base Class Ability Regeneration Rate until Class Ability Usage.\nConsumed on Class Ability Usage, granting a 40 HP Void Overshield for 10 seconds.",
+				"Upon Void Invisibility ending:\nVolatile Rounds for 9 [3] seconds.\n\nUpon performing a Finisher while affected by Void Invisibility:\n35% increased damage for 6 seconds. Doesn't stack with Empowering Buffs.\nThe user and their allies within 24 metres receive a Reserve Overshield \n\nReserve Overshield:\n500% Additional Base Class Ability Regeneration Rate until Class Ability Usage.\nConsumed on Class Ability Usage, granting a 40 HP Void Overshield for 10 seconds.",
 				"Hallowfire Heart",
 				"",
 				"While a Solar Super Ability is equipped and charged:\nAbility Kills grant x2 Cure and grant stacks of Sunfire Furnace, up to 10 stacks for 20 seconds.\nRank-and-File = 1 Stack | Elite = 2 | \nUnpowered Melee Kills also grant Cure and stacks. Glaive Melees do not.\n\nSunfire Furnace:\nGrenade and Shieldburst Barricade Kills trigger ignitions. Grenade Element doesn't matter.\nUp to 250% Additional Base Grenade and Class Ability Regeneration Rate.\n6.5% | 13.6% | 22% | 32% | 43% | 57% | 73% | 93% | 118% | 150% Increased Super Damage.\n?% | ?% | ?% | ?% | ?% | ?% | ?% | ?% | ?% | 250% Additional Base Grenade/Class Regeneration Rate.\n\nOn Super Cast | Sunfire Furnace stacks are frozen. Cannot gain nor lose stacks.\nOn Super End | Consumes all Sunfire stacks to refunds Super Energy based on the stack amount.\nx1 = 8% | x2 = 20% | x3 = 26% | x4 = 33% | x5 = 45%.",
@@ -11686,7 +11686,7 @@
 				"On Melee, Glaive Melee, or Finisher Kill:\nGrants a stack of Burning Fists, up to 5 stacks, increasing Melee and Weapon Damage per stack.\nLoses 1 Burning Fists stack upon expiring, rather than all of them.\nBurning Fist stack timer begins decaying after 2 seconds of gaining a stack.\n \nBurning Fists:\nx1 = 80% increased Melee Damage for 9.5 seconds.\nx2 = 160% Melee Damage, and 20% Increased Weapon Damage for 10 seconds.\nx3 = 240% Melee Damage, and 25% [20%] Weapon Damage for 4 seconds.\nx4 = 320% Melee Damage, and 30% [25%] Weapon Damage for 4 seconds.\nx5 = 400% Melee Damage, and 35% [25%] Weapon Damage for 3 seconds.",
 				"Winter's Guile",
 				"",
-				"Melee Kills and Glaive Melee Kills grant a stack of Warlord's Sigil, up to a maximum of 10 stacks.\n Finishers grant 3 Warlord's Sigil stacks. \nWarlord's Sigil stacks decay one at a time. Finishers refresh the stack duration on animation start.\nWarlord's Sigil grants increased Melee Damage for 4.75 seconds per stack.\nx1 = 67.5% | x2 = 122% | x3 = 166% | x4 = 202% | x5 = 228%\nx6 = 249% | x7 = 265% | x8 = 278% | x9 = 289% | x10 = 300%\n\nUpon reaching or refreshing x10 Warlord's Sigil:\nGain a Melee Ability Charge.\n Grants Warlord's Fury Ready for 8 seconds and cannot be refreshed by Finishers.\nNot triggering Warlord's Fury will return the buff to Warlord's Sigil x10.\n\nOn Melee/Glaive Melee Usage while Warlord's Fury Ready is active:\n400% increased Melee Damage, 0.8x Melee Duration, and 38.4x👀 Melee Regeneration Speed for 10 seconds.\nCannot gain Warlord's Sigil while Warlord's Fury is active. Resets Warlord's Sigil to x0 stacks on buff end."
+				"Melee Kills and Glaive Melee Kills grant a stack of Warlord's Sigil for 4.75 seconds, up to a maximum of 10 stacks.\n Finishers grant 3 Warlord's Sigil stacks. Scorch DoT Kills do not grant stacks.\nWarlord's Sigil stacks decay one at a time. Finishers refresh the stack duration on animation start.\n\nWarlord's Sigil grants increased Melee Damage per stack.\nx1 = 67.5% | x2 = 122% | x3 = 166% | x4 = 202% | x5 = 228%\nx6 = 249% | x7 = 265% | x8 = 278% | x9 = 289% | x10 = 300%\n\nUpon reaching or refreshing x10 Warlord's Sigil:\nGain a Melee Ability Charge.\n Grants Warlord's Fury Ready for 8 seconds and cannot be refreshed by Finishers.\nNot triggering Warlord's Fury will return the buff to Warlord's Sigil x10.\n\nOn Melee/Glaive Melee Usage while Warlord's Fury Ready is active:\n400% increased Melee Damage, 0.8x Melee Duration, and 38.4x👀 Melee Regeneration Speed for 10 seconds.\nCannot gain Warlord's Sigil while Warlord's Fury is active. Resets Warlord's Sigil to x0 stacks on buff end."
 			],
 			[],
 			[
@@ -13527,7 +13527,7 @@
 			[
 				"",
 				"",
-				"Overload Champions passively restore their Health over time, use abilities and weapons more frequently, and move erratically unless stunned through Disruption.\nStunning prevents the Champion from attacking, moving, or using any abilities.\n\nDisrupted Combatants are bugged and no longer deal 25% less damage for 5 seconds.\nDisrupting Guardians lowers their Ability Regeneration Rate by 0.4x.\n\nOverload Champion Stunning Application:\n Arc Jolt stuns upon dealing damage to the Champion.\nStasis Slow stuns upon inflicting Slow Stacks to the Champion.\nStasis Freeze stuns upon shattering the Champion.\n Void Suppression stuns upon suppressing the Champion."
+				"Overload Champions passively restore their Health over time, use abilities and weapons more frequently, and move erratically unless stunned through Disruption.\nStunning prevents the Champion from attacking, moving, or using any abilities.\n\nDisrupted Combatants are bugged and no longer deal 25% less damage for 5 seconds.\nDisrupting Guardians lowers their Ability Regeneration Rate by 0.4x.\n\nOverload Champion Stunning Application:\n Arc Jolt stuns upon dealing damage to the Champion.\nStasis Slow stuns upon inflicting Slow Stacks to the Champion.\n Void Suppression stuns upon suppressing the Champion."
 			],
 			[
 				"",
@@ -13616,7 +13616,7 @@
 			[
 				"",
 				"",
-				"Unstoppable Champions relentlessly chase enemies, and possess 70% Damage Resist unless stunned. \nDamage Numbers visually appear as Italic Desaturated Pink Numbers\nStunning removes the Damage Resist and prevents the Champion from attacking, moving, or using any abilities for the duration of the stun.\n\nUnstoppable Shots tend to inflict more Stagger, with certain weapons/effects forcing a stagger.\n\nStunning Methods outside of Unstoppable Shots:\nArc Blind Application\nSolar Ignition Application\n Strand Suspension Application"
+				"Unstoppable Champions relentlessly chase enemies, and possess 70% Damage Resist unless stunned. \nDamage Numbers visually appear as Italic Desaturated Pink Numbers\nStunning removes the Damage Resist and prevents the Champion from attacking, moving, or using any abilities for the duration of the stun.\n\nUnstoppable Shots tend to inflict more Stagger, with certain weapons/effects forcing a stagger.\n\nStunning Methods outside of Unstoppable Shots:\nArc Blind\nSolar Ignition\nStasis Freeze/Shatter\n Strand Suspension"
 			],
 			[
 				"",
@@ -62734,7 +62734,7 @@
 		[
 			"Artifact Perks:10:4",
 			{
-				"text": "On Arc-Debuffed Enemy Kill:\n\nGrants x1 Bolt Charge.\n\nUpon scoring 3 Arc-Debuffed Enemy Kills within 6 seconds of each:\nSpawns an Orb of Power that grants 7.15% Super Energy.\nRestores 40 HP.",
+				"text": "On Arc-Debuffed Enemy Kill:\nGrants x1 Bolt Charge.\n\nUpon scoring 3 Arc-Debuffed Enemy Kills within 6 seconds of each:\nSpawns an Orb of Power that grants 7.15% Super Energy.\nRestores 40 HP.",
 				"runs": [
 					{
 						"start": 0,
@@ -62747,67 +62747,67 @@
 					},
 					{
 						"start": 26,
-						"end": 28
+						"end": 27
 					},
 					{
-						"start": 28,
-						"end": 36
+						"start": 27,
+						"end": 35
 					},
 					{
-						"start": 36,
-						"end": 50,
+						"start": 35,
+						"end": 49,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 50,
-						"end": 53
+						"start": 49,
+						"end": 52
 					},
 					{
-						"start": 53,
-						"end": 66
+						"start": 52,
+						"end": 65
 					},
 					{
-						"start": 66,
-						"end": 93,
+						"start": 65,
+						"end": 92,
 						"color": "rgb(118, 165, 175)"
 					},
 					{
-						"start": 93,
-						"end": 100
+						"start": 92,
+						"end": 99
 					},
 					{
-						"start": 100,
-						"end": 109
+						"start": 99,
+						"end": 108
 					},
 					{
-						"start": 109,
-						"end": 119
+						"start": 108,
+						"end": 118
 					},
 					{
-						"start": 119,
-						"end": 129
+						"start": 118,
+						"end": 128
 					},
 					{
-						"start": 129,
-						"end": 141,
+						"start": 128,
+						"end": 140,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 141,
-						"end": 154
+						"start": 140,
+						"end": 153
 					},
 					{
-						"start": 154,
-						"end": 172,
+						"start": 153,
+						"end": 171,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 172,
-						"end": 174
+						"start": 171,
+						"end": 173
 					},
 					{
-						"start": 174,
-						"end": 189,
+						"start": 173,
+						"end": 188,
 						"color": "rgb(221, 126, 107)"
 					}
 				]
@@ -62854,6 +62854,10 @@
 					},
 					{
 						"start": 36,
+						"end": 38
+					},
+					{
+						"start": 38,
 						"end": 48
 					},
 					{
@@ -64274,7 +64278,7 @@
 		[
 			"Artifact Perks:28:4",
 			{
-				"text": "Precision Kills grant stacks of Precision Equity, up to 10 stacks.\nRank-and-File = 1 | Elite = 2 | Miniboss = 5 | Champion+ = 10\nDoes not overflow or retains stacks past x10.\n\nUpon reaching x10 stacks:\nConsumes all stacks to spawn a MASSIVE Orb of Power.\nGlobe of Power grants 12.5% Super Energy.\n\nOn FIRMAMENT OF POWER PICKUP:\nWeapon Surge x2 for 11 seconds.\nDoes not overwrite stronger Weapon Surges.\nWorks for all damage types.",
+				"text": "Precision Kills grant stacks of Precision Equity, up to 10 stacks.\nRank-and-File = 1 | Elite = 2 | Miniboss = 5 | Champion+ = 10\nDoes not overflow or retains stacks past x10.\n\nUpon reaching x10 stacks:\nConsumes all stacks to spawn a MASSIVE Orb of Power.\nGlobe of Power grants 12.5% Super Energy.\n\nOn GIGA ORB OF POWER PICKUP:\nWeapon Surge x2 for 11 seconds.\nDoes not overwrite stronger Weapon Surges.\nWorks for all damage types.",
 				"runs": [
 					{
 						"start": 0,
@@ -64445,25 +64449,25 @@
 					},
 					{
 						"start": 301,
-						"end": 326,
+						"end": 325,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 326,
-						"end": 328
+						"start": 325,
+						"end": 327
 					},
 					{
-						"start": 328,
-						"end": 343,
+						"start": 327,
+						"end": 342,
 						"color": "rgb(213, 166, 189)"
 					},
 					{
-						"start": 343,
-						"end": 360
+						"start": 342,
+						"end": 359
 					},
 					{
-						"start": 360,
-						"end": 430
+						"start": 359,
+						"end": 429
 					}
 				]
 			}
@@ -72003,7 +72007,7 @@
 					{
 						"start": 84,
 						"end": 98,
-						"color": "rgb(164, 129, 225)"
+						"color": "rgb(164, 194, 244)"
 					},
 					{
 						"start": 98,
@@ -72038,7 +72042,7 @@
 					{
 						"start": 217,
 						"end": 229,
-						"color": "rgb(164, 129, 225)"
+						"color": "rgb(164, 194, 244)"
 					},
 					{
 						"start": 229,
@@ -76110,7 +76114,7 @@
 		[
 			"Artifact Perks:163:7",
 			{
-				"text": "On Finisher while affected by the Super-Matching Elemental Buff:\n\nAllies within ? metres are bestowed the Subclass-Specific Buff. \n\nSubclass Specific Buff:\nArc: Amplified | Void: Devour | Strand: Woven Mail",
+				"text": "On Finisher:\nAllies within ? metres are bestowed an Elemental Buff:\n\nWhile Amplified is active: Amplified for 15 seconds.\nWhile Devour is active: Devour for 5 seconds.\nWhile Woven Mail is active: Woven Mail for 10 seconds.\n\nCan only bestow 1 buff to Allies, prioritized from top to bottom.",
 				"runs": [
 					{
 						"start": 0,
@@ -76118,119 +76122,84 @@
 					},
 					{
 						"start": 3,
-						"end": 12,
+						"end": 11,
 						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 11,
+						"end": 12
 					},
 					{
 						"start": 12,
-						"end": 34
+						"end": 13
 					},
 					{
-						"start": 34,
-						"end": 48,
-						"color": "rgb(255, 217, 102)"
-					},
-					{
-						"start": 48,
-						"end": 49
-					},
-					{
-						"start": 49,
-						"end": 63,
-						"color": "rgb(213, 166, 189)"
-					},
-					{
-						"start": 63,
-						"end": 64
-					},
-					{
-						"start": 64,
-						"end": 66
-					},
-					{
-						"start": 66,
-						"end": 73,
+						"start": 13,
+						"end": 20,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 73,
-						"end": 106
+						"start": 20,
+						"end": 40
 					},
 					{
-						"start": 106,
-						"end": 128,
+						"start": 40,
+						"end": 49,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 49,
+						"end": 52
+					},
+					{
+						"start": 52,
+						"end": 66,
 						"color": "rgb(213, 166, 189)"
 					},
 					{
-						"start": 128,
-						"end": 131
+						"start": 66,
+						"end": 69
 					},
 					{
-						"start": 131,
-						"end": 132
-					},
-					{
-						"start": 132,
-						"end": 156,
-						"color": "rgb(213, 166, 189)"
-					},
-					{
-						"start": 156,
-						"end": 170,
+						"start": 69,
+						"end": 95,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 170,
-						"end": 171,
-						"color": "rgb(121, 190, 195)"
+						"start": 95,
+						"end": 96
 					},
 					{
-						"start": 171,
-						"end": 172
+						"start": 96,
+						"end": 106,
+						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 172,
-						"end": 173,
-						"color": "rgb(121, 190, 195)"
+						"start": 106,
+						"end": 122
 					},
 					{
-						"start": 173,
-						"end": 178,
-						"color": "rgb(187, 165, 243)"
-					},
-					{
-						"start": 178,
-						"end": 179,
-						"color": "rgb(121, 190, 195)"
-					},
-					{
-						"start": 179,
-						"end": 186,
+						"start": 122,
+						"end": 153,
 						"color": "rgb(142, 124, 195)"
 					},
 					{
-						"start": 186,
-						"end": 187
+						"start": 153,
+						"end": 168
 					},
 					{
-						"start": 187,
-						"end": 188,
-						"color": "rgb(142, 124, 195)"
-					},
-					{
-						"start": 188,
-						"end": 195,
-						"color": "rgb(99, 210, 117)"
-					},
-					{
-						"start": 195,
-						"end": 196,
-						"color": "rgb(142, 124, 195)"
-					},
-					{
-						"start": 196,
+						"start": 168,
 						"end": 206,
 						"color": "rgb(147, 196, 125)"
+					},
+					{
+						"start": 206,
+						"end": 224
+					},
+					{
+						"start": 224,
+						"end": 289,
+						"color": "rgb(224, 102, 102)"
 					}
 				]
 			}
@@ -117865,7 +117834,7 @@
 		[
 			"Strand:7:3",
 			{
-				"text": "Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nThreadlings are individually released upon dealing weapon damage or scoring a Melee Hit, with a 0.5 second cooldown between releases. \nThreadlings released this way will track at any range.",
+				"text": "Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nReleases a Threadling upon dealing weapon damage or scoring a Powered Melee Hit, with a 0.5 second cooldown between releases. Instantly killing an enemy won't release Threadlings.\nThreadlings released this way will track at any range.",
 				"runs": [
 					{
 						"start": 0,
@@ -117969,34 +117938,56 @@
 					},
 					{
 						"start": 609,
-						"end": 612
+						"end": 623
 					},
 					{
-						"start": 612,
-						"end": 624,
+						"start": 623,
+						"end": 633,
 						"color": "rgb(182, 215, 168)"
 					},
 					{
-						"start": 624,
-						"end": 690
+						"start": 633,
+						"end": 674
 					},
 					{
-						"start": 690,
-						"end": 699,
+						"start": 674,
+						"end": 691,
 						"color": "rgb(121, 190, 195)"
 					},
 					{
-						"start": 699,
-						"end": 747
+						"start": 691,
+						"end": 700
 					},
 					{
-						"start": 747,
-						"end": 759,
+						"start": 700,
+						"end": 736,
+						"color": "rgb(224, 102, 102)"
+					},
+					{
+						"start": 736,
+						"end": 738
+					},
+					{
+						"start": 738,
+						"end": 779
+					},
+					{
+						"start": 779,
+						"end": 790,
 						"color": "rgb(182, 215, 168)"
 					},
 					{
-						"start": 759,
-						"end": 801
+						"start": 790,
+						"end": 792
+					},
+					{
+						"start": 792,
+						"end": 804,
+						"color": "rgb(182, 215, 168)"
+					},
+					{
+						"start": 804,
+						"end": 846
 					}
 				]
 			}
@@ -136339,6 +136330,15 @@
 					},
 					{
 						"start": 547,
+						"end": 556
+					},
+					{
+						"start": 556,
+						"end": 566,
+						"color": "rgb(111, 168, 220)"
+					},
+					{
+						"start": 566,
 						"end": 569
 					},
 					{
@@ -140209,7 +140209,7 @@
 		[
 			"Exotic Armors:33:2",
 			{
-				"text": "While at Full Health | Upon scoring a kill, or upon being not receiving damage for 4.5 [15] seconds:\nGrants 6.6 [1.1] Void Overshield HP per second until taking damage again.\nContinuously refreshes Overshield duration.\n\nWhile any kind of Overshield is active:\n+25 Stability, +25? Handling, and -5% Accuracy Cone Size.\nWeapons receive 15% increased damage against Combatants.\nHeat Weapons are instead granted 20% increased damage against Combatants. \n\nScoring a kill while an Overshield is active prepares Hasty Escape.\nHasty Escape grants +30? Mobility for 5 seconds when Overshield is depleted.",
+				"text": "While at Full Health | Upon scoring a kill, or upon being not receiving damage for 4.5 [15] seconds:\nGrants 6.6 [1.1] Void Overshield HP per second until taking damage again.\nContinuously refreshes Overshield duration.\n\nWhile any kind of Overshield is active:\n+25 Stability, +25? Handling, and -5% Accuracy Cone Size.\nWeapons receive 15% increased damage against Combatants.\nHeat Weapons are instead granted 20% increased damage against Combatants.\nDamage buff stacks with everything.\n\nScoring a kill while an Overshield is active prepares Hasty Escape.\nHasty Escape grants +30? Mobility for 5 seconds when Overshield is depleted.",
 				"runs": [
 					{
 						"start": 0,
@@ -140349,43 +140349,57 @@
 					},
 					{
 						"start": 447,
-						"end": 475
+						"end": 449
 					},
 					{
-						"start": 475,
-						"end": 486,
+						"start": 449,
+						"end": 484,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 484,
+						"end": 485,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 485,
+						"end": 510
+					},
+					{
+						"start": 510,
+						"end": 521,
 						"color": "rgb(213, 166, 189)"
 					},
 					{
-						"start": 486,
-						"end": 505
+						"start": 521,
+						"end": 540
 					},
 					{
-						"start": 505,
-						"end": 517,
+						"start": 540,
+						"end": 552,
 						"color": "rgb(230, 184, 175)"
 					},
 					{
-						"start": 517,
-						"end": 519
+						"start": 552,
+						"end": 554
 					},
 					{
-						"start": 519,
-						"end": 531,
+						"start": 554,
+						"end": 566,
 						"color": "rgb(230, 184, 175)"
 					},
 					{
-						"start": 531,
-						"end": 572
+						"start": 566,
+						"end": 607
 					},
 					{
-						"start": 572,
-						"end": 583,
+						"start": 607,
+						"end": 618,
 						"color": "rgb(213, 166, 189)"
 					},
 					{
-						"start": 583,
-						"end": 595
+						"start": 618,
+						"end": 630
 					}
 				]
 			}
@@ -143344,7 +143358,7 @@
 		[
 			"Exotic Armors:51:2",
 			{
-				"text": "Upon Void Invisibility ending:\nVolatile Rounds for 9 [3] seconds.\n\nUpon performing a Finisher while affected by Void Invisibility:\n35% increased damage for 6 seconds.\nThe user and their allies within 24 metres receive a Reserve Overshield \n\nReserve Overshield:\n500% Additional Base Class Ability Regeneration Rate until Class Ability Usage.\nConsumed on Class Ability Usage, granting a 40 HP Void Overshield for 10 seconds.",
+				"text": "Upon Void Invisibility ending:\nVolatile Rounds for 9 [3] seconds.\n\nUpon performing a Finisher while affected by Void Invisibility:\n35% increased damage for 6 seconds. Doesn't stack with Empowering Buffs.\nThe user and their allies within 24 metres receive a Reserve Overshield \n\nReserve Overshield:\n500% Additional Base Class Ability Regeneration Rate until Class Ability Usage.\nConsumed on Class Ability Usage, granting a 40 HP Void Overshield for 10 seconds.",
 				"runs": [
 					{
 						"start": 0,
@@ -143411,75 +143425,89 @@
 					},
 					{
 						"start": 131,
-						"end": 171
+						"end": 167
 					},
 					{
-						"start": 171,
-						"end": 176,
+						"start": 167,
+						"end": 203,
+						"color": "rgb(224, 102, 102)"
+					},
+					{
+						"start": 203,
+						"end": 204,
+						"color": "rgb(224, 102, 102)"
+					},
+					{
+						"start": 204,
+						"end": 208
+					},
+					{
+						"start": 208,
+						"end": 213,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 176,
-						"end": 186
+						"start": 213,
+						"end": 223
 					},
 					{
-						"start": 186,
-						"end": 193,
+						"start": 223,
+						"end": 230,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 193,
-						"end": 220
+						"start": 230,
+						"end": 257
 					},
 					{
-						"start": 220,
-						"end": 238,
+						"start": 257,
+						"end": 275,
 						"color": "rgb(213, 166, 189)"
 					},
 					{
-						"start": 238,
-						"end": 241
+						"start": 275,
+						"end": 278
 					},
 					{
-						"start": 241,
-						"end": 261,
+						"start": 278,
+						"end": 298,
 						"color": "rgb(213, 166, 189)"
 					},
 					{
-						"start": 261,
-						"end": 313,
+						"start": 298,
+						"end": 350,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 313,
-						"end": 320
+						"start": 350,
+						"end": 357
 					},
 					{
-						"start": 320,
-						"end": 340,
+						"start": 357,
+						"end": 377,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 340,
-						"end": 353
+						"start": 377,
+						"end": 390
 					},
 					{
-						"start": 353,
-						"end": 372,
+						"start": 390,
+						"end": 409,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 372,
-						"end": 385
-					},
-					{
-						"start": 385,
-						"end": 406,
-						"color": "rgb(213, 166, 189)"
-					},
-					{
-						"start": 406,
+						"start": 409,
 						"end": 422
+					},
+					{
+						"start": 422,
+						"end": 443,
+						"color": "rgb(213, 166, 189)"
+					},
+					{
+						"start": 443,
+						"end": 459
 					}
 				]
 			}
@@ -159410,7 +159438,7 @@
 		[
 			"Exotic Armors:135:8",
 			{
-				"text": "Melee Kills and Glaive Melee Kills grant a stack of Warlord's Sigil, up to a maximum of 10 stacks.\n Finishers grant 3 Warlord's Sigil stacks. \nWarlord's Sigil stacks decay one at a time. Finishers refresh the stack duration on animation start.\nWarlord's Sigil grants increased Melee Damage for 4.75 seconds per stack.\nx1 = 67.5% | x2 = 122% | x3 = 166% | x4 = 202% | x5 = 228%\nx6 = 249% | x7 = 265% | x8 = 278% | x9 = 289% | x10 = 300%\n\nUpon reaching or refreshing x10 Warlord's Sigil:\nGain a Melee Ability Charge.\n Grants Warlord's Fury Ready for 8 seconds and cannot be refreshed by Finishers.\nNot triggering Warlord's Fury will return the buff to Warlord's Sigil x10.\n\nOn Melee/Glaive Melee Usage while Warlord's Fury Ready is active:\n400% increased Melee Damage, 0.8x Melee Duration, and 38.4x👀 Melee Regeneration Speed for 10 seconds.\nCannot gain Warlord's Sigil while Warlord's Fury is active. Resets Warlord's Sigil to x0 stacks on buff end.",
+				"text": "Melee Kills and Glaive Melee Kills grant a stack of Warlord's Sigil for 4.75 seconds, up to a maximum of 10 stacks.\n Finishers grant 3 Warlord's Sigil stacks. Scorch DoT Kills do not grant stacks.\nWarlord's Sigil stacks decay one at a time. Finishers refresh the stack duration on animation start.\n\nWarlord's Sigil grants increased Melee Damage per stack.\nx1 = 67.5% | x2 = 122% | x3 = 166% | x4 = 202% | x5 = 228%\nx6 = 249% | x7 = 265% | x8 = 278% | x9 = 289% | x10 = 300%\n\nUpon reaching or refreshing x10 Warlord's Sigil:\nGain a Melee Ability Charge.\n Grants Warlord's Fury Ready for 8 seconds and cannot be refreshed by Finishers.\nNot triggering Warlord's Fury will return the buff to Warlord's Sigil x10.\n\nOn Melee/Glaive Melee Usage while Warlord's Fury Ready is active:\n400% increased Melee Damage, 0.8x Melee Duration, and 38.4x👀 Melee Regeneration Speed for 10 seconds.\nCannot gain Warlord's Sigil while Warlord's Fury is active. Resets Warlord's Sigil to x0 stacks on buff end.",
 				"runs": [
 					{
 						"start": 0,
@@ -159446,410 +159474,415 @@
 					},
 					{
 						"start": 67,
-						"end": 88
+						"end": 105
 					},
 					{
-						"start": 88,
-						"end": 97,
+						"start": 105,
+						"end": 114,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 97,
-						"end": 100
+						"start": 114,
+						"end": 117
 					},
 					{
-						"start": 100,
-						"end": 110,
+						"start": 117,
+						"end": 127,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 110,
-						"end": 116
+						"start": 127,
+						"end": 133
 					},
 					{
-						"start": 116,
-						"end": 140,
+						"start": 133,
+						"end": 157,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 140,
-						"end": 143
+						"start": 157,
+						"end": 159
 					},
 					{
-						"start": 143,
-						"end": 166,
-						"color": "rgb(255, 217, 102)"
-					},
-					{
-						"start": 166,
-						"end": 187
-					},
-					{
-						"start": 187,
+						"start": 159,
 						"end": 197,
-						"color": "rgb(164, 194, 244)"
+						"color": "rgb(224, 102, 102)"
 					},
 					{
 						"start": 197,
-						"end": 243
-					},
-					{
-						"start": 243,
-						"end": 244
-					},
-					{
-						"start": 244,
-						"end": 259,
+						"end": 220,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 259,
-						"end": 267
+						"start": 220,
+						"end": 241
 					},
 					{
-						"start": 267,
-						"end": 289,
+						"start": 241,
+						"end": 251,
+						"color": "rgb(164, 194, 244)"
+					},
+					{
+						"start": 251,
+						"end": 298
+					},
+					{
+						"start": 298,
+						"end": 299
+					},
+					{
+						"start": 299,
+						"end": 314,
+						"color": "rgb(255, 217, 102)"
+					},
+					{
+						"start": 314,
+						"end": 322
+					},
+					{
+						"start": 322,
+						"end": 344,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 289,
-						"end": 311
+						"start": 344,
+						"end": 349
 					},
 					{
-						"start": 311,
-						"end": 316,
+						"start": 349,
+						"end": 354,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 316,
-						"end": 318
+						"start": 354,
+						"end": 356
 					},
 					{
-						"start": 318,
-						"end": 320,
+						"start": 356,
+						"end": 358,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 320,
-						"end": 323
+						"start": 358,
+						"end": 361
 					},
 					{
-						"start": 323,
-						"end": 328,
+						"start": 361,
+						"end": 366,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 328,
-						"end": 331
-					},
-					{
-						"start": 331,
-						"end": 333,
-						"color": "rgb(255, 217, 102)"
-					},
-					{
-						"start": 333,
-						"end": 336
-					},
-					{
-						"start": 336,
-						"end": 340,
-						"color": "rgb(137, 205, 209)"
-					},
-					{
-						"start": 340,
-						"end": 343
-					},
-					{
-						"start": 343,
-						"end": 345,
-						"color": "rgb(255, 217, 102)"
-					},
-					{
-						"start": 345,
-						"end": 348
-					},
-					{
-						"start": 348,
-						"end": 352,
-						"color": "rgb(137, 205, 209)"
-					},
-					{
-						"start": 352,
-						"end": 355
-					},
-					{
-						"start": 355,
-						"end": 357,
-						"color": "rgb(255, 217, 102)"
-					},
-					{
-						"start": 357,
-						"end": 360
-					},
-					{
-						"start": 360,
-						"end": 364,
-						"color": "rgb(137, 205, 209)"
-					},
-					{
-						"start": 364,
-						"end": 367
-					},
-					{
-						"start": 367,
-						"end": 369,
-						"color": "rgb(255, 217, 102)"
+						"start": 366,
+						"end": 369
 					},
 					{
 						"start": 369,
-						"end": 372
-					},
-					{
-						"start": 372,
-						"end": 376,
-						"color": "rgb(137, 205, 209)"
-					},
-					{
-						"start": 376,
-						"end": 377
-					},
-					{
-						"start": 377,
-						"end": 379,
+						"end": 371,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 379,
-						"end": 382
+						"start": 371,
+						"end": 374
 					},
 					{
-						"start": 382,
-						"end": 386,
+						"start": 374,
+						"end": 378,
 						"color": "rgb(137, 205, 209)"
+					},
+					{
+						"start": 378,
+						"end": 381
+					},
+					{
+						"start": 381,
+						"end": 383,
+						"color": "rgb(255, 217, 102)"
+					},
+					{
+						"start": 383,
+						"end": 386
 					},
 					{
 						"start": 386,
-						"end": 389
+						"end": 390,
+						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 389,
-						"end": 391,
+						"start": 390,
+						"end": 393
+					},
+					{
+						"start": 393,
+						"end": 395,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 391,
-						"end": 394
-					},
-					{
-						"start": 394,
-						"end": 398,
-						"color": "rgb(137, 205, 209)"
+						"start": 395,
+						"end": 398
 					},
 					{
 						"start": 398,
-						"end": 401
+						"end": 402,
+						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 401,
-						"end": 403,
+						"start": 402,
+						"end": 405
+					},
+					{
+						"start": 405,
+						"end": 407,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 403,
-						"end": 406
-					},
-					{
-						"start": 406,
-						"end": 410,
-						"color": "rgb(137, 205, 209)"
+						"start": 407,
+						"end": 410
 					},
 					{
 						"start": 410,
-						"end": 413
+						"end": 414,
+						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 413,
-						"end": 415,
-						"color": "rgb(255, 217, 102)"
+						"start": 414,
+						"end": 415
 					},
 					{
 						"start": 415,
-						"end": 418
-					},
-					{
-						"start": 418,
-						"end": 422,
-						"color": "rgb(137, 205, 209)"
-					},
-					{
-						"start": 422,
-						"end": 425
-					},
-					{
-						"start": 425,
-						"end": 428,
+						"end": 417,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 428,
-						"end": 431
+						"start": 417,
+						"end": 420
 					},
 					{
-						"start": 431,
-						"end": 437,
+						"start": 420,
+						"end": 424,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 437,
-						"end": 442
+						"start": 424,
+						"end": 427
 					},
 					{
-						"start": 442,
-						"end": 464
-					},
-					{
-						"start": 464,
-						"end": 465
-					},
-					{
-						"start": 465,
-						"end": 484,
+						"start": 427,
+						"end": 429,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 484,
-						"end": 486
+						"start": 429,
+						"end": 432
 					},
 					{
-						"start": 486,
-						"end": 493
-					},
-					{
-						"start": 493,
-						"end": 513,
+						"start": 432,
+						"end": 436,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 513,
-						"end": 523
+						"start": 436,
+						"end": 439
 					},
 					{
-						"start": 523,
-						"end": 543,
+						"start": 439,
+						"end": 441,
+						"color": "rgb(255, 217, 102)"
+					},
+					{
+						"start": 441,
+						"end": 444
+					},
+					{
+						"start": 444,
+						"end": 448,
+						"color": "rgb(137, 205, 209)"
+					},
+					{
+						"start": 448,
+						"end": 451
+					},
+					{
+						"start": 451,
+						"end": 453,
+						"color": "rgb(255, 217, 102)"
+					},
+					{
+						"start": 453,
+						"end": 456
+					},
+					{
+						"start": 456,
+						"end": 460,
+						"color": "rgb(137, 205, 209)"
+					},
+					{
+						"start": 460,
+						"end": 463
+					},
+					{
+						"start": 463,
+						"end": 466,
+						"color": "rgb(255, 217, 102)"
+					},
+					{
+						"start": 466,
+						"end": 469
+					},
+					{
+						"start": 469,
+						"end": 475,
+						"color": "rgb(137, 205, 209)"
+					},
+					{
+						"start": 475,
+						"end": 480
+					},
+					{
+						"start": 480,
+						"end": 502
+					},
+					{
+						"start": 502,
+						"end": 503
+					},
+					{
+						"start": 503,
+						"end": 522,
+						"color": "rgb(255, 217, 102)"
+					},
+					{
+						"start": 522,
+						"end": 524
+					},
+					{
+						"start": 524,
+						"end": 531
+					},
+					{
+						"start": 531,
+						"end": 551,
+						"color": "rgb(137, 205, 209)"
+					},
+					{
+						"start": 551,
+						"end": 561
+					},
+					{
+						"start": 561,
+						"end": 581,
 						"color": "rgb(223, 69, 69)"
 					},
 					{
-						"start": 543,
-						"end": 562
+						"start": 581,
+						"end": 600
 					},
 					{
-						"start": 562,
-						"end": 594,
+						"start": 600,
+						"end": 632,
 						"color": "rgb(224, 102, 102)"
 					},
 					{
-						"start": 594,
-						"end": 596
+						"start": 632,
+						"end": 634
 					},
 					{
-						"start": 596,
-						"end": 610,
+						"start": 634,
+						"end": 648,
 						"color": "rgb(224, 102, 102)"
 					},
 					{
-						"start": 610,
-						"end": 611
+						"start": 648,
+						"end": 649
 					},
 					{
-						"start": 611,
-						"end": 625,
+						"start": 649,
+						"end": 663,
 						"color": "rgb(223, 69, 69)"
 					},
 					{
-						"start": 625,
-						"end": 642
+						"start": 663,
+						"end": 680
 					},
 					{
-						"start": 642,
-						"end": 647,
+						"start": 680,
+						"end": 685,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 647,
-						"end": 650
+						"start": 685,
+						"end": 688
 					},
 					{
-						"start": 650,
-						"end": 669,
+						"start": 688,
+						"end": 707,
 						"color": "rgb(255, 217, 102)"
 					},
 					{
-						"start": 669,
-						"end": 672
+						"start": 707,
+						"end": 710
 					},
 					{
-						"start": 672,
-						"end": 675
+						"start": 710,
+						"end": 713
 					},
 					{
-						"start": 675,
-						"end": 699,
+						"start": 713,
+						"end": 737,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 699,
-						"end": 706
+						"start": 737,
+						"end": 744
 					},
 					{
-						"start": 706,
-						"end": 726,
+						"start": 744,
+						"end": 764,
 						"color": "rgb(223, 69, 69)"
 					},
 					{
-						"start": 726,
-						"end": 738
+						"start": 764,
+						"end": 776
 					},
 					{
-						"start": 738,
-						"end": 765,
+						"start": 776,
+						"end": 803,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 765,
-						"end": 767
+						"start": 803,
+						"end": 805
 					},
 					{
-						"start": 767,
-						"end": 786,
+						"start": 805,
+						"end": 824,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 786,
-						"end": 792
+						"start": 824,
+						"end": 830
 					},
 					{
-						"start": 792,
-						"end": 797,
+						"start": 830,
+						"end": 835,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 797,
-						"end": 799,
+						"start": 835,
+						"end": 837,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 799,
-						"end": 825,
+						"start": 837,
+						"end": 863,
 						"color": "rgb(137, 205, 209)"
 					},
 					{
-						"start": 825,
-						"end": 841
+						"start": 863,
+						"end": 879
 					},
 					{
-						"start": 841,
-						"end": 949,
+						"start": 879,
+						"end": 987,
 						"color": "rgb(224, 102, 102)"
 					}
 				]
@@ -170495,7 +170528,7 @@
 		[
 			"Game Mechanics:220:2",
 			{
-				"text": "Overload Champions passively restore their Health over time, use abilities and weapons more frequently, and move erratically unless stunned through Disruption.\nStunning prevents the Champion from attacking, moving, or using any abilities.\n\nDisrupted Combatants are bugged and no longer deal 25% less damage for 5 seconds.\nDisrupting Guardians lowers their Ability Regeneration Rate by 0.4x.\n\nOverload Champion Stunning Application:\n Arc Jolt stuns upon dealing damage to the Champion.\nStasis Slow stuns upon inflicting Slow Stacks to the Champion.\nStasis Freeze stuns upon shattering the Champion.\n Void Suppression stuns upon suppressing the Champion.",
+				"text": "Overload Champions passively restore their Health over time, use abilities and weapons more frequently, and move erratically unless stunned through Disruption.\nStunning prevents the Champion from attacking, moving, or using any abilities.\n\nDisrupted Combatants are bugged and no longer deal 25% less damage for 5 seconds.\nDisrupting Guardians lowers their Ability Regeneration Rate by 0.4x.\n\nOverload Champion Stunning Application:\n Arc Jolt stuns upon dealing damage to the Champion.\nStasis Slow stuns upon inflicting Slow Stacks to the Champion.\n Void Suppression stuns upon suppressing the Champion.",
 				"runs": [
 					{
 						"start": 0,
@@ -170686,85 +170719,44 @@
 					},
 					{
 						"start": 548,
-						"end": 555,
-						"color": "rgb(111, 168, 220)"
+						"end": 549
 					},
 					{
-						"start": 555,
-						"end": 561,
-						"color": "rgb(61, 133, 198)"
-					},
-					{
-						"start": 561,
-						"end": 562
-					},
-					{
-						"start": 562,
-						"end": 568,
-						"color": "rgb(164, 194, 244)"
-					},
-					{
-						"start": 568,
-						"end": 573
-					},
-					{
-						"start": 573,
-						"end": 584,
-						"color": "rgb(60, 120, 216)"
-					},
-					{
-						"start": 584,
-						"end": 588
-					},
-					{
-						"start": 588,
-						"end": 596,
+						"start": 549,
+						"end": 554,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 596,
-						"end": 598
-					},
-					{
-						"start": 598,
-						"end": 599
-					},
-					{
-						"start": 599,
-						"end": 604,
-						"color": "rgb(180, 167, 214)"
-					},
-					{
-						"start": 604,
-						"end": 616,
+						"start": 554,
+						"end": 566,
 						"color": "rgb(142, 124, 195)"
 					},
 					{
-						"start": 616,
-						"end": 622,
+						"start": 566,
+						"end": 572,
 						"color": "rgb(164, 194, 244)"
 					},
 					{
-						"start": 622,
-						"end": 627
+						"start": 572,
+						"end": 577
 					},
 					{
-						"start": 627,
-						"end": 639,
+						"start": 577,
+						"end": 589,
 						"color": "rgb(142, 124, 195)"
 					},
 					{
-						"start": 639,
-						"end": 643
+						"start": 589,
+						"end": 593
 					},
 					{
-						"start": 643,
-						"end": 651,
+						"start": 593,
+						"end": 601,
 						"color": "rgb(180, 167, 214)"
 					},
 					{
-						"start": 651,
-						"end": 652
+						"start": 601,
+						"end": 602
 					}
 				]
 			}
@@ -171099,7 +171091,7 @@
 		[
 			"Game Mechanics:229:2",
 			{
-				"text": "Unstoppable Champions relentlessly chase enemies, and possess 70% Damage Resist unless stunned. \nDamage Numbers visually appear as Italic Desaturated Pink Numbers\nStunning removes the Damage Resist and prevents the Champion from attacking, moving, or using any abilities for the duration of the stun.\n\nUnstoppable Shots tend to inflict more Stagger, with certain weapons/effects forcing a stagger.\n\nStunning Methods outside of Unstoppable Shots:\nArc Blind Application\nSolar Ignition Application\n Strand Suspension Application",
+				"text": "Unstoppable Champions relentlessly chase enemies, and possess 70% Damage Resist unless stunned. \nDamage Numbers visually appear as Italic Desaturated Pink Numbers\nStunning removes the Damage Resist and prevents the Champion from attacking, moving, or using any abilities for the duration of the stun.\n\nUnstoppable Shots tend to inflict more Stagger, with certain weapons/effects forcing a stagger.\n\nStunning Methods outside of Unstoppable Shots:\nArc Blind\nSolar Ignition\nStasis Freeze/Shatter\n Strand Suspension",
 				"runs": [
 					{
 						"start": 0,
@@ -171230,35 +171222,40 @@
 					},
 					{
 						"start": 450,
-						"end": 467,
+						"end": 455,
 						"color": "rgb(153, 153, 153)"
 					},
 					{
-						"start": 467,
-						"end": 468
+						"start": 455,
+						"end": 456
 					},
 					{
-						"start": 468,
-						"end": 474,
+						"start": 456,
+						"end": 462,
 						"color": "rgb(246, 178, 107)"
 					},
 					{
-						"start": 474,
-						"end": 495,
+						"start": 462,
+						"end": 471,
 						"color": "rgb(255, 153, 0)"
 					},
 					{
-						"start": 495,
-						"end": 496
+						"start": 471,
+						"end": 493,
+						"color": "rgb(111, 168, 220)"
 					},
 					{
-						"start": 496,
-						"end": 503,
+						"start": 493,
+						"end": 494
+					},
+					{
+						"start": 494,
+						"end": 501,
 						"color": "rgb(147, 196, 125)"
 					},
 					{
-						"start": 503,
-						"end": 525,
+						"start": 501,
+						"end": 511,
 						"color": "rgb(106, 168, 79)"
 					}
 				]

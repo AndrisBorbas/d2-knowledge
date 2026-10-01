@@ -52294,7 +52294,7 @@
 				"column": 1
 			},
 			"title": "Threadling",
-			"description": "Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nThreadlings are individually released upon dealing weapon damage or scoring a Melee Hit, with a 0.5 second cooldown between releases. \nThreadlings released this way will track at any range.",
+			"description": "Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nReleases a Threadling upon dealing weapon damage or scoring a Powered Melee Hit, with a 0.5 second cooldown between releases. Instantly killing an enemy won't release Threadlings.\nThreadlings released this way will track at any range.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -52303,7 +52303,7 @@
 						"column": 3
 					},
 					"start": 0,
-					"length": 801
+					"length": 846
 				}
 			],
 			"officialDescription": "A creature woven from pure Strand matter that seeks nearby targets and attacks, dealing damage.",
@@ -52443,41 +52443,54 @@
 				},
 				{
 					"keywordId": "threadling",
-					"start": 612,
-					"end": 623,
-					"text": "Threadlings"
+					"start": 623,
+					"end": 633,
+					"text": "Threadling"
 				},
 				{
-					"keywordId": "sheet-color:Strand:7:3:612:623",
-					"start": 623,
-					"end": 624,
-					"text": " ",
-					"color": "rgb(182, 215, 168)"
+					"keywordId": "sheet-color:Strand:7:3:674:674",
+					"start": 674,
+					"end": 682,
+					"text": "Powered ",
+					"color": "rgb(121, 190, 195)"
 				},
 				{
 					"keywordId": "pattern:text-energy-melee",
-					"start": 690,
-					"end": 695,
+					"start": 682,
+					"end": 687,
 					"text": "Melee",
 					"colorClass": "text-energy-melee"
 				},
 				{
-					"keywordId": "sheet-color:Strand:7:3:690:695",
-					"start": 695,
-					"end": 699,
+					"keywordId": "sheet-color:Strand:7:3:674:687",
+					"start": 687,
+					"end": 691,
 					"text": " Hit",
 					"color": "rgb(121, 190, 195)"
 				},
 				{
+					"keywordId": "sheet-color:Strand:7:3:700:700",
+					"start": 700,
+					"end": 736,
+					"text": "0.5 second cooldown between releases",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
 					"keywordId": "threadling",
-					"start": 747,
-					"end": 758,
+					"start": 779,
+					"end": 790,
 					"text": "Threadlings"
 				},
 				{
-					"keywordId": "sheet-color:Strand:7:3:747:758",
-					"start": 758,
-					"end": 759,
+					"keywordId": "threadling",
+					"start": 792,
+					"end": 803,
+					"text": "Threadlings"
+				},
+				{
+					"keywordId": "sheet-color:Strand:7:3:792:803",
+					"start": 803,
+					"end": 804,
 					"text": " ",
 					"color": "rgb(182, 215, 168)"
 				}
@@ -63470,6 +63483,436 @@
 			]
 		},
 		{
+			"id": "clarity:692285813:light-shift",
+			"tab": "Exotic Perks",
+			"section": "Armor Trait Exotic",
+			"groups": [
+				"Armor Perks",
+				"Exotic",
+				"Armor Trait Exotic",
+				"Hunter"
+			],
+			"source": {
+				"tab": "clarity",
+				"row": 285,
+				"column": 0
+			},
+			"title": "Light Shift",
+			"description": "Replaces Dodge with Shift if you have a 0 Stasis or 1 Arc Super equipped (does not work with 2 Acrobat's Dodge), and overrides base cooldown to that of Marksman's Dodge.\n\nShift effectively acts as a fast horizontal teleport with a travel distance of 10 meters. Shift renders you completely invisible (except for a trail) and invulnerable for the duration of the animation.\n\nCasting Shift grants one stack of 'Light Shift' for 11 seconds. Maximum of 3 stacks.\n\nLight Shift grants 10%|21%|33% increased 3 Arc, 4 Stasis, and Lord of Wolves Weapon Damage at 1|2|3 Stacks.\n\nLight Shift additionally grants 10% increased Weapon Damage against 5 Stasis-debuffed enemies.\n\nLight Shift's buff stacks with all other buff sources.\n\nPassive Class Ability regeneration is disabled for the duration of Light Shift. Instead, Weapon Kills grant 60% Class Ability Energy while Light Shift is active.",
+			"officialDescription": "While you have a Stasis or Arc Super equipped, your Dodge becomes a longer range, faster moving shift that partially cloaks you during use. After shifting, your Stasis and Arc weapons gain a stacking damage bonus for a short time. Final blows with this bonus active refund class ability energy.",
+			"extraInfo": "Item: Mask of Bakris",
+			"kind": "exotic_item_perk",
+			"sourceId": "clarity",
+			"sourceRefs": [
+				{
+					"sourceId": "clarity",
+					"sourceKey": "692285813",
+					"hash": 692285813,
+					"itemHash": 508515818,
+					"itemName": "Mask of Bakris",
+					"type": "Armor Trait Exotic",
+					"updatedAt": 1783935545841
+				},
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Exotic Armors:69:0",
+					"tab": "Exotic Armors",
+					"row": 69,
+					"column": 0
+				}
+			],
+			"secondaryName": "Mask of Bakris",
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/201a9a1773ef1b4babff1e92b8447c69.png",
+			"secondaryIconPath": "https://www.bungie.net/common/destiny2_content/icons/d2fdd193c4536cbc9cdaa82e24b7125a.jpg",
+			"itemHash": 508515818,
+			"perkHash": 692285813,
+			"iconGlyphs": [
+				{
+					"label": "Stasis",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_530c4c3e7981dc2aefd24fd3293482bf.png"
+				},
+				{
+					"label": "Arc",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_092d066688b879c807c3b460afdd61e6.png"
+				},
+				{
+					"label": "Solar",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png"
+				},
+				{
+					"label": "Arc",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_092d066688b879c807c3b460afdd61e6.png"
+				},
+				{
+					"label": "Stasis",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_530c4c3e7981dc2aefd24fd3293482bf.png"
+				},
+				{
+					"label": "Stasis",
+					"iconPath": "https://www.bungie.net/common/destiny2_content/icons/DestinyDamageTypeDefinition_530c4c3e7981dc2aefd24fd3293482bf.png"
+				}
+			],
+			"alternateDescriptions": [
+				{
+					"sourceId": "ddc",
+					"text": "While an Arc or Stasis Super Ability is equipped:\nReplaces Dodge with Shift.\nDoes not replace Acrobat's Dodge. Overrides Cooldown and Chunk Scalar to Marksman's Dodge.\n\nOn Class Ability Usage:\nPerforms a quick shift that moves the user up to 12 meters away, rendering them invisible and invulnerable for the duration of the shift.\nGrants a stack of Light Shift for 11 seconds, up to a maximum of 3 stacks.\n\nLight Shift:\nx1 = 10% | x2 = 21% | x3 = 33% increased Arc, Stasis, and Lord of Wolves Weapon Damage.\n 10% Increased Weapon Damage against Stasis Debuffed Enemies.\nWeapon Kills grant 60% Class Ability Energy while active.\nDamage buffs stack with other buffs.",
+					"descriptionSegments": [
+						{
+							"source": {
+								"tab": "Exotic Armors",
+								"row": 69,
+								"column": 2
+							},
+							"start": 0,
+							"length": 664
+						}
+					],
+					"annotations": [
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:9:9",
+							"start": 9,
+							"end": 12,
+							"text": "Arc",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:16:16",
+							"start": 16,
+							"end": 23,
+							"text": "Stasis ",
+							"color": "rgb(111, 168, 220)"
+						},
+						{
+							"keywordId": "pattern:text-energy-super",
+							"start": 23,
+							"end": 36,
+							"text": "Super Ability",
+							"colorClass": "text-energy-super"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:59:59",
+							"start": 59,
+							"end": 64,
+							"text": "Dodge",
+							"color": "rgb(180, 167, 214)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:70:70",
+							"start": 70,
+							"end": 77,
+							"text": "Shift.\n",
+							"color": "rgb(111, 168, 220)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:77:77",
+							"start": 77,
+							"end": 94,
+							"text": "Does not replace ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "acrobat-s-dodge",
+							"start": 94,
+							"end": 109,
+							"text": "Acrobat's Dodge"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:109:109",
+							"start": 109,
+							"end": 150,
+							"text": ". Overrides Cooldown and Chunk Scalar to ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "marksman-s-dodge",
+							"start": 150,
+							"end": 166,
+							"text": "Marksman's Dodge"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:109:166",
+							"start": 166,
+							"end": 167,
+							"text": ".",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:167:167",
+							"start": 167,
+							"end": 168,
+							"text": "\n",
+							"color": "rgb(111, 168, 220)"
+						},
+						{
+							"keywordId": "pattern:text-energy-class",
+							"start": 172,
+							"end": 185,
+							"text": "Class Ability",
+							"colorClass": "text-energy-class"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:172:185",
+							"start": 185,
+							"end": 191,
+							"text": " Usage",
+							"color": "rgb(180, 167, 214)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:231:231",
+							"start": 231,
+							"end": 236,
+							"text": "user ",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "invisibility",
+							"start": 273,
+							"end": 282,
+							"text": "invisible"
+						},
+						{
+							"keywordId": "light-shift",
+							"start": 349,
+							"end": 360,
+							"text": "Light Shift"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:396:396",
+							"start": 396,
+							"end": 404,
+							"text": "3 stacks",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "light-shift",
+							"start": 407,
+							"end": 418,
+							"text": "Light Shift"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:407:418",
+							"start": 418,
+							"end": 419,
+							"text": ":",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:420:420",
+							"start": 420,
+							"end": 422,
+							"text": "x1",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:422:422",
+							"start": 422,
+							"end": 423,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:424:424",
+							"start": 424,
+							"end": 429,
+							"text": " 10% ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:430:430",
+							"start": 430,
+							"end": 431,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:431:431",
+							"start": 431,
+							"end": 433,
+							"text": "x2",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:433:433",
+							"start": 433,
+							"end": 434,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:435:435",
+							"start": 435,
+							"end": 440,
+							"text": " 21% ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:441:441",
+							"start": 441,
+							"end": 442,
+							"text": " ",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:442:442",
+							"start": 442,
+							"end": 444,
+							"text": "x3",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:444:444",
+							"start": 444,
+							"end": 450,
+							"text": " = 33%",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:461:461",
+							"start": 461,
+							"end": 464,
+							"text": "Arc",
+							"color": "rgb(137, 205, 209)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:466:466",
+							"start": 466,
+							"end": 472,
+							"text": "Stasis",
+							"color": "rgb(111, 168, 220)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:478:478",
+							"start": 478,
+							"end": 492,
+							"text": "Lord of Wolves",
+							"color": "rgb(255, 217, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:509:509",
+							"start": 509,
+							"end": 512,
+							"text": "10%",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:545:545",
+							"start": 545,
+							"end": 568,
+							"text": "Stasis Debuffed Enemies",
+							"color": "rgb(111, 168, 220)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:589:589",
+							"start": 589,
+							"end": 593,
+							"text": "60% ",
+							"color": "rgb(180, 167, 214)"
+						},
+						{
+							"keywordId": "pattern:text-energy-class",
+							"start": 593,
+							"end": 613,
+							"text": "Class Ability Energy",
+							"colorClass": "text-energy-class"
+						}
+					]
+				}
+			],
+			"annotations": [
+				{
+					"keywordId": "pattern:text-energy-super",
+					"start": 62,
+					"end": 67,
+					"text": "Super",
+					"colorClass": "text-energy-super"
+				},
+				{
+					"keywordId": "acrobat-s-dodge",
+					"start": 101,
+					"end": 116,
+					"text": "Acrobat's Dodge"
+				},
+				{
+					"keywordId": "marksman-s-dodge",
+					"start": 158,
+					"end": 174,
+					"text": "Marksman's Dodge"
+				},
+				{
+					"keywordId": "invisibility",
+					"start": 296,
+					"end": 305,
+					"text": "invisible"
+				},
+				{
+					"keywordId": "light-shift",
+					"start": 415,
+					"end": 426,
+					"text": "Light Shift"
+				},
+				{
+					"keywordId": "light-shift",
+					"start": 466,
+					"end": 477,
+					"text": "Light Shift"
+				},
+				{
+					"keywordId": "light-shift",
+					"start": 579,
+					"end": 590,
+					"text": "Light Shift"
+				},
+				{
+					"keywordId": "light-shift",
+					"start": 677,
+					"end": 688,
+					"text": "Light Shift"
+				},
+				{
+					"keywordId": "pattern:text-energy-class",
+					"start": 741,
+					"end": 754,
+					"text": "Class Ability",
+					"colorClass": "text-energy-class"
+				},
+				{
+					"keywordId": "light-shift",
+					"start": 800,
+					"end": 811,
+					"text": "Light Shift"
+				},
+				{
+					"keywordId": "pattern:text-energy-class",
+					"start": 845,
+					"end": 865,
+					"text": "Class Ability Energy",
+					"colorClass": "text-energy-class"
+				},
+				{
+					"keywordId": "light-shift",
+					"start": 872,
+					"end": 883,
+					"text": "Light Shift"
+				}
+			],
+			"officialAnnotations": [
+				{
+					"keywordId": "pattern:text-energy-super",
+					"start": 31,
+					"end": 36,
+					"text": "Super",
+					"colorClass": "text-energy-super"
+				},
+				{
+					"keywordId": "pattern:text-energy-class",
+					"start": 273,
+					"end": 293,
+					"text": "class ability energy",
+					"colorClass": "text-energy-class"
+				}
+			]
+		},
+		{
 			"id": "clarity:1155472384:biotic-enhancements",
 			"tab": "Exotic Perks",
 			"section": "Armor Trait Exotic",
@@ -64559,7 +65002,7 @@
 					"start": 96,
 					"end": 98,
 					"text": ":\n",
-					"color": "rgb(164, 129, 225)"
+					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "charge-rate",
@@ -81228,6 +81671,30 @@
 			]
 		},
 		{
+			"id": "supercharged-magazine",
+			"label": "Supercharged Magazine",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"clarity:65604327:supercharged-magazine"
+			]
+		},
+		{
+			"id": "light-shift",
+			"label": "Light Shift",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"clarity:692285813:light-shift"
+			]
+		},
+		{
 			"id": "slideshot",
 			"label": "Slideshot",
 			"aliases": [],
@@ -81394,18 +81861,6 @@
 			"variant": "default",
 			"references": [
 				"clarity:573122728:triple-tap"
-			]
-		},
-		{
-			"id": "supercharged-magazine",
-			"label": "Supercharged Magazine",
-			"aliases": [],
-			"types": [
-				"default"
-			],
-			"variant": "default",
-			"references": [
-				"clarity:65604327:supercharged-magazine"
 			]
 		},
 		{
@@ -85147,6 +85602,38 @@
 		],
 		"sustained:9:loadout": [
 			{
+				"keywordId": "supercharged-magazine",
+				"start": 0,
+				"end": 21,
+				"text": "Supercharged Magazine"
+			},
+			{
+				"keywordId": "gear-shift",
+				"start": 24,
+				"end": 34,
+				"text": "Gear Shift"
+			},
+			{
+				"keywordId": "pack-hunter",
+				"start": 49,
+				"end": 60,
+				"text": "Pack Hunter"
+			},
+			{
+				"keywordId": "argent-ordnance",
+				"start": 62,
+				"end": 77,
+				"text": "Argent Ordnance"
+			},
+			{
+				"keywordId": "light-shift",
+				"start": 79,
+				"end": 90,
+				"text": "Light Shift"
+			}
+		],
+		"sustained:10:loadout": [
+			{
 				"keywordId": "heavy-bolts",
 				"start": 0,
 				"end": 11,
@@ -85177,7 +85664,7 @@
 				"text": "Guidance Ring"
 			}
 		],
-		"sustained:10:loadout": [
+		"sustained:11:loadout": [
 			{
 				"keywordId": "slideshot",
 				"start": 0,
@@ -85197,7 +85684,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:11:loadout": [
+		"sustained:12:loadout": [
 			{
 				"keywordId": "one-two-punch",
 				"start": 0,
@@ -85235,7 +85722,7 @@
 				"text": "Conductive Cosmic Crystal"
 			}
 		],
-		"sustained:12:loadout": [
+		"sustained:13:loadout": [
 			{
 				"keywordId": "reaper-s-tithe",
 				"start": 23,
@@ -85249,7 +85736,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:13:loadout": [
+		"sustained:14:loadout": [
 			{
 				"keywordId": "rampage",
 				"start": 37,
@@ -85275,7 +85762,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:14:loadout": [
+		"sustained:15:loadout": [
 			{
 				"keywordId": "timelost-magazine",
 				"start": 0,
@@ -85313,7 +85800,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:15:loadout": [
+		"sustained:16:loadout": [
 			{
 				"keywordId": "cluster-bomb",
 				"start": 0,
@@ -85351,7 +85838,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:16:loadout": [
+		"sustained:17:loadout": [
 			{
 				"keywordId": "sticker-shock",
 				"start": 33,
@@ -85359,7 +85846,7 @@
 				"text": "Sticker Shock"
 			}
 		],
-		"sustained:17:loadout": [
+		"sustained:18:loadout": [
 			{
 				"keywordId": "sniper-s-meditation",
 				"start": 51,
@@ -85379,7 +85866,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:18:loadout": [
+		"sustained:19:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 29,
@@ -85393,7 +85880,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:19:loadout": [
+		"sustained:20:loadout": [
 			{
 				"keywordId": "one-two-punch",
 				"start": 0,
@@ -85413,7 +85900,7 @@
 				"text": "Roaring Flames"
 			}
 		],
-		"sustained:20:loadout": [
+		"sustained:21:loadout": [
 			{
 				"keywordId": "guidance-ring",
 				"start": 0,
@@ -85427,7 +85914,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:21:loadout": [
+		"sustained:22:loadout": [
 			{
 				"keywordId": "triple-tap",
 				"start": 14,
@@ -85465,7 +85952,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:22:loadout": [
+		"sustained:23:loadout": [
 			{
 				"keywordId": "sniper-s-meditation",
 				"start": 51,
@@ -85473,7 +85960,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:23:loadout": [
+		"sustained:24:loadout": [
 			{
 				"keywordId": "redirection",
 				"start": 40,
@@ -85493,7 +85980,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:24:loadout": [
+		"sustained:25:loadout": [
 			{
 				"keywordId": "supercharged-magazine",
 				"start": 0,
@@ -85519,7 +86006,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:25:loadout": [
+		"sustained:26:loadout": [
 			{
 				"keywordId": "the-perfect-fifth",
 				"start": 14,
@@ -85563,7 +86050,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:26:loadout": [
+		"sustained:27:loadout": [
 			{
 				"keywordId": "redirection",
 				"start": 16,
@@ -85577,7 +86064,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"sustained:27:loadout": [
+		"sustained:28:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -85603,7 +86090,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:28:loadout": [
+		"sustained:29:loadout": [
 			{
 				"keywordId": "sniper-s-meditation",
 				"start": 41,
@@ -85611,7 +86098,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:29:loadout": [
+		"sustained:30:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -85625,7 +86112,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:30:loadout": [
+		"sustained:31:loadout": [
 			{
 				"keywordId": "vorpal-weapon",
 				"start": 14,
@@ -85651,7 +86138,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:31:loadout": [
+		"sustained:32:loadout": [
 			{
 				"keywordId": "aggregate-charge",
 				"start": 0,
@@ -85677,7 +86164,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:32:loadout": [
+		"sustained:33:loadout": [
 			{
 				"keywordId": "bait-and-switch",
 				"start": 49,
@@ -85703,7 +86190,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:33:loadout": [
+		"sustained:34:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -85741,7 +86228,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:34:loadout": [
+		"sustained:35:loadout": [
 			{
 				"keywordId": "argent-ordnance",
 				"start": 23,
@@ -85749,7 +86236,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:35:loadout": [
+		"sustained:36:loadout": [
 			{
 				"keywordId": "heavy-bolts",
 				"start": 0,
@@ -85775,7 +86262,7 @@
 				"text": "Accelerated Assault"
 			}
 		],
-		"sustained:36:loadout": [
+		"sustained:37:loadout": [
 			{
 				"keywordId": "trench-barrel",
 				"start": 6,
@@ -85789,7 +86276,7 @@
 				"text": "Arc Compounding"
 			}
 		],
-		"sustained:37:loadout": [
+		"sustained:38:loadout": [
 			{
 				"keywordId": "collective-action",
 				"start": 40,
@@ -85815,7 +86302,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:38:loadout": [
+		"sustained:39:loadout": [
 			{
 				"keywordId": "burning-ambition",
 				"start": 40,
@@ -85847,7 +86334,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:39:loadout": [
+		"sustained:40:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -85873,7 +86360,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:40:loadout": [
+		"sustained:41:loadout": [
 			{
 				"keywordId": "touch-of-flame",
 				"start": 17,
@@ -85893,7 +86380,7 @@
 				"text": "Sticker Shock"
 			}
 		],
-		"sustained:41:loadout": [
+		"sustained:42:loadout": [
 			{
 				"keywordId": "sniper-s-meditation",
 				"start": 51,
@@ -85901,7 +86388,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:42:loadout": [
+		"sustained:43:loadout": [
 			{
 				"keywordId": "impetus",
 				"start": 0,
@@ -85909,7 +86396,7 @@
 				"text": "Impetus"
 			}
 		],
-		"sustained:43:loadout": [
+		"sustained:44:loadout": [
 			{
 				"keywordId": "jolting-feedback",
 				"start": 28,
@@ -85935,7 +86422,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:44:loadout": [
+		"sustained:45:loadout": [
 			{
 				"keywordId": "relentless-strikes",
 				"start": 37,
@@ -85961,7 +86448,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:45:loadout": [
+		"sustained:46:loadout": [
 			{
 				"keywordId": "touch-of-thunder",
 				"start": 22,
@@ -85975,7 +86462,7 @@
 				"text": "Spark of Magnitude"
 			}
 		],
-		"sustained:46:loadout": [
+		"sustained:47:loadout": [
 			{
 				"keywordId": "aggregate-charge",
 				"start": 0,
@@ -85995,7 +86482,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:47:loadout": [
+		"sustained:48:loadout": [
 			{
 				"keywordId": "jolting-feedback",
 				"start": 28,
@@ -86027,7 +86514,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:48:loadout": [
+		"sustained:49:loadout": [
 			{
 				"keywordId": "relentless-strikes",
 				"start": 37,
@@ -86059,7 +86546,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:49:loadout": [
+		"sustained:50:loadout": [
 			{
 				"keywordId": "bait-and-switch",
 				"start": 49,
@@ -86079,7 +86566,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:50:loadout": [
+		"sustained:51:loadout": [
 			{
 				"keywordId": "burning-ambition",
 				"start": 40,
@@ -86111,7 +86598,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:51:loadout": [
+		"sustained:52:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 12,
@@ -86137,7 +86624,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:52:loadout": [
+		"sustained:53:loadout": [
 			{
 				"keywordId": "timelost-magazine",
 				"start": 19,
@@ -86163,7 +86650,7 @@
 				"text": "Arc Compounding"
 			}
 		],
-		"sustained:53:loadout": [
+		"sustained:54:loadout": [
 			{
 				"keywordId": "combination-blow",
 				"start": 26,
@@ -86183,7 +86670,7 @@
 				"text": "No Bell"
 			}
 		],
-		"sustained:54:loadout": [
+		"sustained:55:loadout": [
 			{
 				"keywordId": "the-perfect-fifth",
 				"start": 14,
@@ -86227,7 +86714,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:55:loadout": [
+		"sustained:56:loadout": [
 			{
 				"keywordId": "mega-kill-clip",
 				"start": 32,
@@ -86247,7 +86734,7 @@
 				"text": "Heretical Behavior"
 			}
 		],
-		"sustained:56:loadout": [
+		"sustained:57:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -86273,7 +86760,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:57:loadout": [
+		"sustained:58:loadout": [
 			{
 				"keywordId": "touch-of-flame",
 				"start": 12,
@@ -86287,7 +86774,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:58:loadout": [
+		"sustained:59:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -86301,7 +86788,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:59:loadout": [
+		"sustained:60:loadout": [
 			{
 				"keywordId": "relentless-strikes",
 				"start": 37,
@@ -86327,7 +86814,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:60:loadout": [
+		"sustained:61:loadout": [
 			{
 				"keywordId": "envious-arsenal",
 				"start": 0,
@@ -86347,7 +86834,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:61:loadout": [
+		"sustained:62:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -86373,7 +86860,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:62:loadout": [
+		"sustained:63:loadout": [
 			{
 				"keywordId": "vorpal-weapon",
 				"start": 37,
@@ -86399,7 +86886,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:63:loadout": [
+		"sustained:64:loadout": [
 			{
 				"keywordId": "unplanned-reprieve",
 				"start": 14,
@@ -86437,7 +86924,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:64:loadout": [
+		"sustained:65:loadout": [
 			{
 				"keywordId": "unplanned-reprieve",
 				"start": 12,
@@ -86475,7 +86962,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:65:loadout": [
+		"sustained:66:loadout": [
 			{
 				"keywordId": "heavy-bolts",
 				"start": 0,
@@ -86501,7 +86988,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:66:loadout": [
+		"sustained:67:loadout": [
 			{
 				"keywordId": "one-two-punch",
 				"start": 0,
@@ -86521,7 +87008,7 @@
 				"text": "Biotic Enhancements"
 			}
 		],
-		"sustained:67:loadout": [
+		"sustained:68:loadout": [
 			{
 				"keywordId": "relentless-strikes",
 				"start": 38,
@@ -86553,7 +87040,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:68:loadout": [
+		"sustained:69:loadout": [
 			{
 				"keywordId": "argent-ordnance",
 				"start": 23,
@@ -86561,7 +87048,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:69:loadout": [
+		"sustained:70:loadout": [
 			{
 				"keywordId": "relentless-strikes",
 				"start": 37,
@@ -86593,7 +87080,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:70:loadout": [
+		"sustained:71:loadout": [
 			{
 				"keywordId": "biotic-enhancements",
 				"start": 0,
@@ -86607,7 +87094,7 @@
 				"text": "Roaring Flames"
 			}
 		],
-		"sustained:71:loadout": [
+		"sustained:72:loadout": [
 			{
 				"keywordId": "the-roadborn",
 				"start": 0,
@@ -86627,7 +87114,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:72:loadout": [
+		"sustained:73:loadout": [
 			{
 				"keywordId": "arc-compounding",
 				"start": 6,
@@ -86635,7 +87122,7 @@
 				"text": "Arc Compounding"
 			}
 		],
-		"sustained:73:loadout": [
+		"sustained:74:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 12,
@@ -86661,7 +87148,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:74:loadout": [
+		"sustained:75:loadout": [
 			{
 				"keywordId": "on-black-wings",
 				"start": 25,
@@ -86669,7 +87156,7 @@
 				"text": "On Black Wings"
 			}
 		],
-		"sustained:75:loadout": [
+		"sustained:76:loadout": [
 			{
 				"keywordId": "triple-tap",
 				"start": 14,
@@ -86707,7 +87194,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:76:loadout": [
+		"sustained:77:loadout": [
 			{
 				"keywordId": "lightweight-frame",
 				"start": 0,
@@ -86751,7 +87238,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:77:loadout": [
+		"sustained:78:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 6,
@@ -86771,7 +87258,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:78:loadout": [
+		"sustained:79:loadout": [
 			{
 				"keywordId": "mega-kill-clip",
 				"start": 32,
@@ -86791,7 +87278,7 @@
 				"text": "Heretical Behavior"
 			}
 		],
-		"sustained:79:loadout": [
+		"sustained:80:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -86823,7 +87310,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:80:loadout": [
+		"sustained:81:loadout": [
 			{
 				"keywordId": "honed-edge",
 				"start": 30,
@@ -86837,7 +87324,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:81:loadout": [
+		"sustained:82:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -86851,7 +87338,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:82:loadout": [
+		"sustained:83:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -86895,7 +87382,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:83:loadout": [
+		"sustained:84:loadout": [
 			{
 				"keywordId": "particle-reconstruction",
 				"start": 10,
@@ -86903,7 +87390,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:84:loadout": [
+		"sustained:85:loadout": [
 			{
 				"keywordId": "arc-compounding",
 				"start": 20,
@@ -86917,7 +87404,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:85:loadout": [
+		"sustained:86:loadout": [
 			{
 				"keywordId": "frenzy",
 				"start": 37,
@@ -86943,7 +87430,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:86:loadout": [
+		"sustained:87:loadout": [
 			{
 				"keywordId": "rewind-rounds",
 				"start": 17,
@@ -86975,7 +87462,7 @@
 				"text": "Kinetic Synthesis"
 			}
 		],
-		"sustained:87:loadout": [
+		"sustained:88:loadout": [
 			{
 				"keywordId": "one-two-punch",
 				"start": 0,
@@ -86989,7 +87476,7 @@
 				"text": "Roaring Flames"
 			}
 		],
-		"sustained:88:loadout": [
+		"sustained:89:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87015,7 +87502,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:89:loadout": [
+		"sustained:90:loadout": [
 			{
 				"keywordId": "whispered-breathing",
 				"start": 0,
@@ -87041,7 +87528,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:90:loadout": [
+		"sustained:91:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87067,7 +87554,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:91:loadout": [
+		"sustained:92:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87093,7 +87580,7 @@
 				"text": "Energy Acceleration"
 			}
 		],
-		"sustained:92:loadout": [
+		"sustained:93:loadout": [
 			{
 				"keywordId": "thread-of-evolution",
 				"start": 20,
@@ -87113,7 +87600,7 @@
 				"text": "Pack Tactics"
 			}
 		],
-		"sustained:93:loadout": [
+		"sustained:94:loadout": [
 			{
 				"keywordId": "frenzy",
 				"start": 37,
@@ -87145,7 +87632,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:94:loadout": [
+		"sustained:95:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 17,
@@ -87177,7 +87664,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:95:loadout": [
+		"sustained:96:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87203,7 +87690,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:96:loadout": [
+		"sustained:97:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87223,7 +87710,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:97:loadout": [
+		"sustained:98:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87249,7 +87736,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:98:loadout": [
+		"sustained:99:loadout": [
 			{
 				"keywordId": "guidance-ring",
 				"start": 0,
@@ -87263,7 +87750,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:99:loadout": [
+		"sustained:100:loadout": [
 			{
 				"keywordId": "the-master",
 				"start": 10,
@@ -87283,7 +87770,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:100:loadout": [
+		"sustained:101:loadout": [
 			{
 				"keywordId": "whispered-breathing",
 				"start": 0,
@@ -87297,7 +87784,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:102:loadout": [
+		"sustained:103:loadout": [
 			{
 				"keywordId": "envious-arsenal",
 				"start": 0,
@@ -87317,7 +87804,7 @@
 				"text": "Kinetic Impacts"
 			}
 		],
-		"sustained:104:loadout": [
+		"sustained:105:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 19,
@@ -87325,7 +87812,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"sustained:105:loadout": [
+		"sustained:106:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 22,
@@ -87357,7 +87844,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:106:loadout": [
+		"sustained:107:loadout": [
 			{
 				"keywordId": "release-the-wolves",
 				"start": 0,
@@ -87371,7 +87858,7 @@
 				"text": "ignition"
 			}
 		],
-		"sustained:107:loadout": [
+		"sustained:108:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 19,
@@ -87397,7 +87884,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:108:loadout": [
+		"sustained:109:loadout": [
 			{
 				"keywordId": "archer-s-tempo",
 				"start": 0,
@@ -87405,7 +87892,7 @@
 				"text": "Archer's Tempo"
 			}
 		],
-		"sustained:109:loadout": [
+		"sustained:110:loadout": [
 			{
 				"keywordId": "touch-of-thunder",
 				"start": 22,
@@ -87419,7 +87906,7 @@
 				"text": "Spark of Magnitude"
 			}
 		],
-		"sustained:110:loadout": [
+		"sustained:111:loadout": [
 			{
 				"keywordId": "threadling",
 				"start": 29,
@@ -87433,7 +87920,7 @@
 				"text": "Pack Tactics"
 			}
 		],
-		"sustained:111:loadout": [
+		"sustained:112:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -87447,7 +87934,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:112:loadout": [
+		"sustained:113:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -87467,7 +87954,7 @@
 				"text": "ignitions"
 			}
 		],
-		"sustained:113:loadout": [
+		"sustained:114:loadout": [
 			{
 				"keywordId": "kinetic-synthesis",
 				"start": 69,
@@ -87487,7 +87974,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:114:loadout": [
+		"sustained:115:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -87531,7 +88018,7 @@
 				"text": "Solar Fulmination"
 			}
 		],
-		"sustained:115:loadout": [
+		"sustained:116:loadout": [
 			{
 				"keywordId": "combination-blow",
 				"start": 18,
@@ -87545,7 +88032,7 @@
 				"text": "Biotic Enhancements"
 			}
 		],
-		"sustained:117:loadout": [
+		"sustained:118:loadout": [
 			{
 				"keywordId": "heavy-bolts",
 				"start": 0,
@@ -87565,7 +88052,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:118:loadout": [
+		"sustained:119:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 0,
@@ -87591,7 +88078,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:119:loadout": [
+		"sustained:120:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 14,
@@ -87605,7 +88092,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:120:loadout": [
+		"sustained:121:loadout": [
 			{
 				"keywordId": "the-master",
 				"start": 10,
@@ -87625,7 +88112,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:121:loadout": [
+		"sustained:122:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -87639,7 +88126,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:123:loadout": [
+		"sustained:124:loadout": [
 			{
 				"keywordId": "envious-arsenal",
 				"start": 0,
@@ -87647,7 +88134,7 @@
 				"text": "Envious Arsenal"
 			}
 		],
-		"sustained:124:loadout": [
+		"sustained:125:loadout": [
 			{
 				"keywordId": "will-given-form-ager-s-scepter-catalyst",
 				"start": 0,
@@ -87667,7 +88154,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:125:loadout": [
+		"sustained:126:loadout": [
 			{
 				"keywordId": "combination-blow",
 				"start": 26,
@@ -87687,7 +88174,7 @@
 				"text": "Close to Melee"
 			}
 		],
-		"sustained:126:loadout": [
+		"sustained:127:loadout": [
 			{
 				"keywordId": "causality-arrows",
 				"start": 19,
@@ -87707,7 +88194,7 @@
 				"text": "ignition"
 			}
 		],
-		"sustained:127:loadout": [
+		"sustained:128:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -87739,7 +88226,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:128:loadout": [
+		"sustained:129:loadout": [
 			{
 				"keywordId": "rewind-rounds",
 				"start": 0,
@@ -87753,7 +88240,7 @@
 				"text": "Combat Sights"
 			}
 		],
-		"sustained:129:loadout": [
+		"sustained:130:loadout": [
 			{
 				"keywordId": "sniper-s-meditation",
 				"start": 30,
@@ -87761,7 +88248,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:130:loadout": [
+		"sustained:131:loadout": [
 			{
 				"keywordId": "quantum-nova",
 				"start": 9,
@@ -87769,7 +88256,7 @@
 				"text": "Quantum Nova"
 			}
 		],
-		"sustained:131:loadout": [
+		"sustained:132:loadout": [
 			{
 				"keywordId": "networked-targeting-d-a-r-c-i-catalyst",
 				"start": 0,
@@ -87795,7 +88282,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:132:loadout": [
+		"sustained:133:loadout": [
 			{
 				"keywordId": "the-master",
 				"start": 10,
@@ -87815,7 +88302,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:133:loadout": [
+		"sustained:134:loadout": [
 			{
 				"keywordId": "paracausal-imbuement",
 				"start": 0,
@@ -87829,7 +88316,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:135:loadout": [
+		"sustained:136:loadout": [
 			{
 				"keywordId": "bait-and-switch",
 				"start": 0,
@@ -87837,7 +88324,7 @@
 				"text": "Bait and Switch"
 			}
 		],
-		"sustained:136:loadout": [
+		"sustained:137:loadout": [
 			{
 				"keywordId": "particle-reconstruction",
 				"start": 0,
@@ -87845,7 +88332,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:137:loadout": [
+		"sustained:138:loadout": [
 			{
 				"keywordId": "triple-tap",
 				"start": 0,
@@ -87865,7 +88352,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:138:loadout": [
+		"sustained:139:loadout": [
 			{
 				"keywordId": "shot-in-the-dark",
 				"start": 15,
@@ -87885,7 +88372,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:139:loadout": [
+		"sustained:140:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -87905,7 +88392,7 @@
 				"text": "Reaper's Tithe"
 			}
 		],
-		"sustained:140:loadout": [
+		"sustained:141:loadout": [
 			{
 				"keywordId": "kinetic-synthesis",
 				"start": 48,
@@ -87925,7 +88412,7 @@
 				"text": "Sword Storm Combo"
 			}
 		],
-		"sustained:141:loadout": [
+		"sustained:142:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 9,
@@ -87945,7 +88432,7 @@
 				"text": "Trench Barrel"
 			}
 		],
-		"sustained:142:loadout": [
+		"sustained:143:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 9,
@@ -87965,7 +88452,7 @@
 				"text": "Gear Shift"
 			}
 		],
-		"sustained:143:loadout": [
+		"sustained:144:loadout": [
 			{
 				"keywordId": "argent-ordnance",
 				"start": 0,
@@ -87973,7 +88460,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:144:loadout": [
+		"sustained:145:loadout": [
 			{
 				"keywordId": "high-impact-reserves",
 				"start": 17,
@@ -87987,7 +88474,7 @@
 				"text": "Bait and Switch"
 			}
 		],
-		"sustained:145:loadout": [
+		"sustained:146:loadout": [
 			{
 				"keywordId": "reconstruction",
 				"start": 19,
@@ -88001,7 +88488,7 @@
 				"text": "Trench Barrel"
 			}
 		],
-		"sustained:147:loadout": [
+		"sustained:148:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 16,
@@ -88015,7 +88502,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"sustained:148:loadout": [
+		"sustained:149:loadout": [
 			{
 				"keywordId": "rapid-hit",
 				"start": 0,
@@ -88029,7 +88516,7 @@
 				"text": "Precision Instrument"
 			}
 		],
-		"sustained:149:loadout": [
+		"sustained:150:loadout": [
 			{
 				"keywordId": "lucent-blades",
 				"start": 12,
@@ -88043,7 +88530,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:150:loadout": [
+		"sustained:151:loadout": [
 			{
 				"keywordId": "suspend",
 				"start": 8,
@@ -88051,7 +88538,7 @@
 				"text": "suspend"
 			}
 		],
-		"sustained:151:loadout": [
+		"sustained:152:loadout": [
 			{
 				"keywordId": "sniper-s-meditation",
 				"start": 0,
@@ -88059,7 +88546,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:153:loadout": [
+		"sustained:154:loadout": [
 			{
 				"keywordId": "rewind-rounds",
 				"start": 0,
@@ -88073,7 +88560,7 @@
 				"text": "Marksman Sights"
 			}
 		],
-		"sustained:154:loadout": [
+		"sustained:155:loadout": [
 			{
 				"keywordId": "the-fundamentals",
 				"start": 0,
@@ -88081,7 +88568,7 @@
 				"text": "The Fundamentals"
 			}
 		],
-		"sustained:155:loadout": [
+		"sustained:156:loadout": [
 			{
 				"keywordId": "composite-propellant",
 				"start": 13,
@@ -88095,7 +88582,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:156:loadout": [
+		"sustained:157:loadout": [
 			{
 				"keywordId": "dynamic-charge",
 				"start": 0,
@@ -88127,7 +88614,7 @@
 				"text": "Flashover"
 			}
 		],
-		"sustained:157:loadout": [
+		"sustained:158:loadout": [
 			{
 				"keywordId": "guidance-ring",
 				"start": 0,
@@ -88141,7 +88628,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:158:loadout": [
+		"sustained:159:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 0,
@@ -88167,7 +88654,7 @@
 				"text": "Accelerated Assault"
 			}
 		],
-		"sustained:159:loadout": [
+		"sustained:160:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 0,
@@ -88193,7 +88680,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:160:loadout": [
+		"sustained:161:loadout": [
 			{
 				"keywordId": "envious-assassin",
 				"start": 29,
@@ -88207,7 +88694,7 @@
 				"text": "Controlled Burst"
 			}
 		],
-		"sustained:163:loadout": [
+		"sustained:164:loadout": [
 			{
 				"keywordId": "trickle-charge",
 				"start": 14,
@@ -88233,7 +88720,7 @@
 				"text": "Energy Acceleration"
 			}
 		],
-		"sustained:164:loadout": [
+		"sustained:165:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 14,
@@ -88247,7 +88734,7 @@
 				"text": "Aggregate Charge"
 			}
 		],
-		"sustained:166:loadout": [
+		"sustained:167:loadout": [
 			{
 				"keywordId": "cast-no-shadows",
 				"start": 6,
@@ -88261,7 +88748,7 @@
 				"text": "Trench Barrel"
 			}
 		],
-		"sustained:167:loadout": [
+		"sustained:168:loadout": [
 			{
 				"keywordId": "argent-quiver",
 				"start": 20,
@@ -88269,7 +88756,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:168:loadout": [
+		"sustained:169:loadout": [
 			{
 				"keywordId": "precision-instrument",
 				"start": 23,
@@ -88277,7 +88764,7 @@
 				"text": "Precision Instrument"
 			}
 		],
-		"sustained:169:loadout": [
+		"sustained:170:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 0,
@@ -88303,7 +88790,7 @@
 				"text": "Dynamo"
 			}
 		],
-		"sustained:170:loadout": [
+		"sustained:171:loadout": [
 			{
 				"keywordId": "archer-s-gambit",
 				"start": 0,
@@ -88317,7 +88804,7 @@
 				"text": "Guidance Ring"
 			}
 		],
-		"sustained:171:loadout": [
+		"sustained:172:loadout": [
 			{
 				"keywordId": "argent-quiver",
 				"start": 21,
@@ -88325,7 +88812,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:172:loadout": [
+		"sustained:173:loadout": [
 			{
 				"keywordId": "supercharged-battery",
 				"start": 0,
@@ -88345,7 +88832,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:173:loadout": [
+		"sustained:174:loadout": [
 			{
 				"keywordId": "triple-tap",
 				"start": 14,
@@ -88371,7 +88858,7 @@
 				"text": "Sniper's Meditation"
 			}
 		],
-		"sustained:174:loadout": [
+		"sustained:175:loadout": [
 			{
 				"keywordId": "overflow",
 				"start": 32,
@@ -88391,7 +88878,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:175:loadout": [
+		"sustained:176:loadout": [
 			{
 				"keywordId": "corrupted-nucleosynthesis",
 				"start": 0,
@@ -88399,7 +88886,7 @@
 				"text": "Corrupted Nucleosynthesis"
 			}
 		],
-		"sustained:176:loadout": [
+		"sustained:177:loadout": [
 			{
 				"keywordId": "anticipation",
 				"start": 3,
@@ -88413,7 +88900,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:177:loadout": [
+		"sustained:178:loadout": [
 			{
 				"keywordId": "argent-quiver",
 				"start": 25,
@@ -88421,7 +88908,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:178:loadout": [
+		"sustained:179:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 3,
@@ -88441,7 +88928,7 @@
 				"text": "Mega Kill Clip"
 			}
 		],
-		"sustained:179:loadout": [
+		"sustained:180:loadout": [
 			{
 				"keywordId": "accelerated-coils",
 				"start": 0,
@@ -88461,7 +88948,7 @@
 				"text": "Controlled Burst"
 			}
 		],
-		"sustained:180:loadout": [
+		"sustained:181:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 17,
@@ -88481,7 +88968,7 @@
 				"text": "Fail-Deadly"
 			}
 		],
-		"sustained:181:loadout": [
+		"sustained:182:loadout": [
 			{
 				"keywordId": "argent-quiver",
 				"start": 11,
@@ -88489,7 +88976,7 @@
 				"text": "Argent Quiver"
 			}
 		],
-		"sustained:186:loadout": [
+		"sustained:187:loadout": [
 			{
 				"keywordId": "bolt-charge",
 				"start": 9,
@@ -88503,7 +88990,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:188:loadout": [
+		"sustained:189:loadout": [
 			{
 				"keywordId": "hail-the-storm",
 				"start": 9,
@@ -88511,7 +88998,7 @@
 				"text": "Hail the Storm"
 			}
 		],
-		"sustained:189:loadout": [
+		"sustained:190:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 3,
@@ -88537,7 +89024,7 @@
 				"text": "Target Lock"
 			}
 		],
-		"sustained:190:loadout": [
+		"sustained:191:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 3,
@@ -88557,7 +89044,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:191:loadout": [
+		"sustained:192:loadout": [
 			{
 				"keywordId": "jolted",
 				"start": 20,
@@ -88577,7 +89064,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:192:loadout": [
+		"sustained:193:loadout": [
 			{
 				"keywordId": "ignition",
 				"start": 14,
@@ -88597,7 +89084,7 @@
 				"text": "Burning Ambition"
 			}
 		],
-		"sustained:193:loadout": [
+		"sustained:194:loadout": [
 			{
 				"keywordId": "target-lock",
 				"start": 0,
@@ -88611,7 +89098,7 @@
 				"text": "Taken Ambition"
 			}
 		],
-		"sustained:194:loadout": [
+		"sustained:195:loadout": [
 			{
 				"keywordId": "rewind-rounds",
 				"start": 23,
@@ -88619,7 +89106,7 @@
 				"text": "Rewind Rounds"
 			}
 		],
-		"sustained:196:loadout": [
+		"sustained:197:loadout": [
 			{
 				"keywordId": "property-irreducible",
 				"start": 21,
@@ -88633,7 +89120,7 @@
 				"text": "Transcendent"
 			}
 		],
-		"sustained:197:loadout": [
+		"sustained:198:loadout": [
 			{
 				"keywordId": "composite-propellant",
 				"start": 13,
@@ -88647,7 +89134,7 @@
 				"text": "Argent Ordnance"
 			}
 		],
-		"sustained:198:loadout": [
+		"sustained:199:loadout": [
 			{
 				"keywordId": "fourth-time-s-the-charm",
 				"start": 17,
@@ -88661,7 +89148,7 @@
 				"text": "Target Lock"
 			}
 		],
-		"sustained:199:loadout": [
+		"sustained:200:loadout": [
 			{
 				"keywordId": "reconstruction",
 				"start": 18,
@@ -88681,7 +89168,7 @@
 				"text": "Energy Acceleration"
 			}
 		],
-		"sustained:201:loadout": [
+		"sustained:202:loadout": [
 			{
 				"keywordId": "tactical",
 				"start": 0,
@@ -88701,7 +89188,7 @@
 				"text": "Target Lock"
 			}
 		],
-		"sustained:202:loadout": [
+		"sustained:203:loadout": [
 			{
 				"keywordId": "hunter-s-trace",
 				"start": 21,
@@ -88721,7 +89208,7 @@
 				"text": "Vorpal Weapon"
 			}
 		],
-		"sustained:203:loadout": [
+		"sustained:204:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 3,
@@ -88735,7 +89222,7 @@
 				"text": "Redirection"
 			}
 		],
-		"sustained:204:loadout": [
+		"sustained:205:loadout": [
 			{
 				"keywordId": "spike-grenades",
 				"start": 0,
@@ -88749,7 +89236,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"sustained:209:loadout": [
+		"sustained:210:loadout": [
 			{
 				"keywordId": "hunter-s-trace",
 				"start": 21,
@@ -88769,7 +89256,7 @@
 				"text": "Vorpal Weapon"
 			}
 		],
-		"sustained:210:loadout": [
+		"sustained:211:loadout": [
 			{
 				"keywordId": "calculated-balance-vex-mythoclast-catalyst",
 				"start": 0,
@@ -88783,7 +89270,7 @@
 				"text": "Particle Reconstruction"
 			}
 		],
-		"sustained:211:loadout": [
+		"sustained:212:loadout": [
 			{
 				"keywordId": "lightning-seeker",
 				"start": 13,
@@ -88791,7 +89278,7 @@
 				"text": "Lightning Seeker"
 			}
 		],
-		"sustained:212:loadout": [
+		"sustained:213:loadout": [
 			{
 				"keywordId": "redirection",
 				"start": 3,
@@ -88805,7 +89292,7 @@
 				"text": "Bait and Switch"
 			}
 		],
-		"sustained:213:loadout": [
+		"sustained:214:loadout": [
 			{
 				"keywordId": "backup-mag",
 				"start": 3,
@@ -88819,7 +89306,7 @@
 				"text": "Chaos Reshaped"
 			}
 		],
-		"sustained:214:loadout": [
+		"sustained:215:loadout": [
 			{
 				"keywordId": "target-lock",
 				"start": 0,
@@ -88827,7 +89314,7 @@
 				"text": "Target Lock"
 			}
 		],
-		"sustained:216:loadout": [
+		"sustained:217:loadout": [
 			{
 				"keywordId": "trickle-charge",
 				"start": 36,
@@ -88847,7 +89334,7 @@
 				"text": "Energy Acceleration"
 			}
 		],
-		"sustained:217:loadout": [
+		"sustained:218:loadout": [
 			{
 				"keywordId": "rewind-rounds",
 				"start": 21,
@@ -88855,7 +89342,7 @@
 				"text": "Rewind Rounds"
 			}
 		],
-		"sustained:218:loadout": [
+		"sustained:219:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -88863,7 +89350,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:221:loadout": [
+		"sustained:222:loadout": [
 			{
 				"keywordId": "ravenous-beast",
 				"start": 0,
@@ -88871,7 +89358,7 @@
 				"text": "Ravenous Beast"
 			}
 		],
-		"sustained:223:loadout": [
+		"sustained:224:loadout": [
 			{
 				"keywordId": "paracausal-shot",
 				"start": 17,
@@ -88879,7 +89366,7 @@
 				"text": "Paracausal Shot"
 			}
 		],
-		"sustained:224:loadout": [
+		"sustained:225:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -88887,7 +89374,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:226:loadout": [
+		"sustained:227:loadout": [
 			{
 				"keywordId": "rat-pack",
 				"start": 0,
@@ -88895,7 +89382,7 @@
 				"text": "Rat Pack"
 			}
 		],
-		"sustained:227:loadout": [
+		"sustained:228:loadout": [
 			{
 				"keywordId": "harsh-refraction",
 				"start": 5,
@@ -88903,7 +89390,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:228:loadout": [
+		"sustained:229:loadout": [
 			{
 				"keywordId": "bait-and-switch",
 				"start": 43,
@@ -88911,7 +89398,7 @@
 				"text": "Bait and Switch"
 			}
 		],
-		"sustained:230:loadout": [
+		"sustained:231:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -88919,7 +89406,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:234:loadout": [
+		"sustained:235:loadout": [
 			{
 				"keywordId": "arc-conductor",
 				"start": 0,
@@ -88927,7 +89414,7 @@
 				"text": "Arc Conductor"
 			}
 		],
-		"sustained:237:loadout": [
+		"sustained:238:loadout": [
 			{
 				"keywordId": "ignition",
 				"start": 14,
@@ -88947,7 +89434,7 @@
 				"text": "Burning Ambition"
 			}
 		],
-		"sustained:239:loadout": [
+		"sustained:240:loadout": [
 			{
 				"keywordId": "harsh-refraction",
 				"start": 10,
@@ -88955,7 +89442,7 @@
 				"text": "Harsh Refraction"
 			}
 		],
-		"sustained:241:loadout": [
+		"sustained:242:loadout": [
 			{
 				"keywordId": "vorpal-weapon",
 				"start": 17,
@@ -88963,7 +89450,7 @@
 				"text": "Vorpal Weapon"
 			}
 		],
-		"sustained:242:loadout": [
+		"sustained:243:loadout": [
 			{
 				"keywordId": "bolt-charge",
 				"start": 14,
@@ -88977,7 +89464,7 @@
 				"text": "Flashover"
 			}
 		],
-		"sustained:243:loadout": [
+		"sustained:244:loadout": [
 			{
 				"keywordId": "consul-s-pitch",
 				"start": 0,
@@ -88991,7 +89478,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:246:loadout": [
+		"sustained:247:loadout": [
 			{
 				"keywordId": "thread-of-evolution",
 				"start": 24,
@@ -88999,7 +89486,7 @@
 				"text": "Thread of Evolution"
 			}
 		],
-		"sustained:248:loadout": [
+		"sustained:249:loadout": [
 			{
 				"keywordId": "elemental-honing",
 				"start": 0,
@@ -89007,7 +89494,7 @@
 				"text": "Elemental Honing"
 			}
 		],
-		"sustained:249:loadout": [
+		"sustained:250:loadout": [
 			{
 				"keywordId": "bolt-charge",
 				"start": 14,
@@ -89015,7 +89502,7 @@
 				"text": "Bolt Charge"
 			}
 		],
-		"sustained:250:loadout": [
+		"sustained:251:loadout": [
 			{
 				"keywordId": "ember-of-ashes",
 				"start": 0,
@@ -89023,7 +89510,7 @@
 				"text": "Ember of Ashes"
 			}
 		],
-		"sustained:253:loadout": [
+		"sustained:254:loadout": [
 			{
 				"keywordId": "amplified",
 				"start": 0,
@@ -89037,7 +89524,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"sustained:254:loadout": [
+		"sustained:255:loadout": [
 			{
 				"keywordId": "spark-of-frequency",
 				"start": 0,
@@ -89051,7 +89538,7 @@
 				"text": "Bolt Charge"
 			}
 		],
-		"sustained:255:loadout": [
+		"sustained:256:loadout": [
 			{
 				"keywordId": "argent-blade",
 				"start": 16,
@@ -89059,7 +89546,7 @@
 				"text": "Argent Blade"
 			}
 		],
-		"sustained:256:loadout": [
+		"sustained:257:loadout": [
 			{
 				"keywordId": "facet-of-courage",
 				"start": 0,
@@ -89067,7 +89554,7 @@
 				"text": "Facet of Courage"
 			}
 		],
-		"sustained:259:loadout": [
+		"sustained:260:loadout": [
 			{
 				"keywordId": "improved-unraveling",
 				"start": 14,

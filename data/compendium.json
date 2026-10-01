@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-09-22T22:41:08.107Z",
+	"generatedAt": "2026-10-01T11:45:05.228Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -77363,7 +77363,7 @@
 				"column": 5
 			},
 			"title": "Dielectric",
-			"description": "On Arc-Debuffed Enemy Kill:\n\nGrants x1 Bolt Charge.\n\nUpon scoring 3 Arc-Debuffed Enemy Kills within 6 seconds of each:\nSpawns an Orb of Power that grants 7.15% Super Energy.\nRestores 40 HP.",
+			"description": "On Arc-Debuffed Enemy Kill:\nGrants x1 Bolt Charge.\n\nUpon scoring 3 Arc-Debuffed Enemy Kills within 6 seconds of each:\nSpawns an Orb of Power that grants 7.15% Super Energy.\nRestores 40 HP.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -77372,7 +77372,7 @@
 						"column": 4
 					},
 					"start": 0,
-					"length": 189
+					"length": 188
 				}
 			],
 			"officialDescription": "Defeating 0 Arc debuffed targets grants Bolt Charge.\n\nRapidly defeating Arc debuffed targets spawns an Orb of Power and heals a small portion of health.",
@@ -77403,50 +77403,50 @@
 					"color": "rgb(118, 165, 175)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:10:4:36:36",
-					"start": 36,
-					"end": 39,
+					"keywordId": "sheet-color:Artifact Perks:10:4:35:35",
+					"start": 35,
+					"end": 38,
 					"text": "x1 ",
 					"color": "rgb(137, 205, 209)"
 				},
 				{
 					"keywordId": "bolt-charge",
-					"start": 39,
-					"end": 50,
+					"start": 38,
+					"end": 49,
 					"text": "Bolt Charge"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:10:4:66:66",
-					"start": 66,
-					"end": 93,
+					"keywordId": "sheet-color:Artifact Perks:10:4:65:65",
+					"start": 65,
+					"end": 92,
 					"text": "3 Arc-Debuffed Enemy Kills ",
 					"color": "rgb(118, 165, 175)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:10:4:129:129",
-					"start": 129,
-					"end": 141,
+					"keywordId": "sheet-color:Artifact Perks:10:4:128:128",
+					"start": 128,
+					"end": 140,
 					"text": "Orb of Power",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:10:4:154:154",
-					"start": 154,
-					"end": 160,
+					"keywordId": "sheet-color:Artifact Perks:10:4:153:153",
+					"start": 153,
+					"end": 159,
 					"text": "7.15% ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 160,
-					"end": 172,
+					"start": 159,
+					"end": 171,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:10:4:174:174",
-					"start": 174,
-					"end": 189,
+					"keywordId": "sheet-color:Artifact Perks:10:4:173:173",
+					"start": 173,
+					"end": 188,
 					"text": "Restores 40 HP.",
 					"color": "rgb(221, 126, 107)"
 				}
@@ -79547,7 +79547,7 @@
 				"column": 5
 			},
 			"title": "Precision Equity",
-			"description": "Precision Kills grant stacks of Precision Equity, up to 10 stacks.\nRank-and-File = 1 | Elite = 2 | Miniboss = 5 | Champion+ = 10\nDoes not overflow or retains stacks past x10.\n\nUpon reaching x10 stacks:\nConsumes all stacks to spawn a MASSIVE Orb of Power.\nGlobe of Power grants 12.5% Super Energy.\n\nOn FIRMAMENT OF POWER PICKUP:\nWeapon Surge x2 for 11 seconds.\nDoes not overwrite stronger Weapon Surges.\nWorks for all damage types.",
+			"description": "Precision Kills grant stacks of Precision Equity, up to 10 stacks.\nRank-and-File = 1 | Elite = 2 | Miniboss = 5 | Champion+ = 10\nDoes not overflow or retains stacks past x10.\n\nUpon reaching x10 stacks:\nConsumes all stacks to spawn a MASSIVE Orb of Power.\nGlobe of Power grants 12.5% Super Energy.\n\nOn GIGA ORB OF POWER PICKUP:\nWeapon Surge x2 for 11 seconds.\nDoes not overwrite stronger Weapon Surges.\nWorks for all damage types.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -79556,7 +79556,7 @@
 						"column": 4
 					},
 					"start": 0,
-					"length": 430
+					"length": 429
 				}
 			],
 			"officialDescription": "Precision final blows build progress towards a large Orb of Power that also grants bonus weapon damage on pickup. Higher ranked targets grant more progress.",
@@ -79729,14 +79729,14 @@
 				{
 					"keywordId": "sheet-color:Artifact Perks:28:4:301:301",
 					"start": 301,
-					"end": 326,
-					"text": "FIRMAMENT OF POWER PICKUP",
+					"end": 325,
+					"text": "GIGA ORB OF POWER PICKUP",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:28:4:328:328",
-					"start": 328,
-					"end": 343,
+					"keywordId": "sheet-color:Artifact Perks:28:4:327:327",
+					"start": 327,
+					"end": 342,
 					"text": "Weapon Surge x2",
 					"color": "rgb(213, 166, 189)"
 				}
@@ -89864,7 +89864,7 @@
 					"start": 96,
 					"end": 98,
 					"text": ":\n",
-					"color": "rgb(164, 129, 225)"
+					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "charge-rate",
@@ -95901,7 +95901,7 @@
 				"column": 8
 			},
 			"title": "Squad Goals",
-			"description": "On Finisher while affected by the Super-Matching Elemental Buff:\n\nAllies within ? metres are bestowed the Subclass-Specific Buff. \n\nSubclass Specific Buff:\nArc: Amplified | Void: Devour | Strand: Woven Mail",
+			"description": "On Finisher:\nAllies within ? metres are bestowed an Elemental Buff:\n\nWhile Amplified is active: Amplified for 15 seconds.\nWhile Devour is active: Devour for 5 seconds.\nWhile Woven Mail is active: Woven Mail for 10 seconds.\n\nCan only bestow 1 buff to Allies, prioritized from top to bottom.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -95910,7 +95910,7 @@
 						"column": 7
 					},
 					"start": 0,
-					"length": 206
+					"length": 289
 				}
 			],
 			"officialDescription": "Performing a finisher while you are amplified grants Amplified to nearby allies.\n\nPerforming a finisher while you have Woven Mail grants Woven Mail to nearby allies.\n\nPerforming a finisher while you have Devour grants Devour to nearby allies.",
@@ -95930,132 +95930,129 @@
 				{
 					"keywordId": "sheet-color:Artifact Perks:163:7:3:3",
 					"start": 3,
-					"end": 12,
-					"text": "Finisher ",
+					"end": 11,
+					"text": "Finisher",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "pattern:text-energy-super",
-					"start": 34,
-					"end": 39,
-					"text": "Super",
-					"colorClass": "text-energy-super"
-				},
-				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:34:39",
-					"start": 39,
-					"end": 48,
-					"text": "-Matching",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:49:49",
-					"start": 49,
-					"end": 63,
-					"text": "Elemental Buff",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:66:66",
-					"start": 66,
-					"end": 73,
+					"keywordId": "sheet-color:Artifact Perks:163:7:13:13",
+					"start": 13,
+					"end": 20,
 					"text": "Allies ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:106:106",
-					"start": 106,
-					"end": 128,
-					"text": "Subclass-Specific Buff",
+					"keywordId": "sheet-color:Artifact Perks:163:7:40:40",
+					"start": 40,
+					"end": 49,
+					"text": "bestowed ",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:163:7:52:52",
+					"start": 52,
+					"end": 66,
+					"text": "Elemental Buff",
 					"color": "rgb(213, 166, 189)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:132:132",
-					"start": 132,
-					"end": 156,
-					"text": "Subclass Specific Buff:\n",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:156:156",
-					"start": 156,
-					"end": 161,
-					"text": "Arc: ",
+					"keywordId": "sheet-color:Artifact Perks:163:7:69:69",
+					"start": 69,
+					"end": 75,
+					"text": "While ",
 					"color": "rgb(137, 205, 209)"
 				},
 				{
 					"keywordId": "amplified",
-					"start": 161,
-					"end": 170,
+					"start": 75,
+					"end": 84,
 					"text": "Amplified"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:170:170",
-					"start": 170,
-					"end": 171,
-					"text": " ",
-					"color": "rgb(121, 190, 195)"
+					"keywordId": "sheet-color:Artifact Perks:163:7:69:84",
+					"start": 84,
+					"end": 95,
+					"text": " is active:",
+					"color": "rgb(137, 205, 209)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:172:172",
-					"start": 172,
-					"end": 173,
-					"text": " ",
-					"color": "rgb(121, 190, 195)"
+					"keywordId": "amplified",
+					"start": 96,
+					"end": 105,
+					"text": "Amplified"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:173:173",
-					"start": 173,
-					"end": 178,
-					"text": "Void:",
-					"color": "rgb(187, 165, 243)"
+					"keywordId": "sheet-color:Artifact Perks:163:7:96:105",
+					"start": 105,
+					"end": 106,
+					"text": " ",
+					"color": "rgb(137, 205, 209)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:178:178",
-					"start": 178,
-					"end": 179,
-					"text": " ",
-					"color": "rgb(121, 190, 195)"
+					"keywordId": "sheet-color:Artifact Perks:163:7:122:122",
+					"start": 122,
+					"end": 128,
+					"text": "While ",
+					"color": "rgb(142, 124, 195)"
 				},
 				{
 					"keywordId": "devour",
-					"start": 179,
-					"end": 185,
+					"start": 128,
+					"end": 134,
 					"text": "Devour"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:179:185",
-					"start": 185,
-					"end": 186,
+					"keywordId": "sheet-color:Artifact Perks:163:7:122:134",
+					"start": 134,
+					"end": 146,
+					"text": " is active: ",
+					"color": "rgb(142, 124, 195)"
+				},
+				{
+					"keywordId": "devour",
+					"start": 146,
+					"end": 152,
+					"text": "Devour"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:163:7:122:152",
+					"start": 152,
+					"end": 153,
 					"text": " ",
 					"color": "rgb(142, 124, 195)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:187:187",
-					"start": 187,
-					"end": 188,
-					"text": " ",
-					"color": "rgb(142, 124, 195)"
+					"keywordId": "sheet-color:Artifact Perks:163:7:168:168",
+					"start": 168,
+					"end": 174,
+					"text": "While ",
+					"color": "rgb(147, 196, 125)"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:188:188",
-					"start": 188,
-					"end": 195,
-					"text": "Strand:",
-					"color": "rgb(99, 210, 117)"
+					"keywordId": "woven-mail",
+					"start": 174,
+					"end": 184,
+					"text": "Woven Mail"
 				},
 				{
-					"keywordId": "sheet-color:Artifact Perks:163:7:195:195",
-					"start": 195,
+					"keywordId": "sheet-color:Artifact Perks:163:7:168:184",
+					"start": 184,
 					"end": 196,
-					"text": " ",
-					"color": "rgb(142, 124, 195)"
+					"text": " is active: ",
+					"color": "rgb(147, 196, 125)"
 				},
 				{
 					"keywordId": "woven-mail",
 					"start": 196,
 					"end": 206,
 					"text": "Woven Mail"
+				},
+				{
+					"keywordId": "sheet-color:Artifact Perks:163:7:224:224",
+					"start": 224,
+					"end": 289,
+					"text": "Can only bestow 1 buff to Allies, prioritized from top to bottom.",
+					"color": "rgb(224, 102, 102)"
 				}
 			],
 			"officialAnnotations": [
@@ -173684,7 +173681,7 @@
 				"column": 1
 			},
 			"title": "Threadling",
-			"description": "Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nThreadlings are individually released upon dealing weapon damage or scoring a Melee Hit, with a 0.5 second cooldown between releases. \nThreadlings released this way will track at any range.",
+			"description": "Strand minions that chase enemies within 20? metres, leaping towards the targeted enemy upon being within ? metres.\n\nThreadlings explode on contact or after leaping, dealing up to 366 [35] damage in a small radius.\nThreadlings that lose their target before impact will land and look for another combatant instead of exploding.\nThreadlings count as damage from the source they were spawned, but will lose that inheritance if they perch.\n\nWarlock Interaction:\nThreadlings return after travelling 14 metres if they do not start chasing an enemy, remaining perched on the Warlock, up to a maximum of 5 Threadlings. \nReleases a Threadling upon dealing weapon damage or scoring a Powered Melee Hit, with a 0.5 second cooldown between releases. Instantly killing an enemy won't release Threadlings.\nThreadlings released this way will track at any range.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -173693,7 +173690,7 @@
 						"column": 3
 					},
 					"start": 0,
-					"length": 801
+					"length": 846
 				}
 			],
 			"officialDescription": "A creature woven from pure Strand matter that seeks nearby targets and attacks, dealing damage.",
@@ -173833,41 +173830,54 @@
 				},
 				{
 					"keywordId": "threadling",
-					"start": 612,
-					"end": 623,
-					"text": "Threadlings"
+					"start": 623,
+					"end": 633,
+					"text": "Threadling"
 				},
 				{
-					"keywordId": "sheet-color:Strand:7:3:612:623",
-					"start": 623,
-					"end": 624,
-					"text": " ",
-					"color": "rgb(182, 215, 168)"
+					"keywordId": "sheet-color:Strand:7:3:674:674",
+					"start": 674,
+					"end": 682,
+					"text": "Powered ",
+					"color": "rgb(121, 190, 195)"
 				},
 				{
 					"keywordId": "pattern:text-energy-melee",
-					"start": 690,
-					"end": 695,
+					"start": 682,
+					"end": 687,
 					"text": "Melee",
 					"colorClass": "text-energy-melee"
 				},
 				{
-					"keywordId": "sheet-color:Strand:7:3:690:695",
-					"start": 695,
-					"end": 699,
+					"keywordId": "sheet-color:Strand:7:3:674:687",
+					"start": 687,
+					"end": 691,
 					"text": " Hit",
 					"color": "rgb(121, 190, 195)"
 				},
 				{
+					"keywordId": "sheet-color:Strand:7:3:700:700",
+					"start": 700,
+					"end": 736,
+					"text": "0.5 second cooldown between releases",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
 					"keywordId": "threadling",
-					"start": 747,
-					"end": 758,
+					"start": 779,
+					"end": 790,
 					"text": "Threadlings"
 				},
 				{
-					"keywordId": "sheet-color:Strand:7:3:747:758",
-					"start": 758,
-					"end": 759,
+					"keywordId": "threadling",
+					"start": 792,
+					"end": 803,
+					"text": "Threadlings"
+				},
+				{
+					"keywordId": "sheet-color:Strand:7:3:792:803",
+					"start": 803,
+					"end": 804,
 					"text": " ",
 					"color": "rgb(182, 215, 168)"
 				}
@@ -209334,7 +209344,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "While at Full Health | Upon scoring a kill, or upon being not receiving damage for 4.5 [15] seconds:\nGrants 6.6 [1.1] Void Overshield HP per second until taking damage again.\nContinuously refreshes Overshield duration.\n\nWhile any kind of Overshield is active:\n+25 Stability, +25? Handling, and -5% Accuracy Cone Size.\nWeapons receive 15% increased damage against Combatants.\nHeat Weapons are instead granted 20% increased damage against Combatants. \n\nScoring a kill while an Overshield is active prepares Hasty Escape.\nHasty Escape grants +30? Mobility for 5 seconds when Overshield is depleted.",
+					"text": "While at Full Health | Upon scoring a kill, or upon being not receiving damage for 4.5 [15] seconds:\nGrants 6.6 [1.1] Void Overshield HP per second until taking damage again.\nContinuously refreshes Overshield duration.\n\nWhile any kind of Overshield is active:\n+25 Stability, +25? Handling, and -5% Accuracy Cone Size.\nWeapons receive 15% increased damage against Combatants.\nHeat Weapons are instead granted 20% increased damage against Combatants.\nDamage buff stacks with everything.\n\nScoring a kill while an Overshield is active prepares Hasty Escape.\nHasty Escape grants +30? Mobility for 5 seconds when Overshield is depleted.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -209343,7 +209353,7 @@
 								"column": 2
 							},
 							"start": 0,
-							"length": 595
+							"length": 630
 						}
 					],
 					"annotations": [
@@ -209464,42 +209474,56 @@
 							"color": "rgb(164, 194, 244)"
 						},
 						{
-							"keywordId": "overshield",
-							"start": 475,
+							"keywordId": "sheet-color:Exotic Armors:33:2:449:449",
+							"start": 449,
+							"end": 484,
+							"text": "Damage buff stacks with everything.",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:33:2:484:484",
+							"start": 484,
 							"end": 485,
+							"text": "\n",
+							"color": "rgb(164, 194, 244)"
+						},
+						{
+							"keywordId": "overshield",
+							"start": 510,
+							"end": 520,
 							"text": "Overshield"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:33:2:475:485",
-							"start": 485,
-							"end": 486,
+							"keywordId": "sheet-color:Exotic Armors:33:2:510:520",
+							"start": 520,
+							"end": 521,
 							"text": " ",
 							"color": "rgb(213, 166, 189)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:33:2:505:505",
-							"start": 505,
-							"end": 517,
+							"keywordId": "sheet-color:Exotic Armors:33:2:540:540",
+							"start": 540,
+							"end": 552,
 							"text": "Hasty Escape",
 							"color": "rgb(230, 184, 175)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:33:2:519:519",
-							"start": 519,
-							"end": 531,
+							"keywordId": "sheet-color:Exotic Armors:33:2:554:554",
+							"start": 554,
+							"end": 566,
 							"text": "Hasty Escape",
 							"color": "rgb(230, 184, 175)"
 						},
 						{
 							"keywordId": "overshield",
-							"start": 572,
-							"end": 582,
+							"start": 607,
+							"end": 617,
 							"text": "Overshield"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:33:2:572:582",
-							"start": 582,
-							"end": 583,
+							"keywordId": "sheet-color:Exotic Armors:33:2:607:617",
+							"start": 617,
+							"end": 618,
 							"text": " ",
 							"color": "rgb(213, 166, 189)"
 						}
@@ -215715,7 +215739,7 @@
 				"column": 0
 			},
 			"title": "See Me, Feel Me",
-			"description": "Grants 0 Volatile Rounds for 9 [PVP: 3] seconds upon exiting 1 Void Invisibility, making hits with Void Weapons apply 2 Volatile.\n\nOn Finishers while affected by 3 Void Invisibility:\n• Grants a 35% Weapon Damage Buff for 6 seconds\n• Grants you and allies within 24 meters the Reserve Overshield buff\n\nReserve Overshield:\n• Grants 500% Additional Base Class Ability Regeneration Rate\n• Consumed on Class Ability usage, granting the user a 40 HP 4 Void Overshield for 10 seconds\n\n(Letting the timer run out with Echo of Persistence equipped will not grant you 5 Volatile Rounds. 6 Volatile explosions do not count as damage originating from your weapon.)",
+			"description": "Grants 0 Volatile Rounds for 9 [PVP: 3] seconds upon exiting 1 Void Invisibility, making hits with Void Weapons apply 2 Volatile.\n\nOn Finishers while affected by 3 Void Invisibility:\n• Grants a 35% Weapon Damage Empowering Buff for 6 seconds\n• Grants you and allies within 24 meters the Reserve Overshield buff\n\nReserve Overshield:\n• Grants 500% Additional Base Class Ability Regeneration Rate\n• Consumed on Class Ability usage, granting the user a 40 HP 4 Void Overshield for 10 seconds\n\n(Letting the timer run out with Echo of Persistence equipped will not grant you 5 Volatile Rounds. 6 Volatile explosions do not count as damage originating from your weapon.)",
 			"officialDescription": "Your Void weapons gain Volatile Rounds after you emerge from being invisible. When you are invisible and defeat a combatant while using a finisher, all of your weapons gain bonus damage; you and your nearby allies gain a reserve overshield and improved class ability regeneration. These reserve overshields can be deployed by using a class ability.",
 			"extraInfo": "Item: Gyrfalcon's Hauberk",
 			"kind": "exotic_item_perk",
@@ -215728,7 +215752,7 @@
 					"itemHash": 461841403,
 					"itemName": "Gyrfalcon's Hauberk",
 					"type": "Armor Trait Exotic",
-					"updatedAt": 1739032704660
+					"updatedAt": 1790520032471
 				},
 				{
 					"sourceId": "ddc",
@@ -215776,7 +215800,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "Upon Void Invisibility ending:\nVolatile Rounds for 9 [3] seconds.\n\nUpon performing a Finisher while affected by Void Invisibility:\n35% increased damage for 6 seconds.\nThe user and their allies within 24 metres receive a Reserve Overshield \n\nReserve Overshield:\n500% Additional Base Class Ability Regeneration Rate until Class Ability Usage.\nConsumed on Class Ability Usage, granting a 40 HP Void Overshield for 10 seconds.",
+					"text": "Upon Void Invisibility ending:\nVolatile Rounds for 9 [3] seconds.\n\nUpon performing a Finisher while affected by Void Invisibility:\n35% increased damage for 6 seconds. Doesn't stack with Empowering Buffs.\nThe user and their allies within 24 metres receive a Reserve Overshield \n\nReserve Overshield:\n500% Additional Base Class Ability Regeneration Rate until Class Ability Usage.\nConsumed on Class Ability Usage, granting a 40 HP Void Overshield for 10 seconds.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -215785,7 +215809,7 @@
 								"column": 2
 							},
 							"start": 0,
-							"length": 422
+							"length": 459
 						}
 					],
 					"annotations": [
@@ -215857,112 +215881,126 @@
 							"text": "Invisibility"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:171:171",
-							"start": 171,
-							"end": 176,
+							"keywordId": "sheet-color:Exotic Armors:51:2:167:167",
+							"start": 167,
+							"end": 203,
+							"text": "Doesn't stack with Empowering Buffs.",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:2:203:203",
+							"start": 203,
+							"end": 204,
+							"text": "\n",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:51:2:208:208",
+							"start": 208,
+							"end": 213,
 							"text": "user ",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:186:186",
-							"start": 186,
-							"end": 193,
+							"keywordId": "sheet-color:Exotic Armors:51:2:223:223",
+							"start": 223,
+							"end": 230,
 							"text": "allies ",
 							"color": "rgb(164, 194, 244)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:220:220",
-							"start": 220,
-							"end": 228,
+							"keywordId": "sheet-color:Exotic Armors:51:2:257:257",
+							"start": 257,
+							"end": 265,
 							"text": "Reserve ",
 							"color": "rgb(213, 166, 189)"
 						},
 						{
 							"keywordId": "overshield",
-							"start": 228,
-							"end": 238,
+							"start": 265,
+							"end": 275,
 							"text": "Overshield"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:241:241",
-							"start": 241,
-							"end": 249,
+							"keywordId": "sheet-color:Exotic Armors:51:2:278:278",
+							"start": 278,
+							"end": 286,
 							"text": "Reserve ",
 							"color": "rgb(213, 166, 189)"
 						},
 						{
 							"keywordId": "overshield",
-							"start": 249,
-							"end": 259,
+							"start": 286,
+							"end": 296,
 							"text": "Overshield"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:241:259",
-							"start": 259,
-							"end": 261,
+							"keywordId": "sheet-color:Exotic Armors:51:2:278:296",
+							"start": 296,
+							"end": 298,
 							"text": ":\n",
 							"color": "rgb(213, 166, 189)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:261:261",
-							"start": 261,
-							"end": 282,
+							"keywordId": "sheet-color:Exotic Armors:51:2:298:298",
+							"start": 298,
+							"end": 319,
 							"text": "500% Additional Base ",
 							"color": "rgb(180, 167, 214)"
 						},
 						{
 							"keywordId": "pattern:text-energy-class",
-							"start": 282,
-							"end": 295,
+							"start": 319,
+							"end": 332,
 							"text": "Class Ability",
 							"colorClass": "text-energy-class"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:261:295",
-							"start": 295,
-							"end": 313,
+							"keywordId": "sheet-color:Exotic Armors:51:2:298:332",
+							"start": 332,
+							"end": 350,
 							"text": " Regeneration Rate",
 							"color": "rgb(180, 167, 214)"
 						},
 						{
 							"keywordId": "pattern:text-energy-class",
-							"start": 320,
-							"end": 333,
+							"start": 357,
+							"end": 370,
 							"text": "Class Ability",
 							"colorClass": "text-energy-class"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:320:333",
-							"start": 333,
-							"end": 340,
+							"keywordId": "sheet-color:Exotic Armors:51:2:357:370",
+							"start": 370,
+							"end": 377,
 							"text": " Usage.",
 							"color": "rgb(180, 167, 214)"
 						},
 						{
 							"keywordId": "pattern:text-energy-class",
-							"start": 353,
-							"end": 366,
+							"start": 390,
+							"end": 403,
 							"text": "Class Ability",
 							"colorClass": "text-energy-class"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:353:366",
-							"start": 366,
-							"end": 372,
+							"keywordId": "sheet-color:Exotic Armors:51:2:390:403",
+							"start": 403,
+							"end": 409,
 							"text": " Usage",
 							"color": "rgb(180, 167, 214)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:51:2:385:385",
-							"start": 385,
-							"end": 396,
+							"keywordId": "sheet-color:Exotic Armors:51:2:422:422",
+							"start": 422,
+							"end": 433,
 							"text": "40 HP Void ",
 							"color": "rgb(213, 166, 189)"
 						},
 						{
 							"keywordId": "overshield",
-							"start": 396,
-							"end": 406,
+							"start": 433,
+							"end": 443,
 							"text": "Overshield"
 						}
 					]
@@ -216009,52 +216047,52 @@
 				},
 				{
 					"keywordId": "overshield",
-					"start": 292,
-					"end": 302,
+					"start": 303,
+					"end": 313,
 					"text": "Overshield"
 				},
 				{
 					"keywordId": "overshield",
-					"start": 317,
-					"end": 327,
+					"start": 328,
+					"end": 338,
 					"text": "Overshield"
 				},
 				{
 					"keywordId": "pattern:text-energy-class",
-					"start": 359,
-					"end": 372,
+					"start": 370,
+					"end": 383,
 					"text": "Class Ability",
 					"colorClass": "text-energy-class"
 				},
 				{
 					"keywordId": "pattern:text-energy-class",
-					"start": 405,
-					"end": 418,
+					"start": 416,
+					"end": 429,
 					"text": "Class Ability",
 					"colorClass": "text-energy-class"
 				},
 				{
 					"keywordId": "overshield",
-					"start": 461,
-					"end": 471,
+					"start": 472,
+					"end": 482,
 					"text": "Overshield"
 				},
 				{
 					"keywordId": "echo-of-persistence",
-					"start": 520,
-					"end": 539,
+					"start": 531,
+					"end": 550,
 					"text": "Echo of Persistence"
 				},
 				{
 					"keywordId": "volatile-rounds",
-					"start": 572,
-					"end": 587,
+					"start": 583,
+					"end": 598,
 					"text": "Volatile Rounds"
 				},
 				{
 					"keywordId": "volatile",
-					"start": 593,
-					"end": 601,
+					"start": 604,
+					"end": 612,
 					"text": "Volatile"
 				}
 			],
@@ -246398,7 +246436,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "Melee Kills and Glaive Melee Kills grant a stack of Warlord's Sigil, up to a maximum of 10 stacks.\n Finishers grant 3 Warlord's Sigil stacks. \nWarlord's Sigil stacks decay one at a time. Finishers refresh the stack duration on animation start.\nWarlord's Sigil grants increased Melee Damage for 4.75 seconds per stack.\nx1 = 67.5% | x2 = 122% | x3 = 166% | x4 = 202% | x5 = 228%\nx6 = 249% | x7 = 265% | x8 = 278% | x9 = 289% | x10 = 300%\n\nUpon reaching or refreshing x10 Warlord's Sigil:\nGain a Melee Ability Charge.\n Grants Warlord's Fury Ready for 8 seconds and cannot be refreshed by Finishers.\nNot triggering Warlord's Fury will return the buff to Warlord's Sigil x10.\n\nOn Melee/Glaive Melee Usage while Warlord's Fury Ready is active:\n400% increased Melee Damage, 0.8x Melee Duration, and 38.4x👀 Melee Regeneration Speed for 10 seconds.\nCannot gain Warlord's Sigil while Warlord's Fury is active. Resets Warlord's Sigil to x0 stacks on buff end.",
+					"text": "Melee Kills and Glaive Melee Kills grant a stack of Warlord's Sigil for 4.75 seconds, up to a maximum of 10 stacks.\n Finishers grant 3 Warlord's Sigil stacks. Scorch DoT Kills do not grant stacks.\nWarlord's Sigil stacks decay one at a time. Finishers refresh the stack duration on animation start.\n\nWarlord's Sigil grants increased Melee Damage per stack.\nx1 = 67.5% | x2 = 122% | x3 = 166% | x4 = 202% | x5 = 228%\nx6 = 249% | x7 = 265% | x8 = 278% | x9 = 289% | x10 = 300%\n\nUpon reaching or refreshing x10 Warlord's Sigil:\nGain a Melee Ability Charge.\n Grants Warlord's Fury Ready for 8 seconds and cannot be refreshed by Finishers.\nNot triggering Warlord's Fury will return the buff to Warlord's Sigil x10.\n\nOn Melee/Glaive Melee Usage while Warlord's Fury Ready is active:\n400% increased Melee Damage, 0.8x Melee Duration, and 38.4x👀 Melee Regeneration Speed for 10 seconds.\nCannot gain Warlord's Sigil while Warlord's Fury is active. Resets Warlord's Sigil to x0 stacks on buff end.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -246407,7 +246445,7 @@
 								"column": 8
 							},
 							"start": 0,
-							"length": 949
+							"length": 987
 						}
 					],
 					"annotations": [
@@ -246460,450 +246498,463 @@
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:88:88",
-							"start": 88,
-							"end": 97,
+							"keywordId": "sheet-color:Exotic Armors:135:8:105:105",
+							"start": 105,
+							"end": 114,
 							"text": "10 stacks",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:100:100",
-							"start": 100,
-							"end": 110,
+							"keywordId": "sheet-color:Exotic Armors:135:8:117:117",
+							"start": 117,
+							"end": 127,
 							"text": "Finishers ",
 							"color": "rgb(164, 194, 244)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:116:116",
-							"start": 116,
-							"end": 118,
+							"keywordId": "sheet-color:Exotic Armors:135:8:133:133",
+							"start": 133,
+							"end": 135,
 							"text": "3 ",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
 							"keywordId": "warlord-s-sigil",
-							"start": 118,
-							"end": 133,
+							"start": 135,
+							"end": 150,
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:116:133",
-							"start": 133,
-							"end": 140,
+							"keywordId": "sheet-color:Exotic Armors:135:8:133:150",
+							"start": 150,
+							"end": 157,
 							"text": " stacks",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
+							"keywordId": "scorch",
+							"start": 159,
+							"end": 165,
+							"text": "Scorch"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:135:8:159:165",
+							"start": 165,
+							"end": 197,
+							"text": " DoT Kills do not grant stacks.\n",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
 							"keywordId": "warlord-s-sigil",
-							"start": 143,
-							"end": 158,
+							"start": 197,
+							"end": 212,
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:143:158",
-							"start": 158,
-							"end": 166,
+							"keywordId": "sheet-color:Exotic Armors:135:8:197:212",
+							"start": 212,
+							"end": 220,
 							"text": " stacks ",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:187:187",
-							"start": 187,
-							"end": 197,
+							"keywordId": "sheet-color:Exotic Armors:135:8:241:241",
+							"start": 241,
+							"end": 251,
 							"text": "Finishers ",
 							"color": "rgb(164, 194, 244)"
 						},
 						{
 							"keywordId": "warlord-s-sigil",
-							"start": 244,
-							"end": 259,
+							"start": 299,
+							"end": 314,
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:267:267",
-							"start": 267,
-							"end": 277,
+							"keywordId": "sheet-color:Exotic Armors:135:8:322:322",
+							"start": 322,
+							"end": 332,
 							"text": "increased ",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 277,
-							"end": 282,
+							"start": 332,
+							"end": 337,
 							"text": "Melee",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:267:282",
-							"start": 282,
-							"end": 289,
+							"keywordId": "sheet-color:Exotic Armors:135:8:322:337",
+							"start": 337,
+							"end": 344,
 							"text": " Damage",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:311:311",
-							"start": 311,
-							"end": 316,
+							"keywordId": "sheet-color:Exotic Armors:135:8:349:349",
+							"start": 349,
+							"end": 354,
 							"text": "stack",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:318:318",
-							"start": 318,
-							"end": 320,
+							"keywordId": "sheet-color:Exotic Armors:135:8:356:356",
+							"start": 356,
+							"end": 358,
 							"text": "x1",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:323:323",
-							"start": 323,
-							"end": 328,
+							"keywordId": "sheet-color:Exotic Armors:135:8:361:361",
+							"start": 361,
+							"end": 366,
 							"text": "67.5%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:331:331",
-							"start": 331,
-							"end": 333,
+							"keywordId": "sheet-color:Exotic Armors:135:8:369:369",
+							"start": 369,
+							"end": 371,
 							"text": "x2",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:336:336",
-							"start": 336,
-							"end": 340,
+							"keywordId": "sheet-color:Exotic Armors:135:8:374:374",
+							"start": 374,
+							"end": 378,
 							"text": "122%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:343:343",
-							"start": 343,
-							"end": 345,
+							"keywordId": "sheet-color:Exotic Armors:135:8:381:381",
+							"start": 381,
+							"end": 383,
 							"text": "x3",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:348:348",
-							"start": 348,
-							"end": 352,
+							"keywordId": "sheet-color:Exotic Armors:135:8:386:386",
+							"start": 386,
+							"end": 390,
 							"text": "166%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:355:355",
-							"start": 355,
-							"end": 357,
+							"keywordId": "sheet-color:Exotic Armors:135:8:393:393",
+							"start": 393,
+							"end": 395,
 							"text": "x4",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:360:360",
-							"start": 360,
-							"end": 364,
+							"keywordId": "sheet-color:Exotic Armors:135:8:398:398",
+							"start": 398,
+							"end": 402,
 							"text": "202%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:367:367",
-							"start": 367,
-							"end": 369,
+							"keywordId": "sheet-color:Exotic Armors:135:8:405:405",
+							"start": 405,
+							"end": 407,
 							"text": "x5",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:372:372",
-							"start": 372,
-							"end": 376,
+							"keywordId": "sheet-color:Exotic Armors:135:8:410:410",
+							"start": 410,
+							"end": 414,
 							"text": "228%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:377:377",
-							"start": 377,
-							"end": 379,
+							"keywordId": "sheet-color:Exotic Armors:135:8:415:415",
+							"start": 415,
+							"end": 417,
 							"text": "x6",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:382:382",
-							"start": 382,
-							"end": 386,
+							"keywordId": "sheet-color:Exotic Armors:135:8:420:420",
+							"start": 420,
+							"end": 424,
 							"text": "249%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:389:389",
-							"start": 389,
-							"end": 391,
+							"keywordId": "sheet-color:Exotic Armors:135:8:427:427",
+							"start": 427,
+							"end": 429,
 							"text": "x7",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:394:394",
-							"start": 394,
-							"end": 398,
+							"keywordId": "sheet-color:Exotic Armors:135:8:432:432",
+							"start": 432,
+							"end": 436,
 							"text": "265%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:401:401",
-							"start": 401,
-							"end": 403,
+							"keywordId": "sheet-color:Exotic Armors:135:8:439:439",
+							"start": 439,
+							"end": 441,
 							"text": "x8",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:406:406",
-							"start": 406,
-							"end": 410,
+							"keywordId": "sheet-color:Exotic Armors:135:8:444:444",
+							"start": 444,
+							"end": 448,
 							"text": "278%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:413:413",
-							"start": 413,
-							"end": 415,
+							"keywordId": "sheet-color:Exotic Armors:135:8:451:451",
+							"start": 451,
+							"end": 453,
 							"text": "x9",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:418:418",
-							"start": 418,
-							"end": 422,
+							"keywordId": "sheet-color:Exotic Armors:135:8:456:456",
+							"start": 456,
+							"end": 460,
 							"text": "289%",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:425:425",
-							"start": 425,
-							"end": 428,
+							"keywordId": "sheet-color:Exotic Armors:135:8:463:463",
+							"start": 463,
+							"end": 466,
 							"text": "x10",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:431:431",
-							"start": 431,
-							"end": 437,
+							"keywordId": "sheet-color:Exotic Armors:135:8:469:469",
+							"start": 469,
+							"end": 475,
 							"text": "300%\n\n",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:465:465",
-							"start": 465,
-							"end": 469,
+							"keywordId": "sheet-color:Exotic Armors:135:8:503:503",
+							"start": 503,
+							"end": 507,
 							"text": "x10 ",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
 							"keywordId": "warlord-s-sigil",
-							"start": 469,
-							"end": 484,
+							"start": 507,
+							"end": 522,
 							"text": "Warlord's Sigil"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 493,
-							"end": 506,
+							"start": 531,
+							"end": 544,
 							"text": "Melee Ability",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:493:506",
-							"start": 506,
-							"end": 513,
+							"keywordId": "sheet-color:Exotic Armors:135:8:531:544",
+							"start": 544,
+							"end": 551,
 							"text": " Charge",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:523:523",
-							"start": 523,
-							"end": 543,
+							"keywordId": "sheet-color:Exotic Armors:135:8:561:561",
+							"start": 561,
+							"end": 581,
 							"text": "Warlord's Fury Ready",
 							"color": "rgb(223, 69, 69)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:562:562",
-							"start": 562,
-							"end": 594,
+							"keywordId": "sheet-color:Exotic Armors:135:8:600:600",
+							"start": 600,
+							"end": 632,
 							"text": "cannot be refreshed by Finishers",
 							"color": "rgb(224, 102, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:596:596",
-							"start": 596,
-							"end": 610,
+							"keywordId": "sheet-color:Exotic Armors:135:8:634:634",
+							"start": 634,
+							"end": 648,
 							"text": "Not triggering",
 							"color": "rgb(224, 102, 102)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:611:611",
-							"start": 611,
-							"end": 625,
+							"keywordId": "sheet-color:Exotic Armors:135:8:649:649",
+							"start": 649,
+							"end": 663,
 							"text": "Warlord's Fury",
 							"color": "rgb(223, 69, 69)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:642:642",
-							"start": 642,
-							"end": 647,
+							"keywordId": "sheet-color:Exotic Armors:135:8:680:680",
+							"start": 680,
+							"end": 685,
 							"text": "buff ",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
 							"keywordId": "warlord-s-sigil",
-							"start": 650,
-							"end": 665,
+							"start": 688,
+							"end": 703,
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:650:665",
-							"start": 665,
-							"end": 669,
+							"keywordId": "sheet-color:Exotic Armors:135:8:688:703",
+							"start": 703,
+							"end": 707,
 							"text": " x10",
 							"color": "rgb(255, 217, 102)"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 675,
-							"end": 680,
+							"start": 713,
+							"end": 718,
 							"text": "Melee",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:675:680",
-							"start": 680,
-							"end": 688,
+							"keywordId": "sheet-color:Exotic Armors:135:8:713:718",
+							"start": 718,
+							"end": 726,
 							"text": "/Glaive ",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 688,
-							"end": 693,
+							"start": 726,
+							"end": 731,
 							"text": "Melee",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:675:693",
-							"start": 693,
-							"end": 699,
+							"keywordId": "sheet-color:Exotic Armors:135:8:713:731",
+							"start": 731,
+							"end": 737,
 							"text": " Usage",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:706:706",
-							"start": 706,
-							"end": 726,
+							"keywordId": "sheet-color:Exotic Armors:135:8:744:744",
+							"start": 744,
+							"end": 764,
 							"text": "Warlord's Fury Ready",
 							"color": "rgb(223, 69, 69)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:738:738",
-							"start": 738,
-							"end": 753,
+							"keywordId": "sheet-color:Exotic Armors:135:8:776:776",
+							"start": 776,
+							"end": 791,
 							"text": "400% increased ",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 753,
-							"end": 758,
+							"start": 791,
+							"end": 796,
 							"text": "Melee",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:738:758",
-							"start": 758,
-							"end": 765,
+							"keywordId": "sheet-color:Exotic Armors:135:8:776:796",
+							"start": 796,
+							"end": 803,
 							"text": " Damage",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:767:767",
-							"start": 767,
-							"end": 772,
+							"keywordId": "sheet-color:Exotic Armors:135:8:805:805",
+							"start": 805,
+							"end": 810,
 							"text": "0.8x ",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 772,
-							"end": 777,
+							"start": 810,
+							"end": 815,
 							"text": "Melee",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:767:777",
-							"start": 777,
-							"end": 786,
+							"keywordId": "sheet-color:Exotic Armors:135:8:805:815",
+							"start": 815,
+							"end": 824,
 							"text": " Duration",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:792:792",
-							"start": 792,
-							"end": 797,
+							"keywordId": "sheet-color:Exotic Armors:135:8:830:830",
+							"start": 830,
+							"end": 835,
 							"text": "38.4x",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:797:797",
-							"start": 797,
-							"end": 799,
+							"keywordId": "sheet-color:Exotic Armors:135:8:835:835",
+							"start": 835,
+							"end": 837,
 							"text": "👀",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:799:799",
-							"start": 799,
-							"end": 800,
+							"keywordId": "sheet-color:Exotic Armors:135:8:837:837",
+							"start": 837,
+							"end": 838,
 							"text": " ",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
 							"keywordId": "pattern:text-energy-melee",
-							"start": 800,
-							"end": 805,
+							"start": 838,
+							"end": 843,
 							"text": "Melee",
 							"colorClass": "text-energy-melee"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:799:805",
-							"start": 805,
-							"end": 825,
+							"keywordId": "sheet-color:Exotic Armors:135:8:837:843",
+							"start": 843,
+							"end": 863,
 							"text": " Regeneration Speed ",
 							"color": "rgb(137, 205, 209)"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:841:841",
-							"start": 841,
-							"end": 853,
+							"keywordId": "sheet-color:Exotic Armors:135:8:879:879",
+							"start": 879,
+							"end": 891,
 							"text": "Cannot gain ",
 							"color": "rgb(224, 102, 102)"
 						},
 						{
 							"keywordId": "warlord-s-sigil",
-							"start": 853,
-							"end": 868,
+							"start": 891,
+							"end": 906,
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:841:868",
-							"start": 868,
-							"end": 908,
+							"keywordId": "sheet-color:Exotic Armors:135:8:879:906",
+							"start": 906,
+							"end": 946,
 							"text": " while Warlord's Fury is active. Resets ",
 							"color": "rgb(224, 102, 102)"
 						},
 						{
 							"keywordId": "warlord-s-sigil",
-							"start": 908,
-							"end": 923,
+							"start": 946,
+							"end": 961,
 							"text": "Warlord's Sigil"
 						},
 						{
-							"keywordId": "sheet-color:Exotic Armors:135:8:841:923",
-							"start": 923,
-							"end": 949,
+							"keywordId": "sheet-color:Exotic Armors:135:8:879:961",
+							"start": 961,
+							"end": 987,
 							"text": " to x0 stacks on buff end.",
 							"color": "rgb(224, 102, 102)"
 						}
