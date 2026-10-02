@@ -58,6 +58,13 @@ export const ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES = [
 	"Collecting an Orb of Power causes you to gain 1 temporary Armor Charge.",
 ];
 
+// Raid mods (Vault of Glass, Deep Stone Crypt, etc.) only say which raid they
+// work in and whether copies stack; the actual effect is on the perk in the
+// item's `perks` array, same as the two cases above.
+export const RAID_MOD_BOILERPLATE_PREFIXES = [
+	"This mod's perks are only active in the",
+];
+
 /**
  * Turns a raw Destiny 2 manifest description into the app's description format:
  * bracketed glyph tokens become inline icon markers, everything else stays text.
@@ -116,6 +123,7 @@ export function buildOfficialDescription(params: {
 		[
 			...CATALYST_MASTERWORK_BOILERPLATE_PREFIXES,
 			...ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES,
+			...RAID_MOD_BOILERPLATE_PREFIXES,
 		].some((prefix) => cleaned.startsWith(prefix))
 	)
 		return null;

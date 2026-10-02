@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-10-01T11:45:05.228Z",
+	"generatedAt": "2026-10-02T15:36:49.571Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -107255,7 +107255,7 @@
 					"length": 266
 				}
 			],
-			"officialDescription": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+			"officialDescription": "With the Operator Augment, you gain periodic bursts of healing when your health is depleted.",
 			"kind": "general",
 			"sourceId": "ddc",
 			"sourceRefs": [
@@ -107347,7 +107347,7 @@
 					"length": 273
 				}
 			],
-			"officialDescription": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+			"officialDescription": "With the scanner augment, powerful targets are marked by precision shots and take increased damage for a short period.",
 			"kind": "general",
 			"sourceId": "ddc",
 			"sourceRefs": [
@@ -107473,7 +107473,7 @@
 					"length": 161
 				}
 			],
-			"officialDescription": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+			"officialDescription": "With the Suppressor Augment, you take decreased damage from powerful foes.",
 			"kind": "general",
 			"sourceId": "ddc",
 			"sourceRefs": [

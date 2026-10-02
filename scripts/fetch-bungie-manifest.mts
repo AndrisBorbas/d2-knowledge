@@ -13,6 +13,7 @@ import {
 import {
 	ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES,
 	CATALYST_MASTERWORK_BOILERPLATE_PREFIXES,
+	RAID_MOD_BOILERPLATE_PREFIXES,
 } from "../src/lib/bungie/officialDescription";
 import { PERK_TITLE_ALIASES } from "../src/lib/bungie/perk-title-aliases";
 import {
@@ -538,10 +539,14 @@ function toCompactItemDefinition(
 		ARMOR_CHARGE_MOD_BOILERPLATE_PREFIXES.some((prefix) =>
 			compact.d?.startsWith(prefix),
 		);
+	const isRaidModBoilerplate = RAID_MOD_BOILERPLATE_PREFIXES.some((prefix) =>
+		compact.d?.startsWith(prefix),
+	);
 	const isMissingDescription = !compact.d;
 	if (
 		!isCatalystBoilerplate &&
 		!isArmorChargeModBoilerplate &&
+		!isRaidModBoilerplate &&
 		!isMissingDescription
 	)
 		return compact;

@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-10-01T11:44:58.982Z",
+	"generatedAt": "2026-10-02T15:36:37.009Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -312,7 +312,7 @@
 			"71258198": {
 				"n": "Stoic When Panicked",
 				"i": "/common/destiny2_content/icons/0b2819f1fe807f93801d483d0aabcac5.png",
-				"d": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Gain damage resistance while you are standing on a plate, near a lantern or totem, or while you carry the relic Sword. Multiple copies of this mod stack to increase this benefit."
 			},
 			"73373563": {
 				"n": "Dragon's Vengeance",
@@ -1753,7 +1753,7 @@
 			"399528760": {
 				"n": "Taken Invigoration",
 				"i": "/common/destiny2_content/icons/29335c04ad13aad7f8199a21895b8399.png",
-				"d": "This mod's perks are only active in the \"Last Wish\" raid."
+				"d": "Defeating a challenging Taken combatant refreshes your class ability.\n\nThis mod's abilities cannot stack across multiple copies."
 			},
 			"400096939": {
 				"n": "Outbreak Perfected",
@@ -2098,7 +2098,7 @@
 			"502240622": {
 				"n": "Chomping at the Stem",
 				"i": "/common/destiny2_content/icons/274376e59175f29b950f36a91545113e.png",
-				"d": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "After you have been Drained of Light, gain a bonus to mobility, weapon handling, and reload speed. Multiple copies of this mod stack to increase this benefit."
 			},
 			"505341189": {
 				"n": "Modified Heatsink",
@@ -2155,17 +2155,17 @@
 			"518521232": {
 				"n": "Precise Oracle Disruptor",
 				"i": "/common/destiny2_content/icons/00b5a94da16e7504ab5a560dee97bca3.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Your equipped Bows, Hand Cannons, Linear Fusion Rifles, Scout Rifles, and Sniper Rifles deal additional damage to Oracles in the Vault of Glass."
 			},
 			"518521233": {
 				"n": "Vex Striker",
 				"i": "/common/destiny2_content/icons/789ecb482652c19251f06cfea9eab037.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Defeating a Vex with a precision hit has a chance to spawn an Orb of Power. Multiple copies of this mod increase the Super energy granted when those Orbs are picked up."
 			},
 			"518521234": {
 				"n": "Superstructure Defender",
 				"i": "/common/destiny2_content/icons/0e14b140cf413d89d69f7727d18cb997.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While you are standing on a sync plate or are near a conflux, weapon attacks that hit powerful Vex combatants have a high chance to weaken those combatants."
 			},
 			"521275120": {
 				"n": "Vile Weave",
@@ -2292,7 +2292,7 @@
 			"539051925": {
 				"n": "Chill Out",
 				"i": "/common/destiny2_content/icons/91dce3a21b82ad4550d01bce0d36a788.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod will not improve its effects."
+				"d": "Defeating a combatant with a Stasis weapon spawns a Stasis crystal. Must have a Stasis subclass equipped."
 			},
 			"539564471": {
 				"n": "Lightweight Frame",
@@ -3151,7 +3151,7 @@
 			"817361141": {
 				"n": "Enhanced Operator Augment",
 				"i": "/common/destiny2_content/icons/f6ca8d43b3e71127ab3c5ffe8982f53b.png",
-				"d": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "With the Operator Augment, you gain periodic bursts of healing when your health is depleted."
 			},
 			"818149482": {
 				"n": "Finality's Auger Catalyst",
@@ -3448,7 +3448,7 @@
 			"899058084": {
 				"n": "Stagnant Glyphkeeper",
 				"i": "/common/destiny2_content/icons/569daa973ca4813a81028a093886c5f3.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Damaging a Glyphkeeper with a grenade causes your equipped Bows, Fusion Rifles, Swords, and Trace Rifles to deal additional damage."
 			},
 			"900910756": {
 				"n": "Winter's Guile",
@@ -3965,22 +3965,22 @@
 			"1036972936": {
 				"n": "Cabal Extinguisher",
 				"i": "/common/destiny2_content/icons/5c84b6c3d249558b745dccd7a232986d.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "When an ally gains Flux of Darkness or Field of Light, deal increased weapon damage to Cabal combatants for a short time."
 			},
 			"1036972937": {
 				"n": "Release Recover",
 				"i": "/common/destiny2_content/icons/e6f7ac2b4ce3c0e79363b390c18695c5.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "When you lose Flux of Darkness or Field of Light, begin recovering health."
 			},
 			"1036972938": {
 				"n": "Focused Darkness",
 				"i": "/common/destiny2_content/icons/29e409fd536dd5b286d1cee1fa55c7e1.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "When you have Flux of Darkness, gain increased ability damage and mobility."
 			},
 			"1036972939": {
 				"n": "Focused Light",
 				"i": "/common/destiny2_content/icons/c4443cf64e409f4f9e0b832e13ad91bf.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "When you have Field of Light, gain increased weapon damage and resilience."
 			},
 			"1039115606": {
 				"n": "Orbs of Restoration",
@@ -4229,7 +4229,7 @@
 			"1098978103": {
 				"n": "Distorted Glyphkeeper",
 				"i": "/common/destiny2_content/icons/6359ff3e2b3ecb19a9601788d257ee16.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Damaging a Glyphkeeper with a grenade causes your equipped Auto Rifles, Linear Fusion Rifles, Scout Rifles, and Sniper Rifles to deal additional damage."
 			},
 			"1100877327": {
 				"n": "Exhumation",
@@ -4947,17 +4947,17 @@
 			"1291268261": {
 				"n": "Old Gods' Boon",
 				"i": "/common/destiny2_content/icons/8e04bb7e8289305c7da7fcf23dd65612.png",
-				"d": "This mod's perks are only active in the \"King's Fall\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Gain damage reduction while carrying the King's Fall relic."
 			},
 			"1291268262": {
 				"n": "Run for Your Life",
 				"i": "/common/destiny2_content/icons/e88fdfd672957968ab309e3274bdd398.png",
-				"d": "This mod's perks are only active in the \"King's Fall\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Gain increased mobility and resilience while you are Torn Between Dimensions."
 			},
 			"1291268263": {
 				"n": "Mortal Medicine",
 				"i": "/common/destiny2_content/icons/f46e8feb0fe15b003b56921a12b4b853.png",
-				"d": "This mod's perks are only active in the \"King's Fall\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Gain increased recovery and weapon reload speed while you have a Brand or are in a pool of Reclaimed Light."
 			},
 			"1292971594": {
 				"n": "Suros Synergy",
@@ -5313,7 +5313,7 @@
 			"1362793604": {
 				"n": "Enhanced Suppressor Augment",
 				"i": "/common/destiny2_content/icons/13f3f360d805fa1033434a2b3df26232.png",
-				"d": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "With the Suppressor Augment, you take decreased damage from powerful foes."
 			},
 			"1363238943": {
 				"n": "Ruinous Effigy",
@@ -5417,17 +5417,17 @@
 			"1401506404": {
 				"n": "Vex Destroyer",
 				"i": "/common/destiny2_content/icons/49d4293374605fb1a55b222e582b7a94.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Defeating a Vex with a grenade attack has a chance to spawn an Orb of Power. Multiple copies of this mod increase the Super energy granted when those Orbs are picked up."
 			},
 			"1401506405": {
 				"n": "Aggressive Oracle Disruptor",
 				"i": "/common/destiny2_content/icons/1594752b1e693dc64fe8b51e051aea83.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Your equipped Auto Rifles, Fusion Rifles, Grenade Launchers, Trace Rifles, and Rocket Launchers deal additional damage to Oracles."
 			},
 			"1401506407": {
 				"n": "Superstructure Medic",
 				"i": "/common/destiny2_content/icons/27b059d2e6807445cfa84fd05e35326c.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While you are standing on a sync plate or are near a conflux, weapon attacks that hit powerful Vex combatants have a high chance to create a burst of healing for you and allies near you."
 			},
 			"1406835319": {
 				"n": "Dynamic Heat Weapon",
@@ -6053,7 +6053,7 @@
 			"1578165808": {
 				"n": "Enhanced Scanner Augment",
 				"i": "/common/destiny2_content/icons/a43505e0bdf30bc8f1e8daedbbccea3b.png",
-				"d": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "With the scanner augment, powerful targets are marked by precision shots and take increased damage for a short period."
 			},
 			"1579100415": {
 				"n": "Bullseye Bolster",
@@ -6897,7 +6897,7 @@
 			"1768489065": {
 				"n": "Violent Pour",
 				"i": "/common/destiny2_content/icons/de760efcd1568161d3263e45ba8fcc3f.png",
-				"d": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Weapon final blows against challenging combatants spawn an Orb of Power. Multiple copies of this mod stack to increase the potency of the Orb of Power."
 			},
 			"1768751086": {
 				"n": "Wild Card",
@@ -7513,7 +7513,7 @@
 			"1947468772": {
 				"n": "Volatile Volleys",
 				"i": "/common/destiny2_content/icons/7340bcd4dd28186bd2165da15790ea92.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod will not improve its effects."
+				"d": "Defeating powerful combatants with a Void weapon gives your Void weapons Volatile Rounds. Must have a Void subclass equipped."
 			},
 			"1954620775": {
 				"n": "Timed Payload",
@@ -7528,7 +7528,7 @@
 			"1956421814": {
 				"n": "Umbral Recharge",
 				"i": "/common/destiny2_content/icons/eaba7ebece4a456026cd34db3fc6e93e.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While you have several stacks of Pervading Darkness, your class ability recharges quicker."
 			},
 			"1958555234": {
 				"n": "Balanced Grip",
@@ -8074,7 +8074,7 @@
 			"2142852459": {
 				"n": "Herd Thinner",
 				"i": "/common/destiny2_content/icons/5d75f56663272f06c5226dbbd0686166.png",
-				"d": "This mod's perks are only active in the \"Deep Stone Crypt\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Your weapons deal additional damage to non-powerful combatants."
 			},
 			"2144092201": {
 				"n": "Noble Rounds",
@@ -8107,7 +8107,7 @@
 			"2158846614": {
 				"n": "Tangled Up",
 				"i": "/common/destiny2_content/icons/86ff534cbdf8a289d665e316f0ad88f9.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod will not improve its effects."
+				"d": "Defeating a combatant with a Strand weapon spawns a Tangle. Must have a Strand subclass equipped."
 			},
 			"2159352803": {
 				"n": "Aggressive Frame",
@@ -9846,7 +9846,7 @@
 			"2589105944": {
 				"n": "Taken Repurposing",
 				"i": "/common/destiny2_content/icons/bd41287ae54f807efeea416c84f9e25c.png",
-				"d": "This mod's perks are only active in the \"Last Wish\" raid."
+				"d": "Destroying a Taken shield refreshes your grenade ability."
 			},
 			"2589407652": {
 				"n": "Timelost Magazine",
@@ -10149,7 +10149,7 @@
 			"2631069573": {
 				"n": "Refreshing Thirst",
 				"i": "/common/destiny2_content/icons/75b154226e5fb3f7f7883b630d79b16d.png",
-				"d": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Becoming Drained of Light grants you an armor charge. Multiple copies of this mod stack to increase this benefit."
 			},
 			"2633604463": {
 				"n": "Rolling Storm",
@@ -10602,12 +10602,12 @@
 			"2725575870": {
 				"n": "Anti-Oracle",
 				"i": "/common/destiny2_content/icons/2b89ec8078529730461e4c7e8216d228.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Defeating an Oracle grants you Super energy."
 			},
 			"2725575871": {
 				"n": "Anti-Praetorian",
 				"i": "/common/destiny2_content/icons/6941f89b5973565102e6245972431f3b.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Defeating a Praetorian grants you Super energy."
 			},
 			"2726471870": {
 				"n": "Thresh",
@@ -10807,7 +10807,7 @@
 			"2779468392": {
 				"n": "Siphoned Glyphkeeper",
 				"i": "/common/destiny2_content/icons/465b8e130f95ce8f3dee29daad763a01.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Killing a Glyphkeeper grants some grenade, class, and Super energy."
 			},
 			"2782457288": {
 				"n": "Killing Tally",
@@ -10904,7 +10904,7 @@
 			"2804214704": {
 				"n": "Umbral Sharpening",
 				"i": "/common/destiny2_content/icons/40ae09d9653262025926ae16eea020c0.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While you have several stacks of Pervading Darkness, you deal increased weapon damage."
 			},
 			"2804762401": {
 				"n": "Regenerative Motion",
@@ -11147,7 +11147,7 @@
 			"2851458940": {
 				"n": "Smoldering Glyphkeeper",
 				"i": "/common/destiny2_content/icons/813d5b1f1a270418b33a4bec53f99d46.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Damaging a Glyphkeeper with a grenade causes your equipped Hand Cannons, Shotguns, Grenade Launchers, and Rocket Launchers to deal additional damage."
 			},
 			"2856365672": {
 				"n": "Energy Transfer",
@@ -11166,7 +11166,7 @@
 			"2859541905": {
 				"n": "Taken Armaments",
 				"i": "/common/destiny2_content/icons/ec094fd2e1505254060f784f957a3eff.png",
-				"d": "This mod's perks are only active in the \"Last Wish\" raid."
+				"d": "Defeating a Taken combatant with a grenade grants Heavy ammo.\n\nThis mod's abilities cannot stack across multiple copies."
 			},
 			"2860991074": {
 				"n": "Flash Counter",
@@ -13254,7 +13254,7 @@
 			"3455459001": {
 				"n": "Brimming with Exhaustion",
 				"i": "/common/destiny2_content/icons/40899282d9795c1ee095a454329dc522.png",
-				"d": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Reduce duration of the Drained of Light debuff by 2 seconds. Multiple copies of this mod stack to increase this benefit."
 			},
 			"3456250548": {
 				"n": "Stasis Resistance",
@@ -13742,7 +13742,7 @@
 			"3570105787": {
 				"n": "Taken Barrier",
 				"i": "/common/destiny2_content/icons/2573db4d1ae803beef9b0cd7caeba641.png",
-				"d": "This mod's perks are only active in the \"Last Wish\" raid."
+				"d": "Receiving Taken damage gives a 20% reduction in damage for 10 seconds."
 			},
 			"3573031954": {
 				"n": "Kinetic Holster",
@@ -14176,7 +14176,7 @@
 			"3682741808": {
 				"n": "Benevolent Overflow",
 				"i": "/common/destiny2_content/icons/c3495dd2d370de4a84f46377bfc27c93.png",
-				"d": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While Engulfed in Light, dying or having the Chalice of Light taken from you creates a burst of healing around you. Multiple copies of this mod stack to increase the radius and potency of healing."
 			},
 			"3683811620": {
 				"n": "Sect of Vigor",
@@ -14669,7 +14669,7 @@
 			"3808234135": {
 				"n": "Shocked Glyphkeeper",
 				"i": "/common/destiny2_content/icons/d59371961c3794ebdecdb03351197b10.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Damaging a Glyphkeeper with a grenade causes your equipped Pulse Rifles, Sidearms, Machine Guns, and Submachine Guns to deal additional damage."
 			},
 			"3809192347": {
 				"n": "See Me, Feel Me",
@@ -15028,7 +15028,7 @@
 			"3922904113": {
 				"n": "Umbral Hastening",
 				"i": "/common/destiny2_content/icons/9c9f3bcee2b8666b48e194de65b8b28c.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While you have several stacks of Pervading Darkness, you gain increased mobility."
 			},
 			"3923577992": {
 				"n": "Suppressor Grenade",
@@ -15556,17 +15556,17 @@
 			"4076776732": {
 				"n": "Rapid Oracle Disruptor",
 				"i": "/common/destiny2_content/icons/011e6c267d723d289d3e3a25f5ccf92e.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Your equipped Pulse Rifles, Shotguns, Sidearms, SMGs, and Swords deal additional damage to Oracles."
 			},
 			"4076776733": {
 				"n": "Vex Breaker",
 				"i": "/common/destiny2_content/icons/eac607ddff6c847fc38191ff644b58f4.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Defeating a Vex with a melee attack has a chance to spawn an Orb of Power. Multiple copies of this mod increase the Super energy granted when those Orbs are picked up."
 			},
 			"4076776734": {
 				"n": "Superstructure Striker",
 				"i": "/common/destiny2_content/icons/7bf21a34ba9e4a08547eb49a8edcbdd4.png",
-				"d": "This mod's perks are only active in the \"Vault of Glass\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "While you are standing on a sync plate or are near a conflux, weapon attacks that hit powerful Vex combatants have a high chance to stun those combatants."
 			},
 			"4080055066": {
 				"n": "Lightweight Frame",
@@ -16256,7 +16256,7 @@
 			"4230067633": {
 				"n": "Into the Light",
 				"i": "/common/destiny2_content/icons/1dc3afeac630ae4bcce29b39ffb33ce7.png",
-				"d": "This mod's perks are only active in the \"Vow of the Disciple\" raid.\n\nMultiple copies of this mod stack and improve its effects."
+				"d": "Your grenades recharge quicker and deal more damage when you are not under the effects of Pervading Darkness."
 			},
 			"4231246084": {
 				"n": "High-Impact Frame",
@@ -16337,7 +16337,7 @@
 			"4243059257": {
 				"n": "Radiant Heat",
 				"i": "/common/destiny2_content/icons/05a6ad724fc38ddaf0bdde33bb6464ae.png",
-				"d": "This mod's perks are only active in the \"Root of Nightmares\" raid.\n\nMultiple copies of this mod will not improve its effects."
+				"d": "Powerful combatant final blows with Solar weapons grants Radiant. Must have a Solar subclass equipped."
 			},
 			"4244246940": {
 				"n": "Strand Loader",
