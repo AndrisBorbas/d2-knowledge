@@ -94,6 +94,10 @@ export const metadata: Metadata = {
 		index: true,
 		follow: true,
 	},
+	// The site is already dark; Dark Reader only checks that this tag exists.
+	other: {
+		"darkreader-lock": "true",
+	},
 	// No `alternates.canonical` here: every page sets its own, and a root-level
 	// one is inherited by the 404 page, which then claims to be the home page.
 };
