@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-10-01T11:44:56.817Z",
+	"generatedAt": "2026-11-03T23:35:33.502Z",
 	"sheetId": "1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY",
 	"tabIds": {
 		"Status": 346832350,
@@ -73,7 +73,7 @@
 			],
 			[
 				"Scouts",
-				"2026-07-12",
+				"2026-10-12",
 				"updated"
 			],
 			[
@@ -193,12 +193,12 @@
 			],
 			[
 				"Aspects",
-				"2025-09-07",
+				"2026-09-07",
 				"updated"
 			],
 			[
 				"Subclasses",
-				"2025-09-07",
+				"2026-09-07",
 				"updated"
 			],
 			[
@@ -9126,7 +9126,7 @@
 				"Fluted Barrel",
 				"Alloy Magazine",
 				"Reload",
-				"Voltshot",
+				"Voltshot\nCollective Demolition",
 				"Meganeura\nGear Shift\nExplosive Payload",
 				"Forge's Kin",
 				"same roll as Voltaic Shade, better origin and worse archetype",

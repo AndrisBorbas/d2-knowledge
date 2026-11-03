@@ -1,7 +1,7 @@
 {
-	"generatedAt": "2026-10-01T11:45:05.401Z",
-	"endgameGeneratedAt": "2026-10-01T11:44:56.817Z",
-	"damageGeneratedAt": "2026-10-01T11:44:57.768Z",
+	"generatedAt": "2026-11-03T23:35:46.851Z",
+	"endgameGeneratedAt": "2026-11-03T23:35:33.502Z",
+	"damageGeneratedAt": "2026-11-03T23:35:34.036Z",
 	"categories": [
 		{
 			"slug": "auto-rifles",
@@ -10735,7 +10735,8 @@
 				"Reload"
 			],
 			"perks1": [
-				"Voltshot"
+				"Voltshot",
+				"Collective Demolition"
 			],
 			"perks2": [
 				"Meganeura",
@@ -57145,6 +57146,47 @@
 			"weaponType": "Grenade launcher",
 			"subtype": "Adaptive frame",
 			"critShot": {
+				"raw": "2979",
+				"value": 2979
+			},
+			"bodyShot": {
+				"raw": "2979",
+				"value": 2979
+			},
+			"modifiers": "Sticky Grenades, Explosive Light, Overwhelming Power",
+			"visualValue": {
+				"raw": "1795.529",
+				"value": 1795.529
+			},
+			"healthbarValue": {
+				"raw": "/",
+				"value": null
+			},
+			"visualBoss": "Carl",
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"fullModifiers": {
+				"raw": "1.68",
+				"value": 1.68
+			},
+			"critRatio": {
+				"raw": "1.000",
+				"value": 1
+			},
+			"patch": "9.7.0.2",
+			"ref": {
+				"tab": "Weapons",
+				"row": 80,
+				"gid": 2139128689
+			}
+		},
+		{
+			"id": "damage:81",
+			"weaponType": "Grenade launcher",
+			"subtype": "Adaptive frame",
+			"critShot": {
 				"raw": "2599",
 				"value": 2599
 			},
@@ -57177,12 +57219,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 80,
+				"row": 81,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:81",
+			"id": "damage:82",
 			"weaponType": "Grenade launcher",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -57218,12 +57260,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 81,
+				"row": 82,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:82",
+			"id": "damage:83",
 			"weaponType": "Grenade launcher",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -57258,12 +57300,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 82,
+				"row": 83,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:83",
+			"id": "damage:84",
 			"weaponType": "Grenade launcher",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -57299,12 +57341,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 83,
+				"row": 84,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:84",
+			"id": "damage:85",
 			"weaponType": "Grenade launcher",
 			"subtype": "Alethonym",
 			"critShot": {
@@ -57341,12 +57383,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 84,
+				"row": 85,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:85",
+			"id": "damage:86",
 			"weaponType": "Grenade launcher",
 			"subtype": "Anarchy",
 			"critShot": {
@@ -57383,12 +57425,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 85,
+				"row": 86,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:86",
+			"id": "damage:87",
 			"weaponType": "Grenade launcher",
 			"subtype": "Area denial frame",
 			"critShot": {
@@ -57423,12 +57465,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 86,
+				"row": 87,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:87",
+			"id": "damage:88",
 			"weaponType": "Grenade launcher",
 			"subtype": "Compressed wave frame",
 			"critShot": {
@@ -57464,12 +57506,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 87,
+				"row": 88,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:88",
+			"id": "damage:89",
 			"weaponType": "Grenade launcher",
 			"subtype": "Dead Messenger",
 			"critShot": {
@@ -57505,12 +57547,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 88,
+				"row": 89,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:89",
+			"id": "damage:90",
 			"weaponType": "Grenade launcher",
 			"subtype": "Double fire frame",
 			"critShot": {
@@ -57546,12 +57588,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 89,
+				"row": 90,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:90",
+			"id": "damage:91",
 			"weaponType": "Grenade launcher",
 			"subtype": "Double fire frame",
 			"critShot": {
@@ -57587,12 +57629,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 90,
+				"row": 91,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:91",
+			"id": "damage:92",
 			"weaponType": "Grenade launcher",
 			"subtype": "Ex Diris",
 			"critShot": {
@@ -57629,12 +57671,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 91,
+				"row": 92,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:92",
+			"id": "damage:93",
 			"weaponType": "Grenade launcher",
 			"subtype": "Fighting Lion",
 			"critShot": {
@@ -57671,12 +57713,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 92,
+				"row": 93,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:93",
+			"id": "damage:94",
 			"weaponType": "Grenade launcher",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -57712,12 +57754,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 93,
+				"row": 94,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:94",
+			"id": "damage:95",
 			"weaponType": "Grenade launcher",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -57753,12 +57795,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 94,
+				"row": 95,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:95",
+			"id": "damage:96",
 			"weaponType": "Grenade launcher",
 			"subtype": "Micro-missile frame",
 			"critShot": {
@@ -57794,12 +57836,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 95,
+				"row": 96,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:96",
+			"id": "damage:97",
 			"weaponType": "Grenade launcher",
 			"subtype": "Micro-missile frame",
 			"critShot": {
@@ -57835,12 +57877,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 96,
+				"row": 97,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:97",
+			"id": "damage:98",
 			"weaponType": "Grenade launcher",
 			"subtype": "Parasite",
 			"critShot": {
@@ -57876,12 +57918,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 97,
+				"row": 98,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:98",
+			"id": "damage:99",
 			"weaponType": "Grenade launcher",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -57916,12 +57958,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 98,
+				"row": 99,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:99",
+			"id": "damage:100",
 			"weaponType": "Grenade launcher",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -57957,12 +57999,94 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 99,
+				"row": 100,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:100",
+			"id": "damage:101",
+			"weaponType": "Grenade launcher",
+			"subtype": "Rapid-fire frame",
+			"critShot": {
+				"raw": "1948",
+				"value": 1948
+			},
+			"bodyShot": {
+				"raw": "1948",
+				"value": 1948
+			},
+			"modifiers": "Sticky Grenades, Explosive Light",
+			"visualValue": {
+				"raw": "1178.539",
+				"value": 1178.539
+			},
+			"healthbarValue": {
+				"raw": "/",
+				"value": null
+			},
+			"visualBoss": "Carl",
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"fullModifiers": {
+				"raw": "1.68",
+				"value": 1.68
+			},
+			"critRatio": {
+				"raw": "1.000",
+				"value": 1
+			},
+			"patch": "9.7.0.2",
+			"ref": {
+				"tab": "Weapons",
+				"row": 101,
+				"gid": 2139128689
+			}
+		},
+		{
+			"id": "damage:102",
+			"weaponType": "Grenade launcher",
+			"subtype": "Rapid-fire frame",
+			"critShot": {
+				"raw": "2533",
+				"value": 2533
+			},
+			"bodyShot": {
+				"raw": "2533",
+				"value": 2533
+			},
+			"modifiers": "Sticky Grenades, Explosive Light, Overwhelming Power",
+			"visualValue": {
+				"raw": "1527.273",
+				"value": 1527.273
+			},
+			"healthbarValue": {
+				"raw": "/",
+				"value": null
+			},
+			"visualBoss": "Carl",
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"fullModifiers": {
+				"raw": "1.68",
+				"value": 1.68
+			},
+			"critRatio": {
+				"raw": "1.000",
+				"value": 1
+			},
+			"patch": "9.7.0.2",
+			"ref": {
+				"tab": "Weapons",
+				"row": 102,
+				"gid": 2139128689
+			}
+		},
+		{
+			"id": "damage:103",
 			"weaponType": "Grenade launcher",
 			"subtype": "Salvation's Grip",
 			"critShot": {
@@ -57998,12 +58122,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 100,
+				"row": 103,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:101",
+			"id": "damage:104",
 			"weaponType": "Grenade launcher",
 			"subtype": "Salvation's Grip",
 			"critShot": {
@@ -58040,12 +58164,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 101,
+				"row": 104,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:102",
+			"id": "damage:105",
 			"weaponType": "Grenade launcher",
 			"subtype": "Salvation's Grip",
 			"critShot": {
@@ -58082,12 +58206,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 102,
+				"row": 105,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:103",
+			"id": "damage:106",
 			"weaponType": "Grenade launcher",
 			"subtype": "The Colony",
 			"critShot": {
@@ -58124,12 +58248,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 103,
+				"row": 106,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:104",
+			"id": "damage:107",
 			"weaponType": "Grenade launcher",
 			"subtype": "The Prospector",
 			"critShot": {
@@ -58166,12 +58290,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 104,
+				"row": 107,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:105",
+			"id": "damage:108",
 			"weaponType": "Grenade launcher",
 			"subtype": "Wave frame",
 			"critShot": {
@@ -58207,12 +58331,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 105,
+				"row": 108,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:106",
+			"id": "damage:109",
 			"weaponType": "Grenade launcher",
 			"subtype": "Witherhoard",
 			"critShot": {
@@ -58249,12 +58373,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 106,
+				"row": 109,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:107",
+			"id": "damage:110",
 			"weaponType": "Grenade launcher",
 			"subtype": "Witherhoard",
 			"critShot": {
@@ -58291,12 +58415,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 107,
+				"row": 110,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:108",
+			"id": "damage:111",
 			"weaponType": "Hand cannon",
 			"subtype": "Ace of Spades",
 			"critShot": {
@@ -58332,12 +58456,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 108,
+				"row": 111,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:109",
+			"id": "damage:112",
 			"weaponType": "Hand cannon",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -58372,12 +58496,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 109,
+				"row": 112,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:110",
+			"id": "damage:113",
 			"weaponType": "Hand cannon",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -58412,12 +58536,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 110,
+				"row": 113,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:111",
+			"id": "damage:114",
 			"weaponType": "Hand cannon",
 			"subtype": "Crimson",
 			"critShot": {
@@ -58453,12 +58577,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 111,
+				"row": 114,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:112",
+			"id": "damage:115",
 			"weaponType": "Hand cannon",
 			"subtype": "Dynamic heat weapon - 180RPM primary",
 			"critShot": {
@@ -58493,12 +58617,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 112,
+				"row": 115,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:113",
+			"id": "damage:116",
 			"weaponType": "Hand cannon",
 			"subtype": "Dynamic heat weapon - 180RPM special",
 			"critShot": {
@@ -58533,12 +58657,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 113,
+				"row": 116,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:114",
+			"id": "damage:117",
 			"weaponType": "Hand cannon",
 			"subtype": "Dynamic heat weapon - 180RPM special",
 			"critShot": {
@@ -58574,12 +58698,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 114,
+				"row": 117,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:115",
+			"id": "damage:118",
 			"weaponType": "Hand cannon",
 			"subtype": "Dynamic heat weapon - 180RPM special",
 			"critShot": {
@@ -58616,12 +58740,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 115,
+				"row": 118,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:116",
+			"id": "damage:119",
 			"weaponType": "Hand cannon",
 			"subtype": "Eriana's Vow",
 			"critShot": {
@@ -58658,12 +58782,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 116,
+				"row": 119,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:117",
+			"id": "damage:120",
 			"weaponType": "Hand cannon",
 			"subtype": "Eriana's Vow",
 			"critShot": {
@@ -58700,12 +58824,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 117,
+				"row": 120,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:118",
+			"id": "damage:121",
 			"weaponType": "Hand cannon",
 			"subtype": "Eriana's Vow",
 			"critShot": {
@@ -58741,12 +58865,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 118,
+				"row": 121,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:119",
+			"id": "damage:122",
 			"weaponType": "Hand cannon",
 			"subtype": "Graviton Spike",
 			"critShot": {
@@ -58783,12 +58907,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 119,
+				"row": 122,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:120",
+			"id": "damage:123",
 			"weaponType": "Hand cannon",
 			"subtype": "Graviton Spike",
 			"critShot": {
@@ -58824,12 +58948,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 120,
+				"row": 123,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:121",
+			"id": "damage:124",
 			"weaponType": "Hand cannon",
 			"subtype": "Graviton Spike",
 			"critShot": {
@@ -58866,12 +58990,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 121,
+				"row": 124,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:122",
+			"id": "damage:125",
 			"weaponType": "Hand cannon",
 			"subtype": "Hawkmoon",
 			"critShot": {
@@ -58907,12 +59031,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 122,
+				"row": 125,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:123",
+			"id": "damage:126",
 			"weaponType": "Hand cannon",
 			"subtype": "Hawkmoon",
 			"critShot": {
@@ -58948,12 +59072,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 123,
+				"row": 126,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:124",
+			"id": "damage:127",
 			"weaponType": "Hand cannon",
 			"subtype": "Hawkmoon",
 			"critShot": {
@@ -58990,12 +59114,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 124,
+				"row": 127,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:125",
+			"id": "damage:128",
 			"weaponType": "Hand cannon",
 			"subtype": "Heavy burst frame",
 			"critShot": {
@@ -59031,12 +59155,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 125,
+				"row": 128,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:126",
+			"id": "damage:129",
 			"weaponType": "Hand cannon",
 			"subtype": "Heavy burst frame",
 			"critShot": {
@@ -59072,12 +59196,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 126,
+				"row": 129,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:127",
+			"id": "damage:130",
 			"weaponType": "Hand cannon",
 			"subtype": "Heavy burst frame",
 			"critShot": {
@@ -59113,12 +59237,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 127,
+				"row": 130,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:128",
+			"id": "damage:131",
 			"weaponType": "Hand cannon",
 			"subtype": "Lumina",
 			"critShot": {
@@ -59153,12 +59277,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 128,
+				"row": 131,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:129",
+			"id": "damage:132",
 			"weaponType": "Hand cannon",
 			"subtype": "Malfeasance",
 			"critShot": {
@@ -59195,12 +59319,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 129,
+				"row": 132,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:130",
+			"id": "damage:133",
 			"weaponType": "Hand cannon",
 			"subtype": "Malfeasance",
 			"critShot": {
@@ -59236,12 +59360,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 130,
+				"row": 133,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:131",
+			"id": "damage:134",
 			"weaponType": "Hand cannon",
 			"subtype": "Malfeasance",
 			"critShot": {
@@ -59277,12 +59401,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 131,
+				"row": 134,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:132",
+			"id": "damage:135",
 			"weaponType": "Hand cannon",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -59317,12 +59441,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 132,
+				"row": 135,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:133",
+			"id": "damage:136",
 			"weaponType": "Hand cannon",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -59358,12 +59482,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 133,
+				"row": 136,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:134",
+			"id": "damage:137",
 			"weaponType": "Hand cannon",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -59399,12 +59523,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 134,
+				"row": 137,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:135",
+			"id": "damage:138",
 			"weaponType": "Hand cannon",
 			"subtype": "Spread shot frame",
 			"critShot": {
@@ -59439,12 +59563,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 135,
+				"row": 138,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:136",
+			"id": "damage:139",
 			"weaponType": "Hand cannon",
 			"subtype": "Spread shot frame",
 			"critShot": {
@@ -59480,12 +59604,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 136,
+				"row": 139,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:137",
+			"id": "damage:140",
 			"weaponType": "Hand cannon",
 			"subtype": "Spread shot frame",
 			"critShot": {
@@ -59521,12 +59645,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 137,
+				"row": 140,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:138",
+			"id": "damage:141",
 			"weaponType": "Hand cannon",
 			"subtype": "Sturm",
 			"critShot": {
@@ -59562,12 +59686,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 138,
+				"row": 141,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:139",
+			"id": "damage:142",
 			"weaponType": "Hand cannon",
 			"subtype": "Sunshot",
 			"critShot": {
@@ -59603,12 +59727,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 139,
+				"row": 142,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:140",
+			"id": "damage:143",
 			"weaponType": "Hand cannon",
 			"subtype": "The Last Word",
 			"critShot": {
@@ -59645,12 +59769,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 140,
+				"row": 143,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:141",
+			"id": "damage:144",
 			"weaponType": "Hand cannon",
 			"subtype": "The Last Word",
 			"critShot": {
@@ -59686,12 +59810,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 141,
+				"row": 144,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:142",
+			"id": "damage:145",
 			"weaponType": "Hand cannon",
 			"subtype": "The Last Word",
 			"critShot": {
@@ -59727,12 +59851,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 142,
+				"row": 145,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:143",
+			"id": "damage:146",
 			"weaponType": "Hand cannon",
 			"subtype": "Thorn",
 			"critShot": {
@@ -59769,12 +59893,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 143,
+				"row": 146,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:144",
+			"id": "damage:147",
 			"weaponType": "Hand cannon",
 			"subtype": "Thorn",
 			"critShot": {
@@ -59811,12 +59935,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 144,
+				"row": 147,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:145",
+			"id": "damage:148",
 			"weaponType": "Hand cannon",
 			"subtype": "Turncoat",
 			"critShot": {
@@ -59853,12 +59977,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 145,
+				"row": 148,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:146",
+			"id": "damage:149",
 			"weaponType": "Hand cannon",
 			"subtype": "Turncoat",
 			"critShot": {
@@ -59895,12 +60019,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 146,
+				"row": 149,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:147",
+			"id": "damage:150",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Adaptive burst frame",
 			"critShot": {
@@ -59936,12 +60060,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 147,
+				"row": 150,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:148",
+			"id": "damage:151",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Arbalest",
 			"critShot": {
@@ -59976,12 +60100,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 148,
+				"row": 151,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:149",
+			"id": "damage:152",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Euphony",
 			"critShot": {
@@ -60018,12 +60142,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 149,
+				"row": 152,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:150",
+			"id": "damage:153",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Fafnir",
 			"critShot": {
@@ -60059,12 +60183,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 150,
+				"row": 153,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:151",
+			"id": "damage:154",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Finality's Auger",
 			"critShot": {
@@ -60100,12 +60224,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 151,
+				"row": 154,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:152",
+			"id": "damage:155",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Finality's Auger",
 			"critShot": {
@@ -60142,12 +60266,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 152,
+				"row": 155,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:153",
+			"id": "damage:156",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Lorentz Driver",
 			"critShot": {
@@ -60182,12 +60306,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 153,
+				"row": 156,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:154",
+			"id": "damage:157",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -60223,12 +60347,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 154,
+				"row": 157,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:155",
+			"id": "damage:158",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "Sleeper Simulant",
 			"critShot": {
@@ -60263,12 +60387,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 155,
+				"row": 158,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:156",
+			"id": "damage:159",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "The Queenbreaker",
 			"critShot": {
@@ -60304,12 +60428,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 156,
+				"row": 159,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:157",
+			"id": "damage:160",
 			"weaponType": "Linear fusion rifle",
 			"subtype": "The Queenbreaker",
 			"critShot": {
@@ -60345,12 +60469,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 157,
+				"row": 160,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:158",
+			"id": "damage:161",
 			"weaponType": "Machine gun",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -60385,12 +60509,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 158,
+				"row": 161,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:159",
+			"id": "damage:162",
 			"weaponType": "Machine gun",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -60425,12 +60549,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 159,
+				"row": 162,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:160",
+			"id": "damage:163",
 			"weaponType": "Machine gun",
 			"subtype": "Balanced heat weapon - 900RPM power",
 			"critShot": {
@@ -60465,12 +60589,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 160,
+				"row": 163,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:161",
+			"id": "damage:164",
 			"weaponType": "Machine gun",
 			"subtype": "Deterministic Chaos",
 			"critShot": {
@@ -60507,12 +60631,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 161,
+				"row": 164,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:162",
+			"id": "damage:165",
 			"weaponType": "Machine gun",
 			"subtype": "Deterministic Chaos",
 			"critShot": {
@@ -60549,12 +60673,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 162,
+				"row": 165,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:163",
+			"id": "damage:166",
 			"weaponType": "Machine gun",
 			"subtype": "Grand Overture",
 			"critShot": {
@@ -60591,12 +60715,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 163,
+				"row": 166,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:164",
+			"id": "damage:167",
 			"weaponType": "Machine gun",
 			"subtype": "Grand Overture",
 			"critShot": {
@@ -60631,12 +60755,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 164,
+				"row": 167,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:165",
+			"id": "damage:168",
 			"weaponType": "Machine gun",
 			"subtype": "Heir Apparent",
 			"critShot": {
@@ -60671,12 +60795,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 165,
+				"row": 168,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:166",
+			"id": "damage:169",
 			"weaponType": "Machine gun",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -60711,12 +60835,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 166,
+				"row": 169,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:167",
+			"id": "damage:170",
 			"weaponType": "Machine gun",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -60751,12 +60875,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 167,
+				"row": 170,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:168",
+			"id": "damage:171",
 			"weaponType": "Machine gun",
 			"subtype": "Service of Luzaku",
 			"critShot": {
@@ -60791,12 +60915,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 168,
+				"row": 171,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:169",
+			"id": "damage:172",
 			"weaponType": "Machine gun",
 			"subtype": "Thunderlord",
 			"critShot": {
@@ -60832,12 +60956,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 169,
+				"row": 172,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:170",
+			"id": "damage:173",
 			"weaponType": "Machine gun",
 			"subtype": "Xenophage",
 			"critShot": {
@@ -60873,12 +60997,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 170,
+				"row": 173,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:171",
+			"id": "damage:174",
 			"weaponType": "Pulse rifle",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -60914,12 +61038,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 171,
+				"row": 174,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:172",
+			"id": "damage:175",
 			"weaponType": "Pulse rifle",
 			"subtype": "Aggressive burst frame",
 			"critShot": {
@@ -60955,12 +61079,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 172,
+				"row": 175,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:173",
+			"id": "damage:176",
 			"weaponType": "Pulse rifle",
 			"subtype": "Bad Juju",
 			"critShot": {
@@ -60997,12 +61121,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 173,
+				"row": 176,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:174",
+			"id": "damage:177",
 			"weaponType": "Pulse rifle",
 			"subtype": "Balanced heat weapon - 540RPM primary",
 			"critShot": {
@@ -61038,12 +61162,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 174,
+				"row": 177,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:175",
+			"id": "damage:178",
 			"weaponType": "Pulse rifle",
 			"subtype": "Collective Obligation",
 			"critShot": {
@@ -61079,12 +61203,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 175,
+				"row": 178,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:176",
+			"id": "damage:179",
 			"weaponType": "Pulse rifle",
 			"subtype": "Dynamic heat weapon - 540RPM primary",
 			"critShot": {
@@ -61120,12 +61244,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 176,
+				"row": 179,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:177",
+			"id": "damage:180",
 			"weaponType": "Pulse rifle",
 			"subtype": "Graviton Lance",
 			"critShot": {
@@ -61161,12 +61285,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 177,
+				"row": 180,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:178",
+			"id": "damage:181",
 			"weaponType": "Pulse rifle",
 			"subtype": "Heavy burst frame",
 			"critShot": {
@@ -61202,12 +61326,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 178,
+				"row": 181,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:179",
+			"id": "damage:182",
 			"weaponType": "Pulse rifle",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -61243,12 +61367,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 179,
+				"row": 182,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:180",
+			"id": "damage:183",
 			"weaponType": "Pulse rifle",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -61284,12 +61408,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 180,
+				"row": 183,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:181",
+			"id": "damage:184",
 			"weaponType": "Pulse rifle",
 			"subtype": "Micro-missile frame",
 			"critShot": {
@@ -61326,12 +61450,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 181,
+				"row": 184,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:182",
+			"id": "damage:185",
 			"weaponType": "Pulse rifle",
 			"subtype": "New Malpais",
 			"critShot": {
@@ -61368,12 +61492,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 182,
+				"row": 185,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:183",
+			"id": "damage:186",
 			"weaponType": "Pulse rifle",
 			"subtype": "No Time to Explain",
 			"critShot": {
@@ -61410,12 +61534,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 183,
+				"row": 186,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:184",
+			"id": "damage:187",
 			"weaponType": "Pulse rifle",
 			"subtype": "Outbreak Perfected",
 			"critShot": {
@@ -61452,12 +61576,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 184,
+				"row": 187,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:185",
+			"id": "damage:188",
 			"weaponType": "Pulse rifle",
 			"subtype": "Outbreak Perfected",
 			"critShot": {
@@ -61494,12 +61618,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 185,
+				"row": 188,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:186",
+			"id": "damage:189",
 			"weaponType": "Pulse rifle",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -61535,12 +61659,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 186,
+				"row": 189,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:187",
+			"id": "damage:190",
 			"weaponType": "Pulse rifle",
 			"subtype": "Red Death Reformed",
 			"critShot": {
@@ -61577,12 +61701,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 187,
+				"row": 190,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:188",
+			"id": "damage:191",
 			"weaponType": "Pulse rifle",
 			"subtype": "Revision Zero",
 			"critShot": {
@@ -61619,12 +61743,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 188,
+				"row": 191,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:189",
+			"id": "damage:192",
 			"weaponType": "Pulse rifle",
 			"subtype": "Revision Zero",
 			"critShot": {
@@ -61660,12 +61784,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 189,
+				"row": 192,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:190",
+			"id": "damage:193",
 			"weaponType": "Pulse rifle",
 			"subtype": "Revision Zero",
 			"critShot": {
@@ -61701,12 +61825,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 190,
+				"row": 193,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:191",
+			"id": "damage:194",
 			"weaponType": "Pulse rifle",
 			"subtype": "Vigilance Wing",
 			"critShot": {
@@ -61742,12 +61866,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 191,
+				"row": 194,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:192",
+			"id": "damage:195",
 			"weaponType": "Rocket launcher",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -61782,12 +61906,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 192,
+				"row": 195,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:193",
+			"id": "damage:196",
 			"weaponType": "Rocket launcher",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -61823,12 +61947,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 193,
+				"row": 196,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:194",
+			"id": "damage:197",
 			"weaponType": "Rocket launcher",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -61865,12 +61989,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 194,
+				"row": 197,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:195",
+			"id": "damage:198",
 			"weaponType": "Rocket launcher",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -61908,12 +62032,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 195,
+				"row": 198,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:196",
+			"id": "damage:199",
 			"weaponType": "Rocket launcher",
 			"subtype": "Deathbringer",
 			"critShot": {
@@ -61949,12 +62073,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 196,
+				"row": 199,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:197",
+			"id": "damage:200",
 			"weaponType": "Rocket launcher",
 			"subtype": "Dragon's Breath",
 			"critShot": {
@@ -61992,12 +62116,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 197,
+				"row": 200,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:198",
+			"id": "damage:201",
 			"weaponType": "Rocket launcher",
 			"subtype": "Eyes of Tomorrow",
 			"critShot": {
@@ -62034,12 +62158,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 198,
+				"row": 201,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:199",
+			"id": "damage:202",
 			"weaponType": "Rocket launcher",
 			"subtype": "Gjallarhorn",
 			"critShot": {
@@ -62075,12 +62199,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 199,
+				"row": 202,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:200",
+			"id": "damage:203",
 			"weaponType": "Rocket launcher",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -62116,12 +62240,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 200,
+				"row": 203,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:201",
+			"id": "damage:204",
 			"weaponType": "Rocket launcher",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -62156,12 +62280,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 201,
+				"row": 204,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:202",
+			"id": "damage:205",
 			"weaponType": "Rocket launcher",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -62198,12 +62322,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 202,
+				"row": 205,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:203",
+			"id": "damage:206",
 			"weaponType": "Rocket launcher",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -62241,12 +62365,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 203,
+				"row": 206,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:204",
+			"id": "damage:207",
 			"weaponType": "Rocket launcher",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -62281,12 +62405,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 204,
+				"row": 207,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:205",
+			"id": "damage:208",
 			"weaponType": "Rocket launcher",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -62322,12 +62446,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 205,
+				"row": 208,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:206",
+			"id": "damage:209",
 			"weaponType": "Rocket launcher",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -62364,12 +62488,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 206,
+				"row": 209,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:207",
+			"id": "damage:210",
 			"weaponType": "Rocket launcher",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -62407,12 +62531,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 207,
+				"row": 210,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:208",
+			"id": "damage:211",
 			"weaponType": "Rocket launcher",
 			"subtype": "The Wardcliff Coil",
 			"critShot": {
@@ -62449,12 +62573,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 208,
+				"row": 211,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:209",
+			"id": "damage:212",
 			"weaponType": "Rocket launcher",
 			"subtype": "Truth",
 			"critShot": {
@@ -62489,12 +62613,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 209,
+				"row": 212,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:210",
+			"id": "damage:213",
 			"weaponType": "Rocket launcher",
 			"subtype": "Truth",
 			"critShot": {
@@ -62531,12 +62655,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 210,
+				"row": 213,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:211",
+			"id": "damage:214",
 			"weaponType": "Rocket launcher",
 			"subtype": "Truth",
 			"critShot": {
@@ -62573,12 +62697,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 211,
+				"row": 214,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:212",
+			"id": "damage:215",
 			"weaponType": "Rocket launcher",
 			"subtype": "Two-Tailed Fox",
 			"critShot": {
@@ -62615,12 +62739,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 212,
+				"row": 215,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:213",
+			"id": "damage:216",
 			"weaponType": "Rocket launcher",
 			"subtype": "Whirling Ovation",
 			"critShot": {
@@ -62656,12 +62780,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 213,
+				"row": 216,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:214",
+			"id": "damage:217",
 			"weaponType": "Rocket launcher",
 			"subtype": "Whirling Ovation",
 			"critShot": {
@@ -62698,12 +62822,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 214,
+				"row": 217,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:215",
+			"id": "damage:218",
 			"weaponType": "Rocket launcher",
 			"subtype": "Whirling Ovation",
 			"critShot": {
@@ -62740,12 +62864,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 215,
+				"row": 218,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:216",
+			"id": "damage:219",
 			"weaponType": "Rocket launcher",
 			"subtype": "Whirling Ovation",
 			"critShot": {
@@ -62782,12 +62906,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 216,
+				"row": 219,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:217",
+			"id": "damage:220",
 			"weaponType": "Scout rifle",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -62822,12 +62946,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 217,
+				"row": 220,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:218",
+			"id": "damage:221",
 			"weaponType": "Scout rifle",
 			"subtype": "Balanced heat weapon - 260RPM primary",
 			"critShot": {
@@ -62862,12 +62986,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 218,
+				"row": 221,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:219",
+			"id": "damage:222",
 			"weaponType": "Scout rifle",
 			"subtype": "Dead Man's Tale",
 			"critShot": {
@@ -62904,12 +63028,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 219,
+				"row": 222,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:220",
+			"id": "damage:223",
 			"weaponType": "Scout rifle",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -62944,12 +63068,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 220,
+				"row": 223,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:221",
+			"id": "damage:224",
 			"weaponType": "Scout rifle",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -62984,12 +63108,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 221,
+				"row": 224,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:222",
+			"id": "damage:225",
 			"weaponType": "Scout rifle",
 			"subtype": "MIDA Multi-Tool",
 			"critShot": {
@@ -63025,12 +63149,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 222,
+				"row": 225,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:223",
+			"id": "damage:226",
 			"weaponType": "Scout rifle",
 			"subtype": "Polaris Lance",
 			"critShot": {
@@ -63067,12 +63191,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 223,
+				"row": 226,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:224",
+			"id": "damage:227",
 			"weaponType": "Scout rifle",
 			"subtype": "Polaris Lance",
 			"critShot": {
@@ -63109,12 +63233,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 224,
+				"row": 227,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:225",
+			"id": "damage:228",
 			"weaponType": "Scout rifle",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -63149,12 +63273,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 225,
+				"row": 228,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:226",
+			"id": "damage:229",
 			"weaponType": "Scout rifle",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -63189,12 +63313,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 226,
+				"row": 229,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:227",
+			"id": "damage:230",
 			"weaponType": "Scout rifle",
 			"subtype": "Skyburner's Oath",
 			"critShot": {
@@ -63231,12 +63355,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 227,
+				"row": 230,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:228",
+			"id": "damage:231",
 			"weaponType": "Scout rifle",
 			"subtype": "Skyburner's Oath",
 			"critShot": {
@@ -63273,12 +63397,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 228,
+				"row": 231,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:229",
+			"id": "damage:232",
 			"weaponType": "Scout rifle",
 			"subtype": "Skyburner's Oath",
 			"critShot": {
@@ -63315,12 +63439,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 229,
+				"row": 232,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:230",
+			"id": "damage:233",
 			"weaponType": "Scout rifle",
 			"subtype": "Symmetry",
 			"critShot": {
@@ -63357,12 +63481,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 230,
+				"row": 233,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:231",
+			"id": "damage:234",
 			"weaponType": "Scout rifle",
 			"subtype": "Symmetry",
 			"critShot": {
@@ -63398,12 +63522,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 231,
+				"row": 234,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:232",
+			"id": "damage:235",
 			"weaponType": "Scout rifle",
 			"subtype": "Symmetry",
 			"critShot": {
@@ -63438,12 +63562,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 232,
+				"row": 235,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:233",
+			"id": "damage:236",
 			"weaponType": "Scout rifle",
 			"subtype": "The Jade Rabbit",
 			"critShot": {
@@ -63479,12 +63603,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 233,
+				"row": 236,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:234",
+			"id": "damage:237",
 			"weaponType": "Scout rifle",
 			"subtype": "The Jade Rabbit",
 			"critShot": {
@@ -63521,12 +63645,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 234,
+				"row": 237,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:235",
+			"id": "damage:238",
 			"weaponType": "Scout rifle",
 			"subtype": "Third Iteration",
 			"critShot": {
@@ -63563,12 +63687,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 235,
+				"row": 238,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:236",
+			"id": "damage:239",
 			"weaponType": "Scout rifle",
 			"subtype": "Third Iteration",
 			"critShot": {
@@ -63605,12 +63729,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 236,
+				"row": 239,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:237",
+			"id": "damage:240",
 			"weaponType": "Scout rifle",
 			"subtype": "Touch of Malice",
 			"critShot": {
@@ -63646,12 +63770,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 237,
+				"row": 240,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:238",
+			"id": "damage:241",
 			"weaponType": "Scout rifle",
 			"subtype": "Touch of Malice",
 			"critShot": {
@@ -63688,12 +63812,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 238,
+				"row": 241,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:239",
+			"id": "damage:242",
 			"weaponType": "Scout rifle",
 			"subtype": "Wicked Implement",
 			"critShot": {
@@ -63730,12 +63854,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 239,
+				"row": 242,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:240",
+			"id": "damage:243",
 			"weaponType": "Shotgun",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -63771,12 +63895,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 240,
+				"row": 243,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:241",
+			"id": "damage:244",
 			"weaponType": "Shotgun",
 			"subtype": "Conditional Finality",
 			"critShot": {
@@ -63814,12 +63938,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 241,
+				"row": 244,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:242",
+			"id": "damage:245",
 			"weaponType": "Shotgun",
 			"subtype": "Duality",
 			"critShot": {
@@ -63855,12 +63979,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 242,
+				"row": 245,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:243",
+			"id": "damage:246",
 			"weaponType": "Shotgun",
 			"subtype": "Duality",
 			"critShot": {
@@ -63897,12 +64021,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 243,
+				"row": 246,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:244",
+			"id": "damage:247",
 			"weaponType": "Shotgun",
 			"subtype": "Heavy burst frame",
 			"critShot": {
@@ -63938,12 +64062,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 244,
+				"row": 247,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:245",
+			"id": "damage:248",
 			"weaponType": "Shotgun",
 			"subtype": "Legend of Acrius",
 			"critShot": {
@@ -63980,12 +64104,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 245,
+				"row": 248,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:246",
+			"id": "damage:249",
 			"weaponType": "Shotgun",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -64020,12 +64144,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 246,
+				"row": 249,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:247",
+			"id": "damage:250",
 			"weaponType": "Shotgun",
 			"subtype": "Lord of Wolves",
 			"critShot": {
@@ -64062,12 +64186,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 247,
+				"row": 250,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:248",
+			"id": "damage:251",
 			"weaponType": "Shotgun",
 			"subtype": "Lord of Wolves",
 			"critShot": {
@@ -64104,12 +64228,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 248,
+				"row": 251,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:249",
+			"id": "damage:252",
 			"weaponType": "Shotgun",
 			"subtype": "Pinpoint slug frame",
 			"critShot": {
@@ -64144,12 +64268,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 249,
+				"row": 252,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:250",
+			"id": "damage:253",
 			"weaponType": "Shotgun",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -64185,12 +64309,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 250,
+				"row": 253,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:251",
+			"id": "damage:254",
 			"weaponType": "Shotgun",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -64226,12 +64350,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 251,
+				"row": 254,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:252",
+			"id": "damage:255",
 			"weaponType": "Shotgun",
 			"subtype": "Rapid-fire slug frame",
 			"critShot": {
@@ -64266,12 +64390,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 252,
+				"row": 255,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:253",
+			"id": "damage:256",
 			"weaponType": "Shotgun",
 			"subtype": "Slayer's Fang",
 			"critShot": {
@@ -64308,12 +64432,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 253,
+				"row": 256,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:254",
+			"id": "damage:257",
 			"weaponType": "Shotgun",
 			"subtype": "The Chaperone",
 			"critShot": {
@@ -64349,12 +64473,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 254,
+				"row": 257,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:255",
+			"id": "damage:258",
 			"weaponType": "Shotgun",
 			"subtype": "The Fourth Horseman",
 			"critShot": {
@@ -64391,12 +64515,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 255,
+				"row": 258,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:256",
+			"id": "damage:259",
 			"weaponType": "Shotgun",
 			"subtype": "Tractor Cannon",
 			"critShot": {
@@ -64432,12 +64556,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 256,
+				"row": 259,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:257",
+			"id": "damage:260",
 			"weaponType": "Sidearm",
 			"subtype": "Adaptive burst frame",
 			"critShot": {
@@ -64473,126 +64597,6 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 257,
-				"gid": 2139128689
-			}
-		},
-		{
-			"id": "damage:258",
-			"weaponType": "Sidearm",
-			"subtype": "Adaptive frame",
-			"critShot": {
-				"raw": "1185",
-				"value": 1185
-			},
-			"bodyShot": {
-				"raw": "741",
-				"value": 741
-			},
-			"visualValue": {
-				"raw": "78.546",
-				"value": 78.546
-			},
-			"healthbarValue": {
-				"raw": "/",
-				"value": null
-			},
-			"visualBoss": "Savathun",
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"fullModifiers": {
-				"raw": "15.09",
-				"value": 15.09
-			},
-			"critRatio": {
-				"raw": "1.599",
-				"value": 1.599
-			},
-			"patch": "9.7.0",
-			"ref": {
-				"tab": "Weapons",
-				"row": 258,
-				"gid": 2139128689
-			}
-		},
-		{
-			"id": "damage:259",
-			"weaponType": "Sidearm",
-			"subtype": "Buried Bloodline",
-			"critShot": {
-				"raw": "533",
-				"value": 533
-			},
-			"bodyShot": {
-				"raw": "442",
-				"value": 442
-			},
-			"visualValue": {
-				"raw": "322.420",
-				"value": 322.42
-			},
-			"healthbarValue": {
-				"raw": "/",
-				"value": null
-			},
-			"visualBoss": "Carl",
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"fullModifiers": {
-				"raw": "3.31",
-				"value": 3.31
-			},
-			"critRatio": {
-				"raw": "1.206",
-				"value": 1.206
-			},
-			"patch": "9.7.0.3",
-			"ref": {
-				"tab": "Weapons",
-				"row": 259,
-				"gid": 2139128689
-			}
-		},
-		{
-			"id": "damage:260",
-			"weaponType": "Sidearm",
-			"subtype": "Cryosthesia 77K",
-			"critShot": {
-				"raw": "1316",
-				"value": 1316
-			},
-			"bodyShot": {
-				"raw": "824",
-				"value": 824
-			},
-			"visualValue": {
-				"raw": "87.229",
-				"value": 87.229
-			},
-			"healthbarValue": {
-				"raw": "/",
-				"value": null
-			},
-			"visualBoss": "Savathun",
-			"shots": {
-				"raw": "1",
-				"value": 1
-			},
-			"fullModifiers": {
-				"raw": "15.09",
-				"value": 15.09
-			},
-			"critRatio": {
-				"raw": "1.597",
-				"value": 1.597
-			},
-			"patch": "9.7.0",
-			"ref": {
-				"tab": "Weapons",
 				"row": 260,
 				"gid": 2139128689
 			}
@@ -64600,7 +64604,7 @@
 		{
 			"id": "damage:261",
 			"weaponType": "Sidearm",
-			"subtype": "Devil's Ruin",
+			"subtype": "Adaptive frame",
 			"critShot": {
 				"raw": "1185",
 				"value": 1185
@@ -64640,6 +64644,126 @@
 		{
 			"id": "damage:262",
 			"weaponType": "Sidearm",
+			"subtype": "Buried Bloodline",
+			"critShot": {
+				"raw": "533",
+				"value": 533
+			},
+			"bodyShot": {
+				"raw": "442",
+				"value": 442
+			},
+			"visualValue": {
+				"raw": "322.420",
+				"value": 322.42
+			},
+			"healthbarValue": {
+				"raw": "/",
+				"value": null
+			},
+			"visualBoss": "Carl",
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"fullModifiers": {
+				"raw": "3.31",
+				"value": 3.31
+			},
+			"critRatio": {
+				"raw": "1.206",
+				"value": 1.206
+			},
+			"patch": "9.7.0.3",
+			"ref": {
+				"tab": "Weapons",
+				"row": 262,
+				"gid": 2139128689
+			}
+		},
+		{
+			"id": "damage:263",
+			"weaponType": "Sidearm",
+			"subtype": "Cryosthesia 77K",
+			"critShot": {
+				"raw": "1316",
+				"value": 1316
+			},
+			"bodyShot": {
+				"raw": "824",
+				"value": 824
+			},
+			"visualValue": {
+				"raw": "87.229",
+				"value": 87.229
+			},
+			"healthbarValue": {
+				"raw": "/",
+				"value": null
+			},
+			"visualBoss": "Savathun",
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"fullModifiers": {
+				"raw": "15.09",
+				"value": 15.09
+			},
+			"critRatio": {
+				"raw": "1.597",
+				"value": 1.597
+			},
+			"patch": "9.7.0",
+			"ref": {
+				"tab": "Weapons",
+				"row": 263,
+				"gid": 2139128689
+			}
+		},
+		{
+			"id": "damage:264",
+			"weaponType": "Sidearm",
+			"subtype": "Devil's Ruin",
+			"critShot": {
+				"raw": "1185",
+				"value": 1185
+			},
+			"bodyShot": {
+				"raw": "741",
+				"value": 741
+			},
+			"visualValue": {
+				"raw": "78.546",
+				"value": 78.546
+			},
+			"healthbarValue": {
+				"raw": "/",
+				"value": null
+			},
+			"visualBoss": "Savathun",
+			"shots": {
+				"raw": "1",
+				"value": 1
+			},
+			"fullModifiers": {
+				"raw": "15.09",
+				"value": 15.09
+			},
+			"critRatio": {
+				"raw": "1.599",
+				"value": 1.599
+			},
+			"patch": "9.7.0",
+			"ref": {
+				"tab": "Weapons",
+				"row": 264,
+				"gid": 2139128689
+			}
+		},
+		{
+			"id": "damage:265",
+			"weaponType": "Sidearm",
 			"subtype": "Devil's Ruin",
 			"critShot": {
 				"raw": "415",
@@ -64675,12 +64799,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 262,
+				"row": 265,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:263",
+			"id": "damage:266",
 			"weaponType": "Sidearm",
 			"subtype": "Devil's Ruin",
 			"critShot": {
@@ -64717,12 +64841,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 263,
+				"row": 266,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:264",
+			"id": "damage:267",
 			"weaponType": "Sidearm",
 			"subtype": "Dynamic heat weapon - 360RPM primary",
 			"critShot": {
@@ -64757,12 +64881,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 264,
+				"row": 267,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:265",
+			"id": "damage:268",
 			"weaponType": "Sidearm",
 			"subtype": "Final Warning",
 			"critShot": {
@@ -64798,12 +64922,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 265,
+				"row": 268,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:266",
+			"id": "damage:269",
 			"weaponType": "Sidearm",
 			"subtype": "Final Warning",
 			"critShot": {
@@ -64839,12 +64963,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 266,
+				"row": 269,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:267",
+			"id": "damage:270",
 			"weaponType": "Sidearm",
 			"subtype": "Forerunner",
 			"critShot": {
@@ -64881,12 +65005,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 267,
+				"row": 270,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:268",
+			"id": "damage:271",
 			"weaponType": "Sidearm",
 			"subtype": "Forerunner",
 			"critShot": {
@@ -64921,12 +65045,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 268,
+				"row": 271,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:269",
+			"id": "damage:272",
 			"weaponType": "Sidearm",
 			"subtype": "Heavy burst frame",
 			"critShot": {
@@ -64962,12 +65086,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 269,
+				"row": 272,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:270",
+			"id": "damage:273",
 			"weaponType": "Sidearm",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -65002,12 +65126,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 270,
+				"row": 273,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:271",
+			"id": "damage:274",
 			"weaponType": "Sidearm",
 			"subtype": "Micro-missile frame",
 			"critShot": {
@@ -65043,12 +65167,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 271,
+				"row": 274,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:272",
+			"id": "damage:275",
 			"weaponType": "Sidearm",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -65083,12 +65207,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 272,
+				"row": 275,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:273",
+			"id": "damage:276",
 			"weaponType": "Sidearm",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -65123,12 +65247,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 273,
+				"row": 276,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:274",
+			"id": "damage:277",
 			"weaponType": "Sidearm",
 			"subtype": "Rat King",
 			"critShot": {
@@ -65163,12 +65287,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 274,
+				"row": 277,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:275",
+			"id": "damage:278",
 			"weaponType": "Sidearm",
 			"subtype": "Traveler's Chosen",
 			"critShot": {
@@ -65203,12 +65327,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 275,
+				"row": 278,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:276",
+			"id": "damage:279",
 			"weaponType": "Sidearm",
 			"subtype": "Trespasser",
 			"critShot": {
@@ -65244,12 +65368,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 276,
+				"row": 279,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:277",
+			"id": "damage:280",
 			"weaponType": "SMG",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -65284,12 +65408,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 277,
+				"row": 280,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:278",
+			"id": "damage:281",
 			"weaponType": "SMG",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -65325,12 +65449,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 278,
+				"row": 281,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:279",
+			"id": "damage:282",
 			"weaponType": "SMG",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -65366,12 +65490,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 279,
+				"row": 282,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:280",
+			"id": "damage:283",
 			"weaponType": "SMG",
 			"subtype": "Aggressive burst frame",
 			"critShot": {
@@ -65407,12 +65531,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 280,
+				"row": 283,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:281",
+			"id": "damage:284",
 			"weaponType": "SMG",
 			"subtype": "Aggressive burst frame",
 			"critShot": {
@@ -65448,12 +65572,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 281,
+				"row": 284,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:282",
+			"id": "damage:285",
 			"weaponType": "SMG",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -65488,12 +65612,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 282,
+				"row": 285,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:283",
+			"id": "damage:286",
 			"weaponType": "SMG",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -65529,12 +65653,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 283,
+				"row": 286,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:284",
+			"id": "damage:287",
 			"weaponType": "SMG",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -65570,12 +65694,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 284,
+				"row": 287,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:285",
+			"id": "damage:288",
 			"weaponType": "SMG",
 			"subtype": "Balanced heat weapon - 900RPM primary",
 			"critShot": {
@@ -65610,12 +65734,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 285,
+				"row": 288,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:286",
+			"id": "damage:289",
 			"weaponType": "SMG",
 			"subtype": "Balanced heat weapon - 900RPM primary",
 			"critShot": {
@@ -65651,12 +65775,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 286,
+				"row": 289,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:287",
+			"id": "damage:290",
 			"weaponType": "SMG",
 			"subtype": "Barrow-Dyad",
 			"critShot": {
@@ -65692,12 +65816,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 287,
+				"row": 290,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:288",
+			"id": "damage:291",
 			"weaponType": "SMG",
 			"subtype": "Barrow-Dyad",
 			"critShot": {
@@ -65734,12 +65858,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 288,
+				"row": 291,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:289",
+			"id": "damage:292",
 			"weaponType": "SMG",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -65774,12 +65898,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 289,
+				"row": 292,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:290",
+			"id": "damage:293",
 			"weaponType": "SMG",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -65815,12 +65939,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 290,
+				"row": 293,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:291",
+			"id": "damage:294",
 			"weaponType": "SMG",
 			"subtype": "Osteo Striga",
 			"critShot": {
@@ -65857,12 +65981,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 291,
+				"row": 294,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:292",
+			"id": "damage:295",
 			"weaponType": "SMG",
 			"subtype": "Osteo Striga",
 			"critShot": {
@@ -65899,12 +66023,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 292,
+				"row": 295,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:293",
+			"id": "damage:296",
 			"weaponType": "SMG",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -65939,12 +66063,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 293,
+				"row": 296,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:294",
+			"id": "damage:297",
 			"weaponType": "SMG",
 			"subtype": "Precision frame",
 			"critShot": {
@@ -65980,12 +66104,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 294,
+				"row": 297,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:295",
+			"id": "damage:298",
 			"weaponType": "SMG",
 			"subtype": "Riskrunner",
 			"critShot": {
@@ -66020,12 +66144,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 295,
+				"row": 298,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:296",
+			"id": "damage:299",
 			"weaponType": "SMG",
 			"subtype": "Riskrunner",
 			"critShot": {
@@ -66062,12 +66186,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 296,
+				"row": 299,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:297",
+			"id": "damage:300",
 			"weaponType": "SMG",
 			"subtype": "Riskrunner",
 			"critShot": {
@@ -66103,12 +66227,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 297,
+				"row": 300,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:298",
+			"id": "damage:301",
 			"weaponType": "SMG",
 			"subtype": "Tarrabah",
 			"critShot": {
@@ -66143,12 +66267,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 298,
+				"row": 301,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:299",
+			"id": "damage:302",
 			"weaponType": "SMG",
 			"subtype": "Tarrabah",
 			"critShot": {
@@ -66184,12 +66308,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 299,
+				"row": 302,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:300",
+			"id": "damage:303",
 			"weaponType": "SMG",
 			"subtype": "Tarrabah",
 			"critShot": {
@@ -66225,12 +66349,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 300,
+				"row": 303,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:301",
+			"id": "damage:304",
 			"weaponType": "SMG",
 			"subtype": "The Huckleberry",
 			"critShot": {
@@ -66267,12 +66391,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 301,
+				"row": 304,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:302",
+			"id": "damage:305",
 			"weaponType": "SMG",
 			"subtype": "The Huckleberry",
 			"critShot": {
@@ -66308,12 +66432,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 302,
+				"row": 305,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:303",
+			"id": "damage:306",
 			"weaponType": "SMG",
 			"subtype": "The Manticore",
 			"critShot": {
@@ -66349,12 +66473,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 303,
+				"row": 306,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:304",
+			"id": "damage:307",
 			"weaponType": "SMG",
 			"subtype": "The Manticore",
 			"critShot": {
@@ -66390,12 +66514,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 304,
+				"row": 307,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:305",
+			"id": "damage:308",
 			"weaponType": "Sniper rifle",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -66431,12 +66555,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 305,
+				"row": 308,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:306",
+			"id": "damage:309",
 			"weaponType": "Sniper rifle",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -66472,12 +66596,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 306,
+				"row": 309,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:307",
+			"id": "damage:310",
 			"weaponType": "Sniper rifle",
 			"subtype": "Borealis",
 			"critShot": {
@@ -66513,12 +66637,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 307,
+				"row": 310,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:308",
+			"id": "damage:311",
 			"weaponType": "Sniper rifle",
 			"subtype": "Cloudstrike",
 			"critShot": {
@@ -66556,12 +66680,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 308,
+				"row": 311,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:309",
+			"id": "damage:312",
 			"weaponType": "Sniper rifle",
 			"subtype": "D.A.R.C.I.",
 			"critShot": {
@@ -66598,12 +66722,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 309,
+				"row": 312,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:310",
+			"id": "damage:313",
 			"weaponType": "Sniper rifle",
 			"subtype": "D.A.R.C.I.",
 			"critShot": {
@@ -66640,12 +66764,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 310,
+				"row": 313,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:311",
+			"id": "damage:314",
 			"weaponType": "Sniper rifle",
 			"subtype": "Disruption weapon",
 			"critShot": {
@@ -66680,12 +66804,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 311,
+				"row": 314,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:312",
+			"id": "damage:315",
 			"weaponType": "Sniper rifle",
 			"subtype": "Dynamic heat weapon - 140RPM special",
 			"critShot": {
@@ -66720,12 +66844,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 312,
+				"row": 315,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:313",
+			"id": "damage:316",
 			"weaponType": "Sniper rifle",
 			"subtype": "High-impact frame",
 			"critShot": {
@@ -66760,12 +66884,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 313,
+				"row": 316,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:314",
+			"id": "damage:317",
 			"weaponType": "Sniper rifle",
 			"subtype": "Ice Breaker",
 			"critShot": {
@@ -66802,12 +66926,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 314,
+				"row": 317,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:315",
+			"id": "damage:318",
 			"weaponType": "Sniper rifle",
 			"subtype": "Ice Breaker",
 			"critShot": {
@@ -66842,12 +66966,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 315,
+				"row": 318,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:316",
+			"id": "damage:319",
 			"weaponType": "Sniper rifle",
 			"subtype": "Izanagi's Burden",
 			"critShot": {
@@ -66882,12 +67006,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 316,
+				"row": 319,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:317",
+			"id": "damage:320",
 			"weaponType": "Sniper rifle",
 			"subtype": "Izanagi's Burden",
 			"critShot": {
@@ -66925,12 +67049,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 317,
+				"row": 320,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:318",
+			"id": "damage:321",
 			"weaponType": "Sniper rifle",
 			"subtype": "New Land Beyond",
 			"critShot": {
@@ -66968,12 +67092,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 318,
+				"row": 321,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:319",
+			"id": "damage:322",
 			"weaponType": "Sniper rifle",
 			"subtype": "Rapid-fire frame",
 			"critShot": {
@@ -67009,12 +67133,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 319,
+				"row": 322,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:320",
+			"id": "damage:323",
 			"weaponType": "Sniper rifle",
 			"subtype": "Still Hunt",
 			"critShot": {
@@ -67051,12 +67175,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 320,
+				"row": 323,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:321",
+			"id": "damage:324",
 			"weaponType": "Sniper rifle",
 			"subtype": "Still Hunt",
 			"critShot": {
@@ -67092,12 +67216,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 321,
+				"row": 324,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:322",
+			"id": "damage:325",
 			"weaponType": "Sniper rifle",
 			"subtype": "Still Hunt",
 			"critShot": {
@@ -67132,12 +67256,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 322,
+				"row": 325,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:323",
+			"id": "damage:326",
 			"weaponType": "Sniper rifle",
 			"subtype": "Whisper of the Worm",
 			"critShot": {
@@ -67174,12 +67298,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 323,
+				"row": 326,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:324",
+			"id": "damage:327",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67216,12 +67340,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 324,
+				"row": 327,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:325",
+			"id": "damage:328",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67258,12 +67382,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 325,
+				"row": 328,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:326",
+			"id": "damage:329",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67299,12 +67423,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 326,
+				"row": 329,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:327",
+			"id": "damage:330",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67341,12 +67465,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 327,
+				"row": 330,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:328",
+			"id": "damage:331",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67382,12 +67506,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 328,
+				"row": 331,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:329",
+			"id": "damage:332",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67424,12 +67548,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 329,
+				"row": 332,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:330",
+			"id": "damage:333",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67465,12 +67589,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 330,
+				"row": 333,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:331",
+			"id": "damage:334",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -67507,12 +67631,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 331,
+				"row": 334,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:332",
+			"id": "damage:335",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame - Bequest",
 			"critShot": {
@@ -67548,12 +67672,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 332,
+				"row": 335,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:333",
+			"id": "damage:336",
 			"weaponType": "Sword",
 			"subtype": "Adaptive frame - Bequest",
 			"critShot": {
@@ -67590,12 +67714,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 333,
+				"row": 336,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:334",
+			"id": "damage:337",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67631,12 +67755,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 334,
+				"row": 337,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:335",
+			"id": "damage:338",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67672,12 +67796,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 335,
+				"row": 338,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:336",
+			"id": "damage:339",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67713,12 +67837,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 336,
+				"row": 339,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:337",
+			"id": "damage:340",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67754,12 +67878,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 337,
+				"row": 340,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:338",
+			"id": "damage:341",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67795,12 +67919,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 338,
+				"row": 341,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:339",
+			"id": "damage:342",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67836,12 +67960,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 339,
+				"row": 342,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:340",
+			"id": "damage:343",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67877,12 +68001,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 340,
+				"row": 343,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:341",
+			"id": "damage:344",
 			"weaponType": "Sword",
 			"subtype": "Aggressive frame",
 			"critShot": {
@@ -67918,12 +68042,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 341,
+				"row": 344,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:342",
+			"id": "damage:345",
 			"weaponType": "Sword",
 			"subtype": "Black Talon",
 			"critShot": {
@@ -67959,12 +68083,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 342,
+				"row": 345,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:343",
+			"id": "damage:346",
 			"weaponType": "Sword",
 			"subtype": "Black Talon",
 			"critShot": {
@@ -68000,12 +68124,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 343,
+				"row": 346,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:344",
+			"id": "damage:347",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68041,12 +68165,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 344,
+				"row": 347,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:345",
+			"id": "damage:348",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68083,12 +68207,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 345,
+				"row": 348,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:346",
+			"id": "damage:349",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68124,12 +68248,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 346,
+				"row": 349,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:347",
+			"id": "damage:350",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68166,12 +68290,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 347,
+				"row": 350,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:348",
+			"id": "damage:351",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68207,12 +68331,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 348,
+				"row": 351,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:349",
+			"id": "damage:352",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68249,12 +68373,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 349,
+				"row": 352,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:350",
+			"id": "damage:353",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68290,12 +68414,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 350,
+				"row": 353,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:351",
+			"id": "damage:354",
 			"weaponType": "Sword",
 			"subtype": "Caster frame",
 			"critShot": {
@@ -68332,12 +68456,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 351,
+				"row": 354,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:352",
+			"id": "damage:355",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68374,12 +68498,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 352,
+				"row": 355,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:353",
+			"id": "damage:356",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68415,12 +68539,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 353,
+				"row": 356,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:354",
+			"id": "damage:357",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68457,12 +68581,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 354,
+				"row": 357,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:355",
+			"id": "damage:358",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68499,12 +68623,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 355,
+				"row": 358,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:356",
+			"id": "damage:359",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68540,12 +68664,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 356,
+				"row": 359,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:357",
+			"id": "damage:360",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68581,12 +68705,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 357,
+				"row": 360,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:358",
+			"id": "damage:361",
 			"weaponType": "Sword",
 			"subtype": "Ergo Sum",
 			"critShot": {
@@ -68622,12 +68746,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 358,
+				"row": 361,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:359",
+			"id": "damage:362",
 			"weaponType": "Sword",
 			"subtype": "Heartshadow",
 			"critShot": {
@@ -68663,12 +68787,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 359,
+				"row": 362,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:360",
+			"id": "damage:363",
 			"weaponType": "Sword",
 			"subtype": "Heartshadow",
 			"critShot": {
@@ -68705,12 +68829,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 360,
+				"row": 363,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:361",
+			"id": "damage:364",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68746,12 +68870,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 361,
+				"row": 364,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:362",
+			"id": "damage:365",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68787,12 +68911,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 362,
+				"row": 365,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:363",
+			"id": "damage:366",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68828,12 +68952,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 363,
+				"row": 366,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:364",
+			"id": "damage:367",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68870,12 +68994,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 364,
+				"row": 367,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:365",
+			"id": "damage:368",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68911,12 +69035,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 365,
+				"row": 368,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:366",
+			"id": "damage:369",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68952,12 +69076,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 366,
+				"row": 369,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:367",
+			"id": "damage:370",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -68993,12 +69117,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 367,
+				"row": 370,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:368",
+			"id": "damage:371",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -69034,12 +69158,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 368,
+				"row": 371,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:369",
+			"id": "damage:372",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -69075,12 +69199,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 369,
+				"row": 372,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:370",
+			"id": "damage:373",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -69116,12 +69240,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 370,
+				"row": 373,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:371",
+			"id": "damage:374",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -69157,12 +69281,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 371,
+				"row": 374,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:372",
+			"id": "damage:375",
 			"weaponType": "Sword",
 			"subtype": "Lightweight frame",
 			"critShot": {
@@ -69198,12 +69322,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 372,
+				"row": 375,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:373",
+			"id": "damage:376",
 			"weaponType": "Sword",
 			"subtype": "Praxic Blade",
 			"critShot": {
@@ -69240,12 +69364,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 373,
+				"row": 376,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:374",
+			"id": "damage:377",
 			"weaponType": "Sword",
 			"subtype": "Praxic Blade",
 			"critShot": {
@@ -69282,12 +69406,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 374,
+				"row": 377,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:375",
+			"id": "damage:378",
 			"weaponType": "Sword",
 			"subtype": "Praxic Blade",
 			"critShot": {
@@ -69324,12 +69448,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 375,
+				"row": 378,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:376",
+			"id": "damage:379",
 			"weaponType": "Sword",
 			"subtype": "Praxic Blade",
 			"critShot": {
@@ -69366,12 +69490,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 376,
+				"row": 379,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:377",
+			"id": "damage:380",
 			"weaponType": "Sword",
 			"subtype": "Praxic Blade",
 			"critShot": {
@@ -69408,12 +69532,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 377,
+				"row": 380,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:378",
+			"id": "damage:381",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69450,12 +69574,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 378,
+				"row": 381,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:379",
+			"id": "damage:382",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69492,12 +69616,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 379,
+				"row": 382,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:380",
+			"id": "damage:383",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69534,12 +69658,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 380,
+				"row": 383,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:381",
+			"id": "damage:384",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69576,12 +69700,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 381,
+				"row": 384,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:382",
+			"id": "damage:385",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69618,12 +69742,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 382,
+				"row": 385,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:383",
+			"id": "damage:386",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69660,12 +69784,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 383,
+				"row": 386,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:384",
+			"id": "damage:387",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69702,12 +69826,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 384,
+				"row": 387,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:385",
+			"id": "damage:388",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69744,12 +69868,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 385,
+				"row": 388,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:386",
+			"id": "damage:389",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69786,12 +69910,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 386,
+				"row": 389,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:387",
+			"id": "damage:390",
 			"weaponType": "Sword",
 			"subtype": "The Lament",
 			"critShot": {
@@ -69828,12 +69952,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 387,
+				"row": 390,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:388",
+			"id": "damage:391",
 			"weaponType": "Sword",
 			"subtype": "Vortex frame",
 			"critShot": {
@@ -69870,12 +69994,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 388,
+				"row": 391,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:389",
+			"id": "damage:392",
 			"weaponType": "Sword",
 			"subtype": "Vortex frame",
 			"critShot": {
@@ -69912,12 +70036,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 389,
+				"row": 392,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:390",
+			"id": "damage:393",
 			"weaponType": "Sword",
 			"subtype": "Vortex frame",
 			"critShot": {
@@ -69954,12 +70078,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 390,
+				"row": 393,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:391",
+			"id": "damage:394",
 			"weaponType": "Sword",
 			"subtype": "Vortex frame",
 			"critShot": {
@@ -69996,12 +70120,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 391,
+				"row": 394,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:392",
+			"id": "damage:395",
 			"weaponType": "Sword",
 			"subtype": "Wave sword frame",
 			"critShot": {
@@ -70037,12 +70161,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 392,
+				"row": 395,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:393",
+			"id": "damage:396",
 			"weaponType": "Sword",
 			"subtype": "Wave sword frame",
 			"critShot": {
@@ -70078,12 +70202,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 393,
+				"row": 396,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:394",
+			"id": "damage:397",
 			"weaponType": "Sword",
 			"subtype": "Wave sword frame",
 			"critShot": {
@@ -70119,12 +70243,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 394,
+				"row": 397,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:395",
+			"id": "damage:398",
 			"weaponType": "Sword",
 			"subtype": "Wave sword frame",
 			"critShot": {
@@ -70160,12 +70284,12 @@
 			"patch": "9.7.0.2",
 			"ref": {
 				"tab": "Weapons",
-				"row": 395,
+				"row": 398,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:396",
+			"id": "damage:399",
 			"weaponType": "Sword",
 			"subtype": "Wolfsbane",
 			"critShot": {
@@ -70202,12 +70326,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 396,
+				"row": 399,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:397",
+			"id": "damage:400",
 			"weaponType": "Sword",
 			"subtype": "Wolfsbane",
 			"critShot": {
@@ -70244,12 +70368,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 397,
+				"row": 400,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:398",
+			"id": "damage:401",
 			"weaponType": "Sword",
 			"subtype": "Wolfsbane",
 			"critShot": {
@@ -70286,12 +70410,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 398,
+				"row": 401,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:399",
+			"id": "damage:402",
 			"weaponType": "Sword",
 			"subtype": "Worldline Zero",
 			"critShot": {
@@ -70329,12 +70453,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 399,
+				"row": 402,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:400",
+			"id": "damage:403",
 			"weaponType": "Trace rifle",
 			"subtype": "Adaptive frame",
 			"critShot": {
@@ -70369,12 +70493,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 400,
+				"row": 403,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:401",
+			"id": "damage:404",
 			"weaponType": "Trace rifle",
 			"subtype": "Ager's Scepter",
 			"critShot": {
@@ -70409,12 +70533,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 401,
+				"row": 404,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:402",
+			"id": "damage:405",
 			"weaponType": "Trace rifle",
 			"subtype": "Ager's Scepter",
 			"critShot": {
@@ -70450,12 +70574,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 402,
+				"row": 405,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:403",
+			"id": "damage:406",
 			"weaponType": "Trace rifle",
 			"subtype": "Ager's Scepter",
 			"critShot": {
@@ -70491,12 +70615,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 403,
+				"row": 406,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:404",
+			"id": "damage:407",
 			"weaponType": "Trace rifle",
 			"subtype": "Coldheart",
 			"critShot": {
@@ -70533,12 +70657,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 404,
+				"row": 407,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:405",
+			"id": "damage:408",
 			"weaponType": "Trace rifle",
 			"subtype": "Divinity",
 			"critShot": {
@@ -70575,12 +70699,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 405,
+				"row": 408,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:406",
+			"id": "damage:409",
 			"weaponType": "Trace rifle",
 			"subtype": "Lodestar",
 			"critShot": {
@@ -70617,12 +70741,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 406,
+				"row": 409,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:407",
+			"id": "damage:410",
 			"weaponType": "Trace rifle",
 			"subtype": "Lodestar",
 			"critShot": {
@@ -70658,12 +70782,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 407,
+				"row": 410,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:408",
+			"id": "damage:411",
 			"weaponType": "Trace rifle",
 			"subtype": "Microcosm",
 			"critShot": {
@@ -70699,12 +70823,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 408,
+				"row": 411,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:409",
+			"id": "damage:412",
 			"weaponType": "Trace rifle",
 			"subtype": "Prometheus Lens",
 			"critShot": {
@@ -70741,12 +70865,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 409,
+				"row": 412,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:410",
+			"id": "damage:413",
 			"weaponType": "Trace rifle",
 			"subtype": "Prometheus Lens",
 			"critShot": {
@@ -70783,12 +70907,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 410,
+				"row": 413,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:411",
+			"id": "damage:414",
 			"weaponType": "Trace rifle",
 			"subtype": "Ruinous Effigy",
 			"critShot": {
@@ -70823,12 +70947,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 411,
+				"row": 414,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:412",
+			"id": "damage:415",
 			"weaponType": "Trace rifle",
 			"subtype": "Ruinous Effigy",
 			"critShot": {
@@ -70864,12 +70988,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 412,
+				"row": 415,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:413",
+			"id": "damage:416",
 			"weaponType": "Trace rifle",
 			"subtype": "The Navigator",
 			"critShot": {
@@ -70905,12 +71029,12 @@
 			"patch": "9.7.0",
 			"ref": {
 				"tab": "Weapons",
-				"row": 413,
+				"row": 416,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:414",
+			"id": "damage:417",
 			"weaponType": "Trace rifle",
 			"subtype": "Wavesplitter",
 			"critShot": {
@@ -70947,12 +71071,12 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 414,
+				"row": 417,
 				"gid": 2139128689
 			}
 		},
 		{
-			"id": "damage:415",
+			"id": "damage:418",
 			"weaponType": "Trace rifle",
 			"subtype": "Wavesplitter",
 			"critShot": {
@@ -70989,7 +71113,7 @@
 			"patch": "9.7.0.3",
 			"ref": {
 				"tab": "Weapons",
-				"row": 415,
+				"row": 418,
 				"gid": 2139128689
 			}
 		}
@@ -82361,6 +82485,57 @@
 		},
 		{
 			"id": "sustained:222",
+			"name": "Anarchy",
+			"loadout": "two traps, catalyst",
+			"slot": "tick",
+			"family": "HGL",
+			"distribution": "2-2-2...",
+			"peakRate": {
+				"raw": "10.050",
+				"value": 10.05
+			},
+			"timeToEmpty": {
+				"raw": "150.750",
+				"value": 150.75
+			},
+			"base": {
+				"raw": "6,737",
+				"value": 6737
+			},
+			"perk": {
+				"raw": "",
+				"value": null
+			},
+			"surge": {
+				"raw": "1.220",
+				"value": 1.22
+			},
+			"buff": {
+				"raw": "1.350",
+				"value": 1.35
+			},
+			"debuff": {
+				"raw": "1.300",
+				"value": 1.3
+			},
+			"total": {
+				"raw": "230,075",
+				"value": 230075
+			},
+			"dps": {
+				"raw": "1,526",
+				"value": 1526
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f24e3336a1142847d6bf47b56b492eea.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
+			"ref": {
+				"tab": "Sustained",
+				"row": 222,
+				"gid": 1455724279
+			}
+		},
+		{
+			"id": "sustained:223",
 			"name": "Tarrabah",
 			"loadout": "Ravenous Beast",
 			"slot": "primary",
@@ -82406,12 +82581,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/58d3ec8338cc9746a2e0cf901fbcec0e.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 222,
+				"row": 223,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:223",
+			"id": "sustained:224",
 			"name": "Alethonym",
 			"slot": "tick",
 			"family": "BGL",
@@ -82456,12 +82631,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/5232219633cc4d90570bffda36caccf4.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 223,
+				"row": 224,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:224",
+			"id": "sustained:225",
 			"name": "Hawkmoon",
 			"loadout": "successive mags, Paracausal Shot x7",
 			"slot": "primary",
@@ -82507,12 +82682,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/a5e27dc822aa72787f388bd1fc115803.png",
 			"ref": {
 				"tab": "Sustained",
-				"row": 224,
+				"row": 225,
 				"gid": 1455724279
 			}
 		},
 		{
-			"id": "sustained:225",
+			"id": "sustained:226",
 			"name": "Tommy's Matchbook",
 			"loadout": "Ember of Ashes",
 			"slot": "primary",
@@ -82556,57 +82731,6 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/251630147cd942ade9414781e96237ec.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/247715dd42abef457b52ef37280c0e42.png",
-			"ref": {
-				"tab": "Sustained",
-				"row": 225,
-				"gid": 1455724279
-			}
-		},
-		{
-			"id": "sustained:226",
-			"name": "Anarchy",
-			"loadout": "two traps, catalyst",
-			"slot": "tick",
-			"family": "HGL",
-			"distribution": "2-2-2...",
-			"peakRate": {
-				"raw": "15.050",
-				"value": 15.05
-			},
-			"timeToEmpty": {
-				"raw": "225.750",
-				"value": 225.75
-			},
-			"base": {
-				"raw": "6,737",
-				"value": 6737
-			},
-			"perk": {
-				"raw": "1.300",
-				"value": 1.3
-			},
-			"surge": {
-				"raw": "1.220",
-				"value": 1.22
-			},
-			"buff": {
-				"raw": "1.350",
-				"value": 1.35
-			},
-			"debuff": {
-				"raw": "1.300",
-				"value": 1.3
-			},
-			"total": {
-				"raw": "299,097",
-				"value": 299097
-			},
-			"dps": {
-				"raw": "1,325",
-				"value": 1325
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/f24e3336a1142847d6bf47b56b492eea.jpg",
-			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e0c16042274fd7d9cbffc4489e340c5d.png",
 			"ref": {
 				"tab": "Sustained",
 				"row": 226,
@@ -85772,16 +85896,16 @@
 				"value": 22262
 			},
 			"swapTime": {
-				"raw": "1.733",
-				"value": 1.733
+				"raw": "1.749",
+				"value": 1.749
 			},
 			"totalTime": {
 				"raw": "3.333",
 				"value": 3.333
 			},
 			"swapDps": {
-				"raw": "12,846",
-				"value": 12846
+				"raw": "12,728",
+				"value": 12728
 			},
 			"trueDps": {
 				"raw": "6,679",
@@ -86282,47 +86406,6 @@
 		},
 		{
 			"id": "swap:48",
-			"name": "Aggressive rocket launcher",
-			"loadout": "Elemental Honing x5 + Timelost Magazine (Hezen Vengeance), Pack Hunter, 2 shots, Argent Ordnance",
-			"attackType": "swap",
-			"base": {
-				"raw": "2,550",
-				"value": 2550
-			},
-			"shots": {
-				"raw": "2",
-				"value": 2
-			},
-			"total": {
-				"raw": "18,645",
-				"value": 18645
-			},
-			"swapTime": {
-				"raw": "1.699",
-				"value": 1.699
-			},
-			"totalTime": {
-				"raw": "2.183",
-				"value": 2.183
-			},
-			"swapDps": {
-				"raw": "10,974",
-				"value": 10974
-			},
-			"trueDps": {
-				"raw": "8,541",
-				"value": 8541
-			},
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
-			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
-			"ref": {
-				"tab": "Swap",
-				"row": 48,
-				"gid": 544204052
-			}
-		},
-		{
-			"id": "swap:49",
 			"name": "Adaptive rocket launcher",
 			"loadout": "e. Overflow + e. Reaper's Tithe + e. Forge's Kin x3 (Bellowing Giant), Pack Hunter, 3 shots, Argent Ordnance",
 			"attackType": "burst",
@@ -86358,12 +86441,12 @@
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/e78fd9419f99464816ac8f628bc3c4af.png",
 			"ref": {
 				"tab": "Swap",
-				"row": 49,
+				"row": 48,
 				"gid": 544204052
 			}
 		},
 		{
-			"id": "swap:50",
+			"id": "swap:49",
 			"name": "New Malpais",
 			"loadout": "6 bursts, only explosive damage, one suspend burst, pre-readied",
 			"attackType": "swap",
@@ -86397,6 +86480,47 @@
 			},
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/238e6c3afdc31870d15231656f2d6bcb.jpg",
 			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/249813e647271a8227bae0d8a39ed505.png",
+			"ref": {
+				"tab": "Swap",
+				"row": 49,
+				"gid": 544204052
+			}
+		},
+		{
+			"id": "swap:50",
+			"name": "Aggressive rocket launcher",
+			"loadout": "Elemental Honing x5 + Timelost Magazine (Hezen Vengeance), Pack Hunter, 2 shots, Argent Ordnance",
+			"attackType": "swap",
+			"base": {
+				"raw": "2,550",
+				"value": 2550
+			},
+			"shots": {
+				"raw": "2",
+				"value": 2
+			},
+			"total": {
+				"raw": "18,645",
+				"value": 18645
+			},
+			"swapTime": {
+				"raw": "1.749",
+				"value": 1.749
+			},
+			"totalTime": {
+				"raw": "2.233",
+				"value": 2.233
+			},
+			"swapDps": {
+				"raw": "10,660",
+				"value": 10660
+			},
+			"trueDps": {
+				"raw": "8,350",
+				"value": 8350
+			},
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/3b17caa86d9bb7b83a19d809084fa93b.jpg",
+			"watermarkPath": "https://www.bungie.net/common/destiny2_content/icons/0ac354c1c326441716ddb15d2c158c59.png",
 			"ref": {
 				"tab": "Swap",
 				"row": 50,
@@ -94920,7 +95044,7 @@
 		},
 		{
 			"tab": "Scouts",
-			"updated": "2026-07-12",
+			"updated": "2026-10-12",
 			"status": "updated"
 		},
 		{
@@ -95040,12 +95164,12 @@
 		},
 		{
 			"tab": "Aspects",
-			"updated": "2025-09-07",
+			"updated": "2026-09-07",
 			"status": "updated"
 		},
 		{
 			"tab": "Subclasses",
-			"updated": "2025-09-07",
+			"updated": "2026-09-07",
 			"status": "updated"
 		},
 		{

@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-10-02T15:36:37.009Z",
+	"generatedAt": "2026-11-03T23:35:36.089Z",
 	"tableNames": [
 		"DestinyInventoryItemDefinition",
 		"DestinySandboxPerkDefinition",
@@ -11,8 +11,8 @@
 		"DestinyStatDefinition",
 		"DestinyActivityModifierDefinition"
 	],
-	"manifestVersion": "244213.26.06.29.2000-1-bnet.65864",
-	"manifestPath": "/common/destiny2_content/sqlite/en/world_sql_content_a695ee698e87bcb0333c1026ba10cd63.content",
+	"manifestVersion": "245114.26.10.13.2000-1-bnet.66137",
+	"manifestPath": "/common/destiny2_content/sqlite/en/world_sql_content_4cb61ea5896949005e95c255e7369197.content",
 	"tables": {
 		"DestinyInventoryItemDefinition": {
 			"644105": {
