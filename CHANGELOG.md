@@ -11,7 +11,8 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 
 ### Added
 
-- A **Build Inspector** at [/build](https://owlsector.net/build): paste a dim.gg build link and see every weapon perk, armor mod, aspect, fragment, set bonus and artifact perk in it with the glossary descriptions, followed by the effects those descriptions refer to.
+- A **Build Inspector** at [/build](https://owlsector.net/build): paste a dim.gg build link and see the build as a grid of icons, with the glossary description of each perk, mod, aspect, fragment, armor set bonus and artifact perk on hover and click, plus the effects those descriptions refer to.
+- Add `.md` to the Build Inspector address, as in `/build.md?b=` followed by a dim.gg link, to get the whole build as Markdown text, or use the **Copy as Markdown** button on the page.
 
 ## [1.8.2] - 2026-09-23
 

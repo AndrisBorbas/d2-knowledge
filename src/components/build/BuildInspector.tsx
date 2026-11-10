@@ -106,7 +106,11 @@ export function BuildInspector() {
 			{isWorking ? <Notice>Reading the build...</Notice> : null}
 
 			{build && data.status === "ready" ? (
-				<BuildReport build={build} catalog={data.catalog} />
+				<BuildReport
+					build={build}
+					catalog={data.catalog}
+					pastedInput={pastedInput ?? ""}
+				/>
 			) : null}
 		</div>
 	);

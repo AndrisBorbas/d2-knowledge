@@ -27,26 +27,32 @@ export type CompactGearRow = {
 	tt: number;
 	// Armor only. DestinyClass: 0 Titan, 1 Hunter, 2 Warlock, 3 any.
 	ct?: number;
+	// Armor only. The DestinyEquipableItemSetDefinition hash of the armor set the
+	// piece belongs to, which is how a build's equipped pieces add up to a set
+	// bonus.
+	sh?: number;
 };
 
 export type GearTable = Record<string, CompactGearRow>;
 
 // Weapons keep every legendary and exotic row, since adept, timelost and
-// holofoil copies each have a hash of their own. Armor keeps exotics only: a
-// legendary piece's name says little a build reader needs, and there are thousands
-// of them.
+// holofoil copies each have a hash of their own. Armor keeps exotics, plus any
+// piece that belongs to an armor set: those are the pieces whose set bonus a
+// build can show, and the rest of the legendary armor is thousands of pieces a
+// build reader gets nothing from.
 export function shouldKeepGear(params: {
 	itemType: number | undefined;
 	tierType: number | undefined;
+	itemSetHash: number | undefined;
 }) {
-	const { itemType, tierType } = params;
+	const { itemType, tierType, itemSetHash } = params;
 	if (tierType === undefined) return false;
 
 	if (itemType === WEAPON_ITEM_TYPE) {
 		return tierType >= GEAR_LEGENDARY_TIER;
 	}
 	if (itemType === GEAR_ARMOR_ITEM_TYPE) {
-		return tierType === GEAR_EXOTIC_TIER;
+		return tierType === GEAR_EXOTIC_TIER || itemSetHash !== undefined;
 	}
 	return false;
 }

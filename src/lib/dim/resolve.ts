@@ -8,7 +8,7 @@ import { SLOT_LABELS } from "@/lib/compendium/subclasses";
 import { cleanupDescriptionText, normalizeLookupName } from "@/lib/utils/text";
 
 import { type EntryCatalog, toSetBonusKey } from "./catalog";
-import { type DimIndex, toBungieUrl } from "./index-schema";
+import { type DimIndex, type DimIndexItem, toBungieUrl } from "./index-schema";
 import type { DimLoadout, DimLoadoutItem } from "./loadout";
 
 // What a plug is for, which decides between entries that share a name: a
@@ -28,11 +28,9 @@ export type ResolvedPlug = {
 	hash: number;
 	name: string;
 	iconPath?: string;
-	// The glossary entry that documents this plug, when there is one.
-	entryId?: string;
-	// Bungie's own text, kept only for a plug with no glossary entry, so it still
-	// shows something.
-	fallbackDescription?: string;
+	// The entry that documents this plug: a glossary entry when the community
+	// sources cover it, otherwise one of the build's own `manifestEntries`.
+	entryId: string;
 	// How many times the build uses it: armor mods repeat.
 	count: number;
 };
@@ -87,8 +85,20 @@ export type ResolvedBuild = {
 	armorPerks: ResolvedPlug[];
 	setBonuses: ResolvedSetBonus[];
 	artifactPerks: ResolvedPlug[];
+	// Entries made for plugs only the Bungie manifest knows, so they carry the
+	// in-game text and nothing from the community sources. They are not in the
+	// glossary, so whatever renders the build has to add them to its entry map.
+	manifestEntries: AnnotatedEntry[];
 	// Hashes the site could not name at all. Mostly shaders and ornaments.
 	unrecognizedHashes: number[];
+};
+
+// What every step of resolving a build reads and adds to.
+type ResolveEnv = {
+	index: DimIndex;
+	catalog: EntryCatalog;
+	unrecognized: Set<number>;
+	manifestEntries: Map<string, AnnotatedEntry>;
 };
 
 const CLASS_NAMES = ["Titan", "Hunter", "Warlock"];
@@ -209,14 +219,38 @@ function findEntry(
 	return undefined;
 }
 
+const NO_DESCRIPTION_TEXT = "The game data has no description for this.";
+
+// An entry for a plug the community sources do not cover, so it still gets an
+// icon, a hover card and a place in the page's grids like any other.
+function buildManifestEntry(hash: number, item: DimIndexItem): AnnotatedEntry {
+	const description = item.d ? stripGlyphTokens(item.d) : "";
+
+	return {
+		id: `manifest:${String(hash)}`,
+		tab: "Bungie manifest",
+		section: null,
+		groups: [],
+		source: { tab: "bungie", row: 0, column: 0 },
+		title: item.n,
+		description: "",
+		officialDescription: description || NO_DESCRIPTION_TEXT,
+		officialAnnotations: [],
+		kind: "general",
+		sourceId: "bungie",
+		iconPath: toBungieUrl(item.i),
+		itemHash: hash,
+		annotations: [],
+	};
+}
+
 function resolvePlug(
 	hash: number,
 	context: PlugContext,
-	index: DimIndex,
-	catalog: EntryCatalog,
+	env: ResolveEnv,
 ): ResolvedPlug | null {
-	const indexItem = index.items[String(hash)];
-	const entry = findEntry(hash, indexItem?.n, context, catalog);
+	const indexItem = env.index.items[String(hash)];
+	const entry = findEntry(hash, indexItem?.n, context, env.catalog);
 
 	if (entry) {
 		return {
@@ -230,13 +264,14 @@ function resolvePlug(
 
 	if (!indexItem) return null;
 
+	const manifestEntry = buildManifestEntry(hash, indexItem);
+	env.manifestEntries.set(manifestEntry.id, manifestEntry);
+
 	return {
 		hash,
 		name: indexItem.n,
-		iconPath: toBungieUrl(indexItem.i),
-		fallbackDescription: indexItem.d
-			? stripGlyphTokens(indexItem.d)
-			: undefined,
+		iconPath: manifestEntry.iconPath,
+		entryId: manifestEntry.id,
 		count: 1,
 	};
 }
@@ -245,9 +280,7 @@ function resolvePlug(
 function resolvePlugList(
 	hashes: number[],
 	context: PlugContext,
-	index: DimIndex,
-	catalog: EntryCatalog,
-	unrecognized: Set<number>,
+	env: ResolveEnv,
 ) {
 	const plugs: ResolvedPlug[] = [];
 	const plugByHash = new Map<number, ResolvedPlug>();
@@ -259,9 +292,9 @@ function resolvePlugList(
 			continue;
 		}
 
-		const plug = resolvePlug(hash, context, index, catalog);
+		const plug = resolvePlug(hash, context, env);
 		if (!plug) {
-			unrecognized.add(hash);
+			env.unrecognized.add(hash);
 			continue;
 		}
 
@@ -286,15 +319,11 @@ type GearKind = "weapon" | "armor" | "other";
 
 // What the clearest evidence says an item is: the gear table first, then the
 // community sources' own label for an exotic's perks.
-function classifyByHash(
-	hash: number,
-	index: DimIndex,
-	catalog: EntryCatalog,
-): GearKind | null {
-	const gear = index.gear[String(hash)];
+function classifyByHash(hash: number, env: ResolveEnv): GearKind | null {
+	const gear = env.index.gear[String(hash)];
 	if (gear) return gear.t === "w" ? "weapon" : "armor";
 
-	for (const entry of catalog.entriesByHash.get(hash) ?? []) {
+	for (const entry of env.catalog.entriesByHash.get(hash) ?? []) {
 		for (const sourceRef of entry.sourceRefs ?? []) {
 			if (sourceRef.itemHash !== hash) continue;
 			if (sourceRef.type?.startsWith("Weapon")) return "weapon";
@@ -307,14 +336,9 @@ function classifyByHash(
 
 // For an item no table knows: its perks give it away, since a weapon's are
 // weapon perks and an armor piece's are armor mods.
-function classifyByPlugs(
-	plugs: ResolvedPlug[],
-	catalog: EntryCatalog,
-): GearKind {
+function classifyByPlugs(plugs: ResolvedPlug[], env: ResolveEnv): GearKind {
 	for (const plug of plugs) {
-		const entry = plug.entryId
-			? catalog.entryById.get(plug.entryId)
-			: undefined;
+		const entry = env.catalog.entryById.get(plug.entryId);
 		if (!entry) continue;
 		if (isWeaponPerkEntry(entry)) return "weapon";
 		if (isArmorModEntry(entry) || entry.kind === "armor_set_bonus") {
@@ -324,38 +348,63 @@ function classifyByPlugs(
 	return "other";
 }
 
-// Entries that describe the item itself rather than a plug: an exotic's
-// intrinsic. A catalyst is left out, since a loadout cannot say whether the
-// player has finished it.
+// The community sources' labels for what an entry tied to an item is.
+const INTRINSIC_ENTRY_TYPES = new Set([
+	"Weapon Frame Exotic",
+	"Armor Trait Exotic",
+]);
+
+function getItemRefType(entry: AnnotatedEntry, itemHash: number) {
+	return (entry.sourceRefs ?? []).find((ref) => ref.itemHash === itemHash)
+		?.type;
+}
+
+// Entries that describe the item itself rather than a plug someone picked: an
+// exotic's intrinsic, and its fixed traits.
+//
+// Clarity ties every perk an exotic can roll to the item, so an exotic with a
+// choice of traits would list all of them here, picked or not. A kind of perk
+// with one candidate is fixed and always on; with several, the build's own
+// socket overrides already say which was picked, so none are added. A catalyst
+// is left out, since a loadout cannot say whether the player has finished it.
 function findItemEntryIds(
 	hash: number,
 	plugs: ResolvedPlug[],
-	catalog: EntryCatalog,
+	env: ResolveEnv,
 ) {
 	const plugEntryIds = new Set(plugs.map((plug) => plug.entryId));
+	const candidatesByType = new Map<string, AnnotatedEntry[]>();
 
-	return (catalog.entriesByHash.get(hash) ?? [])
-		.filter((entry) => {
-			if (plugEntryIds.has(entry.id)) return false;
-			return !(entry.sourceRefs ?? []).some((ref) =>
-				ref.type?.includes("Catalyst"),
-			);
-		})
-		.map((entry) => entry.id);
+	for (const entry of env.catalog.entriesByHash.get(hash) ?? []) {
+		const type = getItemRefType(entry, hash);
+		if (!type || type.includes("Catalyst")) continue;
+		if (plugEntryIds.has(entry.id)) continue;
+
+		const candidates = candidatesByType.get(type) ?? [];
+		candidates.push(entry);
+		candidatesByType.set(type, candidates);
+	}
+
+	const entryIds: string[] = [];
+	for (const [type, candidates] of candidatesByType) {
+		const isAlwaysOn =
+			INTRINSIC_ENTRY_TYPES.has(type) || candidates.length === 1;
+		if (isAlwaysOn) entryIds.push(...candidates.map((entry) => entry.id));
+	}
+
+	return entryIds;
 }
 
 function resolveItem(
 	item: DimLoadoutItem,
 	isEquipped: boolean,
-	index: DimIndex,
-	catalog: EntryCatalog,
-	unrecognized: Set<number>,
+	env: ResolveEnv,
 ): { kind: GearKind; item: ResolvedItem } {
 	const hashKey = String(item.hash);
-	const gear = index.gear[hashKey];
-	const indexItem = index.items[hashKey];
+	const gear = env.index.gear[hashKey];
+	const indexItem = env.index.items[hashKey];
 
-	const knownKind = classifyByHash(item.hash, index, catalog);
+	const knownKind = classifyByHash(item.hash, env);
 	const plugContext: PlugContext =
 		knownKind === "weapon"
 			? { kind: "weapon" }
@@ -366,14 +415,12 @@ function resolveItem(
 	const plugs = resolvePlugList(
 		overrideHashesInSocketOrder(item),
 		plugContext,
-		index,
-		catalog,
-		unrecognized,
+		env,
 	);
-	const kind = knownKind ?? classifyByPlugs(plugs, catalog);
+	const kind = knownKind ?? classifyByPlugs(plugs, env);
 
 	const name = gear?.n ?? indexItem?.n;
-	if (!name) unrecognized.add(item.hash);
+	if (!name) env.unrecognized.add(item.hash);
 
 	return {
 		kind,
@@ -383,7 +430,7 @@ function resolveItem(
 			iconPath: toBungieUrl(gear?.i ?? indexItem?.i),
 			tierLabel: gear ? TIER_LABELS[gear.tt] : undefined,
 			isEquipped,
-			entryIds: findItemEntryIds(item.hash, plugs, catalog),
+			entryIds: findItemEntryIds(item.hash, plugs, env),
 			plugs,
 		},
 	};
@@ -391,11 +438,9 @@ function resolveItem(
 
 function resolveSubclass(
 	item: DimLoadoutItem,
-	index: DimIndex,
-	catalog: EntryCatalog,
-	unrecognized: Set<number>,
+	env: ResolveEnv,
 ): ResolvedSubclass | null {
-	const subclass = index.subclasses[String(item.hash)];
+	const subclass = env.index.subclasses[String(item.hash)];
 	if (!subclass) return null;
 
 	const element = ELEMENT_NAME_BY_TOKEN[subclass.el] ?? subclass.el;
@@ -403,7 +448,7 @@ function resolveSubclass(
 
 	const hashesBySlot = new Map<SubclassSlotId | "other", number[]>();
 	for (const plugHash of overrideHashesInSocketOrder(item)) {
-		const slotId = index.options[String(plugHash)] ?? "other";
+		const slotId = env.index.options[String(plugHash)] ?? "other";
 		const hashes = hashesBySlot.get(slotId) ?? [];
 		hashes.push(plugHash);
 		hashesBySlot.set(slotId, hashes);
@@ -419,13 +464,7 @@ function resolveSubclass(
 		const hashes = hashesBySlot.get(slotId);
 		if (!hashes) continue;
 
-		const plugs = resolvePlugList(
-			hashes,
-			context,
-			index,
-			catalog,
-			unrecognized,
-		);
+		const plugs = resolvePlugList(hashes, context, env);
 		if (plugs.length === 0) continue;
 
 		slots.push({
@@ -445,23 +484,40 @@ function resolveSubclass(
 	};
 }
 
-function resolveSetBonuses(
-	setBonuses: Record<string, number>,
-	index: DimIndex,
-	catalog: EntryCatalog,
-) {
+// How many pieces of each armor set the build wears. A loadout built in the
+// optimizer also states the counts it was aiming for, which stand in when the
+// equipped pieces are not in the gear table yet.
+function countSetPieces(loadout: DimLoadout, env: ResolveEnv) {
+	const counts = new Map<string, number>();
+
+	for (const item of loadout.equipped) {
+		const setHash = env.index.gear[String(item.hash)]?.sh;
+		if (setHash === undefined) continue;
+		counts.set(String(setHash), (counts.get(String(setHash)) ?? 0) + 1);
+	}
+
+	for (const [setHash, wantedCount] of Object.entries(
+		loadout.parameters?.setBonuses ?? {},
+	)) {
+		counts.set(setHash, Math.max(counts.get(setHash) ?? 0, wantedCount));
+	}
+
+	return counts;
+}
+
+function resolveSetBonuses(loadout: DimLoadout, env: ResolveEnv) {
 	const resolved: ResolvedSetBonus[] = [];
 
-	for (const [setHash, pieceCount] of Object.entries(setBonuses)) {
-		const set = index.sets[setHash];
+	for (const [setHash, pieceCount] of countSetPieces(loadout, env)) {
+		const set = env.index.sets[setHash];
 		if (!set) continue;
 
-		// A 4 piece build gets the 2 piece bonus as well.
+		// Four pieces get the two piece bonus as well.
 		const plugs: ResolvedPlug[] = [];
 		for (const setPerk of set.sp) {
 			if (setPerk.c > pieceCount) continue;
 
-			const entry = catalog.setBonusEntries.get(
+			const entry = env.catalog.setBonusEntries.get(
 				toSetBonusKey(set.n, setPerk.c),
 			);
 			if (!entry) continue;
@@ -480,7 +536,7 @@ function resolveSetBonuses(
 		}
 	}
 
-	return resolved;
+	return resolved.sort((left, right) => right.pieceCount - left.pieceCount);
 }
 
 export function resolveBuild(
@@ -488,7 +544,12 @@ export function resolveBuild(
 	index: DimIndex,
 	catalog: EntryCatalog,
 ): ResolvedBuild {
-	const unrecognized = new Set<number>();
+	const env: ResolveEnv = {
+		index,
+		catalog,
+		unrecognized: new Set(),
+		manifestEntries: new Map(),
+	};
 	const parameters = loadout.parameters;
 
 	let subclass: ResolvedSubclass | undefined;
@@ -503,25 +564,14 @@ export function resolveBuild(
 
 	for (const { item, isEquipped } of listedItems) {
 		if (!subclass) {
-			const resolvedSubclass = resolveSubclass(
-				item,
-				index,
-				catalog,
-				unrecognized,
-			);
+			const resolvedSubclass = resolveSubclass(item, env);
 			if (resolvedSubclass) {
 				subclass = resolvedSubclass;
 				continue;
 			}
 		}
 
-		const resolved = resolveItem(
-			item,
-			isEquipped,
-			index,
-			catalog,
-			unrecognized,
-		);
+		const resolved = resolveItem(item, isEquipped, env);
 		if (resolved.kind === "weapon") weapons.push(resolved.item);
 		else if (resolved.kind === "armor") armor.push(resolved.item);
 		else otherItems.push(resolved.item);
@@ -541,31 +591,26 @@ export function resolveBuild(
 		armorMods: resolvePlugList(
 			parameters?.mods ?? [],
 			{ kind: "armor-mod" },
-			index,
-			catalog,
-			unrecognized,
+			env,
 		),
 		armorPerks: resolvePlugList(
 			parameters?.perks ?? [],
 			{ kind: "exotic-perk" },
-			index,
-			catalog,
-			unrecognized,
+			env,
 		),
-		setBonuses: resolveSetBonuses(parameters?.setBonuses ?? {}, index, catalog),
+		setBonuses: resolveSetBonuses(loadout, env),
 		artifactPerks: resolvePlugList(
 			parameters?.artifactUnlocks?.unlockedItemHashes ?? [],
 			{ kind: "artifact" },
-			index,
-			catalog,
-			unrecognized,
+			env,
 		),
-		unrecognizedHashes: [...unrecognized],
+		manifestEntries: [...env.manifestEntries.values()],
+		unrecognizedHashes: [...env.unrecognized],
 	};
 }
 
 function collectPlugEntryIds(plugs: ResolvedPlug[]) {
-	return plugs.flatMap((plug) => (plug.entryId ? [plug.entryId] : []));
+	return plugs.map((plug) => plug.entryId);
 }
 
 // Every glossary entry the build shows, in the order it shows them.

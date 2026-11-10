@@ -33,6 +33,8 @@ export type DimIndexGear = {
 	t: "w" | "a";
 	// DestinyItemTierType: 5 legendary, 6 exotic.
 	tt: number;
+	// Armor only: the armor set the piece belongs to.
+	sh?: number;
 };
 
 // An armor set and the perks its piece counts unlock.

@@ -414,7 +414,7 @@ function collectWeaponRows(
 	return rows;
 }
 
-// Weapons and exotic armor by hash, for the build inspector: a DIM loadout names
+// Weapons, exotic armor and set armor by hash, for the build inspector: a DIM loadout names
 // its gear by item hash and nothing else, and every other table here is keyed
 // by name or limited to what a community source already documents.
 function collectGearRows(table: unknown) {
@@ -428,7 +428,10 @@ function collectGearRows(table: unknown) {
 
 		const itemType = asNumber(row.itemType);
 		const tierType = asNumber(asRecord<unknown>(row.inventory)?.tierType);
-		if (!shouldKeepGear({ itemType, tierType })) continue;
+		const itemSetHash = asNumber(
+			asRecord<unknown>(row.equippingBlock)?.equipableItemSetHash,
+		);
+		if (!shouldKeepGear({ itemType, tierType, itemSetHash })) continue;
 
 		const categories = Array.isArray(row.itemCategoryHashes)
 			? (row.itemCategoryHashes as number[])
@@ -454,6 +457,7 @@ function collectGearRows(table: unknown) {
 			t: isArmor ? "a" : "w",
 			tt: tierType,
 			ct: isArmor ? asNumber(row.classType) : undefined,
+			sh: isArmor ? itemSetHash : undefined,
 		};
 		rows[hash] = compact;
 	}
@@ -1039,7 +1043,7 @@ async function main() {
 		`Weapons: ${String(matchedNames)} of ${String(aegisWeaponNameKeys.size)} sheet names matched, ${String(taggedNames)} with a champion tag, ${String(Object.keys(weaponRows).length - matchedNames)} kept twice for a shared name`,
 	);
 	console.log(
-		`Gear: ${String(Object.keys(compactTables.Gear).length)} weapons and exotic armor pieces`,
+		`Gear: ${String(Object.keys(compactTables.Gear).length)} weapons and armor pieces`,
 	);
 	console.log(
 		`Subclasses: ${String(Object.keys(subclassResult.rows).length)}, options: ${String(subclassResult.optionHashes.size)}`,

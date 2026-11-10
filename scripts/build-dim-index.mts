@@ -73,7 +73,7 @@ function buildGear(table: Record<string, CompactGearRow> | undefined) {
 	const gear: Record<string, DimIndexGear> = {};
 
 	for (const [hash, row] of Object.entries(table ?? {})) {
-		gear[hash] = { n: row.n, i: row.i, t: row.t, tt: row.tt };
+		gear[hash] = { n: row.n, i: row.i, t: row.t, tt: row.tt, sh: row.sh };
 	}
 
 	return gear;
