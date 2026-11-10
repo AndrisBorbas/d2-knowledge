@@ -7,6 +7,12 @@ import { cellFirstLine, readTable } from "../src/lib/aegis/table";
 import { ARMOR_SET_NAME_ALIASES } from "../src/lib/bungie/armor-set-aliases";
 import { EXOTIC_PERK_ITEM_NAME_ALIASES } from "../src/lib/bungie/exotic-perk-item-aliases";
 import {
+	type CompactGearRow,
+	GEAR_ARMOR_ITEM_TYPE,
+	type GearTable,
+	shouldKeepGear,
+} from "../src/lib/bungie/gear-schema";
+import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
 } from "../src/lib/bungie/manifest";
@@ -77,6 +83,7 @@ type CompactManifestTables = {
 	DestinyStatDefinition: Record<string, CompactDefinition>;
 	Subclasses: Record<string, CompactSubclassRow>;
 	Weapons: WeaponTable;
+	Gear: GearTable;
 	DestinySandboxPerkDefinition: Record<string, CompactDefinition>;
 	DestinyTraitDefinition: Record<string, CompactDefinition>;
 	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
@@ -405,6 +412,106 @@ function collectWeaponRows(
 	}
 
 	return rows;
+}
+
+// Weapons, exotic armor and set armor by hash, for the build inspector: a DIM loadout names
+// its gear by item hash and nothing else, and every other table here is keyed
+// by name or limited to what a community source already documents.
+function collectGearRows(table: unknown) {
+	const source = asRecord<unknown>(table);
+	const rows: GearTable = {};
+	if (!source) return rows;
+
+	for (const [hash, value] of Object.entries(source)) {
+		const row = asRecord<unknown>(value);
+		if (!row || row.redacted === true) continue;
+
+		const itemType = asNumber(row.itemType);
+		const tierType = asNumber(asRecord<unknown>(row.inventory)?.tierType);
+		const itemSetHash = asNumber(
+			asRecord<unknown>(row.equippingBlock)?.equipableItemSetHash,
+		);
+		if (!shouldKeepGear({ itemType, tierType, itemSetHash })) continue;
+
+		const categories = Array.isArray(row.itemCategoryHashes)
+			? (row.itemCategoryHashes as number[])
+			: [];
+		if (categories.includes(DUMMY_ITEM_CATEGORY_HASH)) continue;
+
+		const displayProperties = asRecord<unknown>(row.displayProperties);
+		const name =
+			typeof displayProperties?.name === "string"
+				? displayProperties.name
+				: undefined;
+		const icon =
+			typeof displayProperties?.icon === "string"
+				? displayProperties.icon
+				: undefined;
+		// Test and placeholder rows have no name or no icon.
+		if (!name || !icon || tierType === undefined) continue;
+
+		const isArmor = itemType === GEAR_ARMOR_ITEM_TYPE;
+		const compact: CompactGearRow = {
+			n: name,
+			i: icon,
+			t: isArmor ? "a" : "w",
+			tt: tierType,
+			ct: isArmor ? asNumber(row.classType) : undefined,
+			sh: isArmor ? itemSetHash : undefined,
+		};
+		rows[hash] = compact;
+	}
+
+	return rows;
+}
+
+// DestinyItemCategoryDefinition "Armor Mods". The build inspector shows
+// whichever armor mods a DIM loadout uses, and the loadout can use any of
+// them, including stat mods and tuning that no community source writes up.
+const ARMOR_MOD_ITEM_CATEGORY_HASH = 4104513227;
+
+// Armor mods are named "General Armor Mod", "Helmet Armor Mod" and so on.
+const ARMOR_MOD_TYPE_NAME_PATTERN = /armor mod/i;
+
+// Shaders and ornaments are cosmetics, and a DIM loadout lists them next to
+// the mods. The inspector has nothing to say about them, so they stay out.
+const COSMETIC_TYPE_NAME_PATTERN = /ornament|shader/i;
+const COSMETIC_PLUG_CATEGORY_PATTERN = /skin|shader|ornament/i;
+
+function isArmorMod(row: Record<string, unknown>) {
+	const categories = Array.isArray(row.itemCategoryHashes)
+		? (row.itemCategoryHashes as number[])
+		: [];
+	const typeName =
+		typeof row.itemTypeDisplayName === "string" ? row.itemTypeDisplayName : "";
+	const plug = asRecord<unknown>(row.plug);
+	const plugCategory =
+		typeof plug?.plugCategoryIdentifier === "string"
+			? plug.plugCategoryIdentifier
+			: "";
+
+	if (COSMETIC_TYPE_NAME_PATTERN.test(typeName)) return false;
+	if (COSMETIC_PLUG_CATEGORY_PATTERN.test(plugCategory)) return false;
+
+	return (
+		categories.includes(ARMOR_MOD_ITEM_CATEGORY_HASH) ||
+		ARMOR_MOD_TYPE_NAME_PATTERN.test(typeName)
+	);
+}
+
+function collectArmorModHashes(table: unknown) {
+	const source = asRecord<unknown>(table) ?? {};
+	const hashes = new Set<number>();
+
+	for (const [key, value] of Object.entries(source)) {
+		const row = asRecord<unknown>(value);
+		if (!row || row.redacted === true) continue;
+		if (!isArmorMod(row)) continue;
+
+		hashes.add(Number(key));
+	}
+
+	return hashes;
 }
 
 function toCompactDefinition(value: unknown) {
@@ -898,6 +1005,7 @@ async function main() {
 		...itemHashes,
 		...allPerkHashes,
 		...subclassResult.optionHashes,
+		...collectArmorModHashes(snapshot.tables.DestinyInventoryItemDefinition),
 	]);
 	const inventoryTable = filterTableToHashesAndTitles(
 		snapshot.tables.DestinyInventoryItemDefinition,
@@ -949,6 +1057,7 @@ async function main() {
 		),
 		Subclasses: subclassResult.rows,
 		Weapons: weaponRows,
+		Gear: collectGearRows(snapshot.tables.DestinyInventoryItemDefinition),
 		ActivityModifiers: collectActivityModifiers(
 			(snapshot.tables as Record<string, unknown>)
 				.DestinyActivityModifierDefinition,
@@ -982,6 +1091,9 @@ async function main() {
 	console.log(`Wrote Bungie manifest snapshot: ${outputPath}`);
 	console.log(
 		`Weapons: ${String(matchedNames)} of ${String(aegisWeaponNameKeys.size)} sheet names matched, ${String(taggedNames)} with a champion tag, ${String(Object.keys(weaponRows).length - matchedNames)} kept twice for a shared name`,
+	);
+	console.log(
+		`Gear: ${String(Object.keys(compactTables.Gear).length)} weapons and armor pieces`,
 	);
 	console.log(
 		`Subclasses: ${String(Object.keys(subclassResult.rows).length)}, options: ${String(subclassResult.optionHashes.size)}`,

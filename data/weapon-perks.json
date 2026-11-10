@@ -32353,13 +32353,6 @@
 					"tab": "Weapon Perks",
 					"row": 52,
 					"column": 0
-				},
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:53:0",
-					"tab": "Weapon Perks",
-					"row": 53,
-					"column": 0
 				}
 			],
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/382d0ef3f7d9476c3873ea1e4821efdf.png",
@@ -32978,263 +32971,6 @@
 							"start": 1336,
 							"end": 1344,
 							"text": " ↑12.38%",
-							"color": "rgb(255, 217, 102)"
-						}
-					]
-				},
-				{
-					"sourceId": "ddc",
-					"text": "On Elemental-Pickup Interaction:\nScoring damage instances grants ↑increased Melee Ability Energy for an Elemental-pickup based duration.\n\nFiresprites and Void Breaches grant +8 seconds. \nIonic Traces, Stasis Shards, and both the Pickup AND Explosion of Tangles/Arc Elemental Orbs grant +4 seconds. \nAdditional pickups extend the buff duration by their corresponding duration seconds, up to 16 seconds.\nBuff can be activated while stowed, and persists through stow.\n\nMelee Ability Gains:\nSpreadshot HC: 0.5% ↑0.55%\nBurst Sidearm: 0.78% ↑0.86%\nFusion Rifle: 1.15% ↑1.27%\nRocket Pulse: 1.95% ↑2.15%\nSidearm: 2.34% ↑2.57%\nScout: 3.34% ↑3.67%\nRocket Launcher: 12.9% ↑14.2%",
-					"descriptionSegments": [
-						{
-							"source": {
-								"tab": "Weapon Perks",
-								"row": 53,
-								"column": 2
-							},
-							"start": 0,
-							"length": 667
-						}
-					],
-					"annotations": [
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:3:3",
-							"start": 3,
-							"end": 31,
-							"text": "Elemental-Pickup Interaction",
-							"color": "rgb(213, 166, 189)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:65:65",
-							"start": 65,
-							"end": 75,
-							"text": "↑increased",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:75:75",
-							"start": 75,
-							"end": 76,
-							"text": " ",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 76,
-							"end": 96,
-							"text": "Melee Ability Energy",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:104:104",
-							"start": 104,
-							"end": 135,
-							"text": "Elemental-pickup based duration",
-							"color": "rgb(213, 166, 189)"
-						},
-						{
-							"keywordId": "firesprite",
-							"start": 138,
-							"end": 149,
-							"text": "Firesprites"
-						},
-						{
-							"keywordId": "void-breach",
-							"start": 154,
-							"end": 167,
-							"text": "Void Breaches"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:154:167",
-							"start": 167,
-							"end": 168,
-							"text": " ",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "ionic-trace",
-							"start": 187,
-							"end": 199,
-							"text": "Ionic Traces"
-						},
-						{
-							"keywordId": "stasis-shard",
-							"start": 201,
-							"end": 214,
-							"text": "Stasis Shards"
-						},
-						{
-							"keywordId": "tangle",
-							"start": 253,
-							"end": 260,
-							"text": "Tangles"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:261:261",
-							"start": 261,
-							"end": 279,
-							"text": "Arc Elemental Orbs",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 466,
-							"end": 479,
-							"text": "Melee Ability",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:466:479",
-							"start": 479,
-							"end": 487,
-							"text": " Gains:\n",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:487:487",
-							"start": 487,
-							"end": 501,
-							"text": "Spreadshot HC:",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:502:502",
-							"start": 502,
-							"end": 506,
-							"text": "0.5%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:507:507",
-							"start": 507,
-							"end": 514,
-							"text": "↑0.55%\n",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:514:514",
-							"start": 514,
-							"end": 528,
-							"text": "Burst Sidearm:",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:529:529",
-							"start": 529,
-							"end": 534,
-							"text": "0.78%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:535:535",
-							"start": 535,
-							"end": 542,
-							"text": "↑0.86%\n",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:542:542",
-							"start": 542,
-							"end": 554,
-							"text": "Fusion Rifle",
-							"color": "rgb(99, 210, 117)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:556:556",
-							"start": 556,
-							"end": 561,
-							"text": "1.15%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:562:562",
-							"start": 562,
-							"end": 568,
-							"text": "↑1.27%",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:569:569",
-							"start": 569,
-							"end": 581,
-							"text": "Rocket Pulse",
-							"color": "rgb(99, 210, 117)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:583:583",
-							"start": 583,
-							"end": 588,
-							"text": "1.95%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:589:589",
-							"start": 589,
-							"end": 596,
-							"text": "↑2.15%\n",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:596:596",
-							"start": 596,
-							"end": 603,
-							"text": "Sidearm",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:605:605",
-							"start": 605,
-							"end": 611,
-							"text": "2.34% ",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:611:611",
-							"start": 611,
-							"end": 617,
-							"text": "↑2.57%",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:618:618",
-							"start": 618,
-							"end": 624,
-							"text": "Scout:",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:625:625",
-							"start": 625,
-							"end": 630,
-							"text": "3.34%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:631:631",
-							"start": 631,
-							"end": 637,
-							"text": "↑3.67%",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:638:638",
-							"start": 638,
-							"end": 655,
-							"text": "Rocket Launcher: ",
-							"color": "rgb(164, 129, 225)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:655:655",
-							"start": 655,
-							"end": 660,
-							"text": "12.9%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:661:661",
-							"start": 661,
-							"end": 667,
-							"text": "↑14.2%",
 							"color": "rgb(255, 217, 102)"
 						}
 					]
@@ -64765,7 +64501,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "While an Arc or Stasis Super Ability is equipped:\nReplaces Dodge with Shift.\nDoes not replace Acrobat's Dodge. Overrides Cooldown and Chunk Scalar to Marksman's Dodge.\n\nOn Class Ability Usage:\nPerforms a quick shift that moves the user up to 12 meters away, rendering them invisible and invulnerable for the duration of the shift.\nGrants a stack of Light Shift for 11 seconds, up to a maximum of 3 stacks.\n\nLight Shift:\nx1 = 10% | x2 = 21% | x3 = 33% increased Arc, Stasis, and Lord of Wolves Weapon Damage.\n 10% Increased Weapon Damage against Stasis Debuffed Enemies.\nWeapon Kills grant 60% Class Ability Energy while active.\nDamage buffs stack with other buffs.",
+					"text": "While an Arc or Stasis Super Ability is equipped:\nReplaces Dodge with Shift.\nDoes not replace Acrobat's Dodge. Overrides Cooldown and Chunk Scalar to Marksman's Dodge.\n\nOn Class Ability Usage:\nPerforms a quick shift that moves the user up to 12 meters away, rendering them invisible and invulnerable for the duration of the shift.\nGrants a stack of Light Shift for 11 seconds, up to a maximum of 3 stacks.\n\nLight Shift:\nx1 = 10% | x2 = 21% | x3 = 33% increased Arc, Stasis, and Lord of Wolves Weapon Damage.\n 10% Increased Weapon Damage against Stasis Debuffed Enemies.\nWeapon Kills grant 60% Class Ability Energy while active.\nDamage buffs stack with other buffs. Does not buff Riskrunner or Trinity Ghoul Chain Lightning.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -64774,7 +64510,7 @@
 								"column": 2
 							},
 							"start": 0,
-							"length": 664
+							"length": 723
 						}
 					],
 					"annotations": [
@@ -65024,6 +64760,26 @@
 							"end": 613,
 							"text": "Class Ability Energy",
 							"colorClass": "text-energy-class"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:665:665",
+							"start": 665,
+							"end": 707,
+							"text": "Does not buff Riskrunner or Trinity Ghoul ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "chain-lightning",
+							"start": 707,
+							"end": 722,
+							"text": "Chain Lightning"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:665:722",
+							"start": 722,
+							"end": 723,
+							"text": ".",
+							"color": "rgb(224, 102, 102)"
 						}
 					]
 				}
@@ -70351,7 +70107,7 @@
 				"column": 1
 			},
 			"title": "Rally Barricade",
-			"description": "Creates a short, curved barricade construct in front of the caster that blocks all damage dealt to it.\nGrants 20% [20%] Damage Resist while in the Barricade Placement animation.\n\nBarricade lasts for 20 seconds, and has 500 Construct HP. Barricades have 90% Damage Resist against Combatants, and ?% against Boss Combatants.\nEnemies that pass through the barricade rapidly receive ? [?] non-lethal damage every ? seconds.\n\nWhile within ? meters behind the Rally Barricade:\n80% Damage Resist against Splash Damage from Combatants.\nCombatants up to ? meters in front of the barricade are taunted.\n+30 Stability, +100 Reload Speed, 0.9x Reload Duration Multiplier, 10% Increased Damage Falloff Distance, and 50% Flinch Resist.",
+			"description": "Creates a short, curved barricade construct in front of the caster that blocks all damage dealt to it.\nGrants 80% [20%] Damage Resist while in the Barricade Placement animation.\n\nBarricade lasts for 20 seconds, and has 500 Construct HP. Barricades have 90% Damage Resist against Combatants, and ?% against Boss Combatants.\nEnemies that pass through the barricade rapidly receive ? [?] non-lethal damage every ? seconds.\n\nWhile within ? meters behind the Rally Barricade:\n80% Damage Resist against Splash Damage from Combatants.\nCombatants up to ? meters in front of the barricade are taunted.\n+30 Stability, +100 Reload Speed, 0.9x Reload Duration Multiplier, 10% Increased Damage Falloff Distance, and 50% Flinch Resist.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -70382,7 +70138,7 @@
 					"keywordId": "pattern:text-pve-damage",
 					"start": 110,
 					"end": 113,
-					"text": "20%",
+					"text": "80%",
 					"colorClass": "text-pve-damage"
 				},
 				{

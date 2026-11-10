@@ -7,6 +7,13 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.9.0] - 2026-11-10
+
+### Added
+
+- A **Build Inspector** at [/build](https://owlsector.net/build): paste a dim.gg build link and see the build as a grid of icons, with each aspect's fragment slots, each fragment's stat changes, and the glossary description of each perk, mod, aspect, fragment, armor set bonus and artifact perk on hover and click, plus the effects those descriptions refer to, in a side drawer on a phone. Perks on legendary weapons and armor only show when the link includes them, which DIM does not do for most rolled items.
+- Add `.md` to the Build Inspector address, as in `/build.md?b=` followed by a dim.gg link, to get the whole build as Markdown text, or use the **Copy as Markdown** button on the page.
+
 ## [1.8.2] - 2026-09-23
 
 ### Added

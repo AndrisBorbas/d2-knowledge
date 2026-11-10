@@ -1,6 +1,6 @@
 {
 	"name": "d2-knowledge",
-	"version": "1.8.2",
+	"version": "1.9.0",
 	"private": true,
 	"scripts": {
 		"dev": "bun run assets:prepare && next dev",
@@ -8,7 +8,8 @@
 		"build": "bun run assets:prepare && next build",
 		"start": "next start",
 		"lint": "eslint",
-		"assets:prepare": "bun run data:minify && bun run assets:icons && bun run assets:og",
+		"assets:prepare": "bun run data:minify && bun run assets:dim-index && bun run assets:icons && bun run assets:og",
+		"assets:dim-index": "bun run scripts/build-dim-index.mts",
 		"assets:og": "bun run scripts/generate-og-images.mts",
 		"assets:icons": "bun run scripts/copy-icons.mts",
 		"data:minify": "bun run scripts/minify-dataset.mts",

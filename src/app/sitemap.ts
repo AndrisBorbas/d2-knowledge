@@ -16,6 +16,7 @@ const DATA_ROUTES = [
 	"/abilities",
 	"/artifacts",
 	"/glossary",
+	"/build",
 	"/mechanics",
 ];
 
