@@ -1,6 +1,6 @@
 {
 	"name": "d2-knowledge",
-	"version": "1.8.2",
+	"version": "1.9.0",
 	"private": true,
 	"scripts": {
 		"dev": "bun run assets:prepare && next dev",
