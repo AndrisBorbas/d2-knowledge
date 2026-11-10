@@ -9,12 +9,22 @@ import type { SubclassSlotId } from "@/lib/bungie/subclass-schema";
 export const DIM_INDEX_ASSET_URL = "/assets/data/dim-index.min.json";
 
 // A plug, mod, perk, aspect, fragment or other item the manifest snapshot kept.
+// A stat line the game prints under a fragment: "+10 Resilience".
+export type DimIndexStatMod = {
+	n: string;
+	v: number;
+};
+
 export type DimIndexItem = {
 	n: string;
 	// Icon path, relative to the Bungie CDN.
 	i?: string;
 	// The in-game description, as Bungie wrote it (bracketed glyph tokens and all).
 	d?: string;
+	// Subclass aspects only: how many fragment slots the aspect grants.
+	fs?: number;
+	// Subclass fragments only: the stat lines it adds or takes.
+	sm?: DimIndexStatMod[];
 };
 
 export type DimIndexSubclass = {

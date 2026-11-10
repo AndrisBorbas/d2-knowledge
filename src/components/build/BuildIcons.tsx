@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 import type { AnnotatedEntry } from "@/lib/compendium/model";
+import type { DimIndexStatMod } from "@/lib/dim/index-schema";
 import type { ResolvedItem } from "@/lib/dim/resolve";
 import { cn } from "@/lib/utils/utils";
 
@@ -17,19 +18,60 @@ export type IconHandlers = {
 
 const DEFAULT_ICON_BORDER_CLASS = "border-white/20";
 
-// One entry as a small button: its icon and name, in the style of the
-// subclass pages' option buttons but without the room they give each one. The
-// full description is on the hover card and in the pinned panel.
+// The dots the game draws under an aspect: one per fragment slot it grants.
+function FragmentSlotDots({ count }: { count: number }) {
+	return (
+		<span
+			className="flex gap-0.5"
+			aria-label={`${String(count)} fragment slots`}
+		>
+			{Array.from({ length: count }, (_, index) => (
+				<span key={index} className="size-1.5 bg-white/70" />
+			))}
+		</span>
+	);
+}
+
+// The stat changes a fragment makes, green for a gain and red for a cost.
+function StatMods({ statMods }: { statMods: DimIndexStatMod[] }) {
+	return (
+		<span className="flex flex-wrap gap-x-2 gap-y-0.5">
+			{statMods.map((mod) => (
+				<span
+					key={mod.n}
+					className={cn(
+						"text-xs tracking-wide",
+						mod.v > 0 ? "text-emerald-300" : "text-red-300",
+					)}
+				>
+					{mod.v > 0 ? "+" : ""}
+					{mod.v} {mod.n}
+				</span>
+			))}
+		</span>
+	);
+}
+
+// One entry as a button, laid out like the subclass pages' option buttons: the
+// icon, the name, and the extras the game shows with it (an aspect's fragment
+// slots, a fragment's stat changes). The full description is on the hover card
+// and in the pinned panel.
 export function EntryIconButton({
 	entry,
 	count = 1,
 	borderClass = DEFAULT_ICON_BORDER_CLASS,
+	fragmentSlots,
+	statMods,
 	handlers,
 }: {
 	entry: AnnotatedEntry;
 	count?: number;
 	// The icon's frame, which a subclass plug takes from its element.
 	borderClass?: string;
+	// How many fragment slots the entry grants, if it is an aspect.
+	fragmentSlots?: number;
+	// The stat changes the entry makes, if it is a fragment.
+	statMods?: DimIndexStatMod[];
 	handlers: IconHandlers;
 }) {
 	const isPinned = handlers.pinnedIds.has(entry.id);
@@ -48,7 +90,7 @@ export function EntryIconButton({
 			onBlur={handlers.onLeave}
 			onClick={() => handlers.onToggle(entry.id)}
 			className={cn(
-				"borderHover flex min-w-0 items-center gap-2 bg-white/5 p-1.5 pr-2.5 text-left backdrop-blur-sm transition hover:after:border-t",
+				"borderHover flex min-w-0 items-center gap-3 bg-white/5 p-2 pr-3 text-left backdrop-blur-sm transition hover:after:border-t",
 				isPinned
 					? "borderActive bg-white/20 after:border-t"
 					: "hover:bg-white/12",
@@ -58,25 +100,33 @@ export function EntryIconButton({
 				<Image
 					src={entry.iconPath}
 					alt=""
-					width={32}
-					height={32}
-					className={cn("size-8 shrink-0 border object-cover", borderClass)}
+					width={48}
+					height={48}
+					className={cn("size-12 shrink-0 border object-cover", borderClass)}
 				/>
 			) : (
-				<span className="size-8 shrink-0 border border-dashed border-white/20" />
+				<span className="size-12 shrink-0 border border-dashed border-white/20" />
 			)}
-			<span className="max-w-44 truncate text-sm font-semibold text-white/90">
-				{entry.title}
+			<span className="flex min-w-0 flex-col gap-0.5">
+				<span className="flex items-baseline gap-1.5">
+					<span className="max-w-52 truncate text-base font-semibold text-white/90">
+						{entry.title}
+					</span>
+					{count > 1 ? (
+						<span className="text-masterwork text-sm font-bold">×{count}</span>
+					) : null}
+				</span>
+				{fragmentSlots ? <FragmentSlotDots count={fragmentSlots} /> : null}
+				{statMods && statMods.length > 0 ? (
+					<StatMods statMods={statMods} />
+				) : null}
 			</span>
-			{count > 1 ? (
-				<span className="text-masterwork text-xs font-bold">×{count}</span>
-			) : null}
 		</button>
 	);
 }
 
 export function IconRow({ children }: { children: React.ReactNode }) {
-	return <div className="flex flex-wrap gap-1.5">{children}</div>;
+	return <div className="flex flex-wrap gap-2">{children}</div>;
 }
 
 export function ItemHeader({ item }: { item: ResolvedItem }) {

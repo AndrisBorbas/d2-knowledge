@@ -193,6 +193,8 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 						entry={entry}
 						count={plug.count}
 						borderClass={borderClass}
+						fragmentSlots={plug.fragmentSlots}
+						statMods={plug.statMods}
 						handlers={handlers}
 					/>
 				);
@@ -228,6 +230,8 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 											key={plug.hash}
 											entry={entry}
 											count={plug.count}
+											fragmentSlots={plug.fragmentSlots}
+											statMods={plug.statMods}
 											handlers={handlers}
 										/>
 									);

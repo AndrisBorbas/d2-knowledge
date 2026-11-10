@@ -2,12 +2,18 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import type { CompactGearRow } from "../src/lib/bungie/gear-schema";
-import type { CompactSubclassRow } from "../src/lib/bungie/subclass-schema";
+import {
+	ASPECT_ENERGY_CAPACITY_STAT,
+	type CompactStatMod,
+	type CompactSubclassRow,
+	FRAGMENT_COST_STAT,
+} from "../src/lib/bungie/subclass-schema";
 import type {
 	DimIndex,
 	DimIndexGear,
 	DimIndexItem,
 	DimIndexSet,
+	DimIndexStatMod,
 	DimIndexSubclass,
 } from "../src/lib/dim/index-schema";
 
@@ -21,6 +27,8 @@ type ManifestRow = {
 	n?: string;
 	i?: string;
 	d?: string;
+	// Subclass aspects and fragments only.
+	st?: CompactStatMod[];
 };
 
 type ManifestItemSetRow = ManifestRow & {
@@ -31,6 +39,7 @@ type ManifestSnapshot = {
 	generatedAt?: string;
 	tables?: {
 		DestinyInventoryItemDefinition?: Record<string, ManifestRow>;
+		DestinyStatDefinition?: Record<string, ManifestRow>;
 		DestinyEquipableItemSetDefinition?: Record<string, ManifestItemSetRow>;
 		Subclasses?: Record<string, CompactSubclassRow>;
 		// Absent from snapshots written before the build inspector existed, until
@@ -39,12 +48,47 @@ type ManifestSnapshot = {
 	};
 };
 
-function buildItems(table: Record<string, ManifestRow> | undefined) {
+// The two stats that describe the slot rather than the item are lifted out
+// (see subclass-schema.ts), and the rest become the lines printed under a
+// fragment's name.
+function readSubclassStats(
+	stats: CompactStatMod[] | undefined,
+	statTable: Record<string, ManifestRow> | undefined,
+) {
+	let fragmentSlots: number | undefined;
+	const statMods: DimIndexStatMod[] = [];
+
+	for (const stat of stats ?? []) {
+		if (stat.h === ASPECT_ENERGY_CAPACITY_STAT) {
+			fragmentSlots = stat.v;
+			continue;
+		}
+		if (stat.h === FRAGMENT_COST_STAT) continue;
+
+		const statName = statTable?.[String(stat.h)]?.n;
+		if (statName) statMods.push({ n: statName, v: stat.v });
+	}
+
+	return { fragmentSlots, statMods };
+}
+
+function buildItems(
+	table: Record<string, ManifestRow> | undefined,
+	statTable: Record<string, ManifestRow> | undefined,
+) {
 	const items: Record<string, DimIndexItem> = {};
 
 	for (const [hash, row] of Object.entries(table ?? {})) {
 		if (!row.n) continue;
-		items[hash] = { n: row.n, i: row.i, d: row.d };
+
+		const { fragmentSlots, statMods } = readSubclassStats(row.st, statTable);
+		items[hash] = {
+			n: row.n,
+			i: row.i,
+			d: row.d,
+			fs: fragmentSlots,
+			sm: statMods.length > 0 ? statMods : undefined,
+		};
 	}
 
 	return items;
@@ -111,7 +155,10 @@ async function main() {
 
 	const index: DimIndex = {
 		generatedAt: snapshot.generatedAt ?? new Date().toISOString(),
-		items: buildItems(tables?.DestinyInventoryItemDefinition),
+		items: buildItems(
+			tables?.DestinyInventoryItemDefinition,
+			tables?.DestinyStatDefinition,
+		),
 		subclasses,
 		options,
 		gear: buildGear(tables?.Gear),

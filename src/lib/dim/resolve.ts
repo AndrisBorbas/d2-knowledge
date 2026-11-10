@@ -8,7 +8,12 @@ import { SLOT_LABELS } from "@/lib/compendium/subclasses";
 import { cleanupDescriptionText, normalizeLookupName } from "@/lib/utils/text";
 
 import { type EntryCatalog, toSetBonusKey } from "./catalog";
-import { type DimIndex, type DimIndexItem, toBungieUrl } from "./index-schema";
+import {
+	type DimIndex,
+	type DimIndexItem,
+	type DimIndexStatMod,
+	toBungieUrl,
+} from "./index-schema";
 import type { DimLoadout, DimLoadoutItem } from "./loadout";
 
 // What a plug is for, which decides between entries that share a name: a
@@ -33,6 +38,10 @@ export type ResolvedPlug = {
 	entryId: string;
 	// How many times the build uses it: armor mods repeat.
 	count: number;
+	// What the subclass screen prints with an option: the fragment slots an
+	// aspect adds, and the stat lines on a fragment.
+	fragmentSlots?: number;
+	statMods?: DimIndexStatMod[];
 };
 
 export type ResolvedItem = {
@@ -259,6 +268,8 @@ function resolvePlug(
 			iconPath: entry.iconPath ?? toBungieUrl(indexItem?.i),
 			entryId: entry.id,
 			count: 1,
+			fragmentSlots: indexItem?.fs,
+			statMods: indexItem?.sm,
 		};
 	}
 
@@ -273,6 +284,8 @@ function resolvePlug(
 		iconPath: manifestEntry.iconPath,
 		entryId: manifestEntry.id,
 		count: 1,
+		fragmentSlots: indexItem.fs,
+		statMods: indexItem.sm,
 	};
 }
 
