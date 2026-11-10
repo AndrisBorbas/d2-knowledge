@@ -239,7 +239,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 							</IconRow>
 						) : (
 							<p className="text-xs text-white/45">
-								No perks or mods were picked on this item.
+								This link does not include perks for this item.
 							</p>
 						)}
 					</div>

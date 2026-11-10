@@ -158,7 +158,7 @@ function renderItem(
 	if (itemEntries.length > 0 || plugEntries) {
 		parts.push([...itemEntries, plugEntries].filter(Boolean).join("\n"));
 	} else {
-		parts.push("No perks or mods were picked on this item.");
+		parts.push("This link does not include perks for this item.");
 	}
 
 	return parts.join("\n\n");
