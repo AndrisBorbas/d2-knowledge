@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-11-03T23:35:46.623Z",
+	"generatedAt": "2026-11-10T14:40:12.493Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -9291,13 +9291,6 @@
 					"tab": "Weapon Perks",
 					"row": 52,
 					"column": 0
-				},
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Weapon Perks:53:0",
-					"tab": "Weapon Perks",
-					"row": 53,
-					"column": 0
 				}
 			],
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/382d0ef3f7d9476c3873ea1e4821efdf.png",
@@ -9916,263 +9909,6 @@
 							"start": 1336,
 							"end": 1344,
 							"text": " ↑12.38%",
-							"color": "rgb(255, 217, 102)"
-						}
-					]
-				},
-				{
-					"sourceId": "ddc",
-					"text": "On Elemental-Pickup Interaction:\nScoring damage instances grants ↑increased Melee Ability Energy for an Elemental-pickup based duration.\n\nFiresprites and Void Breaches grant +8 seconds. \nIonic Traces, Stasis Shards, and both the Pickup AND Explosion of Tangles/Arc Elemental Orbs grant +4 seconds. \nAdditional pickups extend the buff duration by their corresponding duration seconds, up to 16 seconds.\nBuff can be activated while stowed, and persists through stow.\n\nMelee Ability Gains:\nSpreadshot HC: 0.5% ↑0.55%\nBurst Sidearm: 0.78% ↑0.86%\nFusion Rifle: 1.15% ↑1.27%\nRocket Pulse: 1.95% ↑2.15%\nSidearm: 2.34% ↑2.57%\nScout: 3.34% ↑3.67%\nRocket Launcher: 12.9% ↑14.2%",
-					"descriptionSegments": [
-						{
-							"source": {
-								"tab": "Weapon Perks",
-								"row": 53,
-								"column": 2
-							},
-							"start": 0,
-							"length": 667
-						}
-					],
-					"annotations": [
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:3:3",
-							"start": 3,
-							"end": 31,
-							"text": "Elemental-Pickup Interaction",
-							"color": "rgb(213, 166, 189)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:65:65",
-							"start": 65,
-							"end": 75,
-							"text": "↑increased",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:75:75",
-							"start": 75,
-							"end": 76,
-							"text": " ",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 76,
-							"end": 96,
-							"text": "Melee Ability Energy",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:104:104",
-							"start": 104,
-							"end": 135,
-							"text": "Elemental-pickup based duration",
-							"color": "rgb(213, 166, 189)"
-						},
-						{
-							"keywordId": "firesprite",
-							"start": 138,
-							"end": 149,
-							"text": "Firesprites"
-						},
-						{
-							"keywordId": "void-breach",
-							"start": 154,
-							"end": 167,
-							"text": "Void Breaches"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:154:167",
-							"start": 167,
-							"end": 168,
-							"text": " ",
-							"color": "rgb(180, 167, 214)"
-						},
-						{
-							"keywordId": "ionic-trace",
-							"start": 187,
-							"end": 199,
-							"text": "Ionic Traces"
-						},
-						{
-							"keywordId": "stasis-shard",
-							"start": 201,
-							"end": 214,
-							"text": "Stasis Shards"
-						},
-						{
-							"keywordId": "tangle",
-							"start": 253,
-							"end": 260,
-							"text": "Tangles"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:261:261",
-							"start": 261,
-							"end": 279,
-							"text": "Arc Elemental Orbs",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "pattern:text-energy-melee",
-							"start": 466,
-							"end": 479,
-							"text": "Melee Ability",
-							"colorClass": "text-energy-melee"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:466:479",
-							"start": 479,
-							"end": 487,
-							"text": " Gains:\n",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:487:487",
-							"start": 487,
-							"end": 501,
-							"text": "Spreadshot HC:",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:502:502",
-							"start": 502,
-							"end": 506,
-							"text": "0.5%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:507:507",
-							"start": 507,
-							"end": 514,
-							"text": "↑0.55%\n",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:514:514",
-							"start": 514,
-							"end": 528,
-							"text": "Burst Sidearm:",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:529:529",
-							"start": 529,
-							"end": 534,
-							"text": "0.78%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:535:535",
-							"start": 535,
-							"end": 542,
-							"text": "↑0.86%\n",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:542:542",
-							"start": 542,
-							"end": 554,
-							"text": "Fusion Rifle",
-							"color": "rgb(99, 210, 117)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:556:556",
-							"start": 556,
-							"end": 561,
-							"text": "1.15%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:562:562",
-							"start": 562,
-							"end": 568,
-							"text": "↑1.27%",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:569:569",
-							"start": 569,
-							"end": 581,
-							"text": "Rocket Pulse",
-							"color": "rgb(99, 210, 117)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:583:583",
-							"start": 583,
-							"end": 588,
-							"text": "1.95%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:589:589",
-							"start": 589,
-							"end": 596,
-							"text": "↑2.15%\n",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:596:596",
-							"start": 596,
-							"end": 603,
-							"text": "Sidearm",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:605:605",
-							"start": 605,
-							"end": 611,
-							"text": "2.34% ",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:611:611",
-							"start": 611,
-							"end": 617,
-							"text": "↑2.57%",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:618:618",
-							"start": 618,
-							"end": 624,
-							"text": "Scout:",
-							"color": "rgb(153, 153, 153)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:625:625",
-							"start": 625,
-							"end": 630,
-							"text": "3.34%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:631:631",
-							"start": 631,
-							"end": 637,
-							"text": "↑3.67%",
-							"color": "rgb(255, 217, 102)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:638:638",
-							"start": 638,
-							"end": 655,
-							"text": "Rocket Launcher: ",
-							"color": "rgb(164, 129, 225)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:655:655",
-							"start": 655,
-							"end": 660,
-							"text": "12.9%",
-							"color": "rgb(137, 205, 209)"
-						},
-						{
-							"keywordId": "sheet-color:Weapon Perks:53:2:661:661",
-							"start": 661,
-							"end": 667,
-							"text": "↑14.2%",
 							"color": "rgb(255, 217, 102)"
 						}
 					]
@@ -76723,7 +76459,7 @@
 			"officialAnnotations": []
 		},
 		{
-			"id": "ddc:special-relativity:104:0",
+			"id": "ddc:lucent-transmutation:104:0",
 			"tab": "Armor Perks",
 			"section": null,
 			"groups": [
@@ -76734,8 +76470,8 @@
 				"row": 104,
 				"column": 0
 			},
-			"title": "Special Relativity",
-			"description": "On Ammo Brick Pickup:\nRefills stowed Special Weapons.",
+			"title": "Lucent Transmutation",
+			"description": "Upon scoring 2 Powered Melee Kills or a finisher:\nGenerates a Light-Subclass Super-Matching Elemental Pickup.\nDoes nothing while a Stasis or Strand Super is equipped. Kills must be spaced out by at least ~0.2 seconds.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -76744,11 +76480,11 @@
 						"column": 2
 					},
 					"start": 0,
-					"length": 53
+					"length": 217
 				}
 			],
-			"officialDescription": "Picking up ammo reloads stowed Special weapons from reserves.",
-			"extraInfo": "2 Piece | Uncaged Deviants",
+			"officialDescription": "Performing a finisher on a combatant, or landing successive powered melee final blows, generates an Elemental pickup based on your Light subclass.",
+			"extraInfo": "2 Piece | Veritas",
 			"kind": "armor_set_bonus",
 			"sourceId": "ddc",
 			"sourceRefs": [
@@ -76760,22 +76496,121 @@
 					"column": 0
 				}
 			],
-			"secondaryName": "Uncaged Deviants",
-			"secondaryDetail": "Desert Perpetual - Epic Raid",
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/daf157f0334a83d1870ef0f325b1c25a.png",
+			"secondaryName": "Veritas",
+			"secondaryDetail": "Throne World - Destination",
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/94133689fdafe43c92af39875e4b35cf.png",
 			"annotations": [
 				{
-					"keywordId": "sheet-color:Armor Perks:104:2:67:37",
-					"start": 37,
-					"end": 52,
-					"text": "Special Weapons",
+					"keywordId": "sheet-color:Armor Perks:104:2:45:13",
+					"start": 13,
+					"end": 23,
+					"text": "2 Powered ",
+					"color": "rgb(137, 205, 209)"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 23,
+					"end": 28,
+					"text": "Melee",
+					"colorClass": "text-energy-melee"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:45:28",
+					"start": 28,
+					"end": 34,
+					"text": " Kills",
+					"color": "rgb(137, 205, 209)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:72:40",
+					"start": 40,
+					"end": 48,
+					"text": "finisher",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:94:62",
+					"start": 62,
+					"end": 76,
+					"text": "Light-Subclass",
+					"color": "rgb(162, 196, 201)"
+				},
+				{
+					"keywordId": "pattern:text-energy-super",
+					"start": 77,
+					"end": 82,
+					"text": "Super",
+					"colorClass": "text-energy-super"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:109:82",
+					"start": 82,
+					"end": 91,
+					"text": "-Matching",
+					"color": "rgb(255, 217, 102)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:124:92",
+					"start": 92,
+					"end": 108,
+					"text": "Elemental Pickup",
+					"color": "rgb(213, 166, 189)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:142:110",
+					"start": 110,
+					"end": 123,
+					"text": "Does nothing ",
+					"color": "rgb(224, 102, 102)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:163:131",
+					"start": 131,
+					"end": 138,
+					"text": "Stasis ",
+					"color": "rgb(111, 168, 220)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:173:141",
+					"start": 141,
+					"end": 148,
+					"text": "Strand ",
 					"color": "rgb(99, 210, 117)"
+				},
+				{
+					"keywordId": "pattern:text-energy-super",
+					"start": 148,
+					"end": 153,
+					"text": "Super",
+					"colorClass": "text-energy-super"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:180:153",
+					"start": 153,
+					"end": 154,
+					"text": " ",
+					"color": "rgb(255, 217, 102)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:104:2:205:173",
+					"start": 173,
+					"end": 178,
+					"text": "must ",
+					"color": "rgb(224, 102, 102)"
 				}
 			],
-			"officialAnnotations": []
+			"officialAnnotations": [
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 68,
+					"end": 73,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				}
+			]
 		},
 		{
-			"id": "ddc:superluminal-motion:105:0",
+			"id": "ddc:lucent-tithes:105:0",
 			"tab": "Armor Perks",
 			"section": null,
 			"groups": [
@@ -76786,8 +76621,8 @@
 				"row": 105,
 				"column": 0
 			},
-			"title": "Superluminal Motion",
-			"description": "Upon dealing Super Damage, while Movement Speed isn't 0m/s:\nRestores 2? [?] HP/s for 11 seconds. \nDealing Additional Super Damage refreshes the buff duration.",
+			"title": "Lucent Tithes",
+			"description": "On Elite+ Finisher:\nRestores 50? HP and spawns 3 Loyal Void Moths that each grant 22.5HP Void Overshield to the user and their allies on impact.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -76796,11 +76631,11 @@
 						"column": 2
 					},
 					"start": 0,
-					"length": 158
+					"length": 144
 				}
 			],
-			"officialDescription": "After dealing damage with your Super, health and shields regenerate over time while you are in motion. Additional Super damage refreshes this effect.",
-			"extraInfo": "4 Piece | Uncaged Deviants",
+			"officialDescription": "Performing a finisher on powerful combatants heals you and generates loyal Void moths.",
+			"extraInfo": "4 Piece | Veritas",
 			"kind": "armor_set_bonus",
 			"sourceId": "ddc",
 			"sourceRefs": [
@@ -76812,7 +76647,152 @@
 					"column": 0
 				}
 			],
-			"secondaryName": "Uncaged Deviants",
+			"secondaryName": "Veritas",
+			"secondaryDetail": "Throne World - Destination",
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9ca2d24cfb79d72ec09ddd3c78a19e75.png",
+			"annotations": [
+				{
+					"keywordId": "pattern:text-tier-elite",
+					"start": 3,
+					"end": 9,
+					"text": "Elite+",
+					"colorClass": "text-tier-elite"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:105:2:28:9",
+					"start": 9,
+					"end": 18,
+					"text": " Finisher",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:105:2:45:20",
+					"start": 20,
+					"end": 35,
+					"text": "Restores 50? HP",
+					"color": "rgb(221, 126, 107)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:105:2:72:47",
+					"start": 47,
+					"end": 65,
+					"text": "3 Loyal Void Moths",
+					"color": "rgb(187, 165, 243)"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:105:2:107:82",
+					"start": 82,
+					"end": 94,
+					"text": "22.5HP Void ",
+					"color": "rgb(213, 166, 189)"
+				},
+				{
+					"keywordId": "overshield",
+					"start": 94,
+					"end": 104,
+					"text": "Overshield"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:105:2:152:127",
+					"start": 127,
+					"end": 134,
+					"text": "allies ",
+					"color": "rgb(164, 194, 244)"
+				}
+			],
+			"officialAnnotations": []
+		},
+		{
+			"id": "ddc:special-relativity:106:0",
+			"tab": "Armor Perks",
+			"section": null,
+			"groups": [
+				"Armor Sets"
+			],
+			"source": {
+				"tab": "Armor Perks",
+				"row": 106,
+				"column": 0
+			},
+			"title": "Special Relativity",
+			"description": "On Ammo Brick Pickup:\nRefills stowed Special Weapons.",
+			"descriptionSegments": [
+				{
+					"source": {
+						"tab": "Armor Perks",
+						"row": 106,
+						"column": 2
+					},
+					"start": 0,
+					"length": 53
+				}
+			],
+			"officialDescription": "Picking up ammo reloads stowed Special weapons from reserves.",
+			"extraInfo": "2 Piece | Wayward Psyche",
+			"kind": "armor_set_bonus",
+			"sourceId": "ddc",
+			"sourceRefs": [
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Armor Perks:106:0",
+					"tab": "Armor Perks",
+					"row": 106,
+					"column": 0
+				}
+			],
+			"secondaryName": "Wayward Psyche",
+			"secondaryDetail": "Desert Perpetual - Epic Raid",
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/daf157f0334a83d1870ef0f325b1c25a.png",
+			"annotations": [
+				{
+					"keywordId": "sheet-color:Armor Perks:106:2:67:37",
+					"start": 37,
+					"end": 52,
+					"text": "Special Weapons",
+					"color": "rgb(99, 210, 117)"
+				}
+			],
+			"officialAnnotations": []
+		},
+		{
+			"id": "ddc:superluminal-motion:107:0",
+			"tab": "Armor Perks",
+			"section": null,
+			"groups": [
+				"Armor Sets"
+			],
+			"source": {
+				"tab": "Armor Perks",
+				"row": 107,
+				"column": 0
+			},
+			"title": "Superluminal Motion",
+			"description": "Upon dealing Super Damage, while Movement Speed isn't 0m/s:\nRestores 2? [?] HP/s for 11 seconds. \nDealing Additional Super Damage refreshes the buff duration.",
+			"descriptionSegments": [
+				{
+					"source": {
+						"tab": "Armor Perks",
+						"row": 107,
+						"column": 2
+					},
+					"start": 0,
+					"length": 158
+				}
+			],
+			"officialDescription": "After dealing damage with your Super, health and shields regenerate over time while you are in motion. Additional Super damage refreshes this effect.",
+			"extraInfo": "4 Piece | Wayward Psyche",
+			"kind": "armor_set_bonus",
+			"sourceId": "ddc",
+			"sourceRefs": [
+				{
+					"sourceId": "ddc",
+					"sourceKey": "Armor Perks:107:0",
+					"tab": "Armor Perks",
+					"row": 107,
+					"column": 0
+				}
+			],
+			"secondaryName": "Wayward Psyche",
 			"secondaryDetail": "Desert Perpetual - Epic Raid",
 			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/bfaac852d350fb7cabb9a7a06deef4a6.png",
 			"annotations": [
@@ -76824,14 +76804,14 @@
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:44:18",
+					"keywordId": "sheet-color:Armor Perks:107:2:44:18",
 					"start": 18,
 					"end": 25,
 					"text": " Damage",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:91:60",
+					"keywordId": "sheet-color:Armor Perks:107:2:91:60",
 					"start": 60,
 					"end": 69,
 					"text": "Restores ",
@@ -76845,7 +76825,7 @@
 					"colorClass": "text-pve-damage"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:100:71",
+					"keywordId": "sheet-color:Armor Perks:107:2:100:71",
 					"start": 71,
 					"end": 72,
 					"text": " ",
@@ -76859,21 +76839,21 @@
 					"colorClass": "text-pvp-damage"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:103:75",
+					"keywordId": "sheet-color:Armor Perks:107:2:103:75",
 					"start": 75,
 					"end": 76,
 					"text": " ",
 					"color": "rgb(234, 153, 153)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:107:76",
+					"keywordId": "sheet-color:Armor Perks:107:2:107:76",
 					"start": 76,
 					"end": 80,
 					"text": "HP/s",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:137:106",
+					"keywordId": "sheet-color:Armor Perks:107:2:137:106",
 					"start": 106,
 					"end": 117,
 					"text": "Additional ",
@@ -76887,7 +76867,7 @@
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Armor Perks:105:2:137:122",
+					"keywordId": "sheet-color:Armor Perks:107:2:137:122",
 					"start": 122,
 					"end": 129,
 					"text": " Damage",
@@ -76910,250 +76890,6 @@
 					"colorClass": "text-energy-super"
 				}
 			]
-		},
-		{
-			"id": "ddc:lucent-transmutation:106:0",
-			"tab": "Armor Perks",
-			"section": null,
-			"groups": [
-				"Armor Sets"
-			],
-			"source": {
-				"tab": "Armor Perks",
-				"row": 106,
-				"column": 0
-			},
-			"title": "Lucent Transmutation",
-			"description": "Upon scoring 2 Powered Melee Kills or a finisher:\nGenerates a Light-Subclass Super-Matching Elemental Pickup.\nDoes nothing while a Stasis or Strand Super is equipped. Kills must be spaced out by at least ~0.2 seconds.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Armor Perks",
-						"row": 106,
-						"column": 2
-					},
-					"start": 0,
-					"length": 217
-				}
-			],
-			"officialDescription": "Performing a finisher on a combatant, or landing successive powered melee final blows, generates an Elemental pickup based on your Light subclass.",
-			"extraInfo": "2 Piece | Veritas",
-			"kind": "armor_set_bonus",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Armor Perks:106:0",
-					"tab": "Armor Perks",
-					"row": 106,
-					"column": 0
-				}
-			],
-			"secondaryName": "Veritas",
-			"secondaryDetail": "Throne World - Destination",
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/94133689fdafe43c92af39875e4b35cf.png",
-			"annotations": [
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:45:13",
-					"start": 13,
-					"end": 23,
-					"text": "2 Powered ",
-					"color": "rgb(137, 205, 209)"
-				},
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 23,
-					"end": 28,
-					"text": "Melee",
-					"colorClass": "text-energy-melee"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:45:28",
-					"start": 28,
-					"end": 34,
-					"text": " Kills",
-					"color": "rgb(137, 205, 209)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:72:40",
-					"start": 40,
-					"end": 48,
-					"text": "finisher",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:94:62",
-					"start": 62,
-					"end": 76,
-					"text": "Light-Subclass",
-					"color": "rgb(162, 196, 201)"
-				},
-				{
-					"keywordId": "pattern:text-energy-super",
-					"start": 77,
-					"end": 82,
-					"text": "Super",
-					"colorClass": "text-energy-super"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:109:82",
-					"start": 82,
-					"end": 91,
-					"text": "-Matching",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:124:92",
-					"start": 92,
-					"end": 108,
-					"text": "Elemental Pickup",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:142:110",
-					"start": 110,
-					"end": 123,
-					"text": "Does nothing ",
-					"color": "rgb(224, 102, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:163:131",
-					"start": 131,
-					"end": 138,
-					"text": "Stasis ",
-					"color": "rgb(111, 168, 220)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:173:141",
-					"start": 141,
-					"end": 148,
-					"text": "Strand ",
-					"color": "rgb(99, 210, 117)"
-				},
-				{
-					"keywordId": "pattern:text-energy-super",
-					"start": 148,
-					"end": 153,
-					"text": "Super",
-					"colorClass": "text-energy-super"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:180:153",
-					"start": 153,
-					"end": 154,
-					"text": " ",
-					"color": "rgb(255, 217, 102)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:106:2:205:173",
-					"start": 173,
-					"end": 178,
-					"text": "must ",
-					"color": "rgb(224, 102, 102)"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "pattern:text-energy-melee",
-					"start": 68,
-					"end": 73,
-					"text": "melee",
-					"colorClass": "text-energy-melee"
-				}
-			]
-		},
-		{
-			"id": "ddc:lucent-tithes:107:0",
-			"tab": "Armor Perks",
-			"section": null,
-			"groups": [
-				"Armor Sets"
-			],
-			"source": {
-				"tab": "Armor Perks",
-				"row": 107,
-				"column": 0
-			},
-			"title": "Lucent Tithes",
-			"description": "On Elite+ Finisher:\nRestores 50? HP and spawns 3 Loyal Void Moths that each grant 22.5HP Void Overshield to the user and their allies on impact.",
-			"descriptionSegments": [
-				{
-					"source": {
-						"tab": "Armor Perks",
-						"row": 107,
-						"column": 2
-					},
-					"start": 0,
-					"length": 144
-				}
-			],
-			"officialDescription": "Performing a finisher on powerful combatants heals you and generates loyal Void moths.",
-			"extraInfo": "4 Piece | Veritas",
-			"kind": "armor_set_bonus",
-			"sourceId": "ddc",
-			"sourceRefs": [
-				{
-					"sourceId": "ddc",
-					"sourceKey": "Armor Perks:107:0",
-					"tab": "Armor Perks",
-					"row": 107,
-					"column": 0
-				}
-			],
-			"secondaryName": "Veritas",
-			"secondaryDetail": "Throne World - Destination",
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/9ca2d24cfb79d72ec09ddd3c78a19e75.png",
-			"annotations": [
-				{
-					"keywordId": "pattern:text-tier-elite",
-					"start": 3,
-					"end": 9,
-					"text": "Elite+",
-					"colorClass": "text-tier-elite"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:107:2:28:9",
-					"start": 9,
-					"end": 18,
-					"text": " Finisher",
-					"color": "rgb(164, 194, 244)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:107:2:45:20",
-					"start": 20,
-					"end": 35,
-					"text": "Restores 50? HP",
-					"color": "rgb(221, 126, 107)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:107:2:72:47",
-					"start": 47,
-					"end": 65,
-					"text": "3 Loyal Void Moths",
-					"color": "rgb(187, 165, 243)"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:107:2:107:82",
-					"start": 82,
-					"end": 94,
-					"text": "22.5HP Void ",
-					"color": "rgb(213, 166, 189)"
-				},
-				{
-					"keywordId": "overshield",
-					"start": 94,
-					"end": 104,
-					"text": "Overshield"
-				},
-				{
-					"keywordId": "sheet-color:Armor Perks:107:2:152:127",
-					"start": 127,
-					"end": 134,
-					"text": "allies ",
-					"color": "rgb(164, 194, 244)"
-				}
-			],
-			"officialAnnotations": []
 		},
 		{
 			"id": "ddc:fanfare:108:0",
@@ -117184,7 +116920,7 @@
 				"column": 1
 			},
 			"title": "Arc Staff",
-			"description": "General Super Information\nDamage Resistance: 90% [53%]\nBase Duration: 20 seconds, or 5% Super Drain per Second\n\nKills grant x1 Bolt Charge.\n\nAerial and Grounded Light Attack | Drains 2.5% Super Energy.\nHits deal 864 [?] damag up to 8 meters away.\nGrounded Attacks can be chained up to 3 hits.\n\nGrounded Heavy Attack | Drains 8% Super Energy\nDeals 1,264 [?] damage in a ~45° angle up to 8 meters away.\n\nAirborne Heavy Attack | Drains 8%? Super Energy\nDeals 1,264 [?] damage and inflicts blind over 7 meters away\n\nPalm Strike | Light-Light-Heavy Combo.\nDeals 2,950 [?] damage and inflicts blind in a ~45° angle up to 8 meters away.\n\nGuarding | Drains an additional ?% Super Energy per second.\nFully blocks and reflects all attacks in a 180?° Angle, granting x1 Bolt Charge per attack reflected.\nReflected Projectiles are redirected to the reticle and deal 100% increased damage against Combatants.\n\nClass Ability | Does not drain Super Energy.\nPerfoms an evasive dodge. Grants ?% [?%] Damage Resist while dodging. \n Allows the repeated usage of Ascension while the Aspect is equipped at the cost of ?% Super Energy.",
+			"description": "General Super Information\nDamage Resistance: 90% [53%]\nBase Duration: 20 seconds, or 5% Super Drain per Second\n\nKills grant x1 Bolt Charge.\n\nAerial and Grounded Light Attack | Drains 2.5% Super Energy.\nHits deal 864 [?] damag up to 8 meters away.\nGrounded Attacks can be chained up to 3 hits.\n\nGrounded Heavy Attack | Drains 8% Super Energy\nDeals 1,264 [?] damage in a ~45° angle up to 8 meters away.\n\nAirborne Heavy Attack | Drains 8%? Super Energy\nDeals 1,264 [?] damage and inflicts blind over 7 meters away\n\nPalm Strike | Light-Light-Heavy Combo Finisher.\nDeals 2,950 [?] damage and inflicts blind in a ~45° angle up to 8 meters away.\n\nGuarding | Drains an additional ?% Super Energy per second.\nFully blocks and reflects all attacks in a 180?° Angle, granting x1 Bolt Charge per attack reflected.\nReflected Projectiles are redirected to the reticle and deal 100% increased damage against Combatants.\n\nClass Ability | Does not drain Super Energy.\nPerfoms an evasive dodge. Grants ?% [?%] Damage Resist while dodging. \n Allows the repeated usage of Ascension while the Aspect is equipped at the cost of ?% Super Energy.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -117193,7 +116929,7 @@
 						"column": 3
 					},
 					"start": 0,
-					"length": 1113
+					"length": 1122
 				}
 			],
 			"officialDescription": "Form a staff of pure Arc energy and acrobatically take out your foes.",
@@ -117491,152 +117227,152 @@
 				},
 				{
 					"keywordId": "pattern:text-pve-damage",
-					"start": 557,
-					"end": 562,
+					"start": 566,
+					"end": 571,
 					"text": "2,950",
 					"colorClass": "text-pve-damage"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:557:562",
-					"start": 562,
-					"end": 563,
+					"keywordId": "sheet-color:Arc:63:3:566:571",
+					"start": 571,
+					"end": 572,
 					"text": " ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "pattern:text-pvp-damage",
-					"start": 563,
-					"end": 566,
+					"start": 572,
+					"end": 575,
 					"text": "[?]",
 					"colorClass": "text-pvp-damage"
 				},
 				{
 					"keywordId": "blind",
-					"start": 587,
-					"end": 592,
+					"start": 596,
+					"end": 601,
 					"text": "blind"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:587:592",
-					"start": 592,
-					"end": 593,
+					"keywordId": "sheet-color:Arc:63:3:596:601",
+					"start": 601,
+					"end": 602,
 					"text": " ",
 					"color": "rgb(153, 153, 153)"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:631:631",
-					"start": 631,
-					"end": 666,
+					"keywordId": "sheet-color:Arc:63:3:640:640",
+					"start": 640,
+					"end": 675,
 					"text": "Guarding | Drains an additional ?% ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 666,
-					"end": 678,
+					"start": 675,
+					"end": 687,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:631:678",
-					"start": 678,
-					"end": 691,
+					"keywordId": "sheet-color:Arc:63:3:640:687",
+					"start": 687,
+					"end": 700,
 					"text": " per second.\n",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:755:755",
-					"start": 755,
-					"end": 759,
+					"keywordId": "sheet-color:Arc:63:3:764:764",
+					"start": 764,
+					"end": 768,
 					"text": " x1 ",
 					"color": "rgb(137, 205, 209)"
 				},
 				{
 					"keywordId": "bolt-charge",
-					"start": 759,
-					"end": 770,
+					"start": 768,
+					"end": 779,
 					"text": "Bolt Charge"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:845:845",
-					"start": 845,
-					"end": 895,
+					"keywordId": "sheet-color:Arc:63:3:854:854",
+					"start": 854,
+					"end": 904,
 					"text": "and deal 100% increased damage against Combatants.",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "pattern:text-energy-class",
-					"start": 897,
-					"end": 910,
+					"start": 906,
+					"end": 919,
 					"text": "Class Ability",
 					"colorClass": "text-energy-class"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:897:910",
-					"start": 910,
-					"end": 913,
+					"keywordId": "sheet-color:Arc:63:3:906:919",
+					"start": 919,
+					"end": 922,
 					"text": " | ",
 					"color": "rgb(180, 167, 214)"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:913:913",
-					"start": 913,
-					"end": 928,
+					"keywordId": "sheet-color:Arc:63:3:922:922",
+					"start": 922,
+					"end": 937,
 					"text": "Does not drain ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 928,
-					"end": 940,
+					"start": 937,
+					"end": 949,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:913:940",
-					"start": 940,
-					"end": 942,
+					"keywordId": "sheet-color:Arc:63:3:922:949",
+					"start": 949,
+					"end": 951,
 					"text": ".\n",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-pve-damage",
-					"start": 975,
-					"end": 977,
+					"start": 984,
+					"end": 986,
 					"text": "?%",
 					"colorClass": "text-pve-damage"
 				},
 				{
 					"keywordId": "pattern:text-pvp-damage",
-					"start": 978,
-					"end": 982,
+					"start": 987,
+					"end": 991,
 					"text": "[?%]",
 					"colorClass": "text-pvp-damage"
 				},
 				{
 					"keywordId": "ascension",
-					"start": 1043,
-					"end": 1052,
+					"start": 1052,
+					"end": 1061,
 					"text": "Ascension"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:1063:1063",
-					"start": 1063,
-					"end": 1070,
+					"keywordId": "sheet-color:Arc:63:3:1072:1072",
+					"start": 1072,
+					"end": 1079,
 					"text": "Aspect ",
 					"color": "rgb(137, 205, 209)"
 				},
 				{
-					"keywordId": "sheet-color:Arc:63:3:1097:1097",
-					"start": 1097,
-					"end": 1100,
+					"keywordId": "sheet-color:Arc:63:3:1106:1106",
+					"start": 1106,
+					"end": 1109,
 					"text": "?% ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 1100,
-					"end": 1112,
+					"start": 1109,
+					"end": 1121,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				}
@@ -153373,7 +153109,7 @@
 				"column": 1
 			},
 			"title": "Sentinel Shield",
-			"description": "General Super Information\nDamage Resistance: 90% [53%]\nBase Duration: 17 seconds or 5.88% Super Drain per second.\n\nLight Attack | Drains 4.5% Super Energy per Attack. The Final Hit in the combo drains 2% Super Energy.\nGrounded 3-Hit Combo, dealing 797 [?] and 856 [?] damage. \nAirborne 2-Hit Combo, dealing 797 [?] damage\nThe Final Hit in a combo deals 1,516 [?] damage in a ? metre cone.\n\nHeavy Attack\nGenerates an impenetrable barrier that allies can shoot through, at the cost of 20% Decreased Movement Speed.\nCaster is granted damage immunity from all frontal damage, including Enemy Guardians.\nEnemies that touch the barrier receive 7 [?] Damage every 0.05 seconds.\nBlocking ? [any] damage generates an Orb of Power that grants 2.5?% Super Energy. Incurs a 1.5 second cooldown between Orb of Power spawns.\nEnhances Shield Throw Damage as more damage is blocked, up to 1787% increased damage after blocking ? damage.\nExtends Super Duration by up to ?% by continuously blocking damage.\nGuardian Damage is completely nullified and do not proc on-hit related effects on the Impenetrable Barrier. \nAbility Damage removes Super Energy but partially extends it at the same time.\n\nAllies standing within 5m behind the barrier are granted 25% Increased Damage, a 45 HP Void Overshield, +50 Handling, and +50 Reload Speed. \nAdditionally, all of their weapons are refilled every 2.5 seconds.\nAllied Guardian's Void Overshield begins regenerating at a rate of 9HP/s after not receiving damage for 3 seconds.\n\nPassive Super Energy Drain while Blocking can be decreased by having allies behind the shield.\nx1 = 20% | x2 = 35% | x3 = ?% | x4 = ?% | x5 = 50%\n\nGrenade Ability | Does not drain Super Energy. Incurs a 3 second cooldown between Shield Throws.\nPerforms a Shield Throw, tossing the Sentinel Shield towards enemies.\nSentinel Shield deals 723 [?] damage, and can ricochet on impact, up to ? times. Ricochets are aimed towards enemies within ? meters.",
+			"description": "General Super Information\nDamage Resistance: 90% [53%]\nBase Duration: 17 seconds or 5.88% Super Drain per second.\n\nLight Attack | Drains 4.5% Super Energy per Attack. The Final Hit in the combo drains 2% Super Energy.\nGrounded 3-Hit Combo, dealing 797 [?] and 856 [?] damage. \nAirborne 2-Hit Combo, dealing 797 [?] damage\nCombo Finisher deals 1,516 [?] damage in a ? metre cone.\n\nHeavy Attack\nGenerates an impenetrable barrier that allies can shoot through, at the cost of 20% Decreased Movement Speed.\nCaster is granted damage immunity from all frontal damage, including Enemy Guardians.\nEnemies that touch the barrier receive 7 [?] Damage every 0.05 seconds.\nBlocking ? [any] damage generates an Orb of Power that grants 2.5?% Super Energy. Incurs a 1.5 second cooldown between Orb of Power spawns.\nEnhances Shield Throw Damage as more damage is blocked or while allies are behind the barrier, up to 1787% increased damage.\nFully maxes damage after 14 seconds with 1 ally, scaling down to 7 seconds with 5 allies.\nExtends Super Duration by continuously blocking damage.\nGuardian Damage is completely nullified and do not proc on-hit related effects on the Impenetrable Barrier. \nAbility Damage removes Super Energy but partially extends it at the same time as it deals damage.\n\nAllies standing within 5m behind the barrier are granted 25% Increased Damage, a 45 HP Void Overshield, +50 Handling, and +50 Reload Speed. \nAdditionally, all of their weapons are refilled every 2.5 seconds.\nAllied Guardian's Void Overshield begins regenerating at a rate of 9HP/s after not receiving damage for 3 seconds.\n\nPassive Super Energy Drain while Blocking can be decreased by having allies behind the shield.\nx1 = 20% | x2 = 35% | x3 = ?% | x4 = ?% | x5 = 50%\n\nGrenade Ability | Does not drain Super Energy. Incurs a 3 second cooldown between Shield Throws.\nPerforms a Shield Throw, tossing the Sentinel Shield towards enemies.\nSentinel Shield deals 723 [?] damage, and can ricochet on impact, up to ? times. Ricochets are aimed towards enemies within ? meters.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -153382,7 +153118,7 @@
 						"column": 3
 					},
 					"start": 0,
-					"length": 1949
+					"length": 2051
 				}
 			],
 			"officialDescription": "Super : Summon a shield of Void Light.\nWhile Sentinel Shield is active:\nLight Attack : Attack.\nBlock : Block.\nGrenade : Perform a Shield Throw.",
@@ -153570,421 +153306,456 @@
 				},
 				{
 					"keywordId": "pattern:text-pve-damage",
-					"start": 353,
-					"end": 358,
+					"start": 343,
+					"end": 348,
 					"text": "1,516",
 					"colorClass": "text-pve-damage"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:353:358",
-					"start": 358,
-					"end": 359,
+					"keywordId": "sheet-color:Void:95:3:343:348",
+					"start": 348,
+					"end": 349,
 					"text": " ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "pattern:text-pvp-damage",
-					"start": 359,
-					"end": 362,
+					"start": 349,
+					"end": 352,
 					"text": "[?]",
 					"colorClass": "text-pvp-damage"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:390:390",
-					"start": 390,
-					"end": 403,
+					"keywordId": "sheet-color:Void:95:3:380:380",
+					"start": 380,
+					"end": 393,
 					"text": "Heavy Attack\n",
 					"color": "rgb(142, 124, 195)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:416:416",
-					"start": 416,
-					"end": 436,
+					"keywordId": "sheet-color:Void:95:3:406:406",
+					"start": 406,
+					"end": 426,
 					"text": "impenetrable barrier",
 					"color": "rgb(180, 167, 214)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:442:442",
-					"start": 442,
-					"end": 448,
+					"keywordId": "sheet-color:Void:95:3:432:432",
+					"start": 432,
+					"end": 438,
 					"text": "allies",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:513:513",
-					"start": 513,
-					"end": 582,
+					"keywordId": "sheet-color:Void:95:3:503:503",
+					"start": 503,
+					"end": 572,
 					"text": "Caster is granted damage immunity from all frontal damage, including ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:582:582",
-					"start": 582,
-					"end": 588,
+					"keywordId": "sheet-color:Void:95:3:572:572",
+					"start": 572,
+					"end": 578,
 					"text": "Enemy ",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
 					"keywordId": "pattern:text-tier-guardian",
-					"start": 588,
-					"end": 597,
+					"start": 578,
+					"end": 587,
 					"text": "Guardians",
 					"colorClass": "text-tier-guardian"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:597:597",
-					"start": 597,
-					"end": 599,
+					"keywordId": "sheet-color:Void:95:3:587:587",
+					"start": 587,
+					"end": 589,
 					"text": ".\n",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:622:622",
-					"start": 622,
-					"end": 630,
+					"keywordId": "sheet-color:Void:95:3:612:612",
+					"start": 612,
+					"end": 620,
 					"text": "barrier ",
 					"color": "rgb(180, 167, 214)"
 				},
 				{
 					"keywordId": "pattern:text-pve-damage",
-					"start": 638,
-					"end": 639,
+					"start": 628,
+					"end": 629,
 					"text": "7",
 					"colorClass": "text-pve-damage"
 				},
 				{
 					"keywordId": "pattern:text-pvp-damage",
-					"start": 640,
-					"end": 643,
+					"start": 630,
+					"end": 633,
 					"text": "[?]",
 					"colorClass": "text-pvp-damage"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:644:644",
-					"start": 644,
-					"end": 650,
+					"keywordId": "sheet-color:Void:95:3:634:634",
+					"start": 634,
+					"end": 640,
 					"text": "Damage",
 					"color": "rgb(187, 165, 243)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:680:680",
-					"start": 680,
-					"end": 681,
+					"keywordId": "sheet-color:Void:95:3:670:670",
+					"start": 670,
+					"end": 671,
 					"text": "?",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:682:682",
-					"start": 682,
-					"end": 688,
+					"keywordId": "sheet-color:Void:95:3:672:672",
+					"start": 672,
+					"end": 678,
 					"text": "[any] ",
 					"color": "rgb(234, 153, 153)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:708:708",
-					"start": 708,
-					"end": 720,
+					"keywordId": "sheet-color:Void:95:3:698:698",
+					"start": 698,
+					"end": 710,
 					"text": "Orb of Power",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:733:733",
-					"start": 733,
-					"end": 739,
+					"keywordId": "sheet-color:Void:95:3:723:723",
+					"start": 723,
+					"end": 729,
 					"text": "2.5?% ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 739,
-					"end": 751,
+					"start": 729,
+					"end": 741,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:753:753",
-					"start": 753,
-					"end": 811,
+					"keywordId": "sheet-color:Void:95:3:743:743",
+					"start": 743,
+					"end": 801,
 					"text": "Incurs a 1.5 second cooldown between Orb of Power spawns.\n",
 					"color": "rgb(224, 102, 102)"
 				},
 				{
 					"keywordId": "shield-throw",
-					"start": 820,
-					"end": 832,
+					"start": 810,
+					"end": 822,
 					"text": "Shield Throw"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:833:833",
-					"start": 833,
-					"end": 840,
+					"keywordId": "sheet-color:Void:95:3:823:823",
+					"start": 823,
+					"end": 830,
 					"text": "Damage ",
 					"color": "rgb(224, 162, 97)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:873:873",
-					"start": 873,
-					"end": 895,
+					"keywordId": "sheet-color:Void:95:3:865:865",
+					"start": 865,
+					"end": 872,
+					"text": "allies ",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Void:95:3:876:876",
+					"start": 876,
+					"end": 894,
+					"text": "behind the barrier",
+					"color": "rgb(180, 167, 214)"
+				},
+				{
+					"keywordId": "sheet-color:Void:95:3:902:902",
+					"start": 902,
+					"end": 924,
 					"text": "1787% increased damage",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:921:921",
-					"start": 921,
-					"end": 929,
+					"keywordId": "sheet-color:Void:95:3:926:926",
+					"start": 926,
+					"end": 944,
+					"text": "Fully maxes damage",
+					"color": "rgb(224, 162, 97)"
+				},
+				{
+					"keywordId": "sheet-color:Void:95:3:967:967",
+					"start": 967,
+					"end": 973,
+					"text": "1 ally",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Void:95:3:1006:1006",
+					"start": 1006,
+					"end": 1014,
+					"text": "5 allies",
+					"color": "rgb(164, 194, 244)"
+				},
+				{
+					"keywordId": "sheet-color:Void:95:3:1016:1016",
+					"start": 1016,
+					"end": 1024,
 					"text": "Extends ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 929,
-					"end": 934,
+					"start": 1024,
+					"end": 1029,
 					"text": "Super",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:921:934",
-					"start": 934,
-					"end": 943,
+					"keywordId": "sheet-color:Void:95:3:1016:1029",
+					"start": 1029,
+					"end": 1038,
 					"text": " Duration",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-tier-guardian",
-					"start": 989,
-					"end": 997,
+					"start": 1072,
+					"end": 1080,
 					"text": "Guardian",
 					"colorClass": "text-tier-guardian"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:989:997",
-					"start": 997,
-					"end": 1121,
+					"keywordId": "sheet-color:Void:95:3:1072:1080",
+					"start": 1080,
+					"end": 1204,
 					"text": " Damage is completely nullified and do not proc on-hit related effects on the Impenetrable Barrier. \nAbility Damage removes ",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 1121,
-					"end": 1133,
+					"start": 1204,
+					"end": 1216,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:989:1133",
-					"start": 1133,
-					"end": 1177,
-					"text": " but partially extends it at the same time.\n",
+					"keywordId": "sheet-color:Void:95:3:1072:1216",
+					"start": 1216,
+					"end": 1279,
+					"text": " but partially extends it at the same time as it deals damage.\n",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1178:1178",
-					"start": 1178,
-					"end": 1185,
+					"keywordId": "sheet-color:Void:95:3:1280:1280",
+					"start": 1280,
+					"end": 1287,
 					"text": "Allies ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1204:1204",
-					"start": 1204,
-					"end": 1222,
+					"keywordId": "sheet-color:Void:95:3:1306:1306",
+					"start": 1306,
+					"end": 1324,
 					"text": "behind the barrier",
 					"color": "rgb(180, 167, 214)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1259:1259",
-					"start": 1259,
-					"end": 1270,
+					"keywordId": "sheet-color:Void:95:3:1361:1361",
+					"start": 1361,
+					"end": 1372,
 					"text": "45 HP Void ",
 					"color": "rgb(213, 166, 189)"
 				},
 				{
 					"keywordId": "overshield",
-					"start": 1270,
-					"end": 1280,
+					"start": 1372,
+					"end": 1382,
 					"text": "Overshield"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1259:1280",
-					"start": 1280,
-					"end": 1281,
+					"keywordId": "sheet-color:Void:95:3:1361:1382",
+					"start": 1382,
+					"end": 1383,
 					"text": ",",
 					"color": "rgb(213, 166, 189)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1386:1386",
-					"start": 1386,
-					"end": 1393,
+					"keywordId": "sheet-color:Void:95:3:1488:1488",
+					"start": 1488,
+					"end": 1495,
 					"text": "Allied ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "pattern:text-tier-guardian",
-					"start": 1393,
-					"end": 1401,
+					"start": 1495,
+					"end": 1503,
 					"text": "Guardian",
 					"colorClass": "text-tier-guardian"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1386:1401",
-					"start": 1401,
-					"end": 1404,
+					"keywordId": "sheet-color:Void:95:3:1488:1503",
+					"start": 1503,
+					"end": 1506,
 					"text": "'s ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1404:1404",
-					"start": 1404,
-					"end": 1409,
+					"keywordId": "sheet-color:Void:95:3:1506:1506",
+					"start": 1506,
+					"end": 1511,
 					"text": "Void ",
 					"color": "rgb(213, 166, 189)"
 				},
 				{
 					"keywordId": "overshield",
-					"start": 1409,
-					"end": 1419,
+					"start": 1511,
+					"end": 1521,
 					"text": "Overshield"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1452:1452",
-					"start": 1452,
-					"end": 1458,
+					"keywordId": "sheet-color:Void:95:3:1554:1554",
+					"start": 1554,
+					"end": 1560,
 					"text": " 9HP/s",
 					"color": "rgb(213, 166, 189)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1502:1502",
-					"start": 1502,
-					"end": 1510,
+					"keywordId": "sheet-color:Void:95:3:1604:1604",
+					"start": 1604,
+					"end": 1612,
 					"text": "Passive ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 1510,
-					"end": 1522,
+					"start": 1612,
+					"end": 1624,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1502:1522",
-					"start": 1522,
-					"end": 1543,
+					"keywordId": "sheet-color:Void:95:3:1604:1624",
+					"start": 1624,
+					"end": 1645,
 					"text": " Drain while Blocking",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1571:1571",
-					"start": 1571,
-					"end": 1578,
+					"keywordId": "sheet-color:Void:95:3:1673:1673",
+					"start": 1673,
+					"end": 1680,
 					"text": "allies ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1597:1597",
-					"start": 1597,
-					"end": 1649,
+					"keywordId": "sheet-color:Void:95:3:1699:1699",
+					"start": 1699,
+					"end": 1751,
 					"text": "x1 = 20% | x2 = 35% | x3 = ?% | x4 = ?% | x5 = 50%\n\n",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-grenade",
-					"start": 1649,
-					"end": 1664,
+					"start": 1751,
+					"end": 1766,
 					"text": "Grenade Ability",
 					"colorClass": "text-energy-grenade"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1649:1664",
-					"start": 1664,
-					"end": 1667,
+					"keywordId": "sheet-color:Void:95:3:1751:1766",
+					"start": 1766,
+					"end": 1769,
 					"text": " | ",
 					"color": "rgb(224, 162, 97)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1667:1667",
-					"start": 1667,
-					"end": 1682,
+					"keywordId": "sheet-color:Void:95:3:1769:1769",
+					"start": 1769,
+					"end": 1784,
 					"text": "Does not drain ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
 					"keywordId": "pattern:text-energy-super",
-					"start": 1682,
-					"end": 1694,
+					"start": 1784,
+					"end": 1796,
 					"text": "Super Energy",
 					"colorClass": "text-energy-super"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1667:1694",
-					"start": 1694,
-					"end": 1696,
+					"keywordId": "sheet-color:Void:95:3:1769:1796",
+					"start": 1796,
+					"end": 1798,
 					"text": ". ",
 					"color": "rgb(255, 217, 102)"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1696:1696",
-					"start": 1696,
-					"end": 1731,
+					"keywordId": "sheet-color:Void:95:3:1798:1798",
+					"start": 1798,
+					"end": 1833,
 					"text": "Incurs a 3 second cooldown between ",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
 					"keywordId": "shield-throw",
-					"start": 1731,
-					"end": 1744,
+					"start": 1833,
+					"end": 1846,
 					"text": "Shield Throws"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1696:1744",
-					"start": 1744,
-					"end": 1746,
+					"keywordId": "sheet-color:Void:95:3:1798:1846",
+					"start": 1846,
+					"end": 1848,
 					"text": ".\n",
 					"color": "rgb(221, 126, 107)"
 				},
 				{
 					"keywordId": "shield-throw",
-					"start": 1757,
-					"end": 1769,
+					"start": 1859,
+					"end": 1871,
 					"text": "Shield Throw"
 				},
 				{
 					"keywordId": "sentinel-shield",
-					"start": 1783,
-					"end": 1798,
+					"start": 1885,
+					"end": 1900,
 					"text": "Sentinel Shield"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1783:1798",
-					"start": 1798,
-					"end": 1799,
+					"keywordId": "sheet-color:Void:95:3:1885:1900",
+					"start": 1900,
+					"end": 1901,
 					"text": " ",
 					"color": "rgb(180, 167, 214)"
 				},
 				{
 					"keywordId": "sentinel-shield",
-					"start": 1816,
-					"end": 1831,
+					"start": 1918,
+					"end": 1933,
 					"text": "Sentinel Shield"
 				},
 				{
 					"keywordId": "pattern:text-pve-damage",
-					"start": 1838,
-					"end": 1841,
+					"start": 1940,
+					"end": 1943,
 					"text": "723",
 					"colorClass": "text-pve-damage"
 				},
 				{
-					"keywordId": "sheet-color:Void:95:3:1838:1841",
-					"start": 1841,
-					"end": 1842,
+					"keywordId": "sheet-color:Void:95:3:1940:1943",
+					"start": 1943,
+					"end": 1944,
 					"text": " ",
 					"color": "rgb(164, 194, 244)"
 				},
 				{
 					"keywordId": "pattern:text-pvp-damage",
-					"start": 1842,
-					"end": 1845,
+					"start": 1944,
+					"end": 1947,
 					"text": "[?]",
 					"colorClass": "text-pvp-damage"
 				}
@@ -154320,7 +154091,7 @@
 			]
 		},
 		{
-			"id": "ddc:ward-of-dawn:99:1",
+			"id": "ddc:ward-of-dawn-bubble:99:1",
 			"tab": "Void",
 			"section": "Super Abilities",
 			"groups": [
@@ -154334,7 +154105,7 @@
 				"row": 99,
 				"column": 1
 			},
-			"title": "Ward of Dawn",
+			"title": "Ward of Dawn\nBubble",
 			"description": "General Super Information\nDamage Resistance while in Cast Animation: ?% [26.5%]\nGrants 1 Grenade Ability Charge and creates 3 Orbs of Power that each grant 2.3% Super Energy on Super Cast.\n\nWard of Dawn:\nProjects a 8,000 Construct HP Protective Dome with 75??% NEEDS TESTING Damage Resistance against Combatants alongside an internal core with 200 HP.\nGuardians deal 50% increased damage to the Protective Dome itself. Ability Damage scales uniquely.\nProtective Dome covers an 8 meter radius centered around its internal core for 30 seconds. Destroying the core destroys the Ward of Dawn.\nThe Ward of Dawn prevents all projectiles from entering or leaving the dome unless an enemy is within it.\nWhile a Combatant is inside the dome: The caster and their allies are able to shoot through the dome.\nDeploying or redeploying the Ward of Dawn pulls Combatants within 15 meters inwards.\nSuper Stat scales its duration by up to +10 seconds at 200 Super Stat.\n\nWhile inside the Ward of Dawn Dome:\nWard of Dawn Caster receives +50% Increased Melee Damage. Scoring a Melee Kill as the Caster generates an Orb of Power up to 5 times per Super cast.\nEnemies are constantly weakened. Combatants up to ? meters away are taunted towards Guardians inside the dome.\nArmor of Light | Constantly generates 15 Void Overshield/s and grants 40% [?%] Damage Resist, +50 Handling, and +50 Reload Speed.\nWeapons of Light | 25% Damage Increase that lingers for 0.3 seconds. Helm of Saint-14 allows it to linger for 15 seconds.\n\nRedeployement:\nThe Ward of Dawn Core can be picked up by the caster after 3 seconds of being deployed, up to twice per cast. Swirling orbs represent the amount of pickups left.\nWhile picked up: Remaining Ward of Dawn duration is decreased by 1 second every (77 / Armor of Light seconds left on pickup).\nThe Core can be thrown to redeploy by the caster up to 2 times per cast.",
 			"descriptionSegments": [
 				{
@@ -154347,7 +154118,6 @@
 					"length": 1878
 				}
 			],
-			"officialDescription": "When Super energy is full, create an indestructible dome to protect you and your allies. Passing through Ward of Dawn grants you and your allies a temporary increase to weapon damage.",
 			"extraInfo": "Tier 4 Super\n\nBase Cooldown:\n455 seconds",
 			"kind": "ability",
 			"sourceId": "ddc",
@@ -154360,7 +154130,6 @@
 					"column": 1
 				}
 			],
-			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/c409b366e739ac9cc3d062974b8cb9a1.png",
 			"annotations": [
 				{
 					"keywordId": "sheet-color:Void:99:3:0:0",
@@ -154974,21 +154743,6 @@
 					"end": 1877,
 					"text": "2 times per cast",
 					"color": "rgb(255, 217, 102)"
-				}
-			],
-			"officialAnnotations": [
-				{
-					"keywordId": "pattern:text-energy-super",
-					"start": 5,
-					"end": 17,
-					"text": "Super energy",
-					"colorClass": "text-energy-super"
-				},
-				{
-					"keywordId": "ward-of-dawn",
-					"start": 105,
-					"end": 117,
-					"text": "Ward of Dawn"
 				}
 			]
 		},
@@ -198928,7 +198682,7 @@
 				"column": 1
 			},
 			"title": "Rally Barricade",
-			"description": "Creates a short, curved barricade construct in front of the caster that blocks all damage dealt to it.\nGrants 20% [20%] Damage Resist while in the Barricade Placement animation.\n\nBarricade lasts for 20 seconds, and has 500 Construct HP. Barricades have 90% Damage Resist against Combatants, and ?% against Boss Combatants.\nEnemies that pass through the barricade rapidly receive ? [?] non-lethal damage every ? seconds.\n\nWhile within ? meters behind the Rally Barricade:\n80% Damage Resist against Splash Damage from Combatants.\nCombatants up to ? meters in front of the barricade are taunted.\n+30 Stability, +100 Reload Speed, 0.9x Reload Duration Multiplier, 10% Increased Damage Falloff Distance, and 50% Flinch Resist.",
+			"description": "Creates a short, curved barricade construct in front of the caster that blocks all damage dealt to it.\nGrants 80% [20%] Damage Resist while in the Barricade Placement animation.\n\nBarricade lasts for 20 seconds, and has 500 Construct HP. Barricades have 90% Damage Resist against Combatants, and ?% against Boss Combatants.\nEnemies that pass through the barricade rapidly receive ? [?] non-lethal damage every ? seconds.\n\nWhile within ? meters behind the Rally Barricade:\n80% Damage Resist against Splash Damage from Combatants.\nCombatants up to ? meters in front of the barricade are taunted.\n+30 Stability, +100 Reload Speed, 0.9x Reload Duration Multiplier, 10% Increased Damage Falloff Distance, and 50% Flinch Resist.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -198959,7 +198713,7 @@
 					"keywordId": "pattern:text-pve-damage",
 					"start": 110,
 					"end": 113,
-					"text": "20%",
+					"text": "80%",
 					"colorClass": "text-pve-damage"
 				},
 				{
@@ -199077,7 +198831,7 @@
 				"column": 1
 			},
 			"title": "Towering Barricade",
-			"description": "Creates a tall, slightly curved barricade construct in front of the caster that blocks all damage dealt to it.\nGrants 20% [20%] Damage Resist while in the Barricade Placement animation.\n\nBarricade lasts for 20 seconds, and has 500 Construct HP. Barricades have 90% Damage Resist against Non-Boss Combatants, and ?% against Boss Combatants.\nEnemies that pass through the barricade rapidly receive ? [?] non-lethal damage every ? seconds.\n\nWhile within ? meters behind the Towering Barricade:\n80% Damage Resist against Splash Damage from Combatants.\nCombatants up to ? meters in front of the barricade are taunted.",
+			"description": "Creates a tall, slightly curved barricade construct in front of the caster that blocks all damage dealt to it.\nGrants 80% [20%] Damage Resist while in the Barricade Placement animation.\n\nBarricade lasts for 20 seconds, and has 500 Construct HP. Barricades have 90% Damage Resist against Non-Boss Combatants, and ?% against Boss Combatants.\nEnemies that pass through the barricade rapidly receive ? [?] non-lethal damage every ? seconds.\n\nWhile within ? meters behind the Towering Barricade:\n80% Damage Resist against Splash Damage from Combatants.\nCombatants up to ? meters in front of the barricade are taunted.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -199108,7 +198862,7 @@
 					"keywordId": "pattern:text-pve-damage",
 					"start": 118,
 					"end": 121,
-					"text": "20%",
+					"text": "80%",
 					"colorClass": "text-pve-damage"
 				},
 				{
@@ -224785,7 +224539,7 @@
 			"alternateDescriptions": [
 				{
 					"sourceId": "ddc",
-					"text": "While an Arc or Stasis Super Ability is equipped:\nReplaces Dodge with Shift.\nDoes not replace Acrobat's Dodge. Overrides Cooldown and Chunk Scalar to Marksman's Dodge.\n\nOn Class Ability Usage:\nPerforms a quick shift that moves the user up to 12 meters away, rendering them invisible and invulnerable for the duration of the shift.\nGrants a stack of Light Shift for 11 seconds, up to a maximum of 3 stacks.\n\nLight Shift:\nx1 = 10% | x2 = 21% | x3 = 33% increased Arc, Stasis, and Lord of Wolves Weapon Damage.\n 10% Increased Weapon Damage against Stasis Debuffed Enemies.\nWeapon Kills grant 60% Class Ability Energy while active.\nDamage buffs stack with other buffs.",
+					"text": "While an Arc or Stasis Super Ability is equipped:\nReplaces Dodge with Shift.\nDoes not replace Acrobat's Dodge. Overrides Cooldown and Chunk Scalar to Marksman's Dodge.\n\nOn Class Ability Usage:\nPerforms a quick shift that moves the user up to 12 meters away, rendering them invisible and invulnerable for the duration of the shift.\nGrants a stack of Light Shift for 11 seconds, up to a maximum of 3 stacks.\n\nLight Shift:\nx1 = 10% | x2 = 21% | x3 = 33% increased Arc, Stasis, and Lord of Wolves Weapon Damage.\n 10% Increased Weapon Damage against Stasis Debuffed Enemies.\nWeapon Kills grant 60% Class Ability Energy while active.\nDamage buffs stack with other buffs. Does not buff Riskrunner or Trinity Ghoul Chain Lightning.",
 					"descriptionSegments": [
 						{
 							"source": {
@@ -224794,7 +224548,7 @@
 								"column": 2
 							},
 							"start": 0,
-							"length": 664
+							"length": 723
 						}
 					],
 					"annotations": [
@@ -225044,6 +224798,26 @@
 							"end": 613,
 							"text": "Class Ability Energy",
 							"colorClass": "text-energy-class"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:665:665",
+							"start": 665,
+							"end": 707,
+							"text": "Does not buff Riskrunner or Trinity Ghoul ",
+							"color": "rgb(224, 102, 102)"
+						},
+						{
+							"keywordId": "chain-lightning",
+							"start": 707,
+							"end": 722,
+							"text": "Chain Lightning"
+						},
+						{
+							"keywordId": "sheet-color:Exotic Armors:69:2:665:722",
+							"start": 722,
+							"end": 723,
+							"text": ".",
+							"color": "rgb(224, 102, 102)"
 						}
 					]
 				}
@@ -294014,6 +293788,64 @@
 			"officialAnnotations": []
 		},
 		{
+			"id": "bungie:4260353953:ward-of-dawn",
+			"tab": "Void",
+			"section": "Super Abilities",
+			"groups": [
+				"Void",
+				"Super Abilities",
+				"Abilities",
+				"Titan"
+			],
+			"source": {
+				"tab": "bungie",
+				"row": 175,
+				"column": 0
+			},
+			"title": "Ward of Dawn",
+			"description": "",
+			"officialDescription": "Create a protective dome for you and your allies.\n\nWhile inside Ward of Dawn, allies gain Void overshield and increased weapon damage, while targets inside the Ward are weakened.\n\nThe Ward's owner also gains increased melee damage while inside and can pick up and throw the Ward's core to reposition the Ward up to two times.",
+			"kind": "ability",
+			"sourceId": "bungie",
+			"sourceRefs": [
+				{
+					"sourceId": "bungie",
+					"sourceKey": "4260353953",
+					"itemHash": 4260353953
+				}
+			],
+			"iconPath": "https://www.bungie.net/common/destiny2_content/icons/1caf1eccf1072969ab93bd35fde62599.png",
+			"itemHash": 4260353953,
+			"annotations": [],
+			"officialAnnotations": [
+				{
+					"keywordId": "ward-of-dawn",
+					"start": 64,
+					"end": 76,
+					"text": "Ward of Dawn"
+				},
+				{
+					"keywordId": "overshield",
+					"start": 95,
+					"end": 105,
+					"text": "overshield"
+				},
+				{
+					"keywordId": "weaken",
+					"start": 169,
+					"end": 177,
+					"text": "weakened"
+				},
+				{
+					"keywordId": "pattern:text-energy-melee",
+					"start": 218,
+					"end": 223,
+					"text": "melee",
+					"colorClass": "text-energy-melee"
+				}
+			]
+		},
+		{
 			"id": "bungie:1237488987:strafe-glide",
 			"tab": "Movement Abilities",
 			"section": "Movement Abilities",
@@ -304701,7 +304533,7 @@
 			],
 			"variant": "default",
 			"references": [
-				"ddc:lucent-tithes:107:0"
+				"ddc:lucent-tithes:105:0"
 			]
 		},
 		{
@@ -304713,7 +304545,7 @@
 			],
 			"variant": "default",
 			"references": [
-				"ddc:lucent-transmutation:106:0"
+				"ddc:lucent-transmutation:104:0"
 			]
 		},
 		{
@@ -310417,7 +310249,7 @@
 			],
 			"variant": "default",
 			"references": [
-				"ddc:special-relativity:104:0"
+				"ddc:special-relativity:106:0"
 			]
 		},
 		{
@@ -311939,7 +311771,7 @@
 			],
 			"variant": "default",
 			"references": [
-				"ddc:superluminal-motion:105:0"
+				"ddc:superluminal-motion:107:0"
 			]
 		},
 		{
@@ -315278,7 +315110,19 @@
 			],
 			"variant": "default",
 			"references": [
-				"ddc:ward-of-dawn:99:1"
+				"bungie:4260353953:ward-of-dawn"
+			]
+		},
+		{
+			"id": "ward-of-dawn-bubble",
+			"label": "Ward of Dawn\nBubble",
+			"aliases": [],
+			"types": [
+				"default"
+			],
+			"variant": "default",
+			"references": [
+				"ddc:ward-of-dawn-bubble:99:1"
 			]
 		},
 		{
