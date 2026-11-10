@@ -19,6 +19,7 @@ import {
 	type ResolvedItem,
 	type ResolvedPlug,
 } from "@/lib/dim/resolve";
+import { cn } from "@/lib/utils/utils";
 
 import {
 	EntryIconButton,
@@ -33,17 +34,21 @@ const COPIED_LABEL_MILLISECONDS = 2000;
 // kilobyte of JSON, which makes for a poor URL.
 const MAX_MARKDOWN_LINK_LENGTH = 1500;
 
+// Sections sit two to a row on a wide screen so a build fills the page
+// instead of running down a narrow strip. One with a lot in it takes the row.
 function Section({
 	title,
 	description,
+	isWide = false,
 	children,
 }: {
 	title: string;
 	description?: string;
+	isWide?: boolean;
 	children: React.ReactNode;
 }) {
 	return (
-		<section className="flex flex-col gap-3">
+		<section className={cn("flex flex-col gap-3", isWide && "xl:col-span-2")}>
 			<div>
 				<h2 className="text-sm font-semibold tracking-[0.2em] text-white/80 uppercase">
 					{title}
@@ -55,6 +60,11 @@ function Section({
 			{children}
 		</section>
 	);
+}
+
+// Labelled icon rows that sit side by side and wrap, rather than one per line.
+function GroupFlow({ children }: { children: React.ReactNode }) {
+	return <div className="flex flex-wrap gap-x-8 gap-y-4">{children}</div>;
 }
 
 function SubHeading({ children }: { children: React.ReactNode }) {
@@ -189,7 +199,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 	);
 
 	const renderItems = (items: ResolvedItem[]) => (
-		<div className="flex flex-col gap-5">
+		<div className="grid gap-x-8 gap-y-5 sm:grid-cols-[repeat(auto-fill,minmax(20rem,1fr))]">
 			{items.map((item) => {
 				const itemEntries = item.entryIds.flatMap((entryId) => {
 					const entry = entryMap.get(entryId);
@@ -275,88 +285,92 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 					</p>
 				</header>
 
-				{subclass ? (
-					<Section title={`${subclass.element} ${subclass.className}`}>
-						<div className="flex flex-col gap-4">
-							{subclass.slots.map((slot) => (
-								<div key={slot.id} className="flex flex-col gap-2">
-									<SubHeading>{slot.label}</SubHeading>
-									{renderPlugIcons(slot.plugs)}
-								</div>
-							))}
-						</div>
-					</Section>
-				) : null}
+				<div className="grid gap-x-8 gap-y-7 xl:grid-cols-2">
+					{subclass ? (
+						<Section title={`${subclass.element} ${subclass.className}`} isWide>
+							<GroupFlow>
+								{subclass.slots.map((slot) => (
+									<div key={slot.id} className="flex flex-col gap-2">
+										<SubHeading>{slot.label}</SubHeading>
+										{renderPlugIcons(slot.plugs)}
+									</div>
+								))}
+							</GroupFlow>
+						</Section>
+					) : null}
 
-				{build.weapons.length > 0 ? (
-					<Section title="Weapons">{renderItems(build.weapons)}</Section>
-				) : null}
-				{build.armor.length > 0 ? (
-					<Section title="Armor">{renderItems(build.armor)}</Section>
-				) : null}
+					{build.weapons.length > 0 ? (
+						<Section title="Weapons">{renderItems(build.weapons)}</Section>
+					) : null}
+					{build.armor.length > 0 ? (
+						<Section title="Armor">{renderItems(build.armor)}</Section>
+					) : null}
 
-				{build.armorMods.length > 0 ? (
-					<Section title="Armor mods">
-						{renderPlugIcons(build.armorMods)}
-					</Section>
-				) : null}
-				{build.armorPerks.length > 0 ? (
-					<Section title="Armor perks">
-						{renderPlugIcons(build.armorPerks)}
-					</Section>
-				) : null}
+					{build.armorMods.length > 0 ? (
+						<Section title="Armor mods">
+							{renderPlugIcons(build.armorMods)}
+						</Section>
+					) : null}
+					{build.armorPerks.length > 0 ? (
+						<Section title="Armor perks">
+							{renderPlugIcons(build.armorPerks)}
+						</Section>
+					) : null}
 
-				{build.setBonuses.length > 0 ? (
-					<Section title="Armor set bonuses">
-						<div className="flex flex-col gap-4">
-							{build.setBonuses.map((bonus) => (
-								<div key={bonus.setName} className="flex flex-col gap-2">
-									<SubHeading>
-										{bonus.setName} ({bonus.pieceCount} pieces)
-									</SubHeading>
-									{renderPlugIcons(bonus.plugs)}
-								</div>
-							))}
-						</div>
-					</Section>
-				) : null}
+					{build.setBonuses.length > 0 ? (
+						<Section title="Armor set bonuses">
+							<GroupFlow>
+								{build.setBonuses.map((bonus) => (
+									<div key={bonus.setName} className="flex flex-col gap-2">
+										<SubHeading>
+											{bonus.setName} ({bonus.pieceCount} pieces)
+										</SubHeading>
+										{renderPlugIcons(bonus.plugs)}
+									</div>
+								))}
+							</GroupFlow>
+						</Section>
+					) : null}
 
-				{build.artifactPerks.length > 0 ? (
-					<Section title="Artifact perks">
-						{renderPlugIcons(build.artifactPerks)}
-					</Section>
-				) : null}
+					{build.artifactPerks.length > 0 ? (
+						<Section title="Artifact perks">
+							{renderPlugIcons(build.artifactPerks)}
+						</Section>
+					) : null}
 
-				{build.otherItems.length > 0 ? (
-					<Section
-						title="Other items"
-						description="Items the site could not tell apart as a weapon or armor piece."
-					>
-						{renderItems(build.otherItems)}
-					</Section>
-				) : null}
+					{build.otherItems.length > 0 ? (
+						<Section
+							title="Other items"
+							isWide
+							description="Items the site could not tell apart as a weapon or armor piece."
+						>
+							{renderItems(build.otherItems)}
+						</Section>
+					) : null}
 
-				{referencedEffects.length > 0 ? (
-					<Section
-						title="Referenced effects"
-						description="Effects the descriptions above mention, most mentioned first."
-					>
-						<IconRow>
-							{referencedEffects.flatMap((effect) => {
-								const entry = entryMap.get(effect.entryId);
-								return entry
-									? [
-											<EntryIconButton
-												key={entry.id}
-												entry={entry}
-												handlers={handlers}
-											/>,
-										]
-									: [];
-							})}
-						</IconRow>
-					</Section>
-				) : null}
+					{referencedEffects.length > 0 ? (
+						<Section
+							title="Referenced effects"
+							isWide
+							description="Effects the descriptions above mention, most mentioned first."
+						>
+							<IconRow>
+								{referencedEffects.flatMap((effect) => {
+									const entry = entryMap.get(effect.entryId);
+									return entry
+										? [
+												<EntryIconButton
+													key={entry.id}
+													entry={entry}
+													handlers={handlers}
+												/>,
+											]
+										: [];
+								})}
+							</IconRow>
+						</Section>
+					) : null}
+				</div>
 
 				{build.unrecognizedHashes.length > 0 ? (
 					<details className="text-sm text-white/55">
