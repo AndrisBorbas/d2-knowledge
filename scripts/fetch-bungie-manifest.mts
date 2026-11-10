@@ -466,9 +466,38 @@ function collectGearRows(table: unknown) {
 }
 
 // DestinyItemCategoryDefinition "Armor Mods". The build inspector shows
-// whichever of these a DIM loadout uses, and the loadout can use any of them,
-// including stat mods and tuning that no community source writes up.
+// whichever armor mods a DIM loadout uses, and the loadout can use any of
+// them, including stat mods and tuning that no community source writes up.
 const ARMOR_MOD_ITEM_CATEGORY_HASH = 4104513227;
+
+// Armor mods are named "General Armor Mod", "Helmet Armor Mod" and so on.
+const ARMOR_MOD_TYPE_NAME_PATTERN = /armor mod/i;
+
+// Shaders and ornaments are cosmetics, and a DIM loadout lists them next to
+// the mods. The inspector has nothing to say about them, so they stay out.
+const COSMETIC_TYPE_NAME_PATTERN = /ornament|shader/i;
+const COSMETIC_PLUG_CATEGORY_PATTERN = /skin|shader|ornament/i;
+
+function isArmorMod(row: Record<string, unknown>) {
+	const categories = Array.isArray(row.itemCategoryHashes)
+		? (row.itemCategoryHashes as number[])
+		: [];
+	const typeName =
+		typeof row.itemTypeDisplayName === "string" ? row.itemTypeDisplayName : "";
+	const plug = asRecord<unknown>(row.plug);
+	const plugCategory =
+		typeof plug?.plugCategoryIdentifier === "string"
+			? plug.plugCategoryIdentifier
+			: "";
+
+	if (COSMETIC_TYPE_NAME_PATTERN.test(typeName)) return false;
+	if (COSMETIC_PLUG_CATEGORY_PATTERN.test(plugCategory)) return false;
+
+	return (
+		categories.includes(ARMOR_MOD_ITEM_CATEGORY_HASH) ||
+		ARMOR_MOD_TYPE_NAME_PATTERN.test(typeName)
+	);
+}
 
 function collectArmorModHashes(table: unknown) {
 	const source = asRecord<unknown>(table) ?? {};
@@ -477,11 +506,7 @@ function collectArmorModHashes(table: unknown) {
 	for (const [key, value] of Object.entries(source)) {
 		const row = asRecord<unknown>(value);
 		if (!row || row.redacted === true) continue;
-
-		const categories = Array.isArray(row.itemCategoryHashes)
-			? (row.itemCategoryHashes as number[])
-			: [];
-		if (!categories.includes(ARMOR_MOD_ITEM_CATEGORY_HASH)) continue;
+		if (!isArmorMod(row)) continue;
 
 		hashes.add(Number(key));
 	}

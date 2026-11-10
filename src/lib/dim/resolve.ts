@@ -91,8 +91,6 @@ export type ResolvedBuild = {
 	// Items that are neither: ghosts and ships, or gear the site has no record of.
 	otherItems: ResolvedItem[];
 	armorMods: ResolvedPlug[];
-	// Mods the loadout puts on one specific armor slot, in the game's slot order.
-	armorSlotMods: ResolvedArmorSlotMods[];
 	armorPerks: ResolvedPlug[];
 	setBonuses: ResolvedSetBonus[];
 	artifactPerks: ResolvedPlug[];
@@ -103,21 +101,6 @@ export type ResolvedBuild = {
 	// Hashes the site could not name at all. Mostly shaders and ornaments.
 	unrecognizedHashes: number[];
 };
-
-export type ResolvedArmorSlotMods = {
-	slotLabel: string;
-	plugs: ResolvedPlug[];
-};
-
-// Destiny's armor inventory buckets, which DIM keys per-slot mods by, in the
-// order the game lists the armor slots.
-const ARMOR_BUCKETS = [
-	{ hash: "3448274439", label: "Helmet" },
-	{ hash: "3551918588", label: "Gauntlets" },
-	{ hash: "14239492", label: "Chest armor" },
-	{ hash: "20886954", label: "Leg armor" },
-	{ hash: "1585787867", label: "Class item" },
-];
 
 // What every step of resolving a build reads and adds to.
 type ResolveEnv = {
@@ -466,29 +449,6 @@ function resolveItem(
 	};
 }
 
-// Mods the loadout pins to a single armor slot, such as an armor piece's own
-// tuning. Slots with nothing recognizable in them are left out.
-function resolveArmorSlotMods(
-	loadout: DimLoadout,
-	env: ResolveEnv,
-): ResolvedArmorSlotMods[] {
-	const modsByBucket = loadout.parameters?.modsByBucket ?? {};
-	const slotMods: ResolvedArmorSlotMods[] = [];
-
-	for (const bucket of ARMOR_BUCKETS) {
-		const plugs = resolvePlugList(
-			modsByBucket[bucket.hash] ?? [],
-			{ kind: "armor-mod" },
-			env,
-		);
-		if (plugs.length > 0) {
-			slotMods.push({ slotLabel: bucket.label, plugs });
-		}
-	}
-
-	return slotMods;
-}
-
 function resolveSubclass(
 	item: DimLoadoutItem,
 	env: ResolveEnv,
@@ -646,7 +606,6 @@ export function resolveBuild(
 			{ kind: "armor-mod" },
 			env,
 		),
-		armorSlotMods: resolveArmorSlotMods(loadout, env),
 		armorPerks: resolvePlugList(
 			parameters?.perks ?? [],
 			{ kind: "exotic-perk" },
@@ -679,7 +638,6 @@ export function collectBuildEntryIds(build: ResolvedBuild) {
 	}
 	ids.push(
 		...collectPlugEntryIds(build.armorMods),
-		...build.armorSlotMods.flatMap((slot) => collectPlugEntryIds(slot.plugs)),
 		...collectPlugEntryIds(build.armorPerks),
 		...build.setBonuses.flatMap((bonus) => collectPlugEntryIds(bonus.plugs)),
 		...collectPlugEntryIds(build.artifactPerks),

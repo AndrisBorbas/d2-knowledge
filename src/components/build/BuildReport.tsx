@@ -321,11 +321,6 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 							{renderPlugIcons(build.armorMods)}
 						</Section>
 					) : null}
-					{build.armorSlotMods.map((slot) => (
-						<Section key={slot.slotLabel} title={`${slot.slotLabel} mods`}>
-							{renderPlugIcons(slot.plugs)}
-						</Section>
-					))}
 					{build.armorPerks.length > 0 ? (
 						<Section title="Armor perks">
 							{renderPlugIcons(build.armorPerks)}

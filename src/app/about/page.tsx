@@ -103,9 +103,9 @@ export default async function AboutPage() {
 				</h1>
 				<p className="mt-3 text-sm leading-7 text-white/72">
 					Owl Sector collects the numbers Destiny 2 does not show you, the
-					hidden values behind perks, abilities, weapons and game mechanics,
-					and puts them next to the in-game text. The numbers are measured by
-					the community; this site gathers them in one place.
+					hidden values behind perks, abilities, weapons and game mechanics, and
+					puts them next to the in-game text. The numbers are measured by the
+					community; this site gathers them in one place.
 				</p>
 			</header>
 
@@ -122,8 +122,8 @@ export default async function AboutPage() {
 							<ExternalLink href={DATA_COMPENDIUM_SHEET_URL}>
 								Destiny Data Compendium
 							</ExternalLink>{" "}
-							sheet: sandbox numbers for perks, abilities, mods and armor
-							sets, and the write-ups on the{" "}
+							sheet: sandbox numbers for perks, abilities, mods and armor sets,
+							and the write-ups on the{" "}
 							<Link href="/mechanics" className={LINK_CLASS}>
 								Game Mechanics
 							</Link>{" "}
@@ -143,7 +143,10 @@ export default async function AboutPage() {
 							</ExternalLink>{" "}
 							and the{" "}
 							<ExternalLink href={DPS_SHEET_URL}>{DPS_SHEET_NAME}</ExternalLink>{" "}
-							by <ExternalLink href={SHEET_AUTHOR_URL}>{SHEET_AUTHOR}</ExternalLink>
+							by{" "}
+							<ExternalLink href={SHEET_AUTHOR_URL}>
+								{SHEET_AUTHOR}
+							</ExternalLink>
 							: the ratings, archetype math and boss damage on the{" "}
 							<Link href="/weapons" className={LINK_CLASS}>
 								Weapons
@@ -163,9 +166,9 @@ export default async function AboutPage() {
 
 				<Section id="updates" title="How it is kept up to date">
 					<p>
-						Each source is snapshotted and compiled into a single dataset,
-						and the site is rebuilt from it as a set of static pages. The
-						snapshots are refreshed by hand when the sources change.
+						Each source is snapshotted and compiled into a single dataset, and
+						the site is rebuilt from it as a set of static pages. The snapshots
+						are refreshed by hand when the sources change.
 					</p>
 					{generatedAt ? (
 						<p>

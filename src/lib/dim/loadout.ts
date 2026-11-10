@@ -17,9 +17,6 @@ const loadoutItemSchema = z.object({
 const loadoutParametersSchema = z.object({
 	// Armor mods, with repeats: three copies of a mod are three entries.
 	mods: z.array(z.number()).optional(),
-	// Mods the loadout wants on one specific armor piece, keyed by the armor
-	// slot's inventory bucket hash.
-	modsByBucket: z.record(z.string(), z.array(z.number())).optional(),
 	// Exotic class item perks and similar armor perks, one entry per copy.
 	perks: z.array(z.number()).optional(),
 	// DestinyEquipableItemSetDefinition hash -> number of pieces wanted.
