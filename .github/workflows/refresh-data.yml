@@ -4,6 +4,10 @@ name: Refresh data
 # Bungie manifest, checks that the site still builds with it, and pushes the new
 # snapshots to main. The push is what makes Cloudflare rebuild and deploy the
 # site, so no extra deploy step is needed when something changed.
+#
+# A manual run works on whichever branch it is started from, so a branch that
+# changes what gets fetched can fill in its own snapshot. The schedule always
+# runs on the default branch.
 on:
   schedule:
     # Tuesdays at 18:00 UTC, an hour after the weekly Destiny reset, when
@@ -23,10 +27,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - name: Check out main
+      - name: Check out the branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
           # The build copies icons out of the destiny-icons submodule and
           # fails on CI when it is missing.
           submodules: true
@@ -64,19 +68,21 @@ jobs:
 
       - name: Commit and push data
         if: steps.changes.outputs.changed == 'true'
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           git commit -m "update data"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git pull --rebase origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
 
       # When the data did not change there is no push to trigger Cloudflare,
       # so ask it for a rebuild directly. Optional: skipped if the secret is
-      # not set.
+      # not set. Only on the default branch, since the hook rebuilds production.
       - name: Trigger Cloudflare rebuild
-        if: steps.changes.outputs.changed == 'false'
+        if: steps.changes.outputs.changed == 'false' && github.ref_name == github.event.repository.default_branch
         env:
           CLOUDFLARE_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
         run: |
