@@ -465,6 +465,30 @@ function collectGearRows(table: unknown) {
 	return rows;
 }
 
+// DestinyItemCategoryDefinition "Armor Mods". The build inspector shows
+// whichever of these a DIM loadout uses, and the loadout can use any of them,
+// including stat mods and tuning that no community source writes up.
+const ARMOR_MOD_ITEM_CATEGORY_HASH = 4104513227;
+
+function collectArmorModHashes(table: unknown) {
+	const source = asRecord<unknown>(table) ?? {};
+	const hashes = new Set<number>();
+
+	for (const [key, value] of Object.entries(source)) {
+		const row = asRecord<unknown>(value);
+		if (!row || row.redacted === true) continue;
+
+		const categories = Array.isArray(row.itemCategoryHashes)
+			? (row.itemCategoryHashes as number[])
+			: [];
+		if (!categories.includes(ARMOR_MOD_ITEM_CATEGORY_HASH)) continue;
+
+		hashes.add(Number(key));
+	}
+
+	return hashes;
+}
+
 function toCompactDefinition(value: unknown) {
 	const row = asRecord<unknown>(value);
 	if (!row) return null;
@@ -956,6 +980,7 @@ async function main() {
 		...itemHashes,
 		...allPerkHashes,
 		...subclassResult.optionHashes,
+		...collectArmorModHashes(snapshot.tables.DestinyInventoryItemDefinition),
 	]);
 	const inventoryTable = filterTableToHashesAndTitles(
 		snapshot.tables.DestinyInventoryItemDefinition,

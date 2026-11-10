@@ -228,6 +228,11 @@ export function renderBuildMarkdown(
 			`## Armor mods\n\n${renderPlugList(build.armorMods, getEntry)}`,
 		);
 	}
+	for (const slot of build.armorSlotMods) {
+		sections.push(
+			`## ${slot.slotLabel} mods\n\n${renderPlugList(slot.plugs, getEntry)}`,
+		);
+	}
 	if (build.armorPerks.length > 0) {
 		sections.push(
 			`## Armor perks\n\n${renderPlugList(build.armorPerks, getEntry)}`,
