@@ -15,28 +15,21 @@ export type IconHandlers = {
 	onToggle: (entryId: string) => void;
 };
 
-function CountBadge({ count }: { count: number }) {
-	if (count < 2) return null;
+const DEFAULT_ICON_BORDER_CLASS = "border-white/20";
 
-	return (
-		<span
-			className="bg-masterwork absolute -right-1 -bottom-1 z-10 px-1 text-xs font-bold text-black"
-			title={`${String(count)} copies in this build`}
-		>
-			×{count}
-		</span>
-	);
-}
-
-// One entry as an icon. The name is on the hover card and in the accessible
-// label, so a build reads as a grid of icons, not a wall of text.
+// One entry as a small button: its icon and name, in the style of the
+// subclass pages' option buttons but without the room they give each one. The
+// full description is on the hover card and in the pinned panel.
 export function EntryIconButton({
 	entry,
 	count = 1,
+	borderClass = DEFAULT_ICON_BORDER_CLASS,
 	handlers,
 }: {
 	entry: AnnotatedEntry;
 	count?: number;
+	// The icon's frame, which a subclass plug takes from its element.
+	borderClass?: string;
 	handlers: IconHandlers;
 }) {
 	const isPinned = handlers.pinnedIds.has(entry.id);
@@ -44,8 +37,6 @@ export function EntryIconButton({
 	return (
 		<button
 			type="button"
-			title={entry.title}
-			aria-label={entry.title}
 			aria-pressed={isPinned}
 			onMouseEnter={(event) =>
 				handlers.onHover(entry.id, event.currentTarget.getBoundingClientRect())
@@ -57,35 +48,35 @@ export function EntryIconButton({
 			onBlur={handlers.onLeave}
 			onClick={() => handlers.onToggle(entry.id)}
 			className={cn(
-				"borderHover relative block shrink-0 bg-blue-950/40 transition after:border-t-0 hover:after:border-t",
+				"borderHover flex min-w-0 items-center gap-2 bg-white/5 p-1.5 pr-2.5 text-left backdrop-blur-sm transition hover:after:border-t",
 				isPinned
-					? "borderActive bg-blue-500/30 after:border-t"
-					: "hover:bg-blue-500/20",
+					? "borderActive bg-white/20 after:border-t"
+					: "hover:bg-white/12",
 			)}
 		>
 			{entry.iconPath ? (
-				<div className="relative rounded-sm border-2 border-blue-400 p-1">
-					<Image
-						src={entry.iconPath}
-						alt=""
-						width={64}
-						height={64}
-						className="size-14 object-cover sm:size-16"
-					/>
-				</div>
+				<Image
+					src={entry.iconPath}
+					alt=""
+					width={32}
+					height={32}
+					className={cn("size-8 shrink-0 border object-cover", borderClass)}
+				/>
 			) : (
-				// Not every entry has an icon; its name is all there is to show.
-				<span className="flex size-[4.5rem] items-center justify-center px-1 text-center text-[10px] leading-tight text-white/70 sm:size-20">
-					{entry.title}
-				</span>
+				<span className="size-8 shrink-0 border border-dashed border-white/20" />
 			)}
-			<CountBadge count={count} />
+			<span className="max-w-44 truncate text-sm font-semibold text-white/90">
+				{entry.title}
+			</span>
+			{count > 1 ? (
+				<span className="text-masterwork text-xs font-bold">×{count}</span>
+			) : null}
 		</button>
 	);
 }
 
 export function IconRow({ children }: { children: React.ReactNode }) {
-	return <div className="flex flex-wrap gap-2">{children}</div>;
+	return <div className="flex flex-wrap gap-1.5">{children}</div>;
 }
 
 export function ItemHeader({ item }: { item: ResolvedItem }) {
@@ -96,18 +87,18 @@ export function ItemHeader({ item }: { item: ResolvedItem }) {
 					<Image
 						src={item.iconPath}
 						alt=""
-						width={64}
-						height={64}
-						className="size-14 object-cover sm:size-16"
+						width={48}
+						height={48}
+						className="size-12 object-cover"
 					/>
 				</div>
 			) : (
-				<div className="flex size-14 items-center justify-center border border-dashed border-white/20 bg-black/30 text-xs text-white/45 sm:size-16">
+				<div className="flex size-12 items-center justify-center border border-dashed border-white/20 bg-black/30 text-xs text-white/45">
 					?
 				</div>
 			)}
 			<div>
-				<h3 className="text-xl font-semibold text-white">
+				<h3 className="text-lg font-semibold text-white">
 					{item.name ?? "Unknown item"}
 				</h3>
 				<p className="text-xs tracking-[0.12em] text-white/55 uppercase">

@@ -4,6 +4,7 @@ import { Check, ClipboardCopy } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
+import { ELEMENT_BORDER_CLASS } from "@/components/abilities/elementStyles";
 import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
 import { DdcVariantProvider } from "@/components/tooltip/DdcVariantContext";
@@ -181,7 +182,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 		onToggle: togglePinned,
 	};
 
-	const renderPlugIcons = (plugs: ResolvedPlug[]) => (
+	const renderPlugIcons = (plugs: ResolvedPlug[], borderClass?: string) => (
 		<IconRow>
 			{plugs.map((plug) => {
 				const entry = entryMap.get(plug.entryId);
@@ -191,6 +192,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 						key={plug.hash}
 						entry={entry}
 						count={plug.count}
+						borderClass={borderClass}
 						handlers={handlers}
 					/>
 				);
@@ -243,6 +245,10 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 	);
 
 	const subclass = build.subclass;
+	// Subclass icons are framed in their element's color, like on the subclass pages.
+	const subclassBorderClass = subclass
+		? ELEMENT_BORDER_CLASS[subclass.element.toLowerCase()]
+		: undefined;
 	const pinnedEntries = pinnedIds.flatMap((id) => {
 		const entry = entryMap.get(id);
 		return entry ? [entry] : [];
@@ -292,7 +298,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 								{subclass.slots.map((slot) => (
 									<div key={slot.id} className="flex flex-col gap-2">
 										<SubHeading>{slot.label}</SubHeading>
-										{renderPlugIcons(slot.plugs)}
+										{renderPlugIcons(slot.plugs, subclassBorderClass)}
 									</div>
 								))}
 							</GroupFlow>
@@ -342,7 +348,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 						<Section
 							title="Other items"
 							isWide
-							description="Items the site could not tell apart as a weapon or armor piece."
+							description="Items the site has no name for. Weapon and armor names come with the next data refresh."
 						>
 							{renderItems(build.otherItems)}
 						</Section>
