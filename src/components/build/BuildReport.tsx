@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { ELEMENT_BORDER_CLASS } from "@/components/abilities/elementStyles";
 import { ClickedTooltipsDrawer } from "@/components/compendium/ClickedTooltipsDrawer";
+import { isMobileViewport } from "@/components/compendium/helpers";
 import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
 import { useClickedEntries } from "@/components/compendium/useClickedEntries";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
@@ -147,9 +148,20 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 		hoverCardStyle,
 		hoveredEntry,
 		showEntryPreview,
-		handleKeywordHover,
+		handleKeywordHover: showKeywordPreview,
 		handleKeywordLeave,
 	} = useHoverPreview({ keywordMap, entryMap });
+
+	// A tap fires the hover events too, and on a phone the drawer already shows
+	// the description, so the floating card would only cover it twice over.
+	const handleEntryHover = (entryId: string, anchorRect: DOMRect) => {
+		if (isMobileViewport()) return;
+		showEntryPreview(entryId, anchorRect);
+	};
+	const handleKeywordHover: typeof showKeywordPreview = (payload) => {
+		if (isMobileViewport()) return;
+		showKeywordPreview(payload);
+	};
 
 	// The same pinning the subclass pages use. On a phone, which has no room
 	// for a side panel, pinning opens the drawer instead.
@@ -171,7 +183,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 
 	const handlers: IconHandlers = {
 		pinnedIds: new Set(pinnedIds),
-		onHover: showEntryPreview,
+		onHover: handleEntryHover,
 		onLeave: handleKeywordLeave,
 		onToggle: togglePinned,
 	};
