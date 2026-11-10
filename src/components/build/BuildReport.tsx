@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 import { ELEMENT_BORDER_CLASS } from "@/components/abilities/elementStyles";
+import { ClickedTooltipsDrawer } from "@/components/compendium/ClickedTooltipsDrawer";
 import { HoverPreviewCard } from "@/components/compendium/HoverPreviewCard";
+import { useClickedEntries } from "@/components/compendium/useClickedEntries";
 import { useHoverPreview } from "@/components/compendium/useHoverPreview";
 import { DdcVariantProvider } from "@/components/tooltip/DdcVariantContext";
 import { Tooltip } from "@/components/tooltip/Tooltip";
-import type { TooltipKeywordClickPayload } from "@/components/tooltip/types";
 import { Button, UnpinButton } from "@/components/ui/Button";
 import type { EntryCatalog } from "@/lib/dim/catalog";
 import { renderBuildMarkdown } from "@/lib/dim/markdown";
@@ -123,7 +124,6 @@ type BuildReportProps = {
 
 export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 	const router = useRouter();
-	const [pinnedIds, setPinnedIds] = useState<string[]>([]);
 
 	// The glossary plus the entries made for plugs only the manifest knows.
 	const entryMap = useMemo(() => {
@@ -151,24 +151,18 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 		handleKeywordLeave,
 	} = useHoverPreview({ keywordMap, entryMap });
 
-	const togglePinned = (entryId: string) => {
-		setPinnedIds((current) =>
-			current.includes(entryId)
-				? current.filter((id) => id !== entryId)
-				: [entryId, ...current],
-		);
-	};
-
-	// A keyword inside a tooltip pins the entry it points at, not its host.
-	const handleKeywordClick = ({
-		keywordId,
-		entryId,
-	}: TooltipKeywordClickPayload) => {
-		const referencedEntryId = keywordMap
-			.get(keywordId)
-			?.references.find((candidateId) => entryMap.has(candidateId));
-		togglePinned(referencedEntryId ?? entryId);
-	};
+	// The same pinning the subclass pages use. On a phone, which has no room
+	// for a side panel, pinning opens the drawer instead.
+	const {
+		clickedEntries: pinnedEntries,
+		clickedEntryIds: pinnedIds,
+		isMobileDrawerOpen,
+		setIsMobileDrawerOpen,
+		handleKeywordClick,
+		toggleClickedEntry: togglePinned,
+		handleRemoveClickedEntry: handleUnpin,
+		handleClearClickedEntries: handleClearPinned,
+	} = useClickedEntries({ keywordMap, entryMap });
 
 	// This page has no group filter, so a group chip hands off to the glossary's.
 	const handleGroupClick = (group: string) => {
@@ -253,10 +247,6 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 	const subclassBorderClass = subclass
 		? ELEMENT_BORDER_CLASS[subclass.element.toLowerCase()]
 		: undefined;
-	const pinnedEntries = pinnedIds.flatMap((id) => {
-		const entry = entryMap.get(id);
-		return entry ? [entry] : [];
-	});
 	const canLinkMarkdown = pastedInput.length <= MAX_MARKDOWN_LINK_LENGTH;
 
 	return (
@@ -279,6 +269,14 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 						<CopyMarkdownButton
 							getMarkdown={() => renderBuildMarkdown(build, catalog)}
 						/>
+						<Button
+							variant="subtle"
+							size="sm"
+							className="lg:hidden"
+							onClick={() => setIsMobileDrawerOpen(true)}
+						>
+							Pinned ({pinnedEntries.length})
+						</Button>
 						{canLinkMarkdown ? (
 							<a
 								href={`/build.md?b=${encodeURIComponent(pastedInput)}`}
@@ -290,8 +288,11 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 							</a>
 						) : null}
 					</div>
-					<p className="text-xs text-white/45">
+					<p className="hidden text-xs text-white/45 lg:block">
 						Hover an icon for its description, click it to pin it.
+					</p>
+					<p className="text-xs text-white/45 lg:hidden">
+						Tap an icon to read its description.
 					</p>
 				</header>
 
@@ -399,7 +400,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 				) : null}
 			</div>
 
-			<aside className="flex flex-col gap-3 lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:self-start lg:overflow-y-auto">
+			<aside className="hidden flex-col gap-3 lg:sticky lg:top-20 lg:flex lg:max-h-[calc(100vh-6rem)] lg:self-start lg:overflow-y-auto">
 				<div className="flex items-center justify-between">
 					<p className="text-xs font-semibold tracking-[0.2em] text-white/62 uppercase">
 						Pinned ({pinnedEntries.length})
@@ -408,7 +409,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 						<Button
 							variant="danger"
 							size="xs"
-							onClick={() => setPinnedIds([])}
+							onClick={handleClearPinned}
 							className="backdrop-blur-md"
 						>
 							Clear all
@@ -435,7 +436,7 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 								onGroupClick={handleGroupClick}
 							/>
 							<UnpinButton
-								onClick={() => togglePinned(entry.id)}
+								onClick={() => handleUnpin(entry.id)}
 								className="absolute top-1 right-1"
 								label={`Unpin ${entry.title}`}
 							/>
@@ -445,6 +446,18 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 			</aside>
 
 			<DdcVariantProvider value={subclass?.element}>
+				<ClickedTooltipsDrawer
+					isOpen={isMobileDrawerOpen}
+					onClose={() => setIsMobileDrawerOpen(false)}
+					clickedEntries={pinnedEntries}
+					entryMap={entryMap}
+					keywordMap={keywordMap}
+					onKeywordHover={handleKeywordHover}
+					onKeywordLeave={handleKeywordLeave}
+					onKeywordClick={handleKeywordClick}
+					onGroupClick={handleGroupClick}
+					onRemove={handleUnpin}
+				/>
 				<HoverPreviewCard
 					hoveredEntry={hoveredEntry}
 					hoverPreview={hoverPreview}
