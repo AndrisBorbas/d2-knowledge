@@ -43,6 +43,14 @@ export const SITE_PAGES: SiteSection[] = [
 		status: "live",
 	},
 	{
+		slug: "build",
+		href: "/build",
+		title: "Build Inspector",
+		description:
+			"Paste a DIM build link to read every perk, mod, aspect and fragment in it, plus the effects they refer to.",
+		status: "live",
+	},
+	{
 		slug: "mechanics",
 		href: "/mechanics",
 		title: "Game Mechanics",

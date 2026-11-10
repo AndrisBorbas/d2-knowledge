@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [Unreleased]
+
+### Added
+
+- A **Build Inspector** at [/build](https://owlsector.net/build): paste a dim.gg build link and see every weapon perk, armor mod, aspect, fragment, set bonus and artifact perk in it with the glossary descriptions, followed by the effects those descriptions refer to.
+
 ## [1.8.2] - 2026-09-23
 
 ### Added

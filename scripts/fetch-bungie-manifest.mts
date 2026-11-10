@@ -7,6 +7,12 @@ import { cellFirstLine, readTable } from "../src/lib/aegis/table";
 import { ARMOR_SET_NAME_ALIASES } from "../src/lib/bungie/armor-set-aliases";
 import { EXOTIC_PERK_ITEM_NAME_ALIASES } from "../src/lib/bungie/exotic-perk-item-aliases";
 import {
+	type CompactGearRow,
+	GEAR_ARMOR_ITEM_TYPE,
+	type GearTable,
+	shouldKeepGear,
+} from "../src/lib/bungie/gear-schema";
+import {
 	DEFAULT_MANIFEST_TABLES,
 	fetchDestinyManifestTables,
 } from "../src/lib/bungie/manifest";
@@ -77,6 +83,7 @@ type CompactManifestTables = {
 	DestinyStatDefinition: Record<string, CompactDefinition>;
 	Subclasses: Record<string, CompactSubclassRow>;
 	Weapons: WeaponTable;
+	Gear: GearTable;
 	DestinySandboxPerkDefinition: Record<string, CompactDefinition>;
 	DestinyTraitDefinition: Record<string, CompactDefinition>;
 	DestinyDamageTypeDefinition: Record<string, CompactDefinition>;
@@ -402,6 +409,53 @@ function collectWeaponRows(
 		if (rows[key] && (scores.get(key) ?? -1) >= score) continue;
 		rows[key] = compact;
 		scores.set(key, score);
+	}
+
+	return rows;
+}
+
+// Weapons and exotic armor by hash, for the build inspector: a DIM loadout names
+// its gear by item hash and nothing else, and every other table here is keyed
+// by name or limited to what a community source already documents.
+function collectGearRows(table: unknown) {
+	const source = asRecord<unknown>(table);
+	const rows: GearTable = {};
+	if (!source) return rows;
+
+	for (const [hash, value] of Object.entries(source)) {
+		const row = asRecord<unknown>(value);
+		if (!row || row.redacted === true) continue;
+
+		const itemType = asNumber(row.itemType);
+		const tierType = asNumber(asRecord<unknown>(row.inventory)?.tierType);
+		if (!shouldKeepGear({ itemType, tierType })) continue;
+
+		const categories = Array.isArray(row.itemCategoryHashes)
+			? (row.itemCategoryHashes as number[])
+			: [];
+		if (categories.includes(DUMMY_ITEM_CATEGORY_HASH)) continue;
+
+		const displayProperties = asRecord<unknown>(row.displayProperties);
+		const name =
+			typeof displayProperties?.name === "string"
+				? displayProperties.name
+				: undefined;
+		const icon =
+			typeof displayProperties?.icon === "string"
+				? displayProperties.icon
+				: undefined;
+		// Test and placeholder rows have no name or no icon.
+		if (!name || !icon || tierType === undefined) continue;
+
+		const isArmor = itemType === GEAR_ARMOR_ITEM_TYPE;
+		const compact: CompactGearRow = {
+			n: name,
+			i: icon,
+			t: isArmor ? "a" : "w",
+			tt: tierType,
+			ct: isArmor ? asNumber(row.classType) : undefined,
+		};
+		rows[hash] = compact;
 	}
 
 	return rows;
@@ -949,6 +1003,7 @@ async function main() {
 		),
 		Subclasses: subclassResult.rows,
 		Weapons: weaponRows,
+		Gear: collectGearRows(snapshot.tables.DestinyInventoryItemDefinition),
 		ActivityModifiers: collectActivityModifiers(
 			(snapshot.tables as Record<string, unknown>)
 				.DestinyActivityModifierDefinition,
@@ -982,6 +1037,9 @@ async function main() {
 	console.log(`Wrote Bungie manifest snapshot: ${outputPath}`);
 	console.log(
 		`Weapons: ${String(matchedNames)} of ${String(aegisWeaponNameKeys.size)} sheet names matched, ${String(taggedNames)} with a champion tag, ${String(Object.keys(weaponRows).length - matchedNames)} kept twice for a shared name`,
+	);
+	console.log(
+		`Gear: ${String(Object.keys(compactTables.Gear).length)} weapons and exotic armor pieces`,
 	);
 	console.log(
 		`Subclasses: ${String(Object.keys(subclassResult.rows).length)}, options: ${String(subclassResult.optionHashes.size)}`,

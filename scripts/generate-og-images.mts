@@ -147,6 +147,13 @@ async function collectCards(): Promise<Card[]> {
 				: [],
 		},
 		{
+			path: "/build",
+			title: "Build Inspector",
+			description:
+				"Paste a DIM build link and read every perk, mod, aspect and fragment in it, with the community's hidden numbers and the effects they refer to.",
+			accent: OG_ACCENTS.prismatic,
+		},
+		{
 			path: "/mechanics",
 			title: "Game Mechanics",
 			description:
