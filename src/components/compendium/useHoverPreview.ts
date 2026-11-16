@@ -86,13 +86,20 @@ export function useHoverPreview(params: {
 		const hidePreview = () => {
 			setHoverPreview(null);
 		};
+		// Content shown on hover or focus has to be dismissable without moving
+		// the pointer or focus away (WCAG 1.4.13).
+		const hideOnEscape = (event: KeyboardEvent) => {
+			if (event.key === "Escape") hidePreview();
+		};
 
 		window.addEventListener("scroll", hidePreview, true);
 		window.addEventListener("resize", hidePreview);
+		window.addEventListener("keydown", hideOnEscape);
 
 		return () => {
 			window.removeEventListener("scroll", hidePreview, true);
 			window.removeEventListener("resize", hidePreview);
+			window.removeEventListener("keydown", hideOnEscape);
 		};
 	}, [hoverPreview]);
 

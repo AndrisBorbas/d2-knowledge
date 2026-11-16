@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 :root {
-	color-scheme: dark light;
 	color-scheme: dark;
 }
-html {
-	scroll-behavior: smooth;
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
+/* The browser takes the first format it supports, so the smallest goes first. */
 @font-face {
 	font-display: swap;
 	font-family: "NeueHaasGroteskDisp";
 	font-style: normal;
 	font-weight: 500;
 	src:
-		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.ttf")
-			format("truetype"),
-		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"),
 		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.woff2")
-			format("woff2");
+			format("woff2"),
+		url("../../public/assets/fonts/NHaasGroteskDSPro-55Rg.woff") format("woff");
 }
 
 @font-face {
@@ -136,6 +137,34 @@ h6 {
 	}
 }
 
+/* Reduced motion keeps the dialog's fade but drops the scale. */
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--animate-dialog-content-in: dialog-overlay-in 150ms ease-out;
+		--animate-dialog-content-out: dialog-overlay-out 120ms ease-in;
+	}
+}
+
+/* One focus ring for every keyboard-reachable control, so components that
+   drop the native outline still show where focus is. */
+@layer base {
+	:where(
+		a,
+		button,
+		input,
+		select,
+		textarea,
+		summary,
+		[tabindex]
+	):focus-visible {
+		outline: 2px solid var(--color-sky-300);
+		outline-offset: 2px;
+	}
+	:where(input, select, textarea):focus-visible {
+		outline-offset: -1px;
+	}
+}
+
 @layer components {
 	.background {
 		@apply fixed inset-0 -z-1 box-content;
@@ -154,7 +183,7 @@ h6 {
 
 	.borderHover {
 		@apply relative;
-		@apply after:pointer-events-none after:absolute after:inset-0 after:block after:border after:border-gray-500/0 after:border-t-gray-500 after:transition-all after:duration-200 after:ease-out;
+		@apply after:pointer-events-none after:absolute after:inset-0 after:block after:border after:border-gray-500/0 after:border-t-gray-500 after:transition-all after:duration-200 after:ease-out motion-reduce:after:transition-none;
 		@apply hover:after:-inset-1.5 hover:after:border hover:after:border-gray-500;
 		/* A disabled control should not grow a hover frame. */
 		@apply disabled:hover:after:inset-0 disabled:hover:after:border-gray-500/0 disabled:hover:after:border-t-gray-500;

@@ -81,7 +81,7 @@ export function BuildInspector() {
 					placeholder={EXAMPLE_LINK}
 					autoComplete="off"
 					spellCheck={false}
-					className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-sky-300/60 focus:outline-none"
+					className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-sky-300/60"
 				/>
 				<Button type="submit" variant="primary" size="md">
 					Inspect build

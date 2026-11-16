@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-11-10T14:56:18.500Z",
+	"generatedAt": "2026-11-16T00:49:34.221Z",
 	"sheetId": "1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4",
 	"tabIds": {
 		"Weapon Perks": 1662574278,
@@ -2302,7 +2302,7 @@
 			[
 				"Cruel Electrum\n\nTrials",
 				"",
-				"2 Piece | Primary Survivor\n\nOn Ally Death:\nGrants a stack of Primary Survivor for ? seconds.\nGrants Primary Survivor x? while solo.\n\nPrimary Survivor x1 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.\nPrimary Survivor x2 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist. "
+				"2 Piece | Primary Survivor\n\nOn Ally Death:\nGrants a stack of Primary Survivor for ? seconds.\n\nPrimary Survivor x2 is always active while solo.\n\nPrimary Survivor x1 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.\nPrimary Survivor x2 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist. "
 			],
 			[
 				"",
@@ -2861,7 +2861,7 @@
 			],
 			[
 				"",
-				"Upon scoring a Precision Hit with a Bow or Sniper Rifle:\n\nGrants a stack of Reload at Range for ? seconds, up to ? stacks.\n\nReload at Range:\nx1 | +? Reload Speed\nx2 | +? Reload Speed\nx3 | +? Reload Speed",
+				"Upon scoring a Precision Hit with a Bow or Sniper Rifle:\n\nGrants a stack of Reload at Range for ? seconds, up to 5 stacks.\n\nReload at Range:\nx1 | +10 Reload Speed and 0.98x Reload Duration Multiplier.\nx2 | +20 Reload Speed and 0.96x Reload Duration Multiplier.\nx3 | +30 Reload Speed and 0.94x Reload Duration Multiplier.\nx4 | +40 Reload Speed and 0.92x Reload Duration Multiplier.\nx5 | +50 Reload Speed and 0.90x Reload Duration Multiplier. ",
 				"",
 				"",
 				"Whenever a Champion gets stunned:\n\n25% Ability Energy to the least-charged Ability.\nExcludes Super Abilities, obviously.",
@@ -54104,7 +54104,7 @@
 		[
 			"Armor Perks:20:2",
 			{
-				"text": "2 Piece | Primary Survivor\n\nOn Ally Death:\nGrants a stack of Primary Survivor for ? seconds.\nGrants Primary Survivor x? while solo.\n\nPrimary Survivor x1 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.\nPrimary Survivor x2 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist. ",
+				"text": "2 Piece | Primary Survivor\n\nOn Ally Death:\nGrants a stack of Primary Survivor for ? seconds.\n\nPrimary Survivor x2 is always active while solo.\n\nPrimary Survivor x1 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.\nPrimary Survivor x2 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist. ",
 				"runs": [
 					{
 						"start": 0,
@@ -54136,7 +54136,43 @@
 					},
 					{
 						"start": 43,
-						"end": 367
+						"end": 61
+					},
+					{
+						"start": 61,
+						"end": 77,
+						"color": "rgb(199, 160, 103)"
+					},
+					{
+						"start": 77,
+						"end": 94
+					},
+					{
+						"start": 94,
+						"end": 113,
+						"color": "rgb(199, 160, 103)"
+					},
+					{
+						"start": 113,
+						"end": 144
+					},
+					{
+						"start": 144,
+						"end": 163,
+						"color": "rgb(199, 160, 103)"
+					},
+					{
+						"start": 163,
+						"end": 261
+					},
+					{
+						"start": 261,
+						"end": 282,
+						"color": "rgb(199, 160, 103)"
+					},
+					{
+						"start": 282,
+						"end": 378
 					}
 				]
 			}
@@ -64330,7 +64366,7 @@
 		[
 			"Artifact Perks:16:1",
 			{
-				"text": "Upon scoring a Precision Hit with a Bow or Sniper Rifle:\n\nGrants a stack of Reload at Range for ? seconds, up to ? stacks.\n\nReload at Range:\nx1 | +? Reload Speed\nx2 | +? Reload Speed\nx3 | +? Reload Speed",
+				"text": "Upon scoring a Precision Hit with a Bow or Sniper Rifle:\n\nGrants a stack of Reload at Range for ? seconds, up to 5 stacks.\n\nReload at Range:\nx1 | +10 Reload Speed and 0.98x Reload Duration Multiplier.\nx2 | +20 Reload Speed and 0.96x Reload Duration Multiplier.\nx3 | +30 Reload Speed and 0.94x Reload Duration Multiplier.\nx4 | +40 Reload Speed and 0.92x Reload Duration Multiplier.\nx5 | +50 Reload Speed and 0.90x Reload Duration Multiplier. ",
 				"runs": [
 					{
 						"start": 0,
@@ -64348,6 +64384,22 @@
 					},
 					{
 						"start": 29,
+						"end": 36
+					},
+					{
+						"start": 36,
+						"end": 40
+					},
+					{
+						"start": 40,
+						"end": 43
+					},
+					{
+						"start": 43,
+						"end": 55
+					},
+					{
+						"start": 55,
 						"end": 57
 					},
 					{
@@ -64379,7 +64431,7 @@
 					},
 					{
 						"start": 139,
-						"end": 203
+						"end": 441
 					}
 				]
 			}
@@ -181511,12 +181563,6 @@
 			{
 				"startRow": 16,
 				"endRow": 17,
-				"startColumn": 1,
-				"endColumn": 3
-			},
-			{
-				"startRow": 16,
-				"endRow": 17,
 				"startColumn": 4,
 				"endColumn": 6
 			},
@@ -181547,6 +181593,12 @@
 			{
 				"startRow": 22,
 				"endRow": 23,
+				"startColumn": 1,
+				"endColumn": 3
+			},
+			{
+				"startRow": 16,
+				"endRow": 17,
 				"startColumn": 1,
 				"endColumn": 3
 			},

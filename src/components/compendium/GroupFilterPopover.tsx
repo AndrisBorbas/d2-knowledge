@@ -97,7 +97,7 @@ export function GroupFilterPopover({
 								value={filterQuery}
 								onChange={(event) => setFilterQuery(event.target.value)}
 								placeholder="Find a filter..."
-								className="w-full border border-blue-500/50 bg-blue-950/60 py-2 pr-3 pl-8 text-sm text-white placeholder:text-white/55 focus:border-sky-300/60 focus:outline-none"
+								className="w-full border border-blue-500/50 bg-blue-950/60 py-2 pr-3 pl-8 text-sm text-white placeholder:text-white/55 focus:border-sky-300/60"
 							/>
 						</div>
 						{hasActiveGroups ? (

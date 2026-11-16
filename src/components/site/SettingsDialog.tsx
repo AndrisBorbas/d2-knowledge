@@ -171,7 +171,7 @@ export function SettingsDialog() {
 				>
 					<Settings
 						size={18}
-						className="transition-all duration-300 ease-in-out group-hover:rotate-90 group-data-[state=open]:-rotate-90"
+						className="transition-all duration-300 ease-in-out group-hover:rotate-90 group-data-[state=open]:-rotate-90 motion-reduce:transition-none"
 					/>
 				</Button>
 			</Dialog.Trigger>

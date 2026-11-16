@@ -48,17 +48,23 @@ export function SiteHeader() {
 					<IconActionButton
 						icon={Menu}
 						iconSize={20}
-						className="block h-full cursor-pointer border border-solid border-transparent bg-transparent px-2 py-2 text-xl leading-none outline-none focus:outline-none lg:hidden"
+						className="block h-full cursor-pointer border border-solid border-transparent bg-transparent px-2 py-2 text-xl leading-none lg:hidden"
 						onClick={setNavbarOpen.bind(null, (prev) => !prev)}
-						label="Navbar toggler"
+						label="Menu"
+						aria-expanded={isNavbarOpen}
+						aria-controls="site-nav-links"
 					/>
 				</div>
 
+				{/* `invisible` keeps the collapsed links out of the tab order on
+				    mobile; visibility transitions with the fade so closing still
+				    animates. */}
 				<div
+					id="site-nav-links"
 					className={cn(
-						"pointer-events-none z-50 flex max-h-0 w-full transform flex-col items-center gap-4 overflow-hidden opacity-0 transition-[max-height,opacity,transform] duration-300 ease-in-out lg:pointer-events-auto lg:max-h-none lg:flex-auto lg:transform-none lg:flex-row lg:gap-2 lg:overflow-visible lg:opacity-100",
+						"pointer-events-none invisible z-50 flex max-h-0 w-full transform flex-col items-center gap-4 overflow-hidden opacity-0 transition-[max-height,opacity,transform,visibility] duration-300 ease-in-out motion-reduce:transition-none lg:pointer-events-auto lg:visible lg:max-h-none lg:flex-auto lg:transform-none lg:flex-row lg:gap-2 lg:overflow-visible lg:opacity-100",
 						isNavbarOpen
-							? "pointer-events-auto max-h-120 translate-y-0 opacity-100"
+							? "pointer-events-auto visible max-h-120 translate-y-0 opacity-100"
 							: "",
 					)}
 				>

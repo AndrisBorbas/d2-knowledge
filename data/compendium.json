@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-11-10T14:56:33.112Z",
+	"generatedAt": "2026-11-16T00:49:45.566Z",
 	"entries": [
 		{
 			"id": "ddc:accelerated-heatsink:5:0",
@@ -65573,7 +65573,7 @@
 				"column": 0
 			},
 			"title": "Primary Survivor",
-			"description": "On Ally Death:\nGrants a stack of Primary Survivor for ? seconds.\nGrants Primary Survivor x? while solo.\n\nPrimary Survivor x1 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.\nPrimary Survivor x2 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.",
+			"description": "On Ally Death:\nGrants a stack of Primary Survivor for ? seconds.\n\nPrimary Survivor x2 is always active while solo.\n\nPrimary Survivor x1 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.\nPrimary Survivor x2 | Primary Weapons are granted +? Handling, +? Reload Speed, +? Aim Assist, and ?% Flinch Resist.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -65582,7 +65582,7 @@
 						"column": 2
 					},
 					"start": 0,
-					"length": 338
+					"length": 349
 				}
 			],
 			"officialDescription": "When an ally is defeated, Primary ammo weapons gain increased handling, reload speed, target acquisition, and reduced flinch. Bonus increases when multiple allies are dead at the same time or when you are running solo.",
@@ -65624,21 +65624,42 @@
 				},
 				{
 					"keywordId": "primary-survivor",
-					"start": 72,
-					"end": 88,
+					"start": 66,
+					"end": 82,
 					"text": "Primary Survivor"
 				},
 				{
-					"keywordId": "primary-survivor",
-					"start": 105,
-					"end": 121,
-					"text": "Primary Survivor"
+					"keywordId": "sheet-color:Armor Perks:20:2:94:82",
+					"start": 82,
+					"end": 85,
+					"text": " x2",
+					"color": "rgb(199, 160, 103)"
 				},
 				{
 					"keywordId": "primary-survivor",
-					"start": 222,
-					"end": 238,
+					"start": 116,
+					"end": 132,
 					"text": "Primary Survivor"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:20:2:144:132",
+					"start": 132,
+					"end": 135,
+					"text": " x1",
+					"color": "rgb(199, 160, 103)"
+				},
+				{
+					"keywordId": "primary-survivor",
+					"start": 233,
+					"end": 249,
+					"text": "Primary Survivor"
+				},
+				{
+					"keywordId": "sheet-color:Armor Perks:20:2:261:249",
+					"start": 249,
+					"end": 254,
+					"text": " x2 |",
+					"color": "rgb(199, 160, 103)"
 				}
 			],
 			"officialAnnotations": []
@@ -79109,7 +79130,7 @@
 				"column": 2
 			},
 			"title": "Reload at Range",
-			"description": "Upon scoring a Precision Hit with a Bow or Sniper Rifle:\n\nGrants a stack of Reload at Range for ? seconds, up to ? stacks.\n\nReload at Range:\nx1 | +? Reload Speed\nx2 | +? Reload Speed\nx3 | +? Reload Speed",
+			"description": "Upon scoring a Precision Hit with a Bow or Sniper Rifle:\n\nGrants a stack of Reload at Range for ? seconds, up to 5 stacks.\n\nReload at Range:\nx1 | +10 Reload Speed and 0.98x Reload Duration Multiplier.\nx2 | +20 Reload Speed and 0.96x Reload Duration Multiplier.\nx3 | +30 Reload Speed and 0.94x Reload Duration Multiplier.\nx4 | +40 Reload Speed and 0.92x Reload Duration Multiplier.\nx5 | +50 Reload Speed and 0.90x Reload Duration Multiplier.",
 			"descriptionSegments": [
 				{
 					"source": {
@@ -79118,7 +79139,7 @@
 						"column": 1
 					},
 					"start": 0,
-					"length": 203
+					"length": 440
 				}
 			],
 			"officialDescription": "Precision hits with Bows and Sniper Rifles grant a stacking bonus to their reload speed.",
@@ -79159,7 +79180,7 @@
 					"keywordId": "sheet-color:Artifact Perks:16:1:112:112",
 					"start": 112,
 					"end": 121,
-					"text": " ? stacks",
+					"text": " 5 stacks",
 					"color": "rgb(241, 194, 50)"
 				},
 				{

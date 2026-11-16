@@ -51,7 +51,7 @@ export function ClickedTooltipsDrawer({
 			/>
 			<aside
 				className={cn(
-					"absolute top-0 right-0 h-full w-[min(88vw,26rem)] border-l border-white/14 bg-black/92 p-4 shadow-2xl shadow-black/60 transition-transform",
+					"absolute top-0 right-0 h-full w-[min(88vw,26rem)] border-l border-white/14 bg-black/92 p-4 shadow-2xl shadow-black/60 transition-transform motion-reduce:transition-none",
 					isOpen ? "translate-x-0" : "translate-x-full",
 				)}
 			>

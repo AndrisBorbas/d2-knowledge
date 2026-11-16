@@ -226,7 +226,7 @@ export function WeaponsExplorer({ seed }: WeaponsExplorerProps) {
 							setSearchInput(event.target.value);
 						}}
 						placeholder="Search by weapon, frame, perk, source, or note..."
-						className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/65 focus:border-sky-300/60 focus:outline-none"
+						className="w-full border border-blue-500/50 bg-blue-950/50 px-4 py-2.5 text-sm text-white placeholder:text-white/65 focus:border-sky-300/60"
 					/>
 					{hasFilters ? (
 						<Button size="md" onClick={clearFilters}>
