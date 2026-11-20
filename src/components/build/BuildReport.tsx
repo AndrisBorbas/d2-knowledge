@@ -137,7 +137,12 @@ export function BuildReport({ build, catalog, pastedInput }: BuildReportProps) {
 	const keywordMap = catalog.keywordById;
 
 	const referencedEffects = useMemo(
-		() => collectReferencedEffects(collectBuildEntryIds(build), catalog),
+		() =>
+			collectReferencedEffects(
+				collectBuildEntryIds(build),
+				catalog,
+				build.className,
+			),
 		[build, catalog],
 	);
 

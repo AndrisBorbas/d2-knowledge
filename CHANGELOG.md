@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [Unreleased]
+
+### Fixed
+
+- The Build Inspector no longer lists abilities, aspects and effects that belong to the other classes, going by the class of the equipped subclass.
+
 ## [1.9.0] - 2026-11-10
 
 ### Added
