@@ -106,11 +106,23 @@ export type ResolvedBuild = {
 type ResolveEnv = {
 	index: DimIndex;
 	catalog: EntryCatalog;
+	// The class the build is for, so entries that only belong to another class
+	// are not picked for it. Unknown for a build that names no subclass or class.
+	className: string | undefined;
 	unrecognized: Set<number>;
 	manifestEntries: Map<string, AnnotatedEntry>;
 };
 
 const CLASS_NAMES = ["Titan", "Hunter", "Warlock"];
+
+// The glossary puts a class's own abilities and aspects in a group named after
+// the class. An entry shared by several classes lists each of them.
+function belongsToOtherClass(entry: AnnotatedEntry, className: string) {
+	const classGroups = entry.groups.filter((group) =>
+		CLASS_NAMES.includes(group),
+	);
+	return classGroups.length > 0 && !classGroups.includes(className);
+}
 
 const TIER_LABELS: Record<number, string> = {
 	5: "Legendary",
@@ -180,11 +192,22 @@ function scoreEntry(entry: AnnotatedEntry, context: PlugContext) {
 function pickBestEntry(
 	candidates: AnnotatedEntry[] | undefined,
 	context: PlugContext,
+	className: string | undefined,
 ) {
 	let best: AnnotatedEntry | undefined;
 	let bestScore = -1;
 
-	for (const candidate of candidates ?? []) {
+	// Two classes can have an ability of the same name. Take the one for this
+	// class, and another class's only when it is all there is.
+	const sameClassCandidates = className
+		? (candidates ?? []).filter(
+				(candidate) => !belongsToOtherClass(candidate, className),
+			)
+		: [];
+	const usableCandidates =
+		sameClassCandidates.length > 0 ? sameClassCandidates : (candidates ?? []);
+
+	for (const candidate of usableCandidates) {
 		const score = scoreEntry(candidate, context);
 		// Strictly greater, so a tie keeps the entry that comes first in the data.
 		if (score > bestScore) {
@@ -203,14 +226,20 @@ function findEntry(
 	name: string | undefined,
 	context: PlugContext,
 	catalog: EntryCatalog,
+	className: string | undefined,
 ) {
-	const byHash = pickBestEntry(catalog.entriesByHash.get(hash), context);
+	const byHash = pickBestEntry(
+		catalog.entriesByHash.get(hash),
+		context,
+		className,
+	);
 	if (byHash) return byHash;
 	if (!name) return undefined;
 
 	const byName = pickBestEntry(
 		catalog.entriesByTitle.get(normalizeLookupName(name)),
 		context,
+		className,
 	);
 	if (byName) return byName;
 
@@ -222,6 +251,7 @@ function findEntry(
 				normalizeLookupName(name.replace(ENHANCED_PREFIX, "")),
 			),
 			context,
+			className,
 		);
 	}
 
@@ -259,7 +289,13 @@ function resolvePlug(
 	env: ResolveEnv,
 ): ResolvedPlug | null {
 	const indexItem = env.index.items[String(hash)];
-	const entry = findEntry(hash, indexItem?.n, context, env.catalog);
+	const entry = findEntry(
+		hash,
+		indexItem?.n,
+		context,
+		env.catalog,
+		env.className,
+	);
 
 	if (entry) {
 		return {
@@ -552,14 +588,32 @@ function resolveSetBonuses(loadout: DimLoadout, env: ResolveEnv) {
 	return resolved.sort((left, right) => right.pieceCount - left.pieceCount);
 }
 
+// The class the build is for. The equipped subclass says so for certain, since
+// it is the one thing in a loadout that only one class can use. A loadout
+// without one falls back on the class DIM saved it under, which can also be
+// "any class".
+function findBuildClassName(loadout: DimLoadout, index: DimIndex) {
+	const equippedItems = [...loadout.equipped, ...loadout.unequipped];
+	for (const item of equippedItems) {
+		const subclass = index.subclasses[String(item.hash)];
+		if (subclass) return CLASS_NAMES[subclass.ct];
+	}
+
+	return loadout.classType === undefined
+		? undefined
+		: CLASS_NAMES[loadout.classType];
+}
+
 export function resolveBuild(
 	loadout: DimLoadout,
 	index: DimIndex,
 	catalog: EntryCatalog,
 ): ResolvedBuild {
+	const className = findBuildClassName(loadout, index);
 	const env: ResolveEnv = {
 		index,
 		catalog,
+		className,
 		unrecognized: new Set(),
 		manifestEntries: new Map(),
 	};
@@ -592,10 +646,7 @@ export function resolveBuild(
 
 	return {
 		name: loadout.name?.trim() || "Untitled build",
-		className:
-			loadout.classType === undefined
-				? undefined
-				: CLASS_NAMES[loadout.classType],
+		className,
 		notes: loadout.notes?.trim() ?? "",
 		subclass,
 		weapons,
@@ -654,10 +705,12 @@ export type ReferencedEffect = {
 
 // The entries a build's descriptions point at - Scorch, Weaken, Woven Mail -
 // that the build does not already show, most mentioned first. This is the same
-// one hop a keyword hover resolves, laid out in full.
+// one hop a keyword hover resolves, laid out in full. A build with a known class
+// is not shown the other classes' abilities.
 export function collectReferencedEffects(
 	buildEntryIds: string[],
 	catalog: EntryCatalog,
+	className?: string,
 ): ReferencedEffect[] {
 	const shownIds = new Set(buildEntryIds);
 	const mentionCounts = new Map<string, number>();
@@ -683,7 +736,16 @@ export function collectReferencedEffects(
 			const targetId = keyword.references.find((candidateId) =>
 				catalog.entryById.has(candidateId),
 			);
-			if (targetId && !shownIds.has(targetId)) referencedIds.add(targetId);
+			if (!targetId || shownIds.has(targetId)) continue;
+
+			// An aspect or ability of another class is not something this build
+			// can use, however much a shared description mentions it.
+			const target = catalog.entryById.get(targetId);
+			if (className && target && belongsToOtherClass(target, className)) {
+				continue;
+			}
+
+			referencedIds.add(targetId);
 		}
 
 		for (const referencedId of referencedIds) {

@@ -254,6 +254,7 @@ export function renderBuildMarkdown(
 	const referencedEffects = collectReferencedEffects(
 		collectBuildEntryIds(build),
 		catalog,
+		build.className,
 	);
 	if (referencedEffects.length > 0) {
 		const effectItems = referencedEffects.map((effect) => {
