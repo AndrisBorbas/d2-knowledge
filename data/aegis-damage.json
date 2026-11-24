@@ -1,5 +1,5 @@
 {
-	"generatedAt": "2026-11-16T00:49:35.697Z",
+	"generatedAt": "2026-11-24T18:06:14.881Z",
 	"sheetId": "1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4",
 	"tabIds": {
 		"Weapons": 2139128689,
@@ -21410,7 +21410,7 @@
 				"Atheon",
 				"247,148",
 				"49,430",
-				"currently takes 5x damage\nnormally takes 3x grenade damage",
+				"currently takes 5x weapon damage\nformerly took 3x grenade damage",
 				"Minotaur",
 				"Vex",
 				"Final wave of oracles, Time's Vengeance",

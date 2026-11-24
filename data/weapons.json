@@ -1,7 +1,7 @@
 {
-	"generatedAt": "2026-11-16T00:49:45.736Z",
-	"endgameGeneratedAt": "2026-11-16T00:49:35.097Z",
-	"damageGeneratedAt": "2026-11-16T00:49:35.697Z",
+	"generatedAt": "2026-11-24T18:06:26.899Z",
+	"endgameGeneratedAt": "2026-11-24T18:06:14.517Z",
+	"damageGeneratedAt": "2026-11-24T18:06:14.881Z",
 	"categories": [
 		{
 			"slug": "auto-rifles",
@@ -93166,7 +93166,7 @@
 			"mods": [
 				"No"
 			],
-			"notes": "currently takes 5x damage\nnormally takes 3x grenade damage",
+			"notes": "currently takes 5x weapon damage\nformerly took 3x grenade damage",
 			"ref": {
 				"tab": "Bosses",
 				"row": 12,
