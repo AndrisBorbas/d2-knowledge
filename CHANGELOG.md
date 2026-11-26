@@ -7,6 +7,12 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
+## [1.9.2] - 2026-11-26
+
+### Fixed
+
+- The Build Inspector shows the intrinsic perk of exotic armor again for pieces whose item version the community sources do not list, which was most of them.
+
 ## [1.9.1] - 2026-11-20
 
 ### Fixed
