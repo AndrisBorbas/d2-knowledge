@@ -7,7 +7,7 @@ then `### Added` / `### Changed` / `### Fixed` / `### Removed` /
 `### Deprecated` / `### Security`, then plain `-` bullets. Inline `code`,
 **bold** and [links](https://owlsector.net) render; nothing else does.
 
-## [Unreleased]
+## [1.9.2] - 2026-11-26
 
 ### Fixed
 
