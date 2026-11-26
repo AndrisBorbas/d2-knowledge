@@ -408,6 +408,13 @@ function getItemRefType(entry: AnnotatedEntry, itemHash: number) {
 		?.type;
 }
 
+// For an entry found by the item's name rather than its hash, so no source
+// reference names the hash being asked about: the label is on whichever
+// reference carries one, which only the community perk database does.
+function getAnyRefType(entry: AnnotatedEntry) {
+	return (entry.sourceRefs ?? []).find((ref) => ref.type)?.type;
+}
+
 // Entries that describe the item itself rather than a plug someone picked: an
 // exotic's intrinsic, and its fixed traits.
 //
@@ -416,22 +423,41 @@ function getItemRefType(entry: AnnotatedEntry, itemHash: number) {
 // with one candidate is fixed and always on; with several, the build's own
 // socket overrides already say which was picked, so none are added. A catalyst
 // is left out, since a loadout cannot say whether the player has finished it.
+//
+// The community sources know an item by one hash, but an exotic armor piece
+// has several (reissues, ornaments, featured copies) and a build can hold any
+// of them. So the item's name finds the entries a hash did not.
 function findItemEntryIds(
 	hash: number,
+	itemName: string | undefined,
 	plugs: ResolvedPlug[],
 	env: ResolveEnv,
 ) {
 	const plugEntryIds = new Set(plugs.map((plug) => plug.entryId));
 	const candidatesByType = new Map<string, AnnotatedEntry[]>();
+	const seenEntryIds = new Set<string>();
 
-	for (const entry of env.catalog.entriesByHash.get(hash) ?? []) {
-		const type = getItemRefType(entry, hash);
-		if (!type || type.includes("Catalyst")) continue;
-		if (plugEntryIds.has(entry.id)) continue;
+	const addCandidate = (entry: AnnotatedEntry, type: string | undefined) => {
+		if (!type || type.includes("Catalyst")) return;
+		if (plugEntryIds.has(entry.id)) return;
+		if (seenEntryIds.has(entry.id)) return;
+		seenEntryIds.add(entry.id);
 
 		const candidates = candidatesByType.get(type) ?? [];
 		candidates.push(entry);
 		candidatesByType.set(type, candidates);
+	};
+
+	for (const entry of env.catalog.entriesByHash.get(hash) ?? []) {
+		addCandidate(entry, getItemRefType(entry, hash));
+	}
+
+	if (itemName) {
+		const itemNameKey = normalizeLookupName(itemName);
+		for (const entry of env.catalog.exoticEntriesByItemName.get(itemNameKey) ??
+			[]) {
+			addCandidate(entry, getAnyRefType(entry));
+		}
 	}
 
 	const entryIds: string[] = [];
@@ -479,7 +505,7 @@ function resolveItem(
 			iconPath: toBungieUrl(gear?.i ?? indexItem?.i),
 			tierLabel: gear ? TIER_LABELS[gear.tt] : undefined,
 			isEquipped,
-			entryIds: findItemEntryIds(item.hash, plugs, env),
+			entryIds: findItemEntryIds(item.hash, name, plugs, env),
 			plugs,
 		},
 	};

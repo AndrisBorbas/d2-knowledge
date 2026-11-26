@@ -13,6 +13,11 @@ export type EntryCatalog = {
 	keywordById: Map<string, Keyword>;
 	entriesByHash: Map<number, AnnotatedEntry[]>;
 	entriesByTitle: Map<string, AnnotatedEntry[]>;
+	// Exotic perks by the normalized name of the item they belong to. An item has
+	// several hashes (reissues, ornaments, featured copies) and the community
+	// sources record only one of them, so a build that holds another still finds
+	// the item's perks by its name.
+	exoticEntriesByItemName: Map<string, AnnotatedEntry[]>;
 	// "<normalized set name>|<piece count>" -> the bonus unlocked at that count.
 	setBonusEntries: Map<string, AnnotatedEntry>;
 };
@@ -54,6 +59,7 @@ export function buildEntryCatalog(dataset: CompendiumDataset): EntryCatalog {
 	const entryById = new Map<string, AnnotatedEntry>();
 	const entriesByHash = new Map<number, AnnotatedEntry[]>();
 	const entriesByTitle = new Map<string, AnnotatedEntry[]>();
+	const exoticEntriesByItemName = new Map<string, AnnotatedEntry[]>();
 	const setBonusEntries = new Map<string, AnnotatedEntry>();
 
 	for (const entry of dataset.entries) {
@@ -65,6 +71,11 @@ export function buildEntryCatalog(dataset: CompendiumDataset): EntryCatalog {
 
 		const titleKey = normalizeLookupName(entry.title);
 		if (titleKey) pushTo(entriesByTitle, titleKey, entry);
+
+		if (entry.kind === "exotic_item_perk" && entry.secondaryName) {
+			const itemNameKey = normalizeLookupName(entry.secondaryName);
+			if (itemNameKey) pushTo(exoticEntriesByItemName, itemNameKey, entry);
+		}
 
 		if (entry.kind === "armor_set_bonus" && entry.secondaryName) {
 			const pieceCount = SET_PIECE_COUNT_PATTERN.exec(entry.extraInfo ?? "");
@@ -82,6 +93,7 @@ export function buildEntryCatalog(dataset: CompendiumDataset): EntryCatalog {
 		),
 		entriesByHash,
 		entriesByTitle,
+		exoticEntriesByItemName,
 		setBonusEntries,
 	};
 }
